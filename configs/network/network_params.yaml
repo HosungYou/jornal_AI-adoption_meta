@@ -1,0 +1,447 @@
+# Network Analysis Parameters for MAGNA
+# Meta-Analytic Gaussian Network Analysis (MAGNA) - Educational AI Adoption
+
+network:
+  description: "Network analysis of pooled correlation matrix from MASEM Stage 1 for educational AI adoption"
+  approach: "Gaussian Graphical Model (GGM) with regularization"
+  rationale: |
+    Network analysis complements SEM by:
+    1. No a priori model specification (exploratory)
+    2. Identifies central constructs (most influential in educational AI adoption)
+    3. Detects community structure (clustering of educational AI constructs)
+    4. Tests network invariance across educational subgroups (students vs. instructors, K-12 vs. higher ed)
+
+estimation:
+  method: "ggm"
+    description: "Gaussian Graphical Model"
+    output: "Partial correlation network (edges = unique associations controlling for all other constructs)"
+    note: "Partial correlations ≠ path coefficients; no directionality assumed"
+
+  regularization: "glasso"
+    description: "Graphical LASSO (L1 regularization)"
+    rationale: "Shrinks small partial correlations to zero, yielding sparse network"
+    tuning_parameter: "lambda (λ)"
+
+  lambda_select: "EBIC"
+    description: "Extended Bayesian Information Criterion"
+    formula: "EBIC = -2 * logLik + k * log(n) + 4 * k * γ * log(p)"
+    parameters:
+      k: "Number of edges in network"
+      n: "Sample size (meta-analytic N)"
+      p: "Number of nodes (constructs)"
+      γ: "EBIC hyperparameter (0 to 1)"
+
+  gamma: 0.5
+    description: "EBIC hyperparameter controlling sparsity"
+    range: [0.0, 1.0]
+    interpretation:
+      gamma_0: "Equivalent to BIC (less sparse)"
+      gamma_0_5: "Default; moderate sparsity"
+      gamma_1: "Maximum sparsity (very conservative)"
+    recommendation: "0.5 for exploratory analysis; sensitivity analysis with 0.25 and 0.75"
+
+  prune_alpha: 0.01
+    description: "Significance threshold for edge pruning (post-hoc)"
+    method: "Bootstrap hypothesis test: H0: partial_correlation = 0"
+    interpretation: "Edges with p > 0.01 are pruned (set to zero)"
+    note: "Applied after EBIC selection for additional sparsity control"
+
+  correlation_method: "spearman"
+    alternatives: ["pearson", "spearman", "polychoric"]
+    selected: "pearson"
+    rationale: "Pooled correlation matrix from MASEM is Pearson r"
+    note: "For ordinal data, polychoric correlations preferable"
+
+centrality:
+  description: "Centrality indices quantify node importance in network"
+
+  measures:
+    - "Strength"
+    - "Betweenness"
+    - "Closeness"
+    - "ExpectedInfluence"
+    - "ExpectedInfluence2"
+
+  strength:
+    description: "Sum of absolute edge weights connected to node"
+    formula: "S_i = Σ |w_ij|"
+    interpretation: "Direct connectivity; how strongly node connects to others"
+    range: [0, infinity]
+    high_centrality: "Hub node; highly interconnected"
+
+  betweenness:
+    description: "Number of shortest paths passing through node"
+    formula: "B_i = Σ (σ_jk(i) / σ_jk) for j ≠ k ≠ i"
+    interpretation: "Bridge node; connects different parts of network"
+    range: [0, 1]
+    high_centrality: "Critical connector; removing node disrupts network"
+
+  closeness:
+    description: "Inverse of average distance to all other nodes"
+    formula: "C_i = (n-1) / Σ d(i,j)"
+    interpretation: "How quickly node can reach all others"
+    range: [0, 1]
+    high_centrality: "Central position; short paths to all nodes"
+
+  expected_influence:
+    description: "Sum of edge weights (signed; not absolute)"
+    formula: "EI_i = Σ w_ij"
+    interpretation: "Net influence; accounts for positive and negative edges"
+    range: [-infinity, infinity]
+    use_case: "Preferred when negative edges exist (e.g., ANX→BI)"
+    note: "Unlike Strength, does not use absolute values"
+
+  expected_influence_2:
+    description: "Expected influence of node's neighbors (2-step)"
+    formula: "EI2_i = Σ_j w_ij * EI_j"
+    interpretation: "Indirect influence through neighbors"
+    use_case: "Identify nodes influencing network through intermediaries"
+
+  normalize: true
+    description: "Standardize centrality measures to 0-1 scale"
+    method: "Min-max normalization: (x - min) / (max - min)"
+    rationale: "Facilitates cross-measure comparison and plotting"
+
+stability:
+  description: "Bootstrap methods to assess centrality stability and edge accuracy"
+
+  edge_accuracy:
+    method: "non-parametric bootstrap"
+    n_boots: 1000
+    description: "Resample cases with replacement; re-estimate network"
+    output: "95% confidence intervals for each edge weight"
+    interpretation:
+      ci_excludes_zero: "Edge is stable (significantly non-zero)"
+      ci_includes_zero: "Edge is unstable (may be spurious)"
+
+  centrality_stability:
+    method: "case-dropping bootstrap"
+    n_boots: 1000
+    description: "Subset network by dropping X% of cases; re-estimate centrality"
+    subsets: "10%, 20%, 30%, ..., 90% of cases dropped"
+    metric: "Correlation between original and subset centrality"
+
+  cs_coefficient:
+    description: "Correlation Stability Coefficient"
+    definition: "Maximum % of cases that can be dropped while maintaining correlation ≥ 0.7 with original centrality"
+    threshold: 0.50
+    interpretation:
+      cs_gt_0_5: "Excellent stability"
+      cs_0_25_to_0_5: "Acceptable stability"
+      cs_lt_0_25: "Poor stability; interpret centrality with caution"
+    note: "Epskamp et al. (2018) recommend CS ≥ 0.50 for reliable centrality"
+
+  statistics:
+    - "strength"
+    - "betweenness"
+    - "closeness"
+    - "expectedInfluence"
+
+  output:
+    path: "./analysis/network/stability/"
+    plots:
+      - "edge_accuracy_plot.png"      # CIs for edge weights
+      - "centrality_stability_plot.png"  # CS-coefficient curves
+      - "bootstrap_difference_plot.png"  # Significant differences between centrality values
+
+communities:
+  description: "Detect subgroups of densely connected constructs"
+
+  traditional:
+    name: "TAM/UTAUT Core"
+    constructs: ["PE", "EE", "SI", "FC"]
+    color: "#2196F3"  # Blue
+    hypothesis: "Traditional constructs form coherent cluster"
+
+  ai_specific:
+    name: "AI-Specific"
+    constructs: ["TRU", "ANX", "TRA", "AUT"]
+    color: "#F44336"  # Red
+    hypothesis: "AI-specific constructs form distinct cluster"
+
+  mediating:
+    name: "Mediating/Outcome"
+    constructs: ["BI", "UB", "ATT", "SE"]
+    color: "#4CAF50"  # Green
+    hypothesis: "Outcome and mediating constructs cluster together"
+
+  detection_algorithm: "walktrap"
+    alternatives: ["walktrap", "louvain", "spinglass", "edge_betweenness"]
+    description: "Random walk-based community detection"
+    rationale: "Walktrap performs well on small networks (k=12 nodes)"
+    parameters:
+      steps: 4  # number of random walk steps
+
+  modularity:
+    description: "Quantifies quality of community structure"
+    formula: "Q = (1/2m) Σ [A_ij - (k_i*k_j)/2m] * δ(c_i, c_j)"
+    range: [-1, 1]
+    interpretation:
+      q_gt_0_3: "Significant community structure"
+      q_0_1_to_0_3: "Weak community structure"
+      q_lt_0_1: "No meaningful communities"
+
+  comparison:
+    hypothesis: "Do theoretical communities match detected communities?"
+    method: "Adjusted Rand Index (ARI) between theoretical and detected"
+    interpretation:
+      ari_1: "Perfect agreement"
+      ari_gt_0_8: "Strong agreement"
+      ari_0_5_to_0_8: "Moderate agreement"
+      ari_lt_0_5: "Weak/no agreement"
+
+bridge_analysis:
+  enabled: true
+  description: "Identify constructs bridging theoretical communities (traditional vs. AI-specific)"
+
+  measures:
+    - "bridgeStrength"
+    - "bridgeBetweenness"
+    - "bridgeCloseness"
+    - "bridgeExpectedInfluence"
+
+  bridge_strength:
+    description: "Sum of absolute edge weights connecting node to other communities"
+    formula: "BS_i = Σ |w_ij| for j in other communities"
+    interpretation: "How strongly node connects different communities"
+    expected_bridges: ["ATT", "BI", "SE"]
+    hypothesis: "ATT and BI bridge traditional and AI-specific factors"
+
+  bridge_betweenness:
+    description: "Shortest paths between communities passing through node"
+    interpretation: "Critical connectors between theoretical domains"
+
+  bridge_expected_influence:
+    description: "Signed sum of edges connecting to other communities"
+    interpretation: "Net bridging influence (accounts for negative edges)"
+
+comparison:
+  enabled: true
+  description: "Network Comparison Test (NCT) across educational subgroups"
+
+  subgroups:
+    - name: "Students"
+      filter: "user_role == 'student'"
+      expected_n_studies: 20
+      hypothesis: "Students show stronger SI→BI (peer influence), stronger ANX→BI (academic integrity concerns)"
+
+    - name: "Instructors"
+      filter: "user_role == 'instructor'"
+      expected_n_studies: 18
+      hypothesis: "Instructors show stronger ATT→BI (Scherer finding), stronger TRU→BI (pedagogical concerns)"
+
+    - name: "K-12"
+      filter: "education_level == 'K-12'"
+      expected_n_studies: 12
+      hypothesis: "K-12 shows stronger FC→UB (institutional control), weaker autonomy"
+
+    - name: "Higher Education"
+      filter: "education_level == 'undergraduate' OR education_level == 'graduate'"
+      expected_n_studies: 28
+      hypothesis: "Higher ed shows stronger SE→BI (more autonomy), weaker SI→BI"
+
+    - name: "Generative AI (Educational)"
+      filter: "ai_tool_type == 'chatbot_LLM' OR ai_tool_type == 'writing_assistant'"
+      expected_n_studies: 15
+      hypothesis: "Generative AI shows stronger ANX→BI (academic integrity), TRU→BI (accuracy concerns)"
+
+    - name: "Adaptive Learning Systems"
+      filter: "ai_tool_type == 'ITS' OR ai_tool_type == 'adaptive_learning'"
+      expected_n_studies: 12
+      hypothesis: "Adaptive systems show stronger PE→BI (learning effectiveness), weaker ANX→BI"
+
+  n_permutations: 1000
+    description: "Number of permutations for NCT hypothesis tests"
+    note: "Higher permutations (5000) increase precision but computation time"
+
+  test_edges:
+    enabled: true
+    description: "Test if specific edges differ between groups"
+    method: "Permutation test for each edge weight"
+    output: "P-value for H0: edge_weight_group1 = edge_weight_group2"
+
+  test_centrality:
+    enabled: true
+    description: "Test if centrality measures differ between groups"
+    measures: ["Strength", "ExpectedInfluence"]
+    output: "P-value for H0: centrality_group1 = centrality_group2"
+
+  test_global_strength:
+    enabled: true
+    description: "Test if overall network connectivity differs"
+    metric: "Sum of absolute edge weights across entire network"
+    output: "P-value for H0: global_strength_group1 = global_strength_group2"
+
+  test_network_structure:
+    enabled: true
+    description: "Test if network structure (edge pattern) differs"
+    metric: "Maximum difference in edge weights (M statistic)"
+    output: "P-value for H0: network_structure_group1 = network_structure_group2"
+
+visualization:
+  layout: "spring"
+    alternatives: ["spring", "circle", "tree", "mds"]
+    description: "Fruchterman-Reingold force-directed layout"
+    rationale: "Spring layout positions nodes based on edge weights (closer = stronger connection)"
+
+  edge_color_positive: "#2196F3"  # Blue
+  edge_color_negative: "#F44336"  # Red
+
+  edge_width_max: 5
+    description: "Maximum edge width (for strongest edge)"
+    scaling: "Proportional to absolute partial correlation"
+
+  edge_transparency:
+    enabled: true
+    method: "Alpha channel proportional to edge weight"
+    range: [0.2, 1.0]
+    rationale: "Weak edges are faded; strong edges opaque"
+
+  node_colors:
+    traditional: "#42A5F5"       # Light Blue (PE, EE, SI, FC)
+    ai_specific: "#EF5350"       # Light Red (TRU, ANX, TRA, AUT)
+    mediating: "#66BB6A"         # Light Green (BI, UB, ATT, SE)
+
+  node_size_range: [4, 12]
+    description: "Min and max node size"
+    scaling: "Proportional to Strength centrality"
+    rationale: "Central nodes are larger"
+
+  labels:
+    enabled: true
+    position: "center"
+    font_size: 10
+    abbreviations: true  # Use PE, EE, etc. (not full names)
+
+  legend:
+    enabled: true
+    position: "bottomright"
+    include:
+      - "Node colors (theoretical communities)"
+      - "Edge colors (positive/negative)"
+      - "Edge width (partial correlation strength)"
+
+  output:
+    directory: "./analysis/network/figures/"
+    formats: ["png", "pdf"]
+    dpi: 300
+    filenames:
+      network_plot: "network_full.png"
+      centrality_plot: "centrality_indices.png"
+      community_plot: "communities_detected.png"
+      bridge_plot: "bridge_centrality.png"
+      comparison_plot: "network_comparison_{subgroup}.png"
+
+software:
+  primary: "R (qgraph, bootnet, NetworkComparisonTest)"
+
+  packages:
+    - package: "qgraph"
+      version: "1.9.5 or higher"
+      purpose: "Network estimation and visualization"
+
+    - package: "bootnet"
+      version: "1.5.0 or higher"
+      purpose: "Bootstrap stability analysis"
+
+    - package: "NetworkComparisonTest"
+      version: "2.2.1 or higher"
+      purpose: "Network invariance testing across groups"
+
+    - package: "igraph"
+      version: "1.4.0 or higher"
+      purpose: "Community detection algorithms"
+
+    - package: "psychonetrics"
+      version: "0.11 or higher"
+      purpose: "Alternative: psychometric network modeling"
+
+  code_example: |
+    library(qgraph)
+    library(bootnet)
+    library(NetworkComparisonTest)
+
+    # Load pooled correlation matrix from TSSEM Stage 1
+    cor_pooled <- as.matrix(stage1_output$pooled_correlation)
+
+    # Estimate network
+    network <- qgraph(cor_pooled,
+                      graph = "glasso",
+                      sampleSize = meta_n,
+                      tuning = 0.5,  # EBIC gamma
+                      layout = "spring",
+                      labels = construct_names,
+                      groups = communities,
+                      color = community_colors)
+
+    # Centrality
+    centrality <- centralityPlot(network,
+                                 include = c("Strength", "Betweenness",
+                                            "Closeness", "ExpectedInfluence"))
+
+    # Bootstrap stability
+    boot_results <- bootnet(network,
+                           nBoots = 1000,
+                           type = "case",
+                           statistics = c("strength", "expectedInfluence"))
+
+    # CS-coefficient
+    corStability(boot_results)
+
+    # Network Comparison Test
+    nct_result <- NCT(network_generative, network_predictive,
+                      it = 1000,
+                      test.edges = TRUE,
+                      test.centrality = TRUE,
+                      centrality = c("strength", "expectedInfluence"))
+
+interpretation:
+  centrality_findings:
+    - "Rank constructs by Strength centrality in educational AI adoption"
+    - "High Strength → hub nodes (BI, ATT, TRU expected based on Scherer findings)"
+    - "High Betweenness → bridge nodes (ATT, SE expected to connect traditional and AI-specific domains)"
+
+  community_findings:
+    - "Do detected communities match theoretical in educational context?"
+    - "If not, what alternative structure emerges in education?"
+    - "Implications for theory (integrated vs. distinct AI-specific domain in education)"
+
+  network_comparison:
+    - "Do student vs. instructor networks differ?"
+    - "Do K-12 vs. higher education networks differ?"
+    - "Do generative AI vs. adaptive learning system networks differ?"
+    - "Which edges differ across educational subgroups (NCT edge-level test)?"
+    - "Which constructs show different centrality for students vs. instructors?"
+
+  integration_with_sem:
+    - "Network analysis = exploratory; SEM = confirmatory"
+    - "Use network centrality to prioritize paths in SEM for educational AI"
+    - "Discrepancies suggest misspecification (add/remove paths in education models)"
+    - "Bridge constructs guide integration of traditional + AI-specific domains in education"
+    - "Scherer et al. findings suggest ATT→BI may be strongest path (test in network)"
+
+limitations:
+  - "Undirected network (no causality); complements but doesn't replace SEM"
+  - "Partial correlations ≠ regression coefficients (different conditioning)"
+  - "Regularization (LASSO) may over-shrink weak edges"
+  - "Centrality stability depends on sample size (may be unstable with k < 20 studies)"
+  - "Community detection sensitive to algorithm choice (run multiple algorithms)"
+
+best_practices:
+  - "Always report CS-coefficient (stability) with centrality indices"
+  - "Use Expected Influence (not Strength) when negative edges present"
+  - "Run sensitivity analysis with different gamma values (0.25, 0.5, 0.75)"
+  - "Compare to theoretical structure (don't rely solely on data-driven communities)"
+  - "Integrate findings with SEM (network as exploratory, SEM as confirmatory)"
+
+references:
+  - "Borsboom, D., & Cramer, A. O. J. (2013). Network analysis: An integrative approach to the structure of psychopathology. Annual Review of Clinical Psychology, 9, 91-121."
+  - "Epskamp, S., Borsboom, D., & Fried, E. I. (2018). Estimating psychological networks and their accuracy. Behavior Research Methods, 50(1), 195-212."
+  - "Epskamp, S., Cramer, A. O. J., Waldorp, L. J., Schmittmann, V. D., & Borsboom, D. (2012). qgraph: Network visualizations of relationships in psychometric data. Journal of Statistical Software, 48(4), 1-18."
+  - "Foygel, R., & Drton, M. (2010). Extended Bayesian information criteria for Gaussian graphical models. NIPS, 604-612."
+  - "Jones, P. J., et al. (2021). Bridge centrality: A network approach to understanding comorbidity. Multivariate Behavioral Research, 56(2), 353-367."
+  - "van Borkulo, C. D., et al. (2022). Comparing network structures on three aspects: A permutation test. Psychological Methods. Advance online publication."
+
+version: "1.0.0"
+date_created: "2026-02-16"
+last_modified: "2026-02-16"

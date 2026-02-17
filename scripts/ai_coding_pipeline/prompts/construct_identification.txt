@@ -1,0 +1,115 @@
+You are an expert in technology acceptance research and AI adoption theories.
+
+Your task is to map author-reported construct names to ONE of the 12 standard constructs in our meta-analytic framework.
+
+STANDARD CONSTRUCTS (with common aliases):
+
+1. **PE (Performance Expectancy)**
+   - Also called: Perceived Usefulness, Perceived Benefits, Outcome Expectations, Job Performance, Productivity
+   - Definition: Degree to which using AI is expected to improve job performance or outcomes
+
+2. **EE (Effort Expectancy)**
+   - Also called: Perceived Ease of Use, Complexity (reverse), Ease of Learning, User-Friendliness
+   - Definition: Degree of ease associated with using AI technology
+
+3. **SI (Social Influence)**
+   - Also called: Subjective Norm, Social Factors, Peer Influence, Social Pressure
+   - Definition: Extent to which important others influence one's decision to use AI
+
+4. **FC (Facilitating Conditions)**
+   - Also called: Organizational Support, Technical Support, Resource Availability, Infrastructure
+   - Definition: Organizational and technical resources available to support AI use
+
+5. **BI (Behavioral Intention)**
+   - Also called: Intention to Use, Adoption Intention, Usage Intention, Willingness to Use
+   - Definition: Intention to use or continue using AI technology
+
+6. **UB (Use Behavior)**
+   - Also called: Actual Use, Usage Behavior, Adoption Behavior, System Use, Actual Usage
+   - Definition: Actual use or adoption of AI technology
+
+7. **ATT (Attitude)**
+   - Also called: Attitude Toward AI, General Attitude, Evaluative Beliefs, Affective Evaluation
+   - Definition: Overall evaluative judgment about using AI
+
+8. **SE (Self-Efficacy)**
+   - Also called: Computer Self-Efficacy, AI Self-Efficacy, Perceived Competence, Confidence
+   - Definition: Belief in one's capability to successfully use AI
+
+9. **TRU (AI Trust)**
+   - Also called: Trust in AI, AI Trustworthiness, Reliance, Dependability, Faith in AI
+   - Definition: Willingness to rely on AI decisions and recommendations
+
+10. **ANX (AI Anxiety)**
+    - Also called: Techno-Anxiety, Computer Anxiety, Fear of AI, Technology Anxiety, AI Apprehension
+    - Definition: Anxiety or concern about using or being replaced by AI
+
+11. **TRA (AI Transparency)**
+    - Also called: Explainability, Interpretability, Algorithm Transparency, Black Box (reverse), Opacity (reverse)
+    - Definition: Perceived transparency and explainability of AI decision-making processes
+
+12. **AUT (Perceived AI Autonomy)**
+    - Also called: AI Agency, Anthropomorphism, AI Independence, Autonomous Capability
+    - Definition: Extent to which AI is perceived as autonomous or having agency
+
+MAPPING GUIDELINES:
+
+1. **Look for conceptual alignment**, not just name matching
+   - Focus on the definition and items used to measure the construct
+   - Consider the theoretical framework cited by authors
+
+2. **Confidence levels**:
+   - **Exact**: Perfect name match or identical definition
+   - **High**: Clear conceptual match, same theoretical origin (e.g., UTAUT PE → PE)
+   - **Moderate**: Similar concept but different emphasis or context
+   - **Low**: Ambiguous fit, could map to multiple constructs, or poor alignment
+
+3. **Special cases**:
+   - If construct combines elements of multiple standards (e.g., "AI Trust and Reliance"), choose the PRIMARY focus
+   - If construct is reverse-coded (e.g., "AI Distrust"), map to the standard construct and note the reversal
+   - If construct cannot be mapped to any of the 12, mark confidence as "low" and explain
+
+4. **Context matters**:
+   - In TAM/UTAUT studies: "Perceived Usefulness" → PE, "Perceived Ease of Use" → EE
+   - In AI-specific studies: "Trust" likely → TRU, "Anxiety" likely → ANX
+   - Use the study description to understand which framework the authors are using
+
+OUTPUT FORMAT:
+
+Return a JSON object:
+
+{
+  "original_name": "exact name from paper",
+  "mapped_construct": "ABBREVIATION",
+  "confidence": "exact|high|moderate|low",
+  "rationale": "Brief explanation of mapping decision (1-2 sentences)"
+}
+
+EXAMPLES:
+
+Input: "Perceived Usefulness"
+Output:
+{
+  "original_name": "Perceived Usefulness",
+  "mapped_construct": "PE",
+  "confidence": "exact",
+  "rationale": "Perceived Usefulness is the original TAM term for Performance Expectancy."
+}
+
+Input: "Algorithm Aversion"
+Output:
+{
+  "original_name": "Algorithm Aversion",
+  "mapped_construct": "ANX",
+  "confidence": "high",
+  "rationale": "Algorithm aversion reflects anxiety or negative affect toward AI/algorithms, conceptually aligned with AI Anxiety."
+}
+
+Input: "Organizational Readiness"
+Output:
+{
+  "original_name": "Organizational Readiness",
+  "mapped_construct": "FC",
+  "confidence": "moderate",
+  "rationale": "Organizational readiness encompasses resources and support structures, aligning with Facilitating Conditions though with broader scope."
+}

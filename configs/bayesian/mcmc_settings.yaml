@@ -1,0 +1,369 @@
+# MCMC Settings for Bayesian MASEM
+# Markov Chain Monte Carlo configuration for Stan/blavaan
+
+mcmc:
+  description: "MCMC sampling parameters for Bayesian meta-analytic SEM"
+  software: "Stan 2.33+ via blavaan (R package)"
+  algorithm: "NUTS (No-U-Turn Sampler)"
+
+sampling:
+  n_chains: 4
+  n_warmup: 5000       # burn-in iterations per chain (discarded)
+  n_iter: 15000        # total iterations per chain
+  n_sampling: 10000    # post-warmup samples per chain (15000 - 5000)
+  thin: 1              # thinning interval (1 = no thinning)
+  seed: 42             # random seed for reproducibility
+
+  total_samples: 40000  # n_chains × n_sampling = 4 × 10000
+
+  notes:
+    - "Each chain runs 15,000 iterations: 5,000 warmup + 10,000 sampling"
+    - "Total posterior samples = 40,000 (4 chains × 10,000)"
+    - "No thinning; modern MCMC diagnostics prefer full chains"
+
+stan_control:
+  adapt_delta: 0.95
+    description: "Target acceptance probability for NUTS"
+    default: 0.80
+    increased_to: 0.95
+    rationale: "Higher adapt_delta reduces divergent transitions at cost of slower sampling"
+    note: "Increase to 0.99 if divergent transitions persist"
+
+  max_treedepth: 12
+    description: "Maximum tree depth for NUTS trajectory"
+    default: 10
+    increased_to: 12
+    rationale: "Deeper trees improve exploration in complex models (SEM with 12 constructs)"
+    note: "Warnings about max_treedepth indicate need to increase further"
+
+  stepsize: null
+    description: "Initial step size (auto-tuned if null)"
+    recommendation: "Leave at null for automatic adaptation"
+
+  metric: "diag_e"
+    description: "Mass matrix specification"
+    options:
+      - "unit_e: Identity matrix (fastest, least adaptive)"
+      - "diag_e: Diagonal matrix (default; good balance)"
+      - "dense_e: Full matrix (slowest, most adaptive)"
+    selected: "diag_e"
+    rationale: "Diagonal sufficient for most SEM models; faster than dense_e"
+
+initialization:
+  method: "random"
+  range: [-2, 2]
+  alternative: "user-specified initial values for path coefficients"
+  notes:
+    - "Random initialization from Uniform(-2, 2)"
+    - "Can specify starting values if convergence issues arise"
+    - "Multiple chains with dispersed inits test convergence"
+
+convergence_criteria:
+  rhat_threshold: 1.01
+    description: "Gelman-Rubin R-hat convergence diagnostic"
+    target: "< 1.01 for all parameters"
+    interpretation:
+      rhat_lt_1_01: "Excellent convergence"
+      rhat_1_01_to_1_05: "Acceptable; monitor closely"
+      rhat_gt_1_05: "Poor convergence; increase iterations or check model specification"
+    action_if_violated: "Increase n_iter by 50%, re-run sampling"
+
+  ess_bulk_minimum: 400
+    description: "Effective sample size for bulk of posterior"
+    target: ">= 400 for all parameters"
+    interpretation: "Number of independent samples (accounting for autocorrelation)"
+    note: "ESS_bulk < 400 indicates high autocorrelation; increase n_iter"
+
+  ess_tail_minimum: 400
+    description: "Effective sample size for tails of posterior (5% and 95% quantiles)"
+    target: ">= 400 for all parameters"
+    interpretation: "Ensures stable estimates of credible interval bounds"
+    note: "ESS_tail < 400 → increase n_iter or increase adapt_delta"
+
+  divergent_transitions_max: 0
+    description: "Number of divergent transitions allowed"
+    target: "0 divergent transitions"
+    interpretation: "Divergences indicate biased sampling (geometric issues in posterior)"
+    action_if_violated:
+      - "Increase adapt_delta to 0.99"
+      - "Reparameterize model (non-centered parameterization)"
+      - "Check for prior-likelihood conflict"
+      - "Simplify model if necessary"
+
+  max_treedepth_warnings: 0
+    description: "Number of iterations hitting max_treedepth"
+    target: "< 1% of iterations"
+    action_if_violated: "Increase max_treedepth to 15"
+
+diagnostics:
+  run_diagnostics: true
+
+  trace_plots:
+    enabled: true
+    output_dir: "./analysis/bayesian/diagnostics/trace_plots/"
+    format: "png"
+    dpi: 300
+    parameters_to_plot: "all"
+    description: "Visual inspection of chain mixing and stationarity"
+    good_trace: "Chains overlap completely, no trends, caterpillar-like"
+    bad_trace: "Chains separate, trends, stuck values"
+
+  density_plots:
+    enabled: true
+    output_dir: "./analysis/bayesian/diagnostics/density_plots/"
+    format: "png"
+    show_prior: true
+    show_posterior: true
+    overlay_chains: true
+    description: "Posterior distribution shapes; compare to priors"
+
+  autocorrelation_plots:
+    enabled: true
+    max_lag: 50
+    output_dir: "./analysis/bayesian/diagnostics/autocorr_plots/"
+    description: "Autocorrelation function (ACF) plots"
+    interpretation: "ACF should drop to near-zero within 10-20 lags"
+    action_if_high: "Consider thinning (thin=2 or thin=5)"
+
+  pairs_plots:
+    enabled: false  # computationally expensive for large models
+    parameters_subset: ["beta_PE_BI", "beta_TRU_BI", "beta_ANX_BI", "tau"]
+    description: "Bivariate scatter plots for parameter correlations"
+    note: "Enable for focal parameters only; full pairs plot with 35 parameters is unwieldy"
+
+  geweke_test:
+    enabled: true
+    first_fraction: 0.10
+    last_fraction: 0.50
+    description: "Geweke convergence diagnostic (first 10% vs. last 50% of chain)"
+    null_hypothesis: "Means of two windows are equal (convergence achieved)"
+    interpretation:
+      p_gt_0_05: "No evidence of non-convergence"
+      p_lt_0_05: "Possible non-convergence; inspect trace plots"
+
+  heidel_welch_test:
+    enabled: true
+    description: "Heidelberger-Welch stationarity and halfwidth test"
+    stationarity_test: "Tests if chain has reached stationarity"
+    halfwidth_test: "Tests if halfwidth of 95% CI is <10% of mean"
+    interpretation:
+      pass_both: "Chain converged and precise"
+      fail_stationarity: "Increase warmup iterations"
+      fail_halfwidth: "Increase sampling iterations"
+
+  posterior_predictive_check:
+    enabled: true
+    n_replications: 1000
+    description: "Generate replicated datasets from posterior; compare to observed"
+    metrics:
+      - "Mean correlation per construct pair"
+      - "SD of correlations"
+      - "Min/max correlations"
+    output: "./analysis/bayesian/diagnostics/ppc_plots/"
+    interpretation: "Observed data should fall within 95% of replicated data"
+
+sensitivity_analysis:
+  run_diffuse_priors: true
+    description: "Re-run model with non-informative priors to assess prior influence"
+    diffuse_prior_specification:
+      distribution: "normal"
+      mean: 0.0
+      sd: 10.0
+      note: "Effectively flat prior; data dominate"
+
+    comparison_metrics:
+      - "Posterior mean difference (informative vs. diffuse)"
+      - "Posterior SD difference"
+      - "95% credible interval overlap"
+      - "Bayes Factor for informative vs. diffuse"
+
+    interpretation:
+      small_difference: "Prior has minimal influence; conclusions robust"
+      large_difference: "Prior influential; interpret with caution"
+
+  prior_predictive_check:
+    enabled: true
+    description: "Sample from prior (no data) to assess prior plausibility"
+    n_samples: 10000
+    check:
+      - "Do prior predictions generate plausible correlation matrices?"
+      - "Are sampled correlations in [-1, 1]?"
+      - "Is correlation matrix positive-definite?"
+    action_if_implausible: "Revise priors or use constrained parameterization"
+
+output:
+  save_posterior_samples: true
+  output_format: "rds"  # R binary format
+  output_path: "./analysis/bayesian/posterior_samples/"
+  include_warmup: false
+  include_metadata: true
+
+  posterior_summary:
+    save: true
+    format: "csv"
+    path: "./analysis/bayesian/posterior_summary.csv"
+    include:
+      - "mean"
+      - "sd"
+      - "2.5%"   # lower bound 95% CI
+      - "50%"    # median
+      - "97.5%"  # upper bound 95% CI
+      - "Rhat"
+      - "ESS_bulk"
+      - "ESS_tail"
+
+  save_diagnostics: true
+  diagnostics_path: "./analysis/bayesian/diagnostics/diagnostics_summary.csv"
+  include:
+    - "Rhat for all parameters"
+    - "ESS_bulk and ESS_tail"
+    - "Number of divergent transitions"
+    - "Number of max_treedepth warnings"
+    - "Geweke test p-values"
+    - "Heidel-Welch test results"
+
+  save_bayes_factors:
+    enabled: true
+    method: "bridge_sampling"
+    path: "./analysis/bayesian/bayes_factors/"
+    comparisons:
+      - "Model 1 vs. Model 2"
+      - "Model 2 vs. Model 3"
+      - "Informative priors vs. Diffuse priors"
+    interpretation:
+      bf_1_to_3: "Anecdotal evidence"
+      bf_3_to_10: "Moderate evidence"
+      bf_10_to_30: "Strong evidence"
+      bf_30_to_100: "Very strong evidence"
+      bf_gt_100: "Extreme evidence"
+
+figures:
+  output_dir: "./analysis/bayesian/figures/"
+  formats: ["png", "pdf"]
+  dpi: 300
+
+  prior_posterior_comparison:
+    enabled: true
+    plot_type: "density overlay"
+    description: "Overlay prior and posterior distributions for each parameter"
+    highlight_paths:
+      - "PE_to_BI (informative prior)"
+      - "TRU_to_BI (weakly informative prior)"
+      - "ANX_to_BI (weakly informative prior)"
+
+  forest_plot:
+    enabled: true
+    show_credible_intervals: true
+    ci_level: 0.95
+    sort_by: "effect_size"
+    description: "Forest plot of all path coefficients with 95% CIs"
+
+  caterpillar_plot:
+    enabled: true
+    description: "Caterpillar plot (ranked parameters by estimate with CIs)"
+    include_parameters: "all_path_coefficients"
+
+computational:
+  parallel_chains: true
+    description: "Run chains in parallel"
+    n_cores: 4
+    note: "Requires 4 CPU cores; adjust based on available hardware"
+
+  memory_per_chain: "2GB"
+    description: "Estimated memory requirement per chain"
+    total_memory: "8GB minimum"
+    recommendation: "16GB RAM for smooth operation"
+
+  estimated_runtime:
+    per_chain: "30-60 minutes"
+    total_parallel: "30-60 minutes (if 4 cores available)"
+    total_sequential: "2-4 hours (if 1 core)"
+    note: "Runtime depends on model complexity, sample size, and hardware"
+
+  checkpointing:
+    enabled: false
+    note: "Stan does not support native checkpointing; consider save-and-resume wrapper if needed"
+
+troubleshooting:
+  divergent_transitions:
+    symptoms: "Warning: X divergent transitions after warmup"
+    causes:
+      - "Stiff posterior geometry (narrow ridges, funnels)"
+      - "Prior-likelihood conflict"
+      - "Model misspecification"
+    solutions:
+      - "Increase adapt_delta to 0.99"
+      - "Reparameterize (non-centered parameterization for hierarchical components)"
+      - "Tighten priors (reduce prior SD)"
+      - "Check for identification issues"
+
+  low_ess:
+    symptoms: "ESS_bulk or ESS_tail < 400"
+    causes: "High autocorrelation between samples"
+    solutions:
+      - "Increase n_iter (double to 30,000)"
+      - "Increase adapt_delta (improves sampling efficiency)"
+      - "Consider thinning (thin=2) as last resort"
+
+  high_rhat:
+    symptoms: "Rhat > 1.01 for some parameters"
+    causes: "Chains have not converged to same distribution"
+    solutions:
+      - "Increase n_warmup and n_iter (double both)"
+      - "Check initialization (dispersed inits)"
+      - "Inspect trace plots for stuck chains"
+      - "Simplify model if convergence persistently poor"
+
+  max_treedepth_warnings:
+    symptoms: "X transitions exceeded max_treedepth"
+    causes: "Posterior has regions requiring deep exploration"
+    solutions:
+      - "Increase max_treedepth to 15 or 20"
+      - "This increases runtime but improves exploration"
+
+reporting:
+  convergence_statement:
+    template: |
+      "All parameters showed Rhat < 1.01 (range: X.XX - X.XX), indicating convergence across chains.
+      Effective sample sizes exceeded 400 for bulk (range: XXX - XXXX) and tail (range: XXX - XXXX) estimates.
+      No divergent transitions or max_treedepth warnings were observed, confirming reliable posterior sampling."
+
+  prior_specification:
+    template: |
+      "Informative priors for traditional TAM/UTAUT paths were based on Sabherwal et al. (2006) meta-analysis
+      (e.g., PE→BI: Normal(0.52, 0.05)). Weakly informative priors (Normal(0, 0.20)) were used for AI-specific
+      paths lacking prior IT literature (TRU→BI, ANX→BI, TRA→TRU, AUT→ANX). Sensitivity analysis with
+      diffuse priors (Normal(0, 10)) confirmed robustness of conclusions (see Supplementary Table X)."
+
+  bayes_factor_interpretation:
+    template: |
+      "Bayes Factors compared posterior estimates to Sabherwal et al. (2006) priors. For PE→BI, BF01 = X.XX
+      (evidence ratio X:1) indicated [minimal/moderate/strong] shift from general IT context to AI context.
+      [Interpret substantively based on BF values]."
+
+software_versions:
+  r_version: "4.3.0 or higher"
+  stan_version: "2.33.0 or higher"
+  blavaan_version: "0.5-0 or higher"
+  rstan_version: "2.26.0 or higher"
+  cmdstanr_version: "0.7.0 or higher (alternative to rstan)"
+
+  installation_notes: |
+    # Install blavaan and dependencies
+    install.packages("blavaan")
+    install.packages("rstan")
+    install.packages("bridgesampling")  # for Bayes Factors
+    install.packages("bayesplot")       # for diagnostic plots
+    install.packages("posterior")       # for ESS, Rhat
+
+references:
+  - "Betancourt, M. (2017). A conceptual introduction to Hamiltonian Monte Carlo. arXiv:1701.02434."
+  - "Gelman, A., et al. (2013). Bayesian Data Analysis (3rd ed.). CRC Press."
+  - "Hoffman, M. D., & Gelman, A. (2014). The No-U-Turn Sampler. Journal of Machine Learning Research, 15, 1593-1623."
+  - "Merkle, E. C., et al. (2021). blavaan: Bayesian Structural Equation Models via Parameter Expansion. Journal of Statistical Software, 100(6), 1-31."
+  - "Stan Development Team. (2023). Stan Modeling Language Users Guide and Reference Manual, Version 2.33."
+  - "Vehtari, A., et al. (2021). Rank-normalization, folding, and localization: An improved R-hat for assessing convergence of MCMC. Bayesian Analysis, 16(2), 667-718."
+
+version: "1.0.0"
+date_created: "2026-02-16"
+last_modified: "2026-02-16"

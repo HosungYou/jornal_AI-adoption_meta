@@ -1,0 +1,70 @@
+project:
+  name: "AI Adoption MASEM"
+  version: "1.0"
+  description: "Meta-Analytic SEM of AI adoption research"
+
+constructs:
+  count: 12
+  names: [PE, EE, SI, FC, BI, UB, ATT, SE, TRU, ANX, TRA, AUT]
+  full_names:
+    PE: "Performance Expectancy"
+    EE: "Effort Expectancy"
+    SI: "Social Influence"
+    FC: "Facilitating Conditions"
+    BI: "Behavioral Intention"
+    UB: "Use Behavior"
+    ATT: "Attitude"
+    SE: "Self-Efficacy"
+    TRU: "AI Trust"
+    ANX: "AI Anxiety"
+    TRA: "AI Transparency"
+    AUT: "Perceived AI Autonomy"
+
+models:
+  claude:
+    model: "claude-sonnet-4-5-20250929"
+    provider: "anthropic"
+    max_tokens: 4096
+    temperature: 0.0
+  gpt4o:
+    model: "gpt-4o"
+    provider: "openai"
+    max_tokens: 4096
+    temperature: 0.0
+  groq:
+    model: "llama-3.3-70b-versatile"
+    provider: "groq"
+    max_tokens: 4096
+    temperature: 0.0
+
+rag:
+  embedding_model: "all-MiniLM-L6-v2"
+  collection_name: "ai_adoption_papers"
+  chunk_size: 1500
+  chunk_overlap: 200
+  persist_directory: "./chroma_db"
+
+quality_targets:
+  kappa_categorical: 0.85
+  kappa_ordinal: 0.80
+  icc_numerical: 0.95
+  mae_correlation: 0.03
+  human_sample_pct: 0.20
+
+beta_conversion:
+  enabled: true
+  method: "peterson_brown_2005"
+  formula: "r = beta + 0.05 * lambda"
+
+screening:
+  dimensions: ["population", "intervention", "outcome", "study_design", "correlation_reporting", "language"]
+
+paths:
+  pdfs: "./pdfs"
+  raw_data: "./data/00_raw"
+  extracted: "./data/01_extracted"
+  verified: "./data/02_verified"
+  pooled: "./data/03_pooled"
+  final: "./data/04_final"
+  logs: "./scripts/ai_coding_pipeline/logs"
+  prompts: "./scripts/ai_coding_pipeline/prompts"

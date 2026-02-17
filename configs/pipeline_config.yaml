@@ -1,0 +1,214 @@
+# Master AI Coding Pipeline Configuration
+# AI Adoption MASEM Study
+
+pipeline:
+  name: "AI Adoption MASEM Pipeline"
+  version: "1.0.0"
+  description: "Six-phase AI-assisted extraction pipeline with human verification"
+  working_directory: "./scripts/ai_coding_pipeline"
+
+phases:
+  phase0_rag:
+    enabled: true
+    description: "Retrieval-Augmented Generation: Chunk PDFs and create vector database"
+    embedding_model: "all-MiniLM-L6-v2"
+    chunk_size: 1500
+    chunk_overlap: 200
+    max_chunks_per_study: 100
+    vector_db: "faiss"
+    similarity_metric: "cosine"
+    top_k_retrieval: 5
+
+  phase1_extraction:
+    enabled: true
+    description: "Primary AI extraction of correlation matrices and metadata"
+    primary_model: "claude-sonnet-4-5-20250929"
+    max_retries: 3
+    retry_delay_seconds: 2
+    confidence_threshold: 0.80
+    temperature: 0.0
+    max_tokens: 8000
+    timeout_seconds: 120
+    batch_size: 5
+    rate_limit_rpm: 50
+    prompts:
+      correlation_extraction: "prompts/phase1_correlation_extraction.md"
+      metadata_extraction: "prompts/phase1_metadata_extraction.md"
+      construct_identification: "prompts/phase1_construct_identification.md"
+
+  phase2_mapping:
+    enabled: true
+    description: "Map study-specific constructs to standardized 12-construct taxonomy"
+    model: "claude-sonnet-4-5-20250929"
+    confidence_levels: ["exact", "high", "moderate", "low"]
+    auto_accept_threshold: "high"
+    manual_review_threshold: "moderate"
+    crosswalk_table: "supplementary/construct_mapping/TAM_UTAUT_AI_construct_crosswalk.md"
+    temperature: 0.1
+    max_tokens: 4000
+    prompts:
+      construct_mapping: "prompts/phase2_construct_mapping.md"
+
+  phase3_consensus:
+    enabled: true
+    description: "Multi-model consensus extraction for validation"
+    models:
+      - name: "claude-sonnet-4-5-20250929"
+        provider: "anthropic"
+        weight: 1.0
+      - name: "gpt-4o"
+        provider: "openai"
+        weight: 1.0
+      - name: "llama-3.3-70b-versatile"
+        provider: "groq"
+        weight: 1.0
+    agreement_threshold: 2
+    temperature: 0.0
+    max_tokens: 6000
+    tie_breaking: "human_review"
+    prompts:
+      consensus_extraction: "prompts/phase3_consensus_extraction.md"
+
+  phase4_sampling:
+    enabled: true
+    description: "Stratified sampling for human verification"
+    sample_pct: 0.20
+    stratify_by:
+      - "pub_year_tertile"
+      - "ai_type"
+      - "region"
+    minimum_per_stratum: 2
+    random_seed: 42
+    replacement: false
+
+  phase5_resolution:
+    enabled: true
+    description: "Human adjudication of discrepancies"
+    priority_order: ["original_text", "human", "ai_consensus"]
+    discrepancy_threshold: 0.10
+    require_dual_coding: true
+    senior_author_review: true
+    prompts:
+      discrepancy_summary: "prompts/phase5_discrepancy_summary.md"
+
+  phase6_qa:
+    enabled: true
+    description: "Automated quality assurance gates"
+    gates:
+      positive_definite:
+        enabled: true
+        method: "eigenvalue_check"
+        repair_method: "ridge_adjustment"
+        ridge_constant: 0.001
+      icr_thresholds:
+        enabled: true
+        cohens_kappa_minimum: 0.75
+        percent_agreement_minimum: 0.85
+      no_duplicates:
+        enabled: true
+        check_fields: ["study_id", "doi", "title"]
+      valid_constructs:
+        enabled: true
+        allowed_constructs: ["PE", "EE", "SI", "FC", "BI", "UB", "ATT", "SE", "TRU", "ANX", "TRA", "AUT"]
+      r_range:
+        enabled: true
+        min_r: -1.0
+        max_r: 1.0
+        flag_threshold: 0.95
+      consistent_n:
+        enabled: true
+        tolerance_pct: 0.05
+      missing_data_limit:
+        enabled: true
+        max_missing_pct: 0.50
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  console_output: true
+  file_output: true
+  file_path: "./scripts/ai_coding_pipeline/logs/pipeline.log"
+  rotation: "daily"
+  retention_days: 30
+
+error_handling:
+  continue_on_error: false
+  save_partial_results: true
+  error_report_path: "./scripts/ai_coding_pipeline/logs/errors.log"
+  notification_email: null
+
+cost_tracking:
+  enabled: true
+  output_file: "./scripts/ai_coding_pipeline/logs/cost_report.csv"
+  update_frequency: "per_study"
+  pricing:
+    # Pricing per million tokens (as of Feb 2026)
+    claude_input_per_m: 3.00
+    claude_output_per_m: 15.00
+    gpt4o_input_per_m: 2.50
+    gpt4o_output_per_m: 10.00
+    groq_input_per_m: 0.59
+    groq_output_per_m: 0.79
+  budget_limit_usd: 5000.00
+  alert_at_pct: 0.80
+
+output:
+  format: "csv"
+  compression: "none"
+  encoding: "utf-8"
+  destination: "./data/extractions/"
+  naming_convention: "phase{phase}_extractions_{timestamp}.csv"
+  include_metadata: true
+  include_provenance: true
+
+intermediate_files:
+  save: true
+  directory: "./scripts/ai_coding_pipeline/intermediate/"
+  cleanup_on_success: false
+
+audit:
+  enabled: true
+  log_all_api_calls: true
+  log_all_decisions: true
+  audit_trail_path: "./scripts/ai_coding_pipeline/logs/audit_trail.jsonl"
+  include_prompts: true
+  include_responses: true
+
+performance:
+  parallel_processing: true
+  max_workers: 4
+  chunk_processing: true
+  cache_embeddings: true
+  cache_directory: "./scripts/ai_coding_pipeline/cache/"
+
+validation:
+  schema_validation: true
+  schema_path: "./scripts/ai_coding_pipeline/schemas/extraction_schema.json"
+  data_type_checks: true
+  range_checks: true
+
+reporting:
+  progress_updates: true
+  update_frequency_seconds: 30
+  dashboard_enabled: false
+  final_report_path: "./scripts/ai_coding_pipeline/reports/final_report.html"
+
+# Model-specific configurations
+model_configs:
+  claude:
+    api_key_env: "ANTHROPIC_API_KEY"
+    base_url: "https://api.anthropic.com"
+    timeout: 120
+    max_retries: 3
+
+  openai:
+    api_key_env: "OPENAI_API_KEY"
+    base_url: "https://api.openai.com/v1"
+    timeout: 120
+    max_retries: 3
+
+  groq:
+    api_key_env: "GROQ_API_KEY"
+    base_url: "https://api.groq.com/openai/v1"
+    timeout: 60
+    max_retries: 3

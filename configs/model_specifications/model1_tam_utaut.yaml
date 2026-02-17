@@ -1,0 +1,252 @@
+# Model 1: TAM/UTAUT Core
+# Traditional technology acceptance paths only (Educational AI Adoption Context)
+
+model:
+  name: "TAM_UTAUT_Core"
+  label: "Model 1"
+  description: "Traditional technology acceptance model combining TAM and UTAUT paths without AI-specific extensions, applied to educational AI adoption (students and instructors)"
+  theoretical_basis:
+    - "Davis, F. D. (1989). Technology Acceptance Model"
+    - "Venkatesh, V., et al. (2003). Unified Theory of Acceptance and Use of Technology"
+    - "Scherer, R., et al. (2019). Teacher technology adoption meta-analysis"
+
+constructs:
+  exogenous:
+    - PE   # Performance Expectancy (Learning/Teaching Effectiveness)
+    - EE   # Effort Expectancy (Educational AI Ease of Use)
+    - SI   # Social Influence (Peer/Instructor Encouragement)
+    - FC   # Facilitating Conditions (Institutional AI Support)
+    - SE   # Self-Efficacy (Educational AI Self-Efficacy, exogenous in this model)
+  endogenous:
+    - BI   # Behavioral Intention (AI Adoption Intention in Education)
+    - UB   # Use Behavior (Actual Educational AI Use)
+    - ATT  # Attitude (Attitude Toward Educational AI)
+
+  # Constructs NOT included in Model 1
+  excluded:
+    - TRU  # AI Trust (Trust in Educational AI Accuracy)
+    - ANX  # AI Anxiety (Academic Integrity / AI Anxiety)
+    - TRA  # AI Transparency (Educational AI Explainability)
+    - AUT  # Perceived AI Autonomy (AI Decision Independence)
+
+paths:
+  # Core TAM/UTAUT paths
+  - from: PE
+    to: BI
+    label: "PE_to_BI"
+    hypothesis: "H1: Performance Expectancy positively predicts Behavioral Intention"
+    expected_sign: "positive"
+    theoretical_support: "TAM (Davis, 1989), UTAUT (Venkatesh et al., 2003)"
+
+  - from: EE
+    to: BI
+    label: "EE_to_BI"
+    hypothesis: "H2: Effort Expectancy positively predicts Behavioral Intention"
+    expected_sign: "positive"
+    theoretical_support: "TAM (Davis, 1989), UTAUT (Venkatesh et al., 2003)"
+
+  - from: SI
+    to: BI
+    label: "SI_to_BI"
+    hypothesis: "H3: Social Influence positively predicts Behavioral Intention"
+    expected_sign: "positive"
+    theoretical_support: "UTAUT (Venkatesh et al., 2003), TPB (Ajzen, 1991)"
+
+  - from: FC
+    to: UB
+    label: "FC_to_UB"
+    hypothesis: "H4: Facilitating Conditions positively predict Use Behavior"
+    expected_sign: "positive"
+    theoretical_support: "UTAUT (Venkatesh et al., 2003)"
+
+  - from: ATT
+    to: BI
+    label: "ATT_to_BI"
+    hypothesis: "H5: Attitude positively predicts Behavioral Intention"
+    expected_sign: "positive"
+    theoretical_support: "TAM (Davis, 1989), TPB (Ajzen, 1991)"
+
+  - from: BI
+    to: UB
+    label: "BI_to_UB"
+    hypothesis: "H6: Behavioral Intention positively predicts Use Behavior"
+    expected_sign: "positive"
+    theoretical_support: "TRA (Fishbein & Ajzen, 1975), TAM, UTAUT"
+
+  - from: EE
+    to: ATT
+    label: "EE_to_ATT"
+    hypothesis: "H7: Effort Expectancy positively predicts Attitude"
+    expected_sign: "positive"
+    theoretical_support: "TAM (Davis, 1989)"
+
+  - from: PE
+    to: ATT
+    label: "PE_to_ATT"
+    hypothesis: "H8: Performance Expectancy positively predicts Attitude"
+    expected_sign: "positive"
+    theoretical_support: "TAM (Davis, 1989)"
+
+covariances:
+  # Exogenous construct covariances (estimated freely)
+  - between: [PE, EE]
+    estimate: true
+  - between: [PE, SI]
+    estimate: true
+  - between: [PE, FC]
+    estimate: true
+  - between: [PE, SE]
+    estimate: true
+  - between: [EE, SI]
+    estimate: true
+  - between: [EE, FC]
+    estimate: true
+  - between: [EE, SE]
+    estimate: true
+  - between: [SI, FC]
+    estimate: true
+  - between: [SI, SE]
+    estimate: true
+  - between: [FC, SE]
+    estimate: true
+
+disturbances:
+  # Residual variances for endogenous variables (estimated)
+  - construct: BI
+    estimate: true
+  - construct: UB
+    estimate: true
+  - construct: ATT
+    estimate: true
+
+parameters:
+  n_paths: 8
+  n_covariances: 10  # exogenous construct covariances
+  n_disturbances: 3  # endogenous residual variances
+  n_free_parameters: 21  # total free parameters
+  df: null  # calculated at runtime based on observed correlations
+
+identification:
+  status: "over-identified"
+  method: "recursive model with exogenous covariances"
+  notes: "Model is identified; df = p(p+1)/2 - q, where p=constructs, q=free parameters"
+
+fit_criteria:
+  chi_square:
+    description: "Test of exact fit"
+    null_hypothesis: "Model-implied matrix = Observed matrix"
+    desired: "non-significant (p > 0.05)"
+    note: "Sensitive to large samples; rarely achieved in practice"
+
+  CFI:
+    description: "Comparative Fit Index"
+    minimum_acceptable: 0.90
+    excellent: 0.95
+    interpretation: "Proportion of improvement over null model"
+
+  TLI:
+    description: "Tucker-Lewis Index"
+    minimum_acceptable: 0.90
+    excellent: 0.95
+    interpretation: "Penalizes model complexity"
+
+  RMSEA:
+    description: "Root Mean Square Error of Approximation"
+    maximum_acceptable: 0.08
+    excellent: 0.05
+    ci_width: 0.90
+    interpretation: "Badness of fit; accounts for model complexity"
+
+  SRMR:
+    description: "Standardized Root Mean Square Residual"
+    maximum_acceptable: 0.08
+    excellent: 0.05
+    interpretation: "Average residual correlation"
+
+  AIC:
+    description: "Akaike Information Criterion"
+    comparison: "Lower is better"
+    use: "Model comparison (not absolute fit)"
+
+  BIC:
+    description: "Bayesian Information Criterion"
+    comparison: "Lower is better"
+    use: "Model comparison; penalizes complexity more than AIC"
+    note: "Preferred for large samples"
+
+estimation:
+  method: "ML"  # Maximum Likelihood
+  alternative_methods:
+    - "WLS"   # Weighted Least Squares
+    - "DWLS"  # Diagonally Weighted Least Squares
+  missing_data: "FIML"  # Full Information Maximum Likelihood
+  standard_errors: "robust"
+  bootstrap_ci: false
+  n_bootstrap: 1000
+
+model_comparison:
+  baseline_model: "null"
+  comparison_models:
+    - "Model 2 (Integrated)"
+    - "Model 3 (AI-Only)"
+  comparison_criteria:
+    - "Chi-square difference test (if nested)"
+    - "AIC difference (ΔAIC > 10 = substantial)"
+    - "BIC difference (ΔBIC > 10 = strong evidence)"
+    - "CFI difference (ΔCFI > 0.01 = meaningful)"
+
+expected_variance_explained:
+  BI:
+    r_squared_estimate: 0.50
+    range: [0.40, 0.60]
+    comparison_to_literature: "Moderate-high, consistent with TAM meta-analyses (Sabherwal et al., 2006: R²=0.48)"
+  UB:
+    r_squared_estimate: 0.30
+    range: [0.20, 0.40]
+    comparison_to_literature: "Lower than BI; BI doesn't fully mediate other predictors"
+  ATT:
+    r_squared_estimate: 0.45
+    range: [0.35, 0.55]
+    comparison_to_literature: "High; PE and EE are strong predictors of attitude"
+
+software:
+  primary: "R (metaSEM package)"
+  alternative:
+    - "Mplus 8.x"
+    - "lavaan (R)"
+  tssem_stages:
+    stage1: "metaSEM::tssem1() - Pool correlation matrix"
+    stage2: "metaSEM::tssem2() - Fit SEM to pooled matrix"
+
+  code_example: |
+    # Stage 1: Pool correlation matrix
+    stage1 <- tssem1(Cov = cor_list, n = n_list, method = "REM")
+
+    # Stage 2: Specify and fit Model 1
+    model1 <- 'BI ~ PE + EE + SI + ATT
+               UB ~ FC + BI
+               ATT ~ EE + PE'
+    stage2_model1 <- tssem2(stage1, RAM = lavaan2RAM(model1))
+    summary(stage2_model1)
+
+interpretation_notes:
+  - "Model 1 tests whether traditional TAM/UTAUT constructs alone explain educational AI adoption"
+  - "If Model 1 shows good fit, educational AI adoption may not require AI-specific constructs"
+  - "If Model 1 shows poor fit or low R², suggests education-specific AI factors are needed"
+  - "Comparison to Scherer et al. (2019) teacher technology meta-analysis: test if educational AI differs from general educational technology"
+
+limitations:
+  - "Does not include AI-specific constructs (trust, anxiety, transparency, autonomy)"
+  - "Assumes educational AI adoption follows same mechanisms as traditional educational technology adoption"
+  - "May underestimate variance explained if AI-specific factors are important in education contexts"
+
+references:
+  - "Ajzen, I. (1991). The theory of planned behavior. Organizational Behavior and Human Decision Processes, 50(2), 179-211."
+  - "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly, 13(3), 319-340."
+  - "Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior: An introduction to theory and research. Addison-Wesley."
+  - "Sabherwal, R., Jeyaraj, A., & Chowa, C. (2006). Information system success: Individual and organizational determinants. Management Science, 52(12), 1849-1864."
+  - "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425-478."
+
+version: "1.0.0"
+date_created: "2026-02-16"
+last_modified: "2026-02-16"

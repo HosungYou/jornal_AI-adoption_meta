@@ -1,0 +1,365 @@
+# Model 3: AI-Only Model
+# AI-specific constructs only, minimal traditional TAM/UTAUT paths (Educational AI Context)
+
+model:
+  name: "AI_Only"
+  label: "Model 3"
+  description: "Parsimonious model emphasizing AI-specific constructs (trust, anxiety, transparency, autonomy) with minimal traditional TAM paths. Tests whether educational AI context renders traditional constructs less relevant."
+  theoretical_basis:
+    - "AI Trust: Choung et al. (2023), McKnight et al. (2002)"
+    - "AI Anxiety: Sindermann et al. (2021), technophobia literature"
+    - "AI Transparency: XAI literature (Shin, 2021)"
+    - "AI Autonomy: Automation literature (Parasuraman et al., 2000)"
+    - "Minimal TAM: ATT→BI, BI→UB retained as core"
+
+constructs:
+  exogenous:
+    - SE   # Self-Efficacy (Educational AI Self-Efficacy)
+    - TRA  # AI Transparency (Educational AI Explainability)
+    - AUT  # Perceived AI Autonomy (AI Decision Independence)
+    - ATT  # Attitude (Attitude Toward Educational AI, treated as exogenous in this model)
+
+  endogenous:
+    - TRU  # AI Trust (Trust in Educational AI Accuracy)
+    - ANX  # AI Anxiety (Academic Integrity / AI Anxiety)
+    - BI   # Behavioral Intention (AI Adoption Intention in Education)
+    - UB   # Use Behavior (Actual Educational AI Use)
+
+  # Traditional constructs NOT included as separate paths
+  excluded_as_predictors:
+    - PE   # Performance Expectancy (subsumed in ATT)
+    - EE   # Effort Expectancy (subsumed in ATT)
+    - SI   # Social Influence (not included)
+    - FC   # Facilitating Conditions (not included)
+
+  note: "PE, EE, SI, FC measured but not modeled as separate predictors of BI; ATT captures overall evaluation"
+
+paths:
+  # AI-Specific paths (primary focus)
+  - from: TRU
+    to: BI
+    label: "TRU_to_BI"
+    hypothesis: "H1: AI Trust → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "large (β ≈ 0.50)"
+    theoretical_support: "Trust as primary determinant in AI context (Choung et al., 2023)"
+    rationale: "In AI context, trust may be more critical than traditional usability factors"
+
+  - from: ANX
+    to: BI
+    label: "ANX_to_BI"
+    hypothesis: "H2: AI Anxiety → Behavioral Intention (−)"
+    expected_sign: "negative"
+    expected_magnitude: "medium (β ≈ −0.30)"
+    theoretical_support: "AI anxiety literature (Sindermann et al., 2021)"
+    rationale: "Fear and apprehension are central barriers to AI adoption"
+
+  - from: TRA
+    to: TRU
+    label: "TRA_to_TRU"
+    hypothesis: "H3: AI Transparency → AI Trust (+)"
+    expected_sign: "positive"
+    expected_magnitude: "large (β ≈ 0.55)"
+    theoretical_support: "XAI literature (Shin, 2021); transparency builds trust"
+    rationale: "Explainability is foundational for trust in opaque AI systems"
+
+  - from: AUT
+    to: BI
+    label: "AUT_to_BI"
+    hypothesis: "H4: Perceived AI Autonomy → Behavioral Intention (−)"
+    expected_sign: "negative"
+    expected_magnitude: "small-medium (β ≈ −0.15)"
+    theoretical_support: "Automation anxiety (Parasuraman et al., 2000)"
+    rationale: "Highly autonomous AI reduces user acceptance due to loss of control concerns"
+
+  - from: SE
+    to: BI
+    label: "SE_to_BI"
+    hypothesis: "H5: Self-Efficacy → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.20)"
+    theoretical_support: "Social Cognitive Theory (Bandura, 1986)"
+    rationale: "Confidence in ability to use AI directly predicts adoption intention"
+
+  # Minimal traditional paths (retained for conceptual completeness)
+  - from: ATT
+    to: BI
+    label: "ATT_to_BI"
+    hypothesis: "H6: Attitude → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.30)"
+    theoretical_support: "TAM, TPB (Davis, 1989; Ajzen, 1991)"
+    rationale: "Overall favorable attitude toward AI predicts intention"
+
+  - from: BI
+    to: UB
+    label: "BI_to_UB"
+    hypothesis: "H7: Behavioral Intention → Use Behavior (+)"
+    expected_sign: "positive"
+    expected_magnitude: "large (β ≈ 0.55)"
+    theoretical_support: "TRA, TAM (Fishbein & Ajzen, 1975)"
+    rationale: "Intention-behavior link is well-established"
+
+covariances:
+  # Exogenous construct covariances (estimated freely)
+  - between: [SE, TRA]
+    estimate: true
+  - between: [SE, AUT]
+    estimate: true
+  - between: [SE, ATT]
+    estimate: true
+  - between: [TRA, AUT]
+    estimate: true
+  - between: [TRA, ATT]
+    estimate: true
+  - between: [AUT, ATT]
+    estimate: true
+
+disturbances:
+  # Residual variances for endogenous variables
+  - construct: TRU
+    estimate: true
+    note: "TRU predicted by TRA only"
+  - construct: ANX
+    estimate: true
+    note: "ANX not predicted in Model 3 (could add AUT→ANX, but keeping minimal)"
+  - construct: BI
+    estimate: true
+    note: "BI predicted by TRU, ANX, AUT, SE, ATT"
+  - construct: UB
+    estimate: true
+    note: "UB predicted by BI only"
+
+parameters:
+  n_paths: 7
+  n_covariances: 6  # exogenous construct covariances (4 choose 2 = 6)
+  n_disturbances: 4  # endogenous residual variances
+  n_free_parameters: 17  # total free parameters
+  df: null  # calculated at runtime
+
+identification:
+  status: "over-identified"
+  method: "recursive model with exogenous covariances"
+  notes: "Model is identified; fewer parameters than Model 1 and Model 2"
+
+fit_criteria:
+  chi_square:
+    desired: "non-significant (p > 0.05)"
+    note: "With fewer paths, may achieve better chi-square than Model 2"
+
+  CFI:
+    minimum_acceptable: 0.90
+    excellent: 0.95
+
+  TLI:
+    minimum_acceptable: 0.90
+    excellent: 0.95
+
+  RMSEA:
+    maximum_acceptable: 0.08
+    excellent: 0.05
+
+  SRMR:
+    maximum_acceptable: 0.08
+    excellent: 0.05
+
+  AIC:
+    comparison: "Compare to Model 1 and Model 2"
+    note: "Fewer parameters may yield lower AIC if fit is similar"
+
+  BIC:
+    comparison: "Compare to Model 1 and Model 2"
+    note: "BIC strongly favors parsimony; Model 3 may have lowest BIC"
+
+expected_variance_explained:
+  BI:
+    r_squared_estimate: 0.60
+    range: [0.50, 0.70]
+    comparison_to_model1: "Similar or slightly higher (if AI-specific factors dominate)"
+    comparison_to_model2: "Slightly lower (fewer predictors)"
+    rationale: "AI-specific constructs (TRU, ANX) may compensate for omitted traditional paths"
+
+  UB:
+    r_squared_estimate: 0.35
+    range: [0.25, 0.45]
+    note: "Similar to Model 1 and Model 2; BI is strong predictor"
+
+  TRU:
+    r_squared_estimate: 0.30
+    range: [0.20, 0.40]
+    note: "TRU predicted by TRA only; moderate variance explained"
+
+  ANX:
+    r_squared_estimate: 0.00
+    note: "ANX treated as exogenous in Model 3 (not predicted by other constructs)"
+    alternative: "Could add AUT→ANX path; currently excluded for parsimony"
+
+mediation_paths:
+  - path: "TRA → TRU → BI"
+    type: "indirect effect"
+    hypothesis: "AI Transparency has indirect effect on BI through Trust"
+    expected_magnitude: "β_indirect ≈ 0.28 (0.55 × 0.50)"
+    note: "Central mediation path in Model 3"
+
+total_effects:
+  - from: TRA
+    to: BI
+    direct: 0.00
+    indirect: 0.28
+    total: 0.28
+    note: "TRA affects BI entirely through TRU"
+
+  - from: AUT
+    to: BI
+    direct: -0.15
+    indirect: 0.00
+    total: -0.15
+    note: "AUT has direct negative effect on BI; no mediation in Model 3"
+
+  - from: SE
+    to: BI
+    direct: 0.20
+    indirect: 0.00
+    total: 0.20
+    note: "SE has direct positive effect; no mediation in Model 3"
+
+estimation:
+  method: "ML"
+  missing_data: "FIML"
+  standard_errors: "robust"
+  bootstrap_ci: true
+  n_bootstrap: 5000
+  ci_level: 0.95
+
+model_comparison:
+  vs_model1:
+    hypothesis: "Model 3 (AI-only) provides similar or better fit than Model 1 (TAM/UTAUT)"
+    research_question: "Do AI-specific factors replace traditional TAM/UTAUT factors?"
+    tests:
+      - "Compare R² for BI (if Model 3 R² ≥ Model 1 R², AI factors sufficient)"
+      - "Compare BIC (Model 3 more parsimonious)"
+      - "Compare CFI, RMSEA"
+
+  vs_model2:
+    hypothesis: "Model 2 (comprehensive) explains more variance but at cost of complexity"
+    research_question: "Is the comprehensive model worth the added complexity?"
+    tests:
+      - "ΔR² (expect Model 2 > Model 3 by ~0.05)"
+      - "ΔBIC (expect BIC favors Model 3 due to parsimony)"
+      - "Parsimony vs. variance explained trade-off"
+
+software:
+  primary: "R (metaSEM package)"
+  tssem_code: |
+    # Stage 1: Pool correlation matrix (same as Model 1 and Model 2)
+    stage1 <- tssem1(Cov = cor_list, n = n_list, method = "REM")
+
+    # Stage 2: Specify Model 3
+    model3 <- '
+      # AI-specific paths
+      BI ~ TRU + ANX + AUT + SE + ATT
+      UB ~ BI
+      TRU ~ TRA
+
+      # Covariances among exogenous
+      SE ~~ TRA + AUT + ATT
+      TRA ~~ AUT + ATT
+      AUT ~~ ATT
+    '
+
+    stage2_model3 <- tssem2(stage1, RAM = lavaan2RAM(model3))
+    summary(stage2_model3)
+
+    # Compare with Model 1 and Model 2
+    anova(stage2_model1, stage2_model2, stage2_model3)
+
+interpretation:
+  strengths:
+    - "Parsimonious (7 paths vs. 8 in Model 1, 14 in Model 2)"
+    - "Emphasizes AI-unique factors (trust, anxiety, transparency, autonomy)"
+    - "Tests whether traditional TAM/UTAUT factors are redundant in AI context"
+    - "Lower BIC likely favors Model 3 if R² comparable to Model 1/2"
+
+  limitations:
+    - "Omits established TAM/UTAUT predictors (PE, EE, SI, FC)"
+    - "May underestimate variance if traditional factors still matter"
+    - "ANX treated as exogenous (no AUT→ANX path for simplicity)"
+    - "Less theoretically grounded (cherry-picks constructs)"
+
+  decision_rules:
+    - "IF Model 3 R² ≥ Model 1 R² → AI-specific factors sufficient"
+    - "IF Model 3 BIC < Model 2 BIC AND ΔR² < 0.10 → Prefer parsimony (Model 3)"
+    - "IF Model 3 R² substantially lower than Model 1 → Traditional factors still needed"
+
+  scenarios:
+    scenario_a:
+      condition: "Model 3 R²(BI) ≈ 0.60, similar to Model 1 and Model 2"
+      conclusion: "AI-specific factors replace traditional factors; AI adoption is fundamentally different from general IT adoption"
+      implication: "Focus interventions on trust-building (transparency) and anxiety reduction"
+
+    scenario_b:
+      condition: "Model 3 R²(BI) ≈ 0.45, lower than Model 1 (R²=0.50) and Model 2 (R²=0.65)"
+      conclusion: "AI-specific factors important but insufficient; traditional factors still matter"
+      implication: "Integrated approach needed (Model 2 preferred)"
+
+    scenario_c:
+      condition: "Model 3 BIC lowest among three models, but R² only 0.05 lower than Model 2"
+      conclusion: "Parsimony-accuracy trade-off; Model 3 offers 'good enough' prediction with simpler structure"
+      implication: "Practical applications may prefer Model 3 for ease of implementation"
+
+practical_implications:
+  if_model3_best:
+    - "Educational AI adoption interventions should prioritize:"
+      - "Transparency and explainability (to build trust in educational contexts)"
+      - "Reducing anxiety through training and familiarization for students and instructors"
+      - "Avoiding over-autonomous systems (keep human in loop for academic integrity)"
+      - "Building self-efficacy through scaffolded learning experiences"
+    - "Traditional usability factors (ease of use, performance) less critical in educational AI context"
+    - "Trust is primary lever for educational AI adoption (unlike general educational technology where usefulness dominates)"
+
+theoretical_implications:
+  if_model3_best:
+    - "Educational AI technologies require distinct theoretical framework from traditional educational technology"
+    - "TAM/UTAUT may have limited applicability to educational AI adoption"
+    - "Trust and anxiety emerge as central constructs in education (not peripheral)"
+    - "Need for AI-specific technology acceptance theory in educational settings"
+    - "Transparency as foundational in education (not just 'nice to have')"
+
+  if_model3_not_best:
+    - "Educational AI adoption similar to traditional educational technology adoption (Model 1 best)"
+    - "OR educational AI adoption requires integrated framework (Model 2 best)"
+    - "Traditional TAM/UTAUT constructs remain relevant in education"
+
+alternative_specifications:
+  model3_alternative_a:
+    description: "Add AUT→ANX path"
+    paths_added: ["AUT → ANX"]
+    n_paths: 8
+    rationale: "Autonomy may trigger anxiety (mediation path)"
+
+  model3_alternative_b:
+    description: "Add SE→ANX path (from Model 2)"
+    paths_added: ["SE → ANX"]
+    n_paths: 8
+    rationale: "Self-efficacy reduces anxiety"
+
+  model3_alternative_c:
+    description: "Treat ANX as endogenous with both AUT→ANX and SE→ANX"
+    paths_added: ["AUT → ANX", "SE → ANX"]
+    n_paths: 9
+    rationale: "More complete model of anxiety formation"
+    note: "This moves Model 3 closer to Model 2; trade-off with parsimony"
+
+references:
+  - "Ajzen, I. (1991). The theory of planned behavior. OBHDP, 50(2), 179-211."
+  - "Bandura, A. (1986). Social foundations of thought and action. Prentice-Hall."
+  - "Choung, H., David, P., & Ross, A. (2023). Trust in AI and its role in acceptance. IJHCI, 39(9), 1727-1739."
+  - "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance. MIS Quarterly, 13(3), 319-340."
+  - "Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior. Addison-Wesley."
+  - "Parasuraman, R., et al. (2000). A model for types and levels of human interaction with automation. IEEE Trans. SMC, 30(3), 286-297."
+  - "Shin, D. (2021). The effects of explainability and causability on perception, trust, and acceptance. IJHCI, 37(10), 917-931."
+  - "Sindermann, C., et al. (2021). Assessing the attitude towards artificial intelligence. KI, 35(1), 109-118."
+
+version: "1.0.0"
+date_created: "2026-02-16"
+last_modified: "2026-02-16"

@@ -1,0 +1,160 @@
+You are an expert in educational research and educational technology contexts.
+
+Your task is to classify the EDUCATION-SPECIFIC MODERATOR VARIABLES for each AI adoption study conducted in educational settings.
+
+MODERATOR 1: EDUCATION LEVEL
+
+Categories:
+1. **K-12** — Primary and secondary education (ages 5-18)
+2. **Undergraduate** — Bachelor's degree students at colleges/universities
+3. **Graduate** — Master's, doctoral, or professional program students
+4. **Mixed** — Study includes multiple education levels
+
+Classification guidelines:
+- "College students" → Undergraduate (unless explicitly graduate)
+- "University students" → Undergraduate (unless otherwise specified)
+- "High school students" → K-12
+- "Pre-service teachers" → Undergraduate or Graduate (check degree program)
+- "Medical students" → Graduate (professional program)
+- "MBA students" → Graduate
+
+MODERATOR 2: USER ROLE
+
+Categories:
+1. **Student** — Learners at any level
+2. **Instructor** — Teachers, professors, lecturers, tutors
+3. **Administrator** — Deans, department heads, IT directors, institutional leaders
+4. **Mixed** — Study includes multiple roles
+
+Classification guidelines:
+- "Faculty members" → Instructor
+- "Teaching assistants" → Instructor (treat as instructional role)
+- "Academic staff" → Instructor (unless administrative role specified)
+- "School principals" → Administrator
+- "Pre-service teachers" → Student (they are students studying to become teachers)
+
+MODERATOR 3: DISCIPLINE
+
+Categories:
+1. **STEM** — Science, technology, engineering, mathematics, computer science
+2. **Humanities** — Literature, history, philosophy, languages, arts
+3. **Social Science** — Psychology, sociology, political science, economics, business, education
+4. **Health Science** — Medicine, nursing, pharmacy, public health, allied health
+5. **Mixed** — Study spans multiple disciplines or discipline not specified
+
+Classification guidelines:
+- "Business school students" → Social Science
+- "Engineering students" → STEM
+- "Medical students" → Health Science
+- "Education majors" → Social Science
+- "Liberal arts students" → Humanities
+- General university sample → Mixed
+
+MODERATOR 4: AI TOOL TYPE
+
+Categories:
+1. **chatbot_LLM** — ChatGPT, GPT-4, Claude, Gemini, Copilot, general LLM chatbots
+2. **ITS** — Intelligent Tutoring Systems (e.g., Carnegie Learning, ALEKS, Khan Academy AI)
+3. **LMS_AI** — AI features within Learning Management Systems (Moodle, Canvas, Blackboard AI)
+4. **auto_grading** — Automated essay scoring, exam grading, feedback systems
+5. **writing_assistant** — AI writing tools (Grammarly AI, QuillBot, Turnitin AI writing)
+6. **adaptive_learning** — Adaptive learning platforms (Knewton, Smart Sparrow, DreamBox)
+7. **general** — Study examines AI broadly without specifying tool, or multiple tools
+
+Classification guidelines:
+- "ChatGPT use among students" → chatbot_LLM
+- "AI-powered tutoring system" → ITS
+- "Automated essay scoring" → auto_grading
+- "AI writing assistant" → writing_assistant
+- "AI in education" (general) → general
+- Specific named tools: map to closest category
+
+MODERATOR 5: INSTITUTIONAL TYPE
+
+Categories:
+1. **Public** — Public/state universities, public schools
+2. **Private** — Private universities, private schools
+3. **Online** — Fully online institutions or programs
+4. **Community College** — Two-year colleges, vocational institutions
+5. **Mixed** — Multiple institution types or not specified
+
+Classification guidelines:
+- Look for explicit statements about institution type
+- If country is mentioned, infer when possible (e.g., most Chinese universities are public)
+- If unclear, code as "Mixed"
+
+OUTPUT FORMAT:
+
+Return a JSON object:
+
+{
+  "education_level": "K-12|undergraduate|graduate|mixed",
+  "education_level_confidence": "high|moderate|low",
+  "user_role": "student|instructor|administrator|mixed",
+  "user_role_confidence": "high|moderate|low",
+  "discipline": "STEM|humanities|social_science|health_science|mixed",
+  "discipline_confidence": "high|moderate|low",
+  "ai_tool_type": "chatbot_LLM|ITS|LMS_AI|auto_grading|writing_assistant|adaptive_learning|general",
+  "ai_tool_name": "specific tool name or null",
+  "ai_tool_confidence": "high|moderate|low",
+  "institutional_type": "public|private|online|community_college|mixed",
+  "institutional_type_confidence": "high|moderate|low",
+  "notes": "additional context or classification rationale"
+}
+
+EXAMPLES:
+
+Example 1 - Undergraduate ChatGPT adoption:
+{
+  "education_level": "undergraduate",
+  "education_level_confidence": "high",
+  "user_role": "student",
+  "user_role_confidence": "high",
+  "discipline": "social_science",
+  "discipline_confidence": "high",
+  "ai_tool_type": "chatbot_LLM",
+  "ai_tool_name": "ChatGPT",
+  "ai_tool_confidence": "high",
+  "institutional_type": "public",
+  "institutional_type_confidence": "high",
+  "notes": "Business school students at a public university using ChatGPT for coursework"
+}
+
+Example 2 - K-12 adaptive learning:
+{
+  "education_level": "K-12",
+  "education_level_confidence": "high",
+  "user_role": "student",
+  "user_role_confidence": "high",
+  "discipline": "STEM",
+  "discipline_confidence": "high",
+  "ai_tool_type": "adaptive_learning",
+  "ai_tool_name": "DreamBox",
+  "ai_tool_confidence": "high",
+  "institutional_type": "public",
+  "institutional_type_confidence": "moderate",
+  "notes": "Elementary school students using DreamBox Math adaptive learning platform"
+}
+
+Example 3 - Instructor AI grading adoption:
+{
+  "education_level": "undergraduate",
+  "education_level_confidence": "moderate",
+  "user_role": "instructor",
+  "user_role_confidence": "high",
+  "discipline": "mixed",
+  "discipline_confidence": "moderate",
+  "ai_tool_type": "auto_grading",
+  "ai_tool_name": null,
+  "ai_tool_confidence": "high",
+  "institutional_type": "private",
+  "institutional_type_confidence": "high",
+  "notes": "Faculty across departments at a private university evaluating AI grading tools"
+}
+
+QUALITY CHECKS:
+- Does education_level align with described participants?
+- Is user_role consistent with sample description?
+- Does ai_tool_type match the described technology?
+- Are confidence levels appropriate given available information?
+- Are ambiguous cases properly flagged with notes?

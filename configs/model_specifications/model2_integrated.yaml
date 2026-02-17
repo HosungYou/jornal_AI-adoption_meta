@@ -1,0 +1,420 @@
+# Model 2: Integrated Model
+# Full model combining traditional TAM/UTAUT with AI-specific constructs (Educational AI Context)
+
+model:
+  name: "Integrated"
+  label: "Model 2"
+  description: "Comprehensive model integrating traditional technology acceptance factors with AI-specific constructs (trust, anxiety, transparency, autonomy) for educational AI adoption by students and instructors"
+  theoretical_basis:
+    - "TAM/UTAUT: Davis (1989), Venkatesh et al. (2003)"
+    - "Education Technology: Scherer et al. (2019)"
+    - "AI Trust: Choung et al. (2023), McKnight et al. (2002)"
+    - "AI Anxiety: Sindermann et al. (2021)"
+    - "AI Transparency: Shin (2021), Felzmann et al. (2019)"
+    - "AI Autonomy: Parasuraman et al. (2000), Waytz et al. (2010)"
+
+constructs:
+  exogenous:
+    - PE   # Performance Expectancy (Learning/Teaching Effectiveness)
+    - SI   # Social Influence (Peer/Instructor Encouragement)
+    - FC   # Facilitating Conditions (Institutional AI Support)
+    - SE   # Self-Efficacy (Educational AI Self-Efficacy)
+    - TRA  # AI Transparency (Educational AI Explainability)
+    - AUT  # Perceived AI Autonomy (AI Decision Independence)
+
+  endogenous:
+    - EE   # Effort Expectancy (Educational AI Ease of Use, predicted by SE)
+    - BI   # Behavioral Intention (AI Adoption Intention in Education)
+    - UB   # Use Behavior (Actual Educational AI Use)
+    - ATT  # Attitude (Attitude Toward Educational AI)
+    - TRU  # AI Trust (Trust in Educational AI Accuracy, predicted by TRA)
+    - ANX  # AI Anxiety (Academic Integrity / AI Anxiety, predicted by AUT, SE)
+
+  total: 12
+
+paths:
+  # Traditional TAM/UTAUT paths (Model 1)
+  - from: PE
+    to: BI
+    label: "PE_to_BI"
+    hypothesis: "H1: Performance Expectancy → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium-large (β ≈ 0.45)"
+    theoretical_support: "TAM, UTAUT"
+
+  - from: EE
+    to: BI
+    label: "EE_to_BI"
+    hypothesis: "H2: Effort Expectancy → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.30)"
+    theoretical_support: "TAM, UTAUT"
+
+  - from: SI
+    to: BI
+    label: "SI_to_BI"
+    hypothesis: "H3: Social Influence → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.25)"
+    theoretical_support: "UTAUT, TPB"
+
+  - from: FC
+    to: UB
+    label: "FC_to_UB"
+    hypothesis: "H4: Facilitating Conditions → Use Behavior (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small (β ≈ 0.15)"
+    theoretical_support: "UTAUT"
+
+  - from: ATT
+    to: BI
+    label: "ATT_to_BI"
+    hypothesis: "H5: Attitude → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.35)"
+    theoretical_support: "TAM, TPB"
+
+  - from: BI
+    to: UB
+    label: "BI_to_UB"
+    hypothesis: "H6: Behavioral Intention → Use Behavior (+)"
+    expected_sign: "positive"
+    expected_magnitude: "large (β ≈ 0.50)"
+    theoretical_support: "TRA, TAM, UTAUT"
+
+  - from: EE
+    to: ATT
+    label: "EE_to_ATT"
+    hypothesis: "H7: Effort Expectancy → Attitude (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.25)"
+    theoretical_support: "TAM"
+
+  - from: PE
+    to: ATT
+    label: "PE_to_ATT"
+    hypothesis: "H8: Performance Expectancy → Attitude (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.40)"
+    theoretical_support: "TAM"
+
+  # AI-Specific paths (Model 2 additions)
+  - from: TRU
+    to: BI
+    label: "TRU_to_BI"
+    hypothesis: "H9: AI Trust → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.30)"
+    theoretical_support: "Trust literature (McKnight et al., 2002; Choung et al., 2023)"
+    rationale: "Users with higher trust in AI's reliability and integrity are more willing to use it"
+
+  - from: ANX
+    to: BI
+    label: "ANX_to_BI"
+    hypothesis: "H10: AI Anxiety → Behavioral Intention (−)"
+    expected_sign: "negative"
+    expected_magnitude: "small-medium (β ≈ −0.20)"
+    theoretical_support: "Computer anxiety literature (Venkatesh et al., 2003; Sindermann et al., 2021)"
+    rationale: "Fear and apprehension about AI reduce willingness to adopt"
+
+  - from: TRA
+    to: TRU
+    label: "TRA_to_TRU"
+    hypothesis: "H11: AI Transparency → AI Trust (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium-large (β ≈ 0.40)"
+    theoretical_support: "XAI literature (Shin, 2021); algorithmic transparency (Felzmann et al., 2019)"
+    rationale: "Explainable, transparent AI processes increase user trust"
+
+  - from: AUT
+    to: ANX
+    label: "AUT_to_ANX"
+    hypothesis: "H12: Perceived AI Autonomy → AI Anxiety (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.25)"
+    theoretical_support: "Automation anxiety (Parasuraman et al., 2000); anthropomorphism (Waytz et al., 2010)"
+    rationale: "AI perceived as highly autonomous/agentic triggers anxiety about loss of control"
+
+  - from: SE
+    to: EE
+    label: "SE_to_EE"
+    hypothesis: "H13: Self-Efficacy → Effort Expectancy (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.35)"
+    theoretical_support: "Social Cognitive Theory (Bandura, 1986); TAM2 (Venkatesh & Davis, 2000)"
+    rationale: "Users confident in their abilities perceive AI as easier to use"
+
+  - from: SE
+    to: ANX
+    label: "SE_to_ANX"
+    hypothesis: "H14: Self-Efficacy → AI Anxiety (−)"
+    expected_sign: "negative"
+    expected_magnitude: "medium (β ≈ −0.30)"
+    theoretical_support: "Self-efficacy reduces anxiety (Compeau & Higgins, 1995)"
+    rationale: "Confidence in ability to use AI reduces fear/apprehension"
+
+covariances:
+  # Exogenous construct covariances (estimated freely)
+  - between: [PE, SI]
+    estimate: true
+  - between: [PE, FC]
+    estimate: true
+  - between: [PE, SE]
+    estimate: true
+  - between: [PE, TRA]
+    estimate: true
+  - between: [PE, AUT]
+    estimate: true
+  - between: [SI, FC]
+    estimate: true
+  - between: [SI, SE]
+    estimate: true
+  - between: [SI, TRA]
+    estimate: true
+  - between: [SI, AUT]
+    estimate: true
+  - between: [FC, SE]
+    estimate: true
+  - between: [FC, TRA]
+    estimate: true
+  - between: [FC, AUT]
+    estimate: true
+  - between: [SE, TRA]
+    estimate: true
+  - between: [SE, AUT]
+    estimate: true
+  - between: [TRA, AUT]
+    estimate: true
+
+disturbances:
+  # Residual variances for endogenous variables
+  - construct: EE
+    estimate: true
+    note: "EE predicted by SE"
+  - construct: BI
+    estimate: true
+    note: "BI predicted by PE, EE, SI, ATT, TRU, ANX"
+  - construct: UB
+    estimate: true
+    note: "UB predicted by FC, BI"
+  - construct: ATT
+    estimate: true
+    note: "ATT predicted by PE, EE"
+  - construct: TRU
+    estimate: true
+    note: "TRU predicted by TRA"
+  - construct: ANX
+    estimate: true
+    note: "ANX predicted by AUT, SE"
+
+parameters:
+  n_paths: 14
+  n_covariances: 15  # exogenous construct covariances (6 choose 2 = 15)
+  n_disturbances: 6  # endogenous residual variances
+  n_free_parameters: 35  # total free parameters
+  df: null  # calculated at runtime: df = p(p+1)/2 - q
+
+identification:
+  status: "over-identified"
+  method: "recursive model with exogenous covariances"
+  notes: "All paths are unidirectional; no feedback loops; model is identified"
+
+fit_criteria:
+  chi_square:
+    description: "Test of exact fit"
+    desired: "non-significant (p > 0.05)"
+    note: "With large meta-analytic N, likely significant even for good models"
+
+  CFI:
+    minimum_acceptable: 0.90
+    excellent: 0.95
+
+  TLI:
+    minimum_acceptable: 0.90
+    excellent: 0.95
+
+  RMSEA:
+    maximum_acceptable: 0.08
+    excellent: 0.05
+    ci_width: 0.90
+
+  SRMR:
+    maximum_acceptable: 0.08
+    excellent: 0.05
+
+  AIC:
+    comparison: "Compare to Model 1 and Model 3"
+    interpretation: "Lower AIC indicates better fit"
+
+  BIC:
+    comparison: "Compare to Model 1 and Model 3"
+    interpretation: "Lower BIC; penalizes complexity"
+    note: "With large N, BIC strongly penalizes Model 2's additional paths"
+
+expected_variance_explained:
+  BI:
+    r_squared_estimate: 0.65
+    range: [0.55, 0.75]
+    increment_over_model1: 0.15
+    rationale: "AI-specific constructs (TRU, ANX) add incremental variance beyond TAM/UTAUT"
+
+  UB:
+    r_squared_estimate: 0.35
+    range: [0.25, 0.45]
+    note: "Similar to Model 1; UB predicted by FC and BI (no direct AI-specific paths)"
+
+  ATT:
+    r_squared_estimate: 0.45
+    range: [0.35, 0.55]
+    note: "Similar to Model 1; ATT predicted by PE and EE only"
+
+  TRU:
+    r_squared_estimate: 0.30
+    range: [0.20, 0.40]
+    note: "TRU predicted by TRA only; moderate variance explained"
+
+  ANX:
+    r_squared_estimate: 0.25
+    range: [0.15, 0.35]
+    note: "ANX predicted by AUT (positive) and SE (negative)"
+
+  EE:
+    r_squared_estimate: 0.20
+    range: [0.10, 0.30]
+    note: "EE predicted by SE only; low-moderate variance explained"
+
+mediation_paths:
+  - path: "TRA → TRU → BI"
+    type: "indirect effect"
+    hypothesis: "AI Transparency has indirect effect on BI through Trust"
+    expected_magnitude: "β_indirect ≈ 0.12 (0.40 × 0.30)"
+
+  - path: "AUT → ANX → BI"
+    type: "indirect effect"
+    hypothesis: "AI Autonomy has indirect effect on BI through Anxiety"
+    expected_magnitude: "β_indirect ≈ −0.05 (0.25 × −0.20)"
+
+  - path: "SE → EE → BI"
+    type: "indirect effect"
+    hypothesis: "Self-Efficacy has indirect effect on BI through Effort Expectancy"
+    expected_magnitude: "β_indirect ≈ 0.11 (0.35 × 0.30)"
+
+  - path: "SE → ANX → BI"
+    type: "indirect effect"
+    hypothesis: "Self-Efficacy has indirect effect on BI through reduced Anxiety"
+    expected_magnitude: "β_indirect ≈ 0.06 (−0.30 × −0.20)"
+
+  - path: "PE → ATT → BI"
+    type: "indirect effect"
+    hypothesis: "Performance Expectancy has indirect effect on BI through Attitude"
+    expected_magnitude: "β_indirect ≈ 0.14 (0.40 × 0.35)"
+
+estimation:
+  method: "ML"
+  missing_data: "FIML"
+  standard_errors: "robust"
+  bootstrap_ci: true
+  n_bootstrap: 5000
+  ci_level: 0.95
+
+model_comparison:
+  vs_model1:
+    hypothesis: "Model 2 provides better fit than Model 1"
+    tests:
+      - "ΔAIC (expect ΔAIC < −10 favoring Model 2)"
+      - "ΔBIC (may favor Model 1 due to parsimony penalty)"
+      - "ΔR² for BI (expect ΔR² ≥ 0.10)"
+      - "Vuong test (if non-nested)"
+
+  vs_model3:
+    hypothesis: "Model 2 (comprehensive) vs. Model 3 (AI-only)"
+    tests:
+      - "Compare R² for BI and UB"
+      - "Compare fit indices"
+      - "Traditional paths still significant in Model 2?"
+
+software:
+  primary: "R (metaSEM package)"
+  tssem_code: |
+    # Stage 1: Pool correlation matrix
+    stage1 <- tssem1(Cov = cor_list, n = n_list, method = "REM")
+
+    # Stage 2: Specify Model 2
+    model2 <- '
+      # Traditional TAM/UTAUT paths
+      BI ~ PE + EE + SI + ATT + TRU + ANX
+      UB ~ FC + BI
+      ATT ~ PE + EE
+
+      # AI-specific paths
+      TRU ~ TRA
+      ANX ~ AUT + SE
+      EE ~ SE
+
+      # Covariances among exogenous
+      PE ~~ SI + FC + SE + TRA + AUT
+      SI ~~ FC + SE + TRA + AUT
+      FC ~~ SE + TRA + AUT
+      SE ~~ TRA + AUT
+      TRA ~~ AUT
+    '
+
+    stage2_model2 <- tssem2(stage1, RAM = lavaan2RAM(model2))
+    summary(stage2_model2)
+
+    # Extract fit indices
+    fit_model2 <- summary(stage2_model2)$stat
+
+    # Extract path coefficients
+    coef_model2 <- coef(stage2_model2)
+
+    # Extract R-squared
+    r2_model2 <- inspect(stage2_model2, "r2")
+
+interpretation:
+  strengths:
+    - "Comprehensive integration of traditional and AI-specific factors"
+    - "Tests mediation mechanisms (TRA→TRU→BI, AUT→ANX→BI)"
+    - "Provides nuanced understanding of AI adoption determinants"
+    - "High variance explained in BI (expected R² ≈ 0.65)"
+
+  limitations:
+    - "More complex than Model 1 (14 paths vs. 8)"
+    - "Requires larger sample for stable estimation"
+    - "May overfit if AI-specific paths are weak"
+    - "BIC may favor simpler Model 1 despite better fit"
+
+  decision_rules:
+    - "IF Model 2 fit significantly better (ΔCFI > 0.01) AND ΔR² ≥ 0.10 → Prefer Model 2"
+    - "IF AI-specific paths (TRU→BI, ANX→BI) non-significant → Prefer Model 1"
+    - "IF Model 3 shows similar R² with fewer paths → Consider parsimony trade-off"
+
+practical_implications:
+  if_model2_best:
+    - "Educational AI adoption requires addressing both traditional usability (PE, EE) AND AI-specific concerns (trust, anxiety)"
+    - "Design interventions targeting transparency (to build trust) and explainability in educational contexts"
+    - "Training programs should address AI anxiety, especially for low self-efficacy students and instructors"
+    - "Avoid over-autonomous AI systems in education that trigger user anxiety about academic integrity"
+
+theoretical_implications:
+  if_model2_best:
+    - "Educational AI technologies are not 'just another educational technology'; unique AI characteristics matter"
+    - "Traditional TAM/UTAUT models underspecify educational AI adoption"
+    - "Need for AI-augmented technology acceptance theory in education"
+    - "Trust and anxiety as central mediators in educational AI context"
+
+references:
+  - "Bandura, A. (1986). Social foundations of thought and action. Prentice-Hall."
+  - "Choung, H., David, P., & Ross, A. (2023). Trust in AI and its role in the acceptance of AI technologies. IJHCI, 39(9), 1727-1739."
+  - "Compeau, D. R., & Higgins, C. A. (1995). Computer self-efficacy. MIS Quarterly, 19(2), 189-211."
+  - "Felzmann, H., et al. (2019). Transparency you can trust. Big Data & Society, 6(1), 1-14."
+  - "McKnight, D. H., et al. (2002). Developing and validating trust measures for e-commerce. ISR, 13(3), 334-359."
+  - "Parasuraman, R., et al. (2000). A model for types and levels of human interaction with automation. IEEE Trans. SMC, 30(3), 286-297."
+  - "Shin, D. (2021). The effects of explainability and causability on perception, trust, and acceptance. IJHCI, 37(10), 917-931."
+  - "Sindermann, C., et al. (2021). Assessing the attitude towards artificial intelligence. KI, 35(1), 109-118."
+  - "Venkatesh, V., & Davis, F. D. (2000). A theoretical extension of the TAM. Management Science, 46(2), 186-204."
+  - "Waytz, A., et al. (2010). Who sees human? Perspectives on Psychological Science, 5(3), 219-232."
+
+version: "1.0.0"
+date_created: "2026-02-16"
+last_modified: "2026-02-16"

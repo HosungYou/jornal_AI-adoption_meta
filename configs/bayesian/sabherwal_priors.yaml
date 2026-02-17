@@ -1,0 +1,524 @@
+# Bayesian Prior Specifications for Educational AI Adoption MASEM
+# Informative priors for traditional TAM/UTAUT paths from general IT and education meta-analyses
+# Weakly informative priors for AI-specific paths (no historical data)
+
+# ORGANIZATIONAL IT PRIORS (General IT Context)
+sabherwal_reference:
+  authors: "Sabherwal, R., Jeyaraj, A., & Chowa, C."
+  year: 2006
+  title: "Information system success: Individual and organizational determinants"
+  journal: "Management Science"
+  volume: 52
+  issue: 12
+  pages: "1849-1864"
+  doi: "10.1287/mnsc.1060.0580"
+  context: "Meta-analysis of general IT/IS adoption studies (pre-AI era, organizational context)"
+  sample: "k = 612 correlations from 121 studies, N = 63,524"
+  note: "Provides empirical priors for traditional technology acceptance paths in organizational settings"
+
+# EDUCATION TECHNOLOGY PRIORS (Education-Specific Context)
+scherer_reference:
+  authors: "Scherer, R., Siddiq, F., & Tondeur, J."
+  year: 2019
+  title: "The importance of attitudes toward technology for pre-service teachers' technological, pedagogical, and content knowledge: Comparing structural equation modeling approaches"
+  journal: "Computers in Human Behavior"
+  volume: 80
+  pages: "157-169"
+  doi: "10.1016/j.chb.2017.11.003"
+  context: "Meta-analysis of teacher digital technology adoption (education-specific)"
+  sample: "k = 114 studies, N = 38,988 teachers"
+  note: "Provides education-specific empirical priors for TAM/UTAUT paths in educational settings"
+
+bayesian_approach:
+  rationale: |
+    Use Scherer et al. (2019) education-specific meta-analytic estimates as primary informative priors for traditional TAM/UTAUT paths.
+    Use Sabherwal et al. (2006) organizational IT priors as secondary reference.
+    This approach:
+    1. Incorporates decades of educational technology adoption research into educational AI adoption analysis
+    2. Allows Bayesian updating: if educational AI differs from general educational technology, data will shift posterior away from prior
+    3. Tests hypothesis: "Educational AI adoption ≠ general educational technology adoption" via prior-posterior comparison
+    4. Provides more stable estimates for paths with limited educational AI-specific studies
+    5. Education-specific priors are more relevant than organizational IT priors
+
+  hypothesis_testing:
+    h0: "Educational AI adoption paths = general educational technology adoption paths (posterior ≈ prior)"
+    h1: "Educational AI adoption paths ≠ general educational technology adoption paths (posterior substantially different from prior)"
+    metric: "Bayes Factor comparing prior vs. posterior distributions"
+
+informative_priors:
+  description: "Traditional TAM/UTAUT paths: Use Sabherwal et al. (2006) estimates as Normal priors"
+
+  PE_to_BI:
+    distribution: "normal"
+    mean: 0.52
+    sd: 0.05
+    sabherwal_label: "Perceived Usefulness → Behavioral Intention"
+    sabherwal_estimate: 0.52
+    sabherwal_se: 0.05
+    sabherwal_k: 87  # number of studies
+    sabherwal_ci_95: [0.42, 0.62]
+    interpretation: "Strong, well-established path in IT literature"
+    expected_ai_context: "May be similar or slightly stronger in AI (performance gains can be substantial)"
+
+  EE_to_BI:
+    distribution: "normal"
+    mean: 0.38
+    sd: 0.06
+    sabherwal_label: "Perceived Ease of Use → Behavioral Intention"
+    sabherwal_estimate: 0.38
+    sabherwal_se: 0.06
+    sabherwal_k: 82
+    sabherwal_ci_95: [0.26, 0.50]
+    interpretation: "Moderate path; sometimes fully mediated by attitude in TAM"
+    expected_ai_context: "May be weaker if AI usability is less salient than trust/anxiety"
+
+  SI_to_BI:
+    distribution: "normal"
+    mean: 0.34
+    sd: 0.05
+    sabherwal_label: "Subjective Norm → Behavioral Intention"
+    sabherwal_estimate: 0.34
+    sabherwal_se: 0.05
+    sabherwal_k: 45
+    sabherwal_ci_95: [0.24, 0.44]
+    interpretation: "Moderate path; context-dependent (stronger in mandatory settings)"
+    expected_ai_context: "May be similar; social influence operates similarly across technologies"
+
+  FC_to_UB:
+    distribution: "normal"
+    mean: 0.25
+    sd: 0.08
+    sabherwal_label: "Facilitating Conditions → System Use"
+    sabherwal_estimate: 0.25
+    sabherwal_se: 0.08
+    sabherwal_k: 28
+    sabherwal_ci_95: [0.09, 0.41]
+    interpretation: "Small-medium path; often absorbed by Effort Expectancy in some models"
+    expected_ai_context: "May be similar; organizational support matters across technologies"
+    note: "Wider SD reflects smaller number of studies (k=28) and higher heterogeneity"
+
+  ATT_to_BI:
+    distribution: "normal"
+    mean: 0.40
+    sd: 0.06
+    sabherwal_label: "Attitude → Behavioral Intention"
+    sabherwal_estimate: 0.40
+    sabherwal_se: 0.06
+    sabherwal_k: 65
+    sabherwal_ci_95: [0.28, 0.52]
+    interpretation: "Strong path in TAM; dropped from UTAUT but empirically robust"
+    expected_ai_context: "May be similar; overall evaluation predicts intention consistently"
+
+  BI_to_UB:
+    distribution: "normal"
+    mean: 0.45
+    sd: 0.07
+    sabherwal_label: "Behavioral Intention → System Use"
+    sabherwal_estimate: 0.45
+    sabherwal_se: 0.07
+    sabherwal_k: 72
+    sabherwal_ci_95: [0.31, 0.59]
+    interpretation: "Core TRA/TPB path; intention-behavior link well-established"
+    expected_ai_context: "Likely similar; intention-behavior gap exists but fundamental relationship stable"
+    note: "May be moderated by voluntariness (stronger for voluntary adoption)"
+
+  EE_to_ATT:
+    distribution: "normal"
+    mean: 0.30
+    sd: 0.06
+    sabherwal_label: "Perceived Ease of Use → Attitude"
+    sabherwal_estimate: 0.30
+    sabherwal_se: 0.06
+    sabherwal_k: 55
+    sabherwal_ci_95: [0.18, 0.42]
+    interpretation: "Moderate indirect path in TAM; ease of use shapes affective response"
+    expected_ai_context: "May be similar; usability influences attitude across technologies"
+
+  PE_to_ATT:
+    distribution: "normal"
+    mean: 0.42
+    sd: 0.05
+    sabherwal_label: "Perceived Usefulness → Attitude"
+    sabherwal_estimate: 0.42
+    sabherwal_se: 0.05
+    sabherwal_k: 68
+    sabherwal_ci_95: [0.32, 0.52]
+    interpretation: "Strong path in TAM; usefulness drives favorable attitude"
+    expected_ai_context: "May be similar; performance expectations shape attitude consistently"
+
+# Scherer et al. (2019) - Teacher TAM Meta-Analysis (Education-Specific)
+# Source: Scherer, R., Siddiq, F., & Tondeur, J. (2019). Computers in Human Behavior, 80, 157-169.
+scherer_education_priors:
+  description: "Education-specific priors from teacher digital technology adoption meta-analysis"
+  source: "Scherer et al. (2019)"
+  journal: "Computers in Human Behavior"
+  context: "Teacher adoption of digital technology in education"
+  note: "These priors are more relevant for educational AI adoption than organizational IT priors"
+
+  PE_to_BI:
+    distribution: "normal"
+    mean: 0.35
+    sd: 0.08
+    scherer_label: "Perceived usefulness → behavioral intention (teachers)"
+    scherer_estimate: 0.35
+    scherer_se: 0.08
+    interpretation: "Medium-strong path for teachers; slightly weaker than organizational IT"
+    expected_educational_ai_context: "May be similar or stronger if AI learning benefits are clear"
+
+  EE_to_BI:
+    distribution: "normal"
+    mean: 0.20
+    sd: 0.07
+    scherer_label: "Ease of use → behavioral intention (teachers)"
+    scherer_estimate: 0.20
+    scherer_se: 0.07
+    interpretation: "Weaker path for teachers than organizational IT; often mediated by attitude"
+    expected_educational_ai_context: "May be similar; ease of use less critical if AI is trusted"
+
+  EE_to_PE:
+    distribution: "normal"
+    mean: 0.30
+    sd: 0.06
+    scherer_label: "Ease of use → perceived usefulness (teachers)"
+    scherer_estimate: 0.30
+    scherer_se: 0.06
+    interpretation: "Moderate path; easier technology perceived as more useful in education"
+    expected_educational_ai_context: "May be similar for educational AI tools"
+
+  ATT_to_BI:
+    distribution: "normal"
+    mean: 0.45
+    sd: 0.09
+    scherer_label: "Attitude → behavioral intention (strongest path for teachers)"
+    scherer_estimate: 0.45
+    scherer_se: 0.09
+    interpretation: "Strongest predictor for teachers; attitude dominates in educational settings"
+    expected_educational_ai_context: "May be even stronger for AI due to anxiety/trust concerns"
+
+  PE_to_ATT:
+    distribution: "normal"
+    mean: 0.40
+    sd: 0.07
+    scherer_label: "Perceived usefulness → attitude (teachers)"
+    scherer_estimate: 0.40
+    scherer_se: 0.07
+    interpretation: "Strong path; usefulness shapes attitude in education"
+    expected_educational_ai_context: "May be similar; learning effectiveness shapes attitude"
+
+  EE_to_ATT:
+    distribution: "normal"
+    mean: 0.25
+    sd: 0.06
+    scherer_label: "Ease of use → attitude (teachers)"
+    scherer_estimate: 0.25
+    scherer_se: 0.06
+    interpretation: "Moderate path; easier tools create more favorable attitudes"
+    expected_educational_ai_context: "May be similar for educational AI"
+
+  SI_to_BI:
+    distribution: "normal"
+    mean: 0.15
+    sd: 0.06
+    scherer_label: "Social influence → behavioral intention (teachers)"
+    scherer_estimate: 0.15
+    scherer_se: 0.06
+    interpretation: "Weaker than organizational IT; teachers have more autonomy"
+    expected_educational_ai_context: "May be stronger for students (peer influence matters)"
+
+  FC_to_UB:
+    distribution: "normal"
+    mean: 0.25
+    sd: 0.08
+    scherer_label: "Facilitating conditions → use behavior (teachers)"
+    scherer_estimate: 0.25
+    scherer_se: 0.08
+    interpretation: "Institutional support critical in education; similar to organizational IT"
+    expected_educational_ai_context: "May be similar; institutional AI support matters"
+
+  student_vs_teacher_note: |
+    Scherer et al. (2019) focused on teachers. For student priors, use wider distributions (less prior information available).
+    Student populations may show:
+    - Stronger SI→BI (peer influence stronger for students)
+    - Weaker ATT→BI (students have less choice/autonomy)
+    - Similar PE→BI, EE→BI paths
+
+combined_priors_guidance:
+  description: "How to integrate Sabherwal (organizational IT) and Scherer (education) priors"
+  recommendation: |
+    For educational AI adoption:
+    1. PRIMARY: Use Scherer et al. (2019) education-specific priors for teacher/instructor studies
+    2. SECONDARY: Use Sabherwal et al. (2006) organizational IT priors as robustness check
+    3. STUDENTS: Use wider SD on Scherer priors (multiply SD by 1.5) due to less prior information
+    4. SENSITIVITY: Run models with both prior sets and compare posteriors
+
+  prior_selection_matrix:
+    teacher_instructor_studies: "Use Scherer (2019) priors"
+    student_studies: "Use Scherer (2019) priors with wider SD (×1.5)"
+    mixed_education_samples: "Use Scherer (2019) priors"
+    organizational_training: "Use Sabherwal (2006) priors"
+    general_public: "Use Sabherwal (2006) priors or weakly informative"
+
+weakly_informative_priors:
+  description: "AI-specific paths: No prior IT literature; use weakly informative priors centered at zero"
+  rationale: |
+    No general IT meta-analyses include AI-specific constructs (trust, anxiety, transparency, autonomy).
+    Use weakly informative N(0, 0.20) priors:
+    - Mean = 0: No strong directional expectation from prior data
+    - SD = 0.20: Allows wide range (-0.40 to +0.40 covers 95% prior probability)
+    - Regularization: Prevents overfitting but allows data to dominate
+
+  TRU_to_BI:
+    distribution: "normal"
+    mean: 0.00
+    sd: 0.20
+    theoretical_expectation: "positive (β ≈ 0.30-0.50)"
+    rationale: "AI trust is novel construct; no general IT prior available"
+    note: "Weakly informative prior; data will dominate posterior"
+
+  ANX_to_BI:
+    distribution: "normal"
+    mean: 0.00
+    sd: 0.20
+    theoretical_expectation: "negative (β ≈ −0.20 to −0.30)"
+    rationale: "Computer anxiety existed in IT literature but not meta-analyzed by Sabherwal et al."
+    note: "Zero-centered prior despite expected negative sign; let data determine direction/magnitude"
+
+  TRA_to_TRU:
+    distribution: "normal"
+    mean: 0.00
+    sd: 0.20
+    theoretical_expectation: "positive (β ≈ 0.40-0.60)"
+    rationale: "Transparency → trust is AI-specific relationship (XAI literature)"
+    note: "No historical IT data; entirely data-driven"
+
+  AUT_to_ANX:
+    distribution: "normal"
+    mean: 0.00
+    sd: 0.20
+    theoretical_expectation: "positive (β ≈ 0.20-0.30)"
+    rationale: "Autonomy → anxiety is AI-specific (automation anxiety)"
+    note: "Weakly informative; limited prior theory"
+
+  SE_to_EE:
+    distribution: "normal"
+    mean: 0.00
+    sd: 0.20
+    theoretical_expectation: "positive (β ≈ 0.30-0.40)"
+    rationale: "Self-efficacy → ease of use less studied in IT meta-analyses"
+    note: "TAM2 includes this path but not meta-analyzed by Sabherwal et al."
+    alternative: "Could use TAM2 individual study estimates if desired"
+
+  SE_to_ANX:
+    distribution: "normal"
+    mean: 0.00
+    sd: 0.20
+    theoretical_expectation: "negative (β ≈ −0.25 to −0.35)"
+    rationale: "Self-efficacy reduces anxiety; well-established in psychology but not IT meta-analysis"
+    note: "Could use stronger prior from anxiety literature, but keeping weakly informative for consistency"
+
+prior_sensitivity_analysis:
+  diffuse_priors:
+    description: "Re-run analysis with non-informative priors for all paths to assess prior influence"
+    specification:
+      all_paths:
+        distribution: "normal"
+        mean: 0.00
+        sd: 10.0
+        note: "Effectively flat prior over plausible parameter space"
+    comparison: "Compare posteriors from informative vs. diffuse priors"
+    interpretation: |
+      - If posteriors similar → data are strong, prior has little influence
+      - If posteriors differ substantially → prior is influential; interpret with caution
+
+  alternative_prior_sources:
+    utaut_meta_analysis:
+      source: "Dwivedi et al. (2019). Re-examining UTAUT. Information Systems Frontiers."
+      note: "More recent UTAUT meta-analysis; could use as alternative priors"
+      coverage: "PE→BI, EE→BI, SI→BI, FC→UB"
+
+    tam_meta_analysis:
+      source: "King & He (2006). A meta-analysis of TAM. Information & Management."
+      note: "Classic TAM meta-analysis; alternative to Sabherwal et al."
+      coverage: "PE→BI, EE→BI, PE→ATT, EE→ATT, ATT→BI"
+
+hyperpriors:
+  description: "Hierarchical priors for heterogeneity (τ²)"
+
+  between_study_sd:
+    distribution: "half_cauchy"
+    location: 0
+    scale: 0.5
+    rationale: "Regularizing prior for heterogeneity; prevents overfitting"
+    reference: "Gelman (2006). Prior distributions for variance parameters"
+
+prior_posterior_comparison:
+  metrics:
+    bayes_factor:
+      description: "BF10 = p(data | H1) / p(data | H0)"
+      h0: "Posterior = Prior (Educational AI same as general educational technology)"
+      h1: "Posterior ≠ Prior (Educational AI differs from general educational technology)"
+      interpretation:
+        bf_1_to_3: "Anecdotal evidence for difference"
+        bf_3_to_10: "Moderate evidence"
+        bf_10_to_30: "Strong evidence"
+        bf_30_to_100: "Very strong evidence"
+        bf_gt_100: "Extreme evidence"
+
+    prior_posterior_overlap:
+      description: "Calculate overlap between prior and posterior distributions"
+      metric: "Bhattacharyya coefficient (0 = no overlap, 1 = identical)"
+      interpretation:
+        overlap_gt_0_8: "Minimal shift; educational AI similar to general educational technology"
+        overlap_0_5_to_0_8: "Moderate shift; some AI-specific differences in education"
+        overlap_lt_0_5: "Substantial shift; educational AI differs from general educational technology"
+
+    posterior_probability:
+      description: "P(β_AI > β_EdTech + δ | data) for meaningful difference threshold δ"
+      threshold_delta: 0.10
+      interpretation:
+        prob_gt_0_95: "Highly credible that educational AI differs from general educational technology"
+        prob_0_80_to_0_95: "Credible difference"
+        prob_lt_0_80: "Uncertain; could be similar to general educational technology"
+
+  focal_comparisons:
+    - path: "PE_to_BI"
+      prior_mean_scherer: 0.35
+      prior_mean_sabherwal: 0.52
+      hypothesis: "Educational AI performance expectancy similar to or stronger than general educational technology"
+      expected_result: "Posterior may be similar to Scherer or slightly higher if learning benefits are clear"
+
+    - path: "EE_to_BI"
+      prior_mean_scherer: 0.20
+      prior_mean_sabherwal: 0.38
+      hypothesis: "Educational AI ease of use less critical than in general IT (trust/anxiety more important in education)"
+      expected_result: "Posterior may be similar to Scherer (weaker than organizational IT)"
+
+    - path: "ATT_to_BI"
+      prior_mean_scherer: 0.45
+      hypothesis: "Attitude is strongest predictor in education (Scherer finding)"
+      expected_result: "Posterior may be similar or even stronger for educational AI due to trust/anxiety concerns"
+
+    - path: "TRU_to_BI"
+      prior_mean: 0.00
+      hypothesis: "AI trust has substantial positive effect in education (no educational technology prior)"
+      expected_result: "Posterior substantially positive (β ≈ 0.30-0.50); may be stronger in education due to academic integrity concerns"
+
+    - path: "ANX_to_BI"
+      prior_mean: 0.00
+      hypothesis: "AI anxiety has negative effect (more salient in education than general educational technology)"
+      expected_result: "Posterior substantially negative (β ≈ −0.20 to −0.30); academic integrity anxiety is education-specific"
+
+posterior_predictive_checks:
+  description: "Assess model fit by comparing observed data to posterior predictive distribution"
+
+  replicated_datasets:
+    n_replications: 1000
+    method: "Sample from posterior, generate predicted correlation matrices"
+
+  discrepancy_measures:
+    - "Mean absolute difference between observed and predicted correlations"
+    - "Maximum absolute difference"
+    - "Chi-square discrepancy"
+
+  interpretation:
+    good_fit: "Observed data falls within 95% posterior predictive interval"
+    poor_fit: "Observed data extreme relative to posterior predictions"
+
+prior_elicitation_notes:
+  sabherwal_limitations:
+    - "Published 2006; pre-AI era (oldest studies from 1990s)"
+    - "Focused on organizational IS adoption (may differ from educational AI adoption)"
+    - "Did not include AI-specific constructs"
+    - "Heterogeneity was substantial (I² > 50% for most paths)"
+    - "Not education-specific (organizational context differs from educational settings)"
+
+  scherer_strengths:
+    - "Published 2019; more recent than Sabherwal (2006)"
+    - "Education-specific meta-analysis (teachers, K-12 and higher education)"
+    - "Digital technology adoption directly relevant to educational AI adoption"
+    - "Attitude→BI path strongest for teachers (education-specific finding)"
+    - "More appropriate priors for educational AI adoption research"
+
+  scherer_limitations:
+    - "Teacher-focused (student priors less established)"
+    - "Pre-generative AI era (pre-ChatGPT, pre-2022)"
+    - "Did not include AI-specific constructs (trust, anxiety, transparency, autonomy)"
+
+  alternative_approach:
+    description: "Could use empirical Bayes to estimate priors from current educational AI adoption data subset"
+    method: "Fit model to 70% random sample, use estimates as priors for remaining 30%"
+    advantage: "More directly relevant to educational AI context"
+    disadvantage: "Loses information; less theoretically justified"
+
+  expert_elicitation:
+    description: "Alternative: elicit priors from educational AI adoption experts"
+    method: "Survey 10-20 experts (education researchers, instructional designers) on expected path coefficients"
+    advantage: "Incorporates domain expertise not captured in historical data; education-specific insights"
+    disadvantage: "Subjective; expert predictions often miscalibrated"
+
+reporting_standards:
+  prior_specification:
+    - "Report all priors (informative and weakly informative) in supplementary materials"
+    - "Justify choice of Sabherwal et al. (2006) as prior source"
+    - "Explain weakly informative prior specification (N(0, 0.20))"
+
+  prior_sensitivity:
+    - "Report posterior estimates under both informative and diffuse priors"
+    - "Quantify prior influence on posteriors"
+    - "Discuss robustness of conclusions to prior choice"
+
+  prior_posterior_shift:
+    - "Report Bayes Factors for prior-posterior difference"
+    - "Visualize prior vs. posterior distributions (density plots)"
+    - "Interpret shift in substantive terms (AI vs. general IT)"
+
+implementation:
+  software: "Stan via blavaan (R)"
+
+  stan_code_snippet: |
+    data {
+      int<lower=1> N;  // number of studies
+      int<lower=1> P;  // number of paths
+      matrix[P,P] S[N];  // sample correlation matrices
+      int<lower=1> n[N];  // sample sizes
+    }
+
+    parameters {
+      // Path coefficients
+      real beta_PE_BI;
+      real beta_EE_BI;
+      // ... (other paths)
+
+      // Between-study heterogeneity
+      real<lower=0> tau;
+    }
+
+    model {
+      // Informative priors (Sabherwal et al., 2006)
+      beta_PE_BI ~ normal(0.52, 0.05);
+      beta_EE_BI ~ normal(0.38, 0.06);
+      // ...
+
+      // Weakly informative priors (AI-specific)
+      beta_TRU_BI ~ normal(0.00, 0.20);
+      beta_ANX_BI ~ normal(0.00, 0.20);
+      // ...
+
+      // Hyperprior for heterogeneity
+      tau ~ cauchy(0, 0.5);
+
+      // Likelihood (correlations from implied SEM model)
+      for (i in 1:N) {
+        S[i] ~ wishart(n[i], Sigma_implied);
+      }
+    }
+
+references:
+  - "Dwivedi, Y. K., et al. (2019). Re-examining the Unified Theory of Acceptance and Use of Technology (UTAUT). Information Systems Frontiers, 21, 719-734."
+  - "Gelman, A. (2006). Prior distributions for variance parameters in hierarchical models. Bayesian Analysis, 1(3), 515-534."
+  - "King, W. R., & He, J. (2006). A meta-analysis of the technology acceptance model. Information & Management, 43(6), 740-755."
+  - "Sabherwal, R., Jeyaraj, A., & Chowa, C. (2006). Information system success: Individual and organizational determinants. Management Science, 52(12), 1849-1864."
+
+version: "1.0.0"
+date_created: "2026-02-16"
+last_modified: "2026-02-16"
