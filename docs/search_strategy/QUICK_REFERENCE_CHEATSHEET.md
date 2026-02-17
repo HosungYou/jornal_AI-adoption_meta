@@ -1,142 +1,125 @@
-# Quick Reference Cheat Sheet (Print This) — Enhanced v2
+# Quick Reference Cheat Sheet — v3 EXECUTED
 
 **Project:** AI Adoption in Education MASEM | **Date Range:** 2015-2025
-**Enhanced:** 2026-02-17 | Cluster 1: +8 AI terms | Cluster 3: +6 TAM/UTAUT constructs
+**Executed:** 2026-02-17 | **5-Cluster Query** | Higher Education Focus
 
 ---
 
-## DB1: Web of Science (Advanced Search)
+## Cluster Structure (v3)
+
+| # | Cluster | Terms | Key Change from v2 |
+|---|---------|:-----:|---------------------|
+| 1 | AI Technology | 20 | Unchanged |
+| 2 | Higher Education | 10 | Narrowed from broad "education" |
+| 3 | Adoption/Acceptance | 11 | Removed: trust, resistance, behavior, attitude, usage |
+| 4 | Quantitative Methods | 10 | NEW |
+| 5 | Article Type | DB-specific | NEW |
+
+---
+
+## DB1: Web of Science — 6,897 hits
 
 ```
-TS=("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND TS=(education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic) AND TS=(adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance)
+TS=("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND TS=("higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor*) AND TS=(adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy") AND TS=(survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression OR "factor analysis" OR "meta-analysis" OR MASEM) AND DT=(Article)
 ```
 - Timespan: 2015-01-01 ~ 2025-12-31
-- Export: Tab-delimited (UTF-8), Full Record + Cited References
-- Filename: `WoS_export_YYYYMMDD.txt`
+- Export: Excel (.xls), Full Record, 1000/batch x 7 files
 
 ---
 
-## DB2: Scopus (Advanced Search)
+## DB2: Scopus — 7,363 hits
 
 ```
-TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND TITLE-ABS-KEY(education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic) AND TITLE-ABS-KEY(adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance) AND PUBYEAR > 2014 AND PUBYEAR < 2026
+TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND TITLE-ABS-KEY("higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor) AND TITLE-ABS-KEY(adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy") AND TITLE-ABS-KEY(survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression OR "factor analysis" OR "meta-analysis" OR MASEM) AND DOCTYPE(ar) AND PUBYEAR > 2014 AND PUBYEAR < 2026
 ```
-- Export: CSV, Citation + Bibliographic + Abstract & keywords
-- Filename: `Scopus_export_YYYYMMDD.csv`
-
----
-
-## DB3: PsycINFO (EBSCO Advanced Search, 3 rows)
-
-**Row 1 (TX All Text):**
-```
-"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI"
-```
-
-**Row 2 (AND):**
-```
-education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic
-```
-
-**Row 3 (AND):**
-```
-adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance
-```
-- Limiters: 2015-2025, English, Academic Journals + Conference
-- Export: RIS format
-- Filename: `PsycINFO_export_YYYYMMDD.ris`
+- Export: CSV, Full Record, single file
 
 ---
 
-## DB4: IEEE Xplore (Advanced Search GUI)
+## DB3: IEEE Xplore — 20,846 hits
 
-**Field 1 (All Metadata):**
-```
-artificial intelligence OR AI OR machine learning OR deep learning OR chatbot OR generative AI OR ChatGPT OR GPT OR large language model OR LLM OR adaptive learning OR intelligent tutoring system OR conversational AI OR AI agent
-```
+Advanced Search GUI, 3 rows (All Metadata), Journals only, 2015-2025:
 
-**AND Field 2 (All Metadata):**
-```
-education OR student OR teacher OR learning OR university OR higher education
-```
+**Row 1:** `"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "adaptive learning" OR "conversational AI" OR "AI agent" OR "agentic AI"`
 
-**AND Field 3 (All Metadata):**
-```
-adoption OR acceptance OR intention OR TAM OR UTAUT OR technology acceptance OR behavioral intention OR perceived usefulness
-```
-- Date Range: 2015-2025
-- Export: CSV or BibTeX
-- Filename: `IEEE_export_YYYYMMDD.csv`
+**AND Row 2:** `"higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor`
+
+**AND Row 3:** `adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR survey OR questionnaire OR "structural equation" OR SEM OR "path analysis" OR regression`
+
+- Filters: Journals, Year 2015-2025
+- Export: CSV, 2000/batch
+- Note: "All Metadata" includes full text, so count is higher than WoS/Scopus
 
 ---
 
-## DB5: ACM Digital Library (Advanced Search)
+## DB4: PsycINFO (EBSCO, 4 rows) — PENDING
 
-**Field 1 (Anywhere):**
-```
-"artificial intelligence" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "large language model" OR "adaptive learning" OR "conversational AI" OR "AI agent"
-```
+**Row 1 (TX All Text):** `"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI"`
 
-**AND Field 2 (Anywhere):**
-```
-education OR student OR teacher OR learning OR university OR "higher education"
-```
+**Row 2 (AND):** `"higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor`
 
-**AND Field 3 (Anywhere):**
-```
-adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness"
-```
-- Published Between: January 2015 - December 2025
-- Export: BibTeX
-- Filename: `ACM_export_YYYYMMDD.bib`
+**Row 3 (AND):** `adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy"`
+
+**Row 4 (AND):** `survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression OR "factor analysis" OR "meta-analysis" OR MASEM`
+
+- Limiters: 2015-2025, English, Academic Journals
+- Export: RIS
 
 ---
 
-## DB6: ERIC (eric.ed.gov, Advanced Search, Boolean/Phrase)
+## DB5: ACM Digital Library — PENDING
+
+**Field 1 (Anywhere):** `"artificial intelligence" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "large language model" OR "adaptive learning" OR "conversational AI" OR "AI agent"`
+
+**AND Field 2:** `"higher education" OR university OR college OR undergraduate OR "graduate student" OR faculty OR professor`
+
+**AND Field 3:** `adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR survey OR questionnaire OR "structural equation" OR SEM`
+
+- 2015-2025, Export: BibTeX
+
+---
+
+## DB6: ERIC — PENDING
 
 ```
-("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "adaptive learning" OR "conversational AI" OR "AI agent" OR "agentic AI") AND (education OR student OR teacher OR learning OR university OR "higher education" OR "K-12") AND (adoption OR acceptance OR intention OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance)
+("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT" OR "large language model" OR "LLM" OR "adaptive learning" OR "conversational AI" OR "AI agent" OR "agentic AI") AND ("higher education" OR university OR college OR undergraduate OR "graduate student" OR faculty OR professor) AND (adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy") AND (survey OR questionnaire OR "structural equation" OR SEM OR "path analysis" OR regression)
 ```
 - Since 2015, Peer Reviewed, Journal Articles
 - Export: CSV
-- Filename: `ERIC_export_YYYYMMDD.csv`
 
 ---
 
-## DB7: Education Source (EBSCO, same format as PsycINFO)
+## DB7: Education Source (EBSCO) — PENDING
 
-Same 3-row query as PsycINFO above. Select "Education Source" database in EBSCO.
+Same 4-row query as PsycINFO. Select "Education Source" database.
 - Limiters: 2015-2025, English, Academic Journals, Peer Reviewed
 - Export: RIS
-- Filename: `EduSource_export_YYYYMMDD.ris`
 
 ---
 
-## Results Log (fill in by hand)
+## Results Log
 
 | DB | Hits | Exported | File | Date |
 |----|:----:|:--------:|------|------|
-| Web of Science | | | | |
-| Scopus | | | | |
-| PsycINFO | | | | |
-| IEEE Xplore | | | | |
-| ACM DL | | | | |
-| ERIC | | | | |
-| Education Source | | | | |
-| **TOTAL** | | | | |
+| Web of Science | 6,897 | 6,897 | 7x .xls | 2026-02-17 |
+| Scopus | 7,363 | 7,363 | 1x .csv | 2026-02-17 |
+| IEEE Xplore | 20,846 | pending | - | 2026-02-17 |
+| PsycINFO | pending | - | - | - |
+| ACM DL | pending | - | - | - |
+| ERIC | pending | - | - | - |
+| Education Source | pending | - | - | - |
+| **TOTAL** | **35,106+** | | | |
 
 ---
 
-## If Too Many Results (>5,000 in any DB)
-
-Add this 4th cluster to narrow to quantitative adoption studies:
-```
-AND (survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression)
-```
-
 ## Export File Destination
-
-Copy all files to USB or cloud, then place in:
 ```
-/Users/hosung/jornal_AI-adoption_meta/data/raw/search_results/
+/tmp/jornal_AI-adoption_meta/data/raw/search_results/
+├── wos/          (7 .xls files)
+├── scopus/       (1 .csv file)
+├── ieee/         (pending)
+├── psycinfo/     (pending)
+├── acm/          (pending)
+├── eric/         (pending)
+└── edusource/    (pending)
 ```
