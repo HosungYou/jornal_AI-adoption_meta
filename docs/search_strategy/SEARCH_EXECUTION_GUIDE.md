@@ -46,12 +46,12 @@ Date Range: 2015-01-01 to 2025-12-31
 |---|----------|:----:|:------------:|-------------|------|
 | 1 | Web of Science | 6,897 | Excel (.xls) | WoS_1-1000 through WoS_6001-6897 (7 files) | 2026-02-17 |
 | 2 | Scopus | 7,363 | CSV | Scopus_7363_20250217.csv | 2026-02-17 |
-| 3 | IEEE Xplore | 20,846 | CSV | TBD | 2026-02-17 |
+| 3 | IEEE Xplore | 161 | CSV | IEEE_161_20260217.csv | 2026-02-17 |
 | 4 | PsycINFO | pending | - | - | - |
 | 5 | ACM DL | pending | - | - | - |
 | 6 | ERIC | pending | - | - | - |
 | 7 | Education Source | pending | - | - | - |
-| | **Total (before dedup)** | **35,106+** | | | |
+| | **Total (before dedup)** | **14,421+** | | | |
 
 ---
 
@@ -100,34 +100,20 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep l
 ## Database 3: IEEE Xplore
 
 **URL:** https://ieeexplore.ieee.org/
-**Status:** COMPLETED (2026-02-17) — search done, export pending
+**Status:** COMPLETED (2026-02-17)
 
-### Executed Query (v3, Advanced Search GUI)
-3 rows, All Metadata field, date range 01/01/2015 - 12/31/2025:
-
-**Row 1 (All Metadata):**
+### Executed Query (v4, Command Search — Abstract field)
 ```
-"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "adaptive learning" OR "conversational AI" OR "AI agent" OR "agentic AI"
+("Abstract":"artificial intelligence" OR "Abstract":"AI" OR "Abstract":"machine learning" OR "Abstract":"deep learning" OR "Abstract":"intelligent tutoring system" OR "Abstract":"chatbot" OR "Abstract":"generative AI" OR "Abstract":"ChatGPT" OR "Abstract":"GPT" OR "Abstract":"large language model" OR "Abstract":"LLM" OR "Abstract":"natural language processing" OR "Abstract":"adaptive learning" OR "Abstract":"conversational AI" OR "Abstract":"AI agent" OR "Abstract":"agentic AI") AND ("Abstract":"higher education" OR "Abstract":university OR "Abstract":"post-secondary" OR "Abstract":"tertiary education" OR "Abstract":college OR "Abstract":undergraduate OR "Abstract":"graduate student" OR "Abstract":faculty OR "Abstract":professor OR "Abstract":instructor) AND ("Abstract":adoption OR "Abstract":acceptance OR "Abstract":intention OR "Abstract":TAM OR "Abstract":UTAUT OR "Abstract":"technology acceptance" OR "Abstract":"behavioral intention" OR "Abstract":"perceived usefulness" OR "Abstract":"perceived ease of use" OR "Abstract":survey OR "Abstract":questionnaire OR "Abstract":"structural equation" OR "Abstract":SEM OR "Abstract":"path analysis" OR "Abstract":regression)
 ```
 
-**AND Row 2 (All Metadata):**
-```
-"higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor
-```
-
-**AND Row 3 (All Metadata):**
-```
-adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR survey OR questionnaire OR "structural equation" OR SEM OR "path analysis" OR regression
-```
-
+> Field: **Abstract** (changed from "All Metadata" which searched full text and inflated results to 20,846)
 > Filters Applied: Journals, Year 2015-2025
-> Result: **20,846 records**
-> Note: IEEE "All Metadata" searches full text, so results are larger than WoS/Scopus. High overlap expected during deduplication.
+> Result: **161 records**
 
-### Export Instructions
-- IEEE limits CSV export to 2,000 records per batch
-- Export: CSV with Citation + Abstract
-- Filename pattern: `IEEE_export_YYYYMMDD_batch#.csv`
+### Export Details
+- Format: CSV, Full Record (all 161 records in single file)
+- Files: 1 file (IEEE_161_20260217.csv)
 - Location: `data/raw/search_results/ieee/`
 
 ---

@@ -36,19 +36,16 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep l
 
 ---
 
-## DB3: IEEE Xplore — 20,846 hits
+## DB3: IEEE Xplore — 161 hits
 
-Advanced Search GUI, 3 rows (All Metadata), Journals only, 2015-2025:
+Command Search, **Abstract** field (not All Metadata), Journals only, 2015-2025:
 
-**Row 1:** `"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "adaptive learning" OR "conversational AI" OR "AI agent" OR "agentic AI"`
+```
+("Abstract":"artificial intelligence" OR "Abstract":"AI" OR "Abstract":"machine learning" OR ... OR "Abstract":"agentic AI") AND ("Abstract":"higher education" OR "Abstract":university OR ... OR "Abstract":instructor) AND ("Abstract":adoption OR "Abstract":acceptance OR ... OR "Abstract":regression)
+```
 
-**AND Row 2:** `"higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor`
-
-**AND Row 3:** `adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR survey OR questionnaire OR "structural equation" OR SEM OR "path analysis" OR regression`
-
-- Filters: Journals, Year 2015-2025
-- Export: CSV, 2000/batch
-- Note: "All Metadata" includes full text, so count is higher than WoS/Scopus
+- Field changed from "All Metadata" (20,846) to "Abstract" (161) — matches WoS/Scopus scope
+- Export: CSV, single file (161 records)
 
 ---
 
@@ -103,12 +100,12 @@ Same 4-row query as PsycINFO. Select "Education Source" database.
 |----|:----:|:--------:|------|------|
 | Web of Science | 6,897 | 6,897 | 7x .xls | 2026-02-17 |
 | Scopus | 7,363 | 7,363 | 1x .csv | 2026-02-17 |
-| IEEE Xplore | 20,846 | pending | - | 2026-02-17 |
+| IEEE Xplore | 161 | 161 | 1x .csv | 2026-02-17 |
 | PsycINFO | pending | - | - | - |
 | ACM DL | pending | - | - | - |
 | ERIC | pending | - | - | - |
 | Education Source | pending | - | - | - |
-| **TOTAL** | **35,106+** | | | |
+| **TOTAL** | **14,421+** | | | |
 
 ---
 
