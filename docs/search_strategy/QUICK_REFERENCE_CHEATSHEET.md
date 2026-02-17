@@ -1,13 +1,14 @@
-# Quick Reference Cheat Sheet (Print This)
+# Quick Reference Cheat Sheet (Print This) — Enhanced v2
 
 **Project:** AI Adoption in Education MASEM | **Date Range:** 2015-2025
+**Enhanced:** 2026-02-17 | Cluster 1: +8 AI terms | Cluster 3: +6 TAM/UTAUT constructs
 
 ---
 
 ## DB1: Web of Science (Advanced Search)
 
 ```
-TS=("artificial intelligence" OR "AI" OR "machine learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "natural language processing" OR "automated grading" OR "adaptive learning") AND TS=(education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic) AND TS=(adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance")
+TS=("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND TS=(education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic) AND TS=(adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance)
 ```
 - Timespan: 2015-01-01 ~ 2025-12-31
 - Export: Tab-delimited (UTF-8), Full Record + Cited References
@@ -18,7 +19,7 @@ TS=("artificial intelligence" OR "AI" OR "machine learning" OR "intelligent tuto
 ## DB2: Scopus (Advanced Search)
 
 ```
-TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "natural language processing" OR "automated grading" OR "adaptive learning") AND TITLE-ABS-KEY(education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic) AND TITLE-ABS-KEY(adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance") AND PUBYEAR > 2014 AND PUBYEAR < 2026
+TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND TITLE-ABS-KEY(education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic) AND TITLE-ABS-KEY(adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance) AND PUBYEAR > 2014 AND PUBYEAR < 2026
 ```
 - Export: CSV, Citation + Bibliographic + Abstract & keywords
 - Filename: `Scopus_export_YYYYMMDD.csv`
@@ -29,7 +30,7 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "intell
 
 **Row 1 (TX All Text):**
 ```
-"artificial intelligence" OR "AI" OR "machine learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "natural language processing" OR "automated grading" OR "adaptive learning"
+"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI"
 ```
 
 **Row 2 (AND):**
@@ -39,7 +40,7 @@ education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR cla
 
 **Row 3 (AND):**
 ```
-adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance"
+adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance
 ```
 - Limiters: 2015-2025, English, Academic Journals + Conference
 - Export: RIS format
@@ -51,7 +52,7 @@ adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR U
 
 **Field 1 (All Metadata):**
 ```
-artificial intelligence OR AI OR machine learning OR chatbot OR generative AI OR ChatGPT OR adaptive learning OR intelligent tutoring system
+artificial intelligence OR AI OR machine learning OR deep learning OR chatbot OR generative AI OR ChatGPT OR GPT OR large language model OR LLM OR adaptive learning OR intelligent tutoring system OR conversational AI OR AI agent
 ```
 
 **AND Field 2 (All Metadata):**
@@ -61,7 +62,7 @@ education OR student OR teacher OR learning OR university OR higher education
 
 **AND Field 3 (All Metadata):**
 ```
-adoption OR acceptance OR intention OR TAM OR UTAUT OR technology acceptance
+adoption OR acceptance OR intention OR TAM OR UTAUT OR technology acceptance OR behavioral intention OR perceived usefulness
 ```
 - Date Range: 2015-2025
 - Export: CSV or BibTeX
@@ -73,7 +74,7 @@ adoption OR acceptance OR intention OR TAM OR UTAUT OR technology acceptance
 
 **Field 1 (Anywhere):**
 ```
-"artificial intelligence" OR "machine learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "adaptive learning"
+"artificial intelligence" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "large language model" OR "adaptive learning" OR "conversational AI" OR "AI agent"
 ```
 
 **AND Field 2 (Anywhere):**
@@ -83,7 +84,7 @@ education OR student OR teacher OR learning OR university OR "higher education"
 
 **AND Field 3 (Anywhere):**
 ```
-adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance"
+adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness"
 ```
 - Published Between: January 2015 - December 2025
 - Export: BibTeX
@@ -94,7 +95,7 @@ adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance"
 ## DB6: ERIC (eric.ed.gov, Advanced Search, Boolean/Phrase)
 
 ```
-("artificial intelligence" OR "AI" OR "machine learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "natural language processing" OR "adaptive learning") AND (education OR student OR teacher OR learning OR university OR "higher education" OR "K-12") AND (adoption OR acceptance OR intention OR attitude OR TAM OR UTAUT OR "technology acceptance")
+("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "adaptive learning" OR "conversational AI" OR "AI agent" OR "agentic AI") AND (education OR student OR teacher OR learning OR university OR "higher education" OR "K-12") AND (adoption OR acceptance OR intention OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance)
 ```
 - Since 2015, Peer Reviewed, Journal Articles
 - Export: CSV
