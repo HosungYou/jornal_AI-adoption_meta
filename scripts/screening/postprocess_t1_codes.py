@@ -53,7 +53,7 @@ def classify_t1_reason(row):
 
 
 def main():
-    path = sys.argv[1] if len(sys.argv) > 1 else "/Users/hosung/jornal_AI-adoption_meta/data/01_extracted/screening_ai_dual.csv"
+    path = sys.argv[1] if len(sys.argv) > 1 else "/Users/hosung/jornal_AI-adoption_meta/data/03_screening/screening_ai_dual.csv"
     df = pd.read_csv(path)
 
     t1_mask = df["screening_tier"].str.startswith("T1", na=False)

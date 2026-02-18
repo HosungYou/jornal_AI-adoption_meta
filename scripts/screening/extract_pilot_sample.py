@@ -45,9 +45,9 @@ def stratified_sample(df: pd.DataFrame, n: int, stratum_col: str = "source_datab
 def main():
     parser = argparse.ArgumentParser(description="Extract stratified pilot sample")
     parser.add_argument("--input", type=str,
-                        default="data/processed/screening_master_16189_20260217.csv")
+                        default="data/02_processed/screening_master_16189.csv")
     parser.add_argument("--output", type=str,
-                        default="data/processed/pilot_100_sample.csv")
+                        default="data/02_processed/pilot_100_sample.csv")
     parser.add_argument("--n", type=int, default=100)
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()

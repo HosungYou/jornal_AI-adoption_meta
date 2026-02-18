@@ -77,7 +77,7 @@ screening_cli:
 paths:
   pdfs: "./pdfs"
   raw_data: "./data/00_raw"
-  extracted: "./data/01_extracted"
+  extracted: "./data/05_coding"
   verified: "./data/02_verified"
   pooled: "./data/03_pooled"
   final: "./data/04_final"

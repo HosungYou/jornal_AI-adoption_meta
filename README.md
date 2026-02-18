@@ -54,34 +54,64 @@ Extended 12-construct model integrating TAM, UTAUT, and AI-specific variables:
 - **Core method**: Two-Stage Meta-Analytic SEM (TSSEM; Cheung, 2015) via `metaSEM` R package
 - **Advanced**: One-Stage MASEM (OSMASEM), Bayesian MASEM (`blavaan`), Network Analysis (`psychonetrics`)
 - **AI-assisted screening**: Codex CLI + Gemini CLI (dual-provider OAuth); AI-assisted coding: 3-model consensus pipeline
-- **Expected studies**: k = 40-80 studies, N > 10,000 participants
+- **Expected studies**: k = 40-80 studies, N > 10,000 participants (initial); actual pipeline yielded k ≈ 150-220 candidates
+- **Actual screening**: 16,189 records screened (3-tier AI pipeline); 256 include, 175 conflict, 1,776 uncertain (Gemini retry pending)
 
 ## Repository Structure
 
 ```
-├── data/                   # Raw → extracted → verified → pooled → final
-│   ├── processed/         # Deduplicated screening master
-├── analysis/
-│   ├── R/                  # 13 analysis scripts (00-13)
-│   └── Python/             # Data cleaning, validation, reporting
-├── docs/                   # Literature search → extraction → methodology
-├── scripts/
-│   ├── ai_coding_pipeline/ # 7-Phase AI extraction pipeline
-│   ├── screening/          # Study screening tools
-│   └── data_processing/    # Template creation, validation
-├── supplementary/          # Codebook, PRISMA, protocol, construct mapping
-├── configs/                # Model specs, Bayesian priors, network params
-├── manuscript/             # Current draft, versions, figures, tables
-└── figures/                # Source and output figures
+data/
+├── 01_raw/                  # Original database exports (WoS, Scopus, PsycINFO, IEEE)
+├── 02_processed/            # Merged & deduplicated master (16,189 records)
+├── 03_screening/            # AI screening results + human review queue
+│   ├── screening_ai_dual.csv       # Full 16,189-record screening log
+│   ├── human_review_queue.csv      # 571 records for human review
+│   └── logs/                       # Extraction & processing logs
+├── 04_included/             # Final included studies (after human review)
+├── 05_coding/               # AI-extracted correlations (7-phase pipeline)
+├── 06_pooled/               # Pooled correlation & asymptotic covariance matrices
+├── 07_final/                # MASEM-ready dataset + data provenance
+└── templates/               # Coding & screening workbook templates
+
+scripts/
+├── screening/               # 3-tier AI screening (Codex + Gemini) + retry logic
+└── ai_coding_pipeline/      # 7-phase correlation extraction pipeline
+
+analysis/
+├── R/                       # 13 MASEM analysis scripts (TSSEM, OSMASEM, Bayesian)
+└── Python/                  # Data cleaning, matrix validation, reporting
+
+docs/
+├── 01_protocol/             # Pre-registration & search strategy
+├── 02_screening/            # Tiered screening protocol
+├── 03_extraction/           # Coding manual & construct crosswalk
+└── 04_analysis/             # Statistical analysis documentation
+
+supplementary/               # PRISMA checklist, codebook, risk of bias
+configs/                     # Model specs, Bayesian priors, network parameters
 ```
 
 ## Screening and Coding Authority
 
-- Canonical protocol: `docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx`
-- Screening workbook (16,189 records): `data/templates/AI_Adoption_Screening_v1.xlsx`
+- Tiered screening protocol: `docs/02_screening/TIERED_SCREENING_PROTOCOL.md`
+- Screening data (16,189 records): `data/03_screening/screening_ai_dual.csv`
+- Human review queue (571 records): `data/03_screening/human_review_queue.csv`
 - Operational coding template: `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx`
-- Title/abstract AI assistance: Codex CLI + Gemini CLI (OAuth)
+- Title/abstract AI assistance: Codex CLI (gpt-5.1-codex-mini → gpt-5.3-codex-spark) + Gemini CLI (gemini-2.5-flash)
 - Final screening decisions: Two independent human coders + PI adjudication
+
+## Current Pipeline Status
+
+| Stage | Status | Count |
+|-------|--------|-------|
+| Database search | ✅ Complete | 16,189 records |
+| AI screening (T1-T3) | ✅ Complete | 16,189 records |
+| Gemini retry 1 | ✅ Complete | 2,669 recovered |
+| Codex retry 2 | ✅ Complete | 245/250 recovered |
+| Gemini retry 2 | ⏳ Pending quota recovery | 1,776 records |
+| Human review | 🔄 In progress | 571 records |
+| Full-text retrieval | ⏸ Next phase | ~256+ studies |
+| Data extraction | ⏸ Next phase | AI pipeline ready |
 
 ## Key References
 

@@ -14,7 +14,7 @@ Sheets produced
 Usage
 -----
     python create_screening_workbook.py \
-        --input  data/processed/screening_master_16189_20260217.csv \
+        --input  data/02_processed/screening_master_16189.csv \
         --output data/templates/AI_Adoption_Screening_v1.xlsx
 """
 
@@ -384,7 +384,7 @@ def parse_args(argv=None):
     )
     parser.add_argument(
         "--input",
-        default="data/processed/screening_master_16189_20260217.csv",
+        default="data/02_processed/screening_master_16189.csv",
         help="Path to the screening master CSV file.",
     )
     parser.add_argument(
