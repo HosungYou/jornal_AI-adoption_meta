@@ -1,7 +1,9 @@
-# Quick Reference Cheat Sheet — v3 EXECUTED
+# Quick Reference Cheat Sheet — v3 FINAL
 
 **Project:** AI Adoption in Education MASEM | **Date Range:** 2015-2025
-**Executed:** 2026-02-17 | **5-Cluster Query** | Higher Education Focus
+**Search Completed:** 2026-02-17 | **5-Cluster Query** | Higher Education Focus
+**Databases:** 4 of 7 searched (WoS, Scopus, IEEE, PsycINFO) | 3 skipped (ACM, ERIC, Education Source)
+**Final Dataset:** 16,189 unique records (REC_00001 ~ REC_16189)
 
 ---
 
@@ -61,33 +63,21 @@ Command Search, **Abstract** field (not All Metadata), Journals only, 2015-2025:
 
 ---
 
-## DB5: ACM Digital Library — PENDING
+## DB5: ACM Digital Library — SKIPPED
 
-**Field 1 (Anywhere):** `"artificial intelligence" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "large language model" OR "adaptive learning" OR "conversational AI" OR "AI agent"`
-
-**AND Field 2:** `"higher education" OR university OR college OR undergraduate OR "graduate student" OR faculty OR professor`
-
-**AND Field 3:** `adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR survey OR questionnaire OR "structural equation" OR SEM`
-
-- 2015-2025, Export: BibTeX
+Sufficient coverage from 4 databases (22,166 records before dedup).
 
 ---
 
-## DB6: ERIC — PENDING
+## DB6: ERIC — SKIPPED
 
-```
-("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT" OR "large language model" OR "LLM" OR "adaptive learning" OR "conversational AI" OR "AI agent" OR "agentic AI") AND ("higher education" OR university OR college OR undergraduate OR "graduate student" OR faculty OR professor) AND (adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy") AND (survey OR questionnaire OR "structural equation" OR SEM OR "path analysis" OR regression)
-```
-- Since 2015, Peer Reviewed, Journal Articles
-- Export: CSV
+Sufficient coverage from 4 databases.
 
 ---
 
-## DB7: Education Source (EBSCO) — PENDING
+## DB7: Education Source (EBSCO) — SKIPPED
 
-Same 4-row query as PsycINFO. Select "Education Source" database.
-- Limiters: 2015-2025, English, Academic Journals, Peer Reviewed
-- Export: RIS
+Sufficient coverage from 4 databases.
 
 ---
 
@@ -99,21 +89,37 @@ Same 4-row query as PsycINFO. Select "Education Source" database.
 | Scopus | 7,363 | 7,363 | 1x .csv | 2026-02-17 |
 | IEEE Xplore | 161 | 161 | 1x .csv | 2026-02-17 |
 | PsycINFO (ProQuest) | 7,745 | 7,745 | 1x .csv | 2026-02-17 |
-| ACM DL | pending | - | - | - |
-| ERIC | pending | - | - | - |
-| Education Source | pending | - | - | - |
-| **TOTAL** | **22,166+** | | | |
+| ACM DL | SKIPPED | - | - | - |
+| ERIC | SKIPPED | - | - | - |
+| Education Source | SKIPPED | - | - | - |
+| **TOTAL (raw)** | **22,166** | **22,166** | | |
+| **After dedup** | **16,189** | | `screening_master_16189_20260217.csv` | 2026-02-17 |
 
 ---
 
-## Export File Destination
+## File Structure
 ```
-/tmp/jornal_AI-adoption_meta/data/raw/search_results/
-├── wos/          (7 .xls files)
-├── scopus/       (1 .csv file)
-├── ieee/         (1 .csv file)
-├── psycinfo/     (1 .csv file)
-├── acm/          (pending)
-├── eric/         (pending)
-└── edusource/    (pending)
+data/
+├── raw/search_results/           # Raw database exports
+│   ├── wos/                      (7 .xls files, 6,897 records)
+│   ├── scopus/                   (1 .csv file, 7,363 records)
+│   ├── ieee/                     (1 .csv file, 161 records)
+│   └── psycinfo/                 (1 .csv file, 7,745 records)
+└── processed/                    # Processed files
+    ├── merged_all_databases.csv          (22,166 records, pre-dedup)
+    ├── deduplicated_16189_20260217.csv   (16,189 records, post-dedup)
+    ├── screening_master_16189_20260217.csv (16,189 records, REC_00001~REC_16189)
+    └── dedup_report_20260217.txt         (PRISMA dedup report)
+```
+
+## Deduplication Summary
+```
+Total identified ............ 22,166
+  DOI duplicates removed .... -5,737
+  Title duplicates removed .. -  240
+                              ------
+Unique records .............. 16,189  (REC_00001 ~ REC_16189)
+  Deduplication rate: 27.0%
+  With abstract: 100%
+  With DOI: 95.0%
 ```

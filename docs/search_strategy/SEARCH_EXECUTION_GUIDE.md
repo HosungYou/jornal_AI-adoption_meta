@@ -48,10 +48,11 @@ Date Range: 2015-01-01 to 2025-12-31
 | 2 | Scopus | 7,363 | CSV | Scopus_7363_20250217.csv | 2026-02-17 |
 | 3 | IEEE Xplore | 161 | CSV | IEEE_161_20260217.csv | 2026-02-17 |
 | 4 | PsycINFO (via ProQuest) | 7,745 | CSV | PsycINFO_7745_20260217.csv | 2026-02-17 |
-| 5 | ACM DL | pending | - | - | - |
-| 6 | ERIC | pending | - | - | - |
-| 7 | Education Source | pending | - | - | - |
-| | **Total (before dedup)** | **22,166+** | | | |
+| 5 | ACM DL | SKIPPED | - | - | - |
+| 6 | ERIC | SKIPPED | - | - | - |
+| 7 | Education Source | SKIPPED | - | - | - |
+| | **Total (before dedup)** | **22,166** | | | |
+| | **After deduplication** | **16,189** | | | |
 
 ---
 
@@ -144,7 +145,7 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep l
 ## Database 5: ACM Digital Library
 
 **URL:** https://dl.acm.org/
-**Status:** PENDING
+**Status:** SKIPPED — Sufficient coverage achieved from 4 databases (22,166 records, 16,189 after dedup)
 
 ### Query (v3, Advanced Search)
 ```
@@ -158,7 +159,7 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep l
 ## Database 6: ERIC
 
 **URL:** https://eric.ed.gov/
-**Status:** PENDING
+**Status:** SKIPPED — Sufficient coverage achieved from 4 databases
 
 ### Query (v3, Boolean/Phrase)
 ```
@@ -172,7 +173,7 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep l
 ## Database 7: Education Source (via EBSCO)
 
 **URL:** Via institutional EBSCO portal
-**Status:** PENDING
+**Status:** SKIPPED — Sufficient coverage achieved from 4 databases
 
 Same 4-row query as PsycINFO above. Select "Education Source" database in EBSCO.
 - Limiters: 2015-2025, English, Academic Journals, Peer Reviewed
@@ -182,24 +183,50 @@ Same 4-row query as PsycINFO above. Select "Education Source" database in EBSCO.
 
 ## Post-Search Steps
 
-### 1. Deduplication
-```bash
-# All exports placed in:
-/tmp/jornal_AI-adoption_meta/data/raw/search_results/
+### 1. Deduplication — COMPLETED (2026-02-17)
 
-# Python/R deduplication:
-# - Merge all exports
-# - Remove duplicates by DOI and title similarity
-# - Generate deduplicated master list
-```
+**Script:** `scripts/screening/standardize_and_dedup.py`
 
-### 2. AI-Assisted Screening
-```bash
-# Title/Abstract screening with multi-model consensus
-```
+**Process:**
+1. Standardized column names across 4 databases (WoS XLS, Scopus CSV, IEEE CSV, PsycINFO CSV)
+2. Pass 1: DOI exact match → removed 5,737 duplicates
+3. Pass 2: Fuzzy title matching (90% threshold, prefix-grouped) → removed 240 duplicates
 
-### 3. PRISMA Flow Diagram Data
-Record numbers for PRISMA 2020 flow diagram at each stage.
+**Results:**
+| Metric | Count |
+|--------|------:|
+| Total records (4 databases) | 22,166 |
+| DOI duplicates removed | 5,737 |
+| Title duplicates removed | 240 |
+| **Unique records for screening** | **16,189** |
+| Deduplication rate | 27.0% |
+| Records with abstracts | 16,189 (100%) |
+| Records with DOI | 15,380 (95.0%) |
+| Multi-source records (overlap) | 5,078 |
+
+**Output Files:**
+- `data/processed/screening_master_16189_20260217.csv` — Final numbered dataset (REC_00001 ~ REC_16189)
+- `data/processed/dedup_report_20260217.txt` — PRISMA-compatible deduplication report
+- `data/processed/merged_all_databases.csv` — Pre-dedup merged file (22,166 records)
+
+### 2. Next: Title/Abstract Screening (Phase 1)
+
+**Input:** `screening_master_16189_20260217.csv` (16,189 records, REC_00001 ~ REC_16189)
+
+**Tools available:**
+- `scripts/screening/ai_screening.py` — Claude API-based screening
+- Rayyan QCRI — Web-based collaborative human screening
+
+### 3. PRISMA 2020 Flow Diagram Numbers
+
+**Identification:**
+- WoS: 6,897
+- Scopus: 7,363
+- IEEE Xplore: 161
+- PsycINFO (ProQuest): 7,745
+- Total identified: 22,166
+- Duplicates removed: 5,977
+- **Records screened: 16,189**
 
 ---
 
@@ -210,6 +237,7 @@ Record numbers for PRISMA 2020 flow diagram at each stage.
 | v1 | 2026-02-17 | Initial 3-cluster broad query |
 | v2 | 2026-02-17 | +8 AI terms (Cluster 1), +6 TAM/UTAUT constructs (Cluster 3) |
 | **v3 (EXECUTED)** | **2026-02-17** | **Narrowed to higher education (Cluster 2), removed broad words (Cluster 3), added quantitative methodology filter (Cluster 4), added article type filter (Cluster 5)** |
+| **v3 FINAL** | **2026-02-17** | **Search concluded at 4/7 databases (WoS, Scopus, IEEE, PsycINFO). ACM DL, ERIC, Education Source skipped — sufficient coverage with 22,166 raw / 16,189 unique records. Deduplication completed (27.0% rate). Screening master dataset generated: REC_00001 ~ REC_16189.** |
 
 ### Superseded v2 Queries (for reference)
 <details>
