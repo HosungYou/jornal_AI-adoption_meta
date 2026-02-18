@@ -49,18 +49,15 @@ Command Search, **Abstract** field (not All Metadata), Journals only, 2015-2025:
 
 ---
 
-## DB4: PsycINFO (EBSCO, 4 rows) — PENDING
+## DB4: PsycINFO (via ProQuest) — 7,745 hits
 
-**Row 1 (TX All Text):** `"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI"`
+```
+("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND ("higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor*) AND (adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy") AND (survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression OR "factor analysis" OR "meta-analysis" OR MASEM)
+```
 
-**Row 2 (AND):** `"higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor`
-
-**Row 3 (AND):** `adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy"`
-
-**Row 4 (AND):** `survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression OR "factor analysis" OR "meta-analysis" OR MASEM`
-
-- Limiters: 2015-2025, English, Academic Journals
-- Export: RIS
+- Platform: ProQuest APA PsycInfo® (Penn State University Libraries)
+- Limiters: Peer reviewed, 2015-2025
+- Export: CSV with abstracts (bulk Export Results feature)
 
 ---
 
@@ -101,11 +98,11 @@ Same 4-row query as PsycINFO. Select "Education Source" database.
 | Web of Science | 6,897 | 6,897 | 7x .xls | 2026-02-17 |
 | Scopus | 7,363 | 7,363 | 1x .csv | 2026-02-17 |
 | IEEE Xplore | 161 | 161 | 1x .csv | 2026-02-17 |
-| PsycINFO | pending | - | - | - |
+| PsycINFO (ProQuest) | 7,745 | 7,745 | 1x .csv | 2026-02-17 |
 | ACM DL | pending | - | - | - |
 | ERIC | pending | - | - | - |
 | Education Source | pending | - | - | - |
-| **TOTAL** | **14,421+** | | | |
+| **TOTAL** | **22,166+** | | | |
 
 ---
 
@@ -114,8 +111,8 @@ Same 4-row query as PsycINFO. Select "Education Source" database.
 /tmp/jornal_AI-adoption_meta/data/raw/search_results/
 ├── wos/          (7 .xls files)
 ├── scopus/       (1 .csv file)
-├── ieee/         (pending)
-├── psycinfo/     (pending)
+├── ieee/         (1 .csv file)
+├── psycinfo/     (1 .csv file)
 ├── acm/          (pending)
 ├── eric/         (pending)
 └── edusource/    (pending)

@@ -47,11 +47,11 @@ Date Range: 2015-01-01 to 2025-12-31
 | 1 | Web of Science | 6,897 | Excel (.xls) | WoS_1-1000 through WoS_6001-6897 (7 files) | 2026-02-17 |
 | 2 | Scopus | 7,363 | CSV | Scopus_7363_20250217.csv | 2026-02-17 |
 | 3 | IEEE Xplore | 161 | CSV | IEEE_161_20260217.csv | 2026-02-17 |
-| 4 | PsycINFO | pending | - | - | - |
+| 4 | PsycINFO (via ProQuest) | 7,745 | CSV | PsycINFO_7745_20260217.csv | 2026-02-17 |
 | 5 | ACM DL | pending | - | - | - |
 | 6 | ERIC | pending | - | - | - |
 | 7 | Education Source | pending | - | - | - |
-| | **Total (before dedup)** | **14,421+** | | | |
+| | **Total (before dedup)** | **22,166+** | | | |
 
 ---
 
@@ -118,31 +118,26 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep l
 
 ---
 
-## Database 4: PsycINFO (via EBSCO)
+## Database 4: PsycINFO (via ProQuest)
 
-**URL:** Via institutional EBSCO portal
-**Status:** PENDING
+**URL:** https://www.proquest.com/psycinfo/ (Penn State University Libraries)
+**Status:** COMPLETED (2026-02-17)
 
-### Query (v3, EBSCO Advanced Search - 4 rows)
+> **Note:** Penn State provides PsycINFO via ProQuest, not EBSCO. The search was executed on ProQuest's APA PsycInfo® platform using Command Line mode.
+
+### Executed Query (v3, ProQuest Command Line)
 ```
-Row 1 (TX All Text):
-"artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI"
-
-Row 2 (AND):
-"higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor
-
-Row 3 (AND):
-adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy"
-
-Row 4 (AND):
-survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression OR "factor analysis" OR "meta-analysis" OR MASEM
+("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND ("higher education" OR university OR "post-secondary" OR "tertiary education" OR college OR undergraduate OR "graduate student" OR faculty OR professor OR instructor*) AND (adoption OR acceptance OR intention OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy") AND (survey OR questionnaire OR "structural equation" OR SEM OR correlation OR "path analysis" OR regression OR "factor analysis" OR "meta-analysis" OR MASEM)
 ```
 
-### Limiters
-- Publication Date: January 2015 - December 2025
-- Language: English
-- Source Types: Academic Journals
-- Export: RIS format → `PsycINFO_export_YYYYMMDD.ris`
+> Limiters: Peer reviewed, Date: January 2015 - December 2025
+> Result: **7,745 records**
+
+### Export Details
+- Format: CSV (via ProQuest "Export Results" bulk export, includes abstracts)
+- Fields: Title, Subtitle, Author, Publication, SourceType, Publisher, Volume, Issue, PubDate, AlphaDate, StartPage, EndPage, PageRange, ISSN, EISSN, ISBN, Language, Abstract, DocumentUrl, DOI
+- Files: 1 file (PsycINFO_7745_20260217.csv)
+- Location: `data/raw/search_results/psycinfo/`
 
 ---
 
