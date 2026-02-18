@@ -22,16 +22,17 @@ This document describes the accelerated screening methodology used for the syste
            │ 3,170 records pass
            ▼
 ┌─────────────────────────────┐
-│  TIER 2: Single AI (Gemini) │  ← AI terms + partial match
+│  TIER 2: Single AI (Codex)  │  ← AI terms + partial match
 │  AI + (education OR adopt)  │     (education OR adoption, not both)
-│  613 records                │
+│  613 records                │     Model: gpt-5.1-codex-mini → gpt-5.3-codex-spark
 └──────────┬──────────────────┘
            │
            ▼
 ┌─────────────────────────────┐
 │  TIER 3: Dual AI            │  ← AI + education + adoption terms
 │  Codex + Gemini concurrent  │     (highest relevance probability)
-│  2,557 records              │
+│  2,557 records              │     Codex: gpt-5.1-codex-mini (→ spark)
+│                             │     Gemini: gemini-2.5-flash
 └──────────┬──────────────────┘
            │
            ▼
@@ -44,9 +45,22 @@ This document describes the accelerated screening methodology used for the syste
 | Tier | Records | % | Method | API Calls | Est. Time |
 |------|---------|---|--------|-----------|-----------|
 | T1 auto-exclude | 12,915 | 80.3% | Keyword filter | 0 | <1s |
-| T2 single AI | 613 | 3.8% | Gemini only | 613 | ~30 min |
-| T3 dual AI | 2,557 | 15.9% | Codex + Gemini | 5,114 | ~2.5 hr |
+| T2 single AI | 613 | 3.8% | Codex (mini→spark) | 613 | ~30 min |
+| T3 dual AI | 2,557 | 15.9% | Codex (mini→spark) + Gemini (2.5-flash) | 5,114 | ~2.5 hr |
 | **Total** | **16,085** | **100%** | | **5,727** | **~3 hr** |
+
+### AI Model Specifications
+
+| Engine | Primary Model | Fallback Model | Trigger |
+|--------|--------------|----------------|---------|
+| Codex CLI | `gpt-5.1-codex-mini` | `gpt-5.3-codex-spark` | Usage limit error |
+| Gemini CLI | `gemini-2.5-flash` | — | — |
+
+**Fallback Protocol:**
+1. All Codex calls start with `gpt-5.1-codex-mini` (lower cost, sufficient for screening)
+2. If quota exhausted (`"usage limit"` in response), automatically switch to `gpt-5.3-codex-spark`
+3. Switch is persistent within session (no retries on exhausted model)
+4. Gemini uses `gemini-2.5-flash` exclusively (higher free-tier quota than Pro)
 
 ---
 

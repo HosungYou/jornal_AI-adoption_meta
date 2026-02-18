@@ -65,7 +65,8 @@ screening_cli:
     version_cmd: ["codex", "--version"]
     auth_check_cmd: ["codex", "exec", "Say OK."]
     login_cmd: ["codex", "--login"]
-    screen_cmd: ["codex", "exec", "{prompt}"]
+    screen_cmd: ["codex", "-m", "gpt-5.1-codex-mini", "exec", "{prompt}"]
+    fallback_model: "gpt-5.3-codex-spark"
   gemini:
     auth_method: "oauth"
     version_cmd: ["gemini", "--version"]
