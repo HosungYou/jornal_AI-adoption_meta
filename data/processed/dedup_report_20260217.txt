@@ -1,0 +1,39 @@
+======================================================================
+DEDUPLICATION REPORT — AI Adoption in Education MASEM
+======================================================================
+Generated: 2026-02-17 20:37:55
+
+IDENTIFICATION (PRISMA 2020 Box 1)
+----------------------------------------------------------------------
+Records identified from databases:
+  WoS...........................  6,897
+  Scopus........................  7,363
+  IEEE..........................    161
+  PsycINFO......................  7,745
+  TOTAL......................... 22,166
+
+DUPLICATE REMOVAL
+----------------------------------------------------------------------
+  DOI exact match duplicates:     5,737
+  Fuzzy title duplicates:           240
+  Total duplicates removed:       5,977
+  Deduplication rate:             27.0%
+
+RECORDS AFTER DEDUPLICATION
+----------------------------------------------------------------------
+  Unique records for screening:  16,189
+
+SOURCE DISTRIBUTION (after dedup)
+----------------------------------------------------------------------
+  Records contributed by WoS.................  6,891
+  Records contributed by Scopus..............  7,352
+  Records contributed by IEEE................    160
+  Records contributed by PsycINFO............  7,710
+
+RECORDS WITH MISSING DATA
+----------------------------------------------------------------------
+  Missing DOI:                      809
+  Missing abstract:                   0
+  Missing year:                       0
+
+======================================================================
