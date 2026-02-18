@@ -71,7 +71,7 @@ screening_cli:
     version_cmd: ["gemini", "--version"]
     auth_check_cmd: ["gemini", "-p", "Say OK."]
     login_cmd: ["gemini", "auth", "login"]
-    screen_cmd: ["gemini", "-p", "{prompt}"]
+    screen_cmd: ["gemini", "-m", "gemini-2.5-flash", "-p", "{prompt}"]
 
 paths:
   pdfs: "./pdfs"

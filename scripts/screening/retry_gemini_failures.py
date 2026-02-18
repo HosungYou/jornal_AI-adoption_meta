@@ -68,7 +68,7 @@ def parse_ai_response(raw: str) -> dict:
 async def screen_gemini(prompt: str, timeout: int = 300) -> dict:
     try:
         proc = await asyncio.create_subprocess_exec(
-            "gemini", "-p", prompt,
+            "gemini", "-m", "gemini-2.5-flash", "-p", prompt,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
