@@ -4,6 +4,51 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.2.1] - 2026-02-18
+
+### Overview
+Full-scale AI-assisted screening of 16,189 records using a three-tier acceleration strategy. Tier 1 keyword pre-filter eliminates 12,915 obviously irrelevant records in <1 second; Tier 2 sends 613 partial-match records to Gemini CLI only; Tier 3 sends 2,557 strong-match records through dual Codex+Gemini screening with asyncio parallelism (8 workers). Expected total runtime: ~3 hours vs ~147 hours for naive sequential processing (~50x speedup).
+
+### Added — Scripts
+
+| File | Purpose |
+|------|---------|
+| `scripts/screening/ai_screening_tiered.py` | Three-tier accelerated screening: T1 keyword auto-exclude, T2 single-AI (Gemini), T3 dual-AI (Codex+Gemini) with asyncio concurrency |
+| `scripts/screening/ai_screening_parallel.py` | Asyncio-based parallel dual-AI screening (predecessor to tiered approach) |
+| `scripts/screening/postprocess_t1_codes.py` | Post-processor to upgrade T1 exclude codes from generic E2 to specific reasons (E2:no_ai_terms, E2+E3:ai_no_edu_no_adopt) |
+
+### Added — Documentation
+
+| File | Description |
+|------|-------------|
+| `docs/screening/TIERED_SCREENING_PROTOCOL.md` | Complete protocol documenting 3-tier classification logic, keyword patterns, pilot validation (0 false negatives), and PRISMA 2020 reporting guidance |
+
+### Changed — Source Code
+
+| File | Change |
+|------|--------|
+| `scripts/screening/ai_screening.py` | Fix: config path now uses `Path(__file__).resolve()` instead of relative path (cwd-independent) |
+
+### Changed — Data Artifacts
+
+| File | Change |
+|------|--------|
+| `data/01_extracted/screening_pilot_100.csv` | Reprocessed 3 Codex timeout records → all exclude; conflicts reduced 8→5, agreement 92.3%→95.2% |
+
+### Three-Tier Screening Strategy
+
+```
+16,189 deduplicated records
+  ├── T1 Keyword Pre-filter (12,915 = 79.8%)  →  auto-exclude  [<1 sec]
+  │     No AI-related terms in title/abstract/keywords
+  ├── T2 Single AI — Gemini (613 = 3.8%)      →  Gemini only   [~25 min]
+  │     AI terms + partial match (education OR adoption, not both)
+  └── T3 Dual AI — Codex+Gemini (2,557 = 15.8%) → both engines [~3 hrs]
+        AI terms + education + adoption (strongest candidates)
+```
+
+**Pilot validation:** 104-record pilot confirmed 0 false negatives from T1 keyword filter. All 8 pilot includes correctly routed to T3.
+
 ## [0.2.0] - 2026-02-17
 
 ### Overview
