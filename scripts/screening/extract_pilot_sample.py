@@ -29,13 +29,14 @@ def stratified_sample(df: pd.DataFrame, n: int, stratum_col: str = "source_datab
     for i, stratum in enumerate(strata):
         stratum_df = df[df[stratum_col] == stratum]
         if i == len(strata) - 1:
-            stratum_n = remaining
+            stratum_n = max(0, remaining)
         else:
             stratum_n = max(1, round(proportions[stratum] * n))
             remaining -= stratum_n
 
         stratum_n = min(stratum_n, len(stratum_df))
-        samples.append(stratum_df.sample(n=stratum_n, random_state=seed))
+        if stratum_n > 0:
+            samples.append(stratum_df.sample(n=stratum_n, random_state=seed))
 
     result = pd.concat(samples, ignore_index=True)
     return result.sort_values("record_id").reset_index(drop=True)

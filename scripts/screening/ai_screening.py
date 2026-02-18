@@ -30,13 +30,21 @@ logger = logging.getLogger(__name__)
 SCREENING_PROMPT = """You are screening studies for an educational AI adoption meta-analysis.
 
 Apply these criteria:
-1) Empirical quantitative study
-2) AI technology is focal
+1) Empirical quantitative study with primary data
+2) AI technology is focal (not general ICT/IT)
 3) Educational setting/population (students, instructors, administrators)
 4) Adoption/acceptance/intention/use is measured
 5) Correlation matrix or standardized beta/path data appears available or likely
 6) English language
 7) Publication window target: 2015-2025
+8) Sample size n >= 50 (if stated or inferable from abstract)
+9) Peer-reviewed journal article or full conference paper
+
+Exclude codes:
+E1=Not empirical/quantitative, E2=AI not focal, E3=Not education context,
+E4=No adoption/acceptance outcome, E5=No effect size data,
+E6=Not English, E7=Outside 2015-2025, E8=n<50, E9=Not peer-reviewed,
+E10=Duplicate sample, E11=Qualitative/review only, E12=Other
 
 Return strict JSON:
 {{
@@ -49,7 +57,8 @@ Return strict JSON:
     "education_context": "yes|no|unclear",
     "adoption_outcome": "yes|no|unclear",
     "effect_size_reported": "yes|no|unclear",
-    "english": "yes|no|unclear"
+    "english": "yes|no|unclear",
+    "sample_size_adequate": "yes|no|unclear"
   }},
   "rationale": "1-2 sentences"
 }}
@@ -188,7 +197,18 @@ def build_prompt(row: pd.Series) -> str:
 
 def invoke_provider(provider: ProviderCommandSet, prompt: str, timeout_s: int) -> dict[str, Any]:
     cmd = [part.replace("{prompt}", prompt) for part in provider.screen_cmd]
-    result = run_command(cmd, timeout_s=timeout_s)
+    try:
+        result = run_command(cmd, timeout_s=timeout_s)
+    except subprocess.TimeoutExpired:
+        logger.warning("%s timed out after %ss", provider.name, timeout_s)
+        return {
+            "decision": "uncertain",
+            "confidence": 0.0,
+            "exclude_code": "NA",
+            "criteria_flags": {},
+            "rationale": f"{provider.name} timed out after {timeout_s}s",
+            "raw_output": "",
+        }
 
     if result.returncode != 0:
         return {
@@ -239,7 +259,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Dual-provider AI screening (Codex + Gemini)")
     parser.add_argument("input", type=str, help="Input CSV file")
     parser.add_argument("output", type=str, help="Output CSV file")
-    parser.add_argument("--config", type=str, default="scripts/ai_coding_pipeline/config.yaml")
+    _default_config = str(Path(__file__).resolve().parent.parent / "ai_coding_pipeline" / "config.yaml")
+    parser.add_argument("--config", type=str, default=_default_config)
     parser.add_argument("--engine", type=str, choices=["codex", "gemini", "both"], default="both")
     parser.add_argument("--resume", action="store_true", help="Resume from existing output file")
     parser.add_argument("--save-every", type=int, default=50, help="Checkpoint interval")
@@ -268,8 +289,8 @@ def main() -> None:
     output_path = Path(args.output)
     if args.resume and output_path.exists():
         existing = pd.read_csv(output_path)
-        done_ids = set(existing["record_id"].astype(int).tolist())
-        todo = records[~records["record_id"].astype(int).isin(done_ids)].copy()
+        done_ids = set(existing["record_id"].astype(str).tolist())
+        todo = records[~records["record_id"].astype(str).isin(done_ids)].copy()
         results = existing.to_dict("records")
         logger.info("Resume mode: %s done / %s remaining", len(done_ids), len(todo))
     else:
@@ -285,7 +306,7 @@ def main() -> None:
         codex_p = payloads.get("codex", {"decision": "uncertain", "confidence": 0.0, "exclude_code": "NA", "rationale": ""})
         gemini_p = payloads.get("gemini", {"decision": "uncertain", "confidence": 0.0, "exclude_code": "NA", "rationale": ""})
         row_out = {
-            "record_id": int(row["record_id"]),
+            "record_id": row["record_id"],
             "title": row.get("title", ""),
             "year": row.get("year", ""),
             "search_source": row.get("search_source", row.get("source_database", "")),
