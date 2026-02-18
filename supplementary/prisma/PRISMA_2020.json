@@ -1,0 +1,13 @@
+{
+  "identified_records": 22166,
+  "duplicates_removed": 5977,
+  "after_dedup": 16189,
+  "screened_title_abstract": 16189,
+  "codex_excluded_candidates": 13655,
+  "gemini_excluded_candidates": 13501,
+  "ai_conflicts": 175,
+  "ai_excluded_consensus": 13982,
+  "uncertain_gemini_retry_pending": 1776,
+  "ai_included_consensus": 256,
+  "human_review_queue": 2207
+}

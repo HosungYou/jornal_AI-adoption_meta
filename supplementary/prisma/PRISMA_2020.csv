@@ -1,0 +1,10 @@
+Stage,Metric,Count
+Identification,Records identified,22166
+Identification,Duplicates removed,5977
+Identification,After deduplication,16189
+Screening,AI excluded (consensus),13982
+Screening,AI included (consensus),256
+Screening,AI conflict → human,175
+Screening,Uncertain (Gemini retry pending),1776
+Eligibility,Human review queue total,2207
+Included,Confirmed include (pre-human),256
