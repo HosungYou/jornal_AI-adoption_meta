@@ -24,6 +24,19 @@ class RecordDeduplicator:
             title_similarity_threshold: Minimum similarity for title matching (0-1)
         """
         self.title_similarity_threshold = title_similarity_threshold
+        self.required_columns = ["title"]
+        self.optional_columns = ["abstract", "keywords", "year", "doi"]
+
+    def validate_schema(self, df: pd.DataFrame, db_name: str):
+        """Validate minimum schema and normalize optional columns."""
+        missing_required = [c for c in self.required_columns if c not in df.columns]
+        if missing_required:
+            raise ValueError(f"{db_name}: missing required columns: {missing_required}")
+
+        for col in self.optional_columns:
+            if col not in df.columns:
+                df[col] = ""
+                logger.warning("%s: optional column '%s' missing; filled with blank", db_name, col)
 
     def normalize_title(self, title: str) -> str:
         """
@@ -160,7 +173,10 @@ class RecordDeduplicator:
             logger.info(f"Loading {db_name}: {file_path}")
 
             df = pd.read_csv(file_path)
+            self.validate_schema(df, db_name)
             df['source_database'] = db_name
+            df['source_record_id'] = [f"{db_name}:{i+1}" for i in range(len(df))]
+            df['lineage_ids'] = df['source_record_id']
 
             all_records.append(df)
 
@@ -208,6 +224,10 @@ class RecordDeduplicator:
             f"Unique records: {len(final_df):,}",
             f"Duplicates removed: {total_original - len(final_df):,}",
             f"Deduplication rate: {((total_original - len(final_df)) / total_original * 100):.1f}%",
+            "",
+            "LINEAGE",
+            "-" * 60,
+            "Each kept record carries source provenance in source_record_id and lineage_ids.",
             "",
             "SOURCES OF FINAL RECORDS",
             "-" * 60

@@ -2,6 +2,12 @@
 
 **PROSPERO-Style Registration Document**
 
+> Archive note:
+> This preregistration captures an earlier broad-scope protocol.
+> Current operational screening/coding decisions for this repository are governed by:
+> `docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx`
+> and synchronized operational files under `docs/02_study_selection/`.
+
 ---
 
 ## 1. ADMINISTRATIVE INFORMATION

@@ -1,8 +1,20 @@
 # Inclusion and Exclusion Criteria
 
+## Canonical Source
+
+- This file is an operational mirror of:
+  `docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx`
+- If this file conflicts with the coding manual, the `docx` rules are authoritative.
+- Screening decisions in the dataset must use canonical exclusion codes (E1-E12) and a written rationale.
+
 ## Overview
 
 This document specifies the eligibility criteria for study inclusion in the AI adoption meta-analytic structural equation modeling (MASEM) analysis. All criteria must be applied systematically and documented for PRISMA reporting.
+
+Operational decision authority:
+- AI (Codex/Gemini) outputs are advisory only.
+- Two independent human coders apply these criteria for all records.
+- PI adjudicates unresolved conflicts and issues final inclusion/exclusion decisions.
 
 ---
 

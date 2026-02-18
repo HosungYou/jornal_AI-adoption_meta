@@ -53,13 +53,14 @@ Extended 12-construct model integrating TAM, UTAUT, and AI-specific variables:
 - **Effect size**: Pearson correlations (r), with β→r conversion (Peterson & Brown, 2005) and sensitivity analysis
 - **Core method**: Two-Stage Meta-Analytic SEM (TSSEM; Cheung, 2015) via `metaSEM` R package
 - **Advanced**: One-Stage MASEM (OSMASEM), Bayesian MASEM (`blavaan`), Network Analysis (`psychonetrics`)
-- **AI-assisted coding**: 7-Phase pipeline (Claude + GPT-4o + Groq consensus) with 20% human verification
+- **AI-assisted screening**: Codex CLI + Gemini CLI (dual-provider OAuth); AI-assisted coding: 3-model consensus pipeline
 - **Expected studies**: k = 40-80 studies, N > 10,000 participants
 
 ## Repository Structure
 
 ```
 ├── data/                   # Raw → extracted → verified → pooled → final
+│   ├── processed/         # Deduplicated screening master
 ├── analysis/
 │   ├── R/                  # 13 analysis scripts (00-13)
 │   └── Python/             # Data cleaning, validation, reporting
@@ -73,6 +74,14 @@ Extended 12-construct model integrating TAM, UTAUT, and AI-specific variables:
 ├── manuscript/             # Current draft, versions, figures, tables
 └── figures/                # Source and output figures
 ```
+
+## Screening and Coding Authority
+
+- Canonical protocol: `docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx`
+- Screening workbook (16,189 records): `data/templates/AI_Adoption_Screening_v1.xlsx`
+- Operational coding template: `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx`
+- Title/abstract AI assistance: Codex CLI + Gemini CLI (OAuth)
+- Final screening decisions: Two independent human coders + PI adjudication
 
 ## Key References
 

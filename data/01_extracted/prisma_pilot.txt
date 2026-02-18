@@ -1,0 +1,33 @@
+PRISMA 2020 FLOW SUMMARY
+================================================================================
+IDENTIFICATION
+- Records identified: 100
+- Duplicates removed: 0
+- Records after deduplication: 100
+
+TITLE/ABSTRACT SCREENING (AI + HUMAN)
+- Records screened: 100
+- Codex exclude candidates: 11
+- Gemini exclude candidates: 20
+- AI disagreement/conflict records: 62
+- Final excluded after human adjudication: 0
+
+ELIGIBILITY / FULL-TEXT QUEUE
+- Records carried forward to full-text assessment: 100
+- Included for extraction/coding: 0
+- Unresolved screening records: 100
+
+EXCLUSION CODES (FINAL HUMAN DECISIONS)
+E1: 0
+E2: 0
+E3: 0
+E4: 0
+E5: 0
+E6: 0
+E7: 0
+E8: 0
+E9: 0
+E10: 0
+E11: 0
+E12: 0
+================================================================================

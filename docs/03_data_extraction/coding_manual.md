@@ -1,5 +1,21 @@
 # Comprehensive Coding Manual for AI Adoption Meta-Analysis
 
+> Operational mirror of the canonical protocol:
+> `docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx`
+>
+> Primary coding workspace:
+> `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx`
+
+## Protocol Governance
+
+- Canonical source of truth: `AI_Adoption_MASEM_Coding_Manual_v1.docx`
+- Operational data-entry template: `AI_Adoption_MASEM_Coding_v1.xlsx`
+- AI coders: Codex CLI + Gemini CLI (OAuth sessions)
+- Human coding: two independent coders across 100% of records
+- Human coders run in non-blinded mode (AI suggestions visible during coding)
+- Final authority: PI adjudication for unresolved conflicts
+- IRR thresholds: Title/Abstract κ >= 0.80, Full-text κ >= 0.85
+
 ## Table of Contents
 
 1. [Overview & Purpose](#1-overview--purpose)

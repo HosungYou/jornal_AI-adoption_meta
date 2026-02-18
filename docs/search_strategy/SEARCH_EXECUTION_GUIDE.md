@@ -3,7 +3,25 @@
 **Project:** AI Adoption in Education Meta-Analysis (MASEM)
 **Date:** 2026-02-17
 **Time Span:** January 2015 - December 2025
-**Target:** 7 databases
+**Target:** 4 databases
+
+---
+
+## OAuth Setup for AI Screening
+
+Run these once per session before AI-assisted screening:
+
+```bash
+# Codex CLI OAuth login (OpenAI)
+codex --login
+codex exec "Say OK."
+
+# Gemini CLI OAuth login (Google)
+gemini auth login
+gemini -p "Say OK."
+```
+
+If these checks fail, refresh login before batch screening.
 
 ---
 
@@ -154,6 +172,8 @@ TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep l
 - Published Between: January 2015 - December 2025
 - Export: BibTeX → `ACM_export_YYYYMMDD.bib`
 
+**Note (2026-02-17):** ACM, ERIC, and Education Source were considered but excluded per Decision #50 in the decision log. The 4-DB set (WoS, Scopus, PsycINFO, IEEE) provides sufficient coverage for this study's scope.
+
 ---
 
 ## Database 6: ERIC
@@ -253,6 +273,27 @@ TS=("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" O
 TITLE-ABS-KEY("artificial intelligence" OR "AI" OR "machine learning" OR "deep learning" OR "intelligent tutoring system" OR "ITS" OR "chatbot" OR "generative AI" OR "ChatGPT" OR "GPT-4" OR "GPT" OR "large language model" OR "LLM" OR "natural language processing" OR "automated grading" OR "adaptive learning" OR "conversational AI" OR "AI tutor" OR "AI agent" OR "agentic AI") AND TITLE-ABS-KEY(education* OR student* OR instructor* OR teacher* OR learning OR pedagogy OR classroom OR university OR "higher education" OR "K-12" OR academic) AND TITLE-ABS-KEY(adoption OR acceptance OR intention OR usage OR behavior OR attitude OR TAM OR UTAUT OR "technology acceptance" OR "user acceptance" OR "behavioral intention" OR "perceived usefulness" OR "perceived ease of use" OR "self-efficacy" OR trust OR resistance) AND PUBYEAR > 2014 AND PUBYEAR < 2026
 ```
 </details>
+
+### 2. AI-Assisted Screening (Codex CLI + Gemini CLI)
+```bash
+python3 scripts/screening/ai_screening.py \
+  data/processed/screening_master_16189_20260217.csv \
+  data/01_extracted/screening_ai_dual.csv \
+  --engine both \
+  --auto-login \
+  --save-every 50
+```
+
+### 3. PRISMA Flow Diagram Data
+Record these numbers for the PRISMA 2020 flow diagram:
+- Records identified from each database (4 numbers: WoS, Scopus, PsycINFO, IEEE)
+- Total records before dedup
+- Duplicates removed
+- Records screened (title/abstract)
+- Records excluded at screening
+- Full-text articles assessed
+- Full-text excluded (with reasons)
+- Studies included in final synthesis
 
 ---
 

@@ -57,7 +57,21 @@ beta_conversion:
   formula: "r = beta + 0.05 * lambda"
 
 screening:
-  dimensions: ["population", "intervention", "outcome", "study_design", "correlation_reporting", "language"]
+  dimensions: ["quantitative", "ai_focal", "education_context", "adoption_outcome", "effect_size_reported", "language"]
+
+screening_cli:
+  codex:
+    auth_method: "oauth"
+    version_cmd: ["codex", "--version"]
+    auth_check_cmd: ["codex", "exec", "Say OK."]
+    login_cmd: ["codex", "--login"]
+    screen_cmd: ["codex", "exec", "{prompt}"]
+  gemini:
+    auth_method: "oauth"
+    version_cmd: ["gemini", "--version"]
+    auth_check_cmd: ["gemini", "-p", "Say OK."]
+    login_cmd: ["gemini", "auth", "login"]
+    screen_cmd: ["gemini", "-p", "{prompt}"]
 
 paths:
   pdfs: "./pdfs"

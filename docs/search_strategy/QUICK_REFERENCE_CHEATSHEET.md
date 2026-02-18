@@ -19,6 +19,18 @@
 
 ---
 
+## OAuth Preflight (Before AI Screening)
+
+```bash
+codex --login
+codex exec "Say OK."
+
+gemini auth login
+gemini -p "Say OK."
+```
+
+---
+
 ## DB1: Web of Science — 6,897 hits
 
 ```

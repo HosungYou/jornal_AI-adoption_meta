@@ -1,175 +1,133 @@
 #!/usr/bin/env python3
 """
-Generate PRISMA 2020 flow diagram for systematic review.
+Generate PRISMA 2020 counts/diagram from screening outputs.
 """
 
+from __future__ import annotations
+
+import argparse
+import json
 import logging
-from typing import Dict, Any
 from pathlib import Path
+from typing import Any
+
+import pandas as pd
 
 logger = logging.getLogger(__name__)
 
+EXCLUDE_CODES = [f"E{i}" for i in range(1, 13)]
 
-class PRISMAGenerator:
-    """Generates PRISMA 2020 flow diagram."""
 
-    def __init__(self):
-        """Initialize PRISMA generator."""
-        pass
+def counts_from_screening_csv(df: pd.DataFrame, identified_total: int, duplicates_removed: int) -> dict[str, Any]:
+    screened = len(df)
+    human_excluded = int((df.get("adjudicated_final_decision", "") == "exclude").sum())
+    included = int((df.get("adjudicated_final_decision", "") == "include").sum())
+    unresolved = screened - human_excluded - included
 
-    def generate_text_diagram(self, counts: Dict[str, int], output_path: Path):
-        """
-        Generate text-based PRISMA flow diagram.
+    conflict_count = int((df.get("screen_consensus", "") == "conflict").sum())
+    codex_excludes = int((df.get("screen_decision_codex", "") == "exclude").sum())
+    gemini_excludes = int((df.get("screen_decision_gemini", "") == "exclude").sum())
 
-        Args:
-            counts: Dictionary with counts for each PRISMA stage
-            output_path: Path to save diagram
-        """
-        diagram = f"""
-PRISMA 2020 FLOW DIAGRAM
-{'=' * 80}
+    exclude_code_counts = {}
+    for code in EXCLUDE_CODES:
+        exclude_code_counts[code] = int((df.get("exclude_code", "") == code).sum())
 
+    return {
+        "identified_records": int(identified_total),
+        "duplicates_removed": int(duplicates_removed),
+        "after_dedup": int(identified_total - duplicates_removed),
+        "screened_title_abstract": screened,
+        "ai_conflicts": conflict_count,
+        "codex_excluded_candidates": codex_excludes,
+        "gemini_excluded_candidates": gemini_excludes,
+        "excluded_title_abstract_final": human_excluded,
+        "full_text_assessed": included + unresolved,
+        "included_for_extraction": included,
+        "unresolved_screening": unresolved,
+        "exclude_code_counts": exclude_code_counts,
+    }
+
+
+def render_prisma_text(counts: dict[str, Any]) -> str:
+    code_lines = [
+        f"{code}: {counts['exclude_code_counts'].get(code, 0):,}" for code in EXCLUDE_CODES
+    ]
+    code_block = "\n".join(code_lines)
+    return f"""PRISMA 2020 FLOW SUMMARY
+================================================================================
 IDENTIFICATION
-┌─────────────────────────────────────────────────────────────┐
-│ Records identified from databases (n = {counts.get('database_records', 0):,})        │
-│ - Database 1: {counts.get('db1_records', 0):,}                                  │
-│ - Database 2: {counts.get('db2_records', 0):,}                                  │
-│ - Database 3: {counts.get('db3_records', 0):,}                                  │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-SCREENING
-┌─────────────────────────────────────────────────────────────┐
-│ Records after duplicates removed (n = {counts.get('after_dedup', 0):,})         │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────┐
-│ Records screened (title/abstract) (n = {counts.get('screened', 0):,})           │
-├─────────────────────────────────────────────────────────────┤
-│ Records excluded (n = {counts.get('excluded_screening', 0):,})                  │
-│ - Not AI adoption: {counts.get('excluded_not_ai', 0):,}                         │
-│ - Not quantitative: {counts.get('excluded_not_quant', 0):,}                     │
-│ - No correlations: {counts.get('excluded_no_corr', 0):,}                        │
-│ - Language: {counts.get('excluded_language', 0):,}                              │
-│ - Other: {counts.get('excluded_other', 0):,}                                    │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-ELIGIBILITY
-┌─────────────────────────────────────────────────────────────┐
-│ Full-text articles assessed (n = {counts.get('full_text_assessed', 0):,})       │
-├─────────────────────────────────────────────────────────────┤
-│ Full-text articles excluded (n = {counts.get('excluded_full_text', 0):,})       │
-│ - Insufficient data: {counts.get('excluded_insufficient_data', 0):,}            │
-│ - Wrong population: {counts.get('excluded_wrong_population', 0):,}              │
-│ - Duplicate data: {counts.get('excluded_duplicate_data', 0):,}                  │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-INCLUDED
-┌─────────────────────────────────────────────────────────────┐
-│ Studies included in meta-analysis (n = {counts.get('included', 0):,})           │
-│ - Total correlations extracted: {counts.get('total_correlations', 0):,}         │
-│ - Unique construct pairs: {counts.get('unique_pairs', 0):,}                     │
-└─────────────────────────────────────────────────────────────┘
+- Records identified: {counts['identified_records']:,}
+- Duplicates removed: {counts['duplicates_removed']:,}
+- Records after deduplication: {counts['after_dedup']:,}
 
-{'=' * 80}
+TITLE/ABSTRACT SCREENING (AI + HUMAN)
+- Records screened: {counts['screened_title_abstract']:,}
+- Codex exclude candidates: {counts['codex_excluded_candidates']:,}
+- Gemini exclude candidates: {counts['gemini_excluded_candidates']:,}
+- AI disagreement/conflict records: {counts['ai_conflicts']:,}
+- Final excluded after human adjudication: {counts['excluded_title_abstract_final']:,}
+
+ELIGIBILITY / FULL-TEXT QUEUE
+- Records carried forward to full-text assessment: {counts['full_text_assessed']:,}
+- Included for extraction/coding: {counts['included_for_extraction']:,}
+- Unresolved screening records: {counts['unresolved_screening']:,}
+
+EXCLUSION CODES (FINAL HUMAN DECISIONS)
+{code_block}
+================================================================================
 """
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(diagram)
-
-        logger.info(f"PRISMA diagram saved to {output_path}")
-
-    def generate_summary_table(self, counts: Dict[str, int], output_path: Path):
-        """
-        Generate summary table of PRISMA counts.
-
-        Args:
-            counts: Dictionary with counts for each stage
-            output_path: Path to save table
-        """
-        import pandas as pd
-
-        # Create summary DataFrame
-        summary_data = [
-            {'Stage': 'Identification', 'Substage': 'Database records', 'Count': counts.get('database_records', 0)},
-            {'Stage': 'Screening', 'Substage': 'After deduplication', 'Count': counts.get('after_dedup', 0)},
-            {'Stage': 'Screening', 'Substage': 'Records screened', 'Count': counts.get('screened', 0)},
-            {'Stage': 'Screening', 'Substage': 'Records excluded', 'Count': counts.get('excluded_screening', 0)},
-            {'Stage': 'Eligibility', 'Substage': 'Full-text assessed', 'Count': counts.get('full_text_assessed', 0)},
-            {'Stage': 'Eligibility', 'Substage': 'Full-text excluded', 'Count': counts.get('excluded_full_text', 0)},
-            {'Stage': 'Included', 'Substage': 'Studies in meta-analysis', 'Count': counts.get('included', 0)},
-            {'Stage': 'Included', 'Substage': 'Total correlations', 'Count': counts.get('total_correlations', 0)},
-        ]
-
-        df = pd.DataFrame(summary_data)
-
-        # Save as CSV
-        df.to_csv(output_path, index=False)
-        logger.info(f"PRISMA summary table saved to {output_path}")
-
-        return df
 
 
-def main():
-    """Main entry point."""
-    import argparse
-    import json
+def write_outputs(counts: dict[str, Any], output_prefix: Path) -> None:
+    output_prefix.parent.mkdir(parents=True, exist_ok=True)
 
-    parser = argparse.ArgumentParser(description="Generate PRISMA 2020 flow diagram")
-    parser.add_argument('--counts', type=str, required=True,
-                       help='Path to JSON file with PRISMA counts')
-    parser.add_argument('--output-diagram', type=str, default='prisma_diagram.txt',
-                       help='Path to save text diagram')
-    parser.add_argument('--output-table', type=str, default='prisma_summary.csv',
-                       help='Path to save summary table')
+    counts_path = output_prefix.with_suffix(".json")
+    counts_path.write_text(json.dumps(counts, indent=2), encoding="utf-8")
 
+    text_path = output_prefix.with_suffix(".txt")
+    text_path.write_text(render_prisma_text(counts), encoding="utf-8")
+
+    rows = [
+        {"Stage": "Identification", "Metric": "Records identified", "Count": counts["identified_records"]},
+        {"Stage": "Identification", "Metric": "Duplicates removed", "Count": counts["duplicates_removed"]},
+        {"Stage": "Identification", "Metric": "After dedup", "Count": counts["after_dedup"]},
+        {"Stage": "Screening", "Metric": "Screened title/abstract", "Count": counts["screened_title_abstract"]},
+        {"Stage": "Screening", "Metric": "AI conflicts", "Count": counts["ai_conflicts"]},
+        {"Stage": "Screening", "Metric": "Final excluded", "Count": counts["excluded_title_abstract_final"]},
+        {"Stage": "Eligibility", "Metric": "Full text assessed", "Count": counts["full_text_assessed"]},
+        {"Stage": "Included", "Metric": "Included for extraction", "Count": counts["included_for_extraction"]},
+    ]
+    rows.extend(
+        {
+            "Stage": "Exclusion Codes",
+            "Metric": code,
+            "Count": counts["exclude_code_counts"].get(code, 0),
+        }
+        for code in EXCLUDE_CODES
+    )
+    pd.DataFrame(rows).to_csv(output_prefix.with_suffix(".csv"), index=False)
+
+    logger.info("Wrote PRISMA outputs: %s.[json|txt|csv]", output_prefix)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate PRISMA summary from screening CSV")
+    parser.add_argument("--screening-csv", type=str, required=True)
+    parser.add_argument("--identified-total", type=int, required=True)
+    parser.add_argument("--duplicates-removed", type=int, required=True)
+    parser.add_argument("--output-prefix", type=str, default="supplementary/prisma/prisma_flow_input")
     args = parser.parse_args()
 
-    # Setup logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s'
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
+    df = pd.read_csv(args.screening_csv)
+    counts = counts_from_screening_csv(
+        df=df,
+        identified_total=args.identified_total,
+        duplicates_removed=args.duplicates_removed,
     )
-
-    # Load counts
-    with open(args.counts, 'r') as f:
-        counts = json.load(f)
-
-    # Generate diagram
-    generator = PRISMAGenerator()
-    generator.generate_text_diagram(counts, Path(args.output_diagram))
-    generator.generate_summary_table(counts, Path(args.output_table))
-
-    logger.info("PRISMA diagram generation complete")
+    write_outputs(counts, Path(args.output_prefix))
 
 
 if __name__ == "__main__":
-    # Example counts for testing
-    example_counts = {
-        'database_records': 1250,
-        'db1_records': 450,
-        'db2_records': 520,
-        'db3_records': 280,
-        'after_dedup': 890,
-        'screened': 890,
-        'excluded_screening': 654,
-        'excluded_not_ai': 320,
-        'excluded_not_quant': 180,
-        'excluded_no_corr': 120,
-        'excluded_language': 24,
-        'excluded_other': 10,
-        'full_text_assessed': 236,
-        'excluded_full_text': 104,
-        'excluded_insufficient_data': 62,
-        'excluded_wrong_population': 28,
-        'excluded_duplicate_data': 14,
-        'included': 132,
-        'total_correlations': 1584,
-        'unique_pairs': 48
-    }
-
-    generator = PRISMAGenerator()
-    generator.generate_text_diagram(example_counts, Path('example_prisma.txt'))
-    print("Example PRISMA diagram generated: example_prisma.txt")
+    main()

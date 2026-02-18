@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 Create AI Adoption MASEM Coding Template Excel file.
-9 sheets, 12 constructs (PE, EE, SI, FC, BI, UB, ATT, SE, TRU, ANX, TRA, AUT),
-66 pairwise correlations, 1000 pre-allocated data rows per sheet.
+
+This workbook operationalizes the canonical coding rules in:
+docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx
 """
 
 import openpyxl
@@ -45,7 +46,7 @@ STUDY_METADATA_COLS = [
     ("year", 10, "integer", "2015-2025", "Publication year", "2023"),
     ("title", 45, "string", "", "Full title of the paper", "AI Adoption in Healthcare..."),
     ("doi", 30, "string", "", "Digital Object Identifier", "10.1000/xyz123"),
-    ("source_type", 15, "list", "journal,conference,dissertation,preprint", "Type of publication outlet", "journal"),
+    ("source_type", 15, "list", "journal,conference", "Type of publication outlet", "journal"),
     ("search_source", 18, "list", "WoS,Scopus,PsycINFO,IEEE,ACM,ERIC,Education_Source,GoogleScholar,citation_tracking", "Database where study was found", "ERIC"),
     ("country", 18, "string", "", "Country where data was collected", "South Korea"),
     ("culture_type", 15, "list", "individualist,collectivist", "Based on Hofstede classification", "collectivist"),
@@ -56,7 +57,7 @@ STUDY_METADATA_COLS = [
     ("ai_tool_name", 20, "string", "", "Specific AI tool if named", "ChatGPT"),
     ("institutional_type", 18, "list", "public,private,online,community_college,mixed", "Type of educational institution", "public"),
     ("sample_size", 12, "integer", "Positive integer", "Total valid sample size (N)", "384"),
-    ("sample_type", 15, "list", "students,instructors,administrators,pre_service_teachers,mixed", "Type of respondents", "students"),
+    ("sample_type", 18, "list", "students,instructors,administrators,mixed", "Type of respondents", "students"),
     ("mandatory_voluntary", 18, "list", "mandatory,voluntary,mixed", "Whether AI use is mandatory or voluntary", "voluntary"),
     ("theoretical_framework", 20, "list", "TAM,UTAUT,UTAUT2,TAM_AI,UTAUT_AI,other", "Primary theoretical framework", "UTAUT2"),
     ("study_design", 18, "list", "cross_sectional,longitudinal,experimental", "Research design", "cross_sectional"),
@@ -73,6 +74,18 @@ STUDY_METADATA_COLS = [
     ("common_method_bias", 20, "list", "addressed,not_addressed,partial", "Whether CMB was tested/addressed", "addressed"),
     ("overall_quality", 15, "list", "high,medium,low", "Overall study quality assessment", "high"),
     ("rob_notes", 35, "string", "", "Risk of bias notes", "Harman single factor test reported"),
+    ("screen_decision_codex", 20, "list", "include,exclude,uncertain", "Codex CLI screening decision", "include"),
+    ("screen_decision_gemini", 20, "list", "include,exclude,uncertain", "Gemini CLI screening decision", "include"),
+    ("screen_consensus", 18, "list", "include,exclude,conflict", "Consensus result between Codex and Gemini", "conflict"),
+    ("human1_decision", 16, "list", "include,exclude,uncertain", "First human screener decision", "include"),
+    ("human2_decision", 16, "list", "include,exclude,uncertain", "Second human screener decision", "exclude"),
+    ("adjudicated_final_decision", 24, "list", "include,exclude", "Final adjudicated decision", "include"),
+    ("exclude_code", 16, "list", "E1,E2,E3,E4,E5,E6,E7,E8,E9,E10,E11,E12", "Exclusion code from coding manual", "E4"),
+    ("decision_rationale", 35, "string", "", "Rationale for final inclusion/exclusion decision", "Measured AI awareness only; no adoption/use DV"),
+    ("adjudicator_id", 15, "string", "", "PI/adjudicator initials for resolved conflicts", "HY"),
+    ("screen_run_id", 18, "string", "", "Batch run identifier for screening pipeline", "scr_20260218_b01"),
+    ("oauth_auth_method_codex", 22, "list", "oauth,api_key,unknown", "Authentication method used for Codex run", "oauth"),
+    ("oauth_auth_method_gemini", 22, "list", "oauth,api_key,unknown", "Authentication method used for Gemini run", "oauth"),
     ("human_coder", 15, "string", "", "Initials of human coder", "HK"),
     ("coding_date", 14, "date", "YYYY-MM-DD", "Date of coding", "2025-01-15"),
     ("coding_notes", 30, "string", "", "Any additional coding notes", "Matrix extracted from Table 4"),
@@ -161,10 +174,16 @@ EXCLUSION_LOG_COLS = [
     ("year", 10, "integer", "2015-2025", "Publication year", "2022"),
     ("title", 45, "string", "", "Full title of the paper", "A Qualitative Study of AI..."),
     ("exclusion_stage", 18, "list", "title_abstract,full_text,post_coding", "Stage at which study was excluded", "full_text"),
-    ("exclusion_reason", 25, "list", "no_correlation_data,no_AI_focus,qualitative_only,duplicate_sample,insufficient_constructs,non_english,sample_too_small,not_peer_reviewed", "Primary reason for exclusion", "qualitative_only"),
+    ("exclusion_reason", 25, "list", "no_correlation_data,no_AI_focus,qualitative_only,duplicate_sample,insufficient_constructs,non_english,sample_too_small,not_peer_reviewed,non_educational_context", "Primary reason for exclusion", "qualitative_only"),
+    ("exclude_code", 12, "list", "E1,E2,E3,E4,E5,E6,E7,E8,E9,E10,E11,E12", "Canonical exclusion code from coding manual", "E4"),
     ("detailed_rationale", 40, "string", "", "Detailed explanation of exclusion", "Study uses only interviews, no quant data"),
+    ("screen_decision_codex", 18, "list", "include,exclude,uncertain,NA", "Codex screening decision", "exclude"),
+    ("screen_decision_gemini", 18, "list", "include,exclude,uncertain,NA", "Gemini screening decision", "exclude"),
+    ("human1_decision", 18, "list", "include,exclude,uncertain,NA", "First human screener decision", "exclude"),
+    ("human2_decision", 18, "list", "include,exclude,uncertain,NA", "Second human screener decision", "exclude"),
     ("screener1_decision", 18, "list", "include,exclude,uncertain", "First screener's decision", "exclude"),
     ("screener2_decision", 18, "list", "include,exclude,uncertain", "Second screener's decision", "exclude"),
+    ("adjudicator_id", 15, "string", "", "PI/adjudicator initials", "HY"),
     ("final_decision", 14, "list", "include,exclude", "Final inclusion/exclusion decision", "exclude"),
 ]
 
@@ -365,7 +384,7 @@ def main():
         create_data_sheet(wb, sheet_name, col_defs)
 
     # Save
-    output_path = "/Users/hosung/jornal_AI-adoption_meta/data/templates/AI_Adoption_Education_MASEM_Coding_v1.xlsx"
+    output_path = "/Users/hosung/jornal_AI-adoption_meta/data/templates/AI_Adoption_MASEM_Coding_v1.xlsx"
     wb.save(output_path)
     print(f"\nSaved to: {output_path}")
 
