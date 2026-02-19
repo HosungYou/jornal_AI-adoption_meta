@@ -1,29 +1,32 @@
-PRISMA 2020 FLOW SUMMARY
+PRISMA 2020 FLOW SUMMARY (Updated after Gemini retry2)
 ================================================================================
 IDENTIFICATION
 - Records identified (WoS + Scopus + PsycINFO + IEEE): 22,166
 - Duplicates removed: 5,977
 - Records after deduplication: 16,189
 
-TITLE/ABSTRACT SCREENING (3-Tier AI Pipeline)
+TITLE/ABSTRACT SCREENING (3-Tier AI Pipeline + Retry2)
 - Records screened: 16,189
 - Codex exclude candidates (AI vote): 13,655
-- Gemini exclude candidates (AI vote): 13,501
+- Gemini exclude candidates (AI vote): 13,927
 - AI disagreement / conflict: 175
 
-AI SCREENING CONSENSUS
-- AI excluded (clear consensus): 13,982
-- AI included (clear consensus): 256
+AI SCREENING CONSENSUS (post retry2)
+- AI excluded (clear consensus): 14,408
+- AI included (clear consensus): 299
 - AI conflict (→ human adjudication): 175
-- Uncertain (Gemini quota exhausted, retry pending): 1,776
+- Uncertain total: 1,307
+  · Gemini still failed (quota): 685
+  · Genuine uncertain (→ human review): 619
 
 ELIGIBILITY / FULL-TEXT QUEUE
-- Records for human review: 2,207
-  · AI-include (confirm): 256
+- Human review queue: 1,093
+  · AI-include (confirm): 299
   · Conflict (adjudicate): 175
-  · Uncertain (Gemini retry pending): 1,776
+  · Genuine uncertain: 619
+- Gemini failed (pending further retry): 685
 
 NOTES
-- Gemini 2.5-flash quota exhausted; 1,776 uncertain records pending auto-retry
+- Gemini retry2: 1,215/1,633 recovered; 418 still failed (requeued as Gemini-failed)
 - Final included count (after human review): TBD
 ================================================================================

@@ -108,10 +108,20 @@ configs/                     # Model specs, Bayesian priors, network parameters
 | AI screening (T1-T3) | ✅ Complete | 16,189 records |
 | Gemini retry 1 | ✅ Complete | 2,669 recovered |
 | Codex retry 2 | ✅ Complete | 245/250 recovered |
-| Gemini retry 2 | ⏳ Pending quota recovery | 1,776 records |
-| Human review | 🔄 In progress | 571 records |
-| Full-text retrieval | ⏸ Next phase | ~256+ studies |
+| Gemini retry 2 | ✅ Complete | 1,215/1,633 recovered |
+| Human review | 🔄 In progress | 1,093 records |
+| Full-text retrieval | ⏸ Next phase | ~299+ studies |
 | Data extraction | ⏸ Next phase | AI pipeline ready |
+
+**AI Screening Final Consensus (post all retries)**
+
+| Consensus | Count |
+|-----------|-------|
+| Exclude | 14,408 |
+| Include | 299 |
+| Conflict (→ human adjudication) | 175 |
+| Uncertain — Gemini failed (residual) | 685 |
+| Uncertain — Genuine (→ human review) | 619 |
 
 ## Key References
 
