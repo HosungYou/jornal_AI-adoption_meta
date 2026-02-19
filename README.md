@@ -109,19 +109,19 @@ configs/                     # Model specs, Bayesian priors, network parameters
 | Gemini retry 1 | ✅ Complete | 2,669 recovered |
 | Codex retry 2 | ✅ Complete | 245/250 recovered |
 | Gemini retry 2 | ✅ Complete | 1,215/1,633 recovered |
-| Human review | 🔄 In progress | 1,093 records |
-| Full-text retrieval | ⏸ Next phase | ~299+ studies |
+| Codex sub retry 3 | ✅ Complete | 593/685 recovered |
+| Human review | 🔄 In progress | 1,457 records |
+| Full-text retrieval | ⏸ Next phase | ~575+ studies |
 | Data extraction | ⏸ Next phase | AI pipeline ready |
 
-**AI Screening Final Consensus (post all retries)**
+**AI Screening Final Consensus (all retries complete)**
 
 | Consensus | Count |
 |-----------|-------|
-| Exclude | 14,408 |
-| Include | 299 |
+| Exclude | 14,725 |
+| Include | 575 |
 | Conflict (→ human adjudication) | 175 |
-| Uncertain — Gemini failed (residual) | 685 |
-| Uncertain — Genuine (→ human review) | 619 |
+| Uncertain — Genuine (→ human review) | 714 |
 
 ## Key References
 

@@ -3,13 +3,10 @@
   "duplicates_removed": 5977,
   "after_dedup": 16189,
   "screened_title_abstract": 16189,
-  "codex_excluded_candidates": 13655,
-  "gemini_excluded_candidates": 13927,
+  "ai_excluded_consensus": 14725,
+  "ai_included_consensus": 575,
   "ai_conflicts": 175,
-  "ai_excluded_consensus": 14408,
-  "ai_included_consensus": 299,
-  "uncertain_gemini_still_failed": 685,
-  "uncertain_genuine": 619,
-  "uncertain_total": 1307,
-  "human_review_queue": 1093
+  "uncertain_total": 714,
+  "genuine_uncertain": 707,
+  "human_review_queue": 1457
 }
