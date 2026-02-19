@@ -54,8 +54,10 @@ Extended 12-construct model integrating TAM, UTAUT, and AI-specific variables:
 - **Core method**: Two-Stage Meta-Analytic SEM (TSSEM; Cheung, 2015) via `metaSEM` R package
 - **Advanced**: One-Stage MASEM (OSMASEM), Bayesian MASEM (`blavaan`), Network Analysis (`psychonetrics`)
 - **AI-assisted screening**: Codex CLI + Gemini CLI (dual-provider OAuth); AI-assisted coding: 3-model consensus pipeline
-- **Expected studies**: k = 40-80 studies, N > 10,000 participants (initial); actual pipeline yielded k ≈ 150-220 candidates
-- **Actual screening**: 16,189 records screened (3-tier AI pipeline); 256 include, 175 conflict, 1,776 uncertain (Gemini retry pending)
+- **Target k**: ≥ 150 studies (k = 150+ for robust 66-correlation pooled matrix)
+- **Actual screening**: 16,189 records → 575 AI-include, 175 conflict, 707 genuine uncertain (human review in progress)
+- **Full-text criterion**: ≥ 2 construct-pair r or β among the 12 target constructs
+- **Heterogeneity**: Controlled via OSMASEM moderators (ai_tool_type, education_level, publication_year, user_role, cultural_context) rather than narrow inclusion criteria
 
 ## Repository Structure
 

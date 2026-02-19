@@ -259,3 +259,56 @@ Per PRISMA 2020 guidelines for AI-assisted screening:
 3. **Title/abstract only:** Screening is based on title, abstract, and keywords. Full-text review is required for all included records.
 
 4. **Language detection:** The keyword filter does not explicitly check language; non-English papers with English abstracts may pass to T2/T3 but will be caught by AI screening (criterion 6) or full-text review.
+
+---
+
+## Full-Text Eligibility Criteria (Phase 4)
+
+### Core MASEM Inclusion Criterion
+
+> **A study is eligible for MASEM if it reports ≥ 2 construct-pair correlations (r) or standardized path coefficients (β) among the 12 target constructs.**
+
+Single-construct studies (e.g., only PE→BI) are excluded because they cannot contribute to the pooled correlation matrix.
+
+### Full-Text Exclusion Codes (additional)
+
+| Code | Definition |
+|------|-----------|
+| E-FT1 | Reports < 2 construct-pair statistics |
+| E-FT2 | Constructs do not map to the 12-construct model |
+| E-FT3 | No quantitative effect size extractable (β and r both absent) |
+| E-FT4 | Duplicate sample (same data as another included study) |
+| E-FT5 | Conference abstract only (no full paper available) |
+
+---
+
+## Heterogeneity Management: Moderator Variables
+
+Rather than narrowing inclusion criteria, heterogeneity is controlled through **moderator analysis (OSMASEM)**.
+
+### Planned Moderators
+
+| Variable | Levels | Rationale |
+|----------|--------|-----------|
+| `ai_tool_type` | GenAI (ChatGPT/LLM) / Specialized AI (ITS, LMS) / Other | Key source of heterogeneity post-2022 |
+| `education_level` | Higher Education / K-12 / Vocational | Path strengths differ by context |
+| `publication_year` | Pre-2023 / Post-2023 (ChatGPT cutoff) | RQ3 temporal analysis |
+| `user_role` | Student / Instructor / Both | TAM applicability differs |
+| `cultural_context` | East Asia / Western / Other (Hofstede PDI) | SI path moderated by collectivism |
+
+### Coding Instructions
+
+These moderators must be coded during **full-text extraction** (Phase 5, AI coding pipeline). Each is a mandatory field in `AI_Adoption_MASEM_Coding_v1.xlsx`.
+
+### Analysis Strategy
+
+- **Primary analysis:** All included studies (k ≥ 150 target)
+- **Sensitivity analysis 1:** GenAI-only studies (ChatGPT/LLM-focused)
+- **Sensitivity analysis 2:** Higher education only
+- **Sensitivity analysis 3:** Post-2023 only (ChatGPT era)
+- **OSMASEM:** Continuous moderators (Hofstede PDI, publication year as continuous)
+
+This approach is more powerful than narrow inclusion criteria because it:
+1. Maximizes k for the 66-correlation pooled matrix
+2. Directly answers RQ3 (temporal/contextual moderation)
+3. Provides transparent heterogeneity decomposition (RQ3, I² per path)
