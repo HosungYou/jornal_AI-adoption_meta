@@ -66,6 +66,9 @@ STUDY_METADATA_COLS = [
     ("country_development", 18, "list", "developed,developing", "Country development status (World Bank)", "developing"),
     ("hofstede_individualism", 20, "float", "0-100", "Hofstede individualism score for the country", "18"),
     ("n_constructs_measured", 20, "integer", "Positive integer", "Number of our 12 constructs measured in study", "6"),
+    ("measures_BI", 14, "list", "yes,no", "Whether Behavioral Intention (BI) is measured", "yes"),
+    ("measures_UB", 14, "list", "yes,no", "Whether Use Behavior (UB) is measured", "no"),
+    ("adoption_dv_type", 22, "list", "BI_only,UB_only,BI_and_UB,readiness_as_BI,other", "Type of adoption/use outcome variable", "BI_only"),
     ("n_correlations_reported", 22, "integer", "Positive integer", "Number of pairwise correlations reported", "15"),
     ("matrix_completeness", 20, "float", "0-1", "Proportion of possible pairs reported (out of C(k,2))", "0.75"),
     ("reporting_quality", 18, "list", "1,2,3,4,5", "1=poor to 5=excellent reporting quality", "4"),
@@ -116,6 +119,8 @@ CONSTRUCT_MAPPING_COLS = [
     ("ave", 10, "float", "0-1", "Average Variance Extracted", "0.72"),
     ("num_items", 12, "integer", "Positive integer", "Number of measurement items", "4"),
     ("scale_source", 25, "string", "", "Source of the measurement scale", "Venkatesh et al. (2003)"),
+    ("is_readiness_construct", 22, "list", "yes,no", "Whether original construct was labeled as 'readiness'", "no"),
+    ("readiness_mapping_note", 35, "string", "", "If readiness: justification for mapping to target construct (e.g., BI or SE)", "Items measure intention; mapped to BI"),
 ]
 
 MODERATOR_VARIABLES_COLS = [
