@@ -115,6 +115,53 @@ PRISMA 2020은 "몇 명의 리뷰어가 참여했고, 독립적이었는지, 불
 
 ---
 
+## 2026-02-26: 스크리닝 파이프라인 최종 확정 (v8)
+
+### Codex 제외 결정
+
+**문제**: Codex의 스크리닝 결과 85%가 uncertain → 변별력 없음
+**분석**: Gemini + Claude 2모델이 실질적 판별력 보유
+**결정**: Codex 제외, Gemini + Claude 2-model consensus pipeline 채택
+
+### 최종 파이프라인 수치 (v5 기준, 1,457건)
+
+| 분류 | 건수 | 기준 |
+|------|------|------|
+| Auto-INCLUDE | 358 | Gemini + Claude 모두 include |
+| Auto-EXCLUDE | 15 | Gemini + Claude 모두 exclude |
+| TIER1 충돌 | 95 | include ↔ exclude 직접 충돌 |
+| TIER2 확인 | 495 | one include + one uncertain |
+| TIER3 낮음 | 494 | uncertain+uncertain 등 |
+
+### 인간 검증 설계: Option C (2-Rater IRR + R1 Adjudicator)
+
+| 담당 | 건수 | 작업 |
+|------|------|------|
+| R2+R3 | 200 | 동일 200건 독립 코딩 → Cohen's κ IRR |
+| R1(PI) | ~236 | spot-check 86건 + TIER2 추가코딩 150건 |
+| R1 | 불일치건 | R2-R3 불일치 시 adjudicator |
+
+### IRR 200건 구성
+
+| 분류 | 건수 |
+|------|------|
+| 🔴 TIER1 충돌 (include↔exclude) | 85 |
+| 🔵 SPOT_CHECK (Auto-INCLUDE 10%) | 36 |
+| 🟡 TIER2 확인 (include+uncertain) | 79 |
+| **합계** | **200** |
+
+### Claude 사유 데이터 정합성 버그 수정
+
+**발견**: v7에서 Claude 판단(v5 파이프라인=include)과 Claude 사유(v6 다른 세션=EXCLUDE)가 혼재
+**원인**: v6의 Claude는 다른 시점/프롬프트로 실행된 별도 세션 결과
+**수정**: CSV(v5 파이프라인 매칭) 소스로 교정, 누락 68건 제목 기반 추론 생성
+**검증**: 200건 중 판단↔사유 모순 0건
+
+### 산출물
+- `data/templates/human_review_sheet_v8.xlsx` — 5개 시트 (IRR_200, Auto-INCLUDE, R1추가코딩, 전체현황, 코딩가이드)
+
+---
+
 ## 2026-02-26: Paper A 폴더 구조 생성
 
 ### 배경

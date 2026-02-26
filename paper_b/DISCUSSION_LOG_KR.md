@@ -33,9 +33,11 @@
 
 ### 4. 연구팀 구성
 
-- **H1 (PI)**: Hosung You, Penn State College of Education
-- **H2**: 박사과정생 1 (독립 코딩 담당)
-- **H3**: 박사과정생 2 (QA spot-check 담당)
+- **R1 (PI / Adjudicator)**: Hosung You, Penn State College of Education
+- **R2**: 박사과정생 1 (독립 코더)
+- **R3**: 박사과정생 2 (독립 코더 + QA)
+
+> ※ 2026-02-26 변경: H1/H2/H3 → R1/R2/R3. 결정 14 참조.
 
 ---
 
@@ -45,7 +47,7 @@
 
 **문제**: 3명의 human coder로 Cohen's kappa 사용 가능한가?
 **결론**: Cohen's kappa는 2명 전용. 3명 이상은 Fleiss' kappa 또는 Krippendorff's alpha 사용.
-**최종 설계**: 2명 human coder (H1, H2)가 독립 코딩 → Cohen's kappa + ICC(2,1) 사용. H3는 QA reviewer로 별도 역할.
+**최종 설계**: 2명 human coder (R2, R3)가 독립 코딩 → Cohen's kappa + ICC(2,1) 사용. R1(PI)은 adjudicator로 불일치 중재.
 
 ### 결정 2: ICR 샘플링 비율
 
@@ -64,17 +66,17 @@
 **최종 설계**: 3-Phase Hybrid Design (Phase 1-3)
 
 **Phase 1 (100 studies) — 📘 Paper B 핵심 + 📗 Paper A 활용**:
-- Human-first: H1+H2 독립 코딩 (blinded to AI) + AI 3개 모델 독립 추출
+- Human-first: R2+R3 독립 코딩 (blinded to AI) + AI 3개 모델 독립 추출
 - Gold standard 확립 → AI 정확도 평가 (Paper B의 핵심 분석)
 - Gold standard 데이터는 Paper A의 MASEM에도 활용
 
 **Phase 2 (~200 studies) — 📗 Paper A 전용**:
-- AI-first verification: AI consensus → 인간(H1, H2) 검증
+- AI-first verification: AI consensus → 인간(R1, R2) 검증
 - Phase 1에서 검증된 AI 성능을 기반으로, 효율적 코딩 방식 적용
 - Paper B에서는 분석하지 않으며, Methods에서 간략 언급만
 
 **Phase 3 (Phase 2의 10% spot-check) — 📗 Paper A 전용**:
-- H3 (fresh eyes)가 독립적으로 spot-check
+- R3 (fresh eyes)가 독립적으로 spot-check
 - Paper B에서는 분석하지 않음
 
 **Paper B에 보고하는 것**: Phase 1의 100 studies (IRR + AI accuracy + consensus + workflow)
@@ -148,10 +150,95 @@ Paper B에 적용할 보고 기준:
 
 ---
 
+## 2026-02-26: 스크리닝 파이프라인 최종 확정 (v8)
+
+### 결정 9: Codex 스크리닝 제외
+
+**문제**: 3-모델 AI 스크리닝(Gemini + Claude + Codex) 결과에서 Codex의 판별력 부재.
+**분석**:
+- Codex의 85%가 uncertain 판정 → 스크리닝 기여 불가
+- Gemini + Claude 2-모델 합의만으로 충분한 coverage 확보
+**결론**: 스크리닝에서 Codex 제외, Gemini + Claude 2-model consensus로 진행.
+
+> **참고**: Paper B의 Phase 1 데이터 추출에서는 여전히 3개 모델(Claude, Codex, Gemini) 사용.
+
+### 결정 10: 스크리닝 파이프라인 확정 수치
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| Auto-INCLUDE | 358 | Gemini + Claude 둘 다 include |
+| Auto-EXCLUDE | 15 | Gemini + Claude 둘 다 exclude |
+| TIER1 Conflict | 95 | include ↔ exclude |
+| TIER2 High | 495 | include + uncertain |
+| TIER3 Low | 494 | uncertain 등 |
+| **Total** | **1,457** | |
+
+### 결정 11: 스크리닝 역할 설계 — Option C 채택 (2-Rater IRR + R1 Adjudicator)
+
+**문제**: 3명이 동시에 스크리닝하는 것 vs. 2명 IRR + PI adjudicator 중 어느 것이 효율적인가?
+**검토한 옵션**:
+- **Option A**: 3명 동일 200건 코딩 (Fleiss' κ) — 자원 낭비
+- **Option B**: R2+R3 200건 IRR + R1 별도 200건 — 중복 검증
+- **Option C**: R2+R3 200건 IRR + R1 spot-check/추가코딩/adjudicator ✅
+
+**채택 근거**:
+- SR/MA 관행에서 2-rater IRR + adjudicator가 표준
+- R1(PI)의 시간을 spot-check, 추가코딩, 중재에 분산 활용
+- Cohen's κ(2명) 보고가 학술지에서 가장 흔한 형태
+
+**R1(PI) 업무**:
+| 작업 | 건수 | 시트 |
+|------|------|------|
+| Auto-INCLUDE spot-check | 86건 (36 IRR + 50 R1전용) | 시트② |
+| TIER2 추가코딩 | 150건 | 시트③ |
+| R2-R3 불일치 중재 | IRR 후 불일치건 | 시트① |
+
+### 결정 12: IRR 200건 구성
+
+| Tier | Count | 근거 |
+|------|-------|------|
+| 🔴 TIER1 (include↔exclude) | 85 | 최우선 검증 대상 |
+| 🔵 SPOT_CHECK (Auto-INCLUDE 10%) | 36 | Auto-INCLUDE 품질 검증 |
+| 🟡 TIER2 (include+uncertain) | 79 | 나머지 배분 |
+| **합계** | **200** | |
+
+### 결정 13: Claude reason 데이터 무결성 수정
+
+**문제**: v7 엑셀에서 Claude 판정(include)과 Claude 사유(E-FT exclude)가 모순되는 레코드 발견.
+**원인**: v5 파이프라인의 Claude 판정과 v6(다른 세션)의 Claude 사유를 혼합하여 사용.
+- IRR 200건 중 12건(6%)에서 모순 발생
+- Auto-INCLUDE 358건 중 71건(19.8%)에서 모순 발생
+
+**해결**:
+1. v5 파이프라인 CSV만 권위적 소스로 확정
+2. v6 사유 전면 폐기
+3. 사유 없는 68건(exclude 52, include 13, uncertain 3)에 대해 수동으로 사유 생성
+4. v8 엑셀에 모든 200건의 사유 반영 완료
+
+### 결정 14: 코더 ID 체계 변경
+
+**변경**: H1/H2/H3 → R1/R2/R3
+| 이전 | 변경 후 | 역할 |
+|------|---------|------|
+| H1 | R1 (PI) | Adjudicator, spot-check, 추가코딩 |
+| H2 | R2 (PhD 1) | 독립 코더 |
+| H3 | R3 (PhD 2) | 독립 코더 + QA |
+
+### 산출물
+
+- `data/templates/human_review_sheet_v8.xlsx` — 최종 스크리닝 엑셀 (5개 시트)
+- `paper_a/README.md` — 파이프라인 반영 완료
+- `paper_a/DISCUSSION_LOG_KR.md` — 의사결정 기록 추가
+- `paper_b/README.md` — 스크리닝 파이프라인 및 IRR 설계 반영
+- `paper_b/RESEARCHER_ROLES.md` — R1/R2/R3 역할 및 Option C 반영
+
+---
+
 ## 향후 논의 사항
 
-- [ ] H2, H3 확정 후 역할 문서 업데이트
+- [ ] R2, R3 확정 후 역할 문서 업데이트
 - [ ] Pilot calibration 결과에 따른 코딩 매뉴얼 수정
 - [ ] AI extraction pipeline 테스트 결과 검토
 - [ ] Paper A OSF Preprint 등록 일정 확정
 - [ ] IRB exempt 신청 여부 확인
+- [ ] TIER3 494건 처리 방안 결정 (AI 스크리닝 결과 기반 exclude 여부)

@@ -18,11 +18,29 @@
 
 ```
 Gold Standard Sample: 100 studies (from ~300 MASEM-eligible studies)
-Human Coders: 2명 (PI + PhD 1), 독립 코딩, blinded to AI
+Human Coders: 2명 (R2 + R3), 독립 코딩 → Cohen's κ IRR
+              R1(PI) = Adjudicator (불일치 중재)
 AI Models: 3개 (Claude Sonnet 4.6 / GPT Codex 5.3 / Gemini CLI)
 Variables: 30개/study × 100 studies ≈ 3,000 data elements
 Design: Comparative accuracy (AI vs. human gold standard)
 ```
+
+## 스크리닝 파이프라인 (2026-02-26 확정)
+
+**AI Screening**: Gemini + Claude 2-model consensus (Codex 제외 — 85% uncertain)
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| Auto-INCLUDE | 358 | 둘 다 include → 자동 포함 |
+| Auto-EXCLUDE | 15 | 둘 다 exclude → 자동 제외 |
+| TIER1 Conflict | 95 | include ↔ exclude |
+| TIER2 High | 495 | include + uncertain |
+| TIER3 Low | 494 | uncertain 등 |
+
+**Human Review (Option C)**:
+- R2+R3: 200건 동일 독립 코딩 (IRR: Cohen's κ)
+- R1(PI): spot-check 86건 + 추가코딩 150건 + adjudicator
+- Excel: `data/templates/human_review_sheet_v8.xlsx`
 
 ## 디렉토리 구조
 
@@ -73,6 +91,14 @@ paper_b/
 2. **RQ2**: Variable type별 AI 정확도 차이 (bibliographic > statistical > classificatory?)
 3. **RQ3**: Multi-model consensus가 single model보다 나은가?
 4. **RQ4**: 최적 human-AI hybrid workflow는?
+
+## IRR 설계
+
+- **코더**: R2 + R3 (동일 200건 독립 코딩)
+- **지표**: Cohen's κ (2명 범주형), ICC(2,1) (연속형)
+- **목표**: κ ≥ 0.85
+- **R1(PI)**: Adjudicator — R2-R3 불일치 시 독립 검토 후 최종 판단
+- **Gold Standard**: R2-R3 일치 시 채택, 불일치 시 R1 중재 후 확정
 
 ## 보고 기준
 

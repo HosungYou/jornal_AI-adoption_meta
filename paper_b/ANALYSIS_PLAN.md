@@ -275,7 +275,7 @@ library(jsonlite)   # JSON parsing (AI outputs)
 
 | 산출물 | 파일 | 위치 |
 |--------|------|------|
-| IRR results (H1 vs H2) | irr_results.csv | data/06_analysis/ |
+| IRR results (R2 vs R3) | irr_results.csv | data/06_analysis/ |
 | Per-model accuracy | model_accuracy.csv | data/06_analysis/ |
 | Per-variable accuracy | variable_accuracy.csv | data/06_analysis/ |
 | Consensus results | consensus_accuracy.csv | data/06_analysis/ |

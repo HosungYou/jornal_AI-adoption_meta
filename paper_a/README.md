@@ -24,34 +24,43 @@ Paper B (targeting *Research Synthesis Methods*) focuses exclusively on **LLM-as
 |-------|---------|
 | Identified | 22,166 |
 | After deduplication | 16,189 |
-| AI-screened include | 575 |
-| AI conflict | 175 |
-| Uncertain | 714 |
-| Human review queue | 1,457 |
-| Final included | TBD |
+| After keyword filter (Phase 1) | 3,274 |
+| AI 3-model screening (Phase 2) | 1,457 human review queue |
+| Final included (full-text) | TBD (~300 MASEM-eligible expected) |
+
+## Current Screening Pipeline (v8 — 2026-02-26)
+
+**AI Models**: Gemini + Claude Sonnet 4.6 (Codex dropped — 85% uncertain, no discriminating power)
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| Auto-INCLUDE | 358 | Gemini + Claude both include |
+| Auto-EXCLUDE | 15 | Gemini + Claude both exclude |
+| TIER1 Conflict | 95 | include ↔ exclude direct conflict |
+| TIER2 High | 495 | one include + one uncertain |
+| TIER3 Low | 494 | uncertain + uncertain, etc. |
+| **Total** | **1,457** | |
+
+**Human Review Design (Option C: 2-Rater IRR + R1 Adjudicator)**:
+- R2 + R3: 200 papers independent coding (IRR) → Cohen's κ
+- R1 (PI): spot-check Auto-INCLUDE 86건 + TIER2 additional 150건
+- R1 serves as adjudicator for R2-R3 disagreements
+- Excel: `data/templates/human_review_sheet_v8.xlsx`
 
 ## Directory Structure
 ```
 paper_a/
 ├── README.md                    # This file
-├── SCREENING_PROTOCOL.md        # 3-Tier AI screening methodology
-├── SEARCH_STRATEGY.md           # Database search strategy and execution
-├── DATA_EXTRACTION_PLAN.md      # Extraction protocol for MASEM variables
-├── ANALYSIS_PLAN.md             # MASEM analysis methodology
-├── RESEARCHER_ROLES.md          # Team roles and responsibilities
-├── JOURNAL_STRATEGY.md          # Submission strategy for C&E
-├── TIMELINE.md                  # Project timeline and milestones
 ├── DISCUSSION_LOG_KR.md         # Research discussion log (Korean)
-├── checklists/
-│   └── PRISMA_2020_checklist.md
+├── checklists/                  # PRISMA 2020 checklist
 ├── data/
 │   ├── 00_search_records/       # Raw search results per database
 │   ├── 01_deduplication/        # Deduplication logs and results
-│   ├── 02_screening/            # Screening data by tier
-│   │   ├── tier1_keyword/
-│   │   ├── tier2_single_ai/
-│   │   ├── tier3_dual_ai/
-│   │   └── human_verification/  # Human review sheets and IRR data
+│   ├── 02_screening/            # Screening data
+│   │   ├── tier1_keyword/       #   Phase 1: keyword auto-filter
+│   │   ├── tier2_single_ai/     #   Phase 2: AI multi-model screening
+│   │   ├── tier3_dual_ai/       #   (legacy: merged into Phase 2)
+│   │   └── human_verification/  #   Phase 3: human review + IRR
 │   ├── 03_eligibility/          # Full-text eligibility assessment
 │   ├── 04_extraction/           # Data extraction pipeline
 │   │   ├── ai_extraction/
