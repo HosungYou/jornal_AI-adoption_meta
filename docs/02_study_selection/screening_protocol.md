@@ -13,7 +13,7 @@
 - Current corpus scale: high-volume batch workflow (e.g., 16,189 records).
 
 ## Governance and Roles
-- AI coders: Codex CLI and Gemini CLI (OAuth-authenticated sessions).
+- AI coders: Gemini CLI and Claude Sonnet 4.6 (2-model consensus pipeline; Codex dropped — 85% uncertain).
 - Human coders: two independent human coders for 100% of records.
 - Human coders can view AI suggestions during coding (non-blinded mode).
 - Adjudicator: PI makes final decision for unresolved conflicts.
@@ -21,7 +21,7 @@
 
 ## Workflow Summary
 1. Deduplicate merged search results.
-2. Run AI pre-screening with Codex and Gemini independently.
+2. Run AI pre-screening with Gemini and Claude independently.
 3. Route AI outputs into consensus buckets:
    - `include`
    - `exclude` (candidate only, never final by AI)
@@ -67,8 +67,8 @@ Decision logic:
 ## Required Data Fields
 Screening output must include:
 - `record_id`
-- `screen_decision_codex`
 - `screen_decision_gemini`
+- `screen_decision_claude`
 - `screen_consensus`
 - `human1_decision`
 - `human2_decision`
@@ -77,8 +77,8 @@ Screening output must include:
 - `decision_rationale`
 - `adjudicator_id`
 - `screen_run_id`
-- `oauth_auth_method_codex`
 - `oauth_auth_method_gemini`
+- `auth_method_claude`
 
 ## Audit and Reproducibility
 - Preserve raw AI outputs and parsed decisions.

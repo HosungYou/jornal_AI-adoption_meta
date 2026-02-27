@@ -27,12 +27,12 @@
 - 🔵 36건 SPOT_CHECK (Auto-INCLUDE 10% 검증)
 - 🟡 79건 TIER2 (include + uncertain)
 
-### R1(PI): Adjudicator + 추가 코딩 (~236건)
+### R1(PI): Adjudicator + 추가 코딩 (~221건)
 
 | 작업 | R1 (PI) | 시트 |
 |------|---------|------|
 | Auto-INCLUDE spot-check | 86건 (36 IRR검증 + 50 R1검증) | 시트② |
-| TIER2 잔여 추가 코딩 | 150건 | 시트③ |
+| TIER2 잔여 추가 코딩 | 135건 | 시트③ |
 | R2-R3 불일치 중재 | 불일치건 (IRR 후) | 시트① R1 칼럼 |
 | 최종판단 확정 | 전체 | 시트① 최종 칼럼 |
 
@@ -88,7 +88,7 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 
 ### R1: PI / Adjudicator (Hosung You)
 - **전체 프로젝트 총괄**
-- 스크리닝: spot-check 86건 + 추가코딩 150건 + R2-R3 불일치 중재
+- 스크리닝: spot-check 86건 + 추가코딩 135건 + R2-R3 불일치 중재
 - Phase 1: Gold Standard adjudicator (R2-R3 불일치 해결)
 - Phase 2: ~100 studies AI consensus 검증
 - IRR 계산 및 통계 분석
@@ -119,13 +119,13 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 
 | 세션 | 내용 | 시간 | 참여자 |
 |------|------|------|--------|
-| Orientation | 코딩 매뉴얼 리뷰, 12 construct 정의, 변수 설명 | 2시간 | H1, H2, H3 |
-| Pilot Practice | 10 pilot studies 코딩 (Paper B sample 외) | 3시간 | H1, H2 |
-| Calibration | Pilot IRR 확인, disagreement 논의, 규칙 명확화 | 1시간 | H1, H2 |
+| Orientation | 코딩 매뉴얼 리뷰, 12 construct 정의, 변수 설명 | 2시간 | R1, R2, R3 |
+| Pilot Practice | 10 pilot studies 코딩 (Paper B sample 외) | 3시간 | R1, R2 |
+| Calibration | Pilot IRR 확인, disagreement 논의, 규칙 명확화 | 1시간 | R1, R2 |
 
 **Calibration 기준**: Pilot에서 κ ≥ 0.80 (categorical), ICC ≥ 0.85 (continuous) 달성 후 본 코딩 시작
 
-### H3 Training (Week 4)
+### R3 Training (Week 4)
 
 | 세션 | 내용 | 시간 |
 |------|------|------|
@@ -139,7 +139,7 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 ```
 Phase 1 (독립 코딩):
 ┌─────────┐    ┌─────────┐    ┌──────────────────┐
-│   H1    │    │   H2    │    │   AI (3 models)  │
+│   R2    │    │   R3    │    │   AI (3 models)  │
 │ (blind) │    │ (blind) │    │   (independent)  │
 └────┬────┘    └────┬────┘    └────────┬─────────┘
      │              │                   │
@@ -155,7 +155,7 @@ Phase 1 (독립 코딩):
      05_gold_standard/ ←── comparison ── AI outputs
 ```
 
-**Blinding 해제 시점**: Phase 1 코딩이 100% 완료되고 모든 코딩 시트가 제출된 후에만 H1-H2 상호 결과 및 AI 결과 공개
+**Blinding 해제 시점**: Phase 1 코딩이 100% 완료되고 모든 코딩 시트가 제출된 후에만 R2-R3 상호 결과 및 AI 결과 공개
 
 ---
 
@@ -163,7 +163,7 @@ Phase 1 (독립 코딩):
 
 - **주간 미팅**: 매주 1회 (30분), 진행 상황 확인
 - **Coding 질문**: 코딩 중 의문사항은 개별 메모 → 주간 미팅에서 논의 (상대방 답변 참고 불가)
-- **긴급 질문**: PI에게 직접 문의 가능 (단, PI는 H2에게 같은 답변 제공하여 형평성 유지)
+- **긴급 질문**: PI에게 직접 문의 가능 (단, PI는 R2/R3에게 같은 답변 제공하여 형평성 유지)
 - **Discrepancy Resolution**: Phase 1 완료 후 face-to-face 미팅으로 진행
 
 ---

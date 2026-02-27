@@ -10,7 +10,7 @@
 
 - Canonical source of truth: `AI_Adoption_MASEM_Coding_Manual_v1.docx`
 - Operational data-entry template: `AI_Adoption_MASEM_Coding_v1.xlsx`
-- AI coders: Codex CLI + Gemini CLI (OAuth sessions)
+- AI coders: Gemini CLI + Claude Sonnet 4.6 (screening); Claude + Codex + Gemini (data extraction)
 - Human coding: two independent coders across 100% of records
 - Human coders run in non-blinded mode (AI suggestions visible during coding)
 - Final authority: PI adjudication for unresolved conflicts

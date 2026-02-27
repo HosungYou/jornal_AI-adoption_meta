@@ -31,15 +31,15 @@ Design: Comparative accuracy (AI vs. human gold standard)
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| Auto-INCLUDE | 358 | 둘 다 include → 자동 포함 |
+| Auto-INCLUDE | 367 | 둘 다 include → 자동 포함 |
 | Auto-EXCLUDE | 15 | 둘 다 exclude → 자동 제외 |
 | TIER1 Conflict | 95 | include ↔ exclude |
-| TIER2 High | 495 | include + uncertain |
-| TIER3 Low | 494 | uncertain 등 |
+| TIER2 High | 480 | include + uncertain |
+| TIER3 Low | 500 | uncertain 등 |
 
 **Human Review (Option C)**:
 - R2+R3: 200건 동일 독립 코딩 (IRR: Cohen's κ)
-- R1(PI): spot-check 86건 + 추가코딩 150건 + adjudicator
+- R1(PI): spot-check 86건 + 추가코딩 135건 + adjudicator
 - Excel: `data/templates/human_review_sheet_v8.xlsx`
 
 ## 디렉토리 구조

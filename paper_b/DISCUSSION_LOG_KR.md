@@ -166,11 +166,11 @@ Paper B에 적용할 보고 기준:
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| Auto-INCLUDE | 358 | Gemini + Claude 둘 다 include |
+| Auto-INCLUDE | 358 → **367** | Gemini + Claude 둘 다 include |
 | Auto-EXCLUDE | 15 | Gemini + Claude 둘 다 exclude |
 | TIER1 Conflict | 95 | include ↔ exclude |
-| TIER2 High | 495 | include + uncertain |
-| TIER3 Low | 494 | uncertain 등 |
+| TIER2 High | 495 → **480** | include + uncertain |
+| TIER3 Low | 494 → **500** | uncertain 등 |
 | **Total** | **1,457** | |
 
 ### 결정 11: 스크리닝 역할 설계 — Option C 채택 (2-Rater IRR + R1 Adjudicator)
@@ -190,7 +190,7 @@ Paper B에 적용할 보고 기준:
 | 작업 | 건수 | 시트 |
 |------|------|------|
 | Auto-INCLUDE spot-check | 86건 (36 IRR + 50 R1전용) | 시트② |
-| TIER2 추가코딩 | 150건 | 시트③ |
+| TIER2 추가코딩 | 135건 (v8, 이전 150건) | 시트③ |
 | R2-R3 불일치 중재 | IRR 후 불일치건 | 시트① |
 
 ### 결정 12: IRR 200건 구성
@@ -234,6 +234,49 @@ Paper B에 적용할 보고 기준:
 
 ---
 
+---
+
+## 2026-02-27: v8 Excel 업데이트 — Claude 재스크리닝 및 Tier 재분류
+
+### 결정 15: 42건 Claude 재스크리닝
+
+**문제**: Sheet ③ (R1 추가코딩) 150건 중 42건에 Claude 사유가 없었음. 원인은 해당 건들이 Codex+Gemini 파이프라인에서만 처리되어 Claude 미평가 상태.
+**해결**: Claude Opus 4.6으로 42건 직접 재스크리닝 (23 include, 19 uncertain)
+**결과**: Claude 총 평가 건수 1,238 → 1,280건
+
+### 결정 16: Tier 재분류
+
+재스크리닝 후 15건의 Gemini+Claude 조합이 변경됨:
+- 9건: TIER2 → Auto-INCLUDE (include+include) → Sheet ②로 물리적 이동
+- 6건: TIER2 → TIER3 (uncertain+uncertain) → Sheet ③에서 삭제
+
+**최종 수치 (v8)**:
+| 항목 | 이전 | 이후 |
+|------|------|------|
+| Auto-INCLUDE (Sheet ②) | 358 | 367 |
+| TIER2 (Sheet ③ R1 추가코딩) | 150 | 135 |
+| TIER3 | 494 | 500 |
+| R1 총 업무량 | ~236 | ~221 |
+
+### 결정 17: 코딩 가이드 (Sheet ⑤) 업데이트
+
+- TRA 정의 수정: "Training" → "AI Transparency (AI 투명성/설명가능성)"
+- AUT 정의 명확화: "Perceived AI Autonomy (지각된 AI 자율성)"
+- adoption_dv_type에 `adoption_composite` 추가
+- UTAUT2 처리 근거, AI-specific construct 포함 rationale, TAM-UTAUT 교집합 명시
+
+### 결정 18: 전체 문서 Codex 참조 정리
+
+스크리닝 관련 문서에서 Codex → Gemini+Claude 반영, 수치 업데이트.
+영향 파일: 10개 (README 3개, RESEARCHER_ROLES, DISCUSSION_LOG 2개, docs 4개)
+
+### 산출물
+- `data/templates/human_review_sheet_v8.xlsx` — 최종 업데이트 (5개 시트, 검증 완료)
+- `paper_a/data/02_screening/claude_screening_results.csv` — 1,280건
+- `data/templates/create_masem_template.py` — adoption_composite 추가
+
+---
+
 ## 향후 논의 사항
 
 - [ ] R2, R3 확정 후 역할 문서 업데이트
@@ -241,4 +284,4 @@ Paper B에 적용할 보고 기준:
 - [ ] AI extraction pipeline 테스트 결과 검토
 - [ ] Paper A OSF Preprint 등록 일정 확정
 - [ ] IRB exempt 신청 여부 확인
-- [ ] TIER3 494건 처리 방안 결정 (AI 스크리닝 결과 기반 exclude 여부)
+- [ ] TIER3 500건 처리 방안 결정 (AI 스크리닝 결과 기반 exclude 여부)

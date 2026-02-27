@@ -53,7 +53,7 @@ Extended 12-construct model integrating TAM, UTAUT, and AI-specific variables:
 - **Effect size**: Pearson correlations (r), with β→r conversion (Peterson & Brown, 2005) and sensitivity analysis
 - **Core method**: Two-Stage Meta-Analytic SEM (TSSEM; Cheung, 2015) via `metaSEM` R package
 - **Advanced**: One-Stage MASEM (OSMASEM), Bayesian MASEM (`blavaan`), Network Analysis (`psychonetrics`)
-- **AI-assisted screening**: Codex CLI + Gemini CLI (dual-provider OAuth); AI-assisted coding: 3-model consensus pipeline
+- **AI-assisted screening**: Gemini CLI + Claude Sonnet 4.6 (2-model consensus; Codex dropped — 85% uncertain); AI-assisted coding: 3-model consensus pipeline
 - **Target k**: ≥ 150 studies (k = 150+ for robust 66-correlation pooled matrix)
 - **Actual screening**: 16,189 records → 575 AI-include, 175 conflict, 707 genuine uncertain (human review in progress)
 - **Full-text criterion**: ≥ 2 construct-pair r or β among the 12 target constructs
@@ -76,7 +76,7 @@ data/
 └── templates/               # Coding & screening workbook templates
 
 scripts/
-├── screening/               # 3-tier AI screening (Codex + Gemini) + retry logic
+├── screening/               # 3-tier AI screening (Gemini + Claude) + retry logic
 └── ai_coding_pipeline/      # 7-phase correlation extraction pipeline
 
 analysis/
@@ -99,7 +99,7 @@ configs/                     # Model specs, Bayesian priors, network parameters
 - Screening data (16,189 records): `data/03_screening/screening_ai_dual.csv`
 - Human review queue (571 records): `data/03_screening/human_review_queue.csv`
 - Operational coding template: `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx`
-- Title/abstract AI assistance: Codex CLI (gpt-5.1-codex-mini → gpt-5.3-codex-spark) + Gemini CLI (gemini-2.5-flash)
+- Title/abstract AI assistance: Gemini CLI (gemini-2.5-flash) + Claude Sonnet 4.6 (2-model consensus pipeline)
 - Final screening decisions: Two independent human coders + PI adjudication
 
 ## Current Pipeline Status

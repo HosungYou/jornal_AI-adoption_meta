@@ -34,16 +34,16 @@ Paper B (targeting *Research Synthesis Methods*) focuses exclusively on **LLM-as
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| Auto-INCLUDE | 358 | Gemini + Claude both include |
+| Auto-INCLUDE | 367 | Gemini + Claude both include |
 | Auto-EXCLUDE | 15 | Gemini + Claude both exclude |
 | TIER1 Conflict | 95 | include ↔ exclude direct conflict |
-| TIER2 High | 495 | one include + one uncertain |
-| TIER3 Low | 494 | uncertain + uncertain, etc. |
+| TIER2 High | 480 | one include + one uncertain |
+| TIER3 Low | 500 | uncertain + uncertain, etc. |
 | **Total** | **1,457** | |
 
 **Human Review Design (Option C: 2-Rater IRR + R1 Adjudicator)**:
 - R2 + R3: 200 papers independent coding (IRR) → Cohen's κ
-- R1 (PI): spot-check Auto-INCLUDE 86건 + TIER2 additional 150건
+- R1 (PI): spot-check Auto-INCLUDE 86건 + TIER2 additional 135건
 - R1 serves as adjudicator for R2-R3 disagreements
 - Excel: `data/templates/human_review_sheet_v8.xlsx`
 

@@ -2,7 +2,9 @@
 
 ## Overview
 
-This document describes the accelerated screening methodology used for the systematic review of AI adoption in education. The protocol employs a three-tier approach combining keyword pre-filtering with dual-AI screening (Codex CLI + Gemini CLI) to process 16,189 deduplicated records.
+This document describes the accelerated screening methodology used for the systematic review of AI adoption in education. The protocol employs a three-tier approach combining keyword pre-filtering with dual-AI screening (Gemini CLI + Claude Sonnet 4.6) to process 16,189 deduplicated records.
+
+> **Note (v8 update, 2026-02-27):** Codex was originally used as a screening model but was replaced by Claude Sonnet 4.6 after analysis showed Codex produced 85% uncertain judgments with no discriminating power. The legacy Codex references below are retained for audit trail purposes where applicable, but the operational pipeline uses Gemini + Claude 2-model consensus.
 
 **Rationale:** Naive sequential dual-AI screening of all 16,189 records would require ~147 hours. The tiered approach reduces this to ~2.5-3 hours by eliminating obviously irrelevant records before invoking expensive AI models.
 
@@ -22,17 +24,17 @@ This document describes the accelerated screening methodology used for the syste
            │ 3,170 records pass
            ▼
 ┌─────────────────────────────┐
-│  TIER 2: Single AI (Codex)  │  ← AI terms + partial match
+│  TIER 2: Single AI          │  ← AI terms + partial match
 │  AI + (education OR adopt)  │     (education OR adoption, not both)
-│  613 records                │     Model: gpt-5.1-codex-mini → gpt-5.3-codex-spark
+│  613 records                │     Originally Codex; now Gemini/Claude
 └──────────┬──────────────────┘
            │
            ▼
 ┌─────────────────────────────┐
 │  TIER 3: Dual AI            │  ← AI + education + adoption terms
-│  Codex + Gemini concurrent  │     (highest relevance probability)
-│  2,557 records              │     Codex: gpt-5.1-codex-mini (→ spark)
-│                             │     Gemini: gemini-2.5-flash
+│  Gemini + Claude concurrent │     (highest relevance probability)
+│  2,557 records              │     Gemini: gemini-2.5-flash
+│                             │     Claude: claude-sonnet-4.6
 └──────────┬──────────────────┘
            │
            ▼
@@ -45,22 +47,23 @@ This document describes the accelerated screening methodology used for the syste
 | Tier | Records | % | Method | API Calls | Est. Time |
 |------|---------|---|--------|-----------|-----------|
 | T1 auto-exclude | 12,915 | 80.3% | Keyword filter | 0 | <1s |
-| T2 single AI | 613 | 3.8% | Codex (mini→spark) | 613 | ~30 min |
-| T3 dual AI | 2,557 | 15.9% | Codex (mini→spark) + Gemini (2.5-flash) | 5,114 | ~2.5 hr |
+| T2 single AI | 613 | 3.8% | Gemini (2.5-flash) | 613 | ~30 min |
+| T3 dual AI | 2,557 | 15.9% | Gemini (2.5-flash) + Claude (sonnet-4.6) | 5,114 | ~2.5 hr |
 | **Total** | **16,085** | **100%** | | **5,727** | **~3 hr** |
 
 ### AI Model Specifications
 
 | Engine | Primary Model | Fallback Model | Trigger |
 |--------|--------------|----------------|---------|
-| Codex CLI | `gpt-5.1-codex-mini` | `gpt-5.3-codex-spark` | Usage limit error |
 | Gemini CLI | `gemini-2.5-flash` | — | — |
+| Claude | `claude-sonnet-4.6` | — | — |
+
+> **Legacy (pre-v8):** Codex CLI (`gpt-5.1-codex-mini` → `gpt-5.3-codex-spark`) was used in the initial screening run but was replaced by Claude after analysis showed 85% uncertain judgments.
 
 **Fallback Protocol:**
-1. All Codex calls start with `gpt-5.1-codex-mini` (lower cost, sufficient for screening)
-2. If quota exhausted (`"usage limit"` in response), automatically switch to `gpt-5.3-codex-spark`
-3. Switch is persistent within session (no retries on exhausted model)
-4. Gemini uses `gemini-2.5-flash` exclusively (higher free-tier quota than Pro)
+1. Gemini uses `gemini-2.5-flash` exclusively (higher free-tier quota than Pro)
+2. Claude uses `claude-sonnet-4.6` via API
+3. If either model fails, records are queued for manual retry
 
 ---
 
@@ -133,38 +136,40 @@ Validated against 104-record pilot (real Codex + Gemini screening):
 ### Selection Criteria
 Records with AI-related terms AND either education OR adoption terms (but not both).
 
-### Rationale for Gemini Only
+### Rationale for Gemini as Single Evaluator
 - Gemini CLI had **0 timeouts** in pilot (vs 3 for Codex)
-- Gemini mean confidence: 0.97 (vs Codex 0.94)
-- Faster response time (~15s vs ~20s for Codex)
+- Gemini mean confidence: 0.97
+- Faster response time (~15s)
 
 ### Output
 - `screen_decision_gemini`: include / exclude / uncertain
 - `screen_consensus`: equals Gemini's decision (single evaluator)
 - `screening_tier`: "T2_single_ai"
-- `screen_decision_codex`: "N/A" (not evaluated)
+- `screen_decision_claude`: "N/A" (not evaluated at T2)
 
 ### Escalation Rule
 If Gemini returns `include` or `uncertain`, the record should be flagged for human review.
 
 ---
 
-## Tier 3: Dual AI Screening (Codex + Gemini)
+## Tier 3: Dual AI Screening (Gemini + Claude)
 
 ### Selection Criteria
 Records with AI-related terms AND education terms AND adoption/acceptance terms.
 
 ### Method
-- Codex CLI and Gemini CLI run **concurrently** per record (asyncio.gather)
+- Gemini CLI and Claude Sonnet 4.6 run **concurrently** per record
 - Up to 8 records processed in parallel (asyncio.Semaphore)
 - Each provider independently evaluates against the full MASEM eligibility criteria
 
 ### Consensus Rules
-| Codex | Gemini | Consensus |
-|-------|--------|-----------|
-| include | include | **include** |
-| exclude | exclude | **exclude** |
-| Any other combination | | **conflict** → human adjudication |
+| Gemini | Claude | Consensus |
+|--------|--------|-----------|
+| include | include | **include** (Auto-INCLUDE) |
+| exclude | exclude | **exclude** (Auto-EXCLUDE) |
+| include | exclude (or vice versa) | **TIER1 conflict** → human adjudication |
+| include | uncertain (or vice versa) | **TIER2** → human review |
+| uncertain | uncertain | **TIER3** → lower priority review |
 
 ### Screening Prompt Criteria (aligned with Coding Manual Section 2.2)
 1. Empirical quantitative study with primary data
@@ -205,9 +210,9 @@ Records with AI-related terms AND education terms AND adoption/acceptance terms.
 | `ai_screening.py` | Original sequential screening |
 
 ### CLI Versions
-- Codex CLI: codex-cli 0.101.0 (OpenAI)
-- Gemini CLI: 0.25.1 (Google)
-- Authentication: OAuth for both providers
+- Gemini CLI: 0.25.1 (Google) — OAuth-authenticated
+- Claude: Sonnet 4.6 (Anthropic) — API-authenticated
+- Legacy: Codex CLI codex-cli 0.101.0 (OpenAI) — used in initial run, replaced by Claude
 
 ### Performance
 | Metric | Value |
@@ -230,7 +235,7 @@ Per PRISMA 2020 guidelines for AI-assisted screening:
 
 ### Method Section Language (template)
 
-> Records were screened using a three-tier approach. Tier 1 applied keyword pre-filtering to auto-exclude records without AI-related terminology (n = 12,915; 80.3%). Tier 2 screened borderline records using a single AI model (Gemini CLI v0.25.1; n = 613; 3.8%). Tier 3 applied dual independent AI screening (Codex CLI v0.101.0 + Gemini CLI v0.25.1) to high-relevance records (n = 2,557; 15.9%). All include and conflict decisions were reviewed by two independent human coders, with disagreements resolved by the PI. The keyword pre-filter was validated against a 104-record pilot with 0% false negative rate.
+> Records were screened using a three-tier approach. Tier 1 applied keyword pre-filtering to auto-exclude records without AI-related terminology (n = 12,915; 80.3%). Tier 2 screened borderline records using a single AI model (Gemini CLI v0.25.1; n = 613; 3.8%). Tier 3 applied dual independent AI screening (Gemini CLI v0.25.1 + Claude Sonnet 4.6) to high-relevance records (n = 2,557; 15.9%). All include and conflict decisions were reviewed by two independent human coders, with disagreements resolved by the PI. The keyword pre-filter was validated against a 104-record pilot with 0% false negative rate.
 
 ---
 

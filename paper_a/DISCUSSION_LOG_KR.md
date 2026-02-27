@@ -125,20 +125,20 @@ PRISMA 2020은 "몇 명의 리뷰어가 참여했고, 독립적이었는지, 불
 
 ### 최종 파이프라인 수치 (v5 기준, 1,457건)
 
-| 분류 | 건수 | 기준 |
-|------|------|------|
-| Auto-INCLUDE | 358 | Gemini + Claude 모두 include |
-| Auto-EXCLUDE | 15 | Gemini + Claude 모두 exclude |
-| TIER1 충돌 | 95 | include ↔ exclude 직접 충돌 |
-| TIER2 확인 | 495 | one include + one uncertain |
-| TIER3 낮음 | 494 | uncertain+uncertain 등 |
+| 분류 | 건수 (v5 원본) | 건수 (v8 최종) | 기준 |
+|------|---------------|---------------|------|
+| Auto-INCLUDE | 358 | **367** | Gemini + Claude 모두 include |
+| Auto-EXCLUDE | 15 | 15 | Gemini + Claude 모두 exclude |
+| TIER1 충돌 | 95 | 95 | include ↔ exclude 직접 충돌 |
+| TIER2 확인 | 495 | **480** | one include + one uncertain |
+| TIER3 낮음 | 494 | **500** | uncertain+uncertain 등 |
 
 ### 인간 검증 설계: Option C (2-Rater IRR + R1 Adjudicator)
 
 | 담당 | 건수 | 작업 |
 |------|------|------|
 | R2+R3 | 200 | 동일 200건 독립 코딩 → Cohen's κ IRR |
-| R1(PI) | ~236 | spot-check 86건 + TIER2 추가코딩 150건 |
+| R1(PI) | ~221 | spot-check 86건 + TIER2 추가코딩 135건 |
 | R1 | 불일치건 | R2-R3 불일치 시 adjudicator |
 
 ### IRR 200건 구성
@@ -293,7 +293,70 @@ Phase 3: 인간 검증 (3명)
 
 | 항목 | 완료 | 전체 | 비율 |
 |------|------|------|------|
-| Claude 평가 | 219 | 1,457 | 15% |
+| Claude 평가 | 1,280 | 1,457 | 87.8% |
 | R1(PI) | 72 | 1,457 | 4.9% |
 | R2 | 71 | 1,457 | 4.9% |
 | 최종판단 | 0 | 1,457 | 0% |
+
+---
+
+## 2026-02-27: v8 Excel 업데이트 — Claude 재스크리닝 및 Tier 재분류
+
+### 배경
+- Sheet ③ (R1 추가코딩)의 150건 중 42건에 Claude 사유가 누락
+- 원인: 해당 42건은 Codex+Gemini 파이프라인에서만 스크리닝, Claude 미평가
+- v8 이전 문서들에 Codex 참조가 남아있음 (스크리닝에서는 이미 제외)
+
+### 결정 15: 42건 Claude 재스크리닝 실행
+
+**작업**: Claude Opus 4.6으로 42건 직접 스크리닝 (CLI 기반)
+**결과**: 23 include, 19 uncertain, 0 exclude
+**산출물**: `paper_a/data/02_screening/claude_screening_results.csv` (1,238→1,280건)
+
+### 결정 16: Tier 재분류 및 물리적 이동
+
+재스크리닝 후 Gemini+Claude 조합 변경으로 15건 tier 변동:
+
+| 변동 유형 | 건수 | 이전 | 이후 |
+|-----------|------|------|------|
+| Auto-INCLUDE 승격 | 9 | TIER2 (include+uncertain) | Auto-INCLUDE (include+include) |
+| TIER3 강등 | 6 | TIER2 (uncertain+include) | TIER3 (uncertain+uncertain) |
+
+**물리적 이동**:
+- 9건: Sheet ③ → Sheet ② (Auto-INCLUDE, "재분류" 태그)
+- 6건: Sheet ③에서 삭제 (TIER3로 강등)
+- Sheet ③: 150건 → 135건
+- Sheet ②: 358건 → 367건
+
+### 결정 17: 코딩 가이드 업데이트
+
+Sheet ⑤ (코딩가이드)에 추가된 항목:
+1. **TRA 수정**: "Training (교육훈련)" → "AI Transparency (AI 투명성/설명가능성)" (문서 정합성 복구)
+2. **AUT 수정**: → "Perceived AI Autonomy (지각된 AI 자율성)"
+3. **adoption_dv_type**: `adoption_composite` 옵션 추가 (단일 composite adoption 변수 보고 논문용)
+4. **UTAUT2 처리 근거**: Hedonic→ATT, Price Value/Habit 제외 사유 명시
+5. **AI-specific 4 construct 근거**: TRU, ANX, TRA, AUT 포함 rationale
+6. **TAM-UTAUT 교집합**: PE, EE, BI, UB (4개)
+
+### 결정 18: 문서 전체 업데이트
+
+**수치 변경** (v8 최종):
+| 항목 | 이전 | 이후 |
+|------|------|------|
+| Auto-INCLUDE | 358 | 367 |
+| TIER2 | 495 | 480 |
+| TIER3 | 494 | 500 |
+| R1 추가코딩 | 150 | 135 |
+| R1 총 업무량 | ~236 | ~221 |
+| Claude 평가 건수 | 1,238 | 1,280 |
+
+**Codex 참조 정리**: 스크리닝 관련 문서에서 Codex → Gemini+Claude로 업데이트
+- 영향 받은 파일: paper_a/README.md, paper_b/README.md, paper_b/RESEARCHER_ROLES.md, root README.md, docs/02_screening/TIERED_SCREENING_PROTOCOL.md, docs/02_study_selection/ (2개), docs/03_data_extraction/coding_manual.md
+
+### v8 검증 결과
+
+전체 시트 간 무결성 검증 통과:
+- ID 중복: 0건
+- 합계 정합: 1,457건 = 367 + 15 + 95 + 480 + 500
+- 번호 순서: 시트별 순번 연속 확인
+- Claude 사유: 100% 완비

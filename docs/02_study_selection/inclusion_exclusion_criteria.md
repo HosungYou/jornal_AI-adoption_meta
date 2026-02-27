@@ -12,7 +12,7 @@
 This document specifies the eligibility criteria for study inclusion in the AI adoption meta-analytic structural equation modeling (MASEM) analysis. All criteria must be applied systematically and documented for PRISMA reporting.
 
 Operational decision authority:
-- AI (Codex/Gemini) outputs are advisory only.
+- AI (Gemini/Claude) outputs are advisory only.
 - Two independent human coders apply these criteria for all records.
 - PI adjudicates unresolved conflicts and issues final inclusion/exclusion decisions.
 
