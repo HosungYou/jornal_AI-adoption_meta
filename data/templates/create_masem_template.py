@@ -68,7 +68,7 @@ STUDY_METADATA_COLS = [
     ("n_constructs_measured", 20, "integer", "Positive integer", "Number of our 12 constructs measured in study", "6"),
     ("measures_BI", 14, "list", "yes,no", "Whether Behavioral Intention (BI) is measured", "yes"),
     ("measures_UB", 14, "list", "yes,no", "Whether Use Behavior (UB) is measured", "no"),
-    ("adoption_dv_type", 22, "list", "BI_only,UB_only,BI_and_UB,readiness_as_BI,other", "Type of adoption/use outcome variable", "BI_only"),
+    ("adoption_dv_type", 22, "list", "BI_only,UB_only,BI_and_UB,readiness_as_BI,adoption_composite,other", "Type of adoption/use outcome variable", "BI_only"),
     ("n_correlations_reported", 22, "integer", "Positive integer", "Number of pairwise correlations reported", "15"),
     ("matrix_completeness", 20, "float", "0-1", "Proportion of possible pairs reported (out of C(k,2))", "0.75"),
     ("reporting_quality", 18, "list", "1,2,3,4,5", "1=poor to 5=excellent reporting quality", "4"),

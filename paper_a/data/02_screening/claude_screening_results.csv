@@ -1,0 +1,1281 @@
+record_id,decision,confidence,code,reason,model,timestamp
+REC_07054,include,0.95,,"ChatGPT 교육자 수용, UTAUT+TAM, 혼합연구, SEM",claude-opus-4-6,2026-02-26 14:52:08
+REC_07616,include,0.95,,"AI 수용, TAM+SST, SEM, n=308, beta 보고",claude-opus-4-6,2026-02-26 14:52:08
+REC_12203,include,0.9,,"AI 비즈니스영어 교육, SEM, 행동의도",claude-opus-4-6,2026-02-26 14:52:08
+REC_12844,include,0.95,,"ChatGPT, UTAUT2, n=378, PE/EE 유의",claude-opus-4-6,2026-02-26 14:52:08
+REC_14933,include,0.93,,"ChatGPT, TAM/UTAUT, PU/PEOU/자기효능감, 영국 학자",claude-opus-4-6,2026-02-26 14:52:08
+REC_07700,include,0.85,,"AI 챗봇 지식공유, PLS-SEM, n=447 학생, PE/EE/습관",claude-opus-4-6,2026-02-26 14:52:08
+REC_10860,include,0.9,,"ChatGPT 사용성, 인도 고등교육 학생, SEM, n=380",claude-opus-4-6,2026-02-26 14:52:08
+REC_11802,uncertain,0.55,,"AI 정신건강 도구, 심리학 학생, UTAUT - 의료 vs 교육 맥락 모호",claude-opus-4-6,2026-02-26 14:52:08
+REC_00125,exclude,0.85,E-FT4,"AI 디지털 어시스턴트, 일반 소비자 맥락, 교육 아님",claude-opus-4-6,2026-02-26 14:52:08
+REC_05362,include,0.95,,"교사 EAIT 수용, 교수학적 신념, 신뢰, TAM, SEM, n=215",claude-opus-4-6,2026-02-26 14:52:08
+REC_05604,include,0.9,,"간호학생 AI 행동의도, SEM, n=460, 자기효능감/불안",claude-opus-4-6,2026-02-26 14:52:08
+REC_07192,include,0.95,,"ChatGPT, UTAUT, 교육자, SEM, n=1214",claude-opus-4-6,2026-02-26 14:52:08
+REC_00827,include,0.93,,"Generative AI, UTAUT 확장, 대학생, n=1190, PE/EE",claude-opus-4-6,2026-02-26 14:52:08
+REC_00828,include,0.88,,"AI 고등교육, TAM, 학생중심, 아시아 비교",claude-opus-4-6,2026-02-26 14:52:08
+REC_00829,include,0.95,,"GAI, TAM 확장, PLS-SEM+fsQCA, n=460 대학원생",claude-opus-4-6,2026-02-26 14:52:08
+REC_07193,include,0.9,,"ChatGPT, TAM+주관적규범+의인화, PLS-SEM, n=128",claude-opus-4-6,2026-02-26 14:52:08
+REC_07196,include,0.88,,"ChatGPT, TOP프레임워크, PE/EE/불안, n=479",claude-opus-4-6,2026-02-26 14:52:08
+REC_00832,include,0.95,,"ChatGPT, UTAUT, 인도vs폴란드, SEM, n=1074",claude-opus-4-6,2026-02-26 14:52:08
+REC_10798,include,0.9,,"AI 튜터링시스템, PLS-SEM, n=284, PU/FC/만족도",claude-opus-4-6,2026-02-26 14:52:08
+REC_00831,include,0.9,,"AI 데이터분석도구, 연구자, 다중집단SEM, n=750",claude-opus-4-6,2026-02-26 14:52:08
+REC_10809,include,0.88,,"GenAI, TAM+자기조절학습, 국제조사, n=435 학생",claude-opus-4-6,2026-02-26 14:52:08
+REC_00834,include,0.93,,"AIGC, 확장TAM, 예술디자인학생, SEM, n=382",claude-opus-4-6,2026-02-26 14:52:08
+REC_07204,include,0.93,,"ChatGPT, TAM, 경영학생, SmartPLS, n=526",claude-opus-4-6,2026-02-26 14:52:08
+REC_10810,include,0.88,,"GenAI EFL작문, SEM, n=399, 자기효능감/만족도/행동의도",claude-opus-4-6,2026-02-26 14:52:08
+REC_00838,include,0.93,,"ChatGPT, 교수 불안, PLS-SEM, n=249, PE/EE",claude-opus-4-6,2026-02-26 14:52:08
+REC_15354,include,0.9,,"ChatGPT, UTAUT2, n=400 스페인학생, PE/쾌락적동기",claude-opus-4-6,2026-02-26 14:52:08
+REC_00835,include,0.9,,"GAI, ECM+TTF, PLS-SEM, n=315 대학원생, 지속사용의도",claude-opus-4-6,2026-02-26 14:52:08
+REC_15363,include,0.9,,"AI 간호교육, UTAUT, n=213 간호학생",claude-opus-4-6,2026-02-26 14:52:08
+REC_00839,include,0.88,,"AIGC, TPB, n=336 중국 학부생, 태도/주관적규범",claude-opus-4-6,2026-02-26 14:52:08
+REC_10820,include,0.95,,"ChatGPT, TAM+신뢰+즐거움, SEM, n=344 학생",claude-opus-4-6,2026-02-26 14:52:08
+REC_10822,include,0.88,,"예비유아교사 AI 준비도, SmartPLS, PLS-SEM, n=194",claude-opus-4-6,2026-02-26 14:54:19
+REC_00841,include,0.88,,"GAI 고등교육, 사용자인식, PU, 신뢰 조절",claude-opus-4-6,2026-02-26 14:54:19
+REC_00840,include,0.9,,"TAM 확장, 예비교사, 학습동기/민첩성, GenAI",claude-opus-4-6,2026-02-26 14:54:19
+REC_15381,include,0.93,,"ChatGPT, TAM 확장, SEM, n=200 IT학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_15382,include,0.93,,"AI 수용, 교사, SEM, 고등교육",claude-opus-4-6,2026-02-26 14:54:19
+REC_07274,include,0.9,,"TAM+UGT, ChatGPT, 베트남학생, PU/PEOU",claude-opus-4-6,2026-02-26 14:54:19
+REC_15386,include,0.85,,"TPB, AI 학습의도, 초등학생, n=682",claude-opus-4-6,2026-02-26 14:54:19
+REC_00846,include,0.88,,"ChatGPT 지속사용, 학생, 프라이버시 위험 조절",claude-opus-4-6,2026-02-26 14:54:19
+REC_10884,include,0.93,,"ChatGPT, TAM 확장, CFA+SEM, n=352, AMOS",claude-opus-4-6,2026-02-26 14:54:19
+REC_00847,uncertain,0.6,,"교사 AI 리터러시, SDT, 제도적지원 - TAM/UTAUT 구인 불명확",claude-opus-4-6,2026-02-26 14:54:19
+REC_07324,include,0.8,,"AI 소프트웨어개발 참여의도, TPB, 자기효능감/AI리터러시",claude-opus-4-6,2026-02-26 14:54:19
+REC_00854,uncertain,0.55,,"AI 미술교육 학업몰입, SCT+CVT, SEM - 수용/채택 아닌 몰입 측정",claude-opus-4-6,2026-02-26 14:54:19
+REC_10950,include,0.92,,"ChatGPT, TAM, PU/PEOU/신뢰/테크노스트레스, 인도학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_07421,include,0.88,,"AI 수용 행동결정요인, AI리터러시/불안/자기효능감, n=391",claude-opus-4-6,2026-02-26 14:54:19
+REC_00861,include,0.9,,"ChatGPT, DOI이론, PLS-SEM, n=640 폴란드학자",claude-opus-4-6,2026-02-26 14:54:19
+REC_11025,include,0.82,,"ChatGPT 수용→디지털기업가의도, TPB, n=604 베트남학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_07479,include,0.8,,"ChatGPT 수용→디지털사회기업가의도, EEM+SOR, n=986",claude-opus-4-6,2026-02-26 14:54:19
+REC_00865,include,0.92,,"AI기반PLE, TPB+ARCS, SEM, n=725 학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_11030,include,0.88,,"강사 AI 교육과정통합, TPB, PLS-SEM, n=133",claude-opus-4-6,2026-02-26 14:54:19
+REC_07491,include,0.95,,"ChatGPT, UTAUT 확장, SEM, 인도학생, PE/EE/SI/FC",claude-opus-4-6,2026-02-26 14:54:19
+REC_11039,include,0.92,,"AI 언어학습앱, TAM+TPB, SEM, n=196+370",claude-opus-4-6,2026-02-26 14:54:19
+REC_00902,include,0.93,,"ChatGPT, UTAUT2 확장, PLS-SEM, n=503 폴란드학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_11044,include,0.93,,"ChatGPT, TAM 확장, SEM, n=400 한국EFL학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_00906,include,0.9,,"ChatGPT, AIDUA, PLS-SEM+ANN, 학술직원",claude-opus-4-6,2026-02-26 14:54:19
+REC_11073,include,0.93,,"AI, TAM+TPACK, PLS-SEM, n=436 예비EFL교사",claude-opus-4-6,2026-02-26 14:54:19
+REC_00918,include,0.9,,"ChatGPT, UTAUT, 불안/성별, 대학교수, 스페인",claude-opus-4-6,2026-02-26 14:54:19
+REC_00931,uncertain,0.6,,"AI 고등교육, 학생인식, PU/만족도 - SEM 사용 불명확",claude-opus-4-6,2026-02-26 14:54:19
+REC_11131,include,0.78,,"ChatGPT, PU/PEOU/BI, 인도학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_14687,uncertain,0.6,,"실내건축학생 AI인식, TAM설문 - 기술통계 위주 가능성",claude-opus-4-6,2026-02-26 14:54:19
+REC_09729,include,0.92,,"AI 의학교육, TAM-ISSM-UTAUT, SEM, n=657",claude-opus-4-6,2026-02-26 14:54:19
+REC_12495,exclude,0.8,E-FT4,"Apple Vision Pro AI기능 - 교육맥락 아님, 일반소비자",claude-opus-4-6,2026-02-26 14:54:19
+REC_06049,include,0.93,,"교육AI도구, TPB, PLS-SEM, n=344, 사하라이남아프리카",claude-opus-4-6,2026-02-26 14:54:19
+REC_12496,include,0.93,,"ChatGPT, UTAUT2, SEM, 나이지리아학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_06051,include,0.9,,"AI학술도구, UTAUT, 혼합연구, n=388 인도네시아",claude-opus-4-6,2026-02-26 14:54:19
+REC_13681,include,0.9,,"챗봇 학습, TAM+VAM, n=432, PU/PEOU/즐거움/위험",claude-opus-4-6,2026-02-26 14:54:19
+REC_06054,include,0.78,,"AI통합 고등교육, 평가형식/동기, ChatGPT사용의도, n=193",claude-opus-4-6,2026-02-26 14:54:19
+REC_07671,include,0.9,,"GAI, UTAUT, 대학원 경영학생, 페루",claude-opus-4-6,2026-02-26 14:54:19
+REC_14714,include,0.92,,"AI통합, TAM 확장, 예비교사, AI불안/PU/PEOU",claude-opus-4-6,2026-02-26 14:54:19
+REC_14719,include,0.9,,"AI 회계수업, UTAUT 확장, 학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_09753,uncertain,0.55,,"간호학생 AI사용의도 - 기술통계 위주 가능성, n=1713",claude-opus-4-6,2026-02-26 14:54:19
+REC_13687,include,0.9,,"교사 AIEd 수용, UTAUT2, n=425 에콰도르",claude-opus-4-6,2026-02-26 14:54:19
+REC_06057,include,0.9,,"AI수용, AIDUA, SEM, n=220 에콰도르학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_06061,include,0.93,,"AI학술작문, TAM, PLS-SEM, n=517 카타르",claude-opus-4-6,2026-02-26 14:54:19
+REC_06064,include,0.9,,"GenAI HEI, UTAUT수정, PLS-SEM, n=175, 신뢰/불안",claude-opus-4-6,2026-02-26 14:54:19
+REC_06066,include,0.93,,"ChatGPT, UTAUT2, SEM-ANN, 가나경제학학생",claude-opus-4-6,2026-02-26 14:54:19
+REC_06072,include,0.9,,"AI수용, SOR이론, SEM, n=598 인도",claude-opus-4-6,2026-02-26 14:54:19
+REC_13694,include,0.93,,"챗봇수용, K-12교사, UTAUT2, SEM, n=406 사우디",claude-opus-4-6,2026-02-26 14:54:19
+REC_09769,uncertain,0.55,,"AI 의학교육, 횡단연구 - SEM사용 불명확, 기술통계 가능",claude-opus-4-6,2026-02-26 14:54:19
+REC_14746,uncertain,0.55,,ChatGPT 페루학생 - 프레임워크/방법론 불명확,claude-opus-4-6,2026-02-26 14:54:19
+REC_12547,include,0.85,,"AI, 무슬림학생, 태도/주관적규범/행동의도, 말레이시아",claude-opus-4-6,2026-02-26 14:54:19
+REC_13699,include,0.88,,"AI합의include확인, Modeling Teachers' Acceptance of Generative Artificial Intel",claude-opus-4-6,2026-02-26 14:56:39
+REC_09774,include,0.88,,"AI합의include확인, Assessing ChatGPT adoption in Jordanian medical education: a",claude-opus-4-6,2026-02-26 14:56:39
+REC_09777,uncertain,0.55,,"간호학생 GenAI인식 - 학습성과 측정, 수용/채택 불명확",claude-opus-4-6,2026-02-26 14:56:39
+REC_07703,include,0.88,,"AI합의include확인, Exploring the Effect of Generative AI on Social Sustainabili",claude-opus-4-6,2026-02-26 14:56:39
+REC_13706,include,0.88,,"AI합의include확인, Mindsets Matter: A Mediation Analysis of the Role of a Techn",claude-opus-4-6,2026-02-26 14:56:39
+REC_07714,include,0.8,,"ChatGPT 지식관리, 만족도/지속사용의도",claude-opus-4-6,2026-02-26 14:56:39
+REC_14783,include,0.88,,"AI합의include확인, AI AS A FACILITATOR OF CREATIVITY AND WELLBEING IN BUSINESS ",claude-opus-4-6,2026-02-26 14:56:39
+REC_09784,uncertain,0.6,,약학학생 ChatGPT 태도/사용 - TAM/UTAUT 불명확,claude-opus-4-6,2026-02-26 14:56:39
+REC_13714,include,0.88,,"AI합의include확인, Generative AI as a Cognitive Co-Pilot in English Language Le",claude-opus-4-6,2026-02-26 14:56:39
+REC_12595,include,0.88,,"AI합의include확인, AI-assisted learning: an empirical study on student applicat",claude-opus-4-6,2026-02-26 14:56:39
+REC_12603,include,0.88,,"AI합의include확인, The Role of ChatGPT in English Language Learning: A Hedonic ",claude-opus-4-6,2026-02-26 14:56:39
+REC_13718,include,0.88,,"AI합의include확인, Habit Predicting Higher Education EFL Students' Intention an",claude-opus-4-6,2026-02-26 14:56:39
+REC_09827,include,0.88,,"AI합의include확인, Generative artificial intelligence acceptance, anxiety, and ",claude-opus-4-6,2026-02-26 14:56:39
+REC_09828,include,0.88,,"AI합의include확인, Insights into the relationship between anxiety and attitudes",claude-opus-4-6,2026-02-26 14:56:39
+REC_12673,include,0.88,,"AI합의include확인, Students’ Perceptions of Artificial Intelligence in Academic",claude-opus-4-6,2026-02-26 14:56:39
+REC_13723,include,0.88,,"AI합의include확인, Learners' Acceptance of ChatGPT in School",claude-opus-4-6,2026-02-26 14:56:39
+REC_13727,include,0.88,,"AI합의include확인, Exploring Generation Z's Acceptance of Artificial Intelligen",claude-opus-4-6,2026-02-26 14:56:39
+REC_13728,include,0.88,,"AI합의include확인, Predictors of Pre-Service EFL Teachers' Predisposition Towar",claude-opus-4-6,2026-02-26 14:56:39
+REC_14759,uncertain,0.6,,강사vs학생 GenAI태도 비교 - 기술통계 가능성,claude-opus-4-6,2026-02-26 14:56:39
+REC_12709,include,0.88,,"AI합의include확인, Unlocking AI-Powered Tools Adoption among University Student",claude-opus-4-6,2026-02-26 14:56:39
+REC_13733,include,0.88,,"AI합의include확인, Determinants of Chatbot Brand Trust in the Adoption of Gener",claude-opus-4-6,2026-02-26 14:56:39
+REC_13734,include,0.88,,"AI합의include확인, Factors Influencing the Reported Intention of Higher Vocatio",claude-opus-4-6,2026-02-26 14:56:39
+REC_07859,include,0.82,,"교수 ITS 사용의지, AI시대 교육",claude-opus-4-6,2026-02-26 14:56:39
+REC_12724,include,0.88,,"AI합의include확인, Integrating AI in Sustainable Writing: An Empirical Investig",claude-opus-4-6,2026-02-26 14:56:39
+REC_07860,uncertain,0.55,,"휴머노이드로봇 Pepper, UTAUT - 로봇=AI 여부 불명확",claude-opus-4-6,2026-02-26 14:56:39
+REC_10006,include,0.78,,"대학생 ChatGPT 태도분석, 사용의도",claude-opus-4-6,2026-02-26 14:56:39
+REC_14878,include,0.88,,"AI합의include확인, Antecedents of adoption and usage of ChatGPT among Jordanian",claude-opus-4-6,2026-02-26 14:56:39
+REC_07863,exclude,0.78,E-FT3,"예비교사 휴머노이드 소셜로봇 - 로봇 기술, AI 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_14879,include,0.88,,"AI합의include확인, Artificial intelligence in Jordanian education: Assessing ac",claude-opus-4-6,2026-02-26 14:56:39
+REC_13749,include,0.88,,"AI합의include확인, Examining Students' Acceptance and Use of ChatGPT in Saudi A",claude-opus-4-6,2026-02-26 14:56:39
+REC_06527,include,0.88,,"AI합의include확인, Perception of AI tool adoption and training: initial validat",claude-opus-4-6,2026-02-26 14:56:39
+REC_10018,include,0.88,,"AI합의include확인, What is the influence of psychosocial factors on artificial ",claude-opus-4-6,2026-02-26 14:56:39
+REC_10029,include,0.88,,"AI합의include확인, Exploring the factors influencing the adoption of artificial",claude-opus-4-6,2026-02-26 14:56:39
+REC_14882,uncertain,0.55,,"ChatGPT 수용, 교육플랫폼 - 경험적 연구 여부 불명확",claude-opus-4-6,2026-02-26 14:56:39
+REC_06532,include,0.88,,"AI합의include확인, Discovering students' continuous intentions to use ChatGPT i",claude-opus-4-6,2026-02-26 14:56:39
+REC_07876,include,0.88,,"AI합의include확인, Investigation of the moderation effect of gender and study l",claude-opus-4-6,2026-02-26 14:56:39
+REC_13753,include,0.88,,"AI합의include확인, Responses to the AI Revolution in Hospitality and Tourism Hi",claude-opus-4-6,2026-02-26 14:56:39
+REC_04700,exclude,0.75,E-FT2,AI 정신건강도구+심리적웰빙 - 수용/채택 아닌 결과 측정,claude-opus-4-6,2026-02-26 14:56:39
+REC_14884,include,0.88,,"AI합의include확인, Factors affecting ChatGPT use in education employing TAM: A ",claude-opus-4-6,2026-02-26 14:56:39
+REC_09832,include,0.88,,"AI합의include확인, Applying the technology acceptance model to examine factors ",claude-opus-4-6,2026-02-26 14:56:39
+REC_05489,include,0.88,,"AI합의include확인, A study on behavioral intentions of artificial intelligence ",claude-opus-4-6,2026-02-26 14:56:39
+REC_06878,uncertain,0.55,,자기일치성으로 ChatGPT 사용억제 - 비표준 수용 측정,claude-opus-4-6,2026-02-26 14:56:39
+REC_05491,include,0.88,,"AI합의include확인, Predictors of higher education students' behavioural intenti",claude-opus-4-6,2026-02-26 14:56:39
+REC_05492,include,0.9,,"TAM확장+교수효능감, 교사 AI교수분석시스템 의지",claude-opus-4-6,2026-02-26 14:56:39
+REC_06907,include,0.88,,"AI합의include확인, The relationship between artificial intelligence usage and a",claude-opus-4-6,2026-02-26 14:56:39
+REC_08184,uncertain,0.6,,기계번역 EFL학생 인식/실천 - MT=AI 여부 모호,claude-opus-4-6,2026-02-26 14:56:39
+REC_05493,include,0.88,,"AI합의include확인, Exploring the attitude and use of GenAI-image among art and ",claude-opus-4-6,2026-02-26 14:56:39
+REC_05494,include,0.88,,"AI합의include확인, Multidimensional analysis of art education teachers' attitud",claude-opus-4-6,2026-02-26 14:56:39
+REC_11946,include,0.85,,"AI챗봇, 물리치료학생, 수용",claude-opus-4-6,2026-02-26 14:56:39
+REC_14042,include,0.88,,"AI합의include확인, AI-Based Chatbots Adoption Model for Higher-Education Instit",claude-opus-4-6,2026-02-26 14:56:39
+REC_06930,exclude,0.75,E-FT3,"AI기반 VR/AR/메타버스 - VR/AR 초점, AI 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_08196,include,0.88,,"AI합의include확인, Factors Influencing University Students' Behavioural Intenti",claude-opus-4-6,2026-02-26 14:56:39
+REC_04748,include,0.88,,"AI합의include확인, Factors influencing the acceptance and use of ChatGPT among ",claude-opus-4-6,2026-02-26 14:56:39
+REC_05497,include,0.88,,"AI합의include확인, Examining the influence of individual-level cultural values ",claude-opus-4-6,2026-02-26 14:56:39
+REC_12745,include,0.88,,"AI합의include확인, Investigation of Theology Undergraduate Students' Behavioral",claude-opus-4-6,2026-02-26 14:56:39
+REC_04751,include,0.88,,"AI합의include확인, Artificial intelligence, social influence, and AI anxiety: a",claude-opus-4-6,2026-02-26 14:56:39
+REC_08198,include,0.88,,"AI합의include확인, College Students' Behavioural Intentions of AI-Assisted Lang",claude-opus-4-6,2026-02-26 14:56:39
+REC_14052,include,0.88,,"AI합의include확인, Determinants of Intentions to Use Digital Mental Healthcare ",claude-opus-4-6,2026-02-26 14:56:39
+REC_04752,include,0.88,,"AI합의include확인, Bridging AI literacy and UTAUT constructs: structural equati",claude-opus-4-6,2026-02-26 14:56:39
+REC_06994,include,0.88,,"AI합의include확인, Students' adoption of AI-based teacher-bots (T-bots) for lea",claude-opus-4-6,2026-02-26 14:56:39
+REC_05498,include,0.88,,"AI합의include확인, Towards a model for primary students’ behavioral intention t",claude-opus-4-6,2026-02-26 14:56:39
+REC_04767,include,0.88,,"AI합의include확인, Impact of AI chatbots on EFL learners' technology adoption",claude-opus-4-6,2026-02-26 14:56:39
+REC_07025,include,0.88,,"AI합의include확인, AI-powered learning application use and gratification: an in",claude-opus-4-6,2026-02-26 14:56:39
+REC_05503,include,0.88,,"AI합의include확인, Proposing a conceptual model for the adoption of artificial ",claude-opus-4-6,2026-02-26 14:56:39
+REC_12010,include,0.88,,"AI합의include확인, Behavioral Intention to Use Artificial Intelligence (AI) Amo",claude-opus-4-6,2026-02-26 14:56:39
+REC_05504,uncertain,0.6,,"ChatGPT 중독, 개방성/자기효능감 - 중독≠수용",claude-opus-4-6,2026-02-26 14:56:39
+REC_07044,include,0.88,,"AI합의include확인, Do learners exhibit a willingness to use ChatGPT? An advance",claude-opus-4-6,2026-02-26 14:56:39
+REC_07048,uncertain,0.6,,AI 디지털회계교육 지속가능성 - 수용 프레임워크 불명확,claude-opus-4-6,2026-02-26 14:56:39
+REC_14099,include,0.88,,"AI합의include확인, Can Multimodal Large Language Models Enhance Performance Ben",claude-opus-4-6,2026-02-26 14:56:39
+REC_12065,include,0.88,,"AI합의include확인, Exploring factors influencing Contrimetric adoption and word",claude-opus-4-6,2026-02-26 14:56:39
+REC_07052,include,0.88,,"AI합의include확인, How effort expectancy and performance expectancy interact to",claude-opus-4-6,2026-02-26 14:56:39
+REC_08613,include,0.88,,"AI합의include확인, AI Adoption and Educational Effectiveness in Emerging Higher",claude-opus-4-6,2026-02-26 14:56:39
+REC_02756,include,0.88,,"AI합의include확인, Patients' Acceptance and Intentions on Using Artificial Inte",claude-opus-4-6,2026-02-26 14:56:39
+REC_02767,include,0.88,,"AI합의include확인, Empowering ChatGPT adoption in higher education: A comprehen",claude-opus-4-6,2026-02-26 14:56:39
+REC_13252,include,0.88,,"AI합의include확인, Factors influencing acceptance and trust of chatbots in juve",claude-opus-4-6,2026-02-26 14:56:39
+REC_14116,include,0.88,,"ChatGPT 수용, PLS-SEM, n=792, 라틴아메리카",claude-opus-4-6,2026-02-26 14:56:39
+REC_07099,include,0.88,,"AI합의include확인, Understanding AI acceptance among Indonesian pre-service tea",claude-opus-4-6,2026-02-26 14:56:39
+REC_05104,include,0.88,,"AI합의include확인, Acceptance of Artificial Intelligence Application in the Pos",claude-opus-4-6,2026-02-26 14:56:39
+REC_13284,include,0.88,,"AI합의include확인, Mediating effects of artificial intelligence on the relation",claude-opus-4-6,2026-02-26 14:56:39
+REC_12139,include,0.88,,"AI합의include확인, PATTERNS OF UTILIZING AI-ASSISTED TOOLS AMONG EFL STUDENTS: ",claude-opus-4-6,2026-02-26 14:56:39
+REC_14137,include,0.88,,"AI코딩도구, 확장TAM, 대학생 사용의지",claude-opus-4-6,2026-02-26 14:56:39
+REC_08731,include,0.88,,"AI합의include확인, Correlates of ChatGPT use intention among freshmen health sc",claude-opus-4-6,2026-02-26 14:56:39
+REC_13316,include,0.88,,"AI합의include확인, Research on the influencing factors of generative artificial",claude-opus-4-6,2026-02-26 14:56:39
+REC_13552,uncertain,0.6,,"AI SDL 지속의도, SDT - TAM/UTAUT 아닌 SDT",claude-opus-4-6,2026-02-26 14:56:39
+REC_15051,include,0.88,,"AI합의include확인, Every Coin has Two Sides: Navigating Factors of Generative P",claude-opus-4-6,2026-02-26 14:56:39
+REC_13556,include,0.88,,"AI합의include확인, Prediction of the Use of Generative Artificial Intelligence ",claude-opus-4-6,2026-02-26 14:56:39
+REC_00781,uncertain,0.55,,"오픈소스 피드백시스템, STEM교육 - 시스템설계, 수용 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_00780,include,0.88,,"AI합의include확인, The moderating role of technology proficiency and academic d",claude-opus-4-6,2026-02-26 14:56:39
+REC_13564,include,0.88,,"AI합의include확인, Academic Level as a Moderator in University Students' Accept",claude-opus-4-6,2026-02-26 14:56:39
+REC_14427,exclude,0.78,E-FT2,AI가 취업불안에 미치는 영향 - 수용/채택 미측정,claude-opus-4-6,2026-02-26 14:56:39
+REC_15093,include,0.88,,"AI합의include확인, Incident factors in the use of ChatGPT and dishonest practic",claude-opus-4-6,2026-02-26 14:56:39
+REC_00784,include,0.88,,"AI합의include확인, Unveiling the drivers of ChatGPT utilization in higher educa",claude-opus-4-6,2026-02-26 14:56:39
+REC_10577,include,0.88,,"AI합의include확인, An empirical investigation of college students' acceptance o",claude-opus-4-6,2026-02-26 14:56:39
+REC_15116,include,0.85,,"AI E-learning 수용의도, 매개/조절효과",claude-opus-4-6,2026-02-26 14:56:39
+REC_14478,include,0.88,,"AI합의include확인, Factors Affecting the Adoption and Use of ChatGPT in Higher ",claude-opus-4-6,2026-02-26 14:56:39
+REC_00793,include,0.88,,"AI합의include확인, Just learn it? How individual differences and HMSAM impact l",claude-opus-4-6,2026-02-26 14:56:39
+REC_15136,include,0.88,,"AI합의include확인, From optimism to trust: how ChatGPT is reshaping student con",claude-opus-4-6,2026-02-26 14:56:39
+REC_15137,include,0.88,,"AI합의include확인, The effects of awareness and trust on students' willingness ",claude-opus-4-6,2026-02-26 14:56:39
+REC_14511,include,0.88,,"AI합의include확인, Measuring Graduate Students' Use of ChatGPT in Academic Writ",claude-opus-4-6,2026-02-26 14:56:39
+REC_00804,include,0.88,,"AI합의include확인, Predicting Kazakhstani TEFL students' continuance intention ",claude-opus-4-6,2026-02-26 14:56:39
+REC_00807,include,0.88,,"AI합의include확인, Exploring the adoption of AI-enabled English learning applic",claude-opus-4-6,2026-02-26 14:56:39
+REC_13616,exclude,0.82,E-FT3,"교사 교육로봇 준비도 - 로보틱스, AI 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_13620,include,0.88,,"AI합의include확인, The Effects of Interaction Scenarios on EFL Learners' Techno",claude-opus-4-6,2026-02-26 14:56:39
+REC_10706,include,0.88,,"AI합의include확인, Exploring the link between AI usage intention and digital co",claude-opus-4-6,2026-02-26 14:56:39
+REC_15245,include,0.88,,"AI합의include확인, Academic self-efficacy and diversity during the Artificial I",claude-opus-4-6,2026-02-26 14:56:39
+REC_00825,include,0.88,,"AI합의include확인, Modeling Chinese EFL learners' intention to use generative A",claude-opus-4-6,2026-02-26 14:56:39
+REC_13643,include,0.88,,"AI합의include확인, Examining the Influence of AI on Python Programming Educatio",claude-opus-4-6,2026-02-26 14:56:39
+REC_02343,include,0.88,,"AI합의include확인, Chat-GPT; validating Technology Acceptance Model (TAM) in ed",claude-opus-4-6,2026-02-26 14:56:39
+REC_00933,include,0.88,,"AI합의include확인, Instrumental and integrative motivations predict intention t",claude-opus-4-6,2026-02-26 14:56:39
+REC_12355,include,0.88,,"AI합의include확인, UNRAVELING KNOWLEDGE-BASED CHATBOT ADOPTION INTENTION IN ENH",claude-opus-4-6,2026-02-26 14:56:39
+REC_15667,include,0.88,,"AI합의include확인, Mapping Edifying Territories: A Cross-Sectional Study on the",claude-opus-4-6,2026-02-26 14:56:39
+REC_00935,include,0.88,,"AI합의include확인, Understanding learner motivation and intention to use ChatGP",claude-opus-4-6,2026-02-26 14:56:39
+REC_03500,include,0.88,,"AI합의include확인, Understanding the factors influencing college students' acce",claude-opus-4-6,2026-02-26 14:56:39
+REC_07561,exclude,0.8,E-FT3,"메타버스 의학교육, SEM-ML - 메타버스 초점",claude-opus-4-6,2026-02-26 14:56:39
+REC_02358,include,0.88,,"AI합의include확인, ChatGPT in higher education - A Student's perspective",claude-opus-4-6,2026-02-26 14:56:39
+REC_03508,uncertain,0.55,,"EFL학생 AI맥락 동기/자기효능감/회복탄력성 - SDT, 동기≠수용",claude-opus-4-6,2026-02-26 14:56:39
+REC_11167,include,0.88,,"AI합의include확인, Higher Education Transformation through AI-Based Learning In",claude-opus-4-6,2026-02-26 14:56:39
+REC_12364,include,0.88,,"AI합의include확인, USING MACHINE LEARNING ALGORITHMS TO CLUSTER AND ANALYSE STU",claude-opus-4-6,2026-02-26 14:56:39
+REC_02359,exclude,0.75,E-FT2,GAI가 학습몰입/창의성에 미치는 영향 - 수용 아닌 결과,claude-opus-4-6,2026-02-26 14:56:39
+REC_12366,include,0.88,,"AI합의include확인, A MODEL FOR THE ADOPTION OF ARTIFICIAL INTELLIGENCE IN INCLU",claude-opus-4-6,2026-02-26 14:56:39
+REC_02366,include,0.88,,"AI합의include확인, The influence of social norms and word-of-mouth marketing on",claude-opus-4-6,2026-02-26 14:56:39
+REC_12376,include,0.88,,"AI합의include확인, Exploring Factors Influencing Gen Z's Acceptance and Adoptio",claude-opus-4-6,2026-02-26 14:56:39
+REC_01111,include,0.88,,"AI합의include확인, Students’ acceptance and use of generative AI in pharmacy ed",claude-opus-4-6,2026-02-26 14:56:39
+REC_12381,include,0.88,,"AI합의include확인, Predicting EFL Students’ Use of Artificial Intelligence Tool",claude-opus-4-6,2026-02-26 14:56:39
+REC_01840,include,0.88,,"AI합의include확인, Disclosing motivation and educational self-efficacy in AI-en",claude-opus-4-6,2026-02-26 14:56:39
+REC_09420,include,0.88,,"AI합의include확인, Development and Validation of the Artificial Intelligence Le",claude-opus-4-6,2026-02-26 14:56:39
+REC_12391,include,0.88,,"AI합의include확인, Using ChatGPT as a virtual speaking tutor to boost EFL learn",claude-opus-4-6,2026-02-26 14:56:39
+REC_03559,include,0.88,,"AI합의include확인, Factors affecting Artificial Intelligence usage intention am",claude-opus-4-6,2026-02-26 14:56:39
+REC_07602,include,0.88,,"AI합의include확인, College Teachers' Behavioral Intention to Adopt Artificial I",claude-opus-4-6,2026-02-26 14:56:39
+REC_11219,include,0.88,,"AI합의include확인, Unlocking the Future of Education: Empirical Insights into t",claude-opus-4-6,2026-02-26 14:56:39
+REC_09430,include,0.88,,"AI합의include확인, Factors Influencing the Acceptance of ChatGPT in High Educat",claude-opus-4-6,2026-02-26 14:56:39
+REC_12394,include,0.88,,"AI합의include확인, Spontaneous Use of Generative Artificial Intelligence in Pre",claude-opus-4-6,2026-02-26 14:56:39
+REC_01255,include,0.88,,"AI합의include확인, Understanding pre-service teachers' acceptance of generative",claude-opus-4-6,2026-02-26 14:56:39
+REC_07619,include,0.85,,"L2전공 GenAI 비형식학습, TPB, 행동의도",claude-opus-4-6,2026-02-26 14:56:39
+REC_03884,include,0.88,,"AI합의include확인, ChatGPT acceptance and use through UTAUT and TPB: A big surv",claude-opus-4-6,2026-02-26 14:56:39
+REC_12423,include,0.88,,"AI합의include확인, Exploring AI integration in biology self-learning: A TAM-bas",claude-opus-4-6,2026-02-26 14:56:39
+REC_09449,include,0.88,,"AI합의include확인, Generative AI Use Among Saudi and Korean Language Learners i",claude-opus-4-6,2026-02-26 14:56:39
+REC_07630,include,0.88,,"AI합의include확인, Key Factors Influencing Preservice Chinese Teachers' Willing",claude-opus-4-6,2026-02-26 14:56:39
+REC_01286,include,0.88,,"AI합의include확인, What Factors Affect the Adoption Intention and Actual Use of",claude-opus-4-6,2026-02-26 14:56:39
+REC_09455,include,0.88,,"AI합의include확인, Predicting Chinese Postgraduates' Intention to Use Generativ",claude-opus-4-6,2026-02-26 14:56:39
+REC_11289,uncertain,0.6,,"예비교사 AI준비도, 카자흐스탄 - 수용 프레임워크 불명확",claude-opus-4-6,2026-02-26 14:56:39
+REC_01290,include,0.88,,"AI합의include확인, Between a Bot and a Hard Place: Student Engagement, Technolo",claude-opus-4-6,2026-02-26 14:56:39
+REC_01888,include,0.88,,"AI합의include확인, Leadership styles and AI acceptance in academic libraries in",claude-opus-4-6,2026-02-26 14:56:39
+REC_09466,include,0.88,,"AI합의include확인, Chatting Heavily with ChatGPT: Investigating Usefulness, Pri",claude-opus-4-6,2026-02-26 14:56:39
+REC_07637,uncertain,0.55,,AI+포스트모던아트 모델개발 - 기술적/실험적,claude-opus-4-6,2026-02-26 14:56:39
+REC_03922,include,0.88,,"AI합의include확인, An AI-assisted critical thinking intervention to enhance und",claude-opus-4-6,2026-02-26 14:56:39
+REC_09468,include,0.88,,"AI합의include확인, Exploring Prospective Teachers' Intentions for Artificial In",claude-opus-4-6,2026-02-26 14:56:39
+REC_11293,include,0.88,,"AI합의include확인, The Use of ChatGPT in Academic Writing by University Student",claude-opus-4-6,2026-02-26 14:56:39
+REC_03931,include,0.88,,"AI합의include확인, ChatGPT as a tool for self-learning English among EFL learne",claude-opus-4-6,2026-02-26 14:56:39
+REC_11299,include,0.88,,"AI합의include확인, Unleashing the determinants of adoption of ChatGPT in medica",claude-opus-4-6,2026-02-26 14:56:39
+REC_03938,include,0.88,,"AI합의include확인, University EFL instructors' engagement with generative AI: A",claude-opus-4-6,2026-02-26 14:56:39
+REC_01467,include,0.88,,"AI합의include확인, Exploring the usage behavior of generative artificial intell",claude-opus-4-6,2026-02-26 14:56:39
+REC_01916,uncertain,0.55,,휴머노이드로봇 TAM확장 - 로봇=AI 경계 모호,claude-opus-4-6,2026-02-26 14:56:39
+REC_03981,include,0.88,,"GenAI수용, TPB, 고등교육",claude-opus-4-6,2026-02-26 14:56:39
+REC_01918,include,0.82,,"대학생 ChatGPT 행동의도, 통합모델",claude-opus-4-6,2026-02-26 14:56:39
+REC_01922,include,0.88,,"AI합의include확인, Key factors influencing intention to use ChatGPT: An empiric",claude-opus-4-6,2026-02-26 14:56:39
+REC_04000,include,0.88,,"AI합의include확인, The predictive effect of nursing students' attitudes and acc",claude-opus-4-6,2026-02-26 14:56:39
+REC_01931,include,0.88,,"AI합의include확인, The psychology of AI adoption in education: University stude",claude-opus-4-6,2026-02-26 14:56:39
+REC_01932,include,0.88,,"AI합의include확인, Association between Generative AI self-efficacy and Generati",claude-opus-4-6,2026-02-26 14:56:39
+REC_01934,include,0.88,,"AI합의include확인, Perceptions of generative AI in teaching and learning: UTAUT",claude-opus-4-6,2026-02-26 14:56:39
+REC_12813,include,0.88,,"AI합의include확인, Faculty acceptance and use of generative artificial intellig",claude-opus-4-6,2026-02-26 14:56:39
+REC_10096,include,0.88,,"AI합의include확인, A multidimensional study of AI adoption among University stu",claude-opus-4-6,2026-02-26 14:56:39
+REC_05388,include,0.85,,"ChatGPT 언어학습 태도, SEM",claude-opus-4-6,2026-02-26 14:56:39
+REC_10134,include,0.88,,"AI합의include확인, Artificial intelligence and communication technologies in ac",claude-opus-4-6,2026-02-26 14:56:39
+REC_05414,include,0.88,,"AI합의include확인, The (Un)Knowledgeable, the (Un)Skilled? Undertaking Chat-GPT",claude-opus-4-6,2026-02-26 14:56:39
+REC_10137,uncertain,0.6,,대학생 GenAI 의존/저항 - 비표준 수용 개념,claude-opus-4-6,2026-02-26 14:56:39
+REC_11866,include,0.88,,"AI합의include확인, Utilization of, Perceptions on, and Intention to Use AI Chat",claude-opus-4-6,2026-02-26 14:56:39
+REC_12850,include,0.88,,"AI합의include확인, Motivational and appraisal factors shaping generative AI use",claude-opus-4-6,2026-02-26 14:56:39
+REC_04672,include,0.88,,"AI합의include확인, A multinational study on the factors influencing university ",claude-opus-4-6,2026-02-26 14:56:39
+REC_12853,include,0.88,,"AI합의include확인, Adoption intention of generative artificial intelligence amo",claude-opus-4-6,2026-02-26 14:56:39
+REC_12854,include,0.88,,"AI합의include확인, Balancing generative AI integration and faculty well-being: ",claude-opus-4-6,2026-02-26 14:56:39
+REC_02174,include,0.88,,"AI합의include확인, Exploring the role of intrinsic motivation in ChatGPT adopti",claude-opus-4-6,2026-02-26 14:56:39
+REC_04692,include,0.88,,"AI합의include확인, Generative artificial intelligence in entrepreneurship educa",claude-opus-4-6,2026-02-26 14:56:39
+REC_02175,include,0.88,,"AI합의include확인, ChatGPT in higher education learning: Acceptance and use",claude-opus-4-6,2026-02-26 14:56:39
+REC_10258,include,0.88,,"AI합의include확인, New Challenges of Learning Accounting With Artificial Intell",claude-opus-4-6,2026-02-26 14:56:39
+REC_05478,include,0.88,,"AI합의include확인, Understanding the impact of knowledge management factors on ",claude-opus-4-6,2026-02-26 14:56:39
+REC_02179,include,0.88,,"AI합의include확인, Integrating the adapted UTAUT model with moral obligation, t",claude-opus-4-6,2026-02-26 14:56:39
+REC_13762,include,0.88,,"AI합의include확인, Artificial Intelligence Tool Adoption in Higher Education: A",claude-opus-4-6,2026-02-26 14:56:39
+REC_06539,include,0.88,,"AI합의include확인, Learning by the prompt: impact of generative AI on student e",claude-opus-4-6,2026-02-26 14:56:39
+REC_13336,include,0.88,,"AI합의include확인, Promoting teaching innovation among university teachers thro",claude-opus-4-6,2026-02-26 14:56:39
+REC_02188,include,0.88,,"AI합의include확인, Exploring the paradoxical use of ChatGPT in education: Analy",claude-opus-4-6,2026-02-26 14:56:39
+REC_13342,include,0.88,,"AI합의include확인, The impact of Chinese undergraduates' perceived acceptance o",claude-opus-4-6,2026-02-26 14:56:39
+REC_13780,include,0.88,,"AI합의include확인, Modeling Student Acceptance of AI Technologies in Higher Edu",claude-opus-4-6,2026-02-26 14:56:39
+REC_06594,include,0.88,,"AI합의include확인, The impact of technology readiness and use perceptions on st",claude-opus-4-6,2026-02-26 14:56:39
+REC_02192,include,0.88,,"AI합의include확인, A cross-national assessment of artificial intelligence (AI) ",claude-opus-4-6,2026-02-26 14:56:39
+REC_06606,exclude,0.85,E-FT4,건설전문가 적응학습 수용 - 교육맥락 아님,claude-opus-4-6,2026-02-26 14:56:39
+REC_02194,include,0.88,,"AI합의include확인, Extending the technology acceptance model: The role of subje",claude-opus-4-6,2026-02-26 14:56:39
+REC_13848,include,0.88,,"AI합의include확인, Understanding Medical Students' Perceptions of and Behaviora",claude-opus-4-6,2026-02-26 14:56:39
+REC_02197,include,0.88,,"AI합의include확인, What influences college students using AI for academic writi",claude-opus-4-6,2026-02-26 14:56:39
+REC_01673,include,0.88,,"AI합의include확인, Factors influencing Chinese college students' intention to u",claude-opus-4-6,2026-02-26 14:56:39
+REC_06650,include,0.88,,"AI합의include확인, Is generative artificial intelligence (GenAI) trustable amon",claude-opus-4-6,2026-02-26 14:56:39
+REC_00715,uncertain,0.55,,"AI SLE 정밀교육 효과/수용 - 효과 중심, 수용 불명확",claude-opus-4-6,2026-02-26 14:56:39
+REC_06658,include,0.88,,"AI합의include확인, Dimensions of artificial intelligence acceptance among pre-s",claude-opus-4-6,2026-02-26 14:56:39
+REC_13881,include,0.88,,"AI합의include확인, Determinants of Humanities and Social Sciences Students' Int",claude-opus-4-6,2026-02-26 14:56:39
+REC_00718,include,0.88,,"AI합의include확인, Understanding key drivers affecting students' use of artific",claude-opus-4-6,2026-02-26 14:56:39
+REC_00720,include,0.88,,"AI합의include확인, Adoption, use and enhancement of virtual learning during COV",claude-opus-4-6,2026-02-26 14:56:39
+REC_13883,include,0.88,,"AI합의include확인, Integrating Motivation Theory into the AIED Curriculum for T",claude-opus-4-6,2026-02-26 14:56:39
+REC_02204,include,0.88,,"AI합의include확인, Understanding of ChatGPT adoption among business school stud",claude-opus-4-6,2026-02-26 14:56:39
+REC_13884,include,0.88,,"AI합의include확인, Determinants of ChatGPT Adoption Intention in Higher Educati",claude-opus-4-6,2026-02-26 14:56:39
+REC_02205,include,0.88,,"AI합의include확인, Factors affecting acceptance of ChatGPT-4o by English langua",claude-opus-4-6,2026-02-26 14:56:39
+REC_00724,uncertain,0.55,,"챗봇 빈도/만족도→자기효능감/몰입 - 효과측정, 수용 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_13887,include,0.88,,"AI합의include확인, Trust in Generative AI Tools: A Comparative Study of Higher ",claude-opus-4-6,2026-02-26 14:56:39
+REC_00725,include,0.88,,"AI합의include확인, Towards a wearable education: Understanding the determinants",claude-opus-4-6,2026-02-26 14:56:39
+REC_06711,include,0.88,,"AI합의include확인, Factors affecting intention of academic librarians in Pakist",claude-opus-4-6,2026-02-26 14:56:39
+REC_02208,include,0.88,,"AI합의include확인, Factors influencing intention to adopt an AI chatbot for lea",claude-opus-4-6,2026-02-26 14:56:39
+REC_13890,include,0.88,,"AI합의include확인, Exploring the Determinants of Continuous Participation in Vi",claude-opus-4-6,2026-02-26 14:56:39
+REC_01720,include,0.88,,"AI합의include확인, What explains teachers’ trust in AI in education across six ",claude-opus-4-6,2026-02-26 14:56:39
+REC_06725,uncertain,0.6,,"AI통합 학생몰입, SEM - 몰입=수용? 모호",claude-opus-4-6,2026-02-26 14:56:39
+REC_13484,include,0.88,,"AI합의include확인, A longitudinal study on artificial intelligence adoption: un",claude-opus-4-6,2026-02-26 14:56:39
+REC_13891,include,0.88,,"AI합의include확인, Chatbot Technology Use and Acceptance Using Educational Pers",claude-opus-4-6,2026-02-26 14:56:39
+REC_06726,include,0.88,,"AI합의include확인, AI as my teacher: adoption of AI-driven virtual teaching ass",claude-opus-4-6,2026-02-26 14:56:39
+REC_13892,include,0.88,,"AI합의include확인, AI Literacy and Intention to Use Text-Based GenAI for Learni",claude-opus-4-6,2026-02-26 14:56:39
+REC_02212,include,0.88,,"AI합의include확인, Do in-service teachers accept artificial intelligence-driven",claude-opus-4-6,2026-02-26 14:56:39
+REC_06735,include,0.88,,"AI합의include확인, Developing enrollment intentions for work-based learning tha",claude-opus-4-6,2026-02-26 14:56:39
+REC_02215,uncertain,0.6,,"학습자-GenAI 관계 척도 개발/타당화 - 척도개발, 수용 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_02217,include,0.88,,"AI합의include확인, The chain mediating effect of academic anxiety and performan",claude-opus-4-6,2026-02-26 14:56:39
+REC_00750,include,0.88,,"AI합의include확인, Factors influencing students' intention to adopt and use Cha",claude-opus-4-6,2026-02-26 14:56:39
+REC_00758,include,0.88,,"AI합의include확인, Gen-AI integration in higher education: Predicting intention",claude-opus-4-6,2026-02-26 14:56:39
+REC_06852,include,0.88,,"AI합의include확인, Applying the stimulus-organism-behavior-consequence framewor",claude-opus-4-6,2026-02-26 14:56:39
+REC_00761,include,0.88,,"AI합의include확인, ChatGPT as a CALL tool in language education: A study of hed",claude-opus-4-6,2026-02-26 14:56:39
+REC_00762,include,0.82,,"AI학술지원 수용+학업성과, 말레이시아/파키스탄",claude-opus-4-6,2026-02-26 14:56:39
+REC_00766,include,0.88,,"AI합의include확인, Examining the moderating effect of motivation on technology ",claude-opus-4-6,2026-02-26 14:56:39
+REC_06876,include,0.88,,"AI합의include확인, University teachers' behavioral intentions of generative AI ",claude-opus-4-6,2026-02-26 14:56:39
+REC_05775,include,0.88,,"AI합의include확인, Predictors of university students' acceptance of ChatGPT in ",claude-opus-4-6,2026-02-26 14:56:39
+REC_08743,include,0.88,,"AI합의include확인, Examining GenAI readiness and behavioral intention of adult ",claude-opus-4-6,2026-02-26 14:56:39
+REC_05777,include,0.88,,"AI합의include확인, Modelling university lecturers' intention to adopt artificia",claude-opus-4-6,2026-02-26 14:56:39
+REC_12164,include,0.88,,"AI합의include확인, Factors Driving ChatGPT Adoption in Higher Education: A UTAU",claude-opus-4-6,2026-02-26 14:56:39
+REC_11362,include,0.88,,"AI합의include확인, Evaluating Generative AI Tool Adoption and Its Effects on Ac",claude-opus-4-6,2026-02-26 14:56:39
+REC_05782,include,0.88,,"AI합의include확인, University students' use of artificial intelligence for acad",claude-opus-4-6,2026-02-26 14:56:39
+REC_05784,include,0.88,,"AI합의include확인, Unravelling digital distraction in ChatGPT use among EST lea",claude-opus-4-6,2026-02-26 14:56:39
+REC_11382,include,0.88,,"AI합의include확인, Undergraduate Intentions of Generative Artificial Intelligen",claude-opus-4-6,2026-02-26 14:56:39
+REC_02968,exclude,0.8,E-FT3,"메타버스 의학교육 수용, ML - 메타버스 초점",claude-opus-4-6,2026-02-26 14:56:39
+REC_14174,include,0.88,,"AI합의include확인, AI adoption in accounting education: A UTAUT-based analysis ",claude-opus-4-6,2026-02-26 14:56:39
+REC_12170,include,0.88,,"AI합의include확인, FACTORS INFLUENCING ARTIFICIAL INTELLIGENCE (AI) ADOPTION AM",claude-opus-4-6,2026-02-26 14:56:39
+REC_07972,include,0.88,,"AI합의include확인, Modelling Generative AI Acceptance, Perceived Teachers' Enth",claude-opus-4-6,2026-02-26 14:56:39
+REC_12174,exclude,0.78,E-FT4,이슬람신앙+AI태도/기술불안 - 교육맥락 아님,claude-opus-4-6,2026-02-26 14:56:39
+REC_14931,include,0.88,,"AI합의include확인, Perceived Ease of Use and Usefulness in AI-Generated Content",claude-opus-4-6,2026-02-26 14:56:39
+REC_14177,include,0.88,,"AI합의include확인, Research Article A detailed examination of faculty acceptanc",claude-opus-4-6,2026-02-26 14:56:39
+REC_12189,include,0.88,,"AI합의include확인, Understanding ChatGPT Adoption among Higher Education Studen",claude-opus-4-6,2026-02-26 14:56:39
+REC_07978,include,0.88,,"AI합의include확인, Modelling College Students' Acceptance to Use Generative Art",claude-opus-4-6,2026-02-26 14:56:39
+REC_14207,exclude,0.75,E-FT3,"MALL 모바일언어학습 태국 - 모바일앱, AI 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_11401,include,0.88,,"AI합의include확인, Integrating AI in Academia: A SEM Evaluation of Research Sch",claude-opus-4-6,2026-02-26 14:56:39
+REC_11428,include,0.88,,"AI합의include확인, Artificial Intelligence in Higher Education: A Cross-Cultura",claude-opus-4-6,2026-02-26 14:56:39
+REC_14209,include,0.88,,"AI합의include확인, Determinants of Student Adoption of Generative AI in Higher ",claude-opus-4-6,2026-02-26 14:56:39
+REC_07981,uncertain,0.55,,"GenAI 맥락 L2 몰입학습 인지/정서요인 - 학습경험, 수용 아님",claude-opus-4-6,2026-02-26 14:56:39
+REC_08926,include,0.88,,"AI합의include확인, A comprehensive model for AI adoption: Analysing key charact",claude-opus-4-6,2026-02-26 14:56:39
+REC_05920,include,0.88,,"AI합의include확인, Artificial intelligence as an assistive technology in langua",claude-opus-4-6,2026-02-26 14:56:39
+REC_05921,include,0.88,,"AI합의include확인, Dual-channel conduction modulated by digital literacy: exami",claude-opus-4-6,2026-02-26 14:56:39
+REC_07985,uncertain,0.6,,"EFL학습자 언어태도+GenAI태도 - 태도측정, 수용 프레임워크 불명확",claude-opus-4-6,2026-02-26 14:56:39
+REC_05924,include,0.88,,"AI합의include확인, Modeling learners' intention to continue using generative AI",claude-opus-4-6,2026-02-26 14:56:39
+REC_05926,include,0.88,,"AI합의include확인, Factors affecting EFL students' behavioral intention to use ",claude-opus-4-6,2026-02-26 14:56:39
+REC_08961,include,0.88,,"AI합의include확인, Transforming behavioral intention and academic performance: ",claude-opus-4-6,2026-02-26 14:56:39
+REC_05930,include,0.88,,"AI합의include확인, Towards informed policy decisions: assessing student percept",claude-opus-4-6,2026-02-26 14:56:39
+REC_08967,include,0.88,,"AI합의include확인, Impact of technology literacy, information literacy, and use",claude-opus-4-6,2026-02-26 14:56:39
+REC_14247,include,0.85,,"GenAI 수용, 정보품질인식, SEM, n=522",claude-opus-4-6,2026-02-26 14:56:39
+REC_08981,include,0.88,,"AI합의include확인, Factors Shaping the Adoption of AI Tools among Gen Z: An Ext",claude-opus-4-6,2026-02-26 14:56:39
+REC_08993,include,0.88,,"AI합의include확인, Generative AI in Higher Education Assessments: Examining Ris",claude-opus-4-6,2026-02-26 14:56:39
+REC_07997,include,0.85,,TPACK/자기효능감→교사 GenAI통합 의지,claude-opus-4-6,2026-02-26 14:56:39
+REC_06005,include,0.88,,"AI합의include확인, Generative AI in engineering education: understanding accept",claude-opus-4-6,2026-02-26 14:56:39
+REC_07999,include,0.88,,"AI합의include확인, Gen AI Literacy and Acceptance Among EFL Teachers: An Explor",claude-opus-4-6,2026-02-26 14:56:39
+REC_06019,uncertain,0.55,,AI 고등교육 혁명 - 일반적/기술적 가능성,claude-opus-4-6,2026-02-26 14:56:39
+REC_12266,include,0.88,,"AI합의include확인, Determinants of Generative AI Adoption in Higher Education: ",claude-opus-4-6,2026-02-26 14:56:39
+REC_06020,include,0.88,,"AI합의include확인, Exploring pre-service biology teachers' intention to teach g",claude-opus-4-6,2026-02-26 14:56:39
+REC_09044,include,0.88,,"AI합의include확인, A ChatBot for learning Chinese: Learning achievement and tec",claude-opus-4-6,2026-02-26 14:56:39
+REC_12297,include,0.88,,"AI합의include확인, Determinants of Intention to Use ChatGPT for Professional De",claude-opus-4-6,2026-02-26 14:56:39
+REC_15014,include,0.88,,"ChatGPT 사용, 습관/사회적영향/촉진조건 (UTAUT구인)",claude-opus-4-6,2026-02-26 14:56:39
+REC_06031,include,0.82,,AI수용 고등교육 인도네시아 공립대학,claude-opus-4-6,2026-02-26 14:56:39
+REC_12306,include,0.88,,"AI합의include확인, Generative AI in Higher Education: Investigating How Perceiv",claude-opus-4-6,2026-02-26 14:56:39
+REC_15025,include,0.88,,"AI합의include확인, Factors influencing satisfaction and continued use intention",claude-opus-4-6,2026-02-26 14:56:39
+REC_12310,include,0.88,,"AI합의include확인, Decoding EFL Learners’ Intention to Use ChatGPT for Academic",claude-opus-4-6,2026-02-26 14:56:39
+REC_06040,include,0.88,,"AI합의include확인, Modeling artificial intelligence-enabled teaching continuanc",claude-opus-4-6,2026-02-26 14:56:39
+REC_06041,include,0.88,,"AI합의include확인, Leveraging AI in academia: university students' adoption of ",claude-opus-4-6,2026-02-26 14:56:39
+REC_06042,include,0.88,,"AI합의include확인, Factors influencing the acceptance and usage of ChatGPT as a",claude-opus-4-6,2026-02-26 14:56:39
+REC_08053,include,0.88,,"AI합의include확인, What Drives University Students to Use ChatGPT for Translati",claude-opus-4-6,2026-02-26 14:56:39
+REC_06043,include,0.88,,"AI합의include확인, Assessing the use of AI tools for EFL exam preparation at Sa",claude-opus-4-6,2026-02-26 14:56:39
+REC_12349,uncertain,0.55,,학생/교수 ChatGPT KAP - KAP 기술통계 위주 가능성,claude-opus-4-6,2026-02-26 14:56:39
+REC_05135,uncertain,0.55,,AI챗봇 캠퍼스 인식/사용 - 기술통계 위주,claude-opus-4-6,2026-02-26 14:59:45
+REC_10262,include,0.88,,"AI SDL의도, TPB, n=322 인도네시아학생",claude-opus-4-6,2026-02-26 14:59:45
+REC_10933,exclude,0.95,E-FT3,평화학 사례연구 - AI 무관,claude-opus-4-6,2026-02-26 14:59:45
+REC_12377,exclude,0.85,E-FT3,메타버스 TESOL 몰입학습 - 메타버스 초점,claude-opus-4-6,2026-02-26 14:59:45
+REC_15449,exclude,0.8,E-FT4,AI+문학 불소건강인식 - 교육AI수용 아님,claude-opus-4-6,2026-02-26 14:59:45
+REC_15347,uncertain,0.55,,커뮤니케이션학생 GenAI인식 - 기술통계 가능,claude-opus-4-6,2026-02-26 14:59:45
+REC_00843,exclude,0.78,E-FT5,"AI적응학습 동기/몰입 효과 - 실험연구, 수용 아님",claude-opus-4-6,2026-02-26 14:59:45
+REC_07207,include,0.78,,"회계학자 AI사용, UTAUT, 쿠웨이트",claude-opus-4-6,2026-02-26 14:59:45
+REC_10922,exclude,0.85,E-FT1,AI 교수학습 효과 - 기술분석적 문헌검토,claude-opus-4-6,2026-02-26 14:59:45
+REC_00855,exclude,0.78,E-FT2,AI리터러시 L2작문 척도개발 - 수용 아닌 리터러시,claude-opus-4-6,2026-02-26 14:59:45
+REC_10926,uncertain,0.5,,AI 학술작문 수용/효과 - 기술통계 위주 가능,claude-opus-4-6,2026-02-26 14:59:45
+REC_00856,uncertain,0.6,,ChatGPT 교수자도구 개발/타당화 - 척도개발,claude-opus-4-6,2026-02-26 14:59:45
+REC_00859,exclude,0.82,E-FT2,"변혁적리더십→취업능력, GenAI맥락 - 수용 미측정",claude-opus-4-6,2026-02-26 14:59:45
+REC_15417,exclude,0.8,E-FT2,정보공학학생 학업부정행위 태도 - 수용 아님,claude-opus-4-6,2026-02-26 14:59:45
+REC_00863,exclude,0.8,E-FT2,GenAI 학업성과 양날의검 - 수용 아닌 성과,claude-opus-4-6,2026-02-26 14:59:45
+REC_07465,exclude,0.78,E-FT2,온라인튜터링 효과성 - 수용 미측정,claude-opus-4-6,2026-02-26 14:59:45
+REC_00899,uncertain,0.55,,"AI기능적태도 척도개발 - FAAI 개발, 수용모델 아님",claude-opus-4-6,2026-02-26 14:59:45
+REC_00922,include,0.85,,"GenAI수용 HE스태프, 사전/사후, UTAUT",claude-opus-4-6,2026-02-26 14:59:45
+REC_00923,uncertain,0.6,,GenAI준비도 국제비교 4개국 - 기술통계 비교 가능,claude-opus-4-6,2026-02-26 14:59:45
+REC_12499,uncertain,0.55,,"AI수용 HE 세르비아, 사용자vs비사용자 - 기술비교",claude-opus-4-6,2026-02-26 14:59:45
+REC_07680,exclude,0.9,E-FT1,ReAct! AI로보틱스 교육도구 - 소프트웨어 기술논문,claude-opus-4-6,2026-02-26 14:59:45
+REC_09760,uncertain,0.55,,"건강전문직학생 ChatGPT인식 - 혼합연구, 기술통계 가능",claude-opus-4-6,2026-02-26 14:59:45
+REC_12538,uncertain,0.6,,"GenAI사용 사회인구통계, 로지스틱회귀 - 수용구인 없음",claude-opus-4-6,2026-02-26 14:59:45
+REC_07690,exclude,0.85,E-FT2,ITS 시리어스게임 디지털논리교육 - 시스템설계,claude-opus-4-6,2026-02-26 14:59:45
+REC_14695,exclude,0.78,E-FT4,"AI온라인학습 구매의도 - 상업적 구매, 교육수용 아님",claude-opus-4-6,2026-02-26 14:59:45
+REC_06082,exclude,0.8,E-FT2,"기업가적의도, AI교육 매개 - 수용 아님",claude-opus-4-6,2026-02-26 14:59:45
+REC_14748,exclude,0.75,E-FT4,AI 윤리/신뢰/위험 일반 - 교육맥락 아님,claude-opus-4-6,2026-02-26 14:59:45
+REC_13702,include,0.78,,"AI기반평가, 신뢰/행동의도, 고등교육",claude-opus-4-6,2026-02-26 14:59:45
+REC_12568,uncertain,0.55,,IT학생 AI수용수준 - 기술통계 가능,claude-opus-4-6,2026-02-26 14:59:45
+REC_12567,include,0.78,,"GenAI HE강사인식, AETGE/GATE모델",claude-opus-4-6,2026-02-26 14:59:45
+REC_14752,exclude,0.75,E-FT5,학생AI인식 현황 - 기술통계 설문,claude-opus-4-6,2026-02-26 14:59:45
+REC_09790,exclude,0.85,E-FT2,학업부정행위+AI사용 - 수용 아님,claude-opus-4-6,2026-02-26 14:59:45
+REC_07721,exclude,0.82,E-FT2,"교육게임 RIASEC+AI - 직업지도, 수용 아님",claude-opus-4-6,2026-02-26 14:59:45
+REC_09823,uncertain,0.55,,교수 AI챗봇인식 간호교육 - 기술통계/MANCOVA,claude-opus-4-6,2026-02-26 14:59:45
+REC_06272,uncertain,0.55,,"인간-기계 관계, 사회인지 프레임워크 - 이론적 가능",claude-opus-4-6,2026-02-26 14:59:45
+REC_14853,exclude,0.8,E-FT5,커뮤니케이션학생 AI사용 KAP - 기술통계,claude-opus-4-6,2026-02-26 14:59:45
+REC_12680,include,0.85,,"국제학생 GenAI수용, PEU/PU/태도/신뢰",claude-opus-4-6,2026-02-26 14:59:45
+REC_06363,exclude,0.85,E-FT2,GenAI 성별생산성격차 DID - 수용 아닌 생산성,claude-opus-4-6,2026-02-26 14:59:45
+REC_09969,include,0.82,,"AI수용+기업가의도, SEM AMOS, 페루/에콰도르",claude-opus-4-6,2026-02-26 14:59:45
+REC_13739,include,0.82,,"GenAI 위키북 협업작문, TAM, 성별차이",claude-opus-4-6,2026-02-26 14:59:45
+REC_02531,uncertain,0.5,,AI수용 데이터셋 인도네시아 - 데이터기술자 논문,claude-opus-4-6,2026-02-26 14:59:45
+REC_13975,include,0.9,,"AI수용 예비교사, SEM, 디지털역량",claude-opus-4-6,2026-02-26 14:59:45
+REC_04702,uncertain,0.55,,"AI리터러시+CT리터러시, TAM - t검정/ANOVA/피어슨만",claude-opus-4-6,2026-02-26 14:59:45
+REC_06879,include,0.82,,"ChatGPT수용→디지털기업가의도, SCCT+TPB",claude-opus-4-6,2026-02-26 14:59:45
+REC_06912,include,0.78,,"챗봇의인화, 고객경험/사용의도, TAM, SEM, n=369 학생",claude-opus-4-6,2026-02-26 14:59:45
+REC_05496,exclude,0.78,E-FT2,AI불안→동기학습 - 수용 아닌 학습동기,claude-opus-4-6,2026-02-26 14:59:45
+REC_14049,uncertain,0.55,,"IoET챗봇 스마트학교, SEM - IoET=AI? 모호",claude-opus-4-6,2026-02-26 14:59:45
+REC_08199,include,0.78,,"GenAI 윤리적수용, 대학생 학습",claude-opus-4-6,2026-02-26 14:59:45
+REC_05502,uncertain,0.55,,"ChatGPT 윤리적사용, TRGP - 질적절차포함",claude-opus-4-6,2026-02-26 14:59:45
+REC_05505,include,0.85,,"ChatGPT수용확산, TOE프레임워크, n=440 중국교수",claude-opus-4-6,2026-02-26 14:59:45
+REC_14088,uncertain,0.5,,GenAI 비판적사고/협업 영향 - 기술통계,claude-opus-4-6,2026-02-26 14:59:45
+REC_02728,include,0.88,,"ChatGPT TAM확장, 메타인지SRL, n=300 예비교사",claude-opus-4-6,2026-02-26 14:59:45
+REC_07045,uncertain,0.55,,ChatGPT 프라이버시인식 - 수용보다 프라이버시 초점,claude-opus-4-6,2026-02-26 14:59:45
+REC_08189,uncertain,0.6,,"AI 교사교육, 정량연구, n=202+68 - 수용프레임워크 불명확",claude-opus-4-6,2026-02-26 14:59:45
+REC_12047,uncertain,0.55,,GenAI수용 독일대학커뮤니케이션 - 조직적/기술적,claude-opus-4-6,2026-02-26 14:59:45
+REC_04848,uncertain,0.55,,"스마트도서관서비스 ECM - 도서관맥락, AI초점 모호",claude-opus-4-6,2026-02-26 14:59:45
+REC_07046,exclude,0.8,E-FT3,온라인토론포럼 행동의도 UTAUT - AI 아님,claude-opus-4-6,2026-02-26 14:59:45
+REC_08497,exclude,0.78,E-FT4,LLM 정신건강연구 사용 - 교육 아닌 연구커뮤니티,claude-opus-4-6,2026-02-26 14:59:45
+REC_13124,exclude,0.95,E-FT3,코로나 PTSD+백신수용 - AI 무관,claude-opus-4-6,2026-02-26 14:59:45
+REC_05510,exclude,0.78,E-FT5,"AI L2작문도구 효과 실험 - 사전사후실험, 수용 아님",claude-opus-4-6,2026-02-26 14:59:45
+REC_05512,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Cognitive and behavioral determinants of ChatGPT adoption in,claude-opus-4-6,2026-02-26 14:59:45
+REC_04899,include,0.85,,수용프레임워크+정량분석: Understanding students' adoption of the ChatGPT chatbot in h,claude-opus-4-6,2026-02-26 14:59:45
+REC_08504,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Handover training for medical students: a controlled educati,claude-opus-4-6,2026-02-26 14:59:45
+REC_12073,uncertain,0.65,,ChatGPT/GenAI 의도/수용 관련: Perception of ChatGPT Usage for Homework Assignments: Studen,claude-opus-4-6,2026-02-26 14:59:45
+REC_14103,include,0.82,,TPB/수용구인+정량분석: Exploring the Determinants of the Sustainable Use of Artific,claude-opus-4-6,2026-02-26 14:59:45
+REC_05513,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: AI literacy as a key driver of user experience in AI-powered,claude-opus-4-6,2026-02-26 14:59:45
+REC_08549,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Standard patient training versus Vik-Asthme chatbot-guided t,claude-opus-4-6,2026-02-26 14:59:45
+REC_02738,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Factors influencing pre-service special education teachers' ,claude-opus-4-6,2026-02-26 14:59:45
+REC_04901,exclude,0.75,E-FT4,교육맥락 없음: Intent mining framework for understanding online conversatio,claude-opus-4-6,2026-02-26 14:59:45
+REC_08559,exclude,0.85,E-FT1,비경험연구: Social media and postsecondary student adoption of mental he,claude-opus-4-6,2026-02-26 14:59:45
+REC_07061,uncertain,0.6,,수용관련이론 있으나 분석방법 불명확: Predicting students' continuance use of learning management ,claude-opus-4-6,2026-02-26 14:59:45
+REC_05514,uncertain,0.6,,수용관련이론 있으나 분석방법 불명확: Mechanisms of academic stress affecting AI-assisted cheating,claude-opus-4-6,2026-02-26 14:59:45
+REC_07062,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Acceptance of ChatGPT by undergraduates in Sri Lanka: a hybr,claude-opus-4-6,2026-02-26 14:59:45
+REC_14104,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Students' Attitudes Towards AI and How They Perceive the Eff,claude-opus-4-6,2026-02-26 14:59:45
+REC_04905,uncertain,0.65,,ChatGPT/GenAI 의도/수용 관련: Examining business students' intentions to misuse ChatGPT th,claude-opus-4-6,2026-02-26 14:59:45
+REC_02745,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Impact of ChatGPT usage on nursing students education: A cro,claude-opus-4-6,2026-02-26 14:59:45
+REC_05507,include,0.85,,수용프레임워크+정량분석: Determinants of Generative Artificial Intelligence (GenAI) a,claude-opus-4-6,2026-02-26 14:59:45
+REC_08581,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Randomised controlled trial of VR-based observation meditati,claude-opus-4-6,2026-02-26 14:59:45
+REC_12090,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Behavioral Determinants of AI-Driven Arabic Language Learnin,claude-opus-4-6,2026-02-26 14:59:45
+REC_04941,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Exploring factors influencing L2 learners’ use of GAI-assist,claude-opus-4-6,2026-02-26 14:59:45
+REC_14107,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Ethical Use of Generative Artificial Intelligence Among Ecua,claude-opus-4-6,2026-02-26 14:59:45
+REC_14108,uncertain,0.6,,수용관련이론 있으나 분석방법 불명확: AI Literacy in Achieving Sustainable Development Goals: The ,claude-opus-4-6,2026-02-26 14:59:45
+REC_04943,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: The role of AI in education: a Southeast Asian student persp,claude-opus-4-6,2026-02-26 14:59:45
+REC_05518,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: How to develop student-preferred virtual teachers in AI-driv,claude-opus-4-6,2026-02-26 14:59:45
+REC_05525,exclude,0.75,E-FT4,교육맥락 없음: Using machine learning methods to identify trajectories of c,claude-opus-4-6,2026-02-26 14:59:45
+REC_12092,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Between Documentation and Pedagogy: ESL/EFL Teacher Burnout ,claude-opus-4-6,2026-02-26 14:59:45
+REC_04944,uncertain,0.6,,수용관련이론 있으나 분석방법 불명확: The role of AI and entrepreneurial ecosystem in shaping stud,claude-opus-4-6,2026-02-26 14:59:45
+REC_08614,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Investigating University Students' Attitudes and Understandi,claude-opus-4-6,2026-02-26 14:59:45
+REC_05529,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: “ENHANCING LEARNING POTENTIAL: INVESTIGATING MARKETING STUDE,claude-opus-4-6,2026-02-26 14:59:45
+REC_14110,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Sustainable AI Solutions for Empowering Visually Impaired St,claude-opus-4-6,2026-02-26 14:59:45
+REC_08625,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: When Biased Humans Meet Debiased AI: A Case Study in College,claude-opus-4-6,2026-02-26 14:59:45
+REC_12094,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Exploring the Role of ChatGPT in English Teaching and Learni,claude-opus-4-6,2026-02-26 14:59:45
+REC_07079,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: E-learning in higher education during COVID-19: evidence fro,claude-opus-4-6,2026-02-26 14:59:45
+REC_07085,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Enhancing teachers' job satisfaction through the artificial ,claude-opus-4-6,2026-02-26 14:59:45
+REC_13199,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Influence of deep learning-based journal reading guidance sy,claude-opus-4-6,2026-02-26 14:59:45
+REC_13177,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: The Influence of College Students' Innovation and Entreprene,claude-opus-4-6,2026-02-26 14:59:45
+REC_14111,include,0.85,,수용프레임워크+정량분석: Understanding Continuance Intention of Generative AI in Educ,claude-opus-4-6,2026-02-26 14:59:45
+REC_02766,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: A two-staged SEM-ANN approach to predict learning presence i,claude-opus-4-6,2026-02-26 14:59:45
+REC_13207,include,0.85,,수용프레임워크+정량분석: Deep learning course development and evaluation of artificia,claude-opus-4-6,2026-02-26 14:59:45
+REC_05549,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Awareness and Perception of the Artificial Intelligence in t,claude-opus-4-6,2026-02-26 14:59:45
+REC_04961,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Empirical investigation of critical factors influencing Ghat,claude-opus-4-6,2026-02-26 14:59:45
+REC_07092,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: The role of AI chatbots in enhancing performance expectancy ,claude-opus-4-6,2026-02-26 14:59:45
+REC_04986,exclude,0.75,E-FT4,교육맥락 없음: Beliefs affecting concussion reporting among military cadets,claude-opus-4-6,2026-02-26 14:59:45
+REC_08631,uncertain,0.5,,"수용/AI/교육 기준 충족 불명확: Gender Bias in Self-Perception of AI Knowledge, Impact, and ",claude-opus-4-6,2026-02-26 14:59:45
+REC_05589,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Integrating artificial intelligence into medical education: ,claude-opus-4-6,2026-02-26 14:59:45
+REC_02770,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Exploring undergraduate students' perceptions of AI vs. huma,claude-opus-4-6,2026-02-26 14:59:45
+REC_02771,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Can theory-driven learning analytics dashboard enhance human,claude-opus-4-6,2026-02-26 14:59:45
+REC_14118,exclude,0.75,E-FT4,교육맥락 없음: AI-Enabled Strategic Transformation and Sustainable Outcomes,claude-opus-4-6,2026-02-26 14:59:45
+REC_05594,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Acceptance of and Satisfaction with ChatGPT as Learning Tool,claude-opus-4-6,2026-02-26 14:59:45
+REC_02787,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Students' attitudes toward generative artificial intelligenc,claude-opus-4-6,2026-02-26 14:59:45
+REC_13265,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Exploring the potential of ChatGPT for foreign language educ,claude-opus-4-6,2026-02-26 14:59:45
+REC_13278,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: AI performance assessment in blended learning: mechanisms an,claude-opus-4-6,2026-02-26 14:59:45
+REC_08672,exclude,0.8,E-FT3,비AI기술 초점: Robots in Tourism and Hospitality: The Perception of Future ,claude-opus-4-6,2026-02-26 14:59:45
+REC_02792,uncertain,0.5,,"ChatGPT/GenAI 연구이나 수용 불명확: The perceived relationship between self-directed learning, a",claude-opus-4-6,2026-02-26 14:59:45
+REC_12126,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: The Hidden Sexual Minorities: Machine Learning Approaches to,claude-opus-4-6,2026-02-26 14:59:45
+REC_08685,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Application of Artificial Neural Networks to Predict the Use,claude-opus-4-6,2026-02-26 14:59:45
+REC_05619,include,0.85,,수용프레임워크+정량분석: The Implications of Generative Artificial Intelligence in Ga,claude-opus-4-6,2026-02-26 14:59:45
+REC_02827,exclude,0.75,E-FT4,교육맥락 없음: Novel deep learning approach for forecasting daily hotel dem,claude-opus-4-6,2026-02-26 14:59:45
+REC_12128,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: AN INEVITABILITY OF GENERATIVE ARTIFICIAL INTELLIGENCE ERA A,claude-opus-4-6,2026-02-26 14:59:45
+REC_13281,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Analysis of willingness to use health management APP for fem,claude-opus-4-6,2026-02-26 14:59:45
+REC_08687,include,0.85,,수용프레임워크+정량분석: Determinants of AI Use in University Teachers: The Role of L,claude-opus-4-6,2026-02-26 14:59:45
+REC_07110,include,0.82,,TPB/수용구인+정량분석: Unveiling the impact of ChatGPT: investigating self-efficacy,claude-opus-4-6,2026-02-26 14:59:45
+REC_05099,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Empowering educators: A multi-case study investigating the t,claude-opus-4-6,2026-02-26 14:59:45
+REC_02868,uncertain,0.5,,"ChatGPT/GenAI 연구이나 수용 불명확: Deskilling, reskilling, or upskilling? Unpacking the pathway",claude-opus-4-6,2026-02-26 14:59:45
+REC_12130,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Understanding Student Attitudes toward GenAI Tools: A Compar,claude-opus-4-6,2026-02-26 14:59:45
+REC_05103,exclude,0.75,E-FT4,교육맥락 없음: Indirect media effects on the adoption of artificial intelli,claude-opus-4-6,2026-02-26 14:59:45
+REC_14124,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: The Role of Generative AI in Architecture Education from Stu,claude-opus-4-6,2026-02-26 14:59:45
+REC_14115,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Digital Trust in Transition: Student Perceptions of AI-Enhan,claude-opus-4-6,2026-02-26 14:59:45
+REC_02886,include,0.82,,TPB/수용구인+정량분석: The crisis effect in TPB as a moderator for post-pandemic en,claude-opus-4-6,2026-02-26 14:59:45
+REC_08689,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Acceptance of Artificial Intelligence as a Teaching Strategy,claude-opus-4-6,2026-02-26 14:59:45
+REC_05672,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Adoption and perceptions of generative AI among South Africa,claude-opus-4-6,2026-02-26 14:59:45
+REC_02890,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Enhancing academic performance of business students using ge,claude-opus-4-6,2026-02-26 14:59:45
+REC_05106,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Research on financial field integrating artificial intellige,claude-opus-4-6,2026-02-26 14:59:45
+REC_08692,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Determinants of Postgraduate Students′ Use of Artificial Int,claude-opus-4-6,2026-02-26 14:59:45
+REC_07114,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Implementation of generative AI tools in accounting educatio,claude-opus-4-6,2026-02-26 14:59:45
+REC_05685,exclude,0.75,E-FT4,교육맥락 없음: Psychological characteristics and stress differentiate betwe,claude-opus-4-6,2026-02-26 14:59:45
+REC_05107,include,0.85,,수용프레임워크+정량분석: Understanding University Students' Acceptance of ChatGPT: In,claude-opus-4-6,2026-02-26 14:59:45
+REC_12137,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Understanding EFL Students' Adoption of Generative AI for En,claude-opus-4-6,2026-02-26 14:59:45
+REC_08699,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Development and validation of artificial intelligence addict,claude-opus-4-6,2026-02-26 14:59:45
+REC_08703,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Perceptions of Nursing Faculty on Utilizing AI Tools in Acad,claude-opus-4-6,2026-02-26 14:59:45
+REC_08724,exclude,0.75,E-FT4,교육맥락 없음: Predicting the users’ level of engagement with a smartphone ,claude-opus-4-6,2026-02-26 14:59:45
+REC_12144,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: AI Writing Assistants and Student Competence: A Linguistic A,claude-opus-4-6,2026-02-26 14:59:45
+REC_05767,uncertain,0.6,,수용관련이론 있으나 분석방법 불명확: Learning approaches and high-impact educational practices at,claude-opus-4-6,2026-02-26 14:59:45
+REC_14136,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Towards a New Conceptual Model of AI-Enhanced Learning for C,claude-opus-4-6,2026-02-26 14:59:45
+REC_05205,include,0.85,,수용프레임워크+정량분석: Technostress and academicians performance: from the perspect,claude-opus-4-6,2026-02-26 14:59:45
+REC_13309,uncertain,0.5,,"수용/AI/교육 기준 충족 불명확: Perceived satisfaction, perceived usefulness, and interactiv",claude-opus-4-6,2026-02-26 14:59:45
+REC_05771,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: The effect of gamified project-based learning with AIGC in i,claude-opus-4-6,2026-02-26 14:59:45
+REC_12147,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: TESL Pre-Service Teachers' Perceptions on the Use of ChatGPT,claude-opus-4-6,2026-02-26 14:59:45
+REC_08738,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: AI in Moroccan education: evaluating student acceptance usin,claude-opus-4-6,2026-02-26 14:59:45
+REC_00769,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Effectiveness of artificial intelligence integration in desi,claude-opus-4-6,2026-02-26 14:59:45
+REC_05774,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: The role of social influence in generative artificial intell,claude-opus-4-6,2026-02-26 14:59:45
+REC_00770,uncertain,0.5,,"ChatGPT/GenAI 연구이나 수용 불명확: Students' perceptions, attitudes and utilisation of ChatGPT ",claude-opus-4-6,2026-02-26 14:59:45
+REC_10273,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: A Universal Design for an Adaptive Context-Aware Mobile Clou,claude-opus-4-6,2026-02-26 14:59:45
+REC_14411,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Receptivity Level of Faculty Members in Universities Using D,claude-opus-4-6,2026-02-26 14:59:45
+REC_14141,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: From Perception to Practice: Artificial Intelligence as a Pa,claude-opus-4-6,2026-02-26 14:59:45
+REC_00772,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: ChatGPT adoption and its influence on faculty well-being: An,claude-opus-4-6,2026-02-26 14:59:45
+REC_13557,include,0.85,,수용프레임워크+정량분석: Predicting College Student Engagement in Physical Education ,claude-opus-4-6,2026-02-26 14:59:45
+REC_10285,exclude,0.8,E-FT3,비AI기술 초점: Machine Learning Clustering Analysis Towards Educator’s Read,claude-opus-4-6,2026-02-26 14:59:45
+REC_10303,uncertain,0.65,,"수용프레임워크 있으나 SEM 불명확: Structural equation modeling of Nigerian science, technology",claude-opus-4-6,2026-02-26 14:59:45
+REC_13313,uncertain,0.5,,"수용/AI/교육 기준 충족 불명확: Building a triadic model of technology, motivation, and enga",claude-opus-4-6,2026-02-26 14:59:45
+REC_15084,include,0.85,,수용프레임워크+정량분석: THE ROLE OF ARTIFICIAL INTELLIGENCE IN THE SELF-PROFESSIONAL,claude-opus-4-6,2026-02-26 14:59:45
+REC_00774,uncertain,0.6,,"수용관련이론 있으나 분석방법 불명확: Is artificial intelligence use related to self-control, self",claude-opus-4-6,2026-02-26 14:59:45
+REC_00035,uncertain,0.5,,ChatGPT/GenAI 연구이나 수용 불명확: Determinants of Knowledge and Usage of Generative Artificial,claude-opus-4-6,2026-02-26 14:59:45
+REC_00777,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Enhancing learner affective engagement: The impact of instru,claude-opus-4-6,2026-02-26 14:59:45
+REC_10443,include,0.85,,수용프레임워크+정량분석: Predicting student satisfaction of emergency remote learning,claude-opus-4-6,2026-02-26 14:59:45
+REC_14424,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: AI-Driven Innovations in Adult EFL Learning: Exploring Poten,claude-opus-4-6,2026-02-26 14:59:45
+REC_14425,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Understanding AI and Mobile Learning Adoption in Malaysian U,claude-opus-4-6,2026-02-26 14:59:45
+REC_10467,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Latent classes associated with the intention to use a sympto,claude-opus-4-6,2026-02-26 14:59:45
+REC_00785,uncertain,0.65,,수용프레임워크 있으나 SEM 불명확: Leveraging AI-enhanced and emerging technologies for pedagog,claude-opus-4-6,2026-02-26 14:59:45
+REC_15098,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Reference Chatbots in Canadian Academic Libraries,claude-opus-4-6,2026-02-26 14:59:45
+REC_00787,include,0.85,,수용프레임워크+정량분석: Exploring the influence of ChatGPT on student academic succe,claude-opus-4-6,2026-02-26 14:59:45
+REC_14448,uncertain,0.6,,수용관련이론 있으나 분석방법 불명확: Whether English Proficiency and English Self-Efficacy Influe,claude-opus-4-6,2026-02-26 14:59:45
+REC_00064,uncertain,0.6,,수용관련이론 있으나 분석방법 불명확: Effects of a prompt engineering intervention on undergraduat,claude-opus-4-6,2026-02-26 14:59:45
+REC_14450,include,0.85,,수용프레임워크+정량분석: Understanding Chinese University EFL Learners' Perceptions o,claude-opus-4-6,2026-02-26 14:59:45
+REC_14451,uncertain,0.5,,수용/AI/교육 기준 충족 불명확: Revolutionising Essay Evaluation: A Cutting-Edge Rubric for ,claude-opus-4-6,2026-02-26 14:59:45
+REC_07673,exclude,0.8,E-FT2,"Descriptive survey on AI learning perceptions, no TAM/UTAUT adoption/acceptance constructs",claude-opus-4-6,2026-02-26 15:04:20
+REC_12768,exclude,0.8,E-FT5,Qualitative/exploratory study on AI in scholarly communication; cannot extract correlations,claude-opus-4-6,2026-02-26 15:04:20
+REC_10735,uncertain,0.5,,Information/data/privacy literacy and ChatGPT receptivity; unclear if adoption model or SEM used,claude-opus-4-6,2026-02-26 15:04:20
+REC_06617,exclude,0.9,E-FT4,Consumer chatbot trust study; not education context,claude-opus-4-6,2026-02-26 15:04:20
+REC_07556,exclude,0.85,E-FT3,Industry 4.0 environment education; AI is not the focal technology,claude-opus-4-6,2026-02-26 15:04:20
+REC_15473,exclude,0.9,E-FT5,"Mixed research on Alcula app, n=34 (<50), descriptive assessment, no SEM/path analysis",claude-opus-4-6,2026-02-26 15:04:20
+REC_13070,uncertain,0.5,,AI virtual assistant acceptance with trust mediation; unclear if education context from abstract,claude-opus-4-6,2026-02-26 15:04:20
+REC_04371,exclude,0.95,E-FT4,Machine creativity aversion study among laypeople; not education context,claude-opus-4-6,2026-02-26 15:04:20
+REC_07594,exclude,0.85,E-FT5,Chatbot system design for university payments; no adoption/acceptance measurement,claude-opus-4-6,2026-02-26 15:04:20
+REC_04651,exclude,0.85,E-FT4,"AI chatbot trust foundations; general/consumer context, not education",claude-opus-4-6,2026-02-26 15:04:20
+REC_02172,include,0.8,,Chatbots for EFL learning in Malaysian higher ed using Push-Pull-Mooring-Habit framework,claude-opus-4-6,2026-02-26 15:04:20
+REC_08012,exclude,0.95,E-FT3,Perceived marketplace influence and sustainable consumption; not AI focal technology,claude-opus-4-6,2026-02-26 15:04:20
+REC_05102,exclude,0.9,E-FT4,AI chatbot user experience among 1064 consumers; not education context,claude-opus-4-6,2026-02-26 15:04:20
+REC_07454,uncertain,0.55,,Remote teaching model with AI awareness for teachers; unclear if SEM/path analysis used,claude-opus-4-6,2026-02-26 15:04:20
+REC_13725,uncertain,0.55,,Exploratory survey on AI perceptions in education; may be descriptive only,claude-opus-4-6,2026-02-26 15:04:20
+REC_05349,exclude,0.9,E-FT4,"AI speaker usability perception; general HCI context, not education",claude-opus-4-6,2026-02-26 15:04:20
+REC_08681,uncertain,0.5,,AI competency and XAI attitude with mediating effects; unclear if education context,claude-opus-4-6,2026-02-26 15:04:20
+REC_00329,exclude,0.9,E-FT4,"AI-powered avatar in gaming; consumer/entertainment context, not education",claude-opus-4-6,2026-02-26 15:04:20
+REC_05401,uncertain,0.5,,Assessment scale for AI chat systems; may have adoption constructs but unclear education context,claude-opus-4-6,2026-02-26 15:04:20
+REC_09131,include,0.9,,"AI chatbot adoption among research scholars using UTAUT; education context, adoption measurement",claude-opus-4-6,2026-02-26 15:04:20
+REC_09357,exclude,0.9,E-FT3,"Social robot (PLEA) design for teaching; robotics, not AI focal technology",claude-opus-4-6,2026-02-26 15:04:20
+REC_05428,exclude,0.85,E-FT4,General attitude toward AI with conspiracy belief and XAI; not education context,claude-opus-4-6,2026-02-26 15:04:20
+REC_10308,uncertain,0.55,,"Students' perceptions and uses of ChatGPT; likely descriptive, unclear if SEM/path",claude-opus-4-6,2026-02-26 15:04:20
+REC_01458,exclude,0.8,E-FT2,"AI chatbot and critical thinking skills; measures learning outcome, not adoption/acceptance",claude-opus-4-6,2026-02-26 15:04:20
+REC_15300,uncertain,0.55,,"Generative AI in Saudi education; mixed-methods, unclear if quantitative component has SEM",claude-opus-4-6,2026-02-26 15:04:20
+REC_10811,uncertain,0.6,,AI literacy among MEd students using UTAUT+TPACK; DV is literacy not adoption/acceptance,claude-opus-4-6,2026-02-26 15:04:20
+REC_10818,include,0.9,,Medical students' behavioral intention and use of ITS using extended TAM; education + adoption,claude-opus-4-6,2026-02-26 15:04:20
+REC_15372,exclude,0.75,E-FT5,"Sequential mixed-methods on AI educational content authenticity; qualitative-heavy, unlikely SEM",claude-opus-4-6,2026-02-26 15:04:20
+REC_10881,exclude,0.8,E-FT5,"Faculty awareness/attitudes of ChatGPT; descriptive analysis with t-test/ANOVA, no SEM/path",claude-opus-4-6,2026-02-26 15:04:20
+REC_10880,include,0.9,,Students' trust and use of ChatGPT using UTAUT+EVT; education + quantitative + adoption,claude-opus-4-6,2026-02-26 15:04:20
+REC_00850,uncertain,0.5,,AI tools integration and impact on learning; unclear methodology and adoption model,claude-opus-4-6,2026-02-26 15:04:20
+REC_10921,include,0.95,,"Chinese graduate students adopting AIGC tools; PLS-SEM + fsQCA, education + adoption",claude-opus-4-6,2026-02-26 15:04:20
+REC_10924,uncertain,0.55,,"AI attitudes among JMC students in Brazil/US; mixed-methods, unclear if SEM component",claude-opus-4-6,2026-02-26 15:04:20
+REC_11027,include,0.9,,"Students' behavioral intention to use GenAI; TPB+TAM research model, quantitative",claude-opus-4-6,2026-02-26 15:04:20
+REC_00903,uncertain,0.55,,"Faculty and student perceptions of GenAI; academic community survey, may be descriptive",claude-opus-4-6,2026-02-26 15:04:20
+REC_07517,include,0.8,,ChatGPT usage intentions with social comparison/identity theories; structural model + education,claude-opus-4-6,2026-02-26 15:04:20
+REC_11074,uncertain,0.55,,"AI in translation studies among Jordanian academics; cross-sectional survey, may be descriptive",claude-opus-4-6,2026-02-26 15:04:20
+REC_11075,exclude,0.95,E-FT6,"Duplicate of REC_11074; same title, authors, and content",claude-opus-4-6,2026-02-26 15:04:20
+REC_11079,uncertain,0.5,,"ChatGPT perceptions in graduate studies; comparative mixed approach with Likert scales, unclear if SEM",claude-opus-4-6,2026-02-26 15:04:20
+REC_06045,include,0.9,,"AI adoption test based on UTAUT2; educational context, adoption measurement, reliability/validity",claude-opus-4-6,2026-02-26 15:04:20
+REC_09726,uncertain,0.5,,"Dental students' AI perceptions; descriptive survey with subgroup analysis, unclear SEM",claude-opus-4-6,2026-02-26 15:04:20
+REC_12494,include,0.9,,"Higher education students' GAI adoption using UTAUT2; empirical investigation, education",claude-opus-4-6,2026-02-26 15:04:20
+REC_07664,uncertain,0.5,,"Changes in AI perception at university; repeated cross-sectional, likely descriptive",claude-opus-4-6,2026-02-26 15:04:20
+REC_12497,uncertain,0.6,,"ChatGPT in EFL learning through TAM; described as 'descriptive quantitative', may lack SEM",claude-opus-4-6,2026-02-26 15:04:20
+REC_06050,include,0.85,,AI adoption in Moroccan higher education with trust moderation; suggests SEM/path analysis,claude-opus-4-6,2026-02-26 15:04:20
+REC_09741,uncertain,0.5,,Thai medical students' AI attitudes in radiology; likely descriptive perceptions survey,claude-opus-4-6,2026-02-26 15:04:20
+REC_09743,include,0.9,,Medical students' acceptance of LLMs based on TAM; education + adoption measurement,claude-opus-4-6,2026-02-26 15:04:20
+REC_14712,uncertain,0.55,,"ChatGPT adoption among medical/dental students; cross-sectional, may be descriptive",claude-opus-4-6,2026-02-26 15:04:20
+REC_06056,include,0.85,,"Behavioral intentions to integrate AI in science teaching; TPB framework, education",claude-opus-4-6,2026-02-26 15:04:20
+REC_09757,include,0.85,,AI tools acceptance in medical students; acceptance measurement for learning center design,claude-opus-4-6,2026-02-26 15:04:20
+REC_12539,include,0.85,,Reliability/validity for survey testing HE teachers' AI adoption intentions; scale development + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_13701,include,0.85,,"Gender differences in GenAI chatbot use in Norwegian HE; n=2692, technology acceptance focus",claude-opus-4-6,2026-02-26 15:05:53
+REC_06055,uncertain,0.5,,"GenAI 3D game for vocabulary acquisition; intervention study, unclear if adoption measured via SEM",claude-opus-4-6,2026-02-26 15:05:53
+REC_09778,uncertain,0.5,,"AI perceptions among dental postgraduates; cross-sectional, may be descriptive survey",claude-opus-4-6,2026-02-26 15:05:53
+REC_14744,include,0.85,,AI chatbot adoption by South African university students; adoption + higher education,claude-opus-4-6,2026-02-26 15:05:53
+REC_12569,uncertain,0.55,,Writing with AI support: anxiety and perceived usefulness; unclear if SEM/path analysis used,claude-opus-4-6,2026-02-26 15:05:53
+REC_13695,include,0.9,,University teachers' GenAI adoption for assessment using UTAUT; education + adoption model,claude-opus-4-6,2026-02-26 15:05:53
+REC_06131,uncertain,0.5,,"Filipino academic librarians' AI perceptions; education-adjacent, may be descriptive",claude-opus-4-6,2026-02-26 15:05:53
+REC_12593,include,0.85,,Factors affecting ChatGPT acceptance among university students; acceptance + education,claude-opus-4-6,2026-02-26 15:05:53
+REC_13736,include,0.85,,IMPACT model validation for university faculty ChatGPT appropriation; psychometric tool + education,claude-opus-4-6,2026-02-26 15:05:53
+REC_06877,include,0.85,,Teachers' ChatGPT adoption intention focusing on perceived trust and risk; HE + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_05487,include,0.85,,ChatGPT acceptance among college student groups using latent class analysis; acceptance + model,claude-opus-4-6,2026-02-26 15:05:53
+REC_04701,uncertain,0.55,,"HEXACO/Dark Triad predicting attitude toward GAI; attitude not adoption, unclear SEM",claude-opus-4-6,2026-02-26 15:05:53
+REC_04720,uncertain,0.5,,AI/ChatGPT perceptions by speech-language pathologists and students; likely descriptive survey,claude-opus-4-6,2026-02-26 15:05:53
+REC_02643,exclude,0.8,E-FT2,"ChatGPT role in enhancing learning outcomes; measures learning effectiveness, not adoption/acceptance",claude-opus-4-6,2026-02-26 15:05:53
+REC_14060,include,0.9,,College students' actual use of AI-based systems using extended TAM; education + adoption model,claude-opus-4-6,2026-02-26 15:05:53
+REC_04794,include,0.8,,AI and technology leadership on teacher development using TAM; PU/PEOU + education,claude-opus-4-6,2026-02-26 15:05:53
+REC_12029,exclude,0.85,E-FT4,"Public acceptance of AI creativity; general population, not education context",claude-opus-4-6,2026-02-26 15:05:53
+REC_14091,uncertain,0.55,,University students' attitudes/perceptions toward AI tools; may be descriptive analysis,claude-opus-4-6,2026-02-26 15:05:53
+REC_12049,exclude,0.8,E-FT5,"AI literacy case study in teacher education; qualitative/descriptive, two cohorts, no SEM",claude-opus-4-6,2026-02-26 15:05:53
+REC_07047,include,0.9,,Faculty GenAI adoption using TAM-TTF with neuroticism moderation; education + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_02734,include,0.85,,ChatGPT acceptance in higher education from smart education perspective; acceptance + education,claude-opus-4-6,2026-02-26 15:05:53
+REC_14098,include,0.9,,ChatGPT acceptance using extended UTAUT2 among university students; education + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_02735,uncertain,0.5,,"Emotional intelligence and chatbot utilization in education; EI focus, unclear adoption model",claude-opus-4-6,2026-02-26 15:05:53
+REC_02736,include,0.9,,ChatGPT adoption and learning satisfaction using TAM and SEM; university students + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_12074,uncertain,0.55,,"AI-driven pedagogical empowerment; sequential mixed-methods, may have quantitative adoption component",claude-opus-4-6,2026-02-26 15:05:53
+REC_12086,uncertain,0.55,,Parental readiness for AI in Indonesian child education; not student/instructor adoption directly,claude-opus-4-6,2026-02-26 15:05:53
+REC_07063,include,0.9,,Students' AI chatbot adoption with tech readiness moderation; PU + subjective norm + education,claude-opus-4-6,2026-02-26 15:05:53
+REC_07064,include,0.9,,AI adoption by 275 accounting students in Vietnam; empirical + education + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_12091,include,0.9,,Vietnamese students' AI study tools adoption integrating TPB and TAM; education + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_02764,exclude,0.8,E-FT2,"GenAI impact on self-efficacy and technological dependence; measures outcomes, not adoption",claude-opus-4-6,2026-02-26 15:05:53
+REC_14109,include,0.85,,AIGC integration in design education using TAM+TPACK; empirical analysis + education,claude-opus-4-6,2026-02-26 15:05:53
+REC_05526,include,0.85,,Guilt impact on AI utilization among 296 students using PLS-SEM; education + adoption-related,claude-opus-4-6,2026-02-26 15:05:53
+REC_12093,uncertain,0.55,,Faculty AI awareness and digital transformation skills; may be descriptive analysis,claude-opus-4-6,2026-02-26 15:05:53
+REC_02765,include,0.85,,ChatGPT adoption in African higher education institutions; multi-dimensional adoption analysis,claude-opus-4-6,2026-02-26 15:05:53
+REC_08624,exclude,0.85,E-FT3,Behavioral intention for new-gen IT including cloud/big data/IoT; AI is not focal technology,claude-opus-4-6,2026-02-26 15:05:53
+REC_12095,uncertain,0.5,,AI in blended learning in Iraqi universities; unclear if measuring adoption with SEM,claude-opus-4-6,2026-02-26 15:05:53
+REC_05530,exclude,0.8,E-FT2,"GenAI effects on student satisfaction and self-efficacy; measures learning outcomes, not adoption",claude-opus-4-6,2026-02-26 15:05:53
+REC_12097,uncertain,0.5,,Faculty roles at KKU in 5th Industrial Revolution; may be descriptive/exploratory,claude-opus-4-6,2026-02-26 15:05:53
+REC_02768,uncertain,0.55,,"ChatGPT effectiveness in lesson preparation by instructors; effectiveness study, unclear adoption model",claude-opus-4-6,2026-02-26 15:05:53
+REC_12098,include,0.9,,AI-enhanced learning adoption using UTAUT2 and Bloom's Taxonomy; education + adoption model,claude-opus-4-6,2026-02-26 15:05:53
+REC_08634,include,0.85,,Risk perception effect on LLM acceptance/use among university students; education + adoption,claude-opus-4-6,2026-02-26 15:05:53
+REC_05020,exclude,0.8,E-FT2,"AI and student loneliness/success/retention; measures student outcomes, not adoption/acceptance",claude-opus-4-6,2026-02-26 15:05:53
+REC_12099,exclude,0.8,E-FT5,"GenAI+3D immersive environments intervention; experimental design, not adoption measurement",claude-opus-4-6,2026-02-26 15:05:53
+REC_05021,include,0.9,,ChatGPT adoption using UTAUT with anxiety; cross-country analysis in higher education,claude-opus-4-6,2026-02-26 15:05:53
+REC_05593,exclude,0.8,E-FT5,"ChatGPT vs librarians for reference; descriptive survey, no SEM/path analysis",claude-opus-4-6,2026-02-26 15:05:53
+REC_13258,include,0.9,,Doctoral students' ChatGPT acceptance in writing using TAM; education + adoption model,claude-opus-4-6,2026-02-26 15:05:53
+REC_07095,uncertain,0.55,,"AI usage in HE for UN SDGs; Egyptian universities, unclear if standard adoption model used",claude-opus-4-6,2026-02-26 15:05:53
+REC_12112,exclude,0.8,E-FT5,"Experimental intervention on film appreciation with AI; measures mental health, not adoption",claude-opus-4-6,2026-02-26 15:05:53
+REC_13164,uncertain,0.55,,"Neural network predicting preschool teachers' tech acceptance; may be general technology, not AI-specific",claude-opus-4-6,2026-02-26 15:05:53
+REC_14119,include,0.9,,Sustainable AIEd adoption using AIDUA framework with novelty value and trust; China HE students,claude-opus-4-6,2026-02-26 15:07:17
+REC_13264,include,0.9,,AI chatbot adoption among Chinese graduate students using UTAUT+ECM integrated analysis,claude-opus-4-6,2026-02-26 15:07:17
+REC_07097,exclude,0.85,E-FT3,Students' readiness for 4th Industrial Revolution; not AI-specific focal technology,claude-opus-4-6,2026-02-26 15:07:17
+REC_05024,exclude,0.8,E-FT2,"AI-facilitated plagiarism and moral disengagement; measures academic integrity, not adoption",claude-opus-4-6,2026-02-26 15:07:17
+REC_05025,include,0.85,,College students' GAI acceptance in China; technology empowerment vs risk avoidance framework,claude-opus-4-6,2026-02-26 15:07:17
+REC_05617,include,0.9,,"Tourism/hospitality students' ChatGPT intention using TAM; PU, PEOU + education",claude-opus-4-6,2026-02-26 15:07:17
+REC_05618,exclude,0.8,E-FT2,"AI influence on entrepreneurial intentions via SDT; DV is entrepreneurship, not AI adoption",claude-opus-4-6,2026-02-26 15:07:17
+REC_07104,include,0.85,,Second language writing anxiety and ChatGPT adoption as writing evaluation tool; education,claude-opus-4-6,2026-02-26 15:07:17
+REC_05055,include,0.85,,Generative AI tool adoption among university teachers; factors influencing intention,claude-opus-4-6,2026-02-26 15:07:17
+REC_05068,uncertain,0.55,,ChatGPT integration in EFL with convergent mixed-methods; unclear if quantitative SEM component,claude-opus-4-6,2026-02-26 15:07:17
+REC_07109,exclude,0.85,E-FT3,ICT usage and digital competence on research performance; not AI focal technology,claude-opus-4-6,2026-02-26 15:07:17
+REC_14123,uncertain,0.55,,"GAI integration in engineering education; enablers and challenges, unclear methodology",claude-opus-4-6,2026-02-26 15:07:17
+REC_05621,include,0.85,,Augmented Intelligence adoption in Lebanese higher education institutions,claude-opus-4-6,2026-02-26 15:07:17
+REC_08688,include,0.95,,EFL teachers' GenAI behavioral intentions using PLS-SEM+fsQCA; education + adoption,claude-opus-4-6,2026-02-26 15:07:17
+REC_13283,exclude,0.8,E-FT5,OwlMentor RAG system design and evaluation; not adoption measurement with SEM,claude-opus-4-6,2026-02-26 15:07:17
+REC_08690,include,0.9,,Educators' GenAI acceptance using extended UTAUT; structural model + higher education,claude-opus-4-6,2026-02-26 15:07:17
+REC_12136,include,0.85,,Engineering students' AI acceptance in blended learning context; education + acceptance,claude-opus-4-6,2026-02-26 15:07:17
+REC_07117,include,0.95,,Student ChatGPT adoption using extended UTAUT2 with SEM; Indian higher education,claude-opus-4-6,2026-02-26 15:07:17
+REC_05682,uncertain,0.5,,"Student perceptions on GAI in HE; widely used but barely trusted, may be descriptive",claude-opus-4-6,2026-02-26 15:07:17
+REC_14129,uncertain,0.5,,"GAI in Mechanical Engineering Education; enablers/challenges, unclear if adoption model used",claude-opus-4-6,2026-02-26 15:07:17
+REC_02891,include,0.85,,"University teachers' adoption readiness for AI assessment; anxiety, resistance, attitudes",claude-opus-4-6,2026-02-26 15:07:17
+REC_07119,include,0.9,,"University teachers' ChatGPT instructional use intentions; cross-sectional quantitative, n=493",claude-opus-4-6,2026-02-26 15:07:17
+REC_07121,uncertain,0.55,,"AI usage as moderator of doctoral persistence; DV is persistence, not AI adoption",claude-opus-4-6,2026-02-26 15:07:17
+REC_02897,uncertain,0.55,,GenAI use in education for social sustainability; unclear standard adoption model,claude-opus-4-6,2026-02-26 15:07:17
+REC_05722,include,0.8,,Students' intention to use ChatGPT for assignments; mixed methods with survey component,claude-opus-4-6,2026-02-26 15:07:17
+REC_07123,include,0.9,,Students' AI chatbot acceptance using TAM+SCT; higher education in Bangladesh,claude-opus-4-6,2026-02-26 15:07:17
+REC_02899,exclude,0.8,E-FT2,"ChatGPT code suggestions and programming performance; measures learning outcomes, not adoption",claude-opus-4-6,2026-02-26 15:07:17
+REC_02898,exclude,0.8,E-FT2,"AI driving entrepreneurial spirit via TAM+TPB; DV is entrepreneurial intention, not AI adoption",claude-opus-4-6,2026-02-26 15:07:17
+REC_13303,include,0.95,,Pre-service music teachers' GenAI acceptance using UTAUT2 with PLS-SEM-ANN,claude-opus-4-6,2026-02-26 15:07:17
+REC_05133,include,0.8,,"University students' GAI acceptance with demographics, creative mindsets, and anxiety",claude-opus-4-6,2026-02-26 15:07:17
+REC_05743,uncertain,0.5,,"AIGC in vocational visual communication design; mixed-methods, unclear SEM component",claude-opus-4-6,2026-02-26 15:07:17
+REC_07129,include,0.9,,Chinese EFL learners' ChatGPT use intention using extended UTAUT with perceived enjoyment,claude-opus-4-6,2026-02-26 15:07:17
+REC_13312,include,0.95,,"AI tool adoption in HE using TAM with PLS-SEM; multimodal literacy, self-efficacy, n=498",claude-opus-4-6,2026-02-26 15:07:17
+REC_14139,include,0.85,,Student GenAI perceptions using TAM+TTF in Saudi higher education,claude-opus-4-6,2026-02-26 15:07:17
+REC_12145,uncertain,0.55,,College students' attitudes and perceptions of ChatGPT in writing; may be descriptive,claude-opus-4-6,2026-02-26 15:07:17
+REC_02906,include,0.9,,AI chatbots for academic support in business education; SEM-based study,claude-opus-4-6,2026-02-26 15:07:17
+REC_14140,uncertain,0.55,,"AI and teacher competencies in OBE; focus on instructional planning/performance, not AI adoption",claude-opus-4-6,2026-02-26 15:07:17
+REC_12146,uncertain,0.5,,EFL student views on ChatGPT in Saudi Arabia; unclear if structured adoption model used,claude-opus-4-6,2026-02-26 15:07:17
+REC_13315,include,0.9,,Mindfulness and AI adoption extending TAM for Chinese media students,claude-opus-4-6,2026-02-26 15:07:17
+REC_02907,include,0.85,,ChatGPT adoption for students' learning effectiveness; education + adoption,claude-opus-4-6,2026-02-26 15:07:17
+REC_00013,exclude,0.95,E-FT4,"Ambient AI Scribes for clinician burnout; healthcare context, not education",claude-opus-4-6,2026-02-26 15:07:17
+REC_10302,uncertain,0.5,,Technology acceptability and AI literacy instrument validation; unclear if AI-specific adoption,claude-opus-4-6,2026-02-26 15:07:17
+REC_14419,uncertain,0.5,,Vietnamese students' ChatGPT perceptions for homework; unclear methodology,claude-opus-4-6,2026-02-26 15:07:17
+REC_14420,include,0.9,,Generative AI on mobile learning adoption using SEM models; college students,claude-opus-4-6,2026-02-26 15:07:17
+REC_15085,include,0.85,,"AI adaptation among Kurdish university students; perceived ease of use, usefulness (TAM)",claude-opus-4-6,2026-02-26 15:07:17
+REC_14421,uncertain,0.55,,"AI influence on student engagement in media content creation; engagement focus, not adoption",claude-opus-4-6,2026-02-26 15:07:17
+REC_14423,uncertain,0.55,,"Lecturers' AI leadership and postgrad teachers' AI integration; mixed-methods, n=62, small sample",claude-opus-4-6,2026-02-26 15:07:17
+REC_00089,exclude,0.8,E-FT5,"Chatbot assistant intervention for learning/engagement; experimental, not adoption measurement",claude-opus-4-6,2026-02-26 15:07:17
+REC_00085,exclude,0.9,E-FT3,"Graphical output for theorem prover; not AI focal technology, computational logic tool",claude-opus-4-6,2026-02-26 15:07:17
+REC_14429,uncertain,0.55,,"AI-supported formative assessment model for pre-service teachers; model design, unclear adoption measurement",claude-opus-4-6,2026-02-26 15:07:17
+REC_15097,uncertain,0.5,,Library instructor perspectives on ChatGPT; may be descriptive survey,claude-opus-4-6,2026-02-26 15:08:47
+REC_14432,uncertain,0.55,,"GenAI utilization as learning tool; cross-sectional, may be descriptive",claude-opus-4-6,2026-02-26 15:08:47
+REC_10560,exclude,0.8,E-FT5,Exploratory survey on ChatGPT in education/healthcare/research; descriptive across multiple domains,claude-opus-4-6,2026-02-26 15:08:47
+REC_13570,exclude,0.85,E-FT1,"Assessment of GenAI usage guidelines at top universities; policy analysis, non-empirical adoption",claude-opus-4-6,2026-02-26 15:08:47
+REC_13572,include,0.8,,GenAI adoption in Saudi HE; dual-perspective on psychological/ethical/institutional factors,claude-opus-4-6,2026-02-26 15:08:47
+REC_00788,exclude,0.8,E-FT2,AI tools' impact on critical thinking disposition; DV is CTD not AI adoption,claude-opus-4-6,2026-02-26 15:08:47
+REC_00061,include,0.9,,Factors affecting GAI use in higher education using TAM; education + adoption model,claude-opus-4-6,2026-02-26 15:08:47
+REC_13573,include,0.9,,AI-based assistive technology acceptance using UTAUT; visually impaired HE students,claude-opus-4-6,2026-02-26 15:08:47
+REC_15115,exclude,0.8,E-FT2,"AI utilization as determinant of self-efficacy/engagement; DV is learning outcomes, not adoption",claude-opus-4-6,2026-02-26 15:08:47
+REC_00790,exclude,0.8,E-FT2,"Digital human instructors and learner satisfaction; measures satisfaction, not AI adoption",claude-opus-4-6,2026-02-26 15:08:47
+REC_10604,exclude,0.9,E-FT3,Metaverse technology adoption in Bangkok metropolitan; not AI focal technology,claude-opus-4-6,2026-02-26 15:08:47
+REC_13594,include,0.9,,"ChatGPT use intentions from perceived value perspective; 676 students, structural model",claude-opus-4-6,2026-02-26 15:08:47
+REC_00791,uncertain,0.5,,Student/teacher perspectives on ChatGPT in European HE; may be descriptive survey,claude-opus-4-6,2026-02-26 15:08:47
+REC_13593,uncertain,0.5,,ChatGPT perception/usage via TAM with RAC method; may not produce standard correlations,claude-opus-4-6,2026-02-26 15:08:47
+REC_00792,include,0.85,,Privacy fatigue and ChatGPT acceptance among undergraduates; acceptance measurement,claude-opus-4-6,2026-02-26 15:08:47
+REC_15118,exclude,0.8,E-FT2,"Knowledge management and research motivation; AI proficiency as moderator, DV is not AI adoption",claude-opus-4-6,2026-02-26 15:08:47
+REC_15135,include,0.9,,ChatGPT adoption in universities using TPACK and UTAUT2; education + adoption model,claude-opus-4-6,2026-02-26 15:08:47
+REC_00794,uncertain,0.55,,"Chinese journalism students' views on AI training in curriculum; bespoke model, not standard adoption",claude-opus-4-6,2026-02-26 15:08:47
+REC_13599,include,0.9,,College students' GAI usage behavior in math learning using UTAUT; education + adoption,claude-opus-4-6,2026-02-26 15:08:47
+REC_14483,include,0.85,,AI adoption and organizational performance in Chinese HEIs with KM mediation,claude-opus-4-6,2026-02-26 15:08:47
+REC_00090,include,0.9,,3D technology + AI adoption in STEM higher education using UTAUT2,claude-opus-4-6,2026-02-26 15:08:47
+REC_00796,uncertain,0.55,,GenAI attitude analysis of undergraduates; unclear if structured adoption model with SEM,claude-opus-4-6,2026-02-26 15:08:47
+REC_14485,uncertain,0.5,,Mobile intelligent agent usability for college students; unclear if AI focal or standard adoption,claude-opus-4-6,2026-02-26 15:08:47
+REC_10621,exclude,0.85,E-FT3,"Gamified cognitive training adherence prediction; ML as method, not AI focal technology",claude-opus-4-6,2026-02-26 15:08:47
+REC_13600,include,0.85,,Individual capabilities influencing GenAI tool benefits in HE; IS Success model,claude-opus-4-6,2026-02-26 15:08:47
+REC_00798,include,0.85,,Technological/ethical/social determinants of GenAI-supported learning; beyond acceptance,claude-opus-4-6,2026-02-26 15:08:47
+REC_15138,exclude,0.95,E-FT4,"Healthcare professionals' KAP toward AI; healthcare context, not education",claude-opus-4-6,2026-02-26 15:08:47
+REC_14493,uncertain,0.5,,Digitised learning system with AI expressions; unclear if AI-specific adoption model,claude-opus-4-6,2026-02-26 15:08:47
+REC_15150,include,0.9,,AIGC technology acceptance by art/design students using TAM; education + acceptance,claude-opus-4-6,2026-02-26 15:08:47
+REC_00092,uncertain,0.5,,Engineering students' GAI perceptions and use; may be descriptive survey,claude-opus-4-6,2026-02-26 15:08:47
+REC_00799,include,0.85,,ChatGPT acceptance and utilization in self-directed learning among Sri Lankan undergrads,claude-opus-4-6,2026-02-26 15:08:47
+REC_10631,include,0.85,,AI writing tools adoption among academic researchers using TRA; cross-sectional quantitative,claude-opus-4-6,2026-02-26 15:08:47
+REC_13604,exclude,0.8,E-FT2,"AI literacy impact on EFL willingness to communicate; DV is communication, not AI adoption",claude-opus-4-6,2026-02-26 15:08:47
+REC_14494,exclude,0.9,E-FT5,"GenAI in early childhood education; N=10, qualitative, too small for quantitative analysis",claude-opus-4-6,2026-02-26 15:08:47
+REC_00093,exclude,0.8,E-FT5,"ITA system design in dual-teacher model; system development, not adoption measurement",claude-opus-4-6,2026-02-26 15:08:47
+REC_00800,include,0.85,,Educators' attitudes and intention toward AI in teaching; modified model in Bangladesh,claude-opus-4-6,2026-02-26 15:08:47
+REC_13605,include,0.8,,AI acceptance as mediator between personality and career self-efficacy; measures AI acceptance,claude-opus-4-6,2026-02-26 15:08:47
+REC_00801,include,0.9,,"Open AI adoption in Indian HE using TCT+TTF; 571 participants, adoption model",claude-opus-4-6,2026-02-26 15:08:47
+REC_13606,exclude,0.85,E-FT5,"RCT on AI feedback for writing development; experiment measuring writing, not adoption",claude-opus-4-6,2026-02-26 15:08:47
+REC_00095,uncertain,0.5,,"GenAI effectiveness as learning tool; assessment of effectiveness, unclear adoption model",claude-opus-4-6,2026-02-26 15:08:47
+REC_00802,uncertain,0.5,,"ChatGPT KAP among Turkish educational science academics; mixed-methods, may be descriptive",claude-opus-4-6,2026-02-26 15:08:47
+REC_15188,include,0.85,,Pre-service teachers' digital competencies and AI acceptance/use; quantitative ex post facto,claude-opus-4-6,2026-02-26 15:08:47
+REC_14534,uncertain,0.55,,Chatbot awareness and usage intention among nursing students; descriptive study,claude-opus-4-6,2026-02-26 15:08:47
+REC_00803,uncertain,0.55,,"AI adoption in MENA HE with 508 participants; mixed-methods, unclear if SEM component",claude-opus-4-6,2026-02-26 15:08:47
+REC_00135,uncertain,0.5,,"College students' readiness to learn AI; readiness ≠ adoption, different construct",claude-opus-4-6,2026-02-26 15:08:47
+REC_13612,include,0.85,,Writing approaches and LLM acceptance in L2 academic writing; measures AI acceptance,claude-opus-4-6,2026-02-26 15:08:47
+REC_13614,include,0.9,,Pre-service teachers' GenAI adoption in future classrooms using extended TAM,claude-opus-4-6,2026-02-26 15:08:47
+REC_00806,uncertain,0.55,,"ChatGPT enhancing learning engagement/outcomes; 687 participants, unclear if adoption model",claude-opus-4-6,2026-02-26 15:08:47
+REC_14553,exclude,0.9,E-FT3,"Healthcare students' attitude toward robotic surgery; robotics, not AI focal technology",claude-opus-4-6,2026-02-26 15:08:47
+REC_15202,include,0.85,,Students' ChatGPT acceptance and academic self-efficacy in personalized learning,claude-opus-4-6,2026-02-26 15:08:47
+REC_10672,include,0.85,,Factors influencing university teachers' GenAI adoption in classroom teaching,claude-opus-4-6,2026-02-26 15:10:01
+REC_14580,uncertain,0.5,,Malaysian dental students' AI knowledge/attitude/perceptions; may be descriptive,claude-opus-4-6,2026-02-26 15:10:01
+REC_15203,uncertain,0.55,,"GenAI in Thai EFL academic writing; mixed-methods, unclear if quantitative SEM",claude-opus-4-6,2026-02-26 15:10:01
+REC_00808,include,0.9,,Chinese pre-service teachers' GAI adoption using UTAUT2 with perceived risk,claude-opus-4-6,2026-02-26 15:10:01
+REC_00809,include,0.85,,AI teaching assistant adoption in Bangladesh HE using AMO framework; 363 responses,claude-opus-4-6,2026-02-26 15:10:01
+REC_00811,include,0.9,,ChatGPT as educational resource for accounting students using expanded TAM,claude-opus-4-6,2026-02-26 15:10:01
+REC_13618,exclude,0.8,E-FT2,"GenAI dependency effect on academic achievement; DV is achievement, not adoption",claude-opus-4-6,2026-02-26 15:10:01
+REC_14639,exclude,0.9,E-FT4,"AI in orthodontic treatment planning; dental/healthcare context, not education",claude-opus-4-6,2026-02-26 15:10:01
+REC_15219,include,0.8,,Prospective teachers' AI acceptance/attitudes; descriptive-correlational design,claude-opus-4-6,2026-02-26 15:10:01
+REC_13621,include,0.95,,AI literacy + TPB-TAM for Chinese university students' GenAI adoption; n=1006,claude-opus-4-6,2026-02-26 15:10:01
+REC_00322,exclude,0.9,E-FT4,"Anthropomorphism and disembodied AIs, consumer re-use behavior; not education",claude-opus-4-6,2026-02-26 15:10:01
+REC_10721,include,0.85,,User willingness to use GenAI using AIDUA framework; researcher context,claude-opus-4-6,2026-02-26 15:10:01
+REC_13623,exclude,0.8,E-FT2,GenAI adoption effect on entrepreneurship intentions; DV is entrepreneurship,claude-opus-4-6,2026-02-26 15:10:01
+REC_00818,include,0.9,,Students' behavioral intention to use GenAI using UTAUT; Nigerian HE,claude-opus-4-6,2026-02-26 15:10:01
+REC_10722,include,0.8,,Continuance intention for AI chatbots in university libraries; emotional mediation,claude-opus-4-6,2026-02-26 15:10:01
+REC_13624,uncertain,0.55,,AI ambivalence and student engagement in engineering education; not standard adoption,claude-opus-4-6,2026-02-26 15:10:01
+REC_00819,exclude,0.8,E-FT2,AIGC credibility identification by students; not measuring AI adoption,claude-opus-4-6,2026-02-26 15:10:01
+REC_15240,include,0.9,,GenAI adoption antecedents using extended DOI with cultural values in HE,claude-opus-4-6,2026-02-26 15:10:01
+REC_15241,include,0.9,,AI tools adoption for English learning using extended TAM; Saudi EFL students,claude-opus-4-6,2026-02-26 15:10:01
+REC_14660,exclude,0.85,E-FT5,AI in African university libraries; qualitative research method,claude-opus-4-6,2026-02-26 15:10:01
+REC_00397,exclude,0.8,E-FT2,"AI-EdTech trust and school burnout; DV is burnout, adoption is IV not DV",claude-opus-4-6,2026-02-26 15:10:01
+REC_00821,include,0.95,,Teachers' GenAI integration using extended UTAUT2 with SEM; n=490,claude-opus-4-6,2026-02-26 15:10:01
+REC_10750,include,0.9,,Indonesian students' GenAI behavioral intention using UTAUT II + trust,claude-opus-4-6,2026-02-26 15:10:01
+REC_00429,uncertain,0.5,,"University students' chatbot use as information resource; exploratory, may be descriptive",claude-opus-4-6,2026-02-26 15:10:01
+REC_10754,uncertain,0.5,,AI tools usage among AP technical institute researchers; descriptive survey,claude-opus-4-6,2026-02-26 15:10:01
+REC_13640,include,0.9,,AI adoption in HE using integrated DOI+TOE+TAM model; institutional level,claude-opus-4-6,2026-02-26 15:10:01
+REC_14677,include,0.85,,"Undergraduate students' GenAI acceptance, anxiety, and self-regulation",claude-opus-4-6,2026-02-26 15:10:01
+REC_00823,include,0.9,,College students' AI reading tools acceptance using TAM+SDT expansion,claude-opus-4-6,2026-02-26 15:10:01
+REC_00456,uncertain,0.5,,Veterinary students' ChatGPT perceptions in Australia; may be descriptive survey,claude-opus-4-6,2026-02-26 15:10:01
+REC_15253,uncertain,0.55,,Somali students' AI attitudes; 474 students but may be descriptive analysis,claude-opus-4-6,2026-02-26 15:10:01
+REC_10761,exclude,0.85,E-FT5,"Two-factor authentication prototype using AI; system development, not adoption",claude-opus-4-6,2026-02-26 15:10:01
+REC_00824,include,0.9,,ChatGPT adoption in Nordic/USA HE using UTAUT2 + personal norms,claude-opus-4-6,2026-02-26 15:10:01
+REC_10768,uncertain,0.5,,"AI in academic writing at U of Duhok; survey, unclear if SEM/adoption model",claude-opus-4-6,2026-02-26 15:10:01
+REC_14681,include,0.85,,AI adoption in Bangladeshi HE; platform preference and adoption factors,claude-opus-4-6,2026-02-26 15:10:01
+REC_15262,exclude,0.85,E-FT4,KAP of AI diagnostics among public health students; healthcare diagnostics context,claude-opus-4-6,2026-02-26 15:10:01
+REC_07551,exclude,0.85,E-FT3,Mobile learning usage during COVID using SEM-ANN; not AI focal technology,claude-opus-4-6,2026-02-26 15:10:01
+REC_12354,include,0.85,,AI adoption in Chinese HE through diffusion theory; management students,claude-opus-4-6,2026-02-26 15:10:01
+REC_01793,include,0.9,,"AI tools usage among undergraduates using TAM with SEM; tech readiness, self-efficacy",claude-opus-4-6,2026-02-26 15:10:01
+REC_02347,include,0.85,,"English speaking with AI; continuance adoption, enjoyment, willingness",claude-opus-4-6,2026-02-26 15:10:01
+REC_15663,uncertain,0.55,,Pre-service teachers' ChatGPT use and teaching competence; adoption is IV not DV,claude-opus-4-6,2026-02-26 15:10:01
+REC_01795,include,0.9,,"AI chatbot intention in education using TAM; AI awareness, self-efficacy",claude-opus-4-6,2026-02-26 15:10:01
+REC_09134,uncertain,0.5,,GenAI utilization by GCC university librarians; may be descriptive survey,claude-opus-4-6,2026-02-26 15:10:01
+REC_11148,include,0.85,,ChatGPT adoption at university using CHASSIS model; 509 students,claude-opus-4-6,2026-02-26 15:10:01
+REC_12356,include,0.85,,Students' ChatGPT satisfaction and engagement using ECM model,claude-opus-4-6,2026-02-26 15:10:01
+REC_07560,exclude,0.8,E-FT5,"AR-based AI education app development; measures educational effect, not adoption",claude-opus-4-6,2026-02-26 15:10:01
+REC_01797,uncertain,0.55,,"Teachers' perspectives on EAITs in Gaza; mixed-methods, unclear SEM component",claude-opus-4-6,2026-02-26 15:10:01
+REC_02349,exclude,0.9,E-FT1,Learning analytics decade synthesis; review/non-empirical,claude-opus-4-6,2026-02-26 15:10:01
+REC_09189,uncertain,0.55,,Lecturers'/students' attitudes toward GenAI in foreign language education,claude-opus-4-6,2026-02-26 15:10:01
+REC_12358,include,0.9,,University students' ChatGPT adoption using TAM+SDT+trust+social influence,claude-opus-4-6,2026-02-26 15:10:01
+REC_15668,uncertain,0.5,,Student perspectives on ChatGPT across disciplines; exploratory analysis,claude-opus-4-6,2026-02-26 15:10:01
+REC_03502,uncertain,0.5,,AI readiness of college students; readiness construct ≠ adoption/acceptance,claude-opus-4-6,2026-02-26 15:12:18
+REC_15671,include,0.85,,ChatGPT acceptance as writing tool in ESL/ESP studies; TAM + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_03505,exclude,0.85,E-FT3,Multimodal learning evaluation in smart classroom; not AI focal technology,claude-opus-4-6,2026-02-26 15:12:18
+REC_12362,uncertain,0.5,,HE faculty insights on GenAI in creative courses; may be qualitative/descriptive,claude-opus-4-6,2026-02-26 15:12:18
+REC_02356,include,0.9,,Students' behavioral intentions to adopt chatbot in HE; adoption + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_07567,include,0.8,,AI-based robots adoption in university education; UTAUT-based + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_03507,exclude,0.8,E-FT2,AI-driven personalized feedback on self-efficacy/engagement; DV is outcomes not adoption,claude-opus-4-6,2026-02-26 15:12:18
+REC_12363,uncertain,0.55,,"Pre-service teacher perspectives on AI; usage and ethical reflection, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_09229,include,0.9,,AI adoption in PR pedagogy using TAM; PR professors + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_01824,exclude,0.85,E-FT3,"Metaverse intent in sustainability education; metaverse, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_07574,include,0.85,,Students' AI robot adoption intention in HE using UTAUT model,claude-opus-4-6,2026-02-26 15:12:18
+REC_15688,uncertain,0.55,,Medical students' AI acceptance/readiness in Iran; may be descriptive KAP,claude-opus-4-6,2026-02-26 15:12:18
+REC_07578,exclude,0.85,E-FT3,"IoT-based smart campus adoption using SEM; IoT, not AI focal technology",claude-opus-4-6,2026-02-26 15:12:18
+REC_01826,exclude,0.8,E-FT2,"AI insights in HRM performance in HE; DV is HRM, not AI adoption",claude-opus-4-6,2026-02-26 15:12:18
+REC_03510,include,0.85,,User stickiness in GAI-IDLE language learning platforms; SDT framework,claude-opus-4-6,2026-02-26 15:12:18
+REC_09302,uncertain,0.55,,"ChatGPT activities, educational outcomes, trust; outcome-focused, unclear adoption model",claude-opus-4-6,2026-02-26 15:12:18
+REC_11177,exclude,0.9,E-FT3,Teaching effectiveness in EMI business courses; not AI focal technology,claude-opus-4-6,2026-02-26 15:12:18
+REC_12367,include,0.85,,Chinese undergrads' purchase intention toward AIGT educational products; multi-theory,claude-opus-4-6,2026-02-26 15:12:18
+REC_03511,exclude,0.8,E-FT2,AI-supported self-regulated learning predicting learner autonomy; DV is autonomy,claude-opus-4-6,2026-02-26 15:12:18
+REC_15776,exclude,0.85,E-FT3,"M-learning adoptability and learning styles; mobile learning, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_01830,include,0.8,,Barriers to AI course assistant adoption; mixed-methods on non-utilization + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_09370,exclude,0.85,E-FT3,"E-learning adoption at Makerere using UTAUT; e-learning, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_07582,exclude,0.85,E-FT5,"Interactive reading with deep learning; system evaluation, not adoption measurement",claude-opus-4-6,2026-02-26 15:12:18
+REC_11185,uncertain,0.55,,"ChatGPT empowering efficacy in Saudi context; mixed methods, unclear SEM",claude-opus-4-6,2026-02-26 15:12:18
+REC_12369,uncertain,0.55,,"AI-powered personalized learning in Vietnam; platform features → performance, not adoption",claude-opus-4-6,2026-02-26 15:12:18
+REC_03513,exclude,0.8,E-FT2,"AI-supported English speaking, SRL and positive psychology; DV is performance",claude-opus-4-6,2026-02-26 15:12:18
+REC_09382,exclude,0.85,E-FT3,"Medical students' digital health integration; dHealth, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_11187,include,0.85,,AI adoption willingness among English students in Jordanian private universities,claude-opus-4-6,2026-02-26 15:12:18
+REC_11188,uncertain,0.55,,Feedback literacy and ChatGPT feedback engagement; non-standard adoption construct,claude-opus-4-6,2026-02-26 15:12:18
+REC_15815,exclude,0.85,E-FT3,"Context-aware adaptive m-learning; mobile learning, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_12372,uncertain,0.55,,"AI literacy/attitudes/achievement; DV is achievement, AI usage as moderator",claude-opus-4-6,2026-02-26 15:12:18
+REC_01071,include,0.9,,Pre-service science teachers' GenAI intention using TPB; education + AI,claude-opus-4-6,2026-02-26 15:12:18
+REC_01833,include,0.8,,AI adoption in Nigerian HE; lecturers' views on AI effectiveness,claude-opus-4-6,2026-02-26 15:12:18
+REC_11189,include,0.85,,AI tools and Saudi translation students using TAM; mixed-methods + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_01834,exclude,0.8,E-FT4,"Graduates' perceptions of AI in campus hiring; recruitment context, not learning",claude-opus-4-6,2026-02-26 15:12:18
+REC_07592,exclude,0.85,E-FT3,"3D holograms in science education; holographic tech, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_11191,include,0.85,,EFL pre-service teachers' ChatGPT acceptance; sequential mixed-methods,claude-opus-4-6,2026-02-26 15:12:18
+REC_07593,exclude,0.8,E-FT4,"Chatbot-human personality congruence; advising system, not education context",claude-opus-4-6,2026-02-26 15:12:18
+REC_11200,uncertain,0.55,,"AI in teacher training, student ChatGPT perceptions; may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_01138,exclude,0.9,E-FT4,ML for persuasive message design; marketing/consumer context,claude-opus-4-6,2026-02-26 15:12:18
+REC_03824,include,0.85,,"AI facilitators' usage in HE; TAM + self-regulation, academic buoyancy",claude-opus-4-6,2026-02-26 15:12:18
+REC_01842,include,0.85,,Faculty AI acceptability in teaching using TAM; lecturers + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_03555,uncertain,0.55,,"AI tools in nursing education; incidence and factors, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_11209,include,0.8,,ChatGPT acceptance and usage among Malaysian university students,claude-opus-4-6,2026-02-26 15:12:18
+REC_12390,uncertain,0.55,,"University professors' AI use, perceptions/challenges; may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_09428,exclude,0.85,E-FT3,"E-learning continuance intention with PLS-SEM; e-learning, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_03558,exclude,0.8,E-FT2,"Nurse educators' creativity-nurturing; DV is creativity, AI readiness moderates",claude-opus-4-6,2026-02-26 15:12:18
+REC_11215,uncertain,0.55,,ChatGPT motivations/affordances for learning; may be descriptive survey,claude-opus-4-6,2026-02-26 15:12:18
+REC_01172,include,0.85,,"AI adoption in legal translation; intrinsic motivation, TAM, Saudi students",claude-opus-4-6,2026-02-26 15:12:18
+REC_01845,include,0.8,,AI for academic writing in Ghana using TPB; postgraduate students,claude-opus-4-6,2026-02-26 15:12:18
+REC_12392,uncertain,0.55,,"Language educators' ChatGPT response; exploratory, 367 educators, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_01846,include,0.85,,Automated classroom assessment in HE using TAM; AI + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_09432,include,0.9,,Chinese university educators' AI acceptance using UTAUT2,claude-opus-4-6,2026-02-26 15:12:18
+REC_12393,uncertain,0.5,,Teachers' perceptions of LLMs in language education; may be descriptive survey,claude-opus-4-6,2026-02-26 15:12:18
+REC_11223,exclude,0.8,E-FT3,"MALL integration barriers for EFL instructors; mobile learning, not AI focal",claude-opus-4-6,2026-02-26 15:12:18
+REC_01848,uncertain,0.55,,"AI impact in Rwandan HE; broad study, unclear methodology",claude-opus-4-6,2026-02-26 15:12:18
+REC_03561,uncertain,0.55,,"AI in nursing education, psychological impact; not standard adoption study",claude-opus-4-6,2026-02-26 15:12:18
+REC_01849,include,0.9,,Graduate students' GenAI use in Ghana using extended UTAUT2,claude-opus-4-6,2026-02-26 15:12:18
+REC_09437,include,0.9,,ChatGPT adoption among undergraduates using UTAUT2 + digital competence,claude-opus-4-6,2026-02-26 15:12:18
+REC_11247,exclude,0.85,E-FT3,Web application for statistics education; not AI focal technology,claude-opus-4-6,2026-02-26 15:12:18
+REC_12397,uncertain,0.55,,Teachers' AI perceptions/agency in Uzbekistan; may be qualitative-heavy,claude-opus-4-6,2026-02-26 15:12:18
+REC_01850,uncertain,0.55,,"GenAI tools use among Ghanaian students; exploratory, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_07612,exclude,0.8,E-FT3,Mobile learning + social media + AI in art education; AI not singular focal tech,claude-opus-4-6,2026-02-26 15:12:18
+REC_12399,exclude,0.85,E-FT5,MobileNetV3 handwritten Chinese recognition; ML system development,claude-opus-4-6,2026-02-26 15:12:18
+REC_01250,uncertain,0.55,,"Knowledge-based chatbot scale for MOOCs; learning experience scale, not adoption",claude-opus-4-6,2026-02-26 15:12:18
+REC_01851,include,0.85,,AI acceptance in Moroccan universities; humanities/social sciences students,claude-opus-4-6,2026-02-26 15:12:18
+REC_11270,uncertain,0.55,,Conversational robots in French education; unclear if chatbot or physical robot,claude-opus-4-6,2026-02-26 15:12:18
+REC_12421,uncertain,0.5,,"Pre-service math teachers' GenAI perceptions; semester-long study, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_01256,exclude,0.8,E-FT2,"Student AI competency self-efficacy scale; measures competency, not adoption",claude-opus-4-6,2026-02-26 15:12:18
+REC_01853,include,0.9,,Muslim students' AI acceptance in Islamic education using extended TAM,claude-opus-4-6,2026-02-26 15:12:18
+REC_03579,exclude,0.8,E-FT2,"Digital competence and pedagogical innovation; AI readiness as moderator, DV is innovation",claude-opus-4-6,2026-02-26 15:12:18
+REC_03885,uncertain,0.55,,"GenAI in Thai English learning; engagement/outcomes, unclear adoption model",claude-opus-4-6,2026-02-26 15:12:18
+REC_09445,uncertain,0.55,,"AI in Moroccan HE; benefits/challenges from academic perception, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_07620,include,0.9,,AI literacy + anxiety + TAM for Chinese scholars' AI behavioral intentions,claude-opus-4-6,2026-02-26 15:12:18
+REC_11281,include,0.85,,"Students' AI willingness in Jordan; 330 students, quantitative",claude-opus-4-6,2026-02-26 15:12:18
+REC_01854,include,0.85,,AI acceptance/use for self-directed research learning in Nigerian postgrads,claude-opus-4-6,2026-02-26 15:12:18
+REC_07624,include,0.8,,KSU arts students' AI behavioral intention and attitude; HE context,claude-opus-4-6,2026-02-26 15:12:18
+REC_03583,uncertain,0.55,,Nursing students' personality traits and AI use/attitudes; may not have SEM,claude-opus-4-6,2026-02-26 15:12:18
+REC_09446,uncertain,0.55,,"Chinese EFL teachers' LLM beliefs; latent profile analysis, not standard SEM",claude-opus-4-6,2026-02-26 15:12:18
+REC_11284,include,0.9,,Students' ChatGPT beliefs → intentions in ESL using TPB,claude-opus-4-6,2026-02-26 15:12:18
+REC_01269,uncertain,0.55,,"Self-esteem and GAI dependency; dependency focus, not standard adoption",claude-opus-4-6,2026-02-26 15:12:18
+REC_03887,include,0.85,,Learners' behavioral intention to use AI in education; adoption model,claude-opus-4-6,2026-02-26 15:12:18
+REC_11285,exclude,0.8,E-FT5,AI-assisted learning in EMI; TTS/voice cloning case study,claude-opus-4-6,2026-02-26 15:12:18
+REC_02461,include,0.85,,UTAUT for early warning system acceptance in HE; AI system + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_01270,uncertain,0.55,,"Fear of innovation to AI dependency; mediating roles, not standard adoption",claude-opus-4-6,2026-02-26 15:12:18
+REC_03585,uncertain,0.55,,"AI in Nigerian nursing education; knowledge/exposure/willingness, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_03889,include,0.85,,"Researchers' AI model use; social influence, self-efficacy, integrity in academia",claude-opus-4-6,2026-02-26 15:12:18
+REC_09450,uncertain,0.55,,"Saudi EFL learners' ChatGPT engagement; mixed-methods, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_07629,include,0.85,,AI adoption for collaboration in inclusive HE; adoption + education,claude-opus-4-6,2026-02-26 15:12:18
+REC_12430,uncertain,0.55,,ChatGPT impact on goal orientations/self-efficacy; outcome focus,claude-opus-4-6,2026-02-26 15:12:18
+REC_03890,include,0.9,,ChatGPT adoption for data analytics using UTAUT; social science students in Oman,claude-opus-4-6,2026-02-26 15:12:18
+REC_11287,exclude,0.8,E-FT5,"Student expectations for adaptive revision; preferences/design, not adoption measurement",claude-opus-4-6,2026-02-26 15:12:18
+REC_09451,include,0.9,,LLM acceptance as integrated reading tool using UTAUT; education,claude-opus-4-6,2026-02-26 15:12:18
+REC_01285,include,0.9,,GenAI use for educational sustainability using SEM-ANN analysis,claude-opus-4-6,2026-02-26 15:12:18
+REC_11288,uncertain,0.55,,GenAI use level and influencing factors; may be descriptive analysis,claude-opus-4-6,2026-02-26 15:12:18
+REC_09454,include,0.85,,Digital mindset and AI integration among open education teachers; sensemaking theory,claude-opus-4-6,2026-02-26 15:12:18
+REC_03895,include,0.85,,AI behavioral intentions and student performance in HE; adoption model,claude-opus-4-6,2026-02-26 15:12:18
+REC_07631,exclude,0.8,E-FT2,"AI adaptive learning platform and reading proficiency; DV is proficiency, not adoption",claude-opus-4-6,2026-02-26 15:12:18
+REC_01860,include,0.9,,AI adoption/use in education using UTAUT2; school and university students,claude-opus-4-6,2026-02-26 15:12:18
+REC_03899,uncertain,0.55,,"Chatbots in HE; mixed-methods with systematic review + survey, may be descriptive",claude-opus-4-6,2026-02-26 15:12:18
+REC_12442,uncertain,0.55,,Students' ChatGPT attitudes in education; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_07632,uncertain,0.55,,"AI literacy structure and factors in Central European HE; attitudes/readiness, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_12446,include,0.85,,MCQ assessment formulation with AI/chatbot; technology readiness acceptance model + education,claude-opus-4-6,2026-02-26 15:14:21
+REC_01291,uncertain,0.55,,"GenAI perceptions in HE; stakeholder analysis over two years, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_12447,exclude,0.8,E-FT5,Peer intelligent agent instructional strategies; experimental intervention measuring oral performance,claude-opus-4-6,2026-02-26 15:14:21
+REC_02479,exclude,0.8,E-FT2,Visual-GenAI learning analytics and student engagement; DV is engagement not adoption,claude-opus-4-6,2026-02-26 15:14:21
+REC_02481,exclude,0.85,E-FT3,"Self-testing prediction in online courses using ML; ML as method, not AI focal adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_12448,uncertain,0.55,,"EFL teachers' AI readiness; readiness assessment, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_09475,exclude,0.8,E-FT2,"AI acceptance impact on critical thinking motivation; DV is CTM, not adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_01434,uncertain,0.55,,"L2 learners' ChatGPT perception and writing proficiency; mixed methods, outcome focus",claude-opus-4-6,2026-02-26 15:14:21
+REC_12462,uncertain,0.55,,AI risks/benefits perceptions in Pakistan; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_09480,uncertain,0.5,,"Medical students' LLM perceptions; multinational cross-sectional, likely descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_01439,include,0.9,,Predicting chatbot use in education using PLS-SEM + ML; adoption model + education,claude-opus-4-6,2026-02-26 15:14:21
+REC_02501,uncertain,0.55,,"AI perception in pharmacy school; ethical concerns, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_03935,include,0.8,,AI fine-tuning and learner adoption factors for low-resource language translation,claude-opus-4-6,2026-02-26 15:14:21
+REC_11304,uncertain,0.5,,Student perceptions/preferences in AI-driven learning; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_01902,include,0.85,,Smart education continuance intention; UTAUT + sensory stimuli + AI education,claude-opus-4-6,2026-02-26 15:14:21
+REC_11308,include,0.85,,AI chatbot acceptance for virtual collaborative learning in Malaysia,claude-opus-4-6,2026-02-26 15:14:21
+REC_12480,exclude,0.85,E-FT3,"Emotion Recognition System awareness/readiness; ERS technology, not AI focal",claude-opus-4-6,2026-02-26 15:14:21
+REC_01453,exclude,0.8,E-FT2,"Perceived TPACK and deep learning; DV is deep learning, not AI adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_01905,uncertain,0.55,,"AI-assisted L2 learning attitude scale validation; attitude construct, not standard adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_02506,uncertain,0.5,,"AI in continuing pharmacy education; institutional practice survey, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_01457,include,0.8,,AI antecedents and demographics in HE; AI usage/benefits/patronization dimensions,claude-opus-4-6,2026-02-26 15:14:21
+REC_01906,include,0.85,,"College students' AI use for L2 learning; self-efficacy, anxiety, attitude + TAM-based",claude-opus-4-6,2026-02-26 15:14:21
+REC_11312,include,0.8,,Indonesian lecturers' AI-based software use for scientific writing; quantitative,claude-opus-4-6,2026-02-26 15:14:21
+REC_01466,include,0.9,,College students' AI tool usage; SOR model + rational behavior + SEM,claude-opus-4-6,2026-02-26 15:14:21
+REC_03939,uncertain,0.55,,Global/educational disparities in GenAI; L2 teacher training usage patterns,claude-opus-4-6,2026-02-26 15:14:21
+REC_02529,include,0.85,,Behavioral intention to use AI Copilot through TAM; faculty/students + education,claude-opus-4-6,2026-02-26 15:14:21
+REC_03959,include,0.8,,GenAI adoption in teacher education; pre-service teachers' adoption attributes,claude-opus-4-6,2026-02-26 15:14:21
+REC_12492,uncertain,0.55,,ChatGPT measurement instruments for student knowledge/usage/attitude; instrument study,claude-opus-4-6,2026-02-26 15:14:21
+REC_01474,include,0.85,,GenAI acceptance and AI anxiety among university students; sequential mediation,claude-opus-4-6,2026-02-26 15:14:21
+REC_01917,exclude,0.8,E-FT2,Chinese learners' grit/self-efficacy on engagement in AI learning; DV is engagement,claude-opus-4-6,2026-02-26 15:14:21
+REC_02530,uncertain,0.5,,"Cross-national student AI attitudes; data article, may be descriptive dataset only",claude-opus-4-6,2026-02-26 15:14:21
+REC_11325,exclude,0.85,E-FT3,"Physics virtual laboratory platform development; POGIL, not AI focal",claude-opus-4-6,2026-02-26 15:14:21
+REC_12493,uncertain,0.55,,"GenAI role perceptions; Saudi students, five axes analysis, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_03989,include,0.85,,ChatGPT usage/WOM among university students and office workers; engagement model,claude-opus-4-6,2026-02-26 15:14:21
+REC_01919,exclude,0.8,E-FT2,GenAI and digital entrepreneurship; DV is entrepreneurial outcomes,claude-opus-4-6,2026-02-26 15:14:21
+REC_10039,include,0.9,,Gen-AI acceptance by K-12 math teachers; TAM + TPB integrated + education,claude-opus-4-6,2026-02-26 15:14:21
+REC_12769,include,0.8,,Faculty resistance to GenAI using Innovation Resistance Theory; HE context,claude-opus-4-6,2026-02-26 15:14:21
+REC_05243,include,0.85,,Students' AI-assisted language learning behavioral intentions; education + adoption,claude-opus-4-6,2026-02-26 15:14:21
+REC_03992,uncertain,0.55,,"Human-AI trust in education; trust study, unclear if standard adoption model",claude-opus-4-6,2026-02-26 15:14:21
+REC_05244,include,0.9,,AI speech evaluation program acceptance using TAM/IMTA; EFL education,claude-opus-4-6,2026-02-26 15:14:21
+REC_03995,uncertain,0.55,,"Nursing students' AI attitudes/readiness; cross-sectional, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_10063,include,0.85,,Academic overload effect on AI use among preservice teachers; mediation model,claude-opus-4-6,2026-02-26 15:14:21
+REC_05290,exclude,0.85,E-FT3,Learning approach shifts in accounting education; not AI focal technology,claude-opus-4-6,2026-02-26 15:14:21
+REC_03997,uncertain,0.55,,"Nursing faculty AI knowledge/skills/attitude; KAP study, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_05350,uncertain,0.55,,Students' perceptions of AI teaching assistants in online education; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_11724,exclude,0.85,E-FT3,"ML algorithms to predict mobile learning intention; mobile learning, not AI focal",claude-opus-4-6,2026-02-26 15:14:21
+REC_01930,include,0.85,,Music teachers' active learning intention and AI using SEM + COR theory,claude-opus-4-6,2026-02-26 15:14:21
+REC_12801,include,0.85,,ChatGPT user satisfaction and continued use intention in HE,claude-opus-4-6,2026-02-26 15:14:21
+REC_10087,uncertain,0.55,,"AI generation gap; Gen Z students vs teachers, may be descriptive/exploratory",claude-opus-4-6,2026-02-26 15:14:21
+REC_12803,include,0.8,,Complex thinking and AI tools adoption among university students,claude-opus-4-6,2026-02-26 15:14:21
+REC_05359,exclude,0.85,E-FT5,"ML tool evaluation with domain experts; system comparison, not adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_12806,uncertain,0.55,,Palestinian faculty AI attitudes; descriptive approach mentioned,claude-opus-4-6,2026-02-26 15:14:21
+REC_05363,exclude,0.8,E-FT4,"Trust in AI and AI tech acceptance; general context, not education-specific",claude-opus-4-6,2026-02-26 15:14:21
+REC_10089,include,0.8,,ChatGPT limitations/risks understanding and willingness to use in education,claude-opus-4-6,2026-02-26 15:14:21
+REC_12807,include,0.85,,ChatGPT usage/attitudes driven by perceptions among university students,claude-opus-4-6,2026-02-26 15:14:21
+REC_04004,uncertain,0.55,,"Turkish ChatGPT scales psychometric validation; nursing students, instrument study",claude-opus-4-6,2026-02-26 15:14:21
+REC_10091,uncertain,0.55,,Disciplinary differences in GenAI engagement; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_12809,exclude,0.8,E-FT2,"AI and academic integrity implications; focus on integrity, not adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_01935,uncertain,0.55,,"Teacher AI scaffolding in special education; n=56, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_01936,include,0.9,,Chinese students' continued DeepSeek learning intentions using TAM-SOR model,claude-opus-4-6,2026-02-26 15:14:21
+REC_12810,include,0.85,,How enjoyment drives GenAI use in HE; innovation skills + adoption,claude-opus-4-6,2026-02-26 15:14:21
+REC_10093,exclude,0.85,E-FT3,"Metaverse continuous intention in HE; metaverse, not AI focal",claude-opus-4-6,2026-02-26 15:14:21
+REC_12812,uncertain,0.55,,AI benefits/challenges for pre-service teachers in Latvia; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_01937,include,0.85,,AI tool acceptance and communication/vocabulary impact among Vietnamese EFL,claude-opus-4-6,2026-02-26 15:14:21
+REC_10094,uncertain,0.55,,"Language learners' ChatGPT approaches; learning approaches, not standard adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_01938,include,0.9,,University students' GenAI behavior in Saudi Arabia through UTAUT,claude-opus-4-6,2026-02-26 15:14:21
+REC_12816,uncertain,0.55,,"Educator AI literacy factors; AI literacy focus, not adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_12818,uncertain,0.55,,"AI dependence and research productivity; dependence → productivity, not adoption",claude-opus-4-6,2026-02-26 15:14:21
+REC_01943,include,0.85,,Generative art learning intention using SEM-ANN; human-AI co-creation + HE,claude-opus-4-6,2026-02-26 15:14:21
+REC_12819,uncertain,0.55,,Perceived institutional support and AI learning perceptions; moderating effects,claude-opus-4-6,2026-02-26 15:14:21
+REC_01945,include,0.9,,Students' AI teaching assistant adoption using TAM; human-like features + HE,claude-opus-4-6,2026-02-26 15:14:21
+REC_05389,include,0.85,,GenAI acceptance scale using UTAUT; student acceptance validation,claude-opus-4-6,2026-02-26 15:14:21
+REC_12820,uncertain,0.55,,Student AI engagement in Jordanian universities; may be descriptive survey,claude-opus-4-6,2026-02-26 15:14:21
+REC_11799,uncertain,0.5,,"AI education for medical students; curriculum evaluation, not adoption model",claude-opus-4-6,2026-02-26 15:14:21
+REC_10125,uncertain,0.55,,Students' intentions to learn AI; learning AI ≠ adopting AI tools,claude-opus-4-6,2026-02-26 15:14:21
+REC_05392,include,0.85,,AI chatbot acceptance in self-directed learning with ICT self-efficacy,claude-opus-4-6,2026-02-26 15:14:21
+REC_11812,uncertain,0.55,,"Radiology residents' AI perceptions; cross-sectional, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_10126,include,0.9,,AI acceptance among pre-service teachers; multigroup analysis + education,claude-opus-4-6,2026-02-26 15:14:21
+REC_12824,uncertain,0.55,,ChatGPT perceptions/experiences/uses in academia; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_10128,include,0.85,,Students' chatbot intention in Lesotho; adoption factors + education,claude-opus-4-6,2026-02-26 15:14:21
+REC_11813,include,0.8,,Health students' ChatGPT attitudes/usage validation in Jordan,claude-opus-4-6,2026-02-26 15:14:21
+REC_05395,include,0.85,,AI text-to-image continuance intention in design education; theoretical model,claude-opus-4-6,2026-02-26 15:14:21
+REC_12827,uncertain,0.55,,Teachers' AI preparedness for classroom assessment; may be descriptive,claude-opus-4-6,2026-02-26 15:14:21
+REC_12825,include,0.85,,Digital media literacy impact on GenAI acceptance in HE,claude-opus-4-6,2026-02-26 15:14:21
+REC_05398,include,0.85,,AI ethical anxiety/risks and students' GenAI use; behavioral intention + education,claude-opus-4-6,2026-02-26 15:14:21
+REC_10130,include,0.85,,ChatGPT adoption/use factors in education; comprehensive study,claude-opus-4-6,2026-02-26 15:14:21
+REC_12830,uncertain,0.55,,"Education students' ChatGPT use; developing country, may be descriptive",claude-opus-4-6,2026-02-26 15:14:21
+REC_10132,include,0.85,,"ChatGPT awareness, acceptance, adoption in HE; trust as cornerstone",claude-opus-4-6,2026-02-26 15:14:21
+REC_10133,include,0.85,,Academic staff GenAI satisfaction and continuous usage in HE,claude-opus-4-6,2026-02-26 15:14:21
+REC_11846,exclude,0.95,E-FT3,"Mobile mental health app RCT; not AI focal, not education adoption context",claude-opus-4-6,2026-02-26 15:14:21
+REC_02035,include,0.85,,ChatGPT adoption in Botswana educational institutions,claude-opus-4-6,2026-02-26 15:14:21
+REC_12836,include,0.85,,Students' psychological barriers to GenAI adoption; threat perception + hesitancy,claude-opus-4-6,2026-02-26 15:14:21
+REC_04299,exclude,0.8,E-FT5,Materials informatics workshop in undergraduate courses; workshop introduction,claude-opus-4-6,2026-02-26 15:14:21
+REC_12837,include,0.9,,Ethnic culture moderating GenAI adoption intention using TAM+UTAUT,claude-opus-4-6,2026-02-26 15:14:21
+REC_10136,include,0.9,,ChatGPT acceptance among Chinese EFL students using UTAUT2,claude-opus-4-6,2026-02-26 15:14:21
+REC_05413,include,0.85,,ChatGPT use and learning performance using BRT+TPB; education,claude-opus-4-6,2026-02-26 15:14:21
+REC_01929,exclude,0.8,E-FT2,"DV is student engagement in AI-mediated English learning, not AI adoption/acceptance",claude-opus-4-6,2026-02-26 15:16:40
+REC_03999,uncertain,0.5,,KAP study on nursing faculty attitudes toward GenAI; may be descriptive without path/correlation data,claude-opus-4-6,2026-02-26 15:16:40
+REC_12838,include,0.82,,ChatGPT intention to use among law educators in Saudi Arabia; likely TAM/UTAUT framework in education,claude-opus-4-6,2026-02-26 15:20:40
+REC_02078,include,0.92,,Extended VAM model for ChatGPT adoption by university students using PLS-SEM and ANN,claude-opus-4-6,2026-02-26 15:20:40
+REC_11856,uncertain,0.5,,Trust in ChatGPT with performance expectancy; context unclear whether education or general population,claude-opus-4-6,2026-02-26 15:20:40
+REC_12840,include,0.92,,TAM+TPB examining factors influencing AI adoption intention in university accounting education,claude-opus-4-6,2026-02-26 15:20:40
+REC_05422,include,0.8,,Continuance intention for ChatGPT in academia; adoption-related DV,claude-opus-4-6,2026-02-26 15:20:40
+REC_10138,exclude,0.75,E-FT2,"DV is peer feedback quality/perceptions, not AI adoption or acceptance",claude-opus-4-6,2026-02-26 15:20:40
+REC_12842,include,0.82,,Use intention of ChatGPT among university students with usability perceptions,claude-opus-4-6,2026-02-26 15:20:40
+REC_05423,include,0.9,,TPB with SEM analyzing behavioral intention to use GAI among university students,claude-opus-4-6,2026-02-26 15:20:40
+REC_12843,include,0.88,,SOR+TAM examining acceptance of GenAI among Chinese undergraduate music students,claude-opus-4-6,2026-02-26 15:20:40
+REC_04601,exclude,0.8,E-FT5,Descriptive study of AI use among school psychologists; no path/correlation model expected,claude-opus-4-6,2026-02-26 15:20:40
+REC_05427,exclude,0.78,E-FT2,"DV is engagement/self-efficacy/anxiety profiles, not AI adoption; LPA methodology",claude-opus-4-6,2026-02-26 15:20:40
+REC_05440,uncertain,0.55,,AI learning systems impact on outcomes for students and employees; may include adoption constructs,claude-opus-4-6,2026-02-26 15:20:40
+REC_12847,include,0.92,,UTAUT model predicting GenAI adoption among STEM students in higher education,claude-opus-4-6,2026-02-26 15:20:40
+REC_04669,uncertain,0.55,,ChatGPT adoption intention with TOEK framework; context unclear whether education-specific,claude-opus-4-6,2026-02-26 15:20:40
+REC_10152,include,0.88,,Task-technology fit theory for ChatGPT use intention among university students,claude-opus-4-6,2026-02-26 15:20:40
+REC_12849,include,0.85,,TAM-based study on ChatGPT in higher education with intrinsic motivation,claude-opus-4-6,2026-02-26 15:20:40
+REC_05446,include,0.9,,Extended TAM examining learner acceptance of GenAI Teaching Assistants via online survey,claude-opus-4-6,2026-02-26 15:20:40
+REC_10153,include,0.85,,AI chatbot adoption factors for online learning in higher education,claude-opus-4-6,2026-02-26 15:20:40
+REC_05448,exclude,0.72,E-FT2,"DV is educational outcomes from GenAI synergy, not AI adoption/acceptance",claude-opus-4-6,2026-02-26 15:20:40
+REC_10199,exclude,0.75,E-FT5,Descriptive survey of dental students opinions on AI; no path/SEM model expected,claude-opus-4-6,2026-02-26 15:20:40
+REC_04680,include,0.9,,SEM analysis of ChatGPT adoption dynamics in higher education,claude-opus-4-6,2026-02-26 15:20:40
+REC_04684,exclude,0.78,E-FT2,"DV is academic achievement via shared metacognition, not AI adoption/acceptance",claude-opus-4-6,2026-02-26 15:20:40
+REC_05456,exclude,0.8,E-FT3,"Humanoid robots in education; scale validation focus, not AI-specific",claude-opus-4-6,2026-02-26 15:20:40
+REC_12856,uncertain,0.55,,Combines TAM with critical thinking theory; unclear if adoption is DV or just framework component,claude-opus-4-6,2026-02-26 15:20:40
+REC_02170,exclude,0.82,E-FT3,Not about AI; SEM-ANN for general academic satisfaction in architecture,claude-opus-4-6,2026-02-26 15:20:40
+REC_04685,include,0.92,,Extended TAM for LLM adoption by teacher education students for writing tasks,claude-opus-4-6,2026-02-26 15:20:40
+REC_04689,exclude,0.75,E-FT2,"DV is learning outcomes and performance, not GenAI adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_02171,exclude,0.78,E-FT2,"DV is computational thinking, not AI adoption or acceptance",claude-opus-4-6,2026-02-26 15:20:40
+REC_05468,exclude,0.78,E-FT3,"M-learning systems, not AI technology specifically",claude-opus-4-6,2026-02-26 15:20:40
+REC_02173,include,0.85,,Technology acceptance of LLMs in engineering education with perceptions and effects,claude-opus-4-6,2026-02-26 15:20:40
+REC_05476,exclude,0.78,E-FT2,"DV is writing skills and reflective thinking, not AI adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_02176,include,0.82,,TPB applied to pre-service teachers AI perception/acceptance in education,claude-opus-4-6,2026-02-26 15:20:40
+REC_05477,uncertain,0.55,,AI usefulness and self-efficacy for intelligent teaching participation; may include adoption constructs,claude-opus-4-6,2026-02-26 15:20:40
+REC_11917,exclude,0.82,E-FT5,"RCT design comparing ChatGPT instruction; DV is skill performance, not adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_02177,include,0.85,,User acceptance study of ChatGPT as reference tool in educational context,claude-opus-4-6,2026-02-26 15:20:40
+REC_04696,uncertain,0.55,,AI acceptance is IV not DV; DV is behavioral engagement with motivation as mediator,claude-opus-4-6,2026-02-26 15:20:40
+REC_02178,uncertain,0.55,,Mixed methods triangulation approach; may have quantitative adoption data but unclear,claude-opus-4-6,2026-02-26 15:20:40
+REC_05484,exclude,0.75,E-FT2,DV is music learning outcomes; experimental design comparing deep learning tech effects,claude-opus-4-6,2026-02-26 15:20:40
+REC_04699,include,0.88,,Determinant factors shaping students willingness to adopt AI in higher education,claude-opus-4-6,2026-02-26 15:20:40
+REC_10267,include,0.85,,TPB examining correlation between attitudes/norms/PBC and ChatGPT academic intentions,claude-opus-4-6,2026-02-26 15:20:40
+REC_05486,include,0.9,,UTAUT-based model predicting ChatGPT adoption and use among HE students,claude-opus-4-6,2026-02-26 15:20:40
+REC_02180,uncertain,0.55,,Large sample n=5894 but perceptions/usage may be descriptive across demographics,claude-opus-4-6,2026-02-26 15:20:40
+REC_13317,uncertain,0.55,,SEM for mindfulness/AI literacy/behavioral intention; media industry context unclear,claude-opus-4-6,2026-02-26 15:20:40
+REC_13759,include,0.82,,UTAUT examining AI adoption in online learning environments at governmental institutions,claude-opus-4-6,2026-02-26 15:20:40
+REC_01476,uncertain,0.55,,Explores gender and usage frequency effects on ChatGPT perceptions; may be descriptive,claude-opus-4-6,2026-02-26 15:20:40
+REC_06535,include,0.82,,Faculty GenAI adoption intention in Indian higher education with readiness and competence,claude-opus-4-6,2026-02-26 15:20:40
+REC_02181,uncertain,0.55,,Focus on academic integrity perceptions of GenAI; may be descriptive rather than adoption model,claude-opus-4-6,2026-02-26 15:20:40
+REC_13761,uncertain,0.55,,AI anxiety in e-learning with technology acceptance mention; unclear if adoption is DV,claude-opus-4-6,2026-02-26 15:20:40
+REC_00503,exclude,0.78,E-FT2,"Scale development and validation for GenAI awareness, not adoption modeling",claude-opus-4-6,2026-02-26 15:20:40
+REC_01487,include,0.82,,AI teacherbot channel-switching intention from offline to online; adoption-related DV,claude-opus-4-6,2026-02-26 15:20:40
+REC_06536,include,0.85,,EACM model examining educators chatbot acceptance intention with moderating autocratic behavior,claude-opus-4-6,2026-02-26 15:20:40
+REC_02183,include,0.85,,Technology acceptance of AIGC-assisted design courses among design students,claude-opus-4-6,2026-02-26 15:20:40
+REC_06537,uncertain,0.5,,Cross-sectional survey on ChatGPT practices and perspectives; may be descriptive,claude-opus-4-6,2026-02-26 15:20:40
+REC_13764,uncertain,0.55,,AIAT adoption studied but DV appears to be mental health associations,claude-opus-4-6,2026-02-26 15:20:40
+REC_01489,include,0.88,,TAM+trust examining GenAI adoption intentions among Chinese university students,claude-opus-4-6,2026-02-26 15:20:40
+REC_13765,include,0.85,,Empirical analysis of ChatGPT adoption in higher education,claude-opus-4-6,2026-02-26 15:20:40
+REC_02185,include,0.82,,TAM integrated with L2MSS examining ChatGPT acceptance in language learning,claude-opus-4-6,2026-02-26 15:20:40
+REC_01492,include,0.82,,"GenAI adoption for thesis writing examining self-efficacy, time pressure, and trust",claude-opus-4-6,2026-02-26 15:20:40
+REC_01494,uncertain,0.55,,DV is ChatGPT literacy; includes usefulness/trust but primary focus on literacy not adoption,claude-opus-4-6,2026-02-26 15:20:40
+REC_06542,include,0.85,,UTAUT examining AI acceptance and competence among English teachers at Macao universities,claude-opus-4-6,2026-02-26 15:20:40
+REC_13774,exclude,0.8,E-FT3,Not AI technology; general digital vs traditional learning comparison in early childhood,claude-opus-4-6,2026-02-26 15:20:40
+REC_06551,exclude,0.78,E-FT2,"DV is student enrollment decisions influenced by AI marketing, not AI technology adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_02189,include,0.88,,UTAUT+activity theory for GenAI integration in EFL teaching at Indonesian HE,claude-opus-4-6,2026-02-26 15:20:40
+REC_02193,uncertain,0.55,,Trust instrument development for AI-EdTech adoption; may be primarily scale development,claude-opus-4-6,2026-02-26 15:20:40
+REC_06610,include,0.82,,Institutional environment impact on AI adoption value perception and intention in HE,claude-opus-4-6,2026-02-26 15:20:40
+REC_13405,exclude,0.75,E-FT2,"DV is perception of AI tools moderated by individual differences, not adoption/acceptance",claude-opus-4-6,2026-02-26 15:20:40
+REC_13812,uncertain,0.55,,"Knowledge, acceptance, and perception of ChatGPT among trainee teachers; may be descriptive",claude-opus-4-6,2026-02-26 15:20:40
+REC_01541,exclude,0.78,E-FT2,"DV is learner engagement and goal-setting outcomes, not chatbot adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_02195,uncertain,0.55,,SEM with AI dependency as DV; dependency is use-related but negative framing,claude-opus-4-6,2026-02-26 15:20:40
+REC_13814,include,0.82,,AI acceptance and use among Portuguese university students,claude-opus-4-6,2026-02-26 15:20:40
+REC_01542,exclude,0.78,E-FT2,"DV is learning success in ALEKS ITS, not technology adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_06612,exclude,0.82,E-FT2,"DV is entrepreneurial intentions via cyberspace collaboration, not AI adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_00700,exclude,0.78,E-FT3,"Mobile learning system, not AI-specific technology",claude-opus-4-6,2026-02-26 15:20:40
+REC_06645,uncertain,0.55,,AI tools use and attitudes in HE; could be descriptive or include adoption model,claude-opus-4-6,2026-02-26 15:20:40
+REC_13413,include,0.85,,UTAUT for AI diagnosis support system adoption among medical students,claude-opus-4-6,2026-02-26 15:20:40
+REC_06647,include,0.82,,AI adoption factors among university librarians in organizational/tech/environmental contexts,claude-opus-4-6,2026-02-26 15:20:40
+REC_02198,include,0.85,,SDT+continuance use intention for AI tools in business education cross-country,claude-opus-4-6,2026-02-26 15:20:40
+REC_13872,uncertain,0.55,,Mixed methods on GenAI in health professions education; may be descriptive,claude-opus-4-6,2026-02-26 15:20:40
+REC_13878,exclude,0.8,E-FT3,E-textbooks are not AI technology,claude-opus-4-6,2026-02-26 15:20:40
+REC_01674,include,0.9,,SEM examining GenAI acceptance for classroom adoption,claude-opus-4-6,2026-02-26 15:20:40
+REC_02200,uncertain,0.55,,Paradoxes of ChatGPT benefits and risks in HE; unclear if adoption is DV,claude-opus-4-6,2026-02-26 15:20:40
+REC_01677,uncertain,0.55,,Perceptions survey of GenAI in Saudi universities; may be descriptive,claude-opus-4-6,2026-02-26 15:20:40
+REC_02202,uncertain,0.55,,GenAI adaptation for teaching/learning with satisfaction focus; unclear adoption modeling,claude-opus-4-6,2026-02-26 15:20:40
+REC_13882,uncertain,0.55,,Perceptions of GenAI as learning tools; likely descriptive,claude-opus-4-6,2026-02-26 15:20:40
+REC_01679,exclude,0.82,E-FT3,"Maritime simulator training, not AI technology",claude-opus-4-6,2026-02-26 15:20:40
+REC_02203,include,0.9,,TAM with 9 variables predicting ChatGPT use among university students,claude-opus-4-6,2026-02-26 15:20:40
+REC_06702,uncertain,0.55,,AI readiness among academic librarians; focus on competence development,claude-opus-4-6,2026-02-26 15:20:40
+REC_06707,uncertain,0.5,,AI tools awareness/utilization/perception among graduate students; may be descriptive,claude-opus-4-6,2026-02-26 15:20:40
+REC_06708,exclude,0.8,E-FT3,Digital competencies in academic libraries; not AI technology,claude-opus-4-6,2026-02-26 15:20:40
+REC_00730,exclude,0.78,E-FT3,"Technology-based exams, not AI-specific technology",claude-opus-4-6,2026-02-26 15:20:40
+REC_00734,uncertain,0.55,,Digital literacy effects on AI education perception; DV is perception not adoption,claude-opus-4-6,2026-02-26 15:20:40
+REC_00738,exclude,0.75,E-FT3,"Big data adoption, not AI-specific technology",claude-opus-4-6,2026-02-26 15:20:40
+REC_13894,exclude,0.78,E-FT2,"DV is learning burnout from GenAI misuse, not AI adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_00742,exclude,0.78,E-FT2,"DV is computational thinking efficacy, not AI adoption",claude-opus-4-6,2026-02-26 15:20:40
+REC_06742,include,0.88,,Continuance intention for GenAI tools among Indian university students,claude-opus-4-6,2026-02-26 15:20:40
+REC_00743,include,0.85,,AI chatbot acceptance for academic advising in higher education,claude-opus-4-6,2026-02-26 15:20:40
+REC_01736,exclude,0.75,E-FT4,"ABA therapy context (healthcare/clinical), not education",claude-opus-4-6,2026-02-26 15:20:40
+REC_13908,exclude,0.75,E-FT2,"DV is creativity perception, not AI adoption/acceptance",claude-opus-4-6,2026-02-26 15:20:40
+REC_13490,uncertain,0.5,,ChatGPT perception in academic tasks; may include adoption or be outcome-focused,claude-opus-4-6,2026-02-26 15:20:40
+REC_02218,uncertain,0.5,,Mixed methods on AI as communicator in international college; may be descriptive,claude-opus-4-6,2026-02-26 15:20:40
+REC_00749,exclude,0.75,E-FT3,"Learning analytics tools for career decisions, not AI-specific technology adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_13491,exclude,0.8,E-FT1,Discussion of ethical implications of LLMs in academia; non-empirical/theoretical,claude-opus-4-6,2026-02-26 15:24:35
+REC_02220,include,0.82,,"PSTs AI competencies, affective dispositions, and intention to integrate AI in teaching",claude-opus-4-6,2026-02-26 15:24:35
+REC_01746,exclude,0.75,E-FT2,"DV is perception of GenAI-generated MCQs, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_00752,exclude,0.78,E-FT3,"Learning analytics systems adoption, not AI-specific",claude-opus-4-6,2026-02-26 15:24:35
+REC_13917,exclude,0.78,E-FT4,"Customer service/marketing context for AI chatbot engagement, not education",claude-opus-4-6,2026-02-26 15:24:35
+REC_13514,uncertain,0.55,,Veterinary students AI perceptions; education context but may be descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_01747,exclude,0.78,E-FT2,"DV is student motivation from ChatGPT-generated quizzes, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_01749,uncertain,0.5,,LLM familiarity/usage/ethics in school psychology programs; likely descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_01757,include,0.88,,SEM examining AI-supported teaching behavior adoption among tertiary educators,claude-opus-4-6,2026-02-26 15:24:35
+REC_00760,include,0.88,,Extended TCT for ChatGPT continuance and recommendation intention in Indian HE,claude-opus-4-6,2026-02-26 15:24:35
+REC_13934,exclude,0.75,E-FT5,"Evaluation tool development for GenAI perception, not adoption modeling",claude-opus-4-6,2026-02-26 15:24:35
+REC_01761,include,0.9,,Integrated SDT+social dynamics+TAM for ChatGPT continuance intention in HE,claude-opus-4-6,2026-02-26 15:24:35
+REC_06858,include,0.82,,Digital transformation impact on AI adoption intention in higher education,claude-opus-4-6,2026-02-26 15:24:35
+REC_13524,include,0.82,,Technology acceptance models applied to ChatGPT in higher education,claude-opus-4-6,2026-02-26 15:24:35
+REC_01763,exclude,0.75,E-FT2,"Scale development for GenAI competency self-efficacy, not adoption modeling",claude-opus-4-6,2026-02-26 15:24:35
+REC_13952,uncertain,0.55,,Conceptual framework for AI adoption in nursing education; unclear if empirical,claude-opus-4-6,2026-02-26 15:24:35
+REC_06859,exclude,0.78,E-FT2,"DV is student engagement/performance from AI-teacher collaboration, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_06866,exclude,0.78,E-FT5,"System design paper for GenAI assignment platform, not adoption study",claude-opus-4-6,2026-02-26 15:24:35
+REC_13525,include,0.8,,Technology acceptance of ChatGPT influenced by cultural background in ME universities,claude-opus-4-6,2026-02-26 15:24:35
+REC_06867,include,0.85,,AI acceptance model in HE examining both teaching staff and student perspectives,claude-opus-4-6,2026-02-26 15:24:35
+REC_01764,include,0.9,,Extended TAM with trust and motivation for AI coding assistant adoption in education,claude-opus-4-6,2026-02-26 15:24:35
+REC_00767,include,0.82,,ChatGPT acceptance and use in academic community,claude-opus-4-6,2026-02-26 15:24:35
+REC_01776,uncertain,0.55,,ADWTs and academic integrity perspectives; not clearly adoption modeling,claude-opus-4-6,2026-02-26 15:24:35
+REC_06868,include,0.88,,ISS+SOR framework for ChatGPT continuance usage intention in HE,claude-opus-4-6,2026-02-26 15:24:35
+REC_01777,uncertain,0.55,,KAP study on ChatGPT among Gen Z students; may be descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_13546,uncertain,0.55,,Chatbot use in language learning; pre-service teachers perspectives may be descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_02908,exclude,0.75,E-FT2,"DV is creativity across regions, not GenAI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_11339,uncertain,0.55,,Mixed methods on AI for assessments; may include quantitative adoption data,claude-opus-4-6,2026-02-26 15:24:35
+REC_14142,include,0.9,,SEM-ANN with S-O-R examining trust and willingness to use GenAI in HE,claude-opus-4-6,2026-02-26 15:24:35
+REC_02909,exclude,0.78,E-FT2,"DV is digital entrepreneurial behavior using SOR, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_12163,uncertain,0.55,,TAM included but DV appears to be personalized learning outcomes via AI systems,claude-opus-4-6,2026-02-26 15:24:35
+REC_14886,include,0.9,,UTAUT2 for AI chatbot adoption in higher education institutions,claude-opus-4-6,2026-02-26 15:24:35
+REC_14143,uncertain,0.55,,"DV is student loyalty/engagement with ChatGPT, not adoption per se",claude-opus-4-6,2026-02-26 15:24:35
+REC_02910,include,0.88,,GenAI adoption in Chinese business schools using valence framework,claude-opus-4-6,2026-02-26 15:24:35
+REC_07880,include,0.82,,Pre-service STEM teachers AI integration readiness and adoption intention,claude-opus-4-6,2026-02-26 15:24:35
+REC_08746,include,0.85,,AI acceptance determinants among undergraduate students,claude-opus-4-6,2026-02-26 15:24:35
+REC_14887,uncertain,0.55,,SEM+ML hybrid for AI in education; mentions government agencies context,claude-opus-4-6,2026-02-26 15:24:35
+REC_14144,uncertain,0.55,,"DV is learning satisfaction with ChatGPT, not adoption/acceptance per se",claude-opus-4-6,2026-02-26 15:24:35
+REC_07882,include,0.82,,Behavioral intentions toward ChatGPT in higher education,claude-opus-4-6,2026-02-26 15:24:35
+REC_08773,uncertain,0.55,,"TPACK focus on perceived benefits and competency, not adoption modeling",claude-opus-4-6,2026-02-26 15:24:35
+REC_12167,include,0.9,,Extended UTAUT for AI tool adoption among Ethiopian university students,claude-opus-4-6,2026-02-26 15:24:35
+REC_14171,include,0.88,,Integrated TAM+ECT+TTF for ChatGPT perceived usefulness in Polish HE,claude-opus-4-6,2026-02-26 15:24:35
+REC_11370,uncertain,0.55,,AI for assessment perception and factors; may not model adoption as DV,claude-opus-4-6,2026-02-26 15:24:35
+REC_11378,exclude,0.75,E-FT5,Latent Profile Analysis of ChatGPT use purposes; no path/correlation model expected,claude-opus-4-6,2026-02-26 15:24:35
+REC_12169,include,0.9,,Extended TAM for AI behavioral intention among Malaysian accounting students,claude-opus-4-6,2026-02-26 15:24:35
+REC_14173,uncertain,0.55,,AI adoption is IV not DV; DV is teaching effectiveness,claude-opus-4-6,2026-02-26 15:24:35
+REC_07973,exclude,0.75,E-FT2,"DV is writing perceptions/experiences with ChatGPT feedback, not adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_12181,uncertain,0.55,,Teachers attitudes and use of ChatGPT in HE; may be descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_05816,include,0.85,,BRT examining ChatGPT intention among tourism/hospitality HE students,claude-opus-4-6,2026-02-26 15:24:35
+REC_14932,exclude,0.78,E-FT2,"DV is writing performance/perceptions with ChatGPT, not adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_07974,exclude,0.75,E-FT2,"DV is willingness to communicate in AI-enhanced EFL, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_14178,uncertain,0.55,,Mixed methods on personality and ChatGPT integration; may have path data,claude-opus-4-6,2026-02-26 15:24:35
+REC_02990,uncertain,0.55,,Descriptive 20-country survey of GenAI adoption; likely no SEM/path model,claude-opus-4-6,2026-02-26 15:24:35
+REC_07975,uncertain,0.55,,Includes comprehensive literature review component; may not be purely empirical,claude-opus-4-6,2026-02-26 15:24:35
+REC_12195,uncertain,0.5,,AI in English teaching at vocational colleges; may be descriptive/practice-focused,claude-opus-4-6,2026-02-26 15:24:35
+REC_11395,exclude,0.75,E-FT2,"Focus on AI literacy need and institutional support, not adoption modeling",claude-opus-4-6,2026-02-26 15:24:35
+REC_02997,include,0.92,,UTAUT3 extended with trust for GenAI adoption among French management students,claude-opus-4-6,2026-02-26 15:24:35
+REC_05837,include,0.82,,TAM for ChatGPT health discourse use intention among university students,claude-opus-4-6,2026-02-26 15:24:35
+REC_07979,exclude,0.75,E-FT5,Scale development and validation for AI acceptance in research creativity,claude-opus-4-6,2026-02-26 15:24:35
+REC_08895,uncertain,0.55,,Student perspectives on ChatGPT in HE classroom; likely descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_14208,include,0.9,,TAM for GenAI adoption with 911 Thai HE students across 10 universities,claude-opus-4-6,2026-02-26 15:24:35
+REC_11429,include,0.82,,Mixed methods examining behavioral intention to use AI in EFL learning,claude-opus-4-6,2026-02-26 15:24:35
+REC_14210,include,0.85,,STIN model for chatbot adoption in Indonesian HE online learning,claude-opus-4-6,2026-02-26 15:24:35
+REC_07982,include,0.92,,PLS-SEM and fsQCA for GenAI continuance intention in language education,claude-opus-4-6,2026-02-26 15:24:35
+REC_08927,uncertain,0.55,,AI impact on academic excellence at university; unclear if adoption is DV,claude-opus-4-6,2026-02-26 15:24:35
+REC_12215,exclude,0.75,E-FT2,"DV is workforce/Industry 5.0 perceptions, not AI adoption in education",claude-opus-4-6,2026-02-26 15:24:35
+REC_14211,include,0.88,,TAM with learning motivation for Deepseek GenAI adoption in Indian HE,claude-opus-4-6,2026-02-26 15:24:35
+REC_14956,exclude,0.75,E-FT5,"Exploratory study on ChatGPT for test item generation, not adoption model",claude-opus-4-6,2026-02-26 15:24:35
+REC_07983,exclude,0.75,E-FT2,"DV is academic engagement and needs satisfaction, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_08953,uncertain,0.55,,ChatGPT adoption factors exploration; context unclear whether education-specific,claude-opus-4-6,2026-02-26 15:24:35
+REC_11444,uncertain,0.55,,Healthcare trainees in educational context; rapid survey may be descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_12224,uncertain,0.55,,AI adoption implications in university; may be descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_14227,uncertain,0.55,,Exploratory study of chatbot perception among online postgraduate students,claude-opus-4-6,2026-02-26 15:24:35
+REC_08955,exclude,0.75,E-FT5,AKA descriptive study of AI among medical students; no path model expected,claude-opus-4-6,2026-02-26 15:24:35
+REC_12226,include,0.78,,Exploring facilitating conditions and predictors of AI product usage among business students,claude-opus-4-6,2026-02-26 15:24:35
+REC_14959,exclude,0.78,E-FT3,"Mobile learning continuance, not AI-specific technology",claude-opus-4-6,2026-02-26 15:24:35
+REC_11451,include,0.88,,UTAUT for AI tool adoption and use among HE teachers in India,claude-opus-4-6,2026-02-26 15:24:35
+REC_08958,include,0.9,,Integrated TAM+SCT+UTAUT2 for GenAI adoption among Egyptian academics,claude-opus-4-6,2026-02-26 15:24:35
+REC_12227,uncertain,0.55,,Teacher perspectives on AI in education; may be descriptive inventory,claude-opus-4-6,2026-02-26 15:24:35
+REC_14233,uncertain,0.5,,Exploratory research N=64 on Italian academics ChatGPT practices; likely descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_07986,exclude,0.75,E-FT2,"DV is emotional and academic experiences in AI-enhanced learning, not adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_05925,include,0.85,,SEM examining personality traits and ChatGPT acceptance in language learning,claude-opus-4-6,2026-02-26 15:24:35
+REC_08960,include,0.85,,AI adoption factors among Pakistani university students,claude-opus-4-6,2026-02-26 15:24:35
+REC_11460,include,0.82,,Student acceptance of ML-assisted recommendation system for competency development,claude-opus-4-6,2026-02-26 15:24:35
+REC_07987,exclude,0.75,E-FT2,"DV is teaching competency, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_12229,uncertain,0.5,,AI challenges on learning process in HE; may be opinion/descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_07988,include,0.85,,GenAI acceptance among EFL teachers with use experience as moderator,claude-opus-4-6,2026-02-26 15:24:35
+REC_11463,include,0.85,,TTF and moral obligations predicting GenAI behavioral intention in education,claude-opus-4-6,2026-02-26 15:24:35
+REC_12234,exclude,0.75,E-FT2,"DV is student experience/satisfaction via predictive models, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_14245,include,0.82,,Google Gemini acceptance and usage among HE students,claude-opus-4-6,2026-02-26 15:24:35
+REC_14975,include,0.82,,TAM for ChatGPT perceptions and use among Omani EFL learners,claude-opus-4-6,2026-02-26 15:24:35
+REC_05938,include,0.88,,UTAUT for AI adaptive learning system acceptance among HE instructors,claude-opus-4-6,2026-02-26 15:24:35
+REC_07990,exclude,0.75,E-FT2,"DV is motivation/regulation/self-efficacy in PE, not AI adoption",claude-opus-4-6,2026-02-26 15:24:35
+REC_14976,include,0.8,,AI acceptance in university communication students,claude-opus-4-6,2026-02-26 15:24:35
+REC_07992,include,0.85,,TPB for AI adoption in self-regulated English learning with motivation and DL,claude-opus-4-6,2026-02-26 15:24:35
+REC_11498,uncertain,0.55,,AI readiness among medical students; may be descriptive without path model,claude-opus-4-6,2026-02-26 15:24:35
+REC_14248,include,0.82,,ChatGPT acceptance with attitudes and intentions in HE mixed methods,claude-opus-4-6,2026-02-26 15:24:35
+REC_03272,include,0.88,,UTAUT with trust and satisfaction for chatbot adoption in Indian HE,claude-opus-4-6,2026-02-26 15:24:35
+REC_11503,uncertain,0.55,,Student perspective on GenAI in graphic design education; may be descriptive,claude-opus-4-6,2026-02-26 15:24:35
+REC_14983,include,0.9,,UTAUT+SEM examining AI adoption among Moroccan university teachers with 75 professors,claude-opus-4-6,2026-02-26 15:26:27
+REC_08994,include,0.82,,Normative influence on GenAI adoption among HE students,claude-opus-4-6,2026-02-26 15:26:27
+REC_11504,include,0.88,,Behavioral intention for ChatGPT among mathematics student teachers in HE,claude-opus-4-6,2026-02-26 15:26:27
+REC_12264,include,0.85,,"Structural model for ChatGPT adoption with EU, PU, hedonic motivation among science students",claude-opus-4-6,2026-02-26 15:26:27
+REC_14984,uncertain,0.55,,ChatGPT adoption in HE examining potentials and challenges; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_06017,uncertain,0.55,,Synthetic index of AI tools impact in HE; methodology unclear for adoption,claude-opus-4-6,2026-02-26 15:26:27
+REC_07998,uncertain,0.55,,GenAI features and learning engagement via trust/self-efficacy; DV is engagement not adoption,claude-opus-4-6,2026-02-26 15:26:27
+REC_09002,uncertain,0.55,,Video learning combined with AI in engineering; unclear if AI adoption is DV,claude-opus-4-6,2026-02-26 15:26:27
+REC_12265,exclude,0.75,E-FT4,"Business/organizational context for AI in management accounting, not education",claude-opus-4-6,2026-02-26 15:26:27
+REC_11505,uncertain,0.55,,GenAI perspectives among Canadian undergraduates; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_14280,include,0.88,,UTAUT for GenAI adoption with social norms moderation among social science students,claude-opus-4-6,2026-02-26 15:26:27
+REC_09005,exclude,0.75,E-FT5,Descriptive survey of AI knowledge/perception among library professionals,claude-opus-4-6,2026-02-26 15:26:27
+REC_11512,uncertain,0.55,,Cross-sectional study of AI adoption among medical/dental students; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_14281,uncertain,0.55,,LLM readiness among Zanzibari HE students; may be descriptive preparedness study,claude-opus-4-6,2026-02-26 15:26:27
+REC_08000,include,0.9,,Integrated IDT+TAM for AI chatbot use intention among Chinese college students,claude-opus-4-6,2026-02-26 15:26:27
+REC_14992,uncertain,0.55,,Cross-sectional study of AI attitude/readiness among medical students; may have regression,claude-opus-4-6,2026-02-26 15:26:27
+REC_12281,uncertain,0.55,,GenAI adoption patterns and ethical concerns among 226 Turkish students; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_14994,include,0.82,,AI virtual teacher acceptance among university students,claude-opus-4-6,2026-02-26 15:26:27
+REC_06023,exclude,0.75,E-FT5,Pilot study on chatbot implementation in language learning; not adoption model,claude-opus-4-6,2026-02-26 15:26:27
+REC_08001,include,0.82,,SDT+flow for AI-assisted learning continuation intention in music education,claude-opus-4-6,2026-02-26 15:26:27
+REC_11524,uncertain,0.55,,AI perceptions among radiologic technology students; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_15012,include,0.82,,TAM-based assessment of ChatGPT usability and acceptability among university educators,claude-opus-4-6,2026-02-26 15:26:27
+REC_08002,exclude,0.75,E-FT2,"Scale development and validation for GenAI attitudes, not adoption modeling",claude-opus-4-6,2026-02-26 15:26:27
+REC_03309,include,0.85,,TRA+TPB+UTAUT for AI adoption intention among Palestinian university lecturers,claude-opus-4-6,2026-02-26 15:26:27
+REC_06026,exclude,0.8,E-FT3,Deep learning refers to pedagogical theory not AI technology; ideological courses,claude-opus-4-6,2026-02-26 15:26:27
+REC_09049,exclude,0.75,E-FT2,"DV is EFL writing learning outcomes, not ChatGPT adoption",claude-opus-4-6,2026-02-26 15:26:27
+REC_12299,include,0.8,,AI readiness and integration factors among 465 faculty members at KFU,claude-opus-4-6,2026-02-26 15:26:27
+REC_03379,uncertain,0.55,,AI attitudes/perceptions among medical students; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_15018,exclude,0.75,E-FT5,"System implementation study; DV is assessment outcomes, not adoption",claude-opus-4-6,2026-02-26 15:26:27
+REC_06030,uncertain,0.55,,AI perceptions and emotional reactions in arts classroom; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_12300,uncertain,0.5,,Mixed methods with focus groups on AI attitudes in Ukrainian HE; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_11607,uncertain,0.55,,Descriptive survey of AI perception/knowledge/readiness among teaching faculty,claude-opus-4-6,2026-02-26 15:26:27
+REC_12304,exclude,0.78,E-FT5,Explicitly descriptive design for ChatGPT in Arab student learning,claude-opus-4-6,2026-02-26 15:26:27
+REC_09052,include,0.88,,Integrated TAM+ECT+TRA for GenAI sustained engagement behavior among graduate students,claude-opus-4-6,2026-02-26 15:26:27
+REC_15023,uncertain,0.55,,DV is digital/sustainable competencies; AI as independent variable not adoption DV,claude-opus-4-6,2026-02-26 15:26:27
+REC_06033,include,0.92,,UTAUT2 with PLS-SEM for ChatGPT use intention among 578 Nepalese students,claude-opus-4-6,2026-02-26 15:26:27
+REC_15024,uncertain,0.55,,DV is AI dependence among pharmacy students; self-efficacy and anxiety as predictors,claude-opus-4-6,2026-02-26 15:26:27
+REC_03420,exclude,0.85,E-FT3,"Near-peer tutoring for surgical education, not AI technology",claude-opus-4-6,2026-02-26 15:26:27
+REC_09054,include,0.82,,"Structural relationships among GenAI perceptions, BI, and learning agency",claude-opus-4-6,2026-02-26 15:26:27
+REC_11624,exclude,0.78,E-FT2,"Scale development for fear of AI among nursing students, not adoption modeling",claude-opus-4-6,2026-02-26 15:26:27
+REC_12309,include,0.8,,AI tools adoption in engineering education with correlational design in Philippines,claude-opus-4-6,2026-02-26 15:26:27
+REC_06038,exclude,0.78,E-FT3,"Hybrid learning models post-pandemic, not AI-specific technology",claude-opus-4-6,2026-02-26 15:26:27
+REC_08027,uncertain,0.55,,"Focus on GenAI regulation perceptions and compliance, not adoption model",claude-opus-4-6,2026-02-26 15:26:27
+REC_09055,uncertain,0.55,,AI training impact on creative learning among communication students,claude-opus-4-6,2026-02-26 15:26:27
+REC_06039,include,0.85,,Behavioral intention predictors for ChatGPT in Somali higher education,claude-opus-4-6,2026-02-26 15:26:27
+REC_08028,uncertain,0.55,,"Focus on policy effectiveness for GenAI, not adoption modeling",claude-opus-4-6,2026-02-26 15:26:27
+REC_11657,uncertain,0.55,,General technology-enhanced learning in Malaysia; may include broader than AI,claude-opus-4-6,2026-02-26 15:26:27
+REC_12312,uncertain,0.55,,EFL student perspectives on ChatGPT in Indonesia; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_14380,uncertain,0.55,,Perceptions on AI education integration in medical school; may be descriptive,claude-opus-4-6,2026-02-26 15:26:27
+REC_11661,include,0.88,,Extended TAM with mobility/convenience for ChatGPT use in Vietnamese HE,claude-opus-4-6,2026-02-26 15:26:27
+REC_03424,exclude,0.82,E-FT3,"3D anatomical models in museum education, not AI technology adoption",claude-opus-4-6,2026-02-26 15:26:27
+REC_08052,exclude,0.75,E-FT2,"DV is AI literacy and emotions among teachers, not AI adoption",claude-opus-4-6,2026-02-26 15:26:27
+REC_11662,include,0.9,,Revised UTAUT for GenAI adoption among 244 faculty in Saudi universities,claude-opus-4-6,2026-02-26 15:26:27
+REC_12314,include,0.82,,TPACK influence on faculty ChatGPT adoption in Latin American HE,claude-opus-4-6,2026-02-26 15:26:27
+REC_08054,exclude,0.75,E-FT2,"Scale development for motivation in GenAI language learning, not adoption",claude-opus-4-6,2026-02-26 15:26:27
+REC_14406,include,0.85,,Chatbot adoption for learning among university students with convenience and performance,claude-opus-4-6,2026-02-26 15:26:27
+REC_14407,uncertain,0.55,,Mobile online education platforms; may not focus specifically on AI technology,claude-opus-4-6,2026-02-26 15:26:27
+REC_14849,uncertain,0.4,,"상관분석·회귀분석 보고하나, DV가 '교수-학습 과정 변혁'으로 표준 adoption construct가 아님. Full-text에서 상관행렬 및 TAM/UTAUT 구성개념 확인 필요",claude-opus-4-6,2026-02-27 10:56:41
+REC_10088,include,0.9,,"EVT 기반 GenAI 수용 연구, n=405, 지각된 가치·비용·사용의도 측정, 상관관계 보고, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_09129,uncertain,0.45,,대학 도서관 LIS 전문직 대상 AI 도구 사용 요인 분석. 교육 맥락 여부 경계적. 회귀분석 있으나 표준 adoption construct 확인 필요,claude-opus-4-6,2026-02-27 10:56:41
+REC_14080,include,0.92,,"AI 자율성, Uses & Gratification, SEM, n=673, 대학생 대상, 채택 의도 측정, 교육 맥락 AI adoption",claude-opus-4-6,2026-02-27 10:56:41
+REC_14679,uncertain,0.5,,"ChatGPT 수용 요인 탐색 설문, n=162. 수용 요인 측정하나 구체적 TAM/UTAUT 구성개념 및 상관행렬 보고 여부 불확실",claude-opus-4-6,2026-02-27 10:56:41
+REC_05447,uncertain,0.35,,AI 도구의 참여도·성과·유지율 영향 분석. DV가 adoption이 아닌 교육 성과. 상관행렬/경로계수 보고 여부 불확실,claude-opus-4-6,2026-02-27 10:56:41
+REC_02918,uncertain,0.55,,보건계열 대학생 AI 준비도(readiness) 측정. readiness→BI 매핑 가능하나 상관행렬/경로계수 보고 여부 확인 필요,claude-opus-4-6,2026-02-27 10:56:41
+REC_14838,uncertain,0.4,,"학업 자기효능감과 AI 의존성 상관연구, n=186. 'AI 의존성'은 비표준 construct. 상관계수 있으나 12개 construct 매핑 가능성 불확실",claude-opus-4-6,2026-02-27 10:56:41
+REC_13617,uncertain,0.35,,AI 상호작용 빈도의 양면적 효과 연구. DV가 adoption이 아닌 학업 성과/심리적 결과. AI 사용은 IV로 측정,claude-opus-4-6,2026-02-27 10:56:41
+REC_10688,include,0.88,,"GenAI 채택 의도 연구, n=232 STEM 교수, 미국 대학, 인식·경험·채택의도 측정, 교육 맥락 AI adoption",claude-opus-4-6,2026-02-27 10:56:41
+REC_11905,uncertain,0.4,,의대생 AI 지식·인식 단면조사. 기술적 태도 측정하나 TAM/UTAUT 구성개념 및 상관행렬 보고 불확실,claude-opus-4-6,2026-02-27 10:56:41
+REC_13610,uncertain,0.45,,"교사-AI 협력→교수 몰입 연구, SEM. DV가 teaching engagement로 adoption이 아님. 기술적 자기효능감 매개 측정",claude-opus-4-6,2026-02-27 10:56:41
+REC_14816,include,0.85,,"AI 도구 사용 영향 요인 분석, n=306 대학생, PLS-SEM, 사용 의도/행동 측정, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_00822,uncertain,0.55,,Big Five→GenAI 사용→학업 성과 경로 연구. GenAI 사용 측정하나 비표준 adoption 모형. 공정성 조절효과. 상관행렬 보고 가능성 있음,claude-opus-4-6,2026-02-27 10:56:41
+REC_14861,uncertain,0.4,,"의대생 AI 태도 단면조사, n=398. 인식·사용패턴 기술하나 구조모형/상관행렬 보고 여부 불확실",claude-opus-4-6,2026-02-27 10:56:41
+REC_13345,uncertain,0.5,,"AI 기술 적용이 매개변수, DV는 학생 창의성. SEM 있으나 AI adoption이 DV가 아닌 매개변수. 상관행렬에서 AI construct 추출 가능성 있음",claude-opus-4-6,2026-02-27 10:56:41
+REC_12764,include,0.92,,"UTAUT 기반 AI 채택 연구, n=421, 건축 교육, SEM, adoption 요인 분석, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_01915,uncertain,0.5,,"AI 보조 학습→지속 학습의도. n=793+210, SEM. 지속 학습의도≈continuance BI이나 construct가 비표준(창의성, 몰입, 학습흥미)",claude-opus-4-6,2026-02-27 10:56:41
+REC_11531,include,0.8,,"간호대학생 AI 채택 태도·준비도, n=227, 검증된 AI 태도/준비도 척도 사용, 상관·군집분석, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_14875,include,0.88,,"AI 응용 채택 연구, n=387 대학생, UAE, 교육 맥락, adoption 요인 측정, 모형 검증",claude-opus-4-6,2026-02-27 10:56:41
+REC_02474,include,0.9,,"인지적 평가이론+AIDUA 모형, GenAI 채택, 대학생, 사회적 영향·쾌락적 동기·의인화, SEM 가능성 높음",claude-opus-4-6,2026-02-27 10:56:41
+REC_09456,include,0.85,,"AI 채택→학업성과, 음악교육, n=624, SPSS+Mplus+HLM, AI adoption 측정, 구조모형 있음",claude-opus-4-6,2026-02-27 10:56:41
+REC_13717,include,0.82,,"TAM, ChatGPT 멘토십, n=127, technology acceptance 측정, 고등교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_15399,include,0.78,,"교수자 AI 리터러시, n=109, AI 채택·신뢰·준비도 측정, 상관·군집분석, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_15409,uncertain,0.45,,"AI 사용→윤리적 행동·과학 연구 영향, SEM, n=239. DV가 ethical behavior로 adoption이 아님. AI 사용은 IV",claude-opus-4-6,2026-02-27 10:56:41
+REC_00849,uncertain,0.45,,"AI 인식→교육·직업 발달 영향, PLS-SEM, n=725. DV가 development으로 adoption이 아님. 경로계수 있으나 adoption DV 부재",claude-opus-4-6,2026-02-27 10:56:41
+REC_00848,include,0.82,,"TAM 기반, GenAI 사용의도, 학업성과·자기효능감·AI 수용, 조절효과 분석, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_13716,include,0.85,,"TAM, AI 인식, n=253, 중국 대학, 5점 Likert, 정량적 설문, 수용 측정",claude-opus-4-6,2026-02-27 10:56:41
+REC_07720,uncertain,0.35,,AI 피드백 도구 효과 평가 연구. 교수자 관점 평가이나 adoption 모형이 아닌 도구 평가 연구로 보임,claude-opus-4-6,2026-02-27 10:56:41
+REC_10826,include,0.82,,"Big Five→AI 태도→AI 사용, n=429 외국어 대학생, 태도·사용 측정, 상관분석, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_14737,include,0.88,,"TAM + 외부요인, 코스추천시스템 채택, 학습자 대상, adoption 측정, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_06047,include,0.88,,"EVT+TPB, GenAI 사용의도, n=321, 레바논 대학, 의도 측정, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_15650,include,0.85,,"UTAUT, ChatGPT, n=82, 영어학습, 성별분석, 수용·사용 측정",claude-opus-4-6,2026-02-27 10:56:41
+REC_14749,include,0.92,,"UTAUT, GenAI 채택, PLS 회귀, 대학생, adoption 측정, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_13709,include,0.85,,"TAM, GenAI 수용·활용, 재활과학 학생, acceptance 측정, 교육 맥락",claude-opus-4-6,2026-02-27 10:56:41
+REC_07498,include,0.9,,"UTAUT2, GenAI 기반 KM-LLM, 고등교육, adoption 측정, 구조모형 있음",claude-opus-4-6,2026-02-27 10:56:41
+REC_14753,uncertain,0.5,,"ChatGPT 사용패턴→학업성과, SEM, n=263. DV가 성과로 adoption이 아님. 사용패턴은 UB지만 IV로 사용",claude-opus-4-6,2026-02-27 10:56:41
+REC_10036,uncertain,0.4,,"AI 상담 의도 연구, 신뢰 매개. 교육 맥락 경계적(심리상담). 상담 의도≈BI이나 교육 AI adoption과 거리",claude-opus-4-6,2026-02-27 10:56:41
+REC_00845,uncertain,0.5,,"AI 채택이 조절변수(DV 아님), DV는 확산적 사고, SEM-PLS. AI adoption 상관계수 추출 가능하나 focal DV 아님",claude-opus-4-6,2026-02-27 10:56:41
+REC_06516,include,0.85,,"Rogers DOI, GenAI 수용·실행, 물리학 교수, 교육 맥락, adoption 측정",claude-opus-4-6,2026-02-27 10:56:41
+REC_14877,include,0.85,,"ChatGPT 채택, 학습 플랫폼, 교육 맥락, adoption 모형 연구",claude-opus-4-6,2026-02-27 10:56:41
+REC_13735,include,0.85,,"IS 성공모형(D&M), ChatGPT 수용, 대학생, 정보시스템 관점 acceptance 측정",claude-opus-4-6,2026-02-27 10:56:41
