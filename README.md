@@ -1,18 +1,27 @@
-# AI Adoption in Education: A Meta-Analytic Structural Equation Model Integrating Trust, Anxiety, Transparency, and Autonomy
+# AI Adoption in Education: A Meta-Analytic Structural Equation Model
 
-> A comprehensive meta-analytic structural equation modeling study synthesizing AI adoption research in educational contexts to test the validity of TAM/UTAUT frameworks for educational AI technologies.
+> Comparing four competing structural models (TAM/UTAUT Core, Integrated, AI-Only, Trust Dual-Mechanism) of AI adoption in educational contexts using MASEM.
 
 **Target Journal:** *Computers & Education* (Impact Factor: 12.0, Elsevier)
 
 ## Research Questions
 
-1. **RQ1**: To what extent do TAM/UTAUT path relationships hold in the educational AI adoption context? (TSSEM on 12-construct model)
-2. **RQ2**: Do AI-specific constructs (Trust, Anxiety, Transparency, Autonomy) provide incremental explanatory power beyond traditional TAM/UTAUT variables in educational settings? (Competing models comparison)
-3. **RQ3**: How do educational contextual factors (education level, user role, discipline, AI tool type, institutional type, cultural context, temporal period) moderate the structural relationships? (OSMASEM + subgroup analysis)
+1. **RQ1**: To what extent do TAM/UTAUT path relationships hold in the educational AI adoption context?
+2. **RQ2**: Do AI-specific constructs (Trust, Anxiety, Transparency, Autonomy) provide incremental explanatory power beyond traditional TAM/UTAUT variables?
+3. **RQ3**: How do educational contextual factors moderate the structural relationships?
 
-## Theoretical Framework
+## Four Competing Models
 
-Extended 12-construct model integrating TAM, UTAUT, and AI-specific variables:
+| Model | Name | Paths | Key Question |
+|-------|------|-------|-------------|
+| M1 | TAM/UTAUT Core | 8 | Is AI "just another technology"? |
+| M2 | Integrated | 14 | Do AI-specific constructs add value? |
+| M3 | AI-Only | 7 | Can AI-specific constructs stand alone? |
+| M4 | Trust Dual-Mechanism | 16 | Does Trust mediate through ATT and ANX? |
+
+> Model 4 adds TRU→ATT (Reliance proxy) and TRU→ANX (Resistance proxy) to test Trust's dual mediation mechanism. See `docs/04_methodology/model_specification.md`.
+
+## 12 Constructs
 
 | # | Construct | Abbr | Origin |
 |---|-----------|------|--------|
@@ -29,113 +38,86 @@ Extended 12-construct model integrating TAM, UTAUT, and AI-specific variables:
 | 11 | AI Transparency | TRA | AI-specific |
 | 12 | Perceived AI Autonomy | AUT | AI-specific |
 
-→ **66 pairwise correlations** pooled across studies
-
-## Analysis Suite (10 Modules)
-
-| # | Analysis | Script | Contribution |
-|---|----------|--------|-------------|
-| 1 | TSSEM (Two-Stage SEM) | `02-03` | Pooled correlation → structural model |
-| 2 | Competing Models | `04` | TAM vs Integrated vs AI-Only |
-| 3 | OSMASEM + Continuous Moderators | `05` | Publication year, Hofstede scores |
-| 4 | Pre/Post ChatGPT Temporal | `06` | Path changes around 2023 |
-| 5 | Meta-Analytic Mediation | `07` | Indirect effects (TRA→TRU→BI) |
-| 6 | Heterogeneity Decomposition | `08` | I², τ², prediction intervals |
-| 7 | Publication Bias | `09` | Trim-fill, PET-PEESE, selection models |
-| 8 | Sensitivity (r-only vs r+β) | `10` | β→r conversion robustness |
-| 9 | Bayesian MASEM | `11` | Sabherwal et al. informative priors |
-| 10 | Network Analysis (MAGNA) | `12` | Construct centrality, bridge analysis |
-
-## Methodology
-
-- **Population**: Students (K-12, undergraduate, graduate), instructors, educational administrators
-- **Context**: AI in teaching, learning, and educational administration (ChatGPT, intelligent tutoring systems, LMS-AI, automated grading, AI writing assistants)
-- **Effect size**: Pearson correlations (r), with β→r conversion (Peterson & Brown, 2005) and sensitivity analysis
-- **Core method**: Two-Stage Meta-Analytic SEM (TSSEM; Cheung, 2015) via `metaSEM` R package
-- **Advanced**: One-Stage MASEM (OSMASEM), Bayesian MASEM (`blavaan`), Network Analysis (`psychonetrics`)
-- **AI-assisted screening**: Gemini CLI + Claude Sonnet 4.6 (2-model consensus; Codex dropped — 85% uncertain); AI-assisted coding: 3-model consensus pipeline
-- **Target k**: ≥ 150 studies (k = 150+ for robust 66-correlation pooled matrix)
-- **Actual screening**: 16,189 records → 575 AI-include, 175 conflict, 707 genuine uncertain (human review in progress)
-- **Full-text criterion**: ≥ 2 construct-pair r or β among the 12 target constructs
-- **Heterogeneity**: Controlled via OSMASEM moderators (ai_tool_type, education_level, publication_year, user_role, cultural_context) rather than narrow inclusion criteria
-
-## Repository Structure
+## Repository Structure (PRISMA-aligned)
 
 ```
-data/
-├── 01_raw/                  # Original database exports (WoS, Scopus, PsycINFO, IEEE)
-├── 02_processed/            # Merged & deduplicated master (16,189 records)
-├── 03_screening/            # AI screening results + human review queue
-│   ├── screening_ai_dual.csv       # Full 16,189-record screening log
-│   ├── human_review_queue.csv      # 571 records for human review
-│   └── logs/                       # Extraction & processing logs
-├── 04_included/             # Final included studies (after human review)
-├── 05_coding/               # AI-extracted correlations (7-phase pipeline)
-├── 06_pooled/               # Pooled correlation & asymptotic covariance matrices
-├── 07_final/                # MASEM-ready dataset + data provenance
-└── templates/               # Coding & screening workbook templates
+data/                              # PRISMA 2020 data flow
+├── 01_identification/             # Step 1: Database search + deduplication
+│   ├── search_results/            #   Raw exports (WoS, Scopus, PsycINFO, IEEE)
+│   ├── merged_all_databases.csv   #   22,166 merged records
+│   ├── deduplicated_16189.csv     #   16,189 after dedup
+│   └── dedup_report.txt           #   Deduplication log
+├── 02_screening/                  # Step 2: Title/abstract screening
+│   ├── screening_ai_dual.csv      #   16,189 AI screening decisions
+│   ├── human_review_queue.csv     #   1,457 records for human review
+│   └── screening_pilot_100.csv    #   Pilot screening sample
+├── 03_eligibility/                # Step 3: Full-text eligibility (TBD)
+├── 04_extraction/                 # Step 4: Data extraction (TBD)
+├── 05_analysis/                   # Step 5: Pooled matrices + final data (TBD)
+└── templates/                     # Coding templates + archived versions
 
-scripts/
-├── screening/               # 3-tier AI screening (Gemini + Claude) + retry logic
-└── ai_coding_pipeline/      # 7-phase correlation extraction pipeline
+docs/                              # Documentation (numbered by PRISMA stage)
+├── 01_literature_search/          # Search strategy, database coverage
+├── 02_screening/                  # Screening protocols, inclusion criteria
+├── 03_data_extraction/            # Coding manual, construct harmonization
+├── 04_methodology/                # MASEM methods, 4-model specification
+├── 05_manuscript/                 # Writing timeline
+├── 06_decisions/                  # Decision log, implementation plans
+└── discussion/                    # Research discussion records (Korean)
 
-analysis/
-├── R/                       # 13 MASEM analysis scripts (TSSEM, OSMASEM, Bayesian)
-└── Python/                  # Data cleaning, matrix validation, reporting
+paper_a/                           # Paper A: MASEM meta-analysis (C&E)
+paper_b/                           # Paper B: LLM extraction methodology (RSM)
 
-docs/
-├── 01_protocol/             # Pre-registration & search strategy
-├── 02_screening/            # Tiered screening protocol
-├── 03_extraction/           # Coding manual & construct crosswalk
-└── 04_analysis/             # Statistical analysis documentation
+analysis/R/                        # 14 MASEM analysis scripts
+analysis/Python/                   # Data cleaning, validation utilities
+scripts/screening/                 # AI screening pipeline + retries
+scripts/ai_coding_pipeline/        # 7-phase extraction pipeline
+scripts/data_processing/           # PRISMA generation, template creation
+scripts/figure_generation/         # Path diagrams, forest plots
 
-supplementary/               # PRISMA checklist, codebook, risk of bias
-configs/                     # Model specs, Bayesian priors, network parameters
+configs/                           # Model specs (YAML), Bayesian priors, network params
+supplementary/                     # PRISMA checklist, codebook, preregistration
+tests/                             # Test suite for screening/processing scripts
 ```
-
-## Screening and Coding Authority
-
-- Tiered screening protocol: `docs/02_screening/TIERED_SCREENING_PROTOCOL.md`
-- Screening data (16,189 records): `data/03_screening/screening_ai_dual.csv`
-- Human review queue (571 records): `data/03_screening/human_review_queue.csv`
-- Operational coding template: `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx`
-- Title/abstract AI assistance: Gemini CLI (gemini-2.5-flash) + Claude Sonnet 4.6 (2-model consensus pipeline)
-- Final screening decisions: Two independent human coders + PI adjudication
 
 ## Current Pipeline Status
 
-| Stage | Status | Count |
-|-------|--------|-------|
-| Database search | ✅ Complete | 16,189 records |
-| AI screening (T1-T3) | ✅ Complete | 16,189 records |
-| Gemini retry 1 | ✅ Complete | 2,669 recovered |
-| Codex retry 2 | ✅ Complete | 245/250 recovered |
-| Gemini retry 2 | ✅ Complete | 1,215/1,633 recovered |
-| Codex sub retry 3 | ✅ Complete | 593/685 recovered |
-| Human review | 🔄 In progress | 1,457 records |
-| Full-text retrieval | ⏸ Next phase | ~575+ studies |
-| Data extraction | ⏸ Next phase | AI pipeline ready |
+| PRISMA Stage | Status | Data Location | Count |
+|-------------|--------|---------------|-------|
+| 1. Identification | ✅ Complete | `data/01_identification/` | 16,189 records |
+| 2. Screening | 🔄 Human review in progress | `data/02_screening/` | 575 include, 175 conflict, 714 uncertain |
+| 3. Eligibility | ⏸ Next phase | — | ~575+ full-text |
+| 4. Extraction | ⏸ Pending | — | AI pipeline ready |
+| 5. Analysis | ⏸ Pending | — | 4 competing models specified |
 
-**AI Screening Final Consensus (all retries complete)**
+## Methodology
 
-| Consensus | Count |
-|-----------|-------|
-| Exclude | 14,725 |
-| Include | 575 |
-| Conflict (→ human adjudication) | 175 |
-| Uncertain — Genuine (→ human review) | 714 |
+- **Core method**: Two-Stage Meta-Analytic SEM (TSSEM; Cheung, 2015) via `metaSEM` R package
+- **AI-assisted screening**: Gemini CLI + Claude Sonnet 4.6 (2-model consensus)
+- **Competing models**: Approach B (pre-registered model comparison) with 4 models
+- **Effect size**: Pearson r (with β→r conversion sensitivity analysis)
+- **Advanced**: OSMASEM, Bayesian MASEM, Network Analysis (MAGNA)
+
+## Key Documents
+
+| Document | Location |
+|----------|----------|
+| Model specification (4 models) | `docs/04_methodology/model_specification.md` |
+| Preregistration protocol | `supplementary/protocol/preregistration_protocol.md` |
+| Decision log | `docs/06_decisions/decision_log.md` |
+| Screening protocol | `docs/02_screening/TIERED_SCREENING_PROTOCOL.md` |
+| Coding manual | `docs/03_data_extraction/coding_manual.md` |
 
 ## Key References
 
 - Cheung, M. W.-L. (2015). *Meta-analytic structural equation modeling*. Wiley.
-- Scherer, R., Siddiq, F., & Tondeur, J. (2019). The technology acceptance model (TAM): A meta-analytic structural equation modeling approach to explaining teachers' adoption of digital technology in education. *Computers & Education*, 128, 13-35.
-- Sabherwal, R., Jeyaraj, A., & Chowa, C. (2006). Information system success: Individual and organizational determinants. *Management Science*, 52(12), 1849–1864.
-- Peterson, R. A., & Brown, S. P. (2005). On the use of beta coefficients in meta-analysis. *Journal of Applied Psychology*, 90(1), 175–181.
+- Scherer, R., Siddiq, F., & Tondeur, J. (2019). *Computers & Education*, 128, 13-35.
+- Sabherwal, R., Jeyaraj, A., & Chowa, C. (2006). *Management Science*, 52(12), 1849-1864.
 
 ## License
 
-This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ## Author
 
-Hosung You — Journal Article Research
+Hosung You — Penn State College of Education
