@@ -489,11 +489,19 @@ Alternative approach pooling and fitting simultaneously:
 - Paths: TRU→BI, ANX→BI, TRA→TRU, AUT→BI, SE→BI, ATT→BI, BI→UB
 - **Theoretical basis:** Tests whether AI context renders traditional TAM/UTAUT paths redundant
 
+**Model 4: Trust Dual-Mechanism (16 paths)** *(Added 2026-03-04)*
+- All Model 2 paths PLUS Trust mediation through ATT and ANX
+- Additional paths: TRU→ATT (positive: Reliance proxy), TRU→ANX (negative: Resistance proxy)
+- **Theoretical basis:** Trust operates through dual mechanisms — positive attitude formation (McKnight et al., 2002; Mayer et al., 1995) and anxiety reduction (Lee & See, 2004; Choung et al., 2023) — not only directly on BI
+- **Key test:** Bootstrap 95% CI for indirect effects TRU→ATT→BI and TRU→ANX→BI
+- **Contingency:** If TRU↔ATT or TRU↔ANX construct-pair frequency k < 5 in pooled data, Model 4 will be dropped and reported as limitation
+
 **Model Comparison Criteria:**
 - Fit indices (CFI, RMSEA, SRMR)
 - Parsimony (AIC, BIC, ΔCFI)
 - Variance explained (R² for BI and UB)
 - Theoretical interpretability
+- Mediation significance (bootstrap CI for Model 4 indirect effects)
 
 **3.8.5 Network Analysis (MAGNA)**
 

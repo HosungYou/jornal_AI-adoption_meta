@@ -1,8 +1,12 @@
-# Model Specification for Three Competing Models
+# Model Specification for Four Competing Models
 
 ## Overview
 
-This document specifies the three competing structural models to be tested in the educational AI adoption meta-analysis. Each model represents a different theoretical perspective on AI adoption drivers in educational settings (students and instructors).
+This document specifies the four competing structural models to be tested in the educational AI adoption meta-analysis. Each model represents a different theoretical perspective on AI adoption drivers in educational settings (students and instructors).
+
+> **Version History:**
+> - v1.0 (2026-02-16): Initial 3-model specification
+> - v2.0 (2026-03-04): Added Model 4 (Trust Dual-Mechanism) based on conceptual framework discussion
 
 ---
 
@@ -13,6 +17,7 @@ This document specifies the three competing structural models to be tested in th
 | Model 1 | TAM/UTAUT Core | Traditional technology acceptance | PE, EE, SI, FC, ATT, BI, UB | 8 paths |
 | Model 2 | Integrated Model | TAM/UTAUT + AI-specific | All 12 constructs | 14 paths |
 | Model 3 | AI-Only Model | AI-specific drivers | TRU, ANX, TRA, AUT, SE, ATT, BI, UB | 7 paths |
+| Model 4 | Trust Dual-Mechanism | Model 2 + Trust mediation via ATT/ANX | All 12 constructs | 16 paths |
 
 ---
 
@@ -456,6 +461,216 @@ Endogenous: TRU, BI, UB
 
 ---
 
+## Model 4: Trust Dual-Mechanism Model
+
+### Theoretical Rationale
+
+**Purpose:** Test whether Trust operates through dual mediating mechanisms (positive attitude formation and anxiety reduction) rather than only through a direct effect on behavioral intention.
+
+**Hypothesis:** Model 4 will fit better than Model 2 by revealing that Trust's effect on BI is partially mediated through ATT (positive pathway = Reliance proxy) and ANX (negative pathway = Resistance proxy), yielding a more complete picture of Trust's role in educational AI adoption.
+
+**Theoretical Foundations:**
+- All of Model 2 (TAM/UTAUT + AI-specific)
+- Trust dual-mechanism: Trust enables positive evaluation (Reliance) and reduces resistance (Mayer et al., 1995)
+- Trust–attitude link: High trust fosters favorable attitudes (McKnight et al., 2002)
+- Trust–anxiety link: Trust reduces perceived risk and anxiety (Lee & See, 2004)
+- Conceptual framework: Trust in GenAI mediates between antecedents and BI through both Reliance (≈ATT) and Resistance (≈ANX) pathways
+
+---
+
+### Structural Paths
+
+**Model 4 includes all 14 paths from Model 2 PLUS 2 additional paths:**
+
+**Original Paths (Model 2):**
+1. PE → BI
+2. EE → BI
+3. SI → BI
+4. FC → UB
+5. ATT → BI
+6. BI → UB
+7. EE → ATT
+8. PE → ATT
+9. TRU → BI
+10. ANX → BI (negative)
+11. TRA → TRU
+12. AUT → ANX
+13. SE → EE
+14. SE → ANX (negative)
+
+**Additional Paths (Trust Dual-Mechanism):**
+15. **TRU → ATT** (β₁₅): AI Trust → Attitude (positive pathway)
+16. **TRU → ANX** (β₁₆): AI Trust → AI Anxiety (negative path — trust reduces anxiety)
+
+**Total: 16 paths**
+
+---
+
+### Trust Dual-Mechanism Path Justifications
+
+**TRU → ATT (β₁₅, positive):**
+- **Theory:** Trust enables positive evaluation — users who trust AI form more favorable attitudes toward it (Reliance proxy)
+- **Expected β:** .20-.30
+- **Educational AI Context:** Students/instructors who trust AI accuracy for grading, feedback, or content develop positive attitudes toward educational AI
+- **Evidence:** McKnight et al. (2002) — trust as enabler of positive evaluation; Mayer et al. (1995) — trust facilitates willingness to be vulnerable (positive stance)
+
+**TRU → ANX (β₁₆, negative):**
+- **Theory:** Trust reduces perceived risk and associated anxiety — users who trust AI experience less apprehension (Resistance suppression proxy)
+- **Expected β:** -.25 to -.35
+- **Educational AI Context:** Students/instructors who trust AI accuracy are less anxious about academic integrity issues, AI errors, or over-reliance
+- **Evidence:** Lee & See (2004) — trust reduces perceived risk in automation; Choung et al. (2023) — trust in AI inversely related to AI anxiety
+
+---
+
+### Trust's Three Pathways to BI (Total Effect Decomposition)
+
+```
+                    ┌─── ATT ──→ BI   (Positive pathway = Reliance proxy)
+                    │   β₁₅ × β₅
+                    │
+Trust in AI (TRU) ──┼─── (direct) ──→ BI   (Direct effect)
+                    │   β₉
+                    │
+                    └─── ANX ──→ BI   (Negative pathway = Resistance proxy)
+                        β₁₆ × β₁₀
+
+Total effect = β₉ + (β₁₅ × β₅) + (β₁₆ × β₁₀)
+Expected:    ≈ .20 + (.25 × .35) + (-.30 × -.20) = .20 + .09 + .06 = .35
+             ~43% of Trust's total effect is mediated through ATT and ANX
+```
+
+---
+
+### Model 4 Path Diagram
+
+```
+         ┌──────┐
+         │  TRA │──────────────┐
+         └──────┘              │
+                               ▼
+         ┌──────┐           ┌──────┐
+    ┌────│  SE  │──────────►│ TRU  │─────┐
+    │    └──┬───┘           └──┬───┘     │
+    │       │                  │  │      │
+    │       │                  │  │      │
+    │       │  ┌──────┐       │  │      │
+    │       ├─►│  EE  │───────┤  │      │
+    │       │  └──────┘       │  │      │
+    │       │                 │  │      │
+    │       │              ┌──▼──┐     │
+    │       │              │ ATT │     │          ← TRU→ATT (NEW: β₁₅)
+    │       │              └──┬──┘     │
+    │       │                 │        │
+    │       │  ┌──────┐       ▼        ▼
+    │       │  │  PE  │───►┌──────┐  ┌──────┐  ┌──────┐
+    │       │  └──────┘    │ ATT  │─►│  BI  │─►│  UB  │
+    │       │              └──▲───┘  └──▲───┘  └──▲───┘
+    │       │                 │         │         │
+    │       │                 │         │         │
+    │       │  ┌──────┐       │         │         │
+    │       │  │  SI  │───────┘─────────┤         │
+    │       │  └──────┘                 │         │
+    │       │                           │         │
+    │       │  ┌──────┐                 │         │
+    │       │  │  FC  │─────────────────┘─────────┘
+    │       │  └──────┘
+    │       │
+    │       │  ┌──────┐
+    │       └─►│ ANX  │──────────────────────────┐
+    │          └──▲───┘                          │
+    │             │  ▲                           │
+    │             │  │                           ▼
+    │          ┌──┘──┘─┐                      (to BI)
+    │          │ AUT   │
+    │          └───────┘
+    │             ▲
+    └─────────────┘           ← TRU→ANX (NEW: β₁₆, negative)
+
+Legend:
+→ = Structural path (solid arrows)
+NEW paths: TRU→ATT (β₁₅, positive), TRU→ANX (β₁₆, negative)
+Negative paths: ANX→BI, SE→ANX, TRU→ANX
+Exogenous: TRA, AUT, SE, PE, SI, FC (all correlated)
+Endogenous: TRU, ANX, EE, ATT, BI, UB
+```
+
+---
+
+### Exogenous Correlations
+
+**Same as Model 2:** All pairwise correlations among PE, SI, FC, SE, TRA, AUT
+
+---
+
+### Expected Model Fit
+
+**Better fit than Model 2 (if Trust dual-mechanism holds):**
+- CFI: .96-.99
+- RMSEA: .030-.050
+- SRMR: .035-.055
+
+**R² Expectations:**
+- R²(TRU): .25-.35 (same as Model 2 — predicted by TRA only)
+- R²(ANX): .35-.45 (higher than Model 2 due to TRU→ANX addition)
+- R²(EE): .15-.25 (same as Model 2)
+- R²(ATT): .65-.75 (higher than Model 2 due to TRU→ATT addition)
+- R²(BI): .65-.75 (similar total, but with clearer mediation structure)
+- R²(UB): .35-.45 (same as Model 2)
+
+---
+
+### Model 4 vs. Model 2 Comparison
+
+**Key theoretical question:** Does Trust operate through ATT and ANX, or only directly on BI?
+
+**Test:**
+- If TRU→ATT and TRU→ANX are both significant: Trust dual-mechanism confirmed
+- If only TRU→ATT significant: Trust operates through positive attitudes only
+- If only TRU→ANX significant: Trust operates through anxiety reduction only
+- If neither significant: Direct effect model (Model 2) sufficient
+
+**Mediation test (bootstrap 95% CI):**
+- Indirect 1: TRU → ATT → BI (expected: .09, CI should exclude 0)
+- Indirect 2: TRU → ANX → BI (expected: .06, CI should exclude 0)
+- Direct: TRU → BI (expected: .20, may reduce from Model 2's .30)
+
+---
+
+### Implementation Notes
+
+```r
+# Model 4: Trust Dual-Mechanism
+model4 <- '
+  # Traditional TAM/UTAUT paths (same as Model 2)
+  BI ~ PE + EE + SI + ATT + TRU + ANX
+  UB ~ FC + BI
+  ATT ~ PE + EE + TRU          # ← NEW: TRU→ATT added
+
+  # AI-specific paths
+  TRU ~ TRA
+  ANX ~ AUT + SE + TRU         # ← NEW: TRU→ANX added
+  EE ~ SE
+
+  # Covariances among exogenous
+  PE ~~ SI + FC + SE + TRA + AUT
+  SI ~~ FC + SE + TRA + AUT
+  FC ~~ SE + TRA + AUT
+  SE ~~ TRA + AUT
+  TRA ~~ AUT
+'
+
+stage2_model4 <- tssem2(stage1, RAM = lavaan2RAM(model4))
+summary(stage2_model4)
+
+# Mediation test: Trust dual-mechanism
+library(boot)
+trust_indirect_att <- coef(stage2_model4)["TRU_ATT"] * coef(stage2_model4)["ATT_BI"]
+trust_indirect_anx <- coef(stage2_model4)["TRU_ANX"] * coef(stage2_model4)["ANX_BI"]
+trust_total <- coef(stage2_model4)["TRU_BI"] + trust_indirect_att + trust_indirect_anx
+```
+
+---
+
 ## Model Comparison Strategy
 
 ### Hypotheses
@@ -471,6 +686,16 @@ Endogenous: TRU, BI, UB
 **H3:** Model 1 vs. Model 3 will show comparable fit
 - **Test:** |ΔCFI| < .01, |ΔRMSEA| < .01
 - **Implication:** AI-specific and traditional constructs are similarly important
+
+**H4:** Model 4 (Trust Dual-Mechanism) will fit better than Model 2 (Integrated)
+- **Test:** Δχ², ΔAIC, ΔCFI
+- **Implication:** Trust operates through dual mediating mechanisms (ATT and ANX), not just directly on BI
+
+**H4a:** TRU → ATT → BI indirect effect is significant (bootstrap 95% CI excludes 0)
+- **Implication:** Trust fosters positive attitudes toward AI (Reliance mechanism)
+
+**H4b:** TRU → ANX → BI indirect effect is significant (bootstrap 95% CI excludes 0)
+- **Implication:** Trust reduces AI anxiety (Resistance suppression mechanism)
 
 ---
 
@@ -494,8 +719,9 @@ Endogenous: TRU, BI, UB
 | Model 1 | ~85 | 42 | .93 | .065 | .068 | 12,800 | .65 |
 | Model 2 | ~52 | 38 | .97 | .042 | .045 | 12,700 | .75 |
 | Model 3 | ~78 | 40 | .94 | .058 | .062 | 12,780 | .60 |
+| Model 4 | ~45 | 36 | .98 | .035 | .040 | 12,680 | .75 |
 
-**Best Model:** Model 2 (lowest AIC, highest CFI, lowest RMSEA)
+**Expected Best Model:** Model 4 (lowest AIC, highest CFI, lowest RMSEA, reveals Trust mediation structure)
 
 ---
 
@@ -533,6 +759,26 @@ Endogenous: TRU, BI, UB
 **Challenge:** Ignores decades of TAM/UTAUT evidence
 
 **Interpretation:** AI-specific factors dominate, but integration (Model 2) likely still superior
+
+---
+
+### If Model 4 Fits Best (Expected if Trust Dual-Mechanism Holds)
+
+**Implication:** Trust in AI operates through dual mediating mechanisms — positive attitude formation (Reliance) and anxiety reduction (Resistance suppression) — rather than only through a direct effect on intention.
+
+**Contribution:**
+- Reveals the internal mechanism of Trust's influence on AI adoption in education
+- Connects to the broader Reliance/Resistance conceptual framework (which cannot be directly measured with current 12-construct set, but is approximated via ATT and ANX)
+- Provides actionable design guidance: interventions that build trust should target both attitude improvement and anxiety reduction
+
+**Practical Implications:**
+- Design educational AI systems that are both trustworthy (transparent, accurate) and that actively reduce anxiety (explainable decisions, undo options)
+- Training programs should leverage trust to simultaneously improve attitudes AND reduce anxiety
+- Trust-building interventions may have stronger indirect effects than direct effects
+
+**Future Direction:**
+- Direct measurement of Reliance and Resistance constructs (beyond ATT/ANX proxies)
+- Testing whether Self-directed Learning mediates BI → Use Behavior (as suggested by the conceptual framework)
 
 ---
 
@@ -589,3 +835,7 @@ Schoorman, F. D., Mayer, R. C., & Davis, J. H. (2007). An integrative model of o
 Venkatesh, V. (2000). Determinants of perceived ease of use: Integrating control, intrinsic motivation, and emotion into the technology acceptance model. *Information Systems Research*, 11(4), 342-365.
 
 Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. *MIS Quarterly*, 27(3), 425-478.
+
+Choung, H., David, P., & Ross, A. (2023). Trust in AI and its role in the acceptance of AI technologies. *International Journal of Human-Computer Interaction*, 39(9), 1727-1739.
+
+McKnight, D. H., Choudhury, V., & Kacmar, C. (2002). Developing and validating trust measures for e-commerce: An integrative typology. *Information Systems Research*, 13(3), 334-359.

@@ -1,0 +1,274 @@
+# Model 4: Trust Dual-Mechanism Model
+# Extends Model 2 with Trust mediation through ATT (Reliance proxy) and ANX (Resistance proxy)
+# Decision date: 2026-03-04 (PI confirmed)
+
+model:
+  name: "Trust Dual-Mechanism"
+  label: "Model 4"
+  description: "Tests whether Trust operates through dual mediating mechanisms — positive attitude formation (Reliance proxy) and anxiety reduction (Resistance proxy) — rather than only through a direct effect on BI"
+  theoretical_basis:
+    - "All of Model 2 (TAM/UTAUT + AI-specific)"
+    - "Trust dual-mechanism: Mayer et al. (1995), McKnight et al. (2002)"
+    - "Trust → positive attitude: Trust enables favorable evaluation (Reliance)"
+    - "Trust → anxiety reduction: Lee & See (2004), Choung et al. (2023)"
+    - "Conceptual framework: Trust in GenAI mediates through Reliance (≈ATT) and Resistance (≈ANX)"
+
+constructs:
+  exogenous:
+    - PE   # Performance Expectancy
+    - SI   # Social Influence
+    - FC   # Facilitating Conditions
+    - SE   # Self-Efficacy
+    - TRA  # AI Transparency
+    - AUT  # Perceived AI Autonomy
+
+  endogenous:
+    - EE   # Effort Expectancy (predicted by SE)
+    - BI   # Behavioral Intention
+    - UB   # Use Behavior
+    - ATT  # Attitude (predicted by PE, EE, TRU)  ← NEW: TRU added
+    - TRU  # AI Trust (predicted by TRA)
+    - ANX  # AI Anxiety (predicted by AUT, SE, TRU)  ← NEW: TRU added
+
+  total: 12
+
+paths:
+  # === Traditional TAM/UTAUT paths (from Model 1) ===
+  - from: PE
+    to: BI
+    label: "PE_to_BI"
+    hypothesis: "H1: Performance Expectancy → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium-large (β ≈ 0.45)"
+
+  - from: EE
+    to: BI
+    label: "EE_to_BI"
+    hypothesis: "H2: Effort Expectancy → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.30)"
+
+  - from: SI
+    to: BI
+    label: "SI_to_BI"
+    hypothesis: "H3: Social Influence → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.25)"
+
+  - from: FC
+    to: UB
+    label: "FC_to_UB"
+    hypothesis: "H4: Facilitating Conditions → Use Behavior (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small (β ≈ 0.15)"
+
+  - from: ATT
+    to: BI
+    label: "ATT_to_BI"
+    hypothesis: "H5: Attitude → Behavioral Intention (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.35)"
+
+  - from: BI
+    to: UB
+    label: "BI_to_UB"
+    hypothesis: "H6: Behavioral Intention → Use Behavior (+)"
+    expected_sign: "positive"
+    expected_magnitude: "large (β ≈ 0.50)"
+
+  - from: EE
+    to: ATT
+    label: "EE_to_ATT"
+    hypothesis: "H7: Effort Expectancy → Attitude (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.25)"
+
+  - from: PE
+    to: ATT
+    label: "PE_to_ATT"
+    hypothesis: "H8: Performance Expectancy → Attitude (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.40)"
+
+  # === AI-Specific paths (from Model 2) ===
+  - from: TRU
+    to: BI
+    label: "TRU_to_BI"
+    hypothesis: "H9: AI Trust → Behavioral Intention (+, direct)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.20)"
+    note: "Expected to be smaller than in Model 2 (β ≈ 0.30) due to mediation through ATT and ANX"
+
+  - from: ANX
+    to: BI
+    label: "ANX_to_BI"
+    hypothesis: "H10: AI Anxiety → Behavioral Intention (−)"
+    expected_sign: "negative"
+    expected_magnitude: "small-medium (β ≈ −0.20)"
+
+  - from: TRA
+    to: TRU
+    label: "TRA_to_TRU"
+    hypothesis: "H11: AI Transparency → AI Trust (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium-large (β ≈ 0.40)"
+
+  - from: AUT
+    to: ANX
+    label: "AUT_to_ANX"
+    hypothesis: "H12: Perceived AI Autonomy → AI Anxiety (+)"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.25)"
+
+  - from: SE
+    to: EE
+    label: "SE_to_EE"
+    hypothesis: "H13: Self-Efficacy → Effort Expectancy (+)"
+    expected_sign: "positive"
+    expected_magnitude: "medium (β ≈ 0.35)"
+
+  - from: SE
+    to: ANX
+    label: "SE_to_ANX"
+    hypothesis: "H14: Self-Efficacy → AI Anxiety (−)"
+    expected_sign: "negative"
+    expected_magnitude: "medium (β ≈ −0.30)"
+
+  # === NEW: Trust Dual-Mechanism paths (Model 4 additions) ===
+  - from: TRU
+    to: ATT
+    label: "TRU_to_ATT"
+    hypothesis: "H15: AI Trust → Attitude (+) — Reliance proxy"
+    expected_sign: "positive"
+    expected_magnitude: "small-medium (β ≈ 0.25)"
+    theoretical_support: "McKnight et al. (2002); Mayer et al. (1995)"
+    rationale: "Trust enables positive evaluation — users who trust AI form favorable attitudes (Reliance mechanism)"
+
+  - from: TRU
+    to: ANX
+    label: "TRU_to_ANX"
+    hypothesis: "H16: AI Trust → AI Anxiety (−) — Resistance suppression proxy"
+    expected_sign: "negative"
+    expected_magnitude: "medium (β ≈ −0.30)"
+    theoretical_support: "Lee & See (2004); Choung et al. (2023)"
+    rationale: "Trust reduces perceived risk and anxiety — users who trust AI are less anxious about its use (Resistance suppression)"
+
+covariances:
+  # Same as Model 2: all pairwise among 6 exogenous variables
+  - between: [PE, SI]
+  - between: [PE, FC]
+  - between: [PE, SE]
+  - between: [PE, TRA]
+  - between: [PE, AUT]
+  - between: [SI, FC]
+  - between: [SI, SE]
+  - between: [SI, TRA]
+  - between: [SI, AUT]
+  - between: [FC, SE]
+  - between: [FC, TRA]
+  - between: [FC, AUT]
+  - between: [SE, TRA]
+  - between: [SE, AUT]
+  - between: [TRA, AUT]
+
+disturbances:
+  - construct: EE
+    note: "EE predicted by SE"
+  - construct: BI
+    note: "BI predicted by PE, EE, SI, ATT, TRU, ANX"
+  - construct: UB
+    note: "UB predicted by FC, BI"
+  - construct: ATT
+    note: "ATT predicted by PE, EE, TRU"  # ← TRU added
+  - construct: TRU
+    note: "TRU predicted by TRA"
+  - construct: ANX
+    note: "ANX predicted by AUT, SE, TRU"  # ← TRU added
+
+parameters:
+  n_paths: 16
+  n_covariances: 15
+  n_disturbances: 6
+  n_free_parameters: 37
+  df: null  # calculated at runtime
+
+mediation_paths:
+  # All of Model 2's mediation paths plus:
+  - path: "TRU → ATT → BI"
+    type: "indirect effect (NEW)"
+    hypothesis: "Trust has indirect positive effect on BI through Attitude (Reliance proxy)"
+    expected_magnitude: "β_indirect ≈ 0.09 (0.25 × 0.35)"
+
+  - path: "TRU → ANX → BI"
+    type: "indirect effect (NEW)"
+    hypothesis: "Trust has indirect positive effect on BI through anxiety reduction (Resistance proxy)"
+    expected_magnitude: "β_indirect ≈ 0.06 (−0.30 × −0.20)"
+
+  - path: "TRU → BI (total)"
+    type: "total effect decomposition"
+    hypothesis: "Trust total effect = direct + indirect(ATT) + indirect(ANX)"
+    expected_magnitude: "β_total ≈ 0.35 (0.20 + 0.09 + 0.06)"
+    note: "~43% of Trust's total effect is mediated"
+
+  # Inherited from Model 2:
+  - path: "TRA → TRU → BI"
+    type: "indirect effect"
+    expected_magnitude: "β_indirect ≈ 0.08 (0.40 × 0.20)"
+
+  - path: "TRA → TRU → ATT → BI"
+    type: "serial indirect effect (NEW)"
+    hypothesis: "Transparency builds trust, which fosters positive attitudes"
+    expected_magnitude: "β_indirect ≈ 0.04 (0.40 × 0.25 × 0.35)"
+
+  - path: "SE → ANX → BI"
+    type: "indirect effect"
+    expected_magnitude: "β_indirect ≈ 0.06 (−0.30 × −0.20)"
+
+  - path: "PE → ATT → BI"
+    type: "indirect effect"
+    expected_magnitude: "β_indirect ≈ 0.14 (0.40 × 0.35)"
+
+model_comparison:
+  vs_model2:
+    hypothesis: "Model 4 reveals Trust's mediation structure better than Model 2's direct-only Trust path"
+    tests:
+      - "Δχ² (Model 4 should have lower χ²)"
+      - "ΔAIC (expect ΔAIC < −5 favoring Model 4)"
+      - "TRU→ATT significant? (bootstrap 95% CI)"
+      - "TRU→ANX significant? (bootstrap 95% CI)"
+      - "TRU→BI direct effect reduced compared to Model 2?"
+
+software:
+  primary: "R (metaSEM package)"
+  tssem_code: |
+    # Stage 2: Specify Model 4 (Trust Dual-Mechanism)
+    model4 <- '
+      # Traditional TAM/UTAUT paths
+      BI ~ PE + EE + SI + ATT + TRU + ANX
+      UB ~ FC + BI
+      ATT ~ PE + EE + TRU          # ← NEW: TRU→ATT
+
+      # AI-specific paths
+      TRU ~ TRA
+      ANX ~ AUT + SE + TRU         # ← NEW: TRU→ANX
+      EE ~ SE
+
+      # Covariances among exogenous
+      PE ~~ SI + FC + SE + TRA + AUT
+      SI ~~ FC + SE + TRA + AUT
+      FC ~~ SE + TRA + AUT
+      SE ~~ TRA + AUT
+      TRA ~~ AUT
+    '
+
+    stage2_model4 <- tssem2(stage1, RAM = lavaan2RAM(model4))
+    summary(stage2_model4)
+
+    # Trust total effect decomposition
+    # Direct: TRU → BI
+    # Indirect 1: TRU → ATT → BI
+    # Indirect 2: TRU → ANX → BI
+
+version: "1.0.0"
+date_created: "2026-03-04"
+last_modified: "2026-03-04"
