@@ -1,0 +1,1802 @@
+[
+  {
+    "study_id": "S001",
+    "record_id": "REC_05446",
+    "doi": "10.1080/10447318.2025.2513581",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S002",
+    "record_id": "REC_00090",
+    "doi": "10.1002/cae.70019",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cae.70019"
+  },
+  {
+    "study_id": "S003",
+    "record_id": "REC_00780",
+    "doi": "10.1007/s10639-024-13023-0",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S004",
+    "record_id": "REC_00784",
+    "doi": "10.1007/s10639-024-13095-y",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S005",
+    "record_id": "REC_00793",
+    "doi": "10.1007/s10639-024-13199-5",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S006",
+    "record_id": "REC_00807",
+    "doi": "10.1007/s10639-025-13349-3",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S007",
+    "record_id": "REC_00809",
+    "doi": "10.1007/s10639-025-13360-8",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S008",
+    "record_id": "REC_00818",
+    "doi": "10.1007/s10639-025-13441-8",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10639-025-13441-8.pdf"
+  },
+  {
+    "study_id": "S009",
+    "record_id": "REC_00821",
+    "doi": "10.1007/s10639-025-13466-z",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S010",
+    "record_id": "REC_00824",
+    "doi": "10.1007/s10639-025-13492-x",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10639-025-13492-x.pdf"
+  },
+  {
+    "study_id": "S011",
+    "record_id": "REC_00825",
+    "doi": "10.1007/s10639-025-13505-9",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S012",
+    "record_id": "REC_00827",
+    "doi": "10.1007/s10639-025-13508-6",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S013",
+    "record_id": "REC_00829",
+    "doi": "10.1007/s10639-025-13530-8",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S014",
+    "record_id": "REC_00831",
+    "doi": "10.1007/s10639-025-13535-3",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S015",
+    "record_id": "REC_00832",
+    "doi": "10.1007/s10639-025-13536-2",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S016",
+    "record_id": "REC_00834",
+    "doi": "10.1007/s10639-025-13551-3",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S017",
+    "record_id": "REC_00838",
+    "doi": "10.1007/s10639-025-13585-7",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10639-025-13585-7.pdf"
+  },
+  {
+    "study_id": "S018",
+    "record_id": "REC_00840",
+    "doi": "10.1007/s10639-025-13591-9",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10639-025-13591-9.pdf"
+  },
+  {
+    "study_id": "S019",
+    "record_id": "REC_00841",
+    "doi": "10.1007/s10639-025-13612-7",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S020",
+    "record_id": "REC_00918",
+    "doi": "10.1007/s10758-025-09830-0",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10758-025-09830-0.pdf"
+  },
+  {
+    "study_id": "S021",
+    "record_id": "REC_00922",
+    "doi": "10.1007/s10758-025-09915-w",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S022",
+    "record_id": "REC_00933",
+    "doi": "10.1007/s10791-025-09753-5",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10791-025-09753-5.pdf"
+  },
+  {
+    "study_id": "S023",
+    "record_id": "REC_01111",
+    "doi": "10.1007/s11096-025-01936-w",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11096-025-01936-w.pdf"
+  },
+  {
+    "study_id": "S024",
+    "record_id": "REC_01255",
+    "doi": "10.1007/s11423-025-10495-w",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S025",
+    "record_id": "REC_01286",
+    "doi": "10.1007/s11528-025-01096-8",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S026",
+    "record_id": "REC_01467",
+    "doi": "10.1007/s12144-024-07193-w",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12144-024-07193-w.pdf"
+  },
+  {
+    "study_id": "S027",
+    "record_id": "REC_01673",
+    "doi": "10.1007/s13198-025-02772-x",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S028",
+    "record_id": "REC_01916",
+    "doi": "10.1016/j.actpsy.2025.105217",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S029",
+    "record_id": "REC_01922",
+    "doi": "10.1016/j.actpsy.2025.105516",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S030",
+    "record_id": "REC_01931",
+    "doi": "10.1016/j.actpsy.2025.105789",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S031",
+    "record_id": "REC_01932",
+    "doi": "10.1016/j.actpsy.2025.105791",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S032",
+    "record_id": "REC_02192",
+    "doi": "10.1016/j.caeai.2025.100365",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S033",
+    "record_id": "REC_02194",
+    "doi": "10.1016/j.caeai.2025.100379",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S034",
+    "record_id": "REC_02197",
+    "doi": "10.1016/j.caeai.2025.100391",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S035",
+    "record_id": "REC_02204",
+    "doi": "10.1016/j.caeai.2025.100441",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S036",
+    "record_id": "REC_02205",
+    "doi": "10.1016/j.caeai.2025.100452",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S037",
+    "record_id": "REC_02208",
+    "doi": "10.1016/j.caeai.2025.100477",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S038",
+    "record_id": "REC_02358",
+    "doi": "10.1016/j.chbr.2024.100565",
+    "status": "download_failed",
+    "source": "semantic_scholar",
+    "pdf_url": "https://doi.org/10.1016/j.chbr.2024.100565"
+  },
+  {
+    "study_id": "S039",
+    "record_id": "REC_02756",
+    "doi": "10.1016/j.identj.2025.103893",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S040",
+    "record_id": "REC_02906",
+    "doi": "10.1016/j.ijme.2025.101252",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S041",
+    "record_id": "REC_03259",
+    "doi": "10.1016/j.jik.2025.100852",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S042",
+    "record_id": "REC_03559",
+    "doi": "10.1016/j.nedt.2025.106780",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S043",
+    "record_id": "REC_03938",
+    "doi": "10.1016/j.system.2025.103861",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S044",
+    "record_id": "REC_04000",
+    "doi": "10.1016/j.teln.2025.02.036",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S045",
+    "record_id": "REC_04748",
+    "doi": "10.1057/s41599-025-04945-2",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41599-025-04945-2.pdf"
+  },
+  {
+    "study_id": "S046",
+    "record_id": "REC_04751",
+    "doi": "10.1057/s41599-025-05641-x",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41599-025-05641-x.pdf"
+  },
+  {
+    "study_id": "S047",
+    "record_id": "REC_04752",
+    "doi": "10.1057/s41599-025-05775-y",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41599-025-05775-y.pdf"
+  },
+  {
+    "study_id": "S048",
+    "record_id": "REC_04899",
+    "doi": "10.1080/0144929X.2024.2317364",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/0144929X.2024.2317364?download=true"
+  },
+  {
+    "study_id": "S049",
+    "record_id": "REC_04941",
+    "doi": "10.1080/02188791.2025.2505664",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S050",
+    "record_id": "REC_05023",
+    "doi": "10.1080/03075079.2024.2427786",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S051",
+    "record_id": "REC_05025",
+    "doi": "10.1080/03075079.2025.2571674",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S052",
+    "record_id": "REC_05243",
+    "doi": "10.1080/09588221.2023.2246519",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S053",
+    "record_id": "REC_05414",
+    "doi": "10.1080/10447318.2024.2365028",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S054",
+    "record_id": "REC_05489",
+    "doi": "10.1080/10494820.2024.2343752",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S055",
+    "record_id": "REC_05491",
+    "doi": "10.1080/10494820.2024.2362805",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S056",
+    "record_id": "REC_05497",
+    "doi": "10.1080/10494820.2024.2443785",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S057",
+    "record_id": "REC_05503",
+    "doi": "10.1080/10494820.2025.2457350",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S058",
+    "record_id": "REC_05619",
+    "doi": "10.1080/10963758.2025.2586522",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S059",
+    "record_id": "REC_05775",
+    "doi": "10.1080/14703297.2025.2498530",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S060",
+    "record_id": "REC_05926",
+    "doi": "10.1080/17501229.2025.2563695",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S061",
+    "record_id": "REC_06041",
+    "doi": "10.1080/2331186X.2025.2485522",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S062",
+    "record_id": "REC_06042",
+    "doi": "10.1080/2331186X.2025.2504224",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S063",
+    "record_id": "REC_06051",
+    "doi": "10.1080/2331186X.2025.2553835",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2025.2553835?needAccess=true"
+  },
+  {
+    "study_id": "S064",
+    "record_id": "REC_06057",
+    "doi": "10.1080/2331186x.2025.2560618",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S065",
+    "record_id": "REC_06061",
+    "doi": "10.1080/2331186x.2025.2587487",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S066",
+    "record_id": "REC_06064",
+    "doi": "10.1080/2331186X.2025.2597051",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S067",
+    "record_id": "REC_06072",
+    "doi": "10.1080/23311886.2025.2476044",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/23311886.2025.2476044?needAccess=true"
+  },
+  {
+    "study_id": "S068",
+    "record_id": "REC_06516",
+    "doi": "10.1103/r2fn-kdy4",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S069",
+    "record_id": "REC_06658",
+    "doi": "10.1108/EL-12-2024-0391",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S070",
+    "record_id": "REC_06711",
+    "doi": "10.1108/GKMC-08-2024-0560",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S071",
+    "record_id": "REC_06725",
+    "doi": "10.1108/heswbl-02-2024-0065",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S072",
+    "record_id": "REC_06726",
+    "doi": "10.1108/HESWBL-02-2025-0062",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S073",
+    "record_id": "REC_06735",
+    "doi": "10.1108/HESWBL-10-2024-0315",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S074",
+    "record_id": "REC_07099",
+    "doi": "10.1108/JARHE-05-2025-0358",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S075",
+    "record_id": "REC_07117",
+    "doi": "10.1108/JARHE-09-2024-0519",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S076",
+    "record_id": "REC_07204",
+    "doi": "10.1108/JIEB-08-2024-0097",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S077",
+    "record_id": "REC_07616",
+    "doi": "10.1109/ACCESS.2025.3534099",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S078",
+    "record_id": "REC_07619",
+    "doi": "10.1109/ACCESS.2025.3544489",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S079",
+    "record_id": "REC_07630",
+    "doi": "10.1109/ACCESS.2025.3568834",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S080",
+    "record_id": "REC_07671",
+    "doi": "10.1109/RITA.2025.3613135",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S081",
+    "record_id": "REC_07999",
+    "doi": "10.1111/ejed.70364",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S082",
+    "record_id": "REC_08053",
+    "doi": "10.1111/ijal.12856",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S083",
+    "record_id": "REC_08198",
+    "doi": "10.1111/jcal.70075",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S084",
+    "record_id": "REC_08613",
+    "doi": "10.1142/S021964922550090X",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S085",
+    "record_id": "REC_08634",
+    "doi": "10.1145/3757693",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S086",
+    "record_id": "REC_08960",
+    "doi": "10.1177/02666669251333147",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S087",
+    "record_id": "REC_08967",
+    "doi": "10.1177/02666669251366666",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S088",
+    "record_id": "REC_08993",
+    "doi": "10.1177/02734753241302459",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://kclpure.kcl.ac.uk/ws/files/317697195/oc-et-al-2024-generative-ai-in-higher-education-assessments-examining-risk-and-tech-savviness-on-student-s-adoption.pdf"
+  },
+  {
+    "study_id": "S089",
+    "record_id": "REC_09123",
+    "doi": "10.1177/09504222251376760",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S090",
+    "record_id": "REC_09449",
+    "doi": "10.1177/21582440251387804",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S091",
+    "record_id": "REC_09455",
+    "doi": "10.1177/21582440251406744",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S092",
+    "record_id": "REC_09466",
+    "doi": "10.1177/23294906251319016",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S093",
+    "record_id": "REC_09774",
+    "doi": "10.1186/s12909-025-07336-y",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-025-07336-y"
+  },
+  {
+    "study_id": "S094",
+    "record_id": "REC_09777",
+    "doi": "10.1186/s12909-025-07416-z",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-025-07416-z"
+  },
+  {
+    "study_id": "S095",
+    "record_id": "REC_09827",
+    "doi": "10.1186/s12912-025-03436-8",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://bmcnurs.biomedcentral.com/counter/pdf/10.1186/s12912-025-03436-8"
+  },
+  {
+    "study_id": "S096",
+    "record_id": "REC_09828",
+    "doi": "10.1186/s12912-025-03490-2",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://bmcnurs.biomedcentral.com/counter/pdf/10.1186/s12912-025-03490-2"
+  },
+  {
+    "study_id": "S097",
+    "record_id": "REC_09832",
+    "doi": "10.1186/s12912-025-03620-w",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1186/s12912-025-03620-w.pdf"
+  },
+  {
+    "study_id": "S098",
+    "record_id": "REC_10018",
+    "doi": "10.1186/s40359-024-02328-x",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://bmcpsychology.biomedcentral.com/counter/pdf/10.1186/s40359-024-02328-x"
+  },
+  {
+    "study_id": "S099",
+    "record_id": "REC_10134",
+    "doi": "10.1186/s41239-025-00511-7",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://educationaltechnologyjournal.springeropen.com/counter/pdf/10.1186/s41239-025-00511-7"
+  },
+  {
+    "study_id": "S100",
+    "record_id": "REC_10137",
+    "doi": "10.1186/s41239-025-00547-9",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://educationaltechnologyjournal.springeropen.com/counter/pdf/10.1186/s41239-025-00547-9"
+  },
+  {
+    "study_id": "S101",
+    "record_id": "REC_10262",
+    "doi": "10.12973/eu-jer.14.3.805",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://pdf.eu-jer.com/EU-JER_14_3_805.pdf"
+  },
+  {
+    "study_id": "S102",
+    "record_id": "REC_10950",
+    "doi": "10.15240/tul/001/2025-5-023",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://dspace.tul.cz/bitstreams/052647d1-2189-4743-b2e2-1a3ff41e9062/download"
+  },
+  {
+    "study_id": "S103",
+    "record_id": "REC_11027",
+    "doi": "10.15678/EBER.2025.130101",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://eber.uek.krakow.pl/index.php/eber/article/download/2580/965"
+  },
+  {
+    "study_id": "S104",
+    "record_id": "REC_11073",
+    "doi": "10.1590/1983-3652.2025.57135",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S105",
+    "record_id": "REC_11293",
+    "doi": "10.18178/ijiet.2025.15.7.2348",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S106",
+    "record_id": "REC_11299",
+    "doi": "10.18231/j.ijfcm.11419.1758619569",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://ijfcm.org/archive/volume/12/issue/4/article/25487/pdf"
+  },
+  {
+    "study_id": "S107",
+    "record_id": "REC_11401",
+    "doi": "10.18870/hlrc.v15i2.1598",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://scholarworks.waldenu.edu/cgi/viewcontent.cgi?article=1598&context=hlrc"
+  },
+  {
+    "study_id": "S108",
+    "record_id": "REC_11462",
+    "doi": "10.20448/jeelr.v12i2.6893",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://asianonlinejournals.com/index.php/JEELR/article/download/6893/3013"
+  },
+  {
+    "study_id": "S109",
+    "record_id": "REC_11946",
+    "doi": "10.2196/76574",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://mededu.jmir.org/2025/1/e76574/PDF"
+  },
+  {
+    "study_id": "S110",
+    "record_id": "REC_12164",
+    "doi": null,
+    "status": "no_doi",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S111",
+    "record_id": "REC_12170",
+    "doi": "10.24200/jonus.vol10iss2pp475-493",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://journal.unisza.edu.my/jonus/index.php/jonus/article/download/891/541"
+  },
+  {
+    "study_id": "S112",
+    "record_id": "REC_12266",
+    "doi": "10.26417/bamx9m98",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://revistia.com/index.php/ejser/article/view/3396/3232"
+  },
+  {
+    "study_id": "S113",
+    "record_id": "REC_12366",
+    "doi": "10.28945/5612",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S114",
+    "record_id": "REC_12381",
+    "doi": "10.28991/ESJ-2025-SIED1-018",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.ijournalse.org/index.php/ESJ/article/download/3406/932"
+  },
+  {
+    "study_id": "S115",
+    "record_id": "REC_12458",
+    "doi": "10.30564/fls.v7i2.8593",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://journals.bilpubgroup.com/index.php/fls/article/download/8593/5982"
+  },
+  {
+    "study_id": "S116",
+    "record_id": "REC_12496",
+    "doi": "10.30935/cedtech/17243",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.cedtech.net/download/higher-education-students-chatgpt-use-behavior-structural-equation-modelling-of-contributing-factors-17243.pdf"
+  },
+  {
+    "study_id": "S117",
+    "record_id": "REC_12680",
+    "doi": "10.32674/fnwdpn48",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://ojed.org/jis/article/download/7890/3471"
+  },
+  {
+    "study_id": "S118",
+    "record_id": "REC_12813",
+    "doi": "10.3389/feduc.2025.1427450",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1427450/pdf"
+  },
+  {
+    "study_id": "S119",
+    "record_id": "REC_12837",
+    "doi": "10.3389/feduc.2025.1622620",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1622620/pdf"
+  },
+  {
+    "study_id": "S120",
+    "record_id": "REC_12844",
+    "doi": "10.3389/feduc.2025.1652292",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1652292/pdf"
+  },
+  {
+    "study_id": "S121",
+    "record_id": "REC_12850",
+    "doi": "10.3389/feduc.2025.1677827",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1677827/pdf"
+  },
+  {
+    "study_id": "S122",
+    "record_id": "REC_12853",
+    "doi": "10.3389/feduc.2025.1686408",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1686408/pdf"
+  },
+  {
+    "study_id": "S123",
+    "record_id": "REC_12854",
+    "doi": "10.3389/feduc.2025.1688902",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1688902/pdf"
+  },
+  {
+    "study_id": "S124",
+    "record_id": "REC_13303",
+    "doi": "10.3389/fpsyg.2025.1571279",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1571279/pdf"
+  },
+  {
+    "study_id": "S125",
+    "record_id": "REC_13312",
+    "doi": "10.3389/fpsyg.2025.1619391",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1619391/pdf"
+  },
+  {
+    "study_id": "S126",
+    "record_id": "REC_13556",
+    "doi": "10.3390/app15063363",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2076-3417/15/6/3363/pdf?version=1742388527"
+  },
+  {
+    "study_id": "S127",
+    "record_id": "REC_13564",
+    "doi": "10.3390/app151910603",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2076-3417/15/19/10603/pdf?version=1759238729"
+  },
+  {
+    "study_id": "S128",
+    "record_id": "REC_13573",
+    "doi": "10.3390/bioengineering12101095",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2306-5354/12/10/1095/pdf?version=1760190206"
+  },
+  {
+    "study_id": "S129",
+    "record_id": "REC_13643",
+    "doi": "10.3390/computers14100411",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2073-431X/14/10/411/pdf?version=1758894353"
+  },
+  {
+    "study_id": "S130",
+    "record_id": "REC_13706",
+    "doi": "10.3390/educsci15030310",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/15/3/310/pdf?version=1740983140"
+  },
+  {
+    "study_id": "S131",
+    "record_id": "REC_13714",
+    "doi": "10.3390/educsci15060686",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S132",
+    "record_id": "REC_13717",
+    "doi": "10.3390/educsci15060746",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/15/6/746/pdf?version=1750054687"
+  },
+  {
+    "study_id": "S133",
+    "record_id": "REC_13718",
+    "doi": "10.3390/educsci15060756",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/15/6/756/pdf?version=1750070522"
+  },
+  {
+    "study_id": "S134",
+    "record_id": "REC_13723",
+    "doi": "10.3390/educsci15070904",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/15/7/904/pdf"
+  },
+  {
+    "study_id": "S135",
+    "record_id": "REC_13727",
+    "doi": "10.3390/educsci15081044",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/15/8/1044/pdf?version=1755246305"
+  },
+  {
+    "study_id": "S136",
+    "record_id": "REC_13734",
+    "doi": "10.3390/educsci15111431",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S137",
+    "record_id": "REC_13753",
+    "doi": "10.3390/ejihpe15030035",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2254-9625/15/3/35/pdf?version=1741926822"
+  },
+  {
+    "study_id": "S138",
+    "record_id": "REC_13780",
+    "doi": "10.3390/fi17120581",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S139",
+    "record_id": "REC_13884",
+    "doi": "10.3390/info16020082",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2078-2489/16/2/82/pdf?version=1737605809"
+  },
+  {
+    "study_id": "S140",
+    "record_id": "REC_13887",
+    "doi": "10.3390/info16070622",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2078-2489/16/7/622/pdf?version=1753106912"
+  },
+  {
+    "study_id": "S141",
+    "record_id": "REC_13975",
+    "doi": "10.3390/socsci14060355",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://digibug.ugr.es/bitstream/10481/105079/1/socsci-14-00355-v3.pdf"
+  },
+  {
+    "study_id": "S142",
+    "record_id": "REC_14103",
+    "doi": "10.3390/su17072834",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2071-1050/17/7/2834/pdf?version=1742814439"
+  },
+  {
+    "study_id": "S143",
+    "record_id": "REC_14110",
+    "doi": "10.3390/su17125609",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2071-1050/17/12/5609/pdf?version=1750246425"
+  },
+  {
+    "study_id": "S144",
+    "record_id": "REC_14177",
+    "doi": "10.33902/jpsp.202534245",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.j-psp.com/download/a-detailed-examination-of-faculty-acceptance-of-artificial-intelligence-insights-from-key-variables-16910.pdf"
+  },
+  {
+    "study_id": "S145",
+    "record_id": "REC_14209",
+    "doi": "10.34190/ejel.23.1.3599",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://academic-publishing.org/index.php/ejel/article/download/3599/2342"
+  },
+  {
+    "study_id": "S146",
+    "record_id": "REC_14211",
+    "doi": "10.34190/ejel.23.4.4245",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://academic-publishing.org/index.php/ejel/article/download/4245/2417"
+  },
+  {
+    "study_id": "S147",
+    "record_id": "REC_14246",
+    "doi": "10.37074/jalt.2025.8.1.7",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://journals.sfu.ca/jalt/index.php/jalt/article/download/2101/903"
+  },
+  {
+    "study_id": "S148",
+    "record_id": "REC_14248",
+    "doi": "10.37074/jalt.2025.8.2.7",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://journals.sfu.ca/jalt/index.php/jalt/article/download/2997/999"
+  },
+  {
+    "study_id": "S149",
+    "record_id": "REC_14511",
+    "doi": "10.4018/IJWLTT.392931",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.igi-global.com/ViewTitle.aspx?TitleId=392931&isxn=9798337311593"
+  },
+  {
+    "study_id": "S150",
+    "record_id": "REC_14719",
+    "doi": "10.47738/jads.v6i3.781",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S151",
+    "record_id": "REC_14931",
+    "doi": "10.53761/gka8jq15",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S152",
+    "record_id": "REC_15667",
+    "doi": null,
+    "status": "no_doi",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S153",
+    "record_id": "REC_00743",
+    "doi": "10.1007/s10639-023-12076-x",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S154",
+    "record_id": "REC_00750",
+    "doi": "10.1007/s10639-023-12333-z",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S155",
+    "record_id": "REC_00758",
+    "doi": "10.1007/s10639-024-12506-4",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S156",
+    "record_id": "REC_00762",
+    "doi": "10.1007/s10639-024-12599-x",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S157",
+    "record_id": "REC_00766",
+    "doi": "10.1007/s10639-024-12763-3",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S158",
+    "record_id": "REC_00902",
+    "doi": "10.1007/s10755-023-09686-1",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10755-023-09686-1.pdf"
+  },
+  {
+    "study_id": "S159",
+    "record_id": "REC_02179",
+    "doi": "10.1016/j.caeai.2024.100246",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S160",
+    "record_id": "REC_02188",
+    "doi": "10.1016/j.caeai.2024.100329",
+    "status": "download_failed",
+    "source": "semantic_scholar",
+    "pdf_url": "https://doi.org/10.1016/j.caeai.2024.100329"
+  },
+  {
+    "study_id": "S161",
+    "record_id": "REC_02212",
+    "doi": "10.1016/j.caeo.2024.100191",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S162",
+    "record_id": "REC_02343",
+    "doi": "10.1016/j.chb.2023.108097",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S163",
+    "record_id": "REC_02728",
+    "doi": "10.1016/j.heliyon.2024.e29317",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "http://www.cell.com/article/S2405844024053489/pdf"
+  },
+  {
+    "study_id": "S164",
+    "record_id": "REC_03884",
+    "doi": "10.1016/j.ssaho.2024.101136",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S165",
+    "record_id": "REC_04767",
+    "doi": "10.1075/is.24019.hua",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S166",
+    "record_id": "REC_05107",
+    "doi": "10.1080/08839514.2024.2371168",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/08839514.2024.2371168?needAccess=true"
+  },
+  {
+    "study_id": "S167",
+    "record_id": "REC_05388",
+    "doi": "10.1080/10447318.2023.2261725",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S168",
+    "record_id": "REC_05486",
+    "doi": "10.1080/10494820.2023.2209881",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S169",
+    "record_id": "REC_06019",
+    "doi": "10.1080/2331186x.2023.2293431",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S170",
+    "record_id": "REC_06020",
+    "doi": "10.1080/2331186X.2024.2310976",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2310976?needAccess=true"
+  },
+  {
+    "study_id": "S171",
+    "record_id": "REC_06031",
+    "doi": "10.1080/2331186X.2024.2380175",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2380175?needAccess=true"
+  },
+  {
+    "study_id": "S172",
+    "record_id": "REC_06032",
+    "doi": "10.1080/2331186X.2024.2386892",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2386892?needAccess=true"
+  },
+  {
+    "study_id": "S173",
+    "record_id": "REC_06066",
+    "doi": "10.1080/23311886.2023.2300177",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/23311886.2023.2300177?needAccess=true"
+  },
+  {
+    "study_id": "S174",
+    "record_id": "REC_06994",
+    "doi": "10.1108/itp-02-2021-0152",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S175",
+    "record_id": "REC_07104",
+    "doi": "10.1108/JARHE-06-2024-0260",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S176",
+    "record_id": "REC_07192",
+    "doi": "10.1108/jices-03-2024-0033",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S177",
+    "record_id": "REC_07274",
+    "doi": "10.1108/JRIT-05-2024-0116",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.emerald.com/jrit/article-pdf/doi/10.1108/JRIT-05-2024-0116/9772577/jrit-05-2024-0116.pdf"
+  },
+  {
+    "study_id": "S178",
+    "record_id": "REC_07602",
+    "doi": "10.1109/ACCESS.2024.3445909",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S179",
+    "record_id": "REC_07876",
+    "doi": "10.1111/bjet.13425",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S180",
+    "record_id": "REC_07879",
+    "doi": "10.1111/bjet.13466",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjet.13466"
+  },
+  {
+    "study_id": "S181",
+    "record_id": "REC_07976",
+    "doi": "10.1111/ejed.12886",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ejed.12886"
+  },
+  {
+    "study_id": "S182",
+    "record_id": "REC_08196",
+    "doi": "10.1111/jcal.13105",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S183",
+    "record_id": "REC_08981",
+    "doi": "10.1177/02704676241283362",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S184",
+    "record_id": "REC_09420",
+    "doi": "10.1177/21582440241242188",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/21582440241242188"
+  },
+  {
+    "study_id": "S185",
+    "record_id": "REC_09430",
+    "doi": "10.1177/21582440241289835",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S186",
+    "record_id": "REC_09729",
+    "doi": "10.1186/s12909-024-05627-4",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-024-05627-4"
+  },
+  {
+    "study_id": "S187",
+    "record_id": "REC_09969",
+    "doi": "10.1186/s13731-024-00412-5",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://innovation-entrepreneurship.springeropen.com/counter/pdf/10.1186/s13731-024-00412-5"
+  },
+  {
+    "study_id": "S188",
+    "record_id": "REC_10258",
+    "doi": "10.12973/eu-jer.13.1.183",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://pdf.eu-jer.com/EU-JER_13_1_183.pdf"
+  },
+  {
+    "study_id": "S189",
+    "record_id": "REC_11131",
+    "doi": "10.17010/pijom/2024/v17i12/174055",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.indianjournalofmanagement.com/index.php/pijom/article/download/174055/117126"
+  },
+  {
+    "study_id": "S190",
+    "record_id": "REC_11281",
+    "doi": "10.18178/ijiet.2024.14.12.2207",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.ijiet.org/vol14/IJIET-V14N12-2207.pdf"
+  },
+  {
+    "study_id": "S191",
+    "record_id": "REC_11451",
+    "doi": "10.20368/1971-8829/1135969",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S192",
+    "record_id": "REC_11866",
+    "doi": "10.2196/57132",
+    "status": "download_failed",
+    "source": "semantic_scholar",
+    "pdf_url": "https://doi.org/10.2196/57132"
+  },
+  {
+    "study_id": "S193",
+    "record_id": "REC_12203",
+    "doi": "10.2478/amns-2024-2365",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://amns.sciendo.com/pdf/10.2478/amns-2024-2365"
+  },
+  {
+    "study_id": "S194",
+    "record_id": "REC_12376",
+    "doi": "10.28991/ESJ-2024-08-03-02",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.ijournalse.org/index.php/ESJ/article/download/2407/pdf"
+  },
+  {
+    "study_id": "S195",
+    "record_id": "REC_12567",
+    "doi": "10.48009/3_iis_2024_119",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://doi.org/10.48009/3_iis_2024_119"
+  },
+  {
+    "study_id": "S196",
+    "record_id": "REC_13687",
+    "doi": "10.3390/educsci14070740",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/14/7/740/pdf?version=1720762854"
+  },
+  {
+    "study_id": "S197",
+    "record_id": "REC_13699",
+    "doi": "10.3390/educsci14111209",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/14/11/1209/pdf?version=1730616630"
+  },
+  {
+    "study_id": "S198",
+    "record_id": "REC_13749",
+    "doi": "10.3390/ejihpe14030047",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2254-9625/14/3/47/pdf?version=1710664564"
+  },
+  {
+    "study_id": "S199",
+    "record_id": "REC_13881",
+    "doi": "10.3390/info15060314",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2078-2489/15/6/314/pdf?version=1716890231"
+  },
+  {
+    "study_id": "S200",
+    "record_id": "REC_13891",
+    "doi": "10.3390/informatics11020038",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-9709/11/2/38/pdf?version=1717422330"
+  },
+  {
+    "study_id": "S201",
+    "record_id": "REC_13892",
+    "doi": "10.3390/informatics11030054",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-9709/11/3/54/pdf?version=1721985547"
+  },
+  {
+    "study_id": "S202",
+    "record_id": "REC_14089",
+    "doi": "10.3390/su16145970",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2071-1050/16/14/5970/pdf?version=1720788433"
+  },
+  {
+    "study_id": "S203",
+    "record_id": "REC_14137",
+    "doi": "10.3390/systems12050176",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2079-8954/12/5/176/pdf?version=1715764107"
+  },
+  {
+    "study_id": "S204",
+    "record_id": "REC_14450",
+    "doi": "10.4018/IJCALLT.358918",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.igi-global.com/ViewTitle.aspx?TitleId=358918&isxn=9798369325179"
+  },
+  {
+    "study_id": "S205",
+    "record_id": "REC_14478",
+    "doi": "10.4018/IJICTE.339557",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://www.igi-global.com/ViewTitle.aspx?TitleId=339557&isxn=9798369324592"
+  },
+  {
+    "study_id": "S206",
+    "record_id": "REC_14749",
+    "doi": "10.48009/3_iis_2024_119",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://doi.org/10.48009/3_iis_2024_119"
+  },
+  {
+    "study_id": "S207",
+    "record_id": "REC_14878",
+    "doi": "10.5267/j.ijdns.2023.11.024",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://doi.org/10.5267/j.ijdns.2023.11.024"
+  },
+  {
+    "study_id": "S208",
+    "record_id": "REC_14879",
+    "doi": "10.5267/j.ijdns.2023.12.022",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://doi.org/10.5267/j.ijdns.2023.12.022"
+  },
+  {
+    "study_id": "S209",
+    "record_id": "REC_14884",
+    "doi": "10.5267/j.ijdns.2024.3.007",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://doi.org/10.5267/j.ijdns.2024.3.007"
+  },
+  {
+    "study_id": "S210",
+    "record_id": "REC_14934",
+    "doi": "10.53761/s1pkk784",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "http://open-publishing.org/journals/index.php/jutlp/article/download/752/936"
+  },
+  {
+    "study_id": "S211",
+    "record_id": "REC_15014",
+    "doi": "10.5604/01.3001.0054.7264",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S212",
+    "record_id": "REC_15051",
+    "doi": "10.57239/PJLSS-2024-22.1.00424",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://doi.org/10.57239/pjlss-2024-22.1.00424"
+  },
+  {
+    "study_id": "S213",
+    "record_id": "REC_02174",
+    "doi": "10.1016/j.caeai.2023.100178",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S214",
+    "record_id": "REC_02175",
+    "doi": "10.1016/j.caeai.2023.100190",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S215",
+    "record_id": "REC_06594",
+    "doi": "10.1108/DLO-07-2022-0133",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S216",
+    "record_id": "REC_07574",
+    "doi": "10.1109/ACCESS.2023.3314499",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10247529.pdf"
+  },
+  {
+    "study_id": "S217",
+    "record_id": "REC_10820",
+    "doi": "10.14742/ajet.8956",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://ajet.org.au/index.php/AJET/article/download/8956/2047"
+  },
+  {
+    "study_id": "S218",
+    "record_id": "REC_13258",
+    "doi": "10.3389/fpsyg.2023.1259531",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1259531/pdf?isPublishedV2=False"
+  },
+  {
+    "study_id": "S219",
+    "record_id": "REC_13681",
+    "doi": "10.3390/educsci13111151",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2227-7102/13/11/1151/pdf?version=1700202682"
+  },
+  {
+    "study_id": "S220",
+    "record_id": "REC_14052",
+    "doi": "10.3390/su15010872",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2071-1050/15/1/872/pdf?version=1672907069"
+  },
+  {
+    "study_id": "S221",
+    "record_id": "REC_15354",
+    "doi": "10.7821/naer.2023.7.1458",
+    "status": "download_failed",
+    "source": "unpaywall",
+    "pdf_url": "https://naerjournal.ua.es/article/download/v12n2-8/999"
+  },
+  {
+    "study_id": "S222",
+    "record_id": "REC_00715",
+    "doi": "10.1007/s10639-021-10664-3",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S223",
+    "record_id": "REC_00718",
+    "doi": "10.1007/s10639-022-10947-3",
+    "status": "no_oa",
+    "source": null,
+    "pdf_url": null
+  },
+  {
+    "study_id": "S224",
+    "record_id": "REC_00720",
+    "doi": "10.1007/s10639-022-10985-x",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10639-022-10985-x.pdf"
+  },
+  {
+    "study_id": "S225",
+    "record_id": "REC_14042",
+    "doi": "10.3390/su141912726",
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.mdpi.com/2071-1050/14/19/12726/pdf?version=1665285495"
+  }
+]

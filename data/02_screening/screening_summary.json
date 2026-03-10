@@ -1,0 +1,20 @@
+{
+  "generated": "2026-03-09",
+  "total_human_reviewed": 657,
+  "confirmed_include": 225,
+  "confirmed_exclude": 432,
+  "year_filter": "2022-2026",
+  "year_distribution": {
+    "2022": 4,
+    "2023": 9,
+    "2024": 60,
+    "2025": 151,
+    "2026": 1
+  },
+  "source_breakdown": {
+    "Tab2_AutoINC_R1": 135,
+    "Tab3_R1": 39,
+    "Tab1_IRR": 37,
+    "Tab2_Blue": 14
+  }
+}
