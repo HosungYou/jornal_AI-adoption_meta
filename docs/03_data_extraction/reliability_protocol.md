@@ -1,5 +1,7 @@
 # Inter-Coder Reliability Protocol
 
+> **Updated 2026-03-10:** Revised to reflect 2-pair design (Pair A: R1+R2, Pair B: R3+R4), Phase 0 calibration (10 studies), Phase 1 dual coding (100 studies = Paper B gold standard + Paper A ICR), cross-pair adjudication. See canonical manual: `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md`
+
 ## Overview
 
 This protocol ensures that data extraction is consistent, accurate, and reproducible across coders. High inter-coder reliability (ICR) demonstrates that our coding procedures are objective and replicable.
@@ -22,17 +24,18 @@ This protocol ensures that data extraction is consistent, accurate, and reproduc
 
 ---
 
-### 1.2 ICR Approach
+### 1.2 ICR Approach (Updated)
 
-**20% Stratified Sample:**
-- Representative subset of all included studies
-- Two independent human coders
-- Compare AI extractions to human coding
-- Calculate reliability metrics
+**2-Pair Design with 100-Study Dual Set:**
+- 4 coders (R1–R4) in 2 independent pairs
+- Pair A (R1+R2): 50 studies; Pair B (R3+R4): 50 studies
+- Phase 0 calibration: 10 studies coded by all 4 coders
+- Cross-pair adjudication for discrepancies
 
-**Dual Comparison:**
-1. **Human-Human Reliability:** Do two human coders agree?
-2. **AI-Human Reliability:** Does AI consensus match human coding?
+**Triple Comparison:**
+1. **Within-Pair Reliability:** R1 vs R2 (50 studies), R3 vs R4 (50 studies)
+2. **Inter-Pair Consistency:** Pair A gold vs Pair B gold (calibration 10 studies)
+3. **AI-Human Reliability:** 3-model AI consensus vs human gold standard (100 studies)
 
 ---
 
@@ -40,12 +43,13 @@ This protocol ensures that data extraction is consistent, accurate, and reproduc
 
 ### 2.1 Sample Size
 
-**Target:** 20% of total included studies
+**Target:** 100 studies (~40% of total) dual-coded in Phase 1
 
 **Rationale:**
-- PRISMA recommends 10-20% for ICR
-- 20% provides robust estimates with 95% confidence intervals
-- Balances thoroughness with feasibility
+- Exceeds IES minimum (20%) and typical social science standard (10-25%)
+- 100 studies provides robust ICC/κ estimates with narrow 95% CIs
+- Serves dual purpose: Paper A ICR validation + Paper B gold standard
+- 2-pair design strengthens generalizability (not dependent on single coder pair)
 
 **Examples:**
 - If k=100 studies → ICR sample = 20 studies

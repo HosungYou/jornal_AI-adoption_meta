@@ -13,6 +13,7 @@
 |---------|------|---------|
 | 1.0 | 2026-02-16 | Initial release |
 | 2.0 | 2026-03-09 | Major revision: year range 2022–2026; education-only scope; independent coding workflow; AI metadata pre-coding; 3 CLI models (Claude, Gemini, Codex); Addendum integrated and replaced; unnecessary fields removed; study_id S001 format; full-text exclusion codes E-FT1–E-FT6 added |
+| 2.1 | 2026-03-10 | Paper A+B integrated design; 2-pair ICR (R1+R2, R3+R4); Phase 1 100건 dual + Phase 2 150건 single; calibration 10건; cross-pair adjudication; Paper B gold standard = Paper A ICR sample |
 
 ---
 
@@ -138,35 +139,41 @@ The study extracts correlation matrices from primary studies to build pooled cor
 ### 3.1 Workflow Diagram
 
 ```
-Phase A: AI Metadata Pre-Coding (non-critical fields)
-   │  AI extracts: author, year, title, DOI, sample_size, country,
-   │  study_design, ai_type, education_level, theoretical_framework
-   │  ► Human verifies during independent coding
+Phase 0: Calibration (10 studies)
+   │  All 4 coders (R1-R4) code same 10 studies
+   │  ► Calculate inter-pair consistency
+   │  ► Resolve disagreements, refine rules
    ↓
-Phase B: Independent Human Coding (core MASEM data)
-   │  ► 30% ICR sample: R2 + R3 code independently (BLINDED to AI results)
-   │  ► Remaining 70%: single coder + 10-20% spot-check
-   │  Core tasks:
-   │    - Correlation matrix extraction
-   │    - Construct harmonization
-   │    - Moderator variables
-   │    - Reliability data
+Phase 1: Dual Coding — 100 studies
+   │  = Paper B Gold Standard + Paper A ICR sample
+   │  Pair A (R1 + R2): 50 studies independently (blinded)
+   │  Pair B (R3 + R4): 50 studies independently (blinded)
+   │  ► Cross-pair adjudication for discrepancies
+   │  ► ICR targets: κ ≥ .85, ICC ≥ .90, MAE ≤ .03
    ↓
-Phase C: AI Extraction (parallel with Phase B)
+Phase 2: Single Coding — ~150 studies
+   │  = Paper A remaining studies
+   │  R1: ~38 studies + ~6 spot-checks
+   │  R2: ~38 studies + ~6 spot-checks
+   │  R3: ~37 studies + ~6 spot-checks
+   │  R4: ~37 studies + ~6 spot-checks
+   │  ► 15-20% cross-checked by another coder (rotating)
+   ↓
+Phase 3 (parallel): AI Extraction
    │  ► 3-model consensus: Claude CLI + Gemini CLI + Codex CLI
-   │  ► Extract correlations, map constructs
-   │  ► Results NOT shown to human coders until Phase D
+   │  ► Results NOT shown to human coders until Phase 4
    ↓
-Phase D: ICR & AI-Human Comparison
-   │  ► Human-Human ICR on 30% sample
-   │  ► AI-Human agreement metrics
-   │  ► If ICR not met: retrain, re-code
+Phase 4: ICR & AI-Human Comparison
+   │  ► Pair A ICR (R1 vs R2) on 50 studies
+   │  ► Pair B ICR (R3 vs R4) on 50 studies
+   │  ► Inter-pair consistency (Pair A gold vs Pair B gold)
+   │  ► AI-Human agreement (3-model consensus vs human gold)
    ↓
-Phase E: Discrepancy Resolution
+Phase 5: Discrepancy Resolution
+   │  ► Cross-pair adjudication for Phase 1 discrepancies
    │  ► Return to original study for all discrepancies
-   │  ► PI adjudicates unresolved cases
    ↓
-Phase F: QA Final (6 Gates)
+Phase 6: QA Final (6 Gates)
    │  ► Range, symmetry, diagonal, completeness, sample size, duplicate
    ↓
 Final Validated Dataset
@@ -174,23 +181,24 @@ Final Validated Dataset
 
 ### 3.2 Key Workflow Rules
 
-1. **AI metadata pre-coding** is permitted for non-critical fields (identification, sample demographics). Humans verify during their coding.
-2. **Core MASEM data** (correlations, construct mappings) must be coded by humans **independently** (blinded to AI extraction results).
-3. **AI extraction** runs in parallel but is only compared to human coding **after** human coding is complete.
-4. The **human-coded data** is the gold standard. AI output is used for comparison, validation, and efficiency measurement.
+1. **Calibration (Phase 0):** All 4 coders code the same 10 studies to establish inter-pair consistency before Phase 1 begins.
+2. **Dual coding (Phase 1):** Two independent pairs (R1+R2, R3+R4) each code 50 studies. This 100-study set serves dual purpose: Paper B gold standard AND Paper A ICR validation.
+3. **Cross-pair adjudication:** Discrepancies within Pair A (R1-R2) are adjudicated by R3 or R4. Discrepancies within Pair B (R3-R4) are adjudicated by R1 or R2.
+4. **Single coding (Phase 2):** Remaining ~150 studies divided equally among R1-R4 (~38 each), with 15-20% spot-checked by a different coder.
+5. **AI extraction (Phase 3):** Runs in parallel with human coding. Results are NOT shown to human coders until Phase 4.
+6. **Human-coded data is the gold standard.** AI output is used for comparison, validation, and Paper B analysis.
 
 ### 3.3 Estimated Timeline
 
-| Phase | Duration | Personnel |
-|-------|----------|-----------|
-| AI metadata pre-coding | 1 week | AI pipeline |
-| Coder training & calibration | 1 week | All coders |
-| Independent human coding (30% ICR) | 2 weeks | R2 + R3 |
-| Independent human coding (70% remaining) | 2 weeks | R2 or R3 |
-| AI extraction (parallel) | 1 week | AI pipeline |
-| ICR calculation & comparison | 3 days | PI |
-| Discrepancy resolution | 1 week | Both coders + PI |
-| QA finalization | 3 days | PI |
+| Phase | Duration | Personnel | Output |
+|-------|----------|-----------|--------|
+| Phase 0: Calibration | 3 days | R1, R2, R3, R4 (all) | Inter-pair consistency report |
+| Phase 1: Dual coding (100 studies) | 3 weeks | Pair A (R1+R2), Pair B (R3+R4) | Paper B gold standard + Paper A ICR |
+| Phase 2: Single coding (~150 studies) | 2 weeks | R1, R2, R3, R4 (equal split) | Paper A remaining data |
+| Phase 3: AI extraction (parallel) | 1 week | AI pipeline | AI consensus dataset |
+| Phase 4: ICR calculation | 3 days | PI | ICR metrics report |
+| Phase 5: Discrepancy resolution | 1 week | All coders + PI | Resolved dataset |
+| Phase 6: QA finalization | 3 days | PI | Final validated dataset |
 
 ---
 
@@ -204,6 +212,7 @@ Final Validated Dataset
 | Practice — Harmonization | 1 day | Harmonize constructs from 3 studies using mapping tables | >85% agreement on construct mapping |
 | Calibration session | 2 hours | Compare practice coding; discuss disagreements; refine rules | All disagreements resolved |
 | Certification | — | Code 2 new studies independently; compare with gold standard | All criteria met |
+| Calibration (Phase 0) | 3 days | All 4 coders code same 10 studies; calculate inter-pair κ; discuss all disagreements | Inter-pair κ ≥ .80; all disagreements resolved |
 
 ---
 
@@ -526,9 +535,14 @@ These metrics quantify AI extraction quality relative to human gold standard and
 
 ### 11.1 When to Calculate
 
-Calculate ICR on a **30% stratified random sample** of included studies. Both human coders (R2 and R3) must code independently before comparing.
+Calculate ICR on the **Phase 1 dual-coded set (100 studies)**. Two independent coder pairs (Pair A: R1+R2; Pair B: R3+R4) each code 50 studies.
 
-**Stratification dimensions:**
+**ICR is calculated at three levels:**
+1. **Within-pair:** R1 vs R2 (50 studies), R3 vs R4 (50 studies)
+2. **Inter-pair consistency:** Compare Pair A gold standard values to Pair B gold standard values on the calibration set (10 studies coded by all 4)
+3. **AI-Human:** 3-model AI consensus vs human gold standard (100 studies)
+
+**Stratification of Phase 1 sample (100 studies):**
 - Publication year (2022, 2023–2024, 2025–2026)
 - AI type (generative vs. non-generative)
 - Education level (K-12, undergraduate, graduate+)

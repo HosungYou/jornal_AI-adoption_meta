@@ -1,10 +1,12 @@
 # AI-Assisted Coding Pipeline
 
-> **Note (v2 update, 2026-03-09):** This pipeline has been updated to reflect the following decisions:
+> **Note (v2.1 update, 2026-03-10):** This pipeline has been updated to reflect the following decisions:
 > - **AI models:** Claude CLI (claude-sonnet-4-6), Gemini CLI (gemini-2.5-flash), Codex CLI (latest) — all via CLI
 > - **Study count:** ~225–300 MASEM-eligible studies (updated from original 40–80 estimate)
 > - **Year range:** 2022–2026 (updated from 2015–2025)
-> - **Coding workflow:** Independent human coding (blinded) + AI metadata pre-coding; AI extraction runs in parallel for comparison only
+> - **Coding workflow:** 2-pair independent coding (Pair A: R1+R2, Pair B: R3+R4) with cross-pair adjudication
+> - **Phase design:** Phase 0 calibration (10 studies, all 4 coders) → Phase 1 dual (100 studies) → Phase 2 single (~150 studies)
+> - **Paper A+B integration:** Phase 1 100-study dual set = Paper B gold standard + Paper A ICR sample
 > - **Canonical manual:** `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md`
 > - **Canonical codebook:** `data/04_extraction/AI_Adoption_MASEM_Coding_v2.xlsx`
 
@@ -346,9 +348,10 @@ Validate AI extraction accuracy through inter-coder reliability on a representat
 ### Process
 
 **Step 1: Assign to Coders**
-- Two independent human coders (R2 + R3)
-- Each codes the same ~68-75 studies (30% ICR sample)
-- **Blinded** to AI extractions and each other's work
+- Four coders in two independent pairs: Pair A (R1+R2), Pair B (R3+R4)
+- Each pair codes 50 studies independently (100 total = Phase 1)
+- **Blinded** to AI extractions and the other pair's work
+- Cross-pair adjudication for discrepancies
 
 **Step 2: Human Coding**
 - Use coding manual (docs/03_data_extraction/coding_manual.md)

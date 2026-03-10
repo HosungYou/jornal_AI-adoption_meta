@@ -81,29 +81,31 @@ Phase 3: Quality Assurance (Phase 2의 10% spot-check)
 ## Phase 1: Gold Standard 구축 (100 studies) — 📘 Paper B 핵심 / 📗 Paper A 활용
 
 ### 목적
-100개 gold standard studies에 대해 2명의 인간 코더(R2, R3)가 독립적으로 코딩하고,
+100개 gold standard studies에 대해 4명의 인간 코더(R1-R4)가 2개 독립 pair로 코딩하고,
 3개 AI 모델이 동일 studies를 독립 추출. Gold standard 대비 AI 정확도 평가.
-R1(PI)은 adjudicator로서 R2-R3 불일치를 중재.
+- Phase 0 (Calibration): 전체 4명이 동일 10 studies 코딩 → κ ≥ 0.80 확인
+- Phase 1: Pair A (R1+R2) = 50 studies, Pair B (R3+R4) = 50 studies
+- Cross-pair adjudication: R1이 Pair B 불일치 중재, R3가 Pair A 불일치 중재
 
 ### Step 1: AI Extraction (Week 1)
 
 ```
 3개 모델 × 100 studies × 4 modules = 1,200 API calls
 
-1. Claude Sonnet 4.6 (Anthropic)
-   ├── API: Anthropic Messages API
+1. Claude CLI (Anthropic) [claude-sonnet-4-6]
+   ├── Interface: Claude CLI
    ├── Temperature: 0
    ├── Max tokens: 4096
    └── Prompt: prompts/module_a-d (순차 실행)
 
-2. GPT Codex 5.3 (OpenAI)
-   ├── API: OpenAI Chat Completions
+2. Codex CLI (OpenAI) [latest]
+   ├── Interface: Codex CLI
    ├── Temperature: 0
    ├── Max tokens: 4096
    └── Prompt: 동일 prompt 사용
 
-3. Gemini CLI (Google)
-   ├── API: Gemini API
+3. Gemini CLI (Google) [gemini-2.5-flash]
+   ├── Interface: Gemini CLI
    ├── Temperature: 0
    ├── Max tokens: 4096
    └── Prompt: 동일 prompt 사용
@@ -113,20 +115,21 @@ R1(PI)은 adjudicator로서 R2-R3 불일치를 중재.
 
 ```
 Step 2a: 코딩 시트 배포
-  ├── R2: templates/coding_sheet_template.csv 사본 받음
-  ├── R3: 동일 template 사본 받음
-  └── 각자 별도 폴더에서 작업 (coder_r2/, coder_r3/)
+  ├── Pair A (R1+R2): 50 studies 할당, 각자 template 사본 받음
+  ├── Pair B (R3+R4): 50 studies 할당, 각자 template 사본 받음
+  └── 각자 별도 폴더에서 작업 (pair_a/coder_r1/, pair_a/coder_r2/, pair_b/coder_r3/, pair_b/coder_r4/)
 
 Step 2b: 독립 코딩
-  ├── 100 studies × 30 variables = 3,000 data elements
-  ├── 일일 목표: 20 studies/day × 5 days
+  ├── Pair A: 50 studies × 30 variables = 1,500 data elements (R1, R2 각각)
+  ├── Pair B: 50 studies × 30 variables = 1,500 data elements (R3, R4 각각)
+  ├── 일일 목표: 10 studies/day × 5 days (per coder)
   ├── 예상 소요: 30-45 min/study
   ├── PDF에서 직접 추출 (AI 결과 참조 불가)
   └── 불명확한 경우: 개별 메모 작성 → 주간 미팅에서 논의
 
 Step 2c: 코딩 시트 제출
   ├── Week 3 Day 2까지 동시 제출
-  ├── 제출 전 상대방 결과 열람 불가
+  ├── 제출 전 pair 내 상대방 결과 열람 불가
   └── 제출 형식: CSV (UTF-8)
 ```
 
@@ -134,25 +137,27 @@ Step 2c: 코딩 시트 제출
 
 ```
 Step 3a: Unblinding + IRR 계산
-  ├── R2, R3 코딩 시트 비교
+  ├── Pair A: R1 vs. R2 코딩 시트 비교 (50 studies)
+  ├── Pair B: R3 vs. R4 코딩 시트 비교 (50 studies)
   ├── IRR 계산 (templates/irr_calculation_template.R)
-  │   ├── Categorical: Cohen's κ (R2 vs. R3), Gwet's AC2
+  │   ├── Categorical: Cohen's κ (pair 내), Gwet's AC2
   │   ├── Continuous: ICC(2,1), ICC(2,k)
-  │   └── Per-variable breakdown
+  │   └── Per-variable breakdown (pair별 + 전체)
   └── 결과: data/06_analysis/irr_results.csv
 
-Step 3b: Discrepancy Resolution
+Step 3b: Discrepancy Resolution (Cross-Pair Adjudication)
   ├── 불일치 항목 목록 생성 (discrepancy_log.csv)
-  ├── R2 + R3 + R1(adjudicator) 미팅
+  ├── Pair A 불일치 → R3 (cross-pair adjudicator)가 독립 검토
+  ├── Pair B 불일치 → R1 (cross-pair adjudicator)가 독립 검토
   ├── 각 불일치에 대해:
-  │   ├── R1이 독립적으로 원문 검토
+  │   ├── Adjudicator가 독립적으로 원문 검토
   │   ├── 코딩 규칙 적용
-  │   └── R2-R3 합의 시도 → 불가 시 R1 최종 결정
-  └── 합의 불가 시: R1(PI) 최종 결정권
+  │   └── Pair 내 합의 시도 → 불가 시 adjudicator 최종 결정
+  └── 합의 불가 시: cross-pair adjudicator 최종 결정권
 
 Step 3c: Gold Standard 확정
-  ├── R2-R3 일치 → 채택
-  ├── R2-R3 불일치 → R1 중재 후 확정
+  ├── Pair 내 일치 → 채택
+  ├── Pair 내 불일치 → cross-pair adjudicator 중재 후 확정
   ├── 저장: data/05_gold_standard/gold_standard_100.csv
   ├── 📘 Paper B: AI 평가의 ground truth
   └── 📗 Paper A: MASEM 데이터로도 활용
@@ -163,28 +168,35 @@ Step 3c: Gold Standard 확정
 ```
 비교 구조:
 
-                100 Studies
-                    │
-        ┌───────────┼───────────┐
-        ▼           ▼           ▼
-    Human R2    Human R3    AI Models
-    (독립코딩)  (독립코딩)   (독립추출)
-        │           │           │
-        └─────┬─────┘     ┌────┴────┐────┐
-              ▼           ▼         ▼    ▼
-         IRR 확인     Claude   Codex  Gemini
-         (Cohen's κ)      │         │    │
-              │           └────┬────┘────┘
-              ▼                ▼
-        R1 불일치 중재    AI Consensus
-              │               │
-              ▼               │
-        Gold Standard         │
-        (합의 결과)           │
-              │               │
-              └───────┬───────┘
-                      ▼
-               비교 분석 (RQ1-4)
+                   100 Studies
+                       │
+         ┌─────────────┼─────────────┐
+         ▼             │             ▼
+   50 Studies (Pair A) │     50 Studies (Pair B)
+    R1 + R2 독립코딩   │      R3 + R4 독립코딩
+         │             │             │
+         ▼             │             ▼
+    IRR (R1 vs R2)     │      IRR (R3 vs R4)
+         │             │             │
+         ▼             │             ▼
+  R3 cross-pair adj.   │   R1 cross-pair adj.
+         │             │             │
+         └──────┬──────┘──────┬──────┘
+                ▼             ▼
+          Gold Standard    AI Models (독립추출)
+          (100 studies)    Claude / Codex / Gemini
+                │             │
+                │        ┌────┴────┐────┐
+                │        ▼         ▼    ▼
+                │     Claude   Codex  Gemini
+                │        │         │    │
+                │        └────┬────┘────┘
+                │             ▼
+                │       AI Consensus
+                │             │
+                └──────┬──────┘
+                       ▼
+                비교 분석 (RQ1-4)
 ```
 
 **📘 Paper B에 보고하는 분석**:
@@ -226,9 +238,11 @@ Step 1: AI Consensus 생성
   │   └── Unanimous = high confidence, Split = flag for review
   └── 결과: data/04_consensus/ai_consensus_remaining.csv
 
-Step 2: Human Verification
-  ├── R1: ~100 studies 할당
-  ├── R2: ~100 studies 할당
+Step 2: Human Verification (Single Coding)
+  ├── R1: ~38 studies 할당
+  ├── R2: ~38 studies 할당
+  ├── R3: ~37 studies 할당
+  ├── R4: ~37 studies 할당
   ├── 각 study에 대해:
   │   ├── AI consensus 값 확인
   │   ├── 원문(PDF) 대조
@@ -259,18 +273,18 @@ Step 3: Override Rate 계산
 > **📘 Paper B**: 이 Phase는 Paper B의 분석 대상이 아님.
 
 ### 목적
-Phase 2 결과의 독립적 품질 검증. R3 (Phase 2 미참여)가 fresh eyes로 spot-check.
+Phase 2 결과의 독립적 품질 검증. Cross-check 방식으로 spot-check.
 
 ### 절차
 
 ```
 Step 1: Random Sample 추출
-  ├── Phase 2 verified data에서 10% random sample (~20 studies)
+  ├── Phase 2 verified data에서 10% random sample (~15 studies)
   ├── Random seed: 99 (reproducibility)
-  └── 층화: R1 담당분 10개 + R2 담당분 10개
+  └── 층화: R1-R4 담당분에서 균등 추출
 
 Step 2: Independent Spot-Check
-  ├── R3가 20 studies × 30 variables = 600 data elements 확인
+  ├── Cross-check: 다른 코더가 담당한 studies를 spot-check (~15 studies × 30 variables)
   ├── PDF 원문 대조
   ├── Error 발견 시 기록
   └── Error rate 계산: errors / total elements
@@ -312,7 +326,7 @@ Step 4: 미달 시 대응
 ```json
 {
   "study_id": "S001",
-  "model": "claude_sonnet_4.6",
+  "model": "claude_cli_sonnet_4_6",
   "module": "A",
   "extraction_timestamp": "2026-03-01T10:30:00Z",
   "data": {
@@ -371,7 +385,7 @@ def calculate_consensus(claude_val, codex_val, gemini_val, var_type):
 
 | 기록 항목 | Phase 1 (📘B + 📗A) | Phase 2 (📗A only) | Phase 3 (📗A only) |
 |----------|---------------------|-------------------|-------------------|
-| 코더 ID | R2/R3 + AI pipeline | R1/R2 | R3 |
+| 코더 ID | R1/R2 (Pair A) + R3/R4 (Pair B) + AI pipeline | R1-R4 (equal split) | R1-R4 (cross) |
 | 코딩 날짜 | ✅ | ✅ | ✅ |
 | Study ID | ✅ | ✅ | ✅ |
 | 소요 시간 | ✅ | ✅ | ✅ |
@@ -387,7 +401,7 @@ def calculate_consensus(claude_val, codex_val, gemini_val, var_type):
 |---|---------|---------|---------|
 | **대상** | 100 studies | ~200 studies | Phase 2의 10% |
 | **방법** | 인간 독립 코딩 + AI 독립 추출 | AI consensus → 인간 검증 | 독립 spot-check |
-| **코더** | R2+R3 (독립) + R1 (중재) | R1+R2 (검증) | R3 (spot-check) |
+| **코더** | Pair A (R1+R2) + Pair B (R3+R4) + cross-pair adj. | R1-R4 (equal split, single coding) | R1-R4 (cross spot-check) |
 | **📘 Paper B** | ✅ 핵심 분석 | ❌ | ❌ |
 | **📗 Paper A** | ✅ Gold standard 활용 | ✅ 데이터 생산 | ✅ 품질 보증 |
 | **Timeline** | Week 1-3 | Week 4-5 | Week 5-6 |

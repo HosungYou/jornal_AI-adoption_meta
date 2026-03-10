@@ -18,9 +18,10 @@
 
 ```
 Gold Standard Sample: 100 studies (from ~300 MASEM-eligible studies)
-Human Coders: 2명 (R2 + R3), 독립 코딩 → Cohen's κ IRR
-              R1(PI) = Adjudicator (불일치 중재)
-AI Models: 3개 (Claude Sonnet 4.6 / GPT Codex 5.3 / Gemini CLI)
+Human Coders: 4명 (R1-R4), 2 independent pairs
+              Pair A: R1+R2 (50 studies), Pair B: R3+R4 (50 studies)
+              Cross-pair adjudication (Pair B discrepancies → R1, Pair A discrepancies → R3)
+AI Models: 3개 (Claude CLI [claude-sonnet-4-6] / Codex CLI [latest] / Gemini CLI [gemini-2.5-flash])
 Variables: 30개/study × 100 studies ≈ 3,000 data elements
 Design: Comparative accuracy (AI vs. human gold standard)
 ```
@@ -38,8 +39,8 @@ Design: Comparative accuracy (AI vs. human gold standard)
 | TIER3 Low | 500 | uncertain 등 |
 
 **Human Review (Option C)**:
-- R2+R3: 200건 동일 독립 코딩 (IRR: Cohen's κ)
-- R1(PI): spot-check 86건 + 추가코딩 135건 + adjudicator
+- Pair A (R1+R2) + Pair B (R3+R4): 200건 독립 코딩 (IRR: Cohen's κ)
+- Cross-pair adjudication for discrepancies
 - Excel: `data/templates/human_review_sheet_v8.xlsx`
 
 ## 디렉토리 구조
@@ -48,7 +49,7 @@ Design: Comparative accuracy (AI vs. human gold standard)
 paper_b/
 ├── README.md                          ← 현재 파일
 ├── DISCUSSION_LOG_KR.md               ← 연구 논의 기록 (한국어)
-├── RESEARCHER_ROLES.md                ← 연구자 3명 역할 분담
+├── RESEARCHER_ROLES.md                ← 연구자 4명 역할 분담
 ├── SAMPLING_PROTOCOL.md               ← 575 → 300 → 100 선정 프로세스
 ├── CODING_PROTOCOL.md                 ← Phase 1-3 코딩 프로토콜
 ├── TIMELINE.md                        ← 6주 실행 일정
@@ -74,8 +75,12 @@ paper_b/
 │   │   ├── codex/
 │   │   └── gemini/
 │   ├── 03_human_coding/               ← 독립 인간 코딩
-│   │   ├── coder1_PI/
-│   │   └── coder2_phd1/
+│   │   ├── pair_a/
+│   │   │   ├── coder_r1/
+│   │   │   └── coder_r2/
+│   │   └── pair_b/
+│   │       ├── coder_r3/
+│   │       └── coder_r4/
 │   ├── 04_consensus/                  ← 다중모델 합의
 │   ├── 05_gold_standard/              ← 최종 인간 골드 스탠다드
 │   └── 06_analysis/                   ← IRR 계산, 시각화
@@ -94,11 +99,13 @@ paper_b/
 
 ## IRR 설계
 
-- **코더**: R2 + R3 (동일 200건 독립 코딩)
-- **지표**: Cohen's κ (2명 범주형), ICC(2,1) (연속형)
+- **코더**: 4명 (R1-R4), 2 independent pairs
+  - Pair A: R1+R2 (50 studies 독립 코딩)
+  - Pair B: R3+R4 (50 studies 독립 코딩)
+- **지표**: Cohen's κ (pair 내 범주형), ICC(2,1) (연속형)
 - **목표**: κ ≥ 0.85
-- **R1(PI)**: Adjudicator — R2-R3 불일치 시 독립 검토 후 최종 판단
-- **Gold Standard**: R2-R3 일치 시 채택, 불일치 시 R1 중재 후 확정
+- **Adjudication**: Cross-pair — R1이 Pair B 불일치 중재, R3가 Pair A 불일치 중재
+- **Gold Standard**: Pair 내 일치 시 채택, 불일치 시 cross-pair adjudicator 중재 후 확정
 
 ## 보고 기준
 

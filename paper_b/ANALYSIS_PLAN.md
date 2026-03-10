@@ -9,7 +9,7 @@ Paper B의 4개 RQ에 대한 통계 분석 계획.
 
 ## RQ1: AI 모델별 MASEM 코딩 정확도
 
-**질문**: Claude Sonnet 4.6, GPT Codex 5.3, Gemini CLI 각각의 MASEM 코딩 정확도는 gold standard 대비 어떠한가?
+**질문**: Claude CLI (claude-sonnet-4-6), Gemini CLI (gemini-2.5-flash), Codex CLI (latest) 각각의 MASEM 코딩 정확도는 gold standard 대비 어떠한가?
 
 ### 1.1 Primary Metrics
 
@@ -275,7 +275,7 @@ library(jsonlite)   # JSON parsing (AI outputs)
 
 | 산출물 | 파일 | 위치 |
 |--------|------|------|
-| IRR results (R2 vs R3) | irr_results.csv | data/06_analysis/ |
+| IRR results (Pair A: R1 vs R2, Pair B: R3 vs R4) | irr_results.csv | data/06_analysis/ |
 | Per-model accuracy | model_accuracy.csv | data/06_analysis/ |
 | Per-variable accuracy | variable_accuracy.csv | data/06_analysis/ |
 | Consensus results | consensus_accuracy.csv | data/06_analysis/ |
