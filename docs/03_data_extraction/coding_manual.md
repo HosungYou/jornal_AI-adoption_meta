@@ -1,7 +1,13 @@
 # Comprehensive Coding Manual for AI Adoption Meta-Analysis
 
-> Operational mirror of the canonical protocol:
-> `docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx`
+> **⚠ SUPERSEDED (2026-03-09):** This document has been replaced by:
+> - **Coding Manual v2:** `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md`
+> - **Codebook v2:** `data/04_extraction/AI_Adoption_MASEM_Coding_v2.xlsx`
+>
+> Key changes in v2: year range 2022–2026, education-only scope, independent coding (blinded),
+> AI models: Claude CLI + Gemini CLI + Codex CLI, AI metadata pre-coding, Addendum integrated.
+>
+> Original reference: `docs/03_data_extraction/AI_Adoption_MASEM_Coding_Manual_v1.docx`
 >
 > Primary coding workspace:
 > `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx`

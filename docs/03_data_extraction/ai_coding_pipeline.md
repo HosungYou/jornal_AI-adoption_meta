@@ -1,8 +1,16 @@
 # AI-Assisted Coding Pipeline
 
+> **Note (v2 update, 2026-03-09):** This pipeline has been updated to reflect the following decisions:
+> - **AI models:** Claude CLI (claude-sonnet-4-6), Gemini CLI (gemini-2.5-flash), Codex CLI (latest) — all via CLI
+> - **Study count:** ~225–300 MASEM-eligible studies (updated from original 40–80 estimate)
+> - **Year range:** 2022–2026 (updated from 2015–2025)
+> - **Coding workflow:** Independent human coding (blinded) + AI metadata pre-coding; AI extraction runs in parallel for comparison only
+> - **Canonical manual:** `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md`
+> - **Canonical codebook:** `data/04_extraction/AI_Adoption_MASEM_Coding_v2.xlsx`
+
 ## Overview
 
-This document describes the 7-phase AI-assisted coding pipeline for extracting correlation matrices and study metadata from included studies on AI adoption in educational contexts. The pipeline combines automated AI extraction with human validation to achieve high accuracy while reducing manual coding burden.
+This document describes the 7-phase AI-assisted coding pipeline for extracting correlation matrices and study metadata from included studies on AI adoption in educational contexts (K-12, higher education, vocational). The pipeline combines automated AI extraction with **independent human coding** to achieve high accuracy while providing AI-Human comparison metrics.
 
 ---
 
@@ -38,7 +46,7 @@ Build a retrieval-augmented generation (RAG) index to enable efficient context r
 ### Process
 
 **Step 1: PDF Ingestion**
-- Input: All included study PDFs (k=40-80 studies, educational AI focus)
+- Input: All included study PDFs (k=225-300 studies, educational AI focus)
 - Parse PDFs to extract text, tables, figures
 - Preserve document structure (sections, pages, table IDs)
 
@@ -67,7 +75,7 @@ Build a retrieval-augmented generation (RAG) index to enable efficient context r
 - Tune: Adjust chunk size/overlap if needed
 
 ### Output
-- ChromaDB index with ~600-1,600 chunks (15-20 chunks per study × 40-80 studies)
+- ChromaDB index with ~3,400-6,000 chunks (15-20 chunks per study × 225-300 studies)
 - Average retrieval latency: <100ms per query
 
 ---
@@ -75,7 +83,7 @@ Build a retrieval-augmented generation (RAG) index to enable efficient context r
 ## Phase 1: Correlation Extraction (AI)
 
 ### Purpose
-Extract correlation matrices from studies using Claude Sonnet 4.5 with RAG context.
+Extract correlation matrices from studies using Claude CLI (claude-sonnet-4-6) with RAG context.
 
 ### Process
 
@@ -130,7 +138,7 @@ RULES:
 ```
 
 **Step 3: API Call**
-- Model: `claude-sonnet-4-20250514` (Claude Sonnet 4.5)
+- Model: `claude-sonnet-4-6` (Claude Sonnet 4.6 via CLI)
 - Temperature: 0.0 (deterministic)
 - Max tokens: 4,000
 - Timeout: 60 seconds per study
@@ -209,7 +217,7 @@ CONFIDENCE LEVELS:
 ```
 
 **Step 3: Execute Mapping**
-- Model: Claude Sonnet 4.5
+- Model: Claude CLI (claude-sonnet-4-6)
 - Temperature: 0.0
 - Include harmonization rules from coding manual in system prompt
 
@@ -231,11 +239,13 @@ Improve extraction accuracy by using three independent AI models and taking cons
 
 ### Models
 
-| Model | Provider | Strengths | Cost per Study |
-|-------|----------|-----------|----------------|
-| Claude Sonnet 4.5 | Anthropic | Nuanced reasoning, long context | $0.50-1.00 |
-| GPT-4o | OpenAI | Fast, reliable, well-validated | $0.20-0.40 |
-| Llama 3.3 70B | Groq (via API) | Open-source, fast inference | $0.05 |
+| Model | CLI Tool | Provider | Strengths | Cost per Study |
+|-------|----------|----------|-----------|----------------|
+| claude-sonnet-4-6 | Claude CLI | Anthropic | Nuanced reasoning, long context | $0.50-1.00 |
+| gemini-2.5-flash | Gemini CLI | Google | Fast, reliable, high free-tier quota | $0.10-0.30 |
+| Latest codex model | Codex CLI | OpenAI | Code-optimized extraction | $0.20-0.40 |
+
+> **Note:** All models run via authenticated CLI sessions, not direct API calls.
 
 ### Process
 
@@ -247,16 +257,16 @@ Improve extraction accuracy by using three independent AI models and taking cons
 **Step 2: Alignment**
 - For each correlation pair in each study, collect three estimates:
   - Claude: r = 0.52
-  - GPT-4o: r = 0.52
-  - Llama: r = 0.51
+  - Gemini: r = 0.52
+  - Codex: r = 0.51
 
 **Step 3: Consensus Rules**
 
 **Rule 1: Full Agreement (2+ models agree exactly)**
 ```
 Claude: PE-BI = 0.52
-GPT-4o: PE-BI = 0.52
-Llama: PE-BI = 0.51
+Gemini: PE-BI = 0.52
+Codex: PE-BI = 0.51
 
 → Consensus: 0.52 (2/3 agree)
 → Confidence: High
@@ -265,8 +275,8 @@ Llama: PE-BI = 0.51
 **Rule 2: Close Agreement (all within .05)**
 ```
 Claude: PE-BI = 0.52
-GPT-4o: PE-BI = 0.50
-Llama: PE-BI = 0.51
+Gemini: PE-BI = 0.50
+Codex: PE-BI = 0.51
 
 → Consensus: 0.51 (median)
 → Confidence: Moderate
@@ -276,8 +286,8 @@ Llama: PE-BI = 0.51
 **Rule 3: Disagreement (range > .05)**
 ```
 Claude: PE-BI = 0.52
-GPT-4o: PE-BI = 0.45
-Llama: PE-BI = 0.60
+Gemini: PE-BI = 0.45
+Codex: PE-BI = 0.60
 
 → Consensus: NULL
 → Flag: MUST review (discrepancy > .05)
@@ -288,8 +298,8 @@ Llama: PE-BI = 0.60
 **Agreement:**
 ```
 Claude: "Perceived Usefulness" → PE
-GPT-4o: "Perceived Usefulness" → PE
-Llama: "Perceived Usefulness" → PE
+Gemini: "Perceived Usefulness" → PE
+Codex: "Perceived Usefulness" → PE
 
 → Consensus: PE
 ```
@@ -297,8 +307,8 @@ Llama: "Perceived Usefulness" → PE
 **Disagreement:**
 ```
 Claude: "AI Value" → PE (performance-focused)
-GPT-4o: "AI Value" → ATT (evaluative)
-Llama: "AI Value" → PE (usefulness)
+Gemini: "AI Value" → ATT (evaluative)
+Codex: "AI Value" → PE (usefulness)
 
 → Consensus: PE (2/3 agree)
 → Flag for human review (construct ambiguity)
@@ -310,10 +320,10 @@ Llama: "AI Value" → PE (usefulness)
 - `phase3_confidence.csv`: Confidence scores per data point
 
 ### Estimated Cost
-- Claude: $75-150
-- GPT-4o: $30-60
-- Llama (Groq): $5-10
-- **Total: $110-220** for 150 studies
+- Claude CLI: $125-300
+- Gemini CLI: $25-75
+- Codex CLI: $50-100
+- **Total: $200-475** for 225-300 studies
 
 ---
 
@@ -325,7 +335,7 @@ Validate AI extraction accuracy through inter-coder reliability on a representat
 ### Sampling
 
 **Stratified Random Sample:**
-- 20% of total studies (e.g., 16 studies if k=80, 12 studies if k=60)
+- 30% of total studies (e.g., 75 studies if k=250, 68 studies if k=225)
 - Stratify by:
   - Publication year (2015-2019, 2020-2022, 2023-2025)
   - Education level (K-12, undergraduate, graduate)
@@ -336,9 +346,9 @@ Validate AI extraction accuracy through inter-coder reliability on a representat
 ### Process
 
 **Step 1: Assign to Coders**
-- Two independent human coders
-- Each codes the same 30 studies
-- Blinded to AI extractions and each other's work
+- Two independent human coders (R2 + R3)
+- Each codes the same ~68-75 studies (30% ICR sample)
+- **Blinded** to AI extractions and each other's work
 
 **Step 2: Human Coding**
 - Use coding manual (docs/03_data_extraction/coding_manual.md)
@@ -570,7 +580,7 @@ One JSON object per extraction attempt:
 
 ```csv
 study_id,variable,source1,value1,source2,value2,discrepancy_size,flagged_phase
-Smith2023,PE_BI_r,claude,0.52,gpt4o,0.50,0.02,phase3
+Smith2023,PE_BI_r,claude,0.52,gemini,0.50,0.02,phase3
 Jones2024,construct_PU,claude,PE,human1,ATT,mapping_conflict,phase4
 ```
 
@@ -589,36 +599,36 @@ Smith2023,PE_BI_r,0.52,0.58,original_text,"Table 3 p.12: r=.58",coder_A,2026-03-
 
 | Phase | Model | Cost per Study |
 |-------|-------|----------------|
-| Phase 1 | Claude Sonnet 4.5 | $0.60 |
-| Phase 1 | GPT-4o | $0.25 |
-| Phase 1 | Llama 3.3 (Groq) | $0.03 |
-| Phase 2 | Claude Sonnet 4.5 | $0.30 |
-| Phase 2 | GPT-4o | $0.15 |
-| Phase 2 | Llama 3.3 (Groq) | $0.02 |
+| Phase 1 | Claude CLI (claude-sonnet-4-6) | $0.60 |
+| Phase 1 | Gemini | $0.25 |
+| Phase 1 | Codex 3.3 (Groq) | $0.03 |
+| Phase 2 | Claude CLI (claude-sonnet-4-6) | $0.30 |
+| Phase 2 | Gemini | $0.15 |
+| Phase 2 | Codex 3.3 (Groq) | $0.02 |
 | **Total per study** | | **$1.35** |
 
-### Total Project Costs (k=40-80 studies, educational AI focus)
+### Total Project Costs (k=225-300 studies, educational AI focus)
 
 | Component | Cost |
 |-----------|------|
-| AI extraction (all 3 models × 40-80 studies) | $54-108 |
+| AI extraction (all 3 models × 225-300 studies) | $180-400 |
 | RAG infrastructure (ChromaDB hosting, embeddings) | $10-15 |
-| Human coding (20% ICR sample) | $0 (study labor) |
-| **Total AI pipeline cost** | **~$64-123** |
+| Human coding (30% ICR sample) | $0 (study labor) |
+| **Total AI pipeline cost** | **~$190-415** |
 
 ### Cost-Benefit Analysis
 
 **Traditional Manual Coding:**
-- 60 studies × 2 coders × 45 min/study = 90 hours
-- At $30/hour RA rate: $2,700
+- 250 studies × 2 coders × 45 min/study = 375 hours
+- At $30/hour RA rate: $11,250
 
-**AI-Assisted Pipeline:**
-- AI costs: $93 (average for 60 studies)
-- Human verification (20% ICR + discrepancy resolution): ~18 hours
-- At $30/hour: $540
-- **Total: $633**
+**AI-Assisted Pipeline (with independent human coding):**
+- AI costs: ~$300 (average for 250 studies)
+- Human coding (30% dual-coded + 70% single): ~190 hours
+- At $30/hour: $5,700
+- **Total: $6,000**
 
-**Savings: $2,067 (77% reduction)**
+**Savings: $5,250 (47% reduction) with stronger validity through independent coding**
 
 ---
 
@@ -677,10 +687,10 @@ Based on pilot testing and literature:
 | 2 | Phase 1 | Run AI extractions (all 3 models in parallel) | Raw extractions |
 | 3 | Phase 2 | Construct mapping (all 3 models) | Mapped constructs |
 | 3 | Phase 3 | Compute consensus, flag discrepancies | Consensus dataset |
-| 4 | Phase 4 | Human ICR coding (2 coders × 30 studies) | ICR metrics |
+| 4 | Phase 4 | Human ICR coding (2 coders × ~70 studies, 30% sample) | ICR metrics |
 | 5 | Phase 5 | Resolve discrepancies (return to studies) | Resolved dataset |
 | 6 | Phase 6 | QA checks, final validation | Final dataset |
-| **Total** | **6 weeks** | | **Ready for analysis** |
+| **Total** | **8-10 weeks** | | **Ready for analysis** |
 
 ---
 

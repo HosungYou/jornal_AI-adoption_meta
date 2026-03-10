@@ -22,18 +22,21 @@ constructs:
 
 models:
   claude:
-    model: "claude-sonnet-4-5-20250929"
+    model: "claude-sonnet-4-6"
     provider: "anthropic"
+    cli_tool: "claude"
     max_tokens: 4096
     temperature: 0.0
-  gpt4o:
-    model: "gpt-4o"
+  gemini:
+    model: "gemini-2.5-flash"
+    provider: "google"
+    cli_tool: "gemini"
+    max_tokens: 4096
+    temperature: 0.0
+  codex:
+    model: "latest"  # Use latest available codex model
     provider: "openai"
-    max_tokens: 4096
-    temperature: 0.0
-  groq:
-    model: "llama-3.3-70b-versatile"
-    provider: "groq"
+    cli_tool: "codex"
     max_tokens: 4096
     temperature: 0.0
 
@@ -49,7 +52,7 @@ quality_targets:
   kappa_ordinal: 0.80
   icc_numerical: 0.95
   mae_correlation: 0.03
-  human_sample_pct: 0.20
+  human_sample_pct: 0.30
 
 beta_conversion:
   enabled: true
@@ -60,13 +63,18 @@ screening:
   dimensions: ["quantitative", "ai_focal", "education_context", "adoption_outcome", "effect_size_reported", "language"]
 
 screening_cli:
+  # Note: Screening uses Claude CLI + Gemini CLI (Codex was replaced during screening phase)
+  # For data extraction, all 3 CLIs are used (Claude + Gemini + Codex)
+  claude:
+    auth_method: "api"
+    cli_tool: "claude"
+    model: "claude-sonnet-4-6"
   codex:
     auth_method: "oauth"
     version_cmd: ["codex", "--version"]
     auth_check_cmd: ["codex", "exec", "Say OK."]
     login_cmd: ["codex", "--login"]
-    screen_cmd: ["codex", "-m", "gpt-5.1-codex-mini", "exec", "{prompt}"]
-    fallback_model: "gpt-5.3-codex-spark"
+    screen_cmd: ["codex", "exec", "{prompt}"]
   gemini:
     auth_method: "oauth"
     version_cmd: ["gemini", "--version"]

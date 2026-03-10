@@ -216,15 +216,17 @@ This confirms that when both AI models agree to exclude, the decision is highly 
 | **Screening (I/X/U)** | 1 reviewer + verification | R2+R3 IRR on 200 + R1 full verification of Auto-INCLUDE |
 | **Data extraction (correlations)** | 2 independent coders + ICR | See below |
 
-### 6.2 Data Extraction Plan
+### 6.2 Data Extraction Plan (Updated 2026-03-09)
 
-For the correlation matrix / beta coefficient extraction phase:
+For the correlation matrix / beta coefficient extraction phase, **independent human coding** is used:
 
-1. **30% sample dual coding:** R2 and R3 independently code ~45 studies
-2. **ICR target:** ICC(2,1) >= 0.90 for numeric values; Cohen's kappa >= 0.85 for construct mappings
-3. **If ICR met:** Remaining 70% coded by one coder + second coder verifies 10-20%
-4. **If ICR not met:** Additional calibration session, then re-code sample
-5. **AI-assisted pipeline** (`ai_coding_pipeline/`) provides first-pass extraction; human coders verify and correct
+1. **AI Metadata Pre-Coding:** AI pre-codes non-critical fields (author, year, DOI, sample_size, country, ai_type, education_level). Humans verify during their coding.
+2. **30% ICR sample dual coding:** R2 and R3 independently code ~68-75 studies, **blinded** to AI extraction results for correlations and construct mappings
+3. **ICR target:** ICC(2,1) ≥ 0.90 for numeric values; Cohen's κ ≥ 0.85 for construct mappings; MAE ≤ .03
+4. **If ICR met:** Remaining 70% coded by one coder + second coder verifies 10-20%
+5. **If ICR not met:** Additional calibration session, then re-code sample
+6. **AI extraction** (Claude CLI + Gemini CLI + Codex CLI, 3-model consensus) runs in **parallel** with human coding. AI results are compared to human gold standard **after** human coding is complete, providing AI-Human agreement metrics.
+7. **Canonical documents:** Coding Manual v2 and Codebook v2 in `data/04_extraction/`
 
 ---
 
