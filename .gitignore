@@ -31,6 +31,8 @@ env/
 Thumbs.db
 
 # Data files (too large for git)
+data/04_extraction/coder_packages/*/PDFs/
+data/04_extraction/PDFs*/
 pdfs/*.pdf
 data/00_raw/correlation_matrices/*.pdf
 data/00_raw/search_results/*.csv
