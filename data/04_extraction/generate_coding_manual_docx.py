@@ -725,52 +725,12 @@ def build_document():
             ["sample_size", "integer", "Total valid sample size (N). Use final analytic sample.", "384"],
             ["sample_type", "categorical", "students, instructors, mixed, administrators", "students"],
             ["country", "string", "Country where data was collected", "South Korea"],
-            ["culture_cluster", "categorical", "Auto-derived from country using Hofstede IDV lookup (\u00a75.3.1)", "collectivist"],
+            ["culture_cluster", "categorical", "individualist (IDV\u226550) or collectivist (IDV<50) per Hofstede", "collectivist"],
             ["education_level", "categorical", "K-12, undergraduate, graduate, vocational, mixed", "undergraduate"],
         ],
         col_widths=[1.4, 1.0, 2.5, 1.6],
         first_col_bold=True,
     )
-
-    # 5.3.1 Hofstede IDV Lookup Table
-    doc.add_heading("5.3.1 Culture Cluster Lookup Table (Hofstede IDV)", level=3)
-    add_body_text(doc, "`culture_cluster` is **mechanically derived** from the `country` field\u2014coders do NOT need to make a judgment call. After coding `country`, look up the table below.")
-    add_tip_box(doc, "Rule: IDV \u2265 50 \u2192 individualist  |  IDV < 50 \u2192 collectivist")
-    add_styled_table(doc,
-        ["Country", "IDV", "culture_cluster"],
-        [
-            ["United States", "91", "individualist"],
-            ["Australia", "90", "individualist"],
-            ["United Kingdom", "89", "individualist"],
-            ["Canada", "80", "individualist"],
-            ["Netherlands", "80", "individualist"],
-            ["Germany", "67", "individualist"],
-            ["Finland", "63", "individualist"],
-            ["Spain", "51", "individualist"],
-            ["India", "48", "collectivist"],
-            ["Japan", "46", "collectivist"],
-            ["Iran", "41", "collectivist"],
-            ["Turkey", "37", "collectivist"],
-            ["Brazil", "38", "collectivist"],
-            ["Philippines", "32", "collectivist"],
-            ["Jordan", "30", "collectivist"],
-            ["Mexico", "30", "collectivist"],
-            ["Nigeria", "30", "collectivist"],
-            ["Malaysia", "26", "collectivist"],
-            ["Saudi Arabia", "25", "collectivist"],
-            ["UAE", "25", "collectivist"],
-            ["China", "20", "collectivist"],
-            ["Thailand", "20", "collectivist"],
-            ["Vietnam", "20", "collectivist"],
-            ["South Korea", "18", "collectivist"],
-            ["Taiwan", "17", "collectivist"],
-            ["Indonesia", "14", "collectivist"],
-            ["Pakistan", "14", "collectivist"],
-        ],
-        col_widths=[2.0, 0.8, 1.5],
-        first_col_bold=True,
-    )
-    add_body_text(doc, "If a country is not listed, check Hofstede Insights for the IDV score. If unavailable, flag in DISCREPANCY_LOG and leave as NA.")
 
     doc.add_heading("5.4 AI Technology Variables (Human Coded; AI Independent Extraction in Parallel)", level=3)
     add_styled_table(doc,

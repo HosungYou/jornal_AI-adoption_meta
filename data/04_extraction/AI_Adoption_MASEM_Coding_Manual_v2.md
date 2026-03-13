@@ -14,7 +14,7 @@
 | 1.0 | 2026-02-16 | Initial release |
 | 2.0 | 2026-03-09 | Major revision: year range 2022–2026; education-only scope; independent coding workflow; AI metadata pre-coding; 3 CLI models (Claude, Gemini, Codex); Addendum integrated and replaced; unnecessary fields removed; study_id S001 format; full-text exclusion codes E-FT1–E-FT6 added |
 | 2.1 | 2026-03-10 | Paper A+B integrated design; 2-pair ICR (R1+R2, R3+R4); Phase 1 100건 dual + Phase 2 150건 single; calibration 10건; cross-pair adjudication; Paper B gold standard = Paper A ICR sample |
-| 2.2 | 2026-03-13 | §5 AI pre-coding scope 정정 (§5.1만 pre-coded, §5.2-5.4는 human coded + AI parallel); §5.3.1 Hofstede IDV lookup table 추가; §5.5 coding order 명확화 + matrix_completeness 계산법 + §5.5.1 CMB coding guide 추가 |
+| 2.2 | 2026-03-13 | §5 AI pre-coding scope 정정 (§5.1만 pre-coded, §5.2-5.4는 human coded + AI parallel); §5.5 coding order 명확화 + matrix_completeness 계산법 + §5.5.1 CMB coding guide 추가 |
 
 ---
 
@@ -249,60 +249,8 @@ All study-level variables are coded in the **STUDY_METADATA** sheet.
 | sample_size | integer | Total valid sample size (N). Use final analytic sample. | 384 |
 | sample_type | categorical | students, instructors, mixed, administrators | students |
 | country | string | Country where data was collected | South Korea |
-| culture_cluster | categorical | Auto-derived from `country` using Hofstede IDV lookup table (§5.3.1) | collectivist |
+| culture_cluster | categorical | individualist (IDV≥50) or collectivist (IDV<50) per Hofstede | collectivist |
 | education_level | categorical | K-12, undergraduate, graduate, vocational, mixed | undergraduate |
-
-#### 5.3.1 Culture Cluster Lookup Table (Hofstede IDV)
-
-`culture_cluster` is **mechanically derived** from the `country` field—coders do NOT need to make a judgment call. After coding `country`, look up the table below and enter the corresponding value.
-
-**Rule:** IDV ≥ 50 → `individualist` | IDV < 50 → `collectivist`
-
-| Country | IDV | culture_cluster |
-|---------|-----|-----------------|
-| United States | 91 | individualist |
-| Australia | 90 | individualist |
-| United Kingdom | 89 | individualist |
-| Canada | 80 | individualist |
-| Netherlands | 80 | individualist |
-| New Zealand | 79 | individualist |
-| Italy | 76 | individualist |
-| Denmark | 74 | individualist |
-| Germany | 67 | individualist |
-| Finland | 63 | individualist |
-| Norway | 69 | individualist |
-| Spain | 51 | individualist |
-| Japan | 46 | collectivist |
-| Turkey | 37 | collectivist |
-| Brazil | 38 | collectivist |
-| Mexico | 30 | collectivist |
-| Jordan | 30 | collectivist |
-| Saudi Arabia | 25 | collectivist |
-| Thailand | 20 | collectivist |
-| Vietnam | 20 | collectivist |
-| South Korea | 18 | collectivist |
-| Taiwan | 17 | collectivist |
-| China | 20 | collectivist |
-| India | 48 | collectivist |
-| Indonesia | 14 | collectivist |
-| Malaysia | 26 | collectivist |
-| Pakistan | 14 | collectivist |
-| Philippines | 32 | collectivist |
-| Egypt | 25 | collectivist |
-| Nigeria | 30 | collectivist |
-| Ghana | 15 | collectivist |
-| Ethiopia | 20 | collectivist |
-| Iran | 41 | collectivist |
-| Iraq | 30 | collectivist |
-| United Arab Emirates | 25 | collectivist |
-| Oman | 25 | collectivist |
-| Qatar | 25 | collectivist |
-| Bahrain | 25 | collectivist |
-| Kuwait | 25 | collectivist |
-
-> **If a country is not listed:** Check [Hofstede Insights](https://www.hofstede-insights.com/country-comparison-tool) for the IDV score. If unavailable, flag in DISCREPANCY_LOG and leave as NA.
-
-> **Multi-country studies:** If samples span multiple countries with different clusters, code as the **majority sample's cluster**. If 50/50, code as NA and note in extraction_notes.
 
 ### 5.4 AI Technology Variables (Human Coded; AI Independent Extraction in Parallel)
 
