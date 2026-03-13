@@ -164,6 +164,41 @@ def add_styled_table(doc, headers, rows, col_widths=None, first_col_bold=False):
     return table
 
 
+def add_bookmark(paragraph, bookmark_name):
+    """Add a bookmark anchor to a paragraph (invisible target for hyperlinks)."""
+    bookmark_start = parse_xml(
+        f'<w:bookmarkStart {nsdecls("w")} w:id="{abs(hash(bookmark_name)) % 10000}" '
+        f'w:name="{bookmark_name}"/>'
+    )
+    bookmark_end = parse_xml(
+        f'<w:bookmarkEnd {nsdecls("w")} w:id="{abs(hash(bookmark_name)) % 10000}"/>'
+    )
+    paragraph._p.append(bookmark_start)
+    paragraph._p.append(bookmark_end)
+
+
+def add_hyperlink_to_bookmark(paragraph, bookmark_name, text, font_size=Pt(11)):
+    """Add a clickable hyperlink that jumps to a bookmark within the document."""
+    # Build the hyperlink XML
+    hyperlink = parse_xml(
+        f'<w:hyperlink {nsdecls("w")} w:anchor="{bookmark_name}"/>'
+    )
+    run_elem = parse_xml(
+        f'<w:r {nsdecls("w")}>'
+        f'<w:rPr>'
+        f'<w:rStyle w:val="Hyperlink"/>'
+        f'<w:color w:val="2E74B5"/>'
+        f'<w:u w:val="single"/>'
+        f'<w:sz w:val="{int(font_size.pt * 2)}"/>'
+        f'<w:rFonts w:ascii="{FONT_BODY}" w:hAnsi="{FONT_BODY}"/>'
+        f'</w:rPr>'
+        f'<w:t xml:space="preserve">{text}</w:t>'
+        f'</w:r>'
+    )
+    hyperlink.append(run_elem)
+    paragraph._p.append(hyperlink)
+
+
 def add_formatted_runs(paragraph, text, base_size=Pt(11), base_color=None):
     """Parse markdown-style bold (**text**) and code (`text`) in text."""
     parts = re.split(r'(\*\*.*?\*\*|`[^`]+`)', text)
@@ -301,6 +336,13 @@ def add_page_number(doc):
         p._p.append(parse_xml(fld_xml))
 
 
+def add_heading_with_bookmark(doc, text, level, bookmark_id):
+    """Add a heading with a bookmark anchor for TOC hyperlink navigation."""
+    heading = doc.add_heading(text, level=level)
+    add_bookmark(heading, bookmark_id)
+    return heading
+
+
 def add_header_bar(doc, text):
     """Add a running header."""
     for section in doc.sections:
@@ -409,33 +451,31 @@ def build_document():
         first_col_bold=True,
     )
 
-    # ── TABLE OF CONTENTS ──
+    # ── TABLE OF CONTENTS (with clickable hyperlinks) ──
     doc.add_heading("Table of Contents", level=2)
     toc_items = [
-        "1. Introduction and Purpose",
-        "2. Eligibility Criteria",
-        "3. Coding Workflow Overview",
-        "4. Coder Training Protocol",
-        "5. Study-Level Coding Instructions",
-        "6. Correlation Matrix Coding Instructions",
-        "7. Construct Harmonization Instructions",
-        "8. Moderator Variable Coding",
-        "9. Reliability Data Extraction",
-        "10. AI-Assisted Coding Protocol",
-        "11. Inter-Coder Reliability Protocol",
-        "12. Discrepancy Resolution Protocol",
-        "13. Study Exclusion Protocol",
-        "14. Quality Assurance Checklist",
-        "15. References",
-        "Appendix A: Decision Trees",
-        "Appendix B: FAQ",
-        "Appendix C: Excel Template Sheet Descriptions",
+        ("1. Introduction and Purpose", "ch1"),
+        ("2. Eligibility Criteria", "ch2"),
+        ("3. Coding Workflow Overview", "ch3"),
+        ("4. Coder Training Protocol", "ch4"),
+        ("5. Study-Level Coding Instructions", "ch5"),
+        ("6. Correlation Matrix Coding Instructions", "ch6"),
+        ("7. Construct Harmonization Instructions", "ch7"),
+        ("8. Moderator Variable Coding", "ch8"),
+        ("9. Reliability Data Extraction", "ch9"),
+        ("10. AI-Assisted Coding Protocol", "ch10"),
+        ("11. Inter-Coder Reliability Protocol", "ch11"),
+        ("12. Discrepancy Resolution Protocol", "ch12"),
+        ("13. Study Exclusion Protocol", "ch13"),
+        ("14. Quality Assurance Checklist", "ch14"),
+        ("15. References", "ch15"),
+        ("Appendix A: Decision Trees", "appA"),
+        ("Appendix B: FAQ", "appB"),
+        ("Appendix C: Excel Template Sheet Descriptions", "appC"),
     ]
-    for item in toc_items:
+    for item_text, bookmark_id in toc_items:
         p = doc.add_paragraph()
-        run = p.add_run(item)
-        run.font.size = Pt(11)
-        run.font.color.rgb = COLOR_SECONDARY
+        add_hyperlink_to_bookmark(p, bookmark_id, item_text, font_size=Pt(11))
         p.paragraph_format.space_before = Pt(2)
         p.paragraph_format.space_after = Pt(2)
 
@@ -444,7 +484,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 1: Introduction and Purpose
     # ═══════════════════════════════════════════════════
-    doc.add_heading("1. Introduction and Purpose", level=1)
+    add_heading_with_bookmark(doc, "1. Introduction and Purpose", 1, "ch1")
 
     doc.add_heading("1.1 MASEM Study Overview", level=3)
     add_body_text(doc, "This meta-analytic structural equation modeling (MASEM) study synthesizes empirical research on AI technology adoption in educational contexts (K-12, higher education, and vocational) to:")
@@ -469,7 +509,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 2: Eligibility Criteria
     # ═══════════════════════════════════════════════════
-    doc.add_heading("2. Eligibility Criteria", level=1)
+    add_heading_with_bookmark(doc, "2. Eligibility Criteria", 1, "ch2")
 
     doc.add_heading("2.1 PICOS Framework", level=3)
     add_styled_table(doc,
@@ -557,7 +597,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 3: Coding Workflow Overview
     # ═══════════════════════════════════════════════════
-    doc.add_heading("3. Coding Workflow Overview", level=1)
+    add_heading_with_bookmark(doc, "3. Coding Workflow Overview", 1, "ch3")
 
     doc.add_heading("3.1 Workflow Diagram", level=3)
     workflow_lines = [
@@ -625,7 +665,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 4: Coder Training Protocol
     # ═══════════════════════════════════════════════════
-    doc.add_heading("4. Coder Training Protocol", level=1)
+    add_heading_with_bookmark(doc, "4. Coder Training Protocol", 1, "ch4")
 
     add_styled_table(doc,
         ["Phase", "Duration", "Activities", "Success Criterion"],
@@ -647,7 +687,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 5: Study-Level Coding Instructions
     # ═══════════════════════════════════════════════════
-    doc.add_heading("5. Study-Level Coding Instructions", level=1)
+    add_heading_with_bookmark(doc, "5. Study-Level Coding Instructions", 1, "ch5")
     add_body_text(doc, "All study-level variables are coded in the **STUDY_METADATA** sheet. AI pre-codes identification and demographic fields; human coders verify and complete remaining fields.")
 
     doc.add_heading("5.1 Identification Variables (AI Pre-Coded, Human Verified)", level=3)
@@ -733,7 +773,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 6: Correlation Matrix Coding
     # ═══════════════════════════════════════════════════
-    doc.add_heading("6. Correlation Matrix Coding Instructions", level=1)
+    add_heading_with_bookmark(doc, "6. Correlation Matrix Coding Instructions", 1, "ch6")
 
     add_important_box(doc, "This is the most critical chapter. MASEM requires pairwise Pearson correlations between constructs. All correlation data is coded in the CORRELATION_MATRIX sheet.")
 
@@ -822,7 +862,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 7: Construct Harmonization
     # ═══════════════════════════════════════════════════
-    doc.add_heading("7. Construct Harmonization Instructions", level=1)
+    add_heading_with_bookmark(doc, "7. Construct Harmonization Instructions", 1, "ch7")
     add_body_text(doc, "Harmonization maps diverse construct labels onto our 12 standard constructs. **Prioritize conceptual alignment over label matching.** All mappings go in the CONSTRUCT_MAPPING sheet.")
 
     doc.add_heading("7.1 The 12 Target Constructs", level=3)
@@ -928,7 +968,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 8: Moderator Variable Coding
     # ═══════════════════════════════════════════════════
-    doc.add_heading("8. Moderator Variable Coding", level=1)
+    add_heading_with_bookmark(doc, "8. Moderator Variable Coding", 1, "ch8")
 
     doc.add_heading("8.1 Variable Reference", level=3)
     add_styled_table(doc,
@@ -962,7 +1002,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 9: Reliability Data Extraction
     # ═══════════════════════════════════════════════════
-    doc.add_heading("9. Reliability Data Extraction", level=1)
+    add_heading_with_bookmark(doc, "9. Reliability Data Extraction", 1, "ch9")
 
     doc.add_heading("9.1 Variable Reference", level=3)
     add_styled_table(doc,
@@ -998,7 +1038,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 10: AI-Assisted Coding Protocol
     # ═══════════════════════════════════════════════════
-    doc.add_heading("10. AI-Assisted Coding Protocol", level=1)
+    add_heading_with_bookmark(doc, "10. AI-Assisted Coding Protocol", 1, "ch10")
 
     doc.add_heading("10.1 Dual-Track Design", level=3)
     add_body_text(doc, "The AI-assisted coding protocol operates on **two separate tracks**:")
@@ -1062,7 +1102,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 11: ICR Protocol
     # ═══════════════════════════════════════════════════
-    doc.add_heading("11. Inter-Coder Reliability Protocol", level=1)
+    add_heading_with_bookmark(doc, "11. Inter-Coder Reliability Protocol", 1, "ch11")
 
     doc.add_heading("11.1 When to Calculate", level=3)
     add_body_text(doc, "Calculate ICR on the **Phase 1 dual-coded set (100 studies)**. Two independent coder pairs (Pair A: R1+R2; Pair B: R3+R4) each code 50 studies.")
@@ -1108,7 +1148,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 12: Discrepancy Resolution
     # ═══════════════════════════════════════════════════
-    doc.add_heading("12. Discrepancy Resolution Protocol", level=1)
+    add_heading_with_bookmark(doc, "12. Discrepancy Resolution Protocol", 1, "ch12")
 
     doc.add_heading("12.1 Discrepancy Classification", level=3)
     add_styled_table(doc,
@@ -1145,7 +1185,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 13: Study Exclusion Protocol
     # ═══════════════════════════════════════════════════
-    doc.add_heading("13. Study Exclusion Protocol", level=1)
+    add_heading_with_bookmark(doc, "13. Study Exclusion Protocol", 1, "ch13")
 
     doc.add_heading("13.1 Variable Reference", level=3)
     add_styled_table(doc,
@@ -1174,7 +1214,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 14: Quality Assurance Checklist
     # ═══════════════════════════════════════════════════
-    doc.add_heading("14. Quality Assurance Checklist", level=1)
+    add_heading_with_bookmark(doc, "14. Quality Assurance Checklist", 1, "ch14")
 
     qa_items = [
         "All study-level variables completed for every included study",
@@ -1221,7 +1261,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # CHAPTER 15: References
     # ═══════════════════════════════════════════════════
-    doc.add_heading("15. References", level=1)
+    add_heading_with_bookmark(doc, "15. References", 1, "ch15")
 
     refs = [
         "Ajzen, I. (1991). The theory of planned behavior. OBHDP, 50(2), 179\u2013211.",
@@ -1249,7 +1289,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # APPENDIX A: Decision Trees
     # ═══════════════════════════════════════════════════
-    doc.add_heading("Appendix A: Decision Trees", level=1)
+    add_heading_with_bookmark(doc, "Appendix A: Decision Trees", 1, "appA")
 
     doc.add_heading("A.1 Inclusion/Exclusion Decision", level=3)
     inc_steps = [
@@ -1301,7 +1341,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # APPENDIX B: FAQ
     # ═══════════════════════════════════════════════════
-    doc.add_heading("Appendix B: FAQ", level=1)
+    add_heading_with_bookmark(doc, "Appendix B: FAQ", 1, "appB")
 
     faqs = [
         ("What if a study reports both Pearson r and SEM-implied correlations?",
@@ -1340,7 +1380,7 @@ def build_document():
     # ═══════════════════════════════════════════════════
     # APPENDIX C: Excel Template
     # ═══════════════════════════════════════════════════
-    doc.add_heading("Appendix C: Excel Template Sheet Descriptions", level=1)
+    add_heading_with_bookmark(doc, "Appendix C: Excel Template Sheet Descriptions", 1, "appC")
 
     add_styled_table(doc,
         ["Sheet", "Purpose"],
