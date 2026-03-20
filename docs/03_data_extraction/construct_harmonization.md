@@ -140,7 +140,7 @@ For 12 constructs, there are **66 unique pairwise correlations**: C(12,2) = 12×
 **Moderate-Confidence Mappings (Require Item Review):**
 - Utility (check if performance-focused vs. general value)
 - Effectiveness (check if task performance vs. system effectiveness)
-- Output Quality (usually PE, but could be TRU if reliability-focused)
+- Output Quality — **context-dependent**: If the study also measures PU/PE separately, Output Quality is an antecedent (TAM2), NOT PE itself → **do not map** (see Section 5, Example 5). If PU/PE is absent and Output Quality items match PE definition, map with moderate confidence.
 - Extrinsic Motivation (when work/performance context; exclude if hedonic context)
 - Task-Technology Fit (when outcome-focused)
 
@@ -672,6 +672,66 @@ Expert review
   - "I feel comfortable using AI for academic work" (no fear) → Reverse ANX
   - "I like using AI for learning" (positive evaluation) → ATT
 - **Decision:** If affective comfort (not anxious), code as ANX (reverse). If evaluative (like/dislike), code as ATT.
+
+---
+
+### Example 5: Non-Target Constructs in Path Models (TAM2 Antecedents & Outcome Variables)
+
+**Study construct:** Path analysis with Output Quality, Perceived Ease-of-Use, Perceived Usefulness, Behavioral Intention, Transfer of Learning
+
+**Issue:** Output Quality and Transfer of Learning are not among our 12 target constructs
+
+**Context:** A study (e.g., TAM2-based) reports:
+- Output Quality → Perceived Ease-of-Use (β = 0.706)
+- Output Quality → Perceived Usefulness (β = 0.570)
+- Perceived Ease-of-Use → Behavioral Intention (β = 0.405)
+- Perceived Usefulness → Behavioral Intention (β = 0.531)
+- Behavioral Intention → Transfer of Learning (β = 0.578)
+
+**Resolution:**
+
+| Study Construct | Mapping | Rationale |
+|----------------|---------|-----------|
+| Perceived Ease-of-Use | → **EE** (Exact) | PEOU is canonical EE synonym |
+| Perceived Usefulness | → **PE** (Exact) | PU is canonical PE synonym |
+| Behavioral Intention | → **BI** (Exact) | Direct match |
+| Output Quality | → **Not mapped** | TAM2 antecedent of PU. When PU/PE is also measured in the same study, mapping Output Quality to PE would create a self-referential correlation (PE→PE). Exclude paths involving this construct. |
+| Transfer of Learning | → **Not mapped** | Learning outcome variable, not an adoption/acceptance construct. Does not correspond to UB (actual AI usage) or any other target construct. Exclude paths involving this construct. |
+
+**Codable correlations from this study:**
+- EE ↔ BI (from H3, or preferably from the study's correlation matrix)
+- PE ↔ BI (from H4, or preferably from the study's correlation matrix)
+- PE ↔ EE (check if the study reports a bivariate correlation matrix)
+
+**Non-codable paths (both endpoints must be mappable):**
+- Output Quality → EE (H1) — Output Quality not in our 12
+- Output Quality → PE (H2) — Output Quality not in our 12
+- BI → Transfer of Learning (H5) — Transfer of Learning not in our 12
+
+**General rule for non-target constructs:**
+Simply skip them. Only code correlation pairs where **both** constructs map to our 12 targets. Non-target constructs do not need to be recorded in any exclusion log — they are simply not extracted. Document in `Construct_Mapping` sheet notes which study constructs were skippable (e.g., "Output Quality and Transfer of Learning not coded — outside 12-construct framework").
+
+**IMPORTANT — Check for correlation matrix:**
+Most SEM/path analysis papers also report a bivariate correlation table (often Table 2 or 3). Always check for this before converting path coefficients. Bivariate r values from the correlation matrix are **preferred** over β→r conversion (Peterson & Brown, 2005), because path coefficients are partial effects that control for other variables.
+
+---
+
+### Example 6: Distinguishing TAM2 Antecedents from Target Constructs
+
+**Common TAM2/TAM3 antecedents that are NOT in our 12:**
+
+| TAM2/TAM3 Antecedent | Why NOT a target construct | Commonly confused with |
+|---|---|---|
+| Output Quality | Antecedent to PU in TAM2; distinct when PU also present | PE |
+| Result Demonstrability | Communicability of results; not performance belief | PE |
+| Job Relevance | Task-technology match; narrower than PE | PE |
+| Experience | Moderator, not a construct | SE or UB |
+| Voluntariness | Usage context modifier | — |
+| Computer Playfulness | Personality trait | ATT |
+| Perceptions of External Control | External locus → FC if resource-focused | FC |
+| Objective Usability | System attribute, not user perception | EE |
+
+**Decision rule:** If a study measures both a TAM2 antecedent AND its corresponding target construct (e.g., Output Quality AND PU), always prefer the target construct and skip the antecedent. Only consider mapping the antecedent if the target construct is absent.
 
 ---
 

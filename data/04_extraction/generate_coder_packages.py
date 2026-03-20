@@ -46,7 +46,7 @@ OUTPUT_DIR = BASE / "data/04_extraction/coder_packages"
 MAPPING_CSV = BASE / "data/04_extraction/study_id_mapping_v3.csv"
 
 # ── Constants ──
-EXCLUDED_SIDS = {"S035", "S053", "S084"}  # No PDF available
+EXCLUDED_SIDS = {"S001", "S084"}  # No PDF available
 CONSTRUCTS = ["ANX", "ATT", "AUT", "BI", "EE", "FC", "PE", "SE", "SI", "TRA", "TRU", "UB"]
 CONSTRUCT_PAIRS = list(itertools.combinations(CONSTRUCTS, 2))  # 66 pairs, alphabetical
 ROWS_PER_STUDY = len(CONSTRUCT_PAIRS)  # 66
@@ -84,18 +84,28 @@ random.seed(2026)
 
 
 def load_studies():
-    """Load confirmed includes, assign study_ids, exclude missing PDFs."""
-    with open(CONFIRMED) as f:
-        rows = list(csv.DictReader(f))
-    rows.sort(key=lambda r: (r["year"], r["record_id"]))
+    """Load studies directly from pdf_download_tracker.xlsx (source of truth)."""
+    import openpyxl
+    wb = openpyxl.load_workbook(TRACKER)
+    ws = wb.active
     studies = []
-    for i, row in enumerate(rows, 1):
-        sid = f"S{i:03d}"
-        if sid in EXCLUDED_SIDS:
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        sid = row[1]  # Study ID
+        if not sid or sid in EXCLUDED_SIDS:
             continue
-        row["study_id"] = sid
-        row["doi_clean"] = row.get("doi_url", "").split("doi.org/", 1)[-1] if "doi.org/" in row.get("doi_url", "") else row.get("doi_url", "")
-        studies.append(row)
+        doi_raw = str(row[5]).strip() if row[5] else ""
+        doi_clean = doi_raw.split("doi.org/", 1)[-1] if "doi.org/" in doi_raw else doi_raw
+        studies.append({
+            "study_id": sid,
+            "record_id": row[2] or "",
+            "title": row[3] or "",
+            "year": str(int(row[4])) if row[4] else "",
+            "doi_clean": doi_clean,
+            "doi_url": doi_raw,
+        })
+    wb.close()
+    # Check PDF exists
+    studies = [s for s in studies if (PDF_DIR / f"{s['study_id']}.pdf").exists()]
     return studies
 
 
