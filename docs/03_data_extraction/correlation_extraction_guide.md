@@ -57,9 +57,28 @@ This guide provides detailed, step-by-step instructions for extracting correlati
 - Covariance matrix (values can exceed 1.00, no 1.00 on diagonal)
 - Discriminant validity table (HTMT or Fornell-Larcker, may show √AVE on diagonal)
 
-**Borderline Case: Discriminant Validity Tables**
-- Fornell-Larcker criterion tables show correlations below diagonal and √AVE on diagonal
-- **Decision:** Extract correlations from below diagonal; ignore diagonal (it's √AVE, not 1.00)
+**Borderline Case: Discriminant Validity Tables (Fornell-Larcker)**
+
+Fornell-Larcker criterion tables have a specific structure:
+- **Diagonal (bold values):** √AVE (square root of Average Variance Extracted) for each construct. These are NOT correlations; they serve as benchmarks for discriminant validity assessment.
+- **Off-diagonal (below diagonal):** Construct-level correlations between latent variables.
+
+**Extraction rules:**
+1. Extract off-diagonal values as correlation inputs (r)
+2. Ignore diagonal values (record √AVE and AVE separately in the CONSTRUCT_MAPPING sheet)
+3. **Flag the correlation source type** based on the study's analysis method:
+
+| Analysis Method | Off-diagonal values | `r_source` value | Notes |
+|---|---|---|---|
+| **CB-SEM** (AMOS, Mplus, LISREL) | Latent factor correlations (phi, φ) | `fornell_larcker_cbsem` | Disattenuated for measurement error; tend to be **larger** than observed Pearson r |
+| **PLS-SEM** (SmartPLS, WarpPLS) | Latent variable score correlations | `fornell_larcker_plssem` | Weighted composite score correlations; close to observed Pearson r |
+
+**Preferred extraction order when multiple tables are available:**
+1. Zero-order Pearson correlation matrix (preferred for MASEM)
+2. PLS-SEM Fornell-Larcker off-diagonal values (acceptable)
+3. CB-SEM Fornell-Larcker off-diagonal values (use with caution; note in `notes` column)
+
+**Why this matters:** CB-SEM latent factor correlations are corrected for measurement error and can be systematically inflated compared to observed Pearson r. Mixing Pearson r (from some studies) with disattenuated correlations (from CB-SEM Fornell-Larcker tables) introduces bias. Always prefer a separate zero-order correlation table when available in the same paper.
 
 ---
 

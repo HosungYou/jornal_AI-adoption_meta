@@ -274,15 +274,31 @@ For 12 constructs, there are **66 unique pairwise correlations**: C(12,2) = 12×
 - Intent to Recommend (when from user perspective)
 - Planned Use
 - Expected Use
+- Acceptance Intention
 
 **Moderate-Confidence Mappings:**
 - Likelihood of Use (check if intention vs. expectation)
 - Commitment to Use (when future-oriented)
+- Acceptance (when items measure willingness/intention, not actual behavior)
+- Adoption (when items measure future plans, not current behavior)
+- "Acceptance and Adoption" composites (see Section 5, Example 7)
+
+**Canonical BI Scale Items (Venkatesh et al., 2003, p. 460):**
+- BI1: "I intend to use the system in the next \<n\> months."
+- BI2: "I predict I would use the system in the next \<n\> months."
+- BI3: "I plan to use the system in the next \<n\> months."
+
+**Linguistic Markers of BI Items:**
+- Tense: **future-oriented** (will, would, intend to, plan to)
+- Conditional framing: "Assuming I had access to...", "Given that..."
+- Core verbs: intend, predict, plan, willing, expect
+- Measurement target: subjective probability of performing the behavior (Fishbein & Ajzen, 1975)
 
 **Do NOT Map to BI:**
 - Current use, actual use → UB (behavior, not intention)
 - Desire, want → Could be ATT (affective evaluation) unless explicitly future-oriented
 - Interest → Often ATT unless clearly behavioral intent
+- "I use [system] regularly" → UB (present tense = behavior, not intention)
 
 ---
 
@@ -309,16 +325,32 @@ For 12 constructs, there are **66 unique pairwise correlations**: C(12,2) = 12×
 - Experience (when measured as usage history)
 - Adoption (when measured as binary yes/no current use)
 - Trial (borderline; include if intensity measured)
+- "Acceptance and Adoption" composites (see Section 5, Example 7)
+
+**Canonical UB Measurement Approaches:**
+- Venkatesh et al. (2003): system logs (actual frequency from server records)
+- Venkatesh et al. (2012, UTAUT2): self-reported frequency 4 months post-survey
+- Davis (1989): "How much time do you spend using [system]?" / "How frequently do you use [system]?"
+- Thompson et al. (1991): "I use [system] frequently" / "I depend on [system]"
+
+**Linguistic Markers of UB Items:**
+- Tense: **present or past** (I use, I have used, How often do you use)
+- No conditional framing (no "if" or "assuming")
+- Core verbs: use, utilize, adopt(ed), depend on
+- Measurement target: observable behavior (frequency, duration, breadth)
+- Response scales: frequency scales (never/rarely/sometimes/often/always), duration (hours/week)
 
 **Measurement Forms (all map to UB):**
 - Binary: "Do you use AI?" (yes/no)
 - Frequency: "How often?" (1=never to 5=daily)
 - Duration: "Hours per week using AI"
 - Breadth: "Number of AI features used"
+- Log data: System-recorded usage metrics
 
 **Do NOT Map to UB:**
 - Intention to use → BI
 - Awareness of AI → Not adoption (too early in process)
+- "I intend to use [system]" → BI (future tense = intention, not behavior)
 
 ---
 
@@ -735,6 +767,75 @@ Most SEM/path analysis papers also report a bivariate correlation table (often T
 
 ---
 
+### Example 7: Distinguishing BI vs. UB for Ambiguous "Acceptance/Adoption" Constructs
+
+**Study construct:** "Acceptance and adoption of AI Cloud-based applications and tools (e-CloudAC)"
+
+**Issue:** The construct name combines "acceptance" (typically intention-level) and "adoption" (could be intention or behavior). Many studies use these terms interchangeably. Without examining the actual items, the correct mapping is ambiguous.
+
+**Why this distinction matters for MASEM:**
+In the UTAUT model, BI → UB is a core structural path. Conflating BI and UB collapses this causal link and contaminates the pooled correlation matrix. Systematic misclassification inflates within-construct correlations and attenuates between-construct path estimates.
+
+**Resolution: Item-Level Linguistic Analysis**
+
+The definitive criterion is the **linguistic content of the measurement items**, not the construct label. Apply the following decision framework:
+
+**Step 1: Check item tense and verb structure**
+
+| Linguistic Feature | BI (Intention) | UB (Behavior) |
+|---|---|---|
+| **Tense** | Future (will, would, intend to) | Present/past (I use, I have used) |
+| **Conditional framing** | Present ("Assuming I had access...", "Given that...") | Absent |
+| **Core verbs** | intend, plan, predict, willing, expect | use, utilize, depend on, adopt(ed) |
+| **Response scale** | Agreement Likert (agree/disagree) | Frequency (never/always) or duration (hours/week) |
+
+**Step 2: Classify each item**
+
+Example items and their classification:
+
+| Item Wording | Classification | Rationale |
+|---|---|---|
+| "I intend to use AI cloud tools in the future." | **BI** | Future tense + "intend" |
+| "I am willing to accept AI applications." | **BI** | Willingness = prospective intent |
+| "I plan to adopt AI tools for my coursework." | **BI** | "Plan to" = future intention |
+| "I would use AI cloud applications if available." | **BI** | Conditional + "would" |
+| "I use AI cloud applications regularly." | **UB** | Present tense + frequency |
+| "I have adopted AI tools in my daily work." | **UB** | Past tense + completed action |
+| "How often do you use AI cloud tools?" | **UB** | Frequency measurement |
+| "I depend on AI cloud applications." | **UB** | Present behavior + dependency |
+
+**Step 3: Apply majority rule**
+
+| Item Composition | Mapping | Confidence |
+|---|---|---|
+| All items are BI-type | → BI | High |
+| All items are UB-type | → UB | High |
+| Majority (>66%) BI-type | → BI | Moderate; note in `mapping_rationale` |
+| Majority (>66%) UB-type | → UB | Moderate; note in `mapping_rationale` |
+| Mixed (~50/50) | → Exclude or split | Low; flag `flagged_for_review = TRUE` |
+
+**Step 4: Fallback when items are unavailable**
+
+If the original paper does not report individual items:
+1. Check the **cited scale source** and look up the original items
+2. Check whether the construct appears as a **predictor of UB** in the study's path model (suggesting it is BI, not UB)
+3. Check the construct's **position in the nomological network**: if it receives paths from PE, EE, SI, ATT and sends a path to UB, it functions as BI
+4. If all else fails, code as **BI with `mapping_confidence = low`** and `flagged_for_review = TRUE`, since "acceptance" in the technology adoption literature predominantly measures intention (Williams et al., 2015)
+
+**Canonical reference items for comparison:**
+
+BI reference (Venkatesh et al., 2003):
+- "I intend to use the system in the next \<n\> months."
+- "I predict I would use the system in the next \<n\> months."
+- "I plan to use the system in the next \<n\> months."
+
+UB reference (Thompson et al., 1991; Davis, 1989):
+- "I use [system] frequently."
+- "How frequently do you use [system]?"
+- "How much time do you spend using [system]?"
+
+---
+
 ## 6. Harmonization Workflow
 
 ### Step 1: Identify All Constructs in Study
@@ -927,3 +1028,7 @@ Thompson, R. L., Higgins, C. A., & Howell, J. M. (1991). Personal computing: Tow
 Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. *MIS Quarterly*, 27(3), 425-478.
 
 Venkatesh, V., Thong, J. Y., & Xu, X. (2012). Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. *MIS Quarterly*, 36(1), 157-178.
+
+Williams, M. D., Rana, N. P., & Dwivedi, Y. K. (2015). The unified theory of acceptance and use of technology (UTAUT): A literature review. *Journal of Enterprise Information Management*, 28(3), 443-488.
+
+Fishbein, M., & Ajzen, I. (1975). *Belief, attitude, intention, and behavior: An introduction to theory and research*. Addison-Wesley.

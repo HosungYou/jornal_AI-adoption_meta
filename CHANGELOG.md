@@ -4,6 +4,56 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.3.0] - 2026-03-24
+
+### Overview
+Construct harmonization and correlation extraction improvements. Adds BI vs. UB disambiguation framework with item-level linguistic criteria, expands Fornell-Larcker extraction guidance (CB-SEM vs. PLS-SEM distinction), and removes unused STUDY_METADATA columns.
+
+### Changed -- Documentation
+
+| File | Change |
+|------|--------|
+| `docs/03_data_extraction/construct_harmonization.md` | Added Example 7: BI vs. UB disambiguation for ambiguous "Acceptance/Adoption" constructs with item-level linguistic decision framework, canonical reference items (Venkatesh et al., 2003; Davis, 1989; Thompson et al., 1991), and majority-rule classification procedure |
+| `docs/03_data_extraction/construct_harmonization.md` | Expanded Section 3.5 (BI) and 3.6 (UB) with canonical scale items, linguistic markers, and acceptance/adoption composite guidance |
+| `docs/03_data_extraction/construct_harmonization.md` | Added references: Williams et al. (2015), Fishbein & Ajzen (1975) |
+| `docs/03_data_extraction/correlation_extraction_guide.md` | Expanded Fornell-Larcker borderline case: CB-SEM latent correlations (phi) vs. PLS-SEM composite correlations; added `r_source` flag values (`fornell_larcker_cbsem`, `fornell_larcker_plssem`); documented preferred extraction order |
+| `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md` | Added Section 7.6: BI vs. UB disambiguation with item-level linguistic decision framework and reference items; updated version to 2.3 |
+
+### Changed -- Data Templates
+
+| File | Change |
+|------|--------|
+| `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx` | Removed `n_constructs_measured`, `n_correlations_reported`, `matrix_completeness` columns from STUDY_METADATA |
+| `data/04_extraction/coder_packages/R1/AI_Adoption_MASEM_Coding_v3_R1.xlsx` | Same column removal |
+| `data/04_extraction/coder_packages/R2/AI_Adoption_MASEM_Coding_v3_R2.xlsx` | Same column removal |
+| `data/04_extraction/coder_packages/R3/AI_Adoption_MASEM_Coding_v3_R3.xlsx` | Same column removal |
+| `data/04_extraction/coder_packages/R4/AI_Adoption_MASEM_Coding_v3_R4.xlsx` | Same column removal |
+
+### BI vs. UB Disambiguation Framework
+
+```
+Study reports "Acceptance and Adoption" as a single construct
+  |
+  v
+Step 1: Read all measurement items
+  |
+  v
+Classify each item by linguistic markers:
+  BI-type: future tense, conditional, intend/plan/predict/willing
+  UB-type: present/past tense, no conditional, use/utilize/depend
+  |
+  v
+Step 2: Apply majority rule
+  >66% BI-type --> map to BI (confidence = moderate+)
+  >66% UB-type --> map to UB (confidence = moderate+)
+  ~50/50 mixed  --> exclude or flag for review
+  |
+  v
+Step 3: Fallback (if items unavailable)
+  Check nomological position: receives PE/EE/SI paths, predicts UB --> BI
+  Last resort: code as BI (confidence = low, flagged_for_review = TRUE)
+```
+
 ## [0.2.1] - 2026-02-18
 
 ### Overview

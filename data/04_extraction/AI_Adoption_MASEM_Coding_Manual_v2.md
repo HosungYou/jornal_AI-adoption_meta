@@ -15,6 +15,7 @@
 | 2.0 | 2026-03-09 | Major revision: year range 2022–2026; education-only scope; independent coding workflow; AI metadata pre-coding; 3 CLI models (Claude, Gemini, Codex); Addendum integrated and replaced; unnecessary fields removed; study_id S001 format; full-text exclusion codes E-FT1–E-FT6 added |
 | 2.1 | 2026-03-10 | Paper A+B integrated design; 2-pair ICR (R1+R2, R3+R4); Phase 1 100건 dual + Phase 2 150건 single; calibration 10건; cross-pair adjudication; Paper B gold standard = Paper A ICR sample |
 | 2.2 | 2026-03-13 | §5 AI pre-coding scope 정정 (§5.1만 pre-coded, §5.2-5.4는 human coded + AI parallel); §5.5 coding order 명확화 + matrix_completeness 계산법 + §5.5.1 CMB coding guide 추가 |
+| 2.3 | 2026-03-24 | §7.5 BI vs. UB disambiguation added (§7.6); n_constructs_measured, n_correlations_reported, matrix_completeness columns removed from STUDY_METADATA; Fornell-Larcker extraction guidance expanded (CB-SEM vs. PLS-SEM distinction) |
 
 ---
 
@@ -437,6 +438,34 @@ Harmonization maps diverse construct labels onto our 12 standard constructs. **P
 | Perceived Control | SE or FC or AUT(rev) | "I can control" → SE/FC; "AI controls" → AUT |
 | AI Quality | PE or TRU | "output quality" → PE; "trustworthy" → TRU |
 | AI Capability | PE or AUT | "helps me" → PE; "operates independently" → AUT |
+| Acceptance / Adoption (composite) | BI or UB | See §7.6 BI vs. UB disambiguation |
+
+### 7.6 BI vs. UB Disambiguation for "Acceptance/Adoption" Constructs
+
+Many studies use "acceptance," "adoption," or combined labels (e.g., "Acceptance and adoption of AI Cloud-based applications") without clearly distinguishing intention from behavior. Since BI → UB is a core UTAUT path, misclassification corrupts the pooled correlation matrix.
+
+**Item-level linguistic decision framework:**
+
+| Feature | BI (Intention) | UB (Behavior) |
+|---------|---------------|---------------|
+| Tense | Future (will, would, intend to) | Present/past (I use, I have used) |
+| Conditional | Present ("If available...", "Assuming...") | Absent |
+| Core verbs | intend, plan, predict, willing, expect | use, utilize, depend on, adopt(ed) |
+| Response scale | Agreement Likert (agree-disagree) | Frequency (never-always) or duration |
+
+**Reference items for comparison:**
+
+BI (Venkatesh et al., 2003): "I intend to use the system in the next \<n\> months." / "I predict I would use the system in the next \<n\> months." / "I plan to use the system in the next \<n\> months."
+
+UB (Davis, 1989; Thompson et al., 1991): "How frequently do you use [system]?" / "I use [system] frequently." / "How much time do you spend using [system]?"
+
+**Decision procedure:**
+1. Read all items; classify each as BI-type or UB-type using the table above
+2. If >66% of items are one type → map to that construct (confidence = moderate+)
+3. If items unavailable, check the construct's nomological position: receives paths from PE/EE/SI/ATT and predicts UB → functions as BI
+4. Fallback: code as BI with `mapping_confidence = low`, `flagged_for_review = TRUE`
+
+See `construct_harmonization.md` Section 5, Example 7 for detailed worked examples.
 
 ---
 

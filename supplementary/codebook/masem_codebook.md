@@ -1,9 +1,9 @@
 # MASEM Codebook: AI Adoption Meta-Analysis
 ## Data Dictionary for Multi-Sheet Coding Template
 
-**Version:** 1.0.0
-**Last Updated:** 2026-02-16
-**Contact:** Hosung Hwang
+**Version:** 1.1.0
+**Last Updated:** 2026-03-24
+**Contact:** Hosung You
 
 ---
 
@@ -51,7 +51,7 @@ Pairwise correlation data for all 66 construct pairs (12 constructs = 66 unique 
 | `p_value` | float | Statistical significance | Range: 0-1 | Extract if reported. If only sig stars: `***` = 0.001, `**` = 0.01, `*` = 0.05, `ns` = 0.99. |
 | `ci_lower` | float | Lower bound 95% CI | Range: -1 to +1 | Extract if reported, else compute from r and SE. |
 | `ci_upper` | float | Upper bound 95% CI | Range: -1 to +1 | Extract if reported, else compute from r and SE. |
-| `data_source` | cat | Source of correlation | `correlation_matrix`, `path_coefficient`, `regression_table`, `text`, `imputed` | **correlation_matrix**: Pearson r table. **path_coefficient**: SEM β converted to r. **regression_table**: standardized β. **text**: reported in narrative. **imputed**: not reported, computed from other cells. |
+| `data_source` | cat | Source of correlation | `correlation_matrix`, `fornell_larcker_plssem`, `fornell_larcker_cbsem`, `path_coefficient`, `regression_table`, `text`, `imputed` | **correlation_matrix**: Pearson r table (preferred). **fornell_larcker_plssem**: PLS-SEM Fornell-Larcker off-diagonal (acceptable; close to observed r). **fornell_larcker_cbsem**: CB-SEM Fornell-Larcker off-diagonal (use with caution; disattenuated, may be inflated). **path_coefficient**: SEM β converted to r. **regression_table**: standardized β. **text**: reported in narrative. **imputed**: not reported, computed from other cells. |
 | `conversion_method` | cat | Method if converted from β | `aloe_becker_2012`, `peterson_brown_2005`, `none` | Use **Aloe & Becker (2012)** for β→r conversion when SEM model available. `none` if r was directly reported. |
 
 **Note:** Studies must report ≥50% of construct pairs (33/66) to be eligible. Missing cells coded as `NA`.
