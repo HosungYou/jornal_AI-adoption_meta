@@ -234,7 +234,6 @@ For 12 constructs, there are **66 unique pairwise correlations**: C(12,2) = 12×
 - Organizational Support
 - Technical Support
 - Resource Availability
-- Compatibility (Rogers, 2003)
 - Infrastructure
 - IT Support
 - Access to Resources
@@ -244,6 +243,12 @@ For 12 constructs, there are **66 unique pairwise correlations**: C(12,2) = 12×
 - Support (ambiguous: technical support = FC; social encouragement = SI)
 - Organizational Readiness (when resource-focused; could overlap with cultural climate)
 - Technology Infrastructure
+- Compatibility (Rogers, 2003) — **only if items measure technical/infrastructure fit or interoperability**; exclude if items primarily measure value/practice/philosophy alignment (see decision rule below)
+
+**Decision Rule: Compatibility (IDT) → FC or Exclude**
+- Items about system interoperability, technical infrastructure fit, or resource availability → FC (moderate confidence)
+- Items about fit with existing values, teaching philosophy, work practices, or personal needs → **exclude** (conceptually distinct from FC)
+- When items mix both dimensions, map to FC only if infrastructure/interoperability items predominate; otherwise exclude
 
 **Ambiguous: FC vs. SE:**
 - "I have the knowledge to use AI" → SE (internal capability)
@@ -982,7 +987,7 @@ Brown2025,AI Perception,ATT,low,Vague; items suggest evaluative attitude
 |--------------|---------------|-------|
 | Relative Advantage | PE | Performance benefit |
 | Complexity | EE (reverse) | Reverse-coded ease |
-| Compatibility | FC | System/institutional fit |
+| Compatibility | FC or — | FC (moderate) only if items measure technical/infrastructure fit or interoperability; exclude if items measure value/practice/philosophy alignment |
 | Trialability | — | NOT in our 12; exclude |
 | Observability | — | NOT in our 12; exclude |
 
