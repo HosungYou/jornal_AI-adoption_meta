@@ -1,42 +1,44 @@
 # AI Adoption in Education: A Meta-Analytic Structural Equation Model
 
-> Comparing four competing structural models (TAM/UTAUT Core, Integrated, AI-Only, Trust Dual-Mechanism) of AI adoption in educational contexts using MASEM.
+> Meta-Analytic Structural Equation Modeling (MASEM) of AI adoption in higher education, integrating traditional technology acceptance constructs with AI-specific psychological factors.
 
-**Target Journal:** *Computers & Education* (Impact Factor: 12.0, Elsevier)
+**Phase 1 Status:** Complete (N = 224 studies included)
 
 ## Research Questions
 
-1. **RQ1**: To what extent do TAM/UTAUT path relationships hold in the educational AI adoption context?
-2. **RQ2**: Do AI-specific constructs (Trust, Anxiety, Transparency, Autonomy) provide incremental explanatory power beyond traditional TAM/UTAUT variables?
-3. **RQ3**: How do educational contextual factors moderate the structural relationships?
+1. **RQ1**: To what extent do TAM/UTAUT path relationships hold in the higher education AI adoption context?
+2. **RQ2**: Do AI-specific constructs (Trust in AI, AI Anxiety) provide incremental explanatory power beyond traditional TAM/UTAUT variables?
+3. **RQ3**: How do educational contextual factors (education level, user role, AI tool type, culture) moderate the structural relationships?
 
-## Four Competing Models
+## Structural Model (Model A)
 
-| Model | Name | Paths | Key Question |
-|-------|------|-------|-------------|
-| M1 | TAM/UTAUT Core | 8 | Is AI "just another technology"? |
-| M2 | Integrated | 14 | Do AI-specific constructs add value? |
-| M3 | AI-Only | 7 | Can AI-specific constructs stand alone? |
-| M4 | Trust Dual-Mechanism | 16 | Does Trust mediate through ATT and ANX? |
+Model A integrates TRA/TPB attitude-mediation architecture with UTAUT construct operationalizations and AI-specific extensions:
 
-> Model 4 adds TRU→ATT (Reliance proxy) and TRU→ANX (Resistance proxy) to test Trust's dual mediation mechanism. See `docs/04_methodology/model_specification.md`.
+```
+PE/EE → ATT → BI → UB
+SI/SE/TRU → BI
+ANX → ATT / BI (inhibitory)
+FC → UB (direct)
+```
 
-## 12 Constructs
+See `docs/04_methodology/model_specification.md` for competing model specifications.
 
-| # | Construct | Abbr | Origin |
-|---|-----------|------|--------|
-| 1 | Performance Expectancy | PE | TAM/UTAUT |
-| 2 | Effort Expectancy | EE | TAM/UTAUT |
-| 3 | Social Influence | SI | UTAUT |
-| 4 | Facilitating Conditions | FC | UTAUT |
-| 5 | Behavioral Intention | BI | TAM/UTAUT |
-| 6 | Use Behavior | UB | TAM/UTAUT |
-| 7 | Attitude | ATT | TAM |
-| 8 | Self-Efficacy | SE | SCT |
-| 9 | AI Trust | TRU | AI-specific |
-| 10 | AI Anxiety | ANX | AI-specific |
-| 11 | AI Transparency | TRA | AI-specific |
-| 12 | Perceived AI Autonomy | AUT | AI-specific |
+## 10 Constructs
+
+| # | Construct | Abbr | k | Origin | Tier |
+|---|-----------|------|---|--------|------|
+| 1 | Performance Expectancy | PE | 186 | TAM/UTAUT | 1 |
+| 2 | Behavioral Intention | BI | 185 | TAM/UTAUT/TPB | 1 |
+| 3 | Effort Expectancy | EE | 162 | TAM/UTAUT | 1 |
+| 4 | Social Influence | SI | 114 | UTAUT/TPB | 1 |
+| 5 | Facilitating Conditions | FC | 105 | UTAUT | 1 |
+| 6 | Use Behavior | UB | 90 | TAM/UTAUT | 1 |
+| 7 | Attitude | ATT | 81 | TAM/TPB | 1 |
+| 8 | Self-Efficacy | SE | 44 | SCT | 1 |
+| 9 | AI Anxiety | ANX | 40 | AI-specific | 2 |
+| 10 | Trust in AI | TRU | 36 | AI-specific | 2 |
+
+> Constructs excluded on methodological grounds: HM (coverage failure), HAB (structural inconsistency), PV (near-zero variance), TRA/AUT (k < 3). See `docs/03_data_extraction/construct_selection_rationale.md`.
 
 ## Repository Structure (PRISMA-aligned)
 
@@ -65,8 +67,8 @@ docs/                              # Documentation (numbered by PRISMA stage)
 ├── 06_decisions/                  # Decision log, implementation plans
 └── discussion/                    # Research discussion records (Korean)
 
-paper_a/                           # Paper A: MASEM meta-analysis (C&E)
-paper_b/                           # Paper B: LLM extraction methodology (RSM)
+paper_a/                           # Paper A: MASEM meta-analysis (target TBD)
+paper_b/                           # Paper B: LLM extraction methodology (target TBD)
 
 analysis/R/                        # 14 MASEM analysis scripts
 analysis/Python/                   # Data cleaning, validation utilities
@@ -84,19 +86,20 @@ tests/                             # Test suite for screening/processing scripts
 
 | PRISMA Stage | Status | Data Location | Count |
 |-------------|--------|---------------|-------|
-| 1. Identification | ✅ Complete | `data/01_identification/` | 16,189 records |
-| 2. Screening | 🔄 Human review in progress | `data/02_screening/` | 575 include, 175 conflict, 714 uncertain |
-| 3. Eligibility | ⏸ Next phase | — | ~575+ full-text |
-| 4. Extraction | ⏸ Pending | — | AI pipeline ready |
-| 5. Analysis | ⏸ Pending | — | 4 competing models specified |
+| 1. Identification | ✅ Complete | `data/01_identification/` | 16,189 unique records |
+| 2. Screening | ✅ Complete | `data/02_screening/` | 224 studies included |
+| 3. Full-text/Eligibility | ✅ Complete | `data/02_screening/pdfs/` | 224 PDFs obtained |
+| 4. Data Extraction | 🔄 In progress | `data/04_extraction/` | Coding manual finalized, Phase 0 calibration done |
+| 5. Analysis | ⏸ Pending | `analysis/` | TSSEM + OSMASEM pipeline ready |
 
 ## Methodology
 
 - **Core method**: Two-Stage Meta-Analytic SEM (TSSEM; Cheung, 2015) via `metaSEM` R package
 - **AI-assisted screening**: Gemini CLI + Claude Sonnet 4.6 (2-model consensus)
-- **Competing models**: Approach B (pre-registered model comparison) with 4 models
-- **Effect size**: Pearson r (with β→r conversion sensitivity analysis)
-- **Advanced**: OSMASEM, Bayesian MASEM, Network Analysis (MAGNA)
+- **Construct model**: 10-construct (8 Tier 1 + 2 AI-specific Tier 2), derived inductively from 224-study full-text analysis
+- **Theoretical architecture**: TRA/TPB mediation (PE/EE → ATT → BI) + AI-specific extensions (ANX, TRU)
+- **Effect size**: Pearson r (with beta-to-r conversion sensitivity analysis)
+- **Advanced**: OSMASEM for continuous moderators, Bayesian MASEM with Sabherwal et al. (2006) priors
 
 ## Key Documents
 
