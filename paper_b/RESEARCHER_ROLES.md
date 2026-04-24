@@ -4,10 +4,14 @@
 
 | 역할 | 연구자 | 소속 | 코더 ID | Pair |
 |------|--------|------|---------|------|
-| **PI / Pair A Coder / Pair B Adjudicator** | Hosung You | Penn State, College of Education | R1 | A |
-| **Pair A Coder** | PhD Student 1 | [소속 기입] | R2 | A |
-| **Pair B Coder / Pair A Adjudicator** | PhD Student 2 | [소속 기입] | R3 | B |
-| **Pair B Coder** | PhD Student 3 | [소속 기입] | R4 | B |
+| **PI / Phase 1 Pair A / Phase 2 Pair C** | Hosung You | Penn State, College of Education | R1 | A, C |
+| **Phase 1 Pair A / Phase 2 Pair D** | PhD Student 1 | [소속 기입] | R2 | A, D |
+| **Phase 1 Pair B / Phase 2 Pair D** | PhD Student 2 | [소속 기입] | R3 | B, D |
+| **Phase 1 Pair B / Phase 2 Pair C** | PhD Student 3 | [소속 기입] | R4 | B, C |
+
+> 2026-04-24 protocol amendment: Phase 1 pairwise coding is complete. Phase 2
+> uses rotated pairs: R1+R4 and R2+R3. This prevents the Phase 1 pair structure
+> from carrying unchanged into the remaining extraction work.
 
 ---
 
@@ -56,7 +60,7 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 
 ---
 
-## 데이터 추출 단계 역할 (Paper B Phase 0-1: 100 studies)
+## 데이터 추출 단계 역할
 
 ### Phase 0: Calibration (3 days)
 전체 4명이 동일 10 studies 코딩 → pair 간 일관성 확인
@@ -67,7 +71,7 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 | Calibration 미팅 참여 | ✅ | ✅ | ✅ | ✅ |
 | 목표: κ ≥ 0.80 | ✅ | ✅ | ✅ | ✅ |
 
-### Phase 1: Gold Standard 구축 (2-Pair Design)
+### Phase 1: Initial Human Reference Standard 구축 (2-Pair Design; completed)
 독립 코딩 — 100 studies (50 per pair), blinded to AI
 
 | 작업 | R1 (PI) | R2 (PhD 1) | R3 (PhD 2) | R4 (PhD 3) |
@@ -80,13 +84,17 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 | Pair A 불일치 중재 | — | — | ✅ (cross-pair adj.) | — |
 | Pair B 불일치 중재 | ✅ (cross-pair adj.) | — | — | — |
 
-### Phase 2: AI-First Verification (나머지 ~150 studies) — Paper A 전용
+### Phase 2: Rotated-Pair Human Coding (remaining eligible studies)
 
 | 작업 | R1 (PI) | R2 (PhD 1) | R3 (PhD 2) | R4 (PhD 3) |
 |------|---------|-----------|-----------|-----------|
-| AI consensus 검증 (single coding) | ✅ ~38 studies | ✅ ~38 studies | ✅ ~37 studies | ✅ ~37 studies |
-| 원문 대조 확인 | ✅ | ✅ | ✅ | ✅ |
-| Discrepancy 기록 | ✅ | ✅ | ✅ | ✅ |
+| Pair C: independent coding | ✅ | — | — | ✅ |
+| Pair D: independent coding | — | ✅ | ✅ | — |
+| AI output 접근 | ❌ until adjudication | ❌ until adjudication | ❌ until adjudication | ❌ until adjudication |
+| Pair 내 상대방 코딩 접근 | ❌ blinded | ❌ blinded | ❌ blinded | ❌ blinded |
+| Pair C 불일치 중재 | — | ✅ primary | ✅ secondary if needed | — |
+| Pair D 불일치 중재 | ✅ primary | — | — | ✅ secondary if needed |
+| Post-adjudication LLM comparison | ✅ lead | support | support | support |
 
 ### Phase 3: Quality Assurance — Paper A 전용
 
@@ -100,38 +108,39 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 
 ## 상세 책임
 
-### R1: PI / Pair A Coder / Pair B Adjudicator (Hosung You)
+### R1: PI / Phase 1 Pair A / Phase 2 Pair C (Hosung You)
 - **전체 프로젝트 총괄 및 coordination**
 - 스크리닝: spot-check 86건 + 추가코딩 135건 + R2-R3 불일치 중재
 - Phase 0: Calibration 참여 (10 studies)
 - Phase 1: Pair A coder (50 studies 독립 코딩) + Pair B discrepancies adjudicator
-- Phase 2: ~38 studies AI consensus 검증 (single coding)
+- Phase 2: Pair C coder with R4; Pair D discrepancies primary adjudicator
+- Phase 2 이후: adjudicated human reference 대비 LLM comparison, triage, substitution analysis lead
 - IRR 계산 및 통계 분석
 - 논문 작성 (전체)
 - OSF 등록 및 데이터 관리
 - AI extraction pipeline 실행 및 관리
 - 프롬프트 설계 및 최적화
 
-### R2: PhD Student 1 (Pair A Coder)
+### R2: PhD Student 1 (Phase 1 Pair A / Phase 2 Pair D)
 - 스크리닝: IRR 200건 독립 코딩
 - Phase 0: Calibration 참여 (10 studies)
 - Phase 1: Pair A coder (50 studies 독립 코딩)
-- Phase 2: ~38 studies AI consensus 검증 (single coding)
+- Phase 2: Pair D coder with R3; Pair C discrepancies primary adjudicator
 - 코딩 매뉴얼 숙지 및 calibration 참여
 - Discrepancy 논의 참여
 - 논문 검토 및 피드백
 
-### R3: PhD Student 2 (Pair B Coder / Pair A Adjudicator)
+### R3: PhD Student 2 (Phase 1 Pair B / Phase 2 Pair D)
 - 스크리닝: IRR 200건 독립 코딩 (R2와 동일 셋)
 - Phase 0: Calibration 참여 (10 studies)
 - Phase 1: Pair B coder (50 studies 독립 코딩) + Pair A discrepancies adjudicator
-- Phase 2: ~37 studies AI consensus 검증 (single coding)
+- Phase 2: Pair D coder with R2; Pair C discrepancies secondary check if needed
 - Discrepancy 논의 참여
 
-### R4: PhD Student 3 (Pair B Coder)
+### R4: PhD Student 3 (Phase 1 Pair B / Phase 2 Pair C)
 - Phase 0: Calibration 참여 (10 studies)
 - Phase 1: Pair B coder (50 studies 독립 코딩)
-- Phase 2: ~37 studies AI consensus 검증 (single coding)
+- Phase 2: Pair C coder with R1; Pair D discrepancies secondary check if needed
 - 코딩 매뉴얼 숙지 및 calibration 참여
 - Discrepancy 논의 참여
 
@@ -154,7 +163,7 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 ## Blinding Protocol
 
 ```
-Phase 1 (독립 코딩, 2-Pair Design):
+Phase 1 (completed independent coding, 2-Pair Design):
 
 Pair A (50 studies)              Pair B (50 studies)
 ┌─────────┐  ┌─────────┐       ┌─────────┐  ┌─────────┐    ┌──────────────────┐
@@ -180,6 +189,34 @@ Pair A (50 studies)              Pair B (50 studies)
 ```
 
 **Blinding 해제 시점**: Phase 1 코딩이 100% 완료되고 모든 코딩 시트가 제출된 후에만 pair 내 상호 결과 및 AI 결과 공개
+
+```
+Phase 2 (rotated independent coding):
+
+Pair C                             Pair D
+┌─────────┐  ┌─────────┐       ┌─────────┐  ┌─────────┐    ┌──────────────────┐
+│   R1    │  │   R4    │       │   R2    │  │   R3    │    │ Primary LLM flow │
+│ (blind) │  │ (blind) │       │ (blind) │  │ (blind) │    │  hidden until    │
+└────┬────┘  └────┬────┘       └────┬────┘  └────┬────┘    │  adjudication    │
+     │            │                  │            │         └────────┬─────────┘
+     ▼            ▼                  ▼            ▼                  │
+  coder_r1/   coder_r4/          coder_r2/   coder_r3/               │
+     │            │                  │            │                  │
+     └─────┬──────┘                  └─────┬──────┘                  │
+           ▼                               ▼                         │
+     IRR (R1 vs R4)                  IRR (R2 vs R3)                  │
+           │                               │                         │
+           ▼                               ▼                         │
+     R2 adjudicates              R1 adjudicates                      │
+     Pair C discrepancies        Pair D discrepancies                │
+           │                               │                         │
+           └──────────────┬────────────────┘                         │
+                          ▼                                          ▼
+                  Phase 2 adjudicated human reference ────── LLM comparison
+```
+
+**Phase 2 blinding 해제 시점**: Pair C/D의 독립 코딩 제출 및 cross-pair
+adjudication이 끝난 뒤에만 LLM output을 공개한다.
 
 ---
 

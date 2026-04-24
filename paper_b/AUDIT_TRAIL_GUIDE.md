@@ -5,6 +5,10 @@
 Paper B의 모든 AI 활용 과정을 투명하게 문서화하기 위한 가이드.
 PRISMA-trAIce (2025), TRIPOD-LLM (2025), RAISE (2025) 요구사항 충족.
 
+**Protocol amendment, 2026-04-24**: Phase 1 pairwise coding is complete.
+Phase 2 now uses rotated human pairs (R1+R4, R2+R3). AI/LLM outputs remain
+blinded during independent human coding and are compared only after adjudication.
+
 ---
 
 ## 1. AI Extraction Logging
@@ -80,15 +84,20 @@ data/02_ai_extraction/
 
 ```
 data/03_human_coding/
-├── coder1_PI/
-│   ├── coding_sheet_H1.csv       ← 100 studies × 30 variables
-│   ├── coding_notes_H1.md        ← 판단 근거, 의문사항 메모
-│   └── coding_time_log_H1.csv    ← 소요 시간 기록
-│
-└── coder2_phd1/
-    ├── coding_sheet_H2.csv
-    ├── coding_notes_H2.md
-    └── coding_time_log_H2.csv
+├── phase1/
+│   ├── pair_a_R1_R2/
+│   │   ├── coder_R1/
+│   │   └── coder_R2/
+│   └── pair_b_R3_R4/
+│       ├── coder_R3/
+│       └── coder_R4/
+└── phase2/
+    ├── pair_c_R1_R4/
+    │   ├── coder_R1/
+    │   └── coder_R4/
+    └── pair_d_R2_R3/
+        ├── coder_R2/
+        └── coder_R3/
 ```
 
 ### Time Log 형식
@@ -96,7 +105,9 @@ data/03_human_coding/
 | Field | Description |
 |-------|-------------|
 | `study_id` | S001-S100 |
-| `coder_id` | H1 / H2 |
+| `coder_id` | R1 / R2 / R3 / R4 |
+| `phase` | phase1 / phase2 |
+| `pair_id` | pair_a / pair_b / pair_c / pair_d |
 | `date` | 코딩 날짜 |
 | `start_time` | 시작 시각 |
 | `end_time` | 종료 시각 |
@@ -123,10 +134,15 @@ data/06_analysis/
 |-------|-------------|
 | `disc_id` | 불일치 ID (D001-) |
 | `study_id` | Study identifier |
+| `phase` | phase1 / phase2 |
+| `pair_id` | pair_a / pair_b / pair_c / pair_d |
 | `variable` | 불일치 변수명 |
-| `coder1_value` | H1의 값 |
-| `coder2_value` | H2의 값 |
+| `coder_a_id` | First coder ID |
+| `coder_a_value` | First coder value |
+| `coder_b_id` | Second coder ID |
+| `coder_b_value` | Second coder value |
 | `source_location` | 원문 참조 위치 (page, table, paragraph) |
+| `adjudicator_id` | Cross-pair adjudicator |
 | `resolution` | 합의 결과 |
 | `resolved_value` | 최종 gold standard 값 |
 | `resolution_method` | 원문 재확인 / 규칙 적용 / PI 결정 |
@@ -146,24 +162,37 @@ data/04_consensus/
 └── consensus_algorithm_log.md    ← 합의 규칙 + 매개변수
 ```
 
-### Phase 2 Verification Log
+### Phase 2 Rotated-Pair Coding Log
 
 ```
 data/03_human_coding/
-├── phase2_verification_H1.csv    ← H1 검증 결과
-└── phase2_verification_H2.csv    ← H2 검증 결과
+└── phase2/
+    ├── pair_c_R1_R4/
+    │   ├── coding_sheet_R1.csv
+    │   └── coding_sheet_R4.csv
+    ├── pair_d_R2_R3/
+    │   ├── coding_sheet_R2.csv
+    │   └── coding_sheet_R3.csv
+    ├── phase2_pairwise_discrepancy_log.csv
+    ├── phase2_adjudicated.csv
+    └── phase2_llm_comparison.csv
 ```
 
 | Field | Description |
 |-------|-------------|
 | `study_id` | Study identifier |
+| `phase` | phase2 |
+| `pair_id` | pair_c / pair_d |
 | `variable` | Variable name |
-| `ai_consensus_value` | AI 합의 값 |
-| `human_verified_value` | 인간 확인 값 |
-| `match` | TRUE / FALSE |
-| `override` | TRUE / FALSE |
-| `override_reason` | 불일치 시 사유 |
-| `verifier_id` | H1 / H2 |
+| `coder_id` | R1 / R2 / R3 / R4 |
+| `human_value` | Independent human-coded value |
+| `source_location` | Page/table/appendix location |
+| `conversion_flag` | Whether beta-to-r conversion was used |
+| `construct_mapping_confidence` | high / medium / low |
+| `adjudicated_value` | Final value after discrepancy resolution |
+| `llm_primary_value` | Primary workflow output, added after adjudication |
+| `match` | exact / within_tolerance / mismatch / not_reported |
+| `error_type` | wrong source / beta-r confusion / wrong sample / construct mismatch / exclusion error / other |
 | `verification_date` | 확인 날짜 |
 | `time_spent_min` | 소요 시간 |
 
@@ -181,7 +210,7 @@ data/06_analysis/
 
 1. **Error rate**: 발견된 오류 수 / 전체 확인 data elements
 2. **Error type breakdown**: 코딩 오류 / 입력 오류 / 변환 오류 / 매핑 오류
-3. **Verifier-level analysis**: H1 담당분 vs. H2 담당분 오류율 비교
+3. **Coder/pair-level analysis**: Pair C vs. Pair D and adjudicator-level issue patterns
 4. **Recommendation**: PASS / CONDITIONAL PASS / FAIL
 
 ---

@@ -6,6 +6,16 @@ Updated 2026-04-24. This plan supersedes the earlier three-model comparative fra
 
 The central methodological question is not which model wins. The central question is whether a transparent, documented, human-supervised LLM workflow can assist with extraction tasks that matter for MASEM: construct harmonization, correlation matrix recovery, moderator coding, and downstream inference stability.
 
+## Phase Status and Protocol Amendment
+
+Updated later on 2026-04-24. Phase 1 human pairwise coding is complete. Phase 2
+will use rotated human pairs rather than AI-first single verification:
+
+- Phase 1 primary validation sample: Pair A = R1+R2; Pair B = R3+R4
+- Phase 2 operational/external validation sample: Pair C = R1+R4; Pair D = R2+R3
+- LLM outputs remain unavailable to human coders until each phase's independent coding and adjudication are complete
+- Phase 2 can be reported in Paper B only as external validation, triage sensitivity, or workload simulation if the analysis is frozen before LLM comparison
+
 ## Research Questions
 
 **RQ1. Extraction validity.** How accurately does the prespecified LLM workflow extract bibliographic, sample, construct, measurement, correlation, and moderator information relative to an adjudicated human reference standard?
@@ -28,7 +38,16 @@ The central methodological question is not which model wins. The central questio
 
 ## Human Reference Standard
 
-Human coders will independently extract the validation sample using a shared codebook. Discrepancies will be resolved through adjudication and logged. The final adjudicated dataset is the reference standard for evaluation. The manuscript should avoid implying that this standard is flawless; it is the best available expert interpretation of the source documents.
+Human coders independently extract the validation sample using a shared codebook. Discrepancies are resolved through cross-pair adjudication and logged. The final adjudicated dataset is the reference standard for evaluation. The manuscript should avoid implying that this standard is flawless; it is the best available expert interpretation of the source documents.
+
+The reference standard has two tiers:
+
+| Tier | Human coding design | Primary role in Paper B |
+|---|---|---|
+| Phase 1 | R1+R2 and R3+R4 independent pair coding; cross-pair adjudication | Primary validation sample |
+| Phase 2 | R1+R4 and R2+R3 rotated pair coding; cross-pair adjudication | Optional external validation, triage sensitivity, and workload simulation |
+
+The Phase 2 tier is valuable because it changes pair composition. This helps evaluate whether the workflow is robust beyond the original R1-R2 and R3-R4 pair structure.
 
 ## Primary LLM Workflow
 
@@ -91,6 +110,26 @@ Planned comparisons:
 | Model fit | Reference MASEM fit | LLM-assisted MASEM fit | No decision-changing deterioration |
 
 The manuscript should report both numerical differences and interpretive consequences. A workflow may be suitable for first-pass extraction even if it is not suitable for unsupervised synthesis.
+
+## Human-Human vs. LLM-Human Disagreement
+
+Because MASEM extraction is not primarily a human rating task, the validation should
+not force all outputs into artificial categories. Numeric extraction cells should be
+evaluated as evidence-recovery values, while construct mapping and inclusion decisions
+should be evaluated as categorical or ordinal judgments.
+
+Planned comparison:
+
+| Comparison | Purpose |
+|---|---|
+| R1-R2 and R3-R4 disagreement | Establish Phase 1 human coding difficulty |
+| R1-R4 and R2-R3 disagreement | Establish Phase 2 difficulty under rotated pairs |
+| Primary LLM vs adjudicated human reference | Evaluate extraction validity |
+| Cross-model disagreement vs human disagreement | Test whether model disagreement can triage hard fields |
+
+Visualizations should emphasize error and consequence rather than artificial category
+formation: scatterplots with tolerance bands, Bland-Altman plots, study-by-construct
+delta heatmaps, error-taxonomy bar charts, and human-vs-LLM MASEM path overlays.
 
 ## Supplementary Model Sensitivity
 

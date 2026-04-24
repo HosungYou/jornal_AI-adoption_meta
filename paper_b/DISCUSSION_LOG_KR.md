@@ -71,7 +71,7 @@
 - Gold standard 데이터는 Paper A의 MASEM에도 활용
 
 **Phase 2 (~200 studies) — 📗 Paper A 전용**:
-- AI-first verification: AI consensus → 인간(R1, R2) 검증
+- 폐기된 이전 계획: AI consensus → 인간(R1, R2) 검증
 - Phase 1에서 검증된 AI 성능을 기반으로, 효율적 코딩 방식 적용
 - Paper B에서는 분석하지 않으며, Methods에서 간략 언급만
 
@@ -274,6 +274,33 @@ Paper B에 적용할 보고 기준:
 - `data/templates/human_review_sheet_v8.xlsx` — 최종 업데이트 (5개 시트, 검증 완료)
 - `paper_a/data/02_screening/claude_screening_results.csv` — 1,280건
 - `data/templates/create_masem_template.py` — adoption_composite 추가
+
+---
+
+## 2026-04-24: Phase 2 Pair 재설정
+
+### 결정 19: Phase 2 rotated-pair human coding
+
+**결정**: Phase 1 pairwise coding 완료 후, Phase 2는 기존 AI-first single verification
+계획을 폐기하고 rotated-pair human coding으로 진행한다.
+
+| Phase | Pair | Coders | 상태 |
+|---|---|---|---|
+| Phase 1 | Pair A | R1 + R2 | 완료 |
+| Phase 1 | Pair B | R3 + R4 | 완료 |
+| Phase 2 | Pair C | R1 + R4 | 다음 단계 |
+| Phase 2 | Pair D | R2 + R3 | 다음 단계 |
+
+**근거**:
+- Phase 1 pair 구조를 반복하면 R1-R2, R3-R4 pair-specific coding habit이 Phase 2에 그대로 이어질 수 있음.
+- Phase 2를 human-first로 유지해야 LLM output이 인간 코딩에 anchoring bias를 만들지 않음.
+- LLM augmentation 논문에서는 인간값을 억지로 범주화하기보다, source-document anchored extraction cell을 reference로 두고 numeric error, construct mismatch, beta/r confusion, sample mismatch를 평가하는 편이 더 타당함.
+
+**운영 규칙**:
+- LLM output은 Phase 2 독립 코딩과 cross-pair adjudication이 끝날 때까지 공개하지 않음.
+- Pair C 불일치: R2가 primary adjudicator, R3가 필요 시 secondary check.
+- Pair D 불일치: R1이 primary adjudicator, R4가 필요 시 secondary check.
+- Phase 2는 Paper A final extraction dataset에 포함하고, Paper B에는 external validation/triage sensitivity로만 사용.
 
 ---
 

@@ -1,9 +1,13 @@
-# Sampling Protocol: 575 → ~300 → 100
+# Sampling Protocol: 575 → MASEM Corpus → Phase 1/2 Human Reference Data
 
 ## 개요
 
-Paper B의 gold standard sample을 확보하기 위한 3단계 프로세스.
-스크리닝(16,189 → 575)은 Paper A의 범위이며, Paper B에서는 추적하지 않음.
+Paper B의 validation sample과 Paper A의 final extraction corpus를 확보하기 위한
+프로세스. 스크리닝(16,189 → 575)은 Paper A의 범위이며, Paper B에서는 필요한
+범위만 추적한다.
+
+**Protocol amendment, 2026-04-24**: Phase 1 is complete. Phase 2 will use
+rotated human pairs (R1+R4, R2+R3) rather than AI-first single verification.
 
 ```
 575 AI-screened Include
@@ -21,8 +25,12 @@ Paper B의 gold standard sample을 확보하기 위한 3단계 프로세스.
    층화무작위추출 (seed=42)
         │
         ▼
-   100 Studies → Paper B Gold Standard + Paper A ICR
-   (4 coders in 2 pairs: Pair A [R1+R2] 50 studies, Pair B [R3+R4] 50 studies)
+   Phase 1 Validation Set → primary Paper B reference sample
+   (completed 4-coder/2-pair design: R1+R2, R3+R4)
+        │
+        ▼
+   Phase 2 Remaining Eligible Studies → Paper A final dataset
+   (rotated pairs: R1+R4, R2+R3)
 ```
 
 ---
@@ -109,10 +117,11 @@ data/00_fulltext_eligibility/
 
 ---
 
-## Stage 2: Stratified Random Sampling (~300 → 100)
+## Stage 2: Phase 1 Validation Sampling (~300 → 100)
 
 ### 목적
-Paper B의 gold standard를 위한 100개 연구를 ~300개에서 층화무작위추출
+Paper B의 primary validation sample을 위한 100개 연구를 ~300개에서 층화무작위추출.
+이 단계는 Phase 1 pairwise workbook 기준으로 완료되었다.
 
 ### 층화 변수 (Stratification Variables)
 
@@ -223,6 +232,40 @@ data/01_sample_selection/
 
 ---
 
+## Stage 3: Phase 2 Rotated-Pair Assignment
+
+### 목적
+
+Phase 1에서 제외된 remaining eligible studies를 Paper A의 final MASEM-ready
+dataset으로 확정하기 위해 독립 인간 double coding을 실시한다. Phase 2에서는
+Phase 1 pair를 반복하지 않고 R1+R4, R2+R3로 pair를 회전시켜 pair-specific
+coding habits를 줄인다.
+
+### 배정 규칙
+
+| Pair | Coders | Assignment principle | Adjudication |
+|---|---|---|---|
+| Pair C | R1 + R4 | Remaining eligible studies의 절반 | R2 primary, R3 secondary if needed |
+| Pair D | R2 + R3 | Remaining eligible studies의 절반 | R1 primary, R4 secondary if needed |
+
+Assignment should be frozen before coding begins and logged with:
+
+- `study_id`
+- `phase`
+- `pair_id`
+- `coder_a`
+- `coder_b`
+- stratification variables used for balancing
+- assignment timestamp
+- random seed or manual-balancing rationale
+
+### Paper B 사용 범위
+
+Phase 2는 Paper B의 primary validation sample을 대체하지 않는다. 다만 Phase 2
+assignment와 adjudication이 LLM comparison 이전에 고정되어 있으면, Phase 2는
+external validation, triage sensitivity, 또는 human-workload simulation으로 사용할 수
+있다.
+
 ## 스크리닝은 Paper B 범위 밖
 
 | 단계 | Paper A 범위 | Paper B 범위 |
@@ -232,8 +275,9 @@ data/01_sample_selection/
 | Human screening review | ✅ | ❌ |
 | **Full-text eligibility (575 → ~300)** | ✅ | ✅ (Stage 1) |
 | **Stratified sampling (~300 → 100)** | — | ✅ (Stage 2) |
-| **Gold standard coding (100, 4 coders/2 pairs)** | ✅ (ICR) | ✅ (핵심) |
-| **AI extraction evaluation** | — | ✅ (핵심) |
+| **Phase 1 human reference coding (100, 4 coders/2 pairs)** | ✅ (ICR) | ✅ (primary validation) |
+| **Phase 2 rotated-pair human coding** | ✅ (핵심) | Optional external validation/triage sensitivity |
+| **LLM extraction evaluation** | — | ✅ (핵심 for Phase 1; optional for Phase 2) |
 | **Full dataset coding (~300)** | ✅ (핵심) | — |
 
 Paper B의 Methods에서는 Stage 1 (full-text eligibility)부터 기술하되,

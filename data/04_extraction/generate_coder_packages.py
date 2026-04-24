@@ -138,17 +138,16 @@ def assign_phases(studies, cal_ids):
     pair_a = phase1[:50]
     pair_b = phase1[50:100]
     n = len(phase2)
-    q, r = divmod(n, 4)
+    q, r = divmod(n, 2)
     splits = []
     offset = 0
-    for i in range(4):
+    for i in range(2):
         size = q + (1 if i < r else 0)
         splits.append(phase2[offset:offset + size])
         offset += size
     return {
         "pair_a": pair_a, "pair_b": pair_b,
-        "p2_r1": splits[0], "p2_r2": splits[1],
-        "p2_r3": splits[2], "p2_r4": splits[3],
+        "pair_c": splits[0], "pair_d": splits[1],
     }
 
 
@@ -252,7 +251,7 @@ def build_guide_sheet(wb, coder_label):
     set_col_width(ws, 3, 50)
 
 
-def build_assignment_sheet(wb, calibration, phase1, phase2, coder_label, pair_label):
+def build_assignment_sheet(wb, calibration, phase1, phase2, coder_label, pair_label, phase2_pair_label):
     """ASSIGNMENT: Task list with progress tracking."""
     ws = wb.create_sheet("ASSIGNMENT")
 
@@ -274,7 +273,7 @@ def build_assignment_sheet(wb, calibration, phase1, phase2, coder_label, pair_la
     for s in phase1:
         all_studies.append((s, f"Phase 1: {pair_label}"))
     for s in phase2:
-        all_studies.append((s, "Phase 2: Single"))
+        all_studies.append((s, f"Phase 2: {phase2_pair_label}"))
 
     for s, phase in all_studies:
         ws.cell(row=row, column=1, value=s["study_id"]).font = Font(name="Consolas", size=10, bold=True)
@@ -302,7 +301,7 @@ def build_assignment_sheet(wb, calibration, phase1, phase2, coder_label, pair_la
     ws.cell(row=row, column=1, value="Summary").font = SECTION_FONT
     ws.cell(row=row + 1, column=1, value=f"Phase 0 (Calibration): {len(calibration)}").font = BODY_FONT
     ws.cell(row=row + 2, column=1, value=f"Phase 1 (Dual Coding): {len(phase1)}").font = BODY_FONT
-    ws.cell(row=row + 3, column=1, value=f"Phase 2 (Single): {len(phase2)}").font = BODY_FONT
+    ws.cell(row=row + 3, column=1, value=f"Phase 2 ({phase2_pair_label}): {len(phase2)}").font = BODY_FONT
     ws.cell(row=row + 4, column=1, value=f"Total: {len(all_studies)}").font = Font(name="Calibri", size=10, bold=True)
 
     # Status dropdown
@@ -579,7 +578,7 @@ def build_codebook_sheet(wb):
 # MAIN
 # ══════════════════════════════════════════════════════
 
-def create_coder_package(coder_label, calibration, phase1, phase2, pair_label):
+def create_coder_package(coder_label, calibration, phase1, phase2, pair_label, phase2_pair_label):
     """Create complete coder package: Excel + Manual + PDFs."""
     coder_dir = OUTPUT_DIR / coder_label
     pdf_coder_dir = coder_dir / "PDFs"
@@ -596,7 +595,7 @@ def create_coder_package(coder_label, calibration, phase1, phase2, pair_label):
     print(f"\n{coder_label}: {len(coder_studies)} studies (Cal:{len(calibration)} P1:{len(phase1)} P2:{len(phase2)})")
 
     build_guide_sheet(wb, coder_label)
-    build_assignment_sheet(wb, calibration, phase1, phase2, coder_label, pair_label)
+    build_assignment_sheet(wb, calibration, phase1, phase2, coder_label, pair_label, phase2_pair_label)
     build_study_metadata_sheet(wb, coder_studies, coder_label)
     build_correlations_sheet(wb, coder_studies)
     build_exclusion_log(wb)
@@ -639,17 +638,17 @@ def main():
     # Phase assignment
     phases = assign_phases(studies, cal_ids)
     print(f"\nPhase 1: Pair A {len(phases['pair_a'])} + Pair B {len(phases['pair_b'])} = {len(phases['pair_a'])+len(phases['pair_b'])}")
-    print(f"Phase 2: R1:{len(phases['p2_r1'])} R2:{len(phases['p2_r2'])} R3:{len(phases['p2_r3'])} R4:{len(phases['p2_r4'])}")
+    print(f"Phase 2: Pair C (R1+R4):{len(phases['pair_c'])} Pair D (R2+R3):{len(phases['pair_d'])}")
 
     # Clean output dir
     if OUTPUT_DIR.exists():
         shutil.rmtree(OUTPUT_DIR)
 
     # Generate packages
-    create_coder_package("R1", calibration, phases["pair_a"], phases["p2_r1"], "Pair A (R1+R2)")
-    create_coder_package("R2", calibration, phases["pair_a"], phases["p2_r2"], "Pair A (R1+R2)")
-    create_coder_package("R3", calibration, phases["pair_b"], phases["p2_r3"], "Pair B (R3+R4)")
-    create_coder_package("R4", calibration, phases["pair_b"], phases["p2_r4"], "Pair B (R3+R4)")
+    create_coder_package("R1", calibration, phases["pair_a"], phases["pair_c"], "Pair A (R1+R2)", "Pair C (R1+R4)")
+    create_coder_package("R2", calibration, phases["pair_a"], phases["pair_d"], "Pair A (R1+R2)", "Pair D (R2+R3)")
+    create_coder_package("R3", calibration, phases["pair_b"], phases["pair_d"], "Pair B (R3+R4)", "Pair D (R2+R3)")
+    create_coder_package("R4", calibration, phases["pair_b"], phases["pair_c"], "Pair B (R3+R4)", "Pair C (R1+R4)")
 
     # Save mapping CSV
     phase_map = {}
@@ -659,10 +658,10 @@ def main():
         phase_map[s["study_id"]] = "Phase 1: Pair A"
     for s in phases["pair_b"]:
         phase_map[s["study_id"]] = "Phase 1: Pair B"
-    for key in ["p2_r1", "p2_r2", "p2_r3", "p2_r4"]:
-        coder = key.split("_")[1].upper()
-        for s in phases[key]:
-            phase_map[s["study_id"]] = f"Phase 2: {coder}"
+    for s in phases["pair_c"]:
+        phase_map[s["study_id"]] = "Phase 2: Pair C"
+    for s in phases["pair_d"]:
+        phase_map[s["study_id"]] = "Phase 2: Pair D"
 
     with open(MAPPING_CSV, "w", newline="") as f:
         writer = csv.writer(f)
@@ -676,13 +675,12 @@ def main():
                 coders = "R1, R2"
             elif any(s is x for x in phases["pair_b"]):
                 coders = "R3, R4"
+            elif any(s is x for x in phases["pair_c"]):
+                coders = "R1, R4"
+            elif any(s is x for x in phases["pair_d"]):
+                coders = "R2, R3"
             else:
-                for key in ["p2_r1", "p2_r2", "p2_r3", "p2_r4"]:
-                    if any(s is x for x in phases[key]):
-                        coders = key.split("_")[1].upper()
-                        break
-                else:
-                    coders = ""
+                coders = ""
             writer.writerow([sid, s["record_id"], s["title"], s["year"], s.get("doi_clean", ""), phase, coders])
 
     print(f"\nMapping: {MAPPING_CSV.name}")

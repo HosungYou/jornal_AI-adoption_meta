@@ -18,7 +18,7 @@
 | **Methods** | | | | | |
 | 5 | Source of data | Data source description | Methods 3.1 | ⬜ | 100 MASEM studies from parent MA |
 | 6 | Participants | Study selection criteria | Methods 3.1 | ⬜ | MASEM eligibility + stratified sampling |
-| 7 | LLM specification | Model name, version, provider | Methods 3.2 | ⬜ | 3 models fully specified |
+| 7 | LLM specification | Model name, version, provider | Methods 3.2 | ⬜ | Primary prespecified workflow fully specified; supplementary models only if used for sensitivity/triage |
 | 8 | LLM access | API version, access dates | Methods 3.2 | ⬜ | API details documented |
 | 9 | Prompt design | Full prompt or structured description | Methods 3.2.1 | ⬜ | 4 module prompts |
 | 10 | Prompt development | How prompts were created/refined | Methods 3.2.1 | ⬜ | Pilot-based refinement |

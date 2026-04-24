@@ -3,7 +3,7 @@
 ## Paper A / Paper B 범위 표시
 
 ```
-📘 = Paper B 범위 (100 studies, AI vs. Human 비교)
+📘 = Paper B 범위 (Phase 1 primary validation; Phase 2 optional validation/triage)
 📗 = Paper A 범위 (전체 ~300 studies, MASEM 데이터)
 📘📗 = 양쪽 모두 해당
 ```
@@ -11,13 +11,12 @@
 ## 전체 일정
 
 ```
-W0 (3d) ──── Phase 0: Calibration (all 4 coders, 10 studies)    📘📗
-Week 1  ──── Setup + Full-text Review + AI Extraction            📘📗
-Week 2-3 ─── Phase 1: 2-Pair Independent Coding (3 weeks)       📘📗
-Week 4  ──── Phase 1: IRR + Gold Standard + Paper B 분석          📘📗
-Week 5-6 ─── Phase 2: Single coding ~150 studies (2 weeks)       📗
-Week 7  ──── Phase 3 QA + Paper B 작성                             📘📗
-Week 8  ──── Paper B 완성 📘 + Data Freeze 📗
+Completed ── Phase 0: Calibration                                  📘📗
+Completed ── Phase 1: R1+R2 / R3+R4 independent coding              📘📗
+Next      ── Phase 1 adjudication propagation and dataset freeze    📘📗
+Next      ── Phase 2: Rotated pairs R1+R4 / R2+R3                   📗 + optional 📘
+Next      ── Phase 2 LLM comparison after human adjudication        📘📗
+Final     ── Phase 3 QA + Paper A/B analysis                         📘📗
 ```
 
 ---
@@ -72,17 +71,18 @@ Week 8  ──── Paper B 완성 📘 + Data Freeze 📗
 | 5 | AI consensus 계산 (100 studies) | R1 | consensus_100.csv | 📘 |
 | 5 | RQ1-4 분석 실행 | R1 | model_accuracy.csv 등 | 📘 |
 
-## Week 5-6: Phase 2 — Single Coding ~150 studies (2 weeks) 📗
+## Phase 2 — Rotated-Pair Human Coding 📗 + optional 📘
 
 | Day | 작업 | 담당 | 산출물 | 범위 |
 |-----|------|------|--------|------|
-| W5 1-5 | AI consensus 검증 (single coding) | R1 | ~38 studies | 📗 |
-| W5 1-5 | AI consensus 검증 (single coding) | R2 | ~38 studies | 📗 |
-| W5 1-5 | AI consensus 검증 (single coding) | R3 | ~37 studies | 📗 |
-| W5 1-5 | AI consensus 검증 (single coding) | R4 | ~37 studies | 📗 |
-| W6 1-3 | Phase 2 verification 완료 | R1, R2, R3, R4 | verified_data_phase2.csv | 📗 |
+| 1 | Phase 2 assignment freeze | R1 | phase2_assignment_log.csv | 📗 |
+| 1-10 | Pair C independent coding | R1, R4 | coder_R1/R4 sheets | 📗 |
+| 1-10 | Pair D independent coding | R2, R3 | coder_R2/R3 sheets | 📗 |
+| 11-12 | Pairwise comparison + IRR | R1 | phase2_irr_results.csv | 📗 |
+| 13-15 | Cross-pair adjudication | R2 for Pair C; R1 for Pair D | phase2_adjudicated.csv | 📗 |
+| 16-17 | LLM output unblinding and comparison | R1 | phase2_llm_comparison.csv | optional 📘 |
 
-**Phase 2 pace**: 각자 ~8 studies/day (verification mode, 독립 코딩보다 빠름). R1-R4 균등 분할.
+**Phase 2 pace**: independent extraction이므로 이전 single-verification 계획보다 느리게 잡는다. 각 pair는 동일 study set을 독립 코딩하고, LLM output은 adjudication 이후에만 공개한다.
 
 ## Week 7: Phase 3 QA 📗 + Paper B 작성 📘
 
@@ -116,7 +116,7 @@ Week 8  ──── Paper B 완성 📘 + Data Freeze 📗
 | W4 | Phase 1 IRR 확인 | κ ≥ 0.85, ICC ≥ 0.90 (both pairs) | 📘 |
 | W4 | Gold standard 확정 | 100 studies × 30 variables resolved | 📘📗 |
 | W4 | Paper B 분석 완료 | RQ1-4 실행 | 📘 |
-| W6 | Phase 2 완료 | ~150 studies verified (R1-R4 equal split) | 📗 |
+| Next | Phase 2 완료 | Rotated pair coding + adjudication completed | 📗 |
 | W7 | QA spot-check 통과 | Error rate < 5% | 📗 |
 | W7 | Paper B draft v2.0 | Results + figures 완성 | 📘 |
 | W8 | Data freeze | 전체 ~300 studies 확정 | 📗 |
@@ -131,5 +131,5 @@ Week 8  ──── Paper B 완성 📘 + Data Freeze 📗
 | Calibration 실패 (κ < 0.80) | 낮 | 추가 training session, pilot 5개 추가 (all 4 coders) | 📘📗 |
 | Phase 1 IRR 미달 (either pair) | 낮 | 코딩 규칙 명확화, 10개 재코딩 | 📘 |
 | AI extraction pipeline 오류 | 중 | Week 1에 10개 test run 선행 | 📘 |
-| Phase 2 일정 지연 | 중 | Phase 2 volume 조정, 우선순위 재배정 | 📗 |
+| Phase 2 일정 지연 | 중 | Pair별 weekly quota 설정, high-priority studies 먼저 freeze, unresolved cells만 adjudication queue로 분리 | 📗 |
 | Paper B 작성 지연 | 낮 | Week 4-5 분석/작성 병행 | 📘 |

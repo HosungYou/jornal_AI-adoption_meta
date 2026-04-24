@@ -53,3 +53,13 @@
 - Key assignment range A42:I61 was inspected after saving logic and all 20 target studies showed `done`.
 - Render checks were run for ASSIGNMENT, CORRELATIONS, STUDY_METADATA, and EXCLUSION_LOG ranges.
 - Formula scan found one pre-existing `#NAME?` display in CODEBOOK!E22; no newly edited coding sheets showed formula-error hits.
+
+## Protocol Amendment After Phase 1
+
+- Phase 1 pairwise coding is treated as complete for the current working version.
+- Phase 2 should not follow the earlier AI-first single-verification plan.
+- Phase 2 reviewer pairs are reset to:
+  - Pair C: R1 + R4
+  - Pair D: R2 + R3
+- Phase 2 remains human-first: LLM outputs stay hidden until independent coding and cross-pair adjudication are complete.
+- After adjudication, LLM outputs can be compared against the Phase 2 human reference for external validation, triage sensitivity, and workload simulation.

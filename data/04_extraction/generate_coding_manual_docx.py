@@ -11,8 +11,15 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.section import WD_ORIENT
 from docx.oxml.ns import qn, nsdecls
-from docx.oxml import parse_xml
-from latex2omml import add_inline_equation
+from docx.oxml import parse_xml, OxmlElement
+try:
+    from latex2omml import add_inline_equation
+except ModuleNotFoundError:
+    def add_inline_equation(paragraph, latex):
+        """Fallback when latex2omml is unavailable in the local Python env."""
+        run = paragraph.add_run(latex)
+        run.font.name = FONT_MONO
+        run.font.size = Pt(10)
 
 # ── Constants ──────────────────────────────────────────
 FONT_BODY = "Calibri"
@@ -114,16 +121,33 @@ def set_cell_border(cell, **kwargs):
     tcPr.append(tcBorders)
 
 
+def set_cell_width(cell, width_in):
+    """Set explicit cell width to avoid narrow auto-fit rendering."""
+    width_twips = int(width_in * 1440)
+    cell.width = Inches(width_in)
+    tc_pr = cell._tc.get_or_add_tcPr()
+    tc_w = tc_pr.first_child_found_in("w:tcW")
+    if tc_w is None:
+        tc_w = OxmlElement("w:tcW")
+        tc_pr.append(tc_w)
+    tc_w.set(qn("w:w"), str(width_twips))
+    tc_w.set(qn("w:type"), "dxa")
+
+
 def add_styled_table(doc, headers, rows, col_widths=None, first_col_bold=False):
     """Create a visually polished table."""
     table = doc.add_table(rows=1 + len(rows), cols=len(headers))
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    table.autofit = True
+    table.autofit = False
+    table.allow_autofit = False
+    if col_widths is None:
+        col_widths = [6.4 / len(headers)] * len(headers)
 
     # Style header row
     hdr_cells = table.rows[0].cells
     for i, header in enumerate(headers):
         cell = hdr_cells[i]
+        set_cell_width(cell, col_widths[i])
         cell.text = ""
         p = cell.paragraphs[0]
         run = p.add_run(header)
@@ -139,6 +163,7 @@ def add_styled_table(doc, headers, rows, col_widths=None, first_col_bold=False):
         row_cells = table.rows[r_idx + 1].cells
         for c_idx, val in enumerate(row_data):
             cell = row_cells[c_idx]
+            set_cell_width(cell, col_widths[c_idx])
             cell.text = ""
             p = cell.paragraphs[0]
             # Parse bold markers
@@ -151,13 +176,6 @@ def add_styled_table(doc, headers, rows, col_widths=None, first_col_bold=False):
             # Alternating row shading
             if r_idx % 2 == 1:
                 set_cell_shading(cell, COLOR_TABLE_ALT)
-
-    # Set column widths if provided
-    if col_widths:
-        for row in table.rows:
-            for i, width in enumerate(col_widths):
-                if i < len(row.cells):
-                    row.cells[i].width = Inches(width)
 
     # Add spacing after table
     doc.add_paragraph()
@@ -371,7 +389,7 @@ def add_header_bar(doc, text):
 
 def build_document():
     doc = create_document()
-    add_header_bar(doc, "AI Adoption in Education \u2014 MASEM Coding Manual v2.1")
+    add_header_bar(doc, "AI Adoption in Education \u2014 MASEM Coding Manual v2.4")
     add_page_number(doc)
 
     # ── COVER PAGE ──
@@ -399,7 +417,7 @@ def build_document():
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = p.add_run("Version 2.1  |  March 2026")
+    run = p.add_run("Version 2.4  |  April 2026")
     run.font.size = Pt(14)
     run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
     run.font.name = FONT_BODY
@@ -446,6 +464,7 @@ def build_document():
             ["1.0", "2026-02-16", "Initial release"],
             ["2.0", "2026-03-09", "Major revision: year range 2022\u20132026; education-only scope; independent coding workflow; AI metadata pre-coding; 3 CLI models; full-text exclusion codes E-FT1\u2013E-FT6"],
             ["2.1", "2026-03-10", "Paper A+B integrated design; 2-pair ICR (R1+R2, R3+R4); Phase 1 100-study dual + Phase 2 150-study single; calibration 10 studies; cross-pair adjudication"],
+            ["2.4", "2026-04-24", "Phase 1 complete; Phase 2 reset to rotated-pair human coding (R1+R4, R2+R3); LLM outputs remain blinded until adjudication"],
         ],
         col_widths=[0.7, 1.0, 4.8],
         first_col_bold=True,
@@ -613,12 +632,11 @@ def build_document():
         "   \u2502  \u25ba Cross-pair adjudication for discrepancies",
         "   \u2502  \u25ba ICR targets: \u03ba \u2265 .85, ICC \u2265 .90, MAE \u2264 .03",
         "   \u2193",
-        "Phase 2: Single Coding \u2014 ~150 studies",
-        "   \u2502  R1: ~38 studies + ~6 spot-checks",
-        "   \u2502  R2: ~38 studies + ~6 spot-checks",
-        "   \u2502  R3: ~37 studies + ~6 spot-checks",
-        "   \u2502  R4: ~37 studies + ~6 spot-checks",
-        "   \u2502  \u25ba 15-20% cross-checked by another coder",
+        "Phase 2: Rotated-Pair Human Coding \u2014 remaining eligible studies",
+        "   \u2502  Pair C (R1 + R4): independent double coding",
+        "   \u2502  Pair D (R2 + R3): independent double coding",
+        "   \u2502  \u25ba LLM outputs hidden until adjudication",
+        "   \u2502  \u25ba Cross-pair adjudication for discrepancies",
         "   \u2193",
         "Phase 3 (parallel): AI Extraction",
         "   \u2502  \u25ba 3-model consensus: Claude + Gemini + Codex",
@@ -637,8 +655,8 @@ def build_document():
         "**Calibration (Phase 0):** All 4 coders code the same 10 studies to establish inter-pair consistency before Phase 1 begins.",
         "**Dual coding (Phase 1):** Two independent pairs (R1+R2, R3+R4) each code 50 studies. This 100-study set serves dual purpose: Paper B gold standard AND Paper A ICR validation.",
         "**Cross-pair adjudication:** Discrepancies within Pair A (R1-R2) are adjudicated by R3 or R4. Discrepancies within Pair B (R3-R4) are adjudicated by R1 or R2.",
-        "**Single coding (Phase 2):** Remaining ~150 studies divided equally among R1-R4 (~38 each), with 15-20% spot-checked by a different coder.",
-        "**AI extraction (Phase 3):** Runs in parallel with human coding. Results are NOT shown to human coders until Phase 4.",
+        "**Rotated-pair coding (Phase 2):** Remaining eligible studies are coded by Pair C (R1+R4) and Pair D (R2+R3). This replaces the earlier single-coding plan.",
+        "**AI extraction (Phase 3):** Runs in parallel with human coding where needed. Results are NOT shown to human coders until independent coding and adjudication are complete.",
         "**Human-coded data is the gold standard.** AI output is used for comparison, validation, and Paper B analysis.",
     ]
     for i, rule in enumerate(rules, 1):
@@ -650,7 +668,7 @@ def build_document():
         [
             ["Phase 0: Calibration", "3 days", "R1, R2, R3, R4 (all)", "Inter-pair consistency report"],
             ["Phase 1: Dual coding (100)", "3 weeks", "Pair A (R1+R2), Pair B (R3+R4)", "Paper B gold standard + ICR"],
-            ["Phase 2: Single coding (~150)", "2 weeks", "R1, R2, R3, R4 (equal split)", "Paper A remaining data"],
+            ["Phase 2: Rotated-pair coding", "2-3 weeks", "Pair C (R1+R4), Pair D (R2+R3)", "Paper A remaining data + optional Paper B external validation"],
             ["Phase 3: AI extraction", "1 week", "AI pipeline", "AI consensus dataset"],
             ["Phase 4: ICR calculation", "3 days", "PI", "ICR metrics report"],
             ["Phase 5: Discrepancy resolution", "1 week", "All coders + PI", "Resolved dataset"],

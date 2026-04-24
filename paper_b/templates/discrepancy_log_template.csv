@@ -1,1 +1,1 @@
-disc_id,study_id,variable,coder1_value,coder2_value,ai_claude_value,ai_codex_value,ai_gemini_value,ai_consensus_value,source_location,resolution,resolved_value,resolution_method,resolution_date,notes
+disc_id,phase,pair_id,study_id,variable,coder_a_id,coder_a_value,coder_b_id,coder_b_value,source_location,adjudicator_id,resolution,resolved_value,resolution_method,resolution_date,llm_primary_value,llm_alt_values,match,error_type,triage_flag,notes

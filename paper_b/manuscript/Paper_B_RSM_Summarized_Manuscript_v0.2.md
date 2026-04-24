@@ -40,7 +40,7 @@ Method
 
 Corpus and sampling. The sampling frame consists of empirical studies eligible for the parent MASEM of AI adoption in higher education. The validation subset will be selected to represent variation in publication year, study design, region, AI tool type, construct coverage, and reporting format. The manuscript will report both the full parent corpus and the validation subset so readers can judge the scope of inference.
 
-Human reference standard. Human coders will independently extract the target fields using a shared codebook. Discrepancies will be resolved through adjudication and documented in an audit trail. The resulting reference standard will be treated as the best available expert interpretation rather than an infallible ground truth.
+Human reference standard. Human coders independently extract the target fields using a shared codebook. Phase 1 uses two independent pairs, R1-R2 and R3-R4, and has been completed for the current working corpus. Phase 2 extends the human reference process with rotated pairs, R1-R4 and R2-R3, so that the remaining extraction work does not simply reproduce the original pair structure. In both phases, discrepancies are resolved through cross-pair adjudication and documented in an audit trail. LLM outputs remain unavailable to human coders until independent coding and adjudication are complete. The resulting reference standard will be treated as the best available expert interpretation rather than an infallible ground truth.
 
 Primary LLM workflow. The primary automated workflow will use the prespecified Codex 5.5 configuration selected for this project. The final manuscript will report the exact model identifier, interface, access dates, decoding settings, prompt version, document preprocessing steps, output schema, and human oversight procedure. The workflow will return structured outputs rather than prose summaries.
 
@@ -58,7 +58,7 @@ Validation Design Summary
 |---|---|---|
 | Parent corpus | AI adoption in higher education MASEM corpus | Defines source population for validation |
 | Validation subset | Stratified subset representing reporting and construct diversity | Supports generalizability across extraction conditions |
-| Human standard | Independent coding followed by adjudication | Provides reference for evaluating LLM outputs |
+| Human standard | Phase 1 independent pairs plus Phase 2 rotated pairs, followed by adjudication | Provides reference for evaluating LLM outputs while reducing pair-specific bias |
 | Primary LLM | Prespecified Codex 5.5 workflow | Keeps article focused on workflow validity rather than vendor ranking |
 | Extraction schema | Bibliographic, sample, construct, measurement, correlation, moderator fields | Aligns extraction with MASEM requirements |
 | Optional robustness models | Supplementary sensitivity or triage only | Tests robustness without making model comparison the main claim |
@@ -84,6 +84,8 @@ Results Reporting Plan
 The results section will begin with the composition of the validation subset and the distribution of extraction targets. Performance will be reported by extraction family instead of as a single overall score because the consequences of an error differ across fields. A bibliographic error is usually easy to detect, whereas a construct-mapping or correlation-matrix error can propagate into the synthesis.
 
 The primary results table will report agreement, numeric error, and adjudication rates for each extraction family. The matrix-level results will report whether LLM-assisted matrices are complete enough to audit and whether deviations from the human reference standard remain within prespecified tolerance bands. The substitution analysis will then compare the human-coded and LLM-assisted MASEM inputs and outputs. The planned decision logic is that LLM assistance is defensible only if it reduces routine effort while preserving the sign, practical magnitude, and interpretation of focal parameters after human review.
+
+The visualization strategy will not force human extraction values into artificial categories when the source task is numeric evidence recovery. Numeric cells will be displayed as human-reference versus LLM-assisted values with tolerance bands, signed-error distributions, Bland-Altman plots, and study-by-construct delta heatmaps. Categorical decisions, such as construct-family mapping and exclusion decisions, will be summarized with agreement and discrepancy taxonomies.
 
 Table 3
 

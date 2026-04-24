@@ -216,7 +216,12 @@ This confirms that when both AI models agree to exclude, the decision is highly 
 | **Screening (I/X/U)** | 1 reviewer + verification | R2+R3 IRR on 200 + R1 full verification of Auto-INCLUDE |
 | **Data extraction (correlations)** | 2 independent coders + ICR | See below |
 
-### 6.2 Data Extraction Plan (Updated 2026-03-10)
+### 6.2 Data Extraction Plan (Updated 2026-03-10; amended 2026-04-24)
+
+> 2026-04-24 amendment: Phase 1 is complete. The Phase 2 single-coding plan
+> below is superseded by a rotated-pair design: Pair C = R1+R4 and Pair D =
+> R2+R3. AI outputs remain blinded until independent coding and adjudication are
+> complete.
 
 For the correlation matrix / beta coefficient extraction phase, **independent human coding with 2-pair design** is used. 4 coders (R1–R4) participate across all phases.
 
@@ -232,13 +237,13 @@ For the correlation matrix / beta coefficient extraction phase, **independent hu
 - ICR targets: ICC(2,1) ≥ 0.90, Cohen's κ ≥ 0.85, MAE ≤ .03
 - This 100-study set serves as Paper B's human gold standard for LLM comparison
 
-**Phase 2: Single Coding (~150 studies) = Paper A Remaining**
-- R1: ~38 studies + ~6 spot-checks
-- R2: ~38 studies + ~6 spot-checks
-- R3: ~37 studies + ~6 spot-checks
-- R4: ~37 studies + ~6 spot-checks
-- 15-20% cross-checked by a different coder (rotating assignment)
-- If ICR not met in Phase 1: additional calibration session, then re-code
+**Phase 2: Rotated-Pair Human Coding = Paper A Remaining**
+- Pair C: R1 + R4 independently code the same assigned studies
+- Pair D: R2 + R3 independently code the same assigned studies
+- Pair C discrepancies: R2 primary adjudicator, R3 secondary if needed
+- Pair D discrepancies: R1 primary adjudicator, R4 secondary if needed
+- AI outputs remain hidden until adjudication is complete
+- If Phase 2 pairwise ICR is below target: additional calibration session, then targeted re-code of affected fields/studies
 
 **Phase 3: AI Extraction (parallel with Phase 1-2)**
 - Claude CLI + Gemini CLI + Codex CLI, 3-model consensus

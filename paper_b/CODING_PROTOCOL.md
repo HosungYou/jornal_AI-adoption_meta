@@ -2,27 +2,40 @@
 
 ## 개요
 
-전체 ~300 MASEM-eligible studies에 대한 3-Phase 코딩 프로토콜.
+전체 MASEM-eligible studies에 대한 human-first extraction protocol.
 Paper B와 Paper A의 범위가 다르므로, 각 Phase에서의 적용 범위를 명시함.
+
+**Protocol amendment, 2026-04-24**: Phase 1 pairwise coding is complete.
+Phase 2 is reset from the earlier AI-first single-verification plan to a
+rotated-pair human coding design: Pair C = R1+R4 and Pair D = R2+R3. AI outputs
+remain blinded during independent human coding and are used after adjudication
+for LLM augmentation, triage, and substitution analyses.
 
 ### Paper A / Paper B 범위 구분
 
 ```
-Phase 1: Gold Standard 구축 (100 studies)
-  ├── 📘 Paper B 범위: 인간 독립 코딩 vs. AI 추출 비교 (핵심 분석)
-  └── 📗 Paper A 범위: Gold standard 데이터를 MASEM에도 활용
+Phase 1: Initial Human Reference Standard 구축 (100 studies; completed)
+  ├── Pair A: R1+R2
+  ├── Pair B: R3+R4
+  ├── 📘 Paper B 범위: 인간 독립 코딩 vs. LLM workflow 비교의 primary validation sample
+  └── 📗 Paper A 범위: adjudicated extraction data를 MASEM에도 활용
 
-Phase 2: AI-First Verification (나머지 ~200 studies)
-  ├── 📘 Paper B 범위: ❌ (Paper B에서는 분석하지 않음)
-  └── 📗 Paper A 범위: ✅ (MASEM 데이터 생산)
+Phase 2: Rotated-Pair Human Coding (remaining eligible studies)
+  ├── Pair C: R1+R4
+  ├── Pair D: R2+R3
+  ├── 📘 Paper B 범위: optional external/operational validation 또는 triage sensitivity
+  └── 📗 Paper A 범위: final MASEM extraction dataset 생산
 
 Phase 3: Quality Assurance (Phase 2의 10% spot-check)
   ├── 📘 Paper B 범위: ❌ (Paper B에서는 분석하지 않음)
   └── 📗 Paper A 범위: ✅ (데이터 품질 검증)
 ```
 
-**Paper B에 보고되는 것**: Phase 1의 100 studies만 (인간 IRR + AI accuracy + consensus + workflow)
-**Paper A에 보고되는 것**: Phase 1 + Phase 2 + Phase 3 전체 (~300 studies의 MASEM 데이터)
+**Paper B에 보고되는 것**: Phase 1을 primary validation sample로 보고한다. Phase 2는
+분석 전에 protocol amendment로 고정된 경우에만 external validation, triage
+sensitivity, 또는 workload simulation으로 보고한다.
+**Paper A에 보고되는 것**: Phase 1 + Phase 2 + Phase 3 전체의 adjudicated
+MASEM-ready extraction data.
 
 ---
 
@@ -217,54 +230,82 @@ Step 3c: Gold Standard 확정
 
 ---
 
-## Phase 2: AI-First Verification (~200 studies) — 📗 Paper A 전용
+## Phase 2: Rotated-Pair Human Coding — 📗 Paper A 핵심 / 📘 Paper B optional validation
 
-> **📘 Paper B**: 이 Phase는 Paper B의 분석 대상이 아님.
-> Paper B Methods에서는 "the remaining studies were coded using an AI-first
-> verification workflow, described in the parent meta-analysis (You, 2026)" 정도로 간략 언급.
+> **Protocol amendment, 2026-04-24**: Phase 2 is no longer AI-first single
+> verification. It uses independent human double coding with rotated pairs:
+> Pair C = R1+R4 and Pair D = R2+R3.
 
 ### 목적
-나머지 ~200 studies에 대해 AI consensus 결과를 인간이 검증.
-Phase 1의 gold standard로 검증된 AI 성능을 기반으로,
-나머지 studies에 대해서는 AI-first → Human verification 방식으로 효율적으로 코딩.
+Phase 1에서 같은 pair로 형성된 합의 습관이나 pair-specific bias를 Phase 2에
+그대로 가져오지 않기 위해 reviewer pairs를 교차 재구성한다. Phase 2의 주된
+목적은 Paper A의 final MASEM-ready extraction dataset을 만들고, 동시에 Paper B의
+LLM augmentation 논리를 더 큰 operational dataset에서 점검할 수 있는 audit trail을
+남기는 것이다.
 
 ### 절차
 
 ```
-Step 1: AI Consensus 생성
-  ├── 3개 AI 모델 추출 결과 → consensus 알고리즘 적용
-  │   ├── Categorical: 다수결 (2/3 이상 일치)
-  │   ├── Continuous: 중앙값 (3개 모델 중)
-  │   └── Unanimous = high confidence, Split = flag for review
-  └── 결과: data/04_consensus/ai_consensus_remaining.csv
+Step 1: Phase 2 assignment freeze
+  ├── Remaining eligible studies를 Pair C와 Pair D로 배정
+  ├── Pair C: R1+R4
+  ├── Pair D: R2+R3
+  ├── Study assignment, pair_id, coder IDs, assignment timestamp 기록
+  └── AI output은 independent coding 완료 전까지 비공개
 
-Step 2: Human Verification (Single Coding)
-  ├── R1: ~38 studies 할당
-  ├── R2: ~38 studies 할당
-  ├── R3: ~37 studies 할당
-  ├── R4: ~37 studies 할당
-  ├── 각 study에 대해:
-  │   ├── AI consensus 값 확인
-  │   ├── 원문(PDF) 대조
-  │   ├── 일치 시: Accept
-  │   ├── 불일치 시: Human override + 사유 기록
-  │   └── AI consensus에서 flag된 항목은 특별 주의
-  └── 결과: verified_data_phase2.csv
+Step 2: Independent human double coding
+  ├── Pair C: R1과 R4가 동일 studies를 독립 코딩
+  ├── Pair D: R2와 R3가 동일 studies를 독립 코딩
+  ├── PDF 원문에서 직접 추출
+  ├── 상대 코더 결과와 AI 결과 접근 금지
+  ├── 모호한 construct mapping, beta/r 변환, sample mismatch는 notes에 기록
+  └── 결과: data/04_extraction/phase2/{pair_c,pair_d}/coder_R*.xlsx 또는 csv
 
-Step 3: Override Rate 계산
-  ├── 전체 override 비율 (%)
-  ├── Variable type별 override 비율
-  ├── AI model별 단독 오류 빈도
-  └── 📗 Paper A Methods에 보고
+Step 3: Pairwise comparison and IRR
+  ├── Pair C: R1 vs R4
+  ├── Pair D: R2 vs R3
+  ├── Categorical: percent agreement, Cohen's kappa, Gwet's AC1/AC2
+  ├── Numeric: absolute error, tolerance-band agreement, ICC where appropriate
+  └── 결과: data/04_extraction/phase2/phase2_irr_results.csv
+
+Step 4: Cross-pair adjudication
+  ├── Pair C 불일치: R2가 primary adjudicator, R3가 필요 시 secondary check
+  ├── Pair D 불일치: R1이 primary adjudicator, R4가 필요 시 secondary check
+  ├── Adjudicator는 원문 PDF와 코딩 매뉴얼만 기준으로 판단
+  ├── 해결값, 근거 위치, rule applied, confidence 기록
+  └── 결과: data/04_extraction/phase2/phase2_adjudicated.csv
+
+Step 5: Post-adjudication LLM comparison
+  ├── 인간 adjudicated value를 reference로 고정한 뒤 LLM output 공개
+  ├── LLM vs human reference: field-level agreement, numeric error, error taxonomy
+  ├── Human-human disagreement vs LLM-human disagreement 비교
+  ├── Cross-model disagreement은 triage signal로만 사용
+  └── 결과: data/04_extraction/phase2/llm_triage_analysis.csv
 ```
 
-### Verification Coding Sheet
+### Phase 2 Coding Sheet
 
 각 data element에 대해:
-- `ai_consensus_value`: AI 합의 값
-- `human_verified_value`: 인간 확인 값
-- `match`: TRUE/FALSE
-- `override_reason`: 불일치 시 사유 (코딩 오류 / 원문 누락 / 변환 오류 / 기타)
+- `phase`: `phase2`
+- `pair_id`: `pair_c` 또는 `pair_d`
+- `coder_id`: R1, R2, R3, R4
+- `human_value`: 독립 코더의 원 코딩값
+- `source_location`: page/table/appendix/paragraph
+- `extraction_basis`: correlation matrix / path coefficient / text / appendix
+- `conversion_flag`: beta-to-r 변환 여부
+- `construct_mapping_confidence`: high / medium / low
+- `coding_notes`: 모호성, 제외 근거, sample mismatch, scale orientation 이슈
+
+### Phase 2 LLM Comparison Sheet
+
+인간 adjudication 이후에만 생성한다.
+
+- `human_reference_value`: adjudicated Phase 2 값
+- `llm_primary_value`: prespecified primary LLM workflow output
+- `llm_alt_values`: optional supplementary model outputs
+- `match`: exact / within_tolerance / mismatch / not_reported
+- `error_type`: wrong source / beta-r confusion / wrong sample / construct mismatch / exclusion error / other
+- `triage_flag`: whether this field should have been routed to human review
 
 ---
 
@@ -383,15 +424,15 @@ def calculate_consensus(claude_val, codex_val, gemini_val, var_type):
 
 ## Audit Trail 요구사항
 
-| 기록 항목 | Phase 1 (📘B + 📗A) | Phase 2 (📗A only) | Phase 3 (📗A only) |
+| 기록 항목 | Phase 1 (📘B + 📗A) | Phase 2 (📗A + optional 📘B) | Phase 3 (📗A only) |
 |----------|---------------------|-------------------|-------------------|
-| 코더 ID | R1/R2 (Pair A) + R3/R4 (Pair B) + AI pipeline | R1-R4 (equal split) | R1-R4 (cross) |
+| 코더 ID | R1/R2 (Pair A) + R3/R4 (Pair B) + LLM pipeline | R1/R4 (Pair C) + R2/R3 (Pair D) + LLM pipeline after adjudication | R1-R4 (cross) |
 | 코딩 날짜 | ✅ | ✅ | ✅ |
 | Study ID | ✅ | ✅ | ✅ |
 | 소요 시간 | ✅ | ✅ | ✅ |
 | 원문 참조 위치 | ✅ | ✅ | ✅ |
 | 의사결정 메모 | ✅ (개별) | ✅ (override 시) | ✅ (오류 시) |
-| AI 모델 output | ❌ (H1/H2 blinded) | ✅ | ✅ |
+| AI 모델 output | ❌ (human coding 완료 전까지 blinded) | ❌ independent coding/adjudication 전까지 blinded; 이후 comparison용 공개 | ✅ |
 
 ---
 
@@ -399,10 +440,10 @@ def calculate_consensus(claude_val, codex_val, gemini_val, var_type):
 
 | | Phase 1 | Phase 2 | Phase 3 |
 |---|---------|---------|---------|
-| **대상** | 100 studies | ~200 studies | Phase 2의 10% |
-| **방법** | 인간 독립 코딩 + AI 독립 추출 | AI consensus → 인간 검증 | 독립 spot-check |
-| **코더** | Pair A (R1+R2) + Pair B (R3+R4) + cross-pair adj. | R1-R4 (equal split, single coding) | R1-R4 (cross spot-check) |
-| **📘 Paper B** | ✅ 핵심 분석 | ❌ | ❌ |
+| **대상** | 100 studies | Remaining eligible studies | Phase 2의 10% |
+| **방법** | 인간 독립 코딩 + LLM 독립 추출 | Rotated-pair human double coding → adjudication → LLM comparison | 독립 spot-check |
+| **코더** | Pair A (R1+R2) + Pair B (R3+R4) + cross-pair adj. | Pair C (R1+R4) + Pair D (R2+R3) + cross-pair adj. | R1-R4 (cross spot-check) |
+| **📘 Paper B** | ✅ primary validation | Optional external validation/triage sensitivity | ❌ |
 | **📗 Paper A** | ✅ Gold standard 활용 | ✅ 데이터 생산 | ✅ 품질 보증 |
-| **Timeline** | Week 1-3 | Week 4-5 | Week 5-6 |
-| **산출물** | gold_standard_100.csv | verified_data_phase2.csv | qa_report.md |
+| **Timeline** | Completed | Next phase | After Phase 2 |
+| **산출물** | phase1_adjudicated_reference.csv | phase2_adjudicated.csv + phase2_llm_comparison.csv | qa_report.md |
