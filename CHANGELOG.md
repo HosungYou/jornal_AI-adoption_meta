@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased] - 2026-04-24
+
+### Added -- Paper B Manuscript
+
+| File | Purpose |
+|------|---------|
+| `paper_b/manuscript/Paper_B_RSM_Summarized_Manuscript_v0.2.md` | Short APA-style professional summarized manuscript for RSM-oriented positioning |
+| `paper_b/manuscript/Paper_B_RSM_Summarized_Manuscript_v0.2.docx` | Word version of the summarized manuscript with single-spaced tables |
+| `paper_b/manuscript/figures/figure1_substitution_stability_simulation.png` | Simulated placeholder figure for downstream substitution stability analysis |
+| `paper_b/manuscript/README.md` | Documentation of current manuscript artifacts, positioning, tables, figure, and next steps |
+
+### Changed -- Paper B Positioning
+
+| File | Change |
+|------|--------|
+| `paper_b/README.md` | Reframed Paper B from a three-model comparison to a prespecified LLM workflow validation study |
+| `paper_b/ANALYSIS_PLAN.md` | Replaced the old comparative model analysis plan with extraction validity, systematic error, and downstream substitution analyses |
+| `paper_b/JOURNAL_STRATEGY.md` | Updated RSM strategy to emphasize MASEM-ready extraction and inference stability rather than model ranking |
+| `paper_b/LITERATURE_REVIEW.md` | Updated gap analysis and contribution language to match the new workflow-validation framing |
+
 ## [0.3.0] - 2026-03-24
 
 ### Overview

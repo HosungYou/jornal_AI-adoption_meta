@@ -1,29 +1,38 @@
-# Paper B: LLM-Assisted Data Extraction for MASEM
+# Paper B: LLM-Assisted MASEM-Ready Data Extraction
 
 ## 논문 정보
 
-- **제목**: LLM-Assisted Data Extraction for Meta-Analytic Structural Equation Modeling: A Three-Model Comparative Framework with Multi-Model Consensus Validation
+- **현재 제목**: Can a Prespecified Large Language Model Workflow Augment MASEM-Ready Data Extraction?
 - **저자**: Hosung You
 - **소속**: College of Education, Pennsylvania State University
 - **타겟 저널**: Research Synthesis Methods (1순위) / JMIR AI (2순위)
-- **상태**: Draft v1.0 (2026-02-25)
+- **상태**: RSM summarized manuscript v0.2 (2026-04-24)
+
+## 2026-04-24 포지셔닝 업데이트
+
+Paper B는 더 이상 3개 상용 LLM의 순위 비교를 핵심 기여로 두지 않는다. 현재 포지셔닝은 **하나의 사전 지정된 LLM workflow가 인간 감독하에서 MASEM-ready data extraction을 보조할 수 있는지 검증하는 방법론 논문**이다.
+
+Claude/Gemini 등 추가 모델은 필요한 경우 supplementary robustness 또는 triage 분석으로만 사용한다. 본문 핵심은 model ranking이 아니라 다음 세 가지다.
+
+1. Adjudicated human reference standard 대비 extraction validity
+2. Construct harmonization 및 correlation matrix recovery의 systematic error
+3. Human-coded input을 LLM-assisted input으로 대체했을 때 MASEM 결론이 유지되는지에 대한 downstream substitution analysis
 
 ## Paper A와의 관계
 
 - **Paper A** (parent meta-analysis): AI Adoption in Education MASEM (Computers & Education 타겟)
-- **Paper B** (본 논문): Paper A의 100-study subsample을 gold standard로 사용하여 AI coding 신뢰도 평가
+- **Paper B** (본 논문): Paper A의 validation subset을 사용하여 LLM-assisted MASEM extraction workflow를 평가
 - Paper B는 Paper A 완성 전에 독립적으로 제출 가능 (Paper A를 OSF Preprint으로 cite)
 
 ## 연구 설계 요약
 
 ```
-Gold Standard Sample: 100 studies (from ~300 MASEM-eligible studies)
-Human Coders: 4명 (R1-R4), 2 independent pairs
-              Pair A: R1+R2 (50 studies), Pair B: R3+R4 (50 studies)
-              Cross-pair adjudication (Pair B discrepancies → R1, Pair A discrepancies → R3)
-AI Models: 3개 (Claude CLI [claude-sonnet-4-6] / Codex CLI [latest] / Gemini CLI [gemini-2.5-flash])
-Variables: 30개/study × 100 studies ≈ 3,000 data elements
-Design: Comparative accuracy (AI vs. human gold standard)
+Validation subset: stratified subset from Paper A MASEM corpus
+Human standard: independent human coding + adjudication
+Primary LLM workflow: prespecified Codex 5.5 workflow
+Optional robustness: additional LLMs only as supplementary sensitivity/triage checks
+Extraction families: bibliographic, sample, construct, measurement, correlation, moderator
+Core design: human-reference validation + matrix-level diagnostics + substitution analysis
 ```
 
 ## 스크리닝 파이프라인 (2026-02-26 확정)
@@ -59,7 +68,12 @@ paper_b/
 ├── AUDIT_TRAIL_GUIDE.md               ← 감사 추적 가이드
 │
 ├── manuscript/
-│   └── Paper_B_LLM_MASEM_v1.0.docx   ← 논문 초안
+│   ├── Paper_B_LLM_MASEM_Methodology_Draft_v1.0.docx
+│   ├── Paper_B_RSM_Summarized_Manuscript_v0.2.md
+│   ├── Paper_B_RSM_Summarized_Manuscript_v0.2.docx
+│   ├── README.md
+│   └── figures/
+│       └── figure1_substitution_stability_simulation.png
 │
 ├── prompts/                           ← AI extraction 프롬프트
 │   ├── module_a_bibliographic.md
@@ -92,10 +106,9 @@ paper_b/
 
 ## 핵심 RQ
 
-1. **RQ1**: AI 3개 모델의 MASEM 코딩 정확도 (vs. human gold standard)
-2. **RQ2**: Variable type별 AI 정확도 차이 (bibliographic > statistical > classificatory?)
-3. **RQ3**: Multi-model consensus가 single model보다 나은가?
-4. **RQ4**: 최적 human-AI hybrid workflow는?
+1. **RQ1**: Prespecified LLM workflow는 adjudicated human reference standard 대비 MASEM-ready extraction을 얼마나 정확하게 수행하는가?
+2. **RQ2**: Extraction family, construct ambiguity, reporting quality에 따라 systematic error가 어떻게 달라지는가?
+3. **RQ3**: LLM-assisted inputs로 대체했을 때 pooled correlations, structural paths, indirect effects의 substantive interpretation이 유지되는가?
 
 ## IRR 설계
 
@@ -105,10 +118,11 @@ paper_b/
 - **지표**: Cohen's κ (pair 내 범주형), ICC(2,1) (연속형)
 - **목표**: κ ≥ 0.85
 - **Adjudication**: Cross-pair — R1이 Pair B 불일치 중재, R3가 Pair A 불일치 중재
-- **Gold Standard**: Pair 내 일치 시 채택, 불일치 시 cross-pair adjudicator 중재 후 확정
+- **Reference Standard**: Pair 내 일치 시 채택, 불일치 시 cross-pair adjudicator 중재 후 확정
 
 ## 보고 기준
 
 - PRISMA-trAIce 14-item checklist (2025)
 - TRIPOD-LLM guideline (Collins et al., 2025)
 - RAISE framework (Cochrane/Campbell/JBI/CEE, 2025)
+- Research Synthesis Methods GenAI evaluation guidance: model version, prompts, preprocessing, validation, QA, code/data availability, randomization, and computational environment reporting

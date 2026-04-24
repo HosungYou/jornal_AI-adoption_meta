@@ -6,13 +6,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| **출판사** | Wiley |
-| **Impact Factor** | ~8.0 (2024) |
+| **출판사** | Cambridge University Press |
+| **Impact Factor** | 제출 전 최신 JCR 기준 재확인 필요 |
 | **Scope** | Methods for systematic reviews and meta-analysis |
 | **Review 기간** | 평균 3-4개월 |
-| **Article types** | Original Article, Review, Tutorial |
+| **Article types** | Research Article 중심 |
 | **Open Access** | Hybrid (OA option available) |
-| **Word limit** | ~8,000 words (excluding references, tables, figures) |
+| **Word limit** | Research Article은 형식상 엄격한 페이지 제한보다 concise writing을 요구 |
 
 ### 적합성 분석
 
@@ -20,27 +20,29 @@
 - AI-assisted data extraction 선행연구 다수 게재 (Gartlehner et al., 2024)
 - Methods-focused 저널 → Paper B의 방법론 기여에 최적
 - MASEM 관련 논문 게재 이력 있음
-- Impact Factor 높음 → 높은 가시성
+- GenAI-assisted SRMA 방법론 평가 원고에 대한 명시적 reporting guidance 존재
 
 **고려사항**:
 - 경쟁 심함 (rejection rate ~70%)
 - 이미 AI extraction 논문 다수 → 차별화 필요
-- MASEM-specific이라는 점이 핵심 차별화 포인트
+- MASEM-specific extraction과 downstream inference stability가 핵심 차별화 포인트
 
 ### RSM 제출 전략
 
-1. **Cover letter 핵심 메시지**: "First study to evaluate LLM-assisted coding specifically for MASEM correlation matrix extraction"
-2. **차별화**: Multi-model consensus (기존 연구 대부분 단일 모델)
-3. **PRISMA-trAIce 완벽 준수**: 이 저널이 이 가이드라인 발행에 참여했을 가능성
-4. **Supplementary materials**: 프롬프트, 코드, 데이터 전체 OSF 링크
+1. **Cover letter 핵심 메시지**: "A validation study of LLM-assisted extraction for MASEM-ready evidence, including construct harmonization, correlation matrix recovery, and downstream substitution analysis."
+2. **차별화**: 단순 element-level extraction accuracy가 아니라 MASEM input과 structural conclusions의 안정성을 평가
+3. **GenAI reporting 준수**: model identifier, access dates, prompts, preprocessing, QA, validation, code/data availability를 명시
+4. **Supplementary materials**: 프롬프트, 코드북, extraction schema, audit logs, 분석 코드, validation data 전체 OSF/Zenodo 링크
+5. **Model-comparison 위치**: Claude/Gemini 등 추가 모델은 main claim이 아니라 supplementary sensitivity 또는 triage 분석으로 제한
 
 ### 포맷 요구사항 (RSM)
 
 | 항목 | 요구사항 |
 |------|---------|
-| Abstract | Structured (Background, Methods, Results, Conclusions) |
+| Abstract | 250 words 이하 |
+| Research Synthesis Relevance Statement | Abstract 다음, 본문 전 필수 |
 | Manuscript | Double-spaced, numbered lines |
-| References | APA style 또는 Vancouver |
+| References | 저널 지침에 맞춰 최종 정리 |
 | Tables | Separate files preferred |
 | Figures | High resolution (300 dpi) |
 | Supplementary | Allowed, encouraged for methods papers |
@@ -140,11 +142,11 @@ Pennsylvania State University.
 ### 예상 질문 1: "왜 교육 분야 데이터로 방법론 평가?"
 **대응**: MASEM은 correlation matrix 추출이 필수적이며, 교육 분야는 다양한 construct와 measurement instrument를 포함하여 방법론적 복잡성이 높음. 따라서 교육 분야 데이터는 AI 코딩 능력의 rigorous test를 제공.
 
-### 예상 질문 2: "3개 모델 비교의 공정성"
-**대응**: 동일 프롬프트, 동일 temperature(0), 동일 데이터 사용. 프롬프트를 모델별로 최적화하지 않은 것은 의도적 — 실제 연구자가 범용 프롬프트를 사용하는 시나리오 반영.
+### 예상 질문 2: "왜 3개 모델 비교를 핵심으로 하지 않는가?"
+**대응**: 본 연구의 primary claim은 특정 시점의 vendor ranking이 아니라 reproducible workflow validity이다. 모델 간 비교는 업데이트 주기가 빠르고 prompt/interface 차이에 민감하므로, main text에서는 one prespecified workflow의 human-reference validation과 downstream inference stability를 평가한다. 추가 모델은 robustness 또는 triage sensitivity로 supplement에 제시할 수 있다.
 
 ### 예상 질문 3: "100 studies가 충분한가?"
 **대응**: 3,000 data elements (100 × 30 variables)는 기존 연구 대비 대규모. Gartlehner et al. (2024)은 22 SRs로 게재. Power analysis 제시.
 
-### 예상 질문 4: "Gold standard의 신뢰도"
-**대응**: 2-coder independent coding, blinded to AI, calibrated (pilot κ ≥ 0.80), IRR 보고 (κ ≥ 0.85 목표), discrepancy resolution protocol 문서화.
+### 예상 질문 4: "Human reference standard의 신뢰도"
+**대응**: 2-coder independent coding, blinded to AI, calibrated (pilot κ ≥ 0.80), IRR 보고 (κ ≥ 0.85 목표), discrepancy resolution protocol 문서화. "Gold standard"보다 "adjudicated human reference standard"라는 표현을 사용해 expert judgment의 한계를 투명하게 둔다.

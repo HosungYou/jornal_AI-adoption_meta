@@ -5,6 +5,8 @@
 Paper B의 Introduction 및 Discussion 작성을 위한 선행연구 정리.
 2023-2026년 발표된 AI-assisted systematic review/meta-analysis 방법론 연구.
 
+**2026-04-24 업데이트**: Paper B의 현재 포지셔닝은 3개 모델의 순위 비교가 아니라, 하나의 prespecified LLM workflow가 MASEM-ready extraction을 인간 감독하에 얼마나 안정적으로 보조할 수 있는지 검증하는 것이다. 다중 모델은 필요한 경우 supplementary robustness 또는 triage sensitivity로만 사용한다.
+
 ---
 
 ## 1. AI-Assisted Data Extraction 실증 연구
@@ -133,22 +135,21 @@ Paper B의 Introduction 및 Discussion 작성을 위한 선행연구 정리.
 
 | 한계 | 기존 연구 | Paper B의 대응 |
 |------|----------|---------------|
-| **Single model** | 대부분 GPT-4 단일 모델 | 3개 모델 비교 |
 | **Non-MASEM** | General SR extraction | MASEM-specific coding (correlation matrix) |
-| **Small sample** | 22 SRs (Gartlehner) | 100 studies, 3,000 data elements |
-| **No consensus** | 개별 모델 평가만 | Multi-model consensus 전략 평가 |
-| **Limited variable types** | Bibliographic 중심 | 30개 변수 (4개 모듈) 포괄 |
-| **No workflow optimization** | 정확도 보고만 | Cost-effectiveness 분석 포함 |
-| **Older models** | GPT-3.5, GPT-4 | 최신 모델 (2025-2026) |
+| **Element-level accuracy 중심** | Bibliographic 또는 conventional extraction 중심 | Construct harmonization, matrix recovery, downstream substitution까지 평가 |
+| **Inferential consequences 부족** | 정확도 보고에 머무르는 경우 많음 | LLM-assisted input이 MASEM path estimates와 결론을 바꾸는지 평가 |
+| **Human reference transparency 부족** | Gold standard 표현이 과도하게 사용됨 | Adjudicated human reference standard와 audit trail 명시 |
+| **Model ranking의 시간적 취약성** | 특정 모델 성능 비교는 빠르게 낡음 | Prespecified workflow validation을 primary claim으로 설정 |
+| **Limited reproducibility detail** | Prompt/version/preprocessing 보고가 불충분할 수 있음 | RSM GenAI guidance에 맞춘 prompt, model, access date, QA, code/data 공개 |
 
 ### Paper B의 독자적 기여 (Unique Contributions)
 
-1. **MASEM-specific AI coding evaluation**: Correlation matrix 추출의 AI 정확도를 최초로 평가
-2. **Three-model comparative framework**: 3개 LLM의 체계적 비교 + consensus 전략
-3. **Gold standard rigor**: 2-coder independent coding + blinding + full IRR
-4. **Workflow optimization**: 다양한 human-AI collaboration 시나리오의 efficiency 비교
-5. **Comprehensive reporting**: PRISMA-trAIce + TRIPOD-LLM + RAISE 동시 준수
-6. **Full transparency**: 프롬프트, 코드, 데이터 전체 OSF 공개
+1. **MASEM-specific LLM workflow validation**: Correlation matrix extraction, construct mapping, and moderator coding을 MASEM-ready input 관점에서 평가
+2. **Downstream inference stability**: Human-coded input과 LLM-assisted input을 비교하여 pooled correlations, path estimates, indirect effects의 해석 안정성을 평가
+3. **Adjudicated human reference standard**: 2-coder independent coding, blinding, adjudication, audit trail을 통해 기준 자료의 신뢰성과 한계를 함께 보고
+4. **Human-supervised augmentation framing**: LLM을 replacement가 아니라 first-pass extraction과 triage 보조 도구로 위치시킴
+5. **Comprehensive reporting**: PRISMA-trAIce + TRIPOD-LLM + RAISE + RSM GenAI guidance의 핵심 항목 준수
+6. **Full transparency**: 프롬프트, 코드북, extraction schema, validation data, 분석 코드 전체 OSF/Zenodo 공개 계획
 
 ---
 
