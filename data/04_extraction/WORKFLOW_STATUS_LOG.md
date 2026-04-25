@@ -16,7 +16,7 @@ until Step 4 has a frozen reference file.
 
 | Step | Name | Entry criterion | Exit criterion | Status |
 |---:|---|---|---|---|
-| 1 | Raw human coder data freeze | Independent coder workbooks are submitted and preserved | Raw files are read-only; no consensus overwrites | Phase 1 complete; Phase 2 not started |
+| 1 | Raw human coder data freeze | Independent coder workbooks are submitted and preserved | Raw files are read-only; no consensus overwrites | Phase 1 complete; Phase 2 packages generated |
 | 2 | Pre-adjudication human-human disagreement analysis | Raw coder data are frozen | Pairwise differences summarized by field, study, pair, and numeric tolerance | Phase 1 workbook created; summary still needs final export |
 | 3 | Source-document adjudication | Pairwise differences are available | Every discrepancy has a source-anchored decision and rationale | Phase 1 in progress |
 | 4 | Reference standard freeze | Adjudication is complete | Frozen reference file and freeze log are committed | Not started |
@@ -31,6 +31,7 @@ until Step 4 has a frozen reference file.
 | 2026-04-25 | Step 0 | Active extraction workspace simplified into numbered folders | `data/04_extraction/README.md` | Keep future artifacts in numbered stage folders |
 | 2026-04-25 | Step 3 | Current status clarified: adjudication in progress, reference not frozen | This file | Continue source-document adjudication before LLM comparison |
 | 2026-04-25 | Step 3 | Early coding decisions checked against frozen raw workbooks | `03_source_document_adjudication/phase1/coding_decision_application_check_20260425.md` | Apply reviewed decisions in the adjudicated reference rather than editing raw workbooks |
+| 2026-04-25 | Step 1 | Phase 2 combined coder workbooks generated for distribution | `01_raw_human_coder_data_freeze/phase2/coder_packages/` | Distribute files and freeze returned completed coder workbooks |
 
 ## Coding Decisions Already Reflected
 

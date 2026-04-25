@@ -8,7 +8,7 @@ numbered folders below.
 | Step | Folder | Purpose | Current status |
 |---:|---|---|---|
 | 0 | `00_protocol/` | Coding manual, PDF tracker, calibration files, generation scripts | Active |
-| 1 | `01_raw_human_coder_data_freeze/` | Raw independent human coder workbooks and future Phase 2 raw coding | Phase 1 complete; Phase 2 not started |
+| 1 | `01_raw_human_coder_data_freeze/` | Raw independent human coder workbooks and future Phase 2 raw coding | Phase 1 complete; Phase 2 packages generated |
 | 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists |
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 adjudication in progress |
 | 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Not frozen |
@@ -25,8 +25,9 @@ The project is currently in Step 3 for Phase 1:
 - Step 4 is not complete because no frozen adjudicated reference file exists.
 - Step 5 must not start until Step 4 is frozen.
 
-For the combined Phase 1+2 Paper B validation corpus, Phase 2 raw coding has not
-started. Phase 2 will use R1+R4 for 57 studies and R2+R3 for 56 studies.
+For the combined Phase 1+2 Paper B validation corpus, Phase 2 distribution
+packages have been generated but completed Phase 2 raw coding has not yet been
+returned. Phase 2 will use R1+R4 for 57 studies and R2+R3 for 56 studies.
 
 ## Active Files
 
@@ -34,6 +35,8 @@ started. Phase 2 will use R1+R4 for 57 studies and R2+R3 for 56 studies.
 - Shareable manual DOCX: `00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.docx`
 - Package generator: `00_protocol/scripts/generate_coder_packages.py`
 - Phase 1 raw workbooks: `01_raw_human_coder_data_freeze/phase1/coder_packages/`
+- Phase 2 distribution workbooks:
+  `01_raw_human_coder_data_freeze/phase2/coder_packages/`
 - Active R4 raw workbook:
   `01_raw_human_coder_data_freeze/phase1/coder_packages/R4/AI_Adoption_MASEM_Coding_v3_R4.xlsx`
   promoted from the 2026-04-23 R4 file
