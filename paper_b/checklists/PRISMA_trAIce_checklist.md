@@ -17,7 +17,7 @@
 | 6 | **Input Data Description** | What data was provided to the AI | Methods 3.1 | ⬜ | Full-text PDFs of 100 studies |
 | 7 | **Output Format** | Structure and format of AI output | Methods 3.2.2 | ⬜ | JSON schema per module |
 | 8 | **Human Oversight Protocol** | How human reviewers monitored AI | Methods 3.3 | ⬜ | Phase 1: independent human coding; Phase 2: rotated-pair human coding before LLM comparison |
-| 9 | **Verification Method** | How AI outputs were verified | Methods 3.3 | ⬜ | 100% gold standard comparison (Phase 1) |
+| 9 | **Verification Method** | How AI outputs were verified | Methods 3.3 | ⬜ | Phase 1+2 comparison against source-anchored adjudicated human reference |
 | 10 | **Error Handling** | Protocol for AI errors or failures | Methods 3.3.3 | ⬜ | Discrepancy resolution protocol |
 | 11 | **Reproducibility Measures** | Steps to ensure reproducibility | Methods 3.4 | ⬜ | Fixed seeds, temp=0, version-locked |
 | 12 | **Limitations of AI Use** | Known limitations acknowledged | Discussion | ⬜ | Model drift, prompt sensitivity |

@@ -9,7 +9,7 @@ Creates per-coder folders:
   └── PDFs/  (only PDFs assigned to this coder)
 
 Key design decisions:
-- 222 studies (3 excluded: S035, S053, S084 — no PDF)
+- Current PDF-backed source yields 223 studies after excluding no-PDF records
 - 66 construct pairs pre-generated per study in CORRELATIONS
 - culture_cluster removed entirely
 - ai_type: generative, robotic, general only

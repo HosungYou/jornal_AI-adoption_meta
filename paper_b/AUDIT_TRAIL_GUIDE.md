@@ -5,9 +5,11 @@
 Paper B의 모든 AI 활용 과정을 투명하게 문서화하기 위한 가이드.
 PRISMA-trAIce (2025), TRIPOD-LLM (2025), RAISE (2025) 요구사항 충족.
 
-**Protocol amendment, 2026-04-24**: Phase 1 pairwise coding is complete.
-Phase 2 now uses rotated human pairs (R1+R4, R2+R3). AI/LLM outputs remain
-blinded during independent human coding and are compared only after adjudication.
+**Protocol amendment, 2026-04-25**: Phase 1 pairwise coding is complete.
+Phase 2 uses rotated human pairs (R1+R4, R2+R3). Phase 1 and Phase 2 now form
+one Paper B validation corpus. AI/LLM outputs remain blinded during independent
+human coding and are compared only after raw disagreement analysis and
+source-anchored adjudication.
 
 ---
 
@@ -144,7 +146,7 @@ data/06_analysis/
 | `source_location` | 원문 참조 위치 (page, table, paragraph) |
 | `adjudicator_id` | Cross-pair adjudicator |
 | `resolution` | 합의 결과 |
-| `resolved_value` | 최종 gold standard 값 |
+| `resolved_value` | 최종 source-anchored adjudicated reference 값 |
 | `resolution_method` | 원문 재확인 / 규칙 적용 / PI 결정 |
 | `resolution_date` | 합의 날짜 |
 | `notes` | 추가 설명 |
@@ -157,8 +159,8 @@ data/06_analysis/
 
 ```
 data/04_consensus/
-├── consensus_100.csv             ← 100 studies 합의 결과
-├── consensus_remaining.csv       ← 나머지 ~200 studies
+├── phase1_llm_comparison.csv     ← Phase 1 post-adjudication LLM comparison
+├── phase2_llm_comparison.csv     ← Phase 2 post-adjudication LLM comparison
 └── consensus_algorithm_log.md    ← 합의 규칙 + 매개변수
 ```
 

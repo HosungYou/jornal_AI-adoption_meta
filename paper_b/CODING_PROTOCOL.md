@@ -5,25 +5,25 @@
 전체 MASEM-eligible studies에 대한 human-first extraction protocol.
 Paper B와 Paper A의 범위가 다르므로, 각 Phase에서의 적용 범위를 명시함.
 
-**Protocol amendment, 2026-04-24**: Phase 1 pairwise coding is complete.
-Phase 2 is reset from the earlier AI-first single-verification plan to a
-rotated-pair human coding design: Pair C = R1+R4 and Pair D = R2+R3. AI outputs
-remain blinded during independent human coding and are used after adjudication
-for LLM augmentation, triage, and substitution analyses.
+**Protocol amendment, 2026-04-25**: Phase 1 and Phase 2 are now treated as two
+coding waves in one Paper B validation corpus. Phase 2 remains the rotated-pair
+human coding design adopted on 2026-04-24: Pair C = R1+R4 and Pair D = R2+R3.
+AI outputs remain blinded during independent human coding and are used only
+after adjudication for LLM accuracy, triage, and substitution analyses.
 
 ### Paper A / Paper B 범위 구분
 
 ```
-Phase 1: Initial Human Reference Standard 구축 (100 studies; completed)
+Phase 1: Human Reference Coding Wave 1 (100 studies; completed)
   ├── Pair A: R1+R2
   ├── Pair B: R3+R4
-  ├── 📘 Paper B 범위: 인간 독립 코딩 vs. LLM workflow 비교의 primary validation sample
+  ├── 📘 Paper B 범위: combined validation corpus의 Wave 1
   └── 📗 Paper A 범위: adjudicated extraction data를 MASEM에도 활용
 
 Phase 2: Rotated-Pair Human Coding (remaining eligible studies)
   ├── Pair C: R1+R4
   ├── Pair D: R2+R3
-  ├── 📘 Paper B 범위: optional external/operational validation 또는 triage sensitivity
+  ├── 📘 Paper B 범위: combined validation corpus의 Wave 2
   └── 📗 Paper A 범위: final MASEM extraction dataset 생산
 
 Phase 3: Quality Assurance (Phase 2의 10% spot-check)
@@ -31,11 +31,16 @@ Phase 3: Quality Assurance (Phase 2의 10% spot-check)
   └── 📗 Paper A 범위: ✅ (데이터 품질 검증)
 ```
 
-**Paper B에 보고되는 것**: Phase 1을 primary validation sample로 보고한다. Phase 2는
-분석 전에 protocol amendment로 고정된 경우에만 external validation, triage
-sensitivity, 또는 workload simulation으로 보고한다.
+**Paper B에 보고되는 것**: Phase 1과 Phase 2를 하나의 combined validation corpus로
+보고한다. Phase는 time block / coding wave / reviewer-pair block으로 모델링하거나
+민감도 분석에서 분리해 보고한다.
 **Paper A에 보고되는 것**: Phase 1 + Phase 2 + Phase 3 전체의 adjudicated
 MASEM-ready extraction data.
+
+**분석 순서**: raw human coder data freeze → pre-adjudication human-human
+disagreement analysis → source-document adjudication → source-anchored
+adjudicated human reference freeze → LLM comparison and MASEM substitution
+analysis.
 
 ---
 
@@ -91,11 +96,12 @@ MASEM-ready extraction data.
 
 ---
 
-## Phase 1: Gold Standard 구축 (100 studies) — 📘 Paper B 핵심 / 📗 Paper A 활용
+## Phase 1: Human Reference Coding Wave 1 (100 studies) — 📘 Paper B + 📗 Paper A
 
 ### 목적
-100개 gold standard studies에 대해 4명의 인간 코더(R1-R4)가 2개 독립 pair로 코딩하고,
-3개 AI 모델이 동일 studies를 독립 추출. Gold standard 대비 AI 정확도 평가.
+100개 Wave 1 studies에 대해 4명의 인간 코더(R1-R4)가 2개 독립 pair로 코딩한다.
+LLM outputs는 독립 코딩과 adjudication이 끝난 뒤에만 공개한다. 이후
+source-anchored adjudicated human reference 대비 LLM 정확도를 평가한다.
 - Phase 0 (Calibration): 전체 4명이 동일 10 studies 코딩 → κ ≥ 0.80 확인
 - Phase 1: Pair A (R1+R2) = 50 studies, Pair B (R3+R4) = 50 studies
 - Cross-pair adjudication: R1이 Pair B 불일치 중재, R3가 Pair A 불일치 중재
@@ -146,7 +152,7 @@ Step 2c: 코딩 시트 제출
   └── 제출 형식: CSV (UTF-8)
 ```
 
-### Step 3: IRR + Gold Standard (Week 3)
+### Step 3: IRR + Reference Adjudication (Week 3)
 
 ```
 Step 3a: Unblinding + IRR 계산
@@ -168,15 +174,15 @@ Step 3b: Discrepancy Resolution (Cross-Pair Adjudication)
   │   └── Pair 내 합의 시도 → 불가 시 adjudicator 최종 결정
   └── 합의 불가 시: cross-pair adjudicator 최종 결정권
 
-Step 3c: Gold Standard 확정
+Step 3c: Source-anchored adjudicated human reference 확정
   ├── Pair 내 일치 → 채택
   ├── Pair 내 불일치 → cross-pair adjudicator 중재 후 확정
-  ├── 저장: data/05_gold_standard/gold_standard_100.csv
-  ├── 📘 Paper B: AI 평가의 ground truth
+  ├── 저장: data/04_extraction/reference/phase1_adjudicated_reference.csv
+  ├── 📘 Paper B: LLM 평가의 source-anchored reference
   └── 📗 Paper A: MASEM 데이터로도 활용
 ```
 
-### Step 4: AI vs. Gold Standard 비교 (Week 3-4) — 📘 Paper B 전용
+### Step 4: AI vs. Adjudicated Human Reference 비교 (Week 3-4) — 📘 Paper B
 
 ```
 비교 구조:
@@ -196,7 +202,7 @@ Step 3c: Gold Standard 확정
          │             │             │
          └──────┬──────┘──────┬──────┘
                 ▼             ▼
-          Gold Standard    AI Models (독립추출)
+     Adjudicated Human     AI Models (독립추출)
           (100 studies)    Claude / Codex / Gemini
                 │             │
                 │        ┌────┴────┐────┐
@@ -213,10 +219,11 @@ Step 3c: Gold Standard 확정
 ```
 
 **📘 Paper B에 보고하는 분석**:
-- RQ1: Individual AI vs. Gold Standard (κ, ICC, accuracy, F1, MAE)
+- RQ0: Raw human-human disagreement before adjudication
+- RQ1: Prespecified LLM workflow vs. adjudicated human reference (κ, ICC, accuracy, F1, MAE)
 - RQ2: Variable type별 정확도 차이 (Bibliographic > Statistical > Classificatory?)
-- RQ3: Multi-model consensus vs. individual model
-- RQ4: Workflow simulation (cost-effectiveness)
+- RQ3: Downstream MASEM substitution stability
+- Supplementary: Cross-model disagreement as triage signal
 
 ### 코딩 규칙 (Decision Rules)
 
@@ -230,7 +237,7 @@ Step 3c: Gold Standard 확정
 
 ---
 
-## Phase 2: Rotated-Pair Human Coding — 📗 Paper A 핵심 / 📘 Paper B optional validation
+## Phase 2: Rotated-Pair Human Coding — 📘 Paper B + 📗 Paper A
 
 > **Protocol amendment, 2026-04-24**: Phase 2 is no longer AI-first single
 > verification. It uses independent human double coding with rotated pairs:
@@ -238,10 +245,16 @@ Step 3c: Gold Standard 확정
 
 ### 목적
 Phase 1에서 같은 pair로 형성된 합의 습관이나 pair-specific bias를 Phase 2에
-그대로 가져오지 않기 위해 reviewer pairs를 교차 재구성한다. Phase 2의 주된
-목적은 Paper A의 final MASEM-ready extraction dataset을 만들고, 동시에 Paper B의
-LLM augmentation 논리를 더 큰 operational dataset에서 점검할 수 있는 audit trail을
-남기는 것이다.
+그대로 가져오지 않기 위해 reviewer pairs를 교차 재구성한다. Phase 2는 Paper A의
+final MASEM-ready extraction dataset을 만들고, 동시에 Paper B의 combined
+validation corpus를 확장한다.
+
+현재 package generator 기준 배정 수:
+
+| Pair | Coders | Studies | Per-coder change vs. Phase 1 |
+|---|---|---:|---:|
+| Pair C | R1 + R4 | 57 | +7 |
+| Pair D | R2 + R3 | 56 | +6 |
 
 ### 절차
 
@@ -275,12 +288,12 @@ Step 4: Cross-pair adjudication
   ├── 해결값, 근거 위치, rule applied, confidence 기록
   └── 결과: data/04_extraction/phase2/phase2_adjudicated.csv
 
-Step 5: Post-adjudication LLM comparison
+Step 5: Post-adjudication LLM comparison and substitution analysis
   ├── 인간 adjudicated value를 reference로 고정한 뒤 LLM output 공개
   ├── LLM vs human reference: field-level agreement, numeric error, error taxonomy
   ├── Human-human disagreement vs LLM-human disagreement 비교
   ├── Cross-model disagreement은 triage signal로만 사용
-  └── 결과: data/04_extraction/phase2/llm_triage_analysis.csv
+  └── 결과: data/04_extraction/phase2/llm_comparison/phase2_llm_comparison.csv
 ```
 
 ### Phase 2 Coding Sheet
@@ -345,7 +358,7 @@ Step 4: 미달 시 대응
 
 ---
 
-## AI Extraction Protocol (Phase 1 & 2 공통)
+## AI Extraction Protocol (Phase 1 & 2 공통, post-adjudication evaluation)
 
 ### Prompt Strategy
 
@@ -424,14 +437,14 @@ def calculate_consensus(claude_val, codex_val, gemini_val, var_type):
 
 ## Audit Trail 요구사항
 
-| 기록 항목 | Phase 1 (📘B + 📗A) | Phase 2 (📗A + optional 📘B) | Phase 3 (📗A only) |
+| 기록 항목 | Phase 1 (📘B + 📗A) | Phase 2 (📘B + 📗A) | Phase 3 (📗A only) |
 |----------|---------------------|-------------------|-------------------|
 | 코더 ID | R1/R2 (Pair A) + R3/R4 (Pair B) + LLM pipeline | R1/R4 (Pair C) + R2/R3 (Pair D) + LLM pipeline after adjudication | R1-R4 (cross) |
 | 코딩 날짜 | ✅ | ✅ | ✅ |
 | Study ID | ✅ | ✅ | ✅ |
 | 소요 시간 | ✅ | ✅ | ✅ |
 | 원문 참조 위치 | ✅ | ✅ | ✅ |
-| 의사결정 메모 | ✅ (개별) | ✅ (override 시) | ✅ (오류 시) |
+| 의사결정 메모 | ✅ (개별 + adjudication) | ✅ (개별 + adjudication) | ✅ (오류 시) |
 | AI 모델 output | ❌ (human coding 완료 전까지 blinded) | ❌ independent coding/adjudication 전까지 blinded; 이후 comparison용 공개 | ✅ |
 
 ---
@@ -443,7 +456,7 @@ def calculate_consensus(claude_val, codex_val, gemini_val, var_type):
 | **대상** | 100 studies | Remaining eligible studies | Phase 2의 10% |
 | **방법** | 인간 독립 코딩 + LLM 독립 추출 | Rotated-pair human double coding → adjudication → LLM comparison | 독립 spot-check |
 | **코더** | Pair A (R1+R2) + Pair B (R3+R4) + cross-pair adj. | Pair C (R1+R4) + Pair D (R2+R3) + cross-pair adj. | R1-R4 (cross spot-check) |
-| **📘 Paper B** | ✅ primary validation | Optional external validation/triage sensitivity | ❌ |
-| **📗 Paper A** | ✅ Gold standard 활용 | ✅ 데이터 생산 | ✅ 품질 보증 |
+| **📘 Paper B** | ✅ validation Wave 1 | ✅ validation Wave 2 | ❌ |
+| **📗 Paper A** | ✅ reference 활용 | ✅ 데이터 생산 | ✅ 품질 보증 |
 | **Timeline** | Completed | Next phase | After Phase 2 |
 | **산출물** | phase1_adjudicated_reference.csv | phase2_adjudicated.csv + phase2_llm_comparison.csv | qa_report.md |

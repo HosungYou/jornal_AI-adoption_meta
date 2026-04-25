@@ -12,6 +12,10 @@
 > 2026-04-24 protocol amendment: Phase 1 pairwise coding is complete. Phase 2
 > uses rotated pairs: R1+R4 and R2+R3. This prevents the Phase 1 pair structure
 > from carrying unchanged into the remaining extraction work.
+>
+> 2026-04-25 protocol amendment: Phase 1 and Phase 2 form one Paper B validation
+> corpus. Raw human disagreement is analyzed before adjudication; LLM comparison
+> uses the frozen source-anchored adjudicated human reference standard.
 
 ---
 
@@ -84,12 +88,12 @@ R2 ≠ R3 → R1이 독립 검토 → 최종판단 기록
 | Pair A 불일치 중재 | — | — | ✅ (cross-pair adj.) | — |
 | Pair B 불일치 중재 | ✅ (cross-pair adj.) | — | — | — |
 
-### Phase 2: Rotated-Pair Human Coding (remaining eligible studies)
+### Phase 2: Rotated-Pair Human Coding (113 remaining eligible studies)
 
 | 작업 | R1 (PI) | R2 (PhD 1) | R3 (PhD 2) | R4 (PhD 3) |
 |------|---------|-----------|-----------|-----------|
-| Pair C: independent coding | ✅ | — | — | ✅ |
-| Pair D: independent coding | — | ✅ | ✅ | — |
+| Pair C: independent coding (57 studies; +7 vs Phase 1) | ✅ | — | — | ✅ |
+| Pair D: independent coding (56 studies; +6 vs Phase 1) | — | ✅ | ✅ | — |
 | AI output 접근 | ❌ until adjudication | ❌ until adjudication | ❌ until adjudication | ❌ until adjudication |
 | Pair 내 상대방 코딩 접근 | ❌ blinded | ❌ blinded | ❌ blinded | ❌ blinded |
 | Pair C 불일치 중재 | — | ✅ primary | ✅ secondary if needed | — |

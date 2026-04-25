@@ -3,7 +3,7 @@
 ## Paper A / Paper B 범위 표시
 
 ```
-📘 = Paper B 범위 (Phase 1 primary validation; Phase 2 optional validation/triage)
+📘 = Paper B 범위 (Phase 1+2 combined validation corpus)
 📗 = Paper A 범위 (전체 ~300 studies, MASEM 데이터)
 📘📗 = 양쪽 모두 해당
 ```
@@ -14,7 +14,7 @@
 Completed ── Phase 0: Calibration                                  📘📗
 Completed ── Phase 1: R1+R2 / R3+R4 independent coding              📘📗
 Next      ── Phase 1 adjudication propagation and dataset freeze    📘📗
-Next      ── Phase 2: Rotated pairs R1+R4 / R2+R3                   📗 + optional 📘
+Next      ── Phase 2: Rotated pairs R1+R4 / R2+R3                   📘📗
 Next      ── Phase 2 LLM comparison after human adjudication        📘📗
 Final     ── Phase 3 QA + Paper A/B analysis                         📘📗
 ```
@@ -54,7 +54,7 @@ Final     ── Phase 3 QA + Paper A/B analysis                         📘�
 **예상 소요**: ~30-45 min/study × 5 = 2.5-3.75 hours/day (sustainable pace)
 **핵심**: 전체 4 coders AI output에 blinded 상태 유지. Pair 내 상대방 코딩도 blinded.
 
-## Week 4: Phase 1 — IRR + Gold Standard 📘📗
+## Week 4: Phase 1 — IRR + Reference Adjudication 📘📗
 
 | Day | 작업 | 담당 | 산출물 | 범위 |
 |-----|------|------|--------|------|
@@ -62,27 +62,29 @@ Final     ── Phase 3 QA + Paper A/B analysis                         📘�
 | 1-2 | **Unblinding**: IRR 계산 (R1 vs R2, R3 vs R4) | R1 | irr_results.csv | 📘 |
 | 2-3 | Discrepancy identification (both pairs) | R1 | discrepancy_log.csv | 📘📗 |
 | 3-4 | Cross-pair adjudication (R3→Pair A, R1→Pair B) | R1, R3 | resolved values | 📘📗 |
-| 5 | Gold standard finalization | R1 | gold_standard_100.csv | 📘📗 |
+| 5 | Adjudicated reference finalization | R1 | phase1_adjudicated_reference.csv | 📘📗 |
 
-## Week 4 (cont.): Paper B 분석 📘
-
-| Day | 작업 | 담당 | 산출물 | 범위 |
-|-----|------|------|--------|------|
-| 5 | AI consensus 계산 (100 studies) | R1 | consensus_100.csv | 📘 |
-| 5 | RQ1-4 분석 실행 | R1 | model_accuracy.csv 등 | 📘 |
-
-## Phase 2 — Rotated-Pair Human Coding 📗 + optional 📘
+## Week 4 (cont.): Phase 1 preliminary Paper B analysis 📘
 
 | Day | 작업 | 담당 | 산출물 | 범위 |
 |-----|------|------|--------|------|
-| 1 | Phase 2 assignment freeze | R1 | phase2_assignment_log.csv | 📗 |
-| 1-10 | Pair C independent coding | R1, R4 | coder_R1/R4 sheets | 📗 |
-| 1-10 | Pair D independent coding | R2, R3 | coder_R2/R3 sheets | 📗 |
-| 11-12 | Pairwise comparison + IRR | R1 | phase2_irr_results.csv | 📗 |
-| 13-15 | Cross-pair adjudication | R2 for Pair C; R1 for Pair D | phase2_adjudicated.csv | 📗 |
-| 16-17 | LLM output unblinding and comparison | R1 | phase2_llm_comparison.csv | optional 📘 |
+| 5 | Raw human disagreement summary | R1 | phase1_human_disagreement.csv | 📘 |
+| 5 | Post-adjudication LLM comparison (100 studies) | R1 | phase1_llm_comparison.csv | 📘 |
+
+## Phase 2 — Rotated-Pair Human Coding 📘📗
+
+| Day | 작업 | 담당 | 산출물 | 범위 |
+|-----|------|------|--------|------|
+| 1 | Phase 2 assignment freeze | R1 | phase2_assignment_log.csv | 📘📗 |
+| 1-10 | Pair C independent coding (57 studies) | R1, R4 | coder_R1/R4 sheets | 📘📗 |
+| 1-10 | Pair D independent coding (56 studies) | R2, R3 | coder_R2/R3 sheets | 📘📗 |
+| 11-12 | Pairwise comparison + pre-adjudication disagreement analysis | R1 | phase2_human_disagreement.csv | 📘📗 |
+| 13-15 | Cross-pair adjudication | R2 for Pair C; R1 for Pair D | phase2_adjudicated.csv | 📘📗 |
+| 16-17 | LLM output unblinding, comparison, and substitution preparation | R1 | phase2_llm_comparison.csv | 📘 |
 
 **Phase 2 pace**: independent extraction이므로 이전 single-verification 계획보다 느리게 잡는다. 각 pair는 동일 study set을 독립 코딩하고, LLM output은 adjudication 이후에만 공개한다.
+
+**Phase 2 burden vs Phase 1**: R1/R4는 Phase 1의 50편보다 7편 많은 57편을 코딩하고, R2/R3는 6편 많은 56편을 코딩한다.
 
 ## Week 7: Phase 3 QA 📗 + Paper B 작성 📘
 
@@ -114,9 +116,10 @@ Final     ── Phase 3 QA + Paper A/B analysis                         📘�
 | W1 | 100-study sample 확정 | Stratified sample 추출 완료 | 📘 |
 | W1 | AI extraction 완료 (100) | 3 models × 100 studies JSON 생성 | 📘 |
 | W4 | Phase 1 IRR 확인 | κ ≥ 0.85, ICC ≥ 0.90 (both pairs) | 📘 |
-| W4 | Gold standard 확정 | 100 studies × 30 variables resolved | 📘📗 |
-| W4 | Paper B 분석 완료 | RQ1-4 실행 | 📘 |
-| Next | Phase 2 완료 | Rotated pair coding + adjudication completed | 📗 |
+| W4 | Phase 1 reference 확정 | 100 studies × 30 variables resolved | 📘📗 |
+| Next | Phase 2 reference 확정 | 113 studies resolved after rotated-pair coding | 📘📗 |
+| W7 | Paper B 분석 완료 | RQ0-RQ3 실행 | 📘 |
+| Next | Phase 2 완료 | Rotated pair coding + adjudication completed | 📘📗 |
 | W7 | QA spot-check 통과 | Error rate < 5% | 📗 |
 | W7 | Paper B draft v2.0 | Results + figures 완성 | 📘 |
 | W8 | Data freeze | 전체 ~300 studies 확정 | 📗 |

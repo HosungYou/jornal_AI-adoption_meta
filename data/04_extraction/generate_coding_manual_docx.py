@@ -417,7 +417,7 @@ def build_document():
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = p.add_run("Version 2.4  |  April 2026")
+    run = p.add_run("Version 2.5  |  April 2026")
     run.font.size = Pt(14)
     run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
     run.font.name = FONT_BODY
@@ -465,6 +465,7 @@ def build_document():
             ["2.0", "2026-03-09", "Major revision: year range 2022\u20132026; education-only scope; independent coding workflow; AI metadata pre-coding; 3 CLI models; full-text exclusion codes E-FT1\u2013E-FT6"],
             ["2.1", "2026-03-10", "Paper A+B integrated design; 2-pair ICR (R1+R2, R3+R4); Phase 1 100-study dual + Phase 2 150-study single; calibration 10 studies; cross-pair adjudication"],
             ["2.4", "2026-04-24", "Phase 1 complete; Phase 2 reset to rotated-pair human coding (R1+R4, R2+R3); LLM outputs remain blinded until adjudication"],
+            ["2.5", "2026-04-25", "Phase 1+2 combined validation corpus; raw human disagreement before adjudication; source-anchored adjudicated reference terminology"],
         ],
         col_widths=[0.7, 1.0, 4.8],
         first_col_bold=True,
@@ -626,15 +627,16 @@ def build_document():
         "   \u2502  \u25ba Resolve disagreements, refine rules",
         "   \u2193",
         "Phase 1: Dual Coding \u2014 100 studies",
-        "   \u2502  = Paper B Gold Standard + Paper A ICR sample",
+        "   \u2502  = Paper B validation Wave 1 + Paper A ICR sample",
         "   \u2502  Pair A (R1 + R2): 50 studies independently (blinded)",
         "   \u2502  Pair B (R3 + R4): 50 studies independently (blinded)",
         "   \u2502  \u25ba Cross-pair adjudication for discrepancies",
         "   \u2502  \u25ba ICR targets: \u03ba \u2265 .85, ICC \u2265 .90, MAE \u2264 .03",
         "   \u2193",
         "Phase 2: Rotated-Pair Human Coding \u2014 remaining eligible studies",
-        "   \u2502  Pair C (R1 + R4): independent double coding",
-        "   \u2502  Pair D (R2 + R3): independent double coding",
+        "   \u2502  = Paper B validation Wave 2 + Paper A remaining studies",
+        "   \u2502  Pair C (R1 + R4): 57 studies independent double coding",
+        "   \u2502  Pair D (R2 + R3): 56 studies independent double coding",
         "   \u2502  \u25ba LLM outputs hidden until adjudication",
         "   \u2502  \u25ba Cross-pair adjudication for discrepancies",
         "   \u2193",
@@ -653,11 +655,11 @@ def build_document():
     doc.add_heading("3.2 Key Workflow Rules", level=3)
     rules = [
         "**Calibration (Phase 0):** All 4 coders code the same 10 studies to establish inter-pair consistency before Phase 1 begins.",
-        "**Dual coding (Phase 1):** Two independent pairs (R1+R2, R3+R4) each code 50 studies. This 100-study set serves dual purpose: Paper B gold standard AND Paper A ICR validation.",
+        "**Dual coding (Phase 1):** Two independent pairs (R1+R2, R3+R4) each code 50 studies. This 100-study set serves dual purpose: Paper B validation Wave 1 AND Paper A ICR validation.",
         "**Cross-pair adjudication:** Discrepancies within Pair A (R1-R2) are adjudicated by R3 or R4. Discrepancies within Pair B (R3-R4) are adjudicated by R1 or R2.",
         "**Rotated-pair coding (Phase 2):** Remaining eligible studies are coded by Pair C (R1+R4) and Pair D (R2+R3). This replaces the earlier single-coding plan.",
         "**AI extraction (Phase 3):** Runs in parallel with human coding where needed. Results are NOT shown to human coders until independent coding and adjudication are complete.",
-        "**Human-coded data is the gold standard.** AI output is used for comparison, validation, and Paper B analysis.",
+        "**Reference standard terminology:** Use source-anchored adjudicated human reference standard. Raw human disagreement is analyzed before adjudication; LLM outputs are evaluated only after reference freeze.",
     ]
     for i, rule in enumerate(rules, 1):
         add_numbered(doc, rule)
@@ -667,8 +669,8 @@ def build_document():
         ["Phase", "Duration", "Personnel", "Output"],
         [
             ["Phase 0: Calibration", "3 days", "R1, R2, R3, R4 (all)", "Inter-pair consistency report"],
-            ["Phase 1: Dual coding (100)", "3 weeks", "Pair A (R1+R2), Pair B (R3+R4)", "Paper B gold standard + ICR"],
-            ["Phase 2: Rotated-pair coding", "2-3 weeks", "Pair C (R1+R4), Pair D (R2+R3)", "Paper A remaining data + optional Paper B external validation"],
+            ["Phase 1: Dual coding (100)", "3 weeks", "Pair A (R1+R2), Pair B (R3+R4)", "Paper B validation Wave 1 + ICR"],
+            ["Phase 2: Rotated-pair coding (113)", "2-3 weeks", "Pair C (R1+R4, 57), Pair D (R2+R3, 56)", "Paper B validation Wave 2 + Paper A remaining data"],
             ["Phase 3: AI extraction", "1 week", "AI pipeline", "AI consensus dataset"],
             ["Phase 4: ICR calculation", "3 days", "PI", "ICR metrics report"],
             ["Phase 5: Discrepancy resolution", "1 week", "All coders + PI", "Resolved dataset"],
@@ -689,11 +691,11 @@ def build_document():
         ["Phase", "Duration", "Activities", "Success Criterion"],
         [
             ["Orientation", "2 hours", "Read full manual; review Excel codebook; understand MASEM basics", "Can explain MASEM data requirements"],
-            ["Practice \u2014 Metadata", "1 day", "Code 3 practice studies independently", ">90% agreement with gold standard"],
+            ["Practice \u2014 Metadata", "1 day", "Code 3 practice studies independently", ">90% agreement with reference answers"],
             ["Practice \u2014 Correlations", "2 days", "Extract correlations from 3 diverse studies (full matrix, partial, \u03b2-only)", ">95% agreement on r values (within .02)"],
             ["Practice \u2014 Harmonization", "1 day", "Harmonize constructs from 3 studies using mapping tables", ">85% agreement on construct mapping"],
             ["Calibration session", "2 hours", "Compare practice coding; discuss disagreements; refine rules", "All disagreements resolved"],
-            ["Certification", "\u2014", "Code 2 new studies independently; compare with gold standard", "All criteria met"],
+            ["Certification", "\u2014", "Code 2 new studies independently; compare with reference answers", "All criteria met"],
             ["Calibration (Phase 0)", "3 days", "All 4 coders code same 10 studies; calculate inter-pair \u03ba", "Inter-pair \u03ba \u2265 .80; all disagreements resolved"],
         ],
         col_widths=[1.4, 0.8, 2.5, 1.8],
@@ -1140,11 +1142,11 @@ def build_document():
     add_heading_with_bookmark(doc, "11. Inter-Coder Reliability Protocol", 1, "ch11")
 
     doc.add_heading("11.1 When to Calculate", level=3)
-    add_body_text(doc, "Calculate ICR on the **Phase 1 dual-coded set (100 studies)**. Two independent coder pairs (Pair A: R1+R2; Pair B: R3+R4) each code 50 studies.")
+    add_body_text(doc, "Calculate ICR and raw disagreement on the **Phase 1+2 dual-coded set (213 studies)**. Phase 1 uses Pair A (R1+R2) and Pair B (R3+R4). Phase 2 uses Pair C (R1+R4) and Pair D (R2+R3).")
     add_body_text(doc, "**ICR is calculated at three levels:**")
     add_numbered(doc, "**Within-pair:** R1 vs R2 (50 studies), R3 vs R4 (50 studies)")
-    add_numbered(doc, "**Inter-pair consistency:** Compare Pair A gold standard values to Pair B gold standard values on the calibration set (10 studies coded by all 4)")
-    add_numbered(doc, "**AI-Human:** 3-model AI consensus vs human gold standard (100 studies)")
+    add_numbered(doc, "**Inter-pair consistency:** Compare adjudicated pair-level reference values on the calibration set (10 studies coded by all 4)")
+    add_numbered(doc, "**AI-Human:** Prespecified LLM workflow vs source-anchored adjudicated human reference after reference freeze")
 
     add_body_text(doc, "**Stratification of Phase 1 sample (100 studies):**")
     add_bullet(doc, "Publication year (2022, 2023\u20132024, 2025\u20132026)")

@@ -4,6 +4,11 @@
 **Decision Maker:** PI (R1)
 **Status:** COMPLETED
 
+> 2026-04-25 amendment: current Paper B protocol uses the term
+> `source-anchored adjudicated human reference standard` instead of `gold
+> standard`. Historical wording below is retained for audit trail continuity and
+> is superseded by `2026-04-25_Reference_Standard_and_Disagreement_Analysis.md`.
+
 ---
 
 ## 1. Context

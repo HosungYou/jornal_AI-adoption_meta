@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Paper B: Stratified Random Sampling (~300 → 100)
-Selects 100 studies for gold standard using proportional stratified sampling.
+Selects 100 studies for Phase 1 reference coding using proportional stratified sampling.
 
 Usage:
     python select_paper_b_sample.py
@@ -112,7 +112,7 @@ for stratum, n in sample_sizes.items():
         sampled.append(stratum_df.sample(n=n, random_state=SEED))
 
 sample = pd.concat(sampled)
-print(f"\nSelected {len(sample)} studies for Paper B gold standard")
+print(f"\nSelected {len(sample)} studies for Paper B Phase 1 reference coding")
 
 # =============================================================================
 # Save Sample
@@ -153,7 +153,7 @@ report = f"""# Sampling Report
 
 ## Summary
 - Population (MASEM-eligible): {len(eligible)} studies
-- Sample (Paper B gold standard): {len(sample)} studies
+- Sample (Paper B Phase 1 reference coding): {len(sample)} studies
 - Sampling method: Proportional stratified random sampling
 
 ## Stratification Variables

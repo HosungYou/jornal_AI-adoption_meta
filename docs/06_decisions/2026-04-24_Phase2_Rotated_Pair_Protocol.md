@@ -9,8 +9,8 @@ coding design rather than the earlier AI-first single-verification plan.
 
 | Phase | Pair | Coders | Role |
 |---|---|---|---|
-| Phase 1 | Pair A | R1 + R2 | Completed primary validation pair |
-| Phase 1 | Pair B | R3 + R4 | Completed primary validation pair |
+| Phase 1 | Pair A | R1 + R2 | Completed validation Wave 1 pair |
+| Phase 1 | Pair B | R3 + R4 | Completed validation Wave 1 pair |
 | Phase 2 | Pair C | R1 + R4 | Remaining eligible studies |
 | Phase 2 | Pair D | R2 + R3 | Remaining eligible studies |
 
@@ -42,10 +42,17 @@ reference is frozen.
 
 For Paper A, Phase 2 contributes to the final MASEM-ready extraction dataset.
 
-For Paper B, Phase 1 remains the primary validation sample. Phase 2 may be used
-as external validation, triage sensitivity, or workload simulation only if the
-Phase 2 assignment, coding, and adjudication rules are frozen before LLM
-comparison begins.
+For Paper B, Phase 1 and Phase 2 are used together as the validation corpus.
+Phase is handled as a coding wave/time block and reviewer-pair block. LLM
+comparison begins only after raw independent human coding, pairwise disagreement
+analysis, and source-anchored adjudication are frozen.
+
+Current allocation from the package generator:
+
+| Pair | Coders | Studies | Per-coder change vs Phase 1 |
+|---|---|---:|---:|
+| Pair C | R1 + R4 | 57 | +7 |
+| Pair D | R2 + R3 | 56 | +6 |
 
 ## Required Artifacts
 

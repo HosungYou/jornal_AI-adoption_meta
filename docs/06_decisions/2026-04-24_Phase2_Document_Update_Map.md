@@ -12,8 +12,8 @@ protocol amendment.
 | `paper_b/CODING_PROTOCOL.md` | Replaced Phase 2 AI-first single verification with R1+R4 / R2+R3 rotated-pair human coding. |
 | `paper_b/RESEARCHER_ROLES.md` | Updated coder roles, Phase 2 pairing, adjudication responsibilities, and blinding diagram. |
 | `paper_b/TIMELINE.md` | Replaced single-verification timeline with rotated-pair coding, adjudication, and post-adjudication LLM comparison steps. |
-| `paper_b/SAMPLING_PROTOCOL.md` | Added Phase 2 assignment rules and clarified Phase 2 as Paper A core plus optional Paper B validation. |
-| `paper_b/ANALYSIS_PLAN.md` | Added Phase 1/Phase 2 reference-standard tiers and visualization plan for numeric extraction errors. |
+| `paper_b/SAMPLING_PROTOCOL.md` | Added Phase 2 assignment rules and clarified Phase 1+2 as the combined Paper B validation corpus. |
+| `paper_b/ANALYSIS_PLAN.md` | Added Phase 1/Phase 2 validation waves, raw human disagreement analysis, and visualization plan for numeric extraction errors. |
 | `paper_b/AUDIT_TRAIL_GUIDE.md` | Updated human coding folders, discrepancy fields, Phase 2 logs, and blinding requirements. |
 | `paper_b/README.md` | Added Phase 2 protocol reset summary and updated IRR design. |
 | `paper_b/DISCUSSION_LOG_KR.md` | Added decision record for Phase 2 rotated-pair human coding. |
@@ -31,12 +31,14 @@ protocol amendment.
 | `docs/06_decisions/decision_log.md` | Added the Phase 2 rotated-pair decision. |
 | `docs/06_decisions/2026-03-06_IRR_and_AutoInclude_Decision.md` | Marked the earlier Phase 2 single-coding plan as superseded. |
 | `docs/06_decisions/2026-04-24_Phase2_Rotated_Pair_Protocol.md` | Added the canonical amendment decision. |
+| `docs/06_decisions/2026-04-25_Reference_Standard_and_Disagreement_Analysis.md` | Added the current canonical decision for Phase 1+2 combined validation, raw disagreement before adjudication, and source-anchored reference terminology. |
 
 ## Documents Not Rewritten
 
 `paper_b/DISCUSSION_LOG_KR.md` retains earlier historical notes about AI-first
-verification so the decision history remains traceable. The later 2026-04-24
-entry supersedes those notes.
+verification and gold-standard wording so the decision history remains traceable.
+The 2026-04-25 reference-standard protocol supersedes those notes for current
+methods language.
 
 The coding manual Word file has been regenerated for sharing. If the team later
 changes Phase 2 pair assignments or adjudication roles, regenerate the Word file

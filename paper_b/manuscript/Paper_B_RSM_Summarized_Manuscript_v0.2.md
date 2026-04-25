@@ -10,7 +10,7 @@ This summarized manuscript draft is prepared for development toward Research Syn
 
 Abstract
 
-Meta-analytic structural equation modeling (MASEM) requires extraction decisions that are more complex than ordinary effect-size coding because researchers must harmonize constructs, recover correlation matrices, attach study-specific sample sizes, and preserve moderator information. This study evaluates whether a prespecified large language model (LLM) workflow can augment human extraction of MASEM-ready evidence from studies of artificial intelligence adoption in higher education. The design compares structured LLM outputs against an adjudicated human reference standard and evaluates performance at three levels: element-level extraction, matrix-level validity, and downstream inferential stability. The primary contribution is not a vendor comparison. Instead, the study asks whether one transparent and reproducible LLM workflow can reduce routine extraction burden while preserving the substantive conclusions of a synthesis. Optional additional models may be used only as sensitivity checks or triage signals for cases requiring human review. The proposed reporting structure includes complete prompt documentation, model and access details, preprocessing records, human oversight procedures, code availability, and open validation data where legally permissible.
+Meta-analytic structural equation modeling (MASEM) requires extraction decisions that are more complex than ordinary effect-size coding because researchers must harmonize constructs, recover correlation matrices, attach study-specific sample sizes, and preserve moderator information. This study evaluates whether a prespecified large language model (LLM) workflow can augment human extraction of MASEM-ready evidence from studies of artificial intelligence adoption in higher education. The design first analyzes raw human-human disagreement, then compares structured LLM outputs against a source-anchored adjudicated human reference standard and evaluates performance at three downstream levels: element-level extraction, matrix-level validity, and inferential stability. The primary contribution is not a vendor comparison. Instead, the study asks whether one transparent and reproducible LLM workflow can reduce routine extraction burden while preserving the substantive conclusions of a synthesis. Optional additional models may be used only as sensitivity checks or triage signals for cases requiring human review. The proposed reporting structure includes complete prompt documentation, model and access details, preprocessing records, human oversight procedures, code availability, and open validation data where legally permissible.
 
 Keywords: evidence synthesis; large language models; data extraction; meta-analytic structural equation modeling; validation; research synthesis methods
 
@@ -34,19 +34,19 @@ Current Study
 
 This study evaluates an LLM-assisted extraction workflow using a validation subset from a larger synthesis of AI adoption in higher education. The parent synthesis is suitable for this purpose because it includes diverse technology acceptance constructs, AI-specific psychological variables, and primary studies that report correlation information in inconsistent formats. The validation study asks whether the LLM workflow can recover the information needed for MASEM and whether any extraction differences would alter the substantive interpretation of the resulting model.
 
-The study is guided by three research questions. First, how accurately does the prespecified LLM workflow extract bibliographic, sample, construct, measurement, correlation, and moderator information relative to an adjudicated human reference standard? Second, which extraction tasks are most vulnerable to systematic error? Third, do LLM-assisted inputs preserve the pooled correlations and structural conclusions obtained from human-coded inputs?
+The study is guided by four research questions. First, where do independent human coders disagree before adjudication, and what does this reveal about field difficulty? Second, how accurately does the prespecified LLM workflow extract bibliographic, sample, construct, measurement, correlation, and moderator information relative to a source-anchored adjudicated human reference standard? Third, which extraction tasks are most vulnerable to systematic error? Fourth, do LLM-assisted inputs preserve the pooled correlations and structural conclusions obtained from human-coded inputs?
 
 Method
 
 Corpus and sampling. The sampling frame consists of empirical studies eligible for the parent MASEM of AI adoption in higher education. The validation subset will be selected to represent variation in publication year, study design, region, AI tool type, construct coverage, and reporting format. The manuscript will report both the full parent corpus and the validation subset so readers can judge the scope of inference.
 
-Human reference standard. Human coders independently extract the target fields using a shared codebook. Phase 1 uses two independent pairs, R1-R2 and R3-R4, and has been completed for the current working corpus. Phase 2 extends the human reference process with rotated pairs, R1-R4 and R2-R3, so that the remaining extraction work does not simply reproduce the original pair structure. In both phases, discrepancies are resolved through cross-pair adjudication and documented in an audit trail. LLM outputs remain unavailable to human coders until independent coding and adjudication are complete. The resulting reference standard will be treated as the best available expert interpretation rather than an infallible ground truth.
+Human reference standard. Human coders independently extract the target fields using a shared codebook. Phase 1 uses two independent pairs, R1-R2 and R3-R4, and has been completed for the current working corpus. Phase 2 extends the same validation corpus with rotated pairs, R1-R4 and R2-R3, so that the remaining extraction work does not simply reproduce the original pair structure. The current source file contains 100 Phase 1 studies and 113 Phase 2 studies after a 10-study calibration block. Before adjudication, raw human-human disagreement will be analyzed by pair, field family, numeric tolerance band, and phase block. In both phases, discrepancies are then resolved through cross-pair adjudication and documented in an audit trail. LLM outputs remain unavailable to human coders until independent coding, raw disagreement analysis, and adjudication are complete. The resulting source-anchored adjudicated human reference standard will be treated as the best available expert interpretation rather than an infallible ground truth.
 
 Primary LLM workflow. The primary automated workflow will use the prespecified Codex 5.5 configuration selected for this project. The final manuscript will report the exact model identifier, interface, access dates, decoding settings, prompt version, document preprocessing steps, output schema, and human oversight procedure. The workflow will return structured outputs rather than prose summaries.
 
 Extraction targets. The extraction schema covers bibliographic metadata, sample characteristics, construct names, operational definitions, scale sources, reliability coefficients, bivariate correlations, sample sizes attached to correlations, moderator variables, and notes on ambiguity. Correlation extraction will preserve the source table, construct order, matrix completeness, and any transformation needed before synthesis.
 
-Analysis strategy. The study evaluates the workflow at three levels. Element-level validity assesses agreement for discrete fields and tolerance-based error for numeric fields. Matrix-level validity assesses whether the recovered correlation matrix is complete, symmetric where expected, and auditable. Inferential stability assesses whether substituting LLM-assisted inputs for human-coded inputs changes pooled correlations, focal structural paths, indirect effects, or substantive conclusions.
+Analysis strategy. The study evaluates the workflow at four levels. First, pre-adjudication human-human disagreement establishes which extraction tasks are difficult even for trained coders. Second, element-level validity assesses agreement for discrete fields and tolerance-based error for numeric fields. Third, matrix-level validity assesses whether the recovered correlation matrix is complete, symmetric where expected, and auditable. Fourth, inferential stability assesses whether substituting LLM-assisted inputs for human-coded inputs changes pooled correlations, focal structural paths, indirect effects, or substantive conclusions.
 
 Optional robustness analysis. Additional LLMs may be retained as supplementary sensitivity checks, but they will not define the main contribution. Their role is to test whether conclusions are robust to model choice and whether cross-model disagreement can identify cases that require human review.
 
@@ -58,7 +58,7 @@ Validation Design Summary
 |---|---|---|
 | Parent corpus | AI adoption in higher education MASEM corpus | Defines source population for validation |
 | Validation subset | Stratified subset representing reporting and construct diversity | Supports generalizability across extraction conditions |
-| Human standard | Phase 1 independent pairs plus Phase 2 rotated pairs, followed by adjudication | Provides reference for evaluating LLM outputs while reducing pair-specific bias |
+| Human standard | Phase 1 independent pairs plus Phase 2 rotated pairs, raw disagreement analysis, and adjudication | Provides reference for evaluating LLM outputs while reducing pair-specific bias |
 | Primary LLM | Prespecified Codex 5.5 workflow | Keeps article focused on workflow validity rather than vendor ranking |
 | Extraction schema | Bibliographic, sample, construct, measurement, correlation, moderator fields | Aligns extraction with MASEM requirements |
 | Optional robustness models | Supplementary sensitivity or triage only | Tests robustness without making model comparison the main claim |
@@ -70,6 +70,7 @@ Planned Analysis and Reporting Matrix
 
 | Evaluation level | Unit of analysis | Primary metric | Interpretation |
 |---|---|---|---|
+| Human-human disagreement | Pair-field or pair-statistic | Disagreement rate, absolute difference, and tolerance-band disagreement | Difficulty of the extraction task before adjudication |
 | Bibliographic extraction | Study-field pair | Exact agreement | Routine information recovery |
 | Sample extraction | Study-field pair | Exact or tolerance-based agreement | Accuracy of sample description and analytic N |
 | Construct harmonization | Construct instance | Agreement with adjudicated construct family | Validity of theoretical mapping |
@@ -81,9 +82,9 @@ Planned Analysis and Reporting Matrix
 
 Results Reporting Plan
 
-The results section will begin with the composition of the validation subset and the distribution of extraction targets. Performance will be reported by extraction family instead of as a single overall score because the consequences of an error differ across fields. A bibliographic error is usually easy to detect, whereas a construct-mapping or correlation-matrix error can propagate into the synthesis.
+The results section will begin with the composition of the validation subset and the distribution of extraction targets across Phase 1 and Phase 2. It will then report raw human-human disagreement before adjudication so readers can see which tasks were difficult independent of the LLM workflow. LLM performance will be reported by extraction family instead of as a single overall score because the consequences of an error differ across fields. A bibliographic error is usually easy to detect, whereas a construct-mapping or correlation-matrix error can propagate into the synthesis.
 
-The primary results table will report agreement, numeric error, and adjudication rates for each extraction family. The matrix-level results will report whether LLM-assisted matrices are complete enough to audit and whether deviations from the human reference standard remain within prespecified tolerance bands. The substitution analysis will then compare the human-coded and LLM-assisted MASEM inputs and outputs. The planned decision logic is that LLM assistance is defensible only if it reduces routine effort while preserving the sign, practical magnitude, and interpretation of focal parameters after human review.
+The primary results table will report human-human disagreement, LLM agreement, numeric error, and adjudication rates for each extraction family. The matrix-level results will report whether LLM-assisted matrices are complete enough to audit and whether deviations from the human reference standard remain within prespecified tolerance bands. The substitution analysis will then compare the human-coded and LLM-assisted MASEM inputs and outputs. The planned decision logic is that LLM assistance is defensible only if it reduces routine effort while preserving the sign, practical magnitude, and interpretation of focal parameters after human review.
 
 The visualization strategy will not force human extraction values into artificial categories when the source task is numeric evidence recovery. Numeric cells will be displayed as human-reference versus LLM-assisted values with tolerance bands, signed-error distributions, Bland-Altman plots, and study-by-construct delta heatmaps. Categorical decisions, such as construct-family mapping and exclusion decisions, will be summarized with agreement and discrepancy taxonomies.
 
@@ -91,16 +92,16 @@ Table 3
 
 Primary Results Shell
 
-| Extraction family | Number of fields | Agreement or error metric | Human adjudication rate | Decision |
-|---|---:|---|---:|---|
-| Bibliographic metadata |  |  |  |  |
-| Sample characteristics |  |  |  |  |
-| Construct harmonization |  |  |  |  |
-| Measurement details |  |  |  |  |
-| Reliability coefficients |  |  |  |  |
-| Correlation coefficients |  |  |  |  |
-| Matrix reconstruction |  |  |  |  |
-| Moderator variables |  |  |  |  |
+| Extraction family | Number of fields | Human disagreement | LLM agreement or error metric | Human adjudication rate | Decision |
+|---|---:|---|---|---:|---|
+| Bibliographic metadata |  |  |  |  |  |
+| Sample characteristics |  |  |  |  |  |
+| Construct harmonization |  |  |  |  |  |
+| Measurement details |  |  |  |  |  |
+| Reliability coefficients |  |  |  |  |  |
+| Correlation coefficients |  |  |  |  |  |
+| Matrix reconstruction |  |  |  |  |  |
+| Moderator variables |  |  |  |  |  |
 
 Figure 1
 
@@ -122,7 +123,7 @@ The final study must report several limitations clearly. Commercial models may c
 
 Conclusion
 
-Paper B should be positioned as a validation study of LLM-assisted MASEM extraction, not as a model-benchmarking study. The summarized manuscript uses one primary LLM workflow, an adjudicated human reference standard, systematic error analysis, and downstream substitution analysis to evaluate whether LLM assistance can be responsibly integrated into research synthesis. This narrower framing is more durable, more aligned with methods-journal expectations, and more directly useful to researchers conducting complex quantitative syntheses.
+Paper B should be positioned as a validation study of LLM-assisted MASEM extraction, not as a model-benchmarking study. The summarized manuscript uses one primary LLM workflow, raw human disagreement analysis, a source-anchored adjudicated human reference standard, systematic error analysis, and downstream substitution analysis to evaluate whether LLM assistance can be responsibly integrated into research synthesis. This narrower framing is more durable, more aligned with methods-journal expectations, and more directly useful to researchers conducting complex quantitative syntheses.
 
 Data Availability Statement
 

@@ -6,8 +6,9 @@ Paper B의 validation sample과 Paper A의 final extraction corpus를 확보하�
 프로세스. 스크리닝(16,189 → 575)은 Paper A의 범위이며, Paper B에서는 필요한
 범위만 추적한다.
 
-**Protocol amendment, 2026-04-24**: Phase 1 is complete. Phase 2 will use
-rotated human pairs (R1+R4, R2+R3) rather than AI-first single verification.
+**Protocol amendment, 2026-04-25**: Phase 1 is complete. Phase 2 uses rotated
+human pairs (R1+R4, R2+R3) rather than AI-first single verification. Phase 1
+and Phase 2 together form the Paper B validation corpus.
 
 ```
 575 AI-screened Include
@@ -25,12 +26,12 @@ rotated human pairs (R1+R4, R2+R3) rather than AI-first single verification.
    층화무작위추출 (seed=42)
         │
         ▼
-   Phase 1 Validation Set → primary Paper B reference sample
+   Phase 1 Validation Wave 1
    (completed 4-coder/2-pair design: R1+R2, R3+R4)
         │
         ▼
-   Phase 2 Remaining Eligible Studies → Paper A final dataset
-   (rotated pairs: R1+R4, R2+R3)
+   Phase 2 Validation Wave 2 + Paper A final dataset
+   (rotated pairs: R1+R4, R2+R3; 113 studies)
 ```
 
 ---
@@ -117,10 +118,10 @@ data/00_fulltext_eligibility/
 
 ---
 
-## Stage 2: Phase 1 Validation Sampling (~300 → 100)
+## Stage 2: Phase 1 Validation Wave 1 Sampling (~300 → 100)
 
 ### 목적
-Paper B의 primary validation sample을 위한 100개 연구를 ~300개에서 층화무작위추출.
+Paper B validation corpus의 Wave 1을 위한 100개 연구를 ~300개에서 층화무작위추출.
 이 단계는 Phase 1 pairwise workbook 기준으로 완료되었다.
 
 ### 층화 변수 (Stratification Variables)
@@ -199,8 +200,8 @@ for stratum, n in sample_sizes.items():
         sampled.append(stratum_df.sample(n=n, random_state=SEED))
 
 sample = pd.concat(sampled)
-sample.to_csv('data/01_sample_selection/paper_b_sample_100.csv', index=False)
-print(f"Selected {len(sample)} studies for Paper B gold standard")
+sample.to_csv('data/01_sample_selection/paper_b_phase1_sample_100.csv', index=False)
+print(f"Selected {len(sample)} studies for Paper B Phase 1 reference coding")
 ```
 
 ### Output Files
@@ -237,16 +238,16 @@ data/01_sample_selection/
 ### 목적
 
 Phase 1에서 제외된 remaining eligible studies를 Paper A의 final MASEM-ready
-dataset으로 확정하기 위해 독립 인간 double coding을 실시한다. Phase 2에서는
-Phase 1 pair를 반복하지 않고 R1+R4, R2+R3로 pair를 회전시켜 pair-specific
-coding habits를 줄인다.
+dataset으로 확정하고 Paper B validation corpus의 Wave 2로 사용하기 위해 독립
+인간 double coding을 실시한다. Phase 2에서는 Phase 1 pair를 반복하지 않고
+R1+R4, R2+R3로 pair를 회전시켜 pair-specific coding habits를 줄인다.
 
 ### 배정 규칙
 
 | Pair | Coders | Assignment principle | Adjudication |
 |---|---|---|---|
-| Pair C | R1 + R4 | Remaining eligible studies의 절반 | R2 primary, R3 secondary if needed |
-| Pair D | R2 + R3 | Remaining eligible studies의 절반 | R1 primary, R4 secondary if needed |
+| Pair C | R1 + R4 | 57 studies | R2 primary, R3 secondary if needed |
+| Pair D | R2 + R3 | 56 studies | R1 primary, R4 secondary if needed |
 
 Assignment should be frozen before coding begins and logged with:
 
@@ -261,10 +262,10 @@ Assignment should be frozen before coding begins and logged with:
 
 ### Paper B 사용 범위
 
-Phase 2는 Paper B의 primary validation sample을 대체하지 않는다. 다만 Phase 2
-assignment와 adjudication이 LLM comparison 이전에 고정되어 있으면, Phase 2는
-external validation, triage sensitivity, 또는 human-workload simulation으로 사용할 수
-있다.
+Phase 2는 Paper B의 combined validation corpus에 포함한다. Phase 1과 Phase 2의
+차이는 time block, coder-pair composition, 그리고 coding-wave sequence로 다룬다.
+LLM comparison은 Phase 2 assignment, raw coding, disagreement analysis, and
+source-anchored adjudication이 모두 고정된 뒤에만 실행한다.
 
 ## 스크리닝은 Paper B 범위 밖
 
@@ -275,9 +276,9 @@ external validation, triage sensitivity, 또는 human-workload simulation으로 
 | Human screening review | ✅ | ❌ |
 | **Full-text eligibility (575 → ~300)** | ✅ | ✅ (Stage 1) |
 | **Stratified sampling (~300 → 100)** | — | ✅ (Stage 2) |
-| **Phase 1 human reference coding (100, 4 coders/2 pairs)** | ✅ (ICR) | ✅ (primary validation) |
-| **Phase 2 rotated-pair human coding** | ✅ (핵심) | Optional external validation/triage sensitivity |
-| **LLM extraction evaluation** | — | ✅ (핵심 for Phase 1; optional for Phase 2) |
+| **Phase 1 human reference coding (100, 4 coders/2 pairs)** | ✅ (ICR) | ✅ (validation Wave 1) |
+| **Phase 2 rotated-pair human coding (113, 2 rotated pairs)** | ✅ (핵심) | ✅ (validation Wave 2) |
+| **LLM extraction evaluation** | — | ✅ (post-adjudication for Phase 1+2) |
 | **Full dataset coding (~300)** | ✅ (핵심) | — |
 
 Paper B의 Methods에서는 Stage 1 (full-text eligibility)부터 기술하되,

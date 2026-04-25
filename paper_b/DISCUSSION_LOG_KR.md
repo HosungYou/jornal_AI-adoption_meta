@@ -2,6 +2,11 @@
 
 > 이 문서는 Paper B 연구 설계 과정에서의 논의를 한국어 원문으로 보존합니다.
 > 맥락 유지 및 의사결정 추적 목적.
+>
+> 2026-04-25 기준 현재 프로토콜: Phase 1과 Phase 2는 하나의 Paper B
+> validation corpus로 사용한다. 과거의 `gold standard`, `Phase 2 optional`,
+> `external validation only` 표현은 의사결정 이력으로만 남기며 현재 방법론
+> 문구는 `source-anchored adjudicated human reference standard`를 사용한다.
 
 ---
 
@@ -300,7 +305,7 @@ Paper B에 적용할 보고 기준:
 - LLM output은 Phase 2 독립 코딩과 cross-pair adjudication이 끝날 때까지 공개하지 않음.
 - Pair C 불일치: R2가 primary adjudicator, R3가 필요 시 secondary check.
 - Pair D 불일치: R1이 primary adjudicator, R4가 필요 시 secondary check.
-- Phase 2는 Paper A final extraction dataset에 포함하고, Paper B에는 external validation/triage sensitivity로만 사용.
+- 2026-04-25 supersession: Phase 2는 Paper A final extraction dataset에 포함하고, Paper B에서도 Phase 1과 함께 combined validation corpus로 사용한다.
 
 ---
 

@@ -5,7 +5,7 @@
 - Version date: 2026-04-24
 - Workbook: `AI_Adoption_Phase1_Pairwise_Comparison_R1R2_R3R4_20260424.xlsx`
 - Scope: Phase 1 pairwise adjudication support for R1-R2 and R3-R4 coding comparisons.
-- Protocol link: Phase 2 will use rotated pairs (R1-R4 and R2-R3) after this Phase 1 consensus version.
+- Protocol link: Phase 2 will use rotated pairs (R1-R4 and R2-R3) after this Phase 1 consensus version. Phase 1 and Phase 2 together form the Paper B validation corpus.
 - Current Git branch: `codex/phase1-consensus-20260424`
 - Pull request: `https://github.com/HosungYou/jornal_AI-adoption_meta/pull/1`
 
@@ -81,6 +81,7 @@ When sharing this version, include the following note:
 
 1. Propagate accepted Phase 1 decisions from `DECISION_LOG` and the `resolution` columns into the final MASEM-ready extraction dataset before running pooled correlation or MASEM analyses.
 2. Freeze Phase 2 assignments using rotated pairs:
-   - Pair C: R1 + R4
-   - Pair D: R2 + R3
-3. Keep LLM outputs blinded until Phase 2 independent coding and cross-pair adjudication are complete.
+   - Pair C: R1 + R4, 57 studies
+   - Pair D: R2 + R3, 56 studies
+3. Analyze raw human-human disagreement before consensus/adjudication.
+4. Keep LLM outputs blinded until Phase 2 independent coding, raw disagreement analysis, and cross-pair adjudication are complete.

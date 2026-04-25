@@ -8,15 +8,20 @@ The central methodological question is not which model wins. The central questio
 
 ## Phase Status and Protocol Amendment
 
-Updated later on 2026-04-24. Phase 1 human pairwise coding is complete. Phase 2
-will use rotated human pairs rather than AI-first single verification:
+Updated 2026-04-25. Phase 1 human pairwise coding is complete. Phase 2 uses
+rotated human pairs rather than AI-first single verification. Phase 1 and Phase
+2 now form one combined Paper B validation corpus:
 
-- Phase 1 primary validation sample: Pair A = R1+R2; Pair B = R3+R4
-- Phase 2 operational/external validation sample: Pair C = R1+R4; Pair D = R2+R3
+- Phase 0 calibration: 10 studies, separate calibration/training block
+- Phase 1 validation Wave 1: 100 studies; Pair A = R1+R2; Pair B = R3+R4
+- Phase 2 validation Wave 2: 113 studies; Pair C = R1+R4; Pair D = R2+R3
+- Combined Paper B validation corpus: 213 studies
 - LLM outputs remain unavailable to human coders until each phase's independent coding and adjudication are complete
-- Phase 2 can be reported in Paper B only as external validation, triage sensitivity, or workload simulation if the analysis is frozen before LLM comparison
+- Phase is modeled as a time block / coding wave / reviewer-pair block, not as a primary-versus-optional tier
 
 ## Research Questions
+
+**RQ0. Human coding difficulty before adjudication.** Where do independent human coders disagree before consensus, and which fields, source formats, construct mappings, or phase blocks explain that disagreement?
 
 **RQ1. Extraction validity.** How accurately does the prespecified LLM workflow extract bibliographic, sample, construct, measurement, correlation, and moderator information relative to an adjudicated human reference standard?
 
@@ -36,18 +41,32 @@ will use rotated human pairs rather than AI-first single verification:
 | Matrix | Study-level correlation matrix | Construct order, cells, missingness | MASEM readiness |
 | Model | Pooled MASEM output | Path estimates, indirect effects | Downstream substitution analysis |
 
-## Human Reference Standard
+## Source-Anchored Adjudicated Human Reference Standard
 
 Human coders independently extract the validation sample using a shared codebook. Discrepancies are resolved through cross-pair adjudication and logged. The final adjudicated dataset is the reference standard for evaluation. The manuscript should avoid implying that this standard is flawless; it is the best available expert interpretation of the source documents.
 
-The reference standard has two tiers:
+The reference standard has two waves:
 
-| Tier | Human coding design | Primary role in Paper B |
+| Wave | Human coding design | Primary role in Paper B |
 |---|---|---|
-| Phase 1 | R1+R2 and R3+R4 independent pair coding; cross-pair adjudication | Primary validation sample |
-| Phase 2 | R1+R4 and R2+R3 rotated pair coding; cross-pair adjudication | Optional external validation, triage sensitivity, and workload simulation |
+| Phase 1 | R1+R2 and R3+R4 independent pair coding; cross-pair adjudication | Validation Wave 1 |
+| Phase 2 | R1+R4 and R2+R3 rotated pair coding; cross-pair adjudication | Validation Wave 2 |
 
-The Phase 2 tier is valuable because it changes pair composition. This helps evaluate whether the workflow is robust beyond the original R1-R2 and R3-R4 pair structure.
+Phase 2 is valuable because it changes pair composition. This helps evaluate whether the workflow is robust beyond the original R1-R2 and R3-R4 pair structure.
+
+Current workload:
+
+| Coder | Phase 1 studies | Phase 2 studies | Additional Phase 2 load |
+|---|---:|---:|---:|
+| R1 | 50 | 57 | +7 |
+| R2 | 50 | 56 | +6 |
+| R3 | 50 | 56 | +6 |
+| R4 | 50 | 57 | +7 |
+
+The analysis preserves five dataset states: raw human coder data, pairwise diff
+data, adjudicated human reference, LLM outputs, and LLM-assisted analysis input.
+Raw disagreement should be analyzed before adjudication, while LLM accuracy and
+MASEM substitution analyses use only the frozen adjudicated reference.
 
 ## Primary LLM Workflow
 
@@ -77,6 +96,24 @@ Primary outputs:
 | Table 2 | Planned analysis and reporting matrix |
 | Table 3 | Primary results shell by extraction family |
 | Appendix table | Field-level agreement and discrepancy rates |
+
+## RQ0: Raw Human-Human Disagreement Before Adjudication
+
+The first empirical step is not LLM evaluation. It is a human disagreement
+analysis using raw independent coder values before any consensus meeting.
+
+Planned outputs:
+
+| Output | Description |
+|---|---|
+| Human disagreement table | Field-family disagreement rates by phase and pair |
+| Numeric disagreement plot | Absolute coder differences for r, beta, N, and reliability values |
+| Construct mapping review | Construct labels that produced human disagreement before adjudication |
+| Phase block check | Phase 1 versus Phase 2 disagreement comparison |
+
+This analysis establishes the difficulty of the extraction task. It also helps
+interpret later LLM errors: a mismatch on a field where humans also disagreed is
+different from a mismatch on a routine field that humans coded consistently.
 
 ## RQ2: Systematic Error
 

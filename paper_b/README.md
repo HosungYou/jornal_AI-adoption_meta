@@ -18,15 +18,25 @@ Claude/Gemini 등 추가 모델은 필요한 경우 supplementary robustness 또
 2. Construct harmonization 및 correlation matrix recovery의 systematic error
 3. Human-coded input을 LLM-assisted input으로 대체했을 때 MASEM 결론이 유지되는지에 대한 downstream substitution analysis
 
-## 2026-04-24 Phase 2 프로토콜 재설정
+## 2026-04-25 Phase 1+2 검증 코퍼스 결정
 
-Phase 1 pairwise coding is complete. Phase 2 is reset from the earlier
-AI-first single-verification plan to a **rotated-pair human coding design**:
+Phase 1 pairwise coding is complete. Phase 2 remains the rotated-pair human
+coding design adopted on 2026-04-24, but it is no longer framed as optional
+external validation. Phase 1 and Phase 2 are now one combined Paper B validation
+corpus.
 
 - Phase 1 completed pairs: R1+R2 and R3+R4
 - Phase 2 rotated pairs: R1+R4 and R2+R3
 - LLM outputs remain blinded until independent human coding and adjudication are complete
-- Phase 2 human reference values can support Paper A final extraction and, if frozen before analysis, Paper B external validation or triage sensitivity
+- Raw human-human disagreement is analyzed before adjudication
+- LLM evaluation and MASEM substitution use the frozen source-anchored adjudicated human reference standard
+
+Current workload from the package generator:
+
+| Pair | Coders | Phase 2 studies | Extra per coder vs Phase 1 |
+|---|---|---:|---:|
+| Pair C | R1 + R4 | 57 | +7 |
+| Pair D | R2 + R3 | 56 | +6 |
 
 ## Paper A와의 관계
 
@@ -38,7 +48,7 @@ AI-first single-verification plan to a **rotated-pair human coding design**:
 
 ```
 Validation subset: stratified subset from Paper A MASEM corpus
-Human standard: Phase 1 independent human coding + adjudication; Phase 2 rotated-pair human coding for remaining eligible studies
+Human standard: Phase 1 + Phase 2 independent human coding, raw disagreement analysis, and source-anchored adjudication
 Primary LLM workflow: prespecified Codex 5.5 workflow
 Optional robustness: additional LLMs only as supplementary sensitivity/triage checks
 Extraction families: bibliographic, sample, construct, measurement, correlation, moderator
@@ -69,7 +79,7 @@ paper_b/
 ├── README.md                          ← 현재 파일
 ├── DISCUSSION_LOG_KR.md               ← 연구 논의 기록 (한국어)
 ├── RESEARCHER_ROLES.md                ← 연구자 4명 역할 분담
-├── SAMPLING_PROTOCOL.md               ← 575 → 300 → 100 선정 프로세스
+├── SAMPLING_PROTOCOL.md               ← 575 → MASEM corpus → Phase 1/2 선정 프로세스
 ├── CODING_PROTOCOL.md                 ← Phase 1-3 코딩 프로토콜
 ├── TIMELINE.md                        ← 6주 실행 일정
 ├── ANALYSIS_PLAN.md                   ← 통계 분석 계획 (RQ1-4)
@@ -93,7 +103,7 @@ paper_b/
 │
 ├── data/
 │   ├── 00_fulltext_eligibility/       ← 575 → 300 풀텍스트 심사
-│   ├── 01_sample_selection/           ← 100-study 층화추출
+│   ├── 01_sample_selection/           ← Phase 1 층화추출 및 Phase 2 배정 로그
 │   ├── 02_ai_extraction/              ← AI 추출 결과 (모델별)
 │   │   ├── claude/
 │   │   ├── codex/
@@ -106,7 +116,7 @@ paper_b/
 │   │       ├── coder_r3/
 │   │       └── coder_r4/
 │   ├── 04_consensus/                  ← 다중모델 합의
-│   ├── 05_gold_standard/              ← 최종 인간 골드 스탠다드
+│   ├── 05_reference/                  ← source-anchored adjudicated human reference
 │   └── 06_analysis/                   ← IRR 계산, 시각화
 │
 ├── templates/                         ← 코딩/로깅 템플릿
@@ -130,7 +140,7 @@ paper_b/
 - **지표**: Cohen's κ (pair 내 범주형), ICC(2,1) (연속형)
 - **목표**: κ ≥ 0.85
 - **Adjudication**: Cross-pair. Phase 1은 R3→Pair A, R1→Pair B. Phase 2는 R2→Pair C, R1→Pair D를 primary adjudicator로 둔다.
-- **Reference Standard**: Pair 내 일치 시 채택, 불일치 시 cross-pair adjudicator 중재 후 확정
+- **Reference Standard**: Pair 내 일치 시 채택, 불일치 시 source-document adjudication 후 확정
 
 ## 보고 기준
 

@@ -62,4 +62,7 @@
   - Pair C: R1 + R4
   - Pair D: R2 + R3
 - Phase 2 remains human-first: LLM outputs stay hidden until independent coding and cross-pair adjudication are complete.
-- After adjudication, LLM outputs can be compared against the Phase 2 human reference for external validation, triage sensitivity, and workload simulation.
+- Phase 1 and Phase 2 now form the combined Paper B validation corpus.
+- Before adjudication, raw human-human disagreement should be summarized by pair, field family, and numeric tolerance band.
+- After adjudication, LLM outputs can be compared against the source-anchored adjudicated human reference for LLM accuracy, triage sensitivity, and downstream MASEM substitution.
+- Current Phase 2 workload is Pair C = 57 studies (R1+R4, +7 each vs Phase 1) and Pair D = 56 studies (R2+R3, +6 each vs Phase 1).
