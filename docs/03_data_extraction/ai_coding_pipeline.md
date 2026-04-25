@@ -7,7 +7,7 @@
 > - **Coding workflow:** 2-pair independent coding (Pair A: R1+R2, Pair B: R3+R4) with cross-pair adjudication
 > - **Phase design:** Phase 0 calibration (10 studies, all 4 coders) → Phase 1 dual (100 studies) → Phase 2 single (~150 studies)
 > - **Paper A+B integration:** Phase 1 100-study dual set = Paper B gold standard + Paper A ICR sample
-> - **Canonical manual:** `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md`
+> - **Canonical manual:** `data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.md`
 > - **Canonical codebook:** `data/04_extraction/AI_Adoption_MASEM_Coding_v2.xlsx`
 
 ## Overview

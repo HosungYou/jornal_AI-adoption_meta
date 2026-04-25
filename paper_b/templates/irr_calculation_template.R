@@ -14,17 +14,15 @@ library(readr)      # CSV reading
 # 1. Load Data
 # =============================================================================
 
-# Human coder data
-coder1 <- read_csv("../data/03_human_coding/coder1_PI/coding_sheet_H1.csv")
-coder2 <- read_csv("../data/03_human_coding/coder2_phd1/coding_sheet_H2.csv")
+# Human coder data. Update pair/coder filenames before running.
+coder1 <- read_csv("../../data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R1/coding_sheet_R1.csv")
+coder2 <- read_csv("../../data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R2/coding_sheet_R2.csv")
 
-# Gold standard (after discrepancy resolution)
-gold <- read_csv("../data/05_gold_standard/gold_standard_100.csv")
+# Source-anchored adjudicated human reference standard after discrepancy resolution
+reference <- read_csv("../../data/04_extraction/04_reference_standard_freeze/phase1_adjudicated_reference.csv")
 
-# AI extraction data
-ai_claude <- read_csv("../data/02_ai_extraction/claude/claude_combined.csv")
-ai_codex  <- read_csv("../data/02_ai_extraction/codex/codex_combined.csv")
-ai_gemini <- read_csv("../data/02_ai_extraction/gemini/gemini_combined.csv")
+# LLM extraction data; use only after the reference freeze
+ai_primary <- read_csv("../../data/04_extraction/05_llm_masem_substitution/primary_llm_combined.csv")
 
 # =============================================================================
 # 2. Define Variable Types
@@ -133,13 +131,11 @@ for (var in continuous_vars) {
 }
 
 # =============================================================================
-# 4. AI vs Gold Standard — Per Model
+# 4. LLM vs Adjudicated Human Reference — Post-Freeze Only
 # =============================================================================
 
 ai_models <- list(
-  claude = ai_claude,
-  codex = ai_codex,
-  gemini = ai_gemini
+  primary = ai_primary
 )
 
 ai_accuracy <- tibble(
@@ -158,7 +154,7 @@ for (model_name in names(ai_models)) {
   for (var in categorical_vars) {
     ratings <- data.frame(
       ai = ai_data[[var]],
-      gold = gold[[var]]
+      reference = reference[[var]]
     )
     ratings_complete <- ratings[complete.cases(ratings), ]
 
@@ -176,7 +172,7 @@ for (model_name in names(ai_models)) {
         )
 
       # Accuracy (%)
-      accuracy <- mean(ratings_complete$ai == ratings_complete$gold)
+      accuracy <- mean(ratings_complete$ai == ratings_complete$reference)
 
       ai_accuracy <- ai_accuracy %>%
         add_row(
@@ -194,7 +190,7 @@ for (model_name in names(ai_models)) {
   for (var in continuous_vars) {
     ratings <- data.frame(
       ai = as.numeric(ai_data[[var]]),
-      gold = as.numeric(gold[[var]])
+      reference = as.numeric(reference[[var]])
     )
     ratings_complete <- ratings[complete.cases(ratings), ]
 
@@ -212,7 +208,7 @@ for (model_name in names(ai_models)) {
           n_pairs = nrow(ratings_complete)
         )
 
-      mae <- mean(abs(ratings_complete$ai - ratings_complete$gold), na.rm = TRUE)
+      mae <- mean(abs(ratings_complete$ai - ratings_complete$reference), na.rm = TRUE)
 
       ai_accuracy <- ai_accuracy %>%
         add_row(
@@ -231,8 +227,8 @@ for (model_name in names(ai_models)) {
 # 5. Save Results
 # =============================================================================
 
-write_csv(irr_results, "../data/06_analysis/irr_results.csv")
-write_csv(ai_accuracy, "../data/06_analysis/model_accuracy.csv")
+write_csv(irr_results, "../../data/04_extraction/02_pre_adjudication_disagreement/phase1/irr_results.csv")
+write_csv(ai_accuracy, "../../data/04_extraction/05_llm_masem_substitution/model_accuracy.csv")
 
 # =============================================================================
 # 6. Summary Report

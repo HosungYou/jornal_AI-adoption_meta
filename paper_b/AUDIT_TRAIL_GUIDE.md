@@ -85,21 +85,16 @@ data/02_ai_extraction/
 ### Phase 1: Independent Coding Log
 
 ```
-data/03_human_coding/
+data/04_extraction/01_raw_human_coder_data_freeze/
 ├── phase1/
-│   ├── pair_a_R1_R2/
-│   │   ├── coder_R1/
-│   │   └── coder_R2/
-│   └── pair_b_R3_R4/
-│       ├── coder_R3/
-│       └── coder_R4/
+│   └── coder_packages/
+│       ├── R1/
+│       ├── R2/
+│       ├── R3/
+│       └── R4/
 └── phase2/
     ├── pair_c_R1_R4/
-    │   ├── coder_R1/
-    │   └── coder_R4/
     └── pair_d_R2_R3/
-        ├── coder_R2/
-        └── coder_R3/
 ```
 
 ### Time Log 형식
@@ -158,25 +153,28 @@ data/06_analysis/
 ### AI Consensus Record
 
 ```
-data/04_consensus/
+data/04_extraction/05_llm_masem_substitution/
 ├── phase1_llm_comparison.csv     ← Phase 1 post-adjudication LLM comparison
 ├── phase2_llm_comparison.csv     ← Phase 2 post-adjudication LLM comparison
-└── consensus_algorithm_log.md    ← 합의 규칙 + 매개변수
+└── substitution_analysis/         ← MASEM substitution inputs and outputs
 ```
 
 ### Phase 2 Rotated-Pair Coding Log
 
 ```
-data/03_human_coding/
-└── phase2/
-    ├── pair_c_R1_R4/
-    │   ├── coding_sheet_R1.csv
-    │   └── coding_sheet_R4.csv
-    ├── pair_d_R2_R3/
-    │   ├── coding_sheet_R2.csv
-    │   └── coding_sheet_R3.csv
-    ├── phase2_pairwise_discrepancy_log.csv
-    ├── phase2_adjudicated.csv
+data/04_extraction/
+├── 01_raw_human_coder_data_freeze/phase2/
+│   ├── pair_c_R1_R4/
+│   │   ├── coding_sheet_R1.csv
+│   │   └── coding_sheet_R4.csv
+│   └── pair_d_R2_R3/
+│       ├── coding_sheet_R2.csv
+│       └── coding_sheet_R3.csv
+├── 02_pre_adjudication_disagreement/phase2/
+│   └── phase2_pairwise_discrepancy_log.csv
+├── 03_source_document_adjudication/phase2/
+│   └── phase2_adjudicated.csv
+└── 05_llm_masem_substitution/
     └── phase2_llm_comparison.csv
 ```
 

@@ -177,7 +177,7 @@ Step 3b: Discrepancy Resolution (Cross-Pair Adjudication)
 Step 3c: Source-anchored adjudicated human reference 확정
   ├── Pair 내 일치 → 채택
   ├── Pair 내 불일치 → cross-pair adjudicator 중재 후 확정
-  ├── 저장: data/04_extraction/reference/phase1_adjudicated_reference.csv
+  ├── 저장: data/04_extraction/04_reference_standard_freeze/phase1_adjudicated_reference.csv
   ├── 📘 Paper B: LLM 평가의 source-anchored reference
   └── 📗 Paper A: MASEM 데이터로도 활용
 ```
@@ -272,28 +272,28 @@ Step 2: Independent human double coding
   ├── PDF 원문에서 직접 추출
   ├── 상대 코더 결과와 AI 결과 접근 금지
   ├── 모호한 construct mapping, beta/r 변환, sample mismatch는 notes에 기록
-  └── 결과: data/04_extraction/phase2/{pair_c,pair_d}/coder_R*.xlsx 또는 csv
+  └── 결과: data/04_extraction/01_raw_human_coder_data_freeze/phase2/{pair_c,pair_d}/coder_R*.xlsx 또는 csv
 
 Step 3: Pairwise comparison and IRR
   ├── Pair C: R1 vs R4
   ├── Pair D: R2 vs R3
   ├── Categorical: percent agreement, Cohen's kappa, Gwet's AC1/AC2
   ├── Numeric: absolute error, tolerance-band agreement, ICC where appropriate
-  └── 결과: data/04_extraction/phase2/phase2_irr_results.csv
+  └── 결과: data/04_extraction/02_pre_adjudication_disagreement/phase2/phase2_irr_results.csv
 
 Step 4: Cross-pair adjudication
   ├── Pair C 불일치: R2가 primary adjudicator, R3가 필요 시 secondary check
   ├── Pair D 불일치: R1이 primary adjudicator, R4가 필요 시 secondary check
   ├── Adjudicator는 원문 PDF와 코딩 매뉴얼만 기준으로 판단
   ├── 해결값, 근거 위치, rule applied, confidence 기록
-  └── 결과: data/04_extraction/phase2/phase2_adjudicated.csv
+  └── 결과: data/04_extraction/03_source_document_adjudication/phase2/phase2_adjudicated.csv
 
 Step 5: Post-adjudication LLM comparison and substitution analysis
   ├── 인간 adjudicated value를 reference로 고정한 뒤 LLM output 공개
   ├── LLM vs human reference: field-level agreement, numeric error, error taxonomy
   ├── Human-human disagreement vs LLM-human disagreement 비교
   ├── Cross-model disagreement은 triage signal로만 사용
-  └── 결과: data/04_extraction/phase2/llm_comparison/phase2_llm_comparison.csv
+  └── 결과: data/04_extraction/05_llm_masem_substitution/phase2_llm_comparison.csv
 ```
 
 ### Phase 2 Coding Sheet

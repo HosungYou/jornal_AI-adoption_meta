@@ -3,8 +3,8 @@
 ## Scope
 
 - Coder: R1
-- Workbook edited in place: `coder_packages/R1/AI_Adoption_MASEM_Coding_v3_R1.xlsx`
-- Pairwise consensus workbook added: `consensus/AI_Adoption_Phase1_Pairwise_Comparison_R1R2_R3R4_20260424.xlsx`
+- Workbook edited in place: `data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R1/AI_Adoption_MASEM_Coding_v3_R1.xlsx`
+- Pairwise consensus workbook added: `data/04_extraction/02_pre_adjudication_disagreement/phase1/AI_Adoption_Phase1_Pairwise_Comparison_R1R2_R3R4_20260424.xlsx`
 - Phase target completed through S033.
 - Included the 20 unfinished Phase 1 studies: S168, S054, S220, S011, S180, S044, S151, S087, S051, S086, S074, S189, S120, S081, S035, S191, S041, S217, S166, S033.
 
@@ -32,6 +32,12 @@
 
 ## Review Flags and Special Coding Decisions
 
+- S164: Accepted adjudication values are EE-SI = -0.024, FC-PE = 0.716, and PE-UB = 0.632.
+- S091: Sample size is N = 382. Code the tool as ChatGPT-specific and retain the statistical coding decision; remaining checked differences were accepted.
+- S187: Map stress/anxious wording to ANX with a flag for adjudication traceability.
+- S079: Treat the relevant effects as path coefficients.
+- S223: R1-coded value accepted.
+- S005: Exclude JOY. Do not map CON -> FC; FC is not adopted for that case.
 - S054: Teacher and student samples were reported separately. Consensus uses the teacher-only sample (n=299); the high-school student sample was excluded. Perceived Playfulness was not mapped to ATT.
 - S011: Only structural path coefficients were usable. TAM paths were beta-converted, but TTF -> ATT and TTF -> BI were not mapped to FC and were excluded from the target matrix.
 - S044: GAAIS Positive Attitudes toward AI was mapped to ATT as the primary coding decision. Negative Attitudes was not averaged into ATT; retain it only as a sensitivity or separate negative-attitude candidate if needed.

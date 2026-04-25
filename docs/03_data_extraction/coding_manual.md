@@ -1,7 +1,7 @@
 # Comprehensive Coding Manual for AI Adoption Meta-Analysis
 
 > **⚠ SUPERSEDED (2026-03-09):** This document has been replaced by:
-> - **Coding Manual v2:** `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md`
+> - **Coding Manual v2:** `data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.md`
 > - **Codebook v2:** `data/04_extraction/AI_Adoption_MASEM_Coding_v2.xlsx`
 >
 > Key changes in v2: year range 2022–2026, education-only scope, independent coding (blinded),

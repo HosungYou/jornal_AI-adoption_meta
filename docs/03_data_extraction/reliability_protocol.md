@@ -1,6 +1,6 @@
 # Inter-Coder Reliability Protocol
 
-> **Updated 2026-03-10:** Revised to reflect 2-pair design (Pair A: R1+R2, Pair B: R3+R4), Phase 0 calibration (10 studies), Phase 1 dual coding (100 studies = Paper B gold standard + Paper A ICR), cross-pair adjudication. See canonical manual: `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md`
+> **Updated 2026-03-10:** Revised to reflect 2-pair design (Pair A: R1+R2, Pair B: R3+R4), Phase 0 calibration (10 studies), Phase 1 dual coding (100 studies = Paper B gold standard + Paper A ICR), cross-pair adjudication. See canonical manual: `data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.md`
 
 ## Overview
 

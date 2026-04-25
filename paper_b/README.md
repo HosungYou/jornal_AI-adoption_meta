@@ -102,22 +102,13 @@ paper_b/
 │   └── module_d_moderator.md
 │
 ├── data/
-│   ├── 00_fulltext_eligibility/       ← 575 → 300 풀텍스트 심사
+│   ├── 00_fulltext_eligibility/       ← 575 → MASEM-eligible 풀텍스트 심사
 │   ├── 01_sample_selection/           ← Phase 1 층화추출 및 Phase 2 배정 로그
-│   ├── 02_ai_extraction/              ← AI 추출 결과 (모델별)
-│   │   ├── claude/
-│   │   ├── codex/
-│   │   └── gemini/
-│   ├── 03_human_coding/               ← 독립 인간 코딩
-│   │   ├── pair_a/
-│   │   │   ├── coder_r1/
-│   │   │   └── coder_r2/
-│   │   └── pair_b/
-│   │       ├── coder_r3/
-│   │       └── coder_r4/
-│   ├── 04_consensus/                  ← 다중모델 합의
-│   ├── 05_reference/                  ← source-anchored adjudicated human reference
-│   └── 06_analysis/                   ← IRR 계산, 시각화
+│   ├── 02_ai_extraction/              ← post-adjudication LLM extraction outputs
+│   ├── 03_human_coding/               ← human coding mirrors if needed
+│   ├── 04_consensus/                  ← historical consensus mirrors only
+│   ├── 05_reference/                  ← historical reference mirrors only
+│   └── 06_analysis/                   ← analysis mirrors if needed
 │
 ├── templates/                         ← 코딩/로깅 템플릿
 ├── checklists/                        ← PRISMA-trAIce, TRIPOD-LLM

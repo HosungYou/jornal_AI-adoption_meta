@@ -94,11 +94,13 @@ Recommended local structure:
 
 ```
 data/04_extraction/
-├── phase1/                 # Phase 1 raw, diff, and adjudication guide
-├── phase2/                 # Phase 2 assignment, raw, diff, and adjudication guide
-├── reference/              # Frozen adjudicated reference documentation
-├── qa/                     # QA gates and spot-check records
-└── consensus/              # Share-safe comparison workbooks and notes
+├── 00_protocol/                         # Manual, tracker, calibration, generation scripts
+├── 01_raw_human_coder_data_freeze/      # Raw independent coder workbooks by phase
+├── 02_pre_adjudication_disagreement/    # Pairwise comparison workbooks and disagreement summaries
+├── 03_source_document_adjudication/     # Source-check decisions and adjudication logs
+├── 04_reference_standard_freeze/        # Frozen source-anchored adjudicated reference
+├── 05_llm_masem_substitution/           # Post-freeze LLM comparison and MASEM substitution
+└── 99_archive/                          # Historical files not used in the active sequence
 ```
 
 The final analysis should preserve both raw disagreement and adjudicated

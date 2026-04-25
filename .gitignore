@@ -32,11 +32,17 @@ Thumbs.db
 
 # Data files (too large for git)
 data/04_extraction/coder_packages/*/PDFs/
+data/04_extraction/01_raw_human_coder_data_freeze/phase*/coder_packages/*/PDFs/
+data/04_extraction/01_raw_human_coder_data_freeze/phase*/coder_packages/*/AI_Adoption_MASEM_Coding_Manual_*.docx
 data/04_extraction/PDFs*/
+data/04_extraction/03_source_document_adjudication/source_pdfs/
+data/04_extraction/99_archive/source_pdf_variants/
 data/04_extraction/phase*/raw_human/**/*.xlsx
 data/04_extraction/phase*/raw_human/**/*.csv
 data/04_extraction/phase*/llm_comparison/raw_outputs/
 data/04_extraction/reference/private/
+data/04_extraction/04_reference_standard_freeze/private/
+data/04_extraction/05_llm_masem_substitution/raw_outputs/
 pdfs/*.pdf
 data/00_raw/correlation_matrices/*.pdf
 data/00_raw/search_results/*.csv

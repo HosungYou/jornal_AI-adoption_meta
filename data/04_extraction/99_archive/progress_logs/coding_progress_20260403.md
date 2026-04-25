@@ -86,7 +86,7 @@ R3 has only completed the 10-study calibration set. No Phase 1/2 studies started
 ## 5. File Manifest (repo paths)
 
 ```
-data/04_extraction/coder_packages/
+data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/
   R1/
     AI_Adoption_MASEM_Coding_v3_R1.xlsx          (292,817 bytes, 2026-04-03)
     AI_Adoption_MASEM_Coding_Manual_v3.docx      (244,849 bytes, 2026-03-20)

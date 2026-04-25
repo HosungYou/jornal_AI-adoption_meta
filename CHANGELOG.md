@@ -37,17 +37,17 @@ Construct harmonization and correlation extraction improvements. Adds BI vs. UB 
 | `docs/03_data_extraction/construct_harmonization.md` | Expanded Section 3.5 (BI) and 3.6 (UB) with canonical scale items, linguistic markers, and acceptance/adoption composite guidance |
 | `docs/03_data_extraction/construct_harmonization.md` | Added references: Williams et al. (2015), Fishbein & Ajzen (1975) |
 | `docs/03_data_extraction/correlation_extraction_guide.md` | Expanded Fornell-Larcker borderline case: CB-SEM latent correlations (phi) vs. PLS-SEM composite correlations; added `r_source` flag values (`fornell_larcker_cbsem`, `fornell_larcker_plssem`); documented preferred extraction order |
-| `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md` | Added Section 7.6: BI vs. UB disambiguation with item-level linguistic decision framework and reference items; updated version to 2.3 |
+| `data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.md` | Added Section 7.6: BI vs. UB disambiguation with item-level linguistic decision framework and reference items; updated version to 2.3 |
 
 ### Changed -- Data Templates
 
 | File | Change |
 |------|--------|
 | `data/templates/AI_Adoption_MASEM_Coding_v1.xlsx` | Removed `n_constructs_measured`, `n_correlations_reported`, `matrix_completeness` columns from STUDY_METADATA |
-| `data/04_extraction/coder_packages/R1/AI_Adoption_MASEM_Coding_v3_R1.xlsx` | Same column removal |
-| `data/04_extraction/coder_packages/R2/AI_Adoption_MASEM_Coding_v3_R2.xlsx` | Same column removal |
-| `data/04_extraction/coder_packages/R3/AI_Adoption_MASEM_Coding_v3_R3.xlsx` | Same column removal |
-| `data/04_extraction/coder_packages/R4/AI_Adoption_MASEM_Coding_v3_R4.xlsx` | Same column removal |
+| `data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R1/AI_Adoption_MASEM_Coding_v3_R1.xlsx` | Same column removal |
+| `data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R2/AI_Adoption_MASEM_Coding_v3_R2.xlsx` | Same column removal |
+| `data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R3/AI_Adoption_MASEM_Coding_v3_R3.xlsx` | Same column removal |
+| `data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R4/AI_Adoption_MASEM_Coding_v3_R4.xlsx` | Same column removal |
 
 ### BI vs. UB Disambiguation Framework
 

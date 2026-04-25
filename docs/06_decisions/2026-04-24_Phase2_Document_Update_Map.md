@@ -22,16 +22,19 @@ protocol amendment.
 | `paper_b/templates/discrepancy_log_template.csv` | Added phase, pair, coder IDs, adjudicator, LLM comparison, and error taxonomy fields. |
 | `paper_b/checklists/PRISMA_trAIce_checklist.md` | Updated human oversight protocol wording. |
 | `paper_b/checklists/TRIPOD_LLM_checklist.md` | Updated LLM specification from 3-model comparison to primary workflow plus optional sensitivity. |
-| `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.md` | Updated workflow diagram, workflow rules, and timeline for Phase 2 rotated pairs. |
-| `data/04_extraction/generate_coding_manual_docx.py` | Updated DOCX generator source to reflect manual v2.4 protocol language and tolerate missing equation-rendering dependency. |
-| `data/04_extraction/generate_coder_packages.py` | Updated future package assignment logic so Phase 2 studies are duplicated to rotated pairs R1+R4 and R2+R3 rather than split as single-coder assignments. |
-| `data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.docx` | Regenerated from the updated manual with a table-safe layout and rendered for QA. |
-| `data/04_extraction/coding_progress_20260424.md` | Added Phase 2 protocol amendment note. |
-| `data/04_extraction/consensus/README.md` | Added Phase 2 next-step pairing and blinding notes. |
+| `data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.md` | Updated workflow diagram, workflow rules, and timeline for Phase 2 rotated pairs. |
+| `data/04_extraction/00_protocol/scripts/generate_coding_manual_docx.py` | Updated DOCX generator source to reflect manual v2.4 protocol language and tolerate missing equation-rendering dependency. |
+| `data/04_extraction/00_protocol/scripts/generate_coder_packages.py` | Updated future package assignment logic so Phase 2 studies are duplicated to rotated pairs R1+R4 and R2+R3 rather than split as single-coder assignments. |
+| `data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.docx` | Regenerated from the updated manual with a table-safe layout and rendered for QA. |
+| `data/04_extraction/03_source_document_adjudication/phase1/decision_log_20260424.md` | Added Phase 2 protocol amendment note. |
+| `data/04_extraction/02_pre_adjudication_disagreement/phase1/README.md` | Added Phase 2 next-step pairing and blinding notes. |
 | `docs/06_decisions/decision_log.md` | Added the Phase 2 rotated-pair decision. |
 | `docs/06_decisions/2026-03-06_IRR_and_AutoInclude_Decision.md` | Marked the earlier Phase 2 single-coding plan as superseded. |
 | `docs/06_decisions/2026-04-24_Phase2_Rotated_Pair_Protocol.md` | Added the canonical amendment decision. |
 | `docs/06_decisions/2026-04-25_Reference_Standard_and_Disagreement_Analysis.md` | Added the current canonical decision for Phase 1+2 combined validation, raw disagreement before adjudication, and source-anchored reference terminology. |
+| `data/04_extraction/README.md` | Added the active numbered extraction workspace map and current stage statement. |
+| `data/04_extraction/WORKFLOW_STATUS_LOG.md` | Added the running status log for the five-step extraction workflow. |
+| `AGENTS.md` | Added repository-level agent instructions to check the workflow status and preserve stage order before editing extraction materials. |
 
 ## Documents Not Rewritten
 

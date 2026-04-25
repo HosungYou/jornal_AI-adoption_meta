@@ -5,7 +5,6 @@ Generate coder packages v3.0 — Complete redesign per 2026-03-13 discussion.
 Creates per-coder folders:
   R1/
   ├── AI_Adoption_MASEM_Coding_v3_R1.xlsx
-  ├── AI_Adoption_MASEM_Coding_Manual_v3.docx
   └── PDFs/  (only PDFs assigned to this coder)
 
 Key design decisions:
@@ -39,11 +38,11 @@ from openpyxl.worksheet.datavalidation import DataValidation
 # ── Paths ──
 BASE = Path("/Volumes/External SSD/Projects/Meta-Analysis/jornal_AI-adoption_meta")
 CONFIRMED = BASE / "data/02_screening/confirmed_includes.csv"
-TRACKER = BASE / "data/04_extraction/pdf_download_tracker.xlsx"
-PDF_DIR = BASE / "data/04_extraction/PDFs 2"
-MANUAL_DOCX = BASE / "data/04_extraction/AI_Adoption_MASEM_Coding_Manual_v2.docx"
-OUTPUT_DIR = BASE / "data/04_extraction/coder_packages"
-MAPPING_CSV = BASE / "data/04_extraction/study_id_mapping_v3.csv"
+TRACKER = BASE / "data/04_extraction/00_protocol/pdf_download_tracker.xlsx"
+PDF_DIR = BASE / "data/04_extraction/03_source_document_adjudication/source_pdfs"
+MANUAL_DOCX = BASE / "data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.docx"
+OUTPUT_DIR = BASE / "data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages"
+MAPPING_CSV = BASE / "data/04_extraction/00_protocol/study_id_mapping_v3.csv"
 
 # ── Constants ──
 EXCLUDED_SIDS = {"S001", "S084"}  # No PDF available
