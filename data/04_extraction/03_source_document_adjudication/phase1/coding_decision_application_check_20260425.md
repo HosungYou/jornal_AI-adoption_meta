@@ -27,6 +27,15 @@ carried into the Step 4 source-anchored adjudicated human reference standard.
 | S044 | Use GAAIS Positive Attitudes toward AI as primary `ATT`; do not average Negative Attitudes | Yes | Raw rows reviewed show Positive Attitudes mapped to `ATT` | Carry positive-attitude `ATT` decision forward |
 | S180 | Exclude because no usable target construct-pair `r` or beta matrix is available | Yes | R1 exclusion log records exclusion | Carry exclusion forward after source check |
 | S220 | Exclude because focal use case is mental healthcare chatbot/content | Yes | R1 exclusion log records exclusion | Carry exclusion forward after source check |
+| S151 | Use source-reported `FC-UB = .558` | Yes | R1 raw value is rounded to `.56`; adjudication preserves source precision | Apply `.558` in adjudicated reference |
+| S087 | Exclude Satisfaction from `ATT` | Yes | Earlier mapping was superseded by the 2026-04-29 amendment | Remove `Satisfaction-PE` from target `ATT-PE` |
+| S051 | Do not map Perceived Risk to `ANX`; include R1-only `EE-FC`, `EE-PE`, `FC-PE` | Yes | R1 contains Perceived Risk rows mapped to `ANX` and R1-only direct correlation rows | Exclude Perceived Risk rows; carry R1 direct values `.59`, `.48`, `.47` |
+| S120 | Use R1 beta-converted path-coefficient values | Yes | R1 stores `r_source = beta_converted` with original beta values; R2-only `SI-TRU`, `SI-UB`, `TRU-UB` rows are not retained | Carry R1 beta-converted values into adjudicated reference |
+| S081 | Use R1 values | Yes | R1 and R2 differ on Table 4 target pairs; R1 direct values are retained | Carry R1 values into adjudicated reference |
+| S035 | Use R1 values | Yes | R1 and R2 differ on several Table 4 target pairs; R1 direct values are retained | Carry R1 values into adjudicated reference |
+| S191 | Use R2 values | Yes | R1 and R2 differ systematically on Table 2 target pairs; R2 direct values are retained | Carry R2 values into adjudicated reference |
+| S217 | Use R1 values | Yes | R2-only rows place `IU-PEU` and `IU-PU` under different target labels | Carry R1 values; exclude conflicting R2-only placements |
+| S033 | Use R1 beta-converted path-coefficient values | Yes | R1 stores beta-converted values from Table 5; `ATT-EE = .06` from beta `.013` is retained | Carry R1 values into adjudicated reference |
 
 ## Conclusion
 

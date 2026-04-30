@@ -57,6 +57,22 @@ source-anchored decisions.
   construct-pair `r` or beta matrix is available.
 - S220: Exclude because the focal use case is mental healthcare chatbot/content,
   not educational AI adoption.
+- S151: Use source-reported `FC-UB = .558`; preserve source-reported
+  three-decimal correlations during adjudication.
+- S087: Exclude Satisfaction from `ATT`; do not treat
+  `Satisfaction-Performance Expectancy` as `ATT-PE`.
+- S051: Do not map Perceived Risk to `ANX`; include R1 direct values
+  `EE-FC = .59`, `EE-PE = .48`, and `FC-PE = .47`.
+- S120: Use R1 beta-converted path-coefficient values for `BI-EE`, `BI-FC`,
+  `BI-PE`, `BI-SI`, and `BI-UB`; exclude R2-only `SI-TRU`, `SI-UB`, and
+  `TRU-UB` rows.
+- HTMT-only tables are not treated as usable MASEM correlation matrices.
+- S081: Use R1 values for unresolved R1-R2 correlation differences.
+- S035: Use R1 values for unresolved R1-R2 correlation differences.
+- S191: Use R2 values for unresolved R1-R2 correlation differences.
+- S217: Use R1 values for unresolved R1-R2 correlation differences.
+- S033: Use R1 beta-converted path-coefficient values; retain `ATT-EE = .06`
+  from beta `.013`.
 
 ## Required Update Rule
 

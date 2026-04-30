@@ -319,7 +319,9 @@ All study-level variables are coded in the **STUDY_METADATA** sheet.
 
 **Step 2:** Map study constructs to our 12 target constructs using the harmonization rules in Chapter 7. Record the mapping in the CONSTRUCT_MAPPING sheet.
 
-**Step 3:** Extract all pairwise correlations involving our constructs. Record Pearson r values to 2 decimal places. Ignore significance asterisks (record effect size, not p-value). If only lower triangle shown, mirror values.
+**Step 3:** Extract all pairwise correlations involving our constructs. Preserve the source-reported precision, up to three decimal places when the source table reports three decimals. Do not round a three-decimal source value to two decimals during adjudication (for example, retain `.558` rather than `.56`). If the source table reports only two decimals, retain two decimals. Ignore significance asterisks (record effect size, not p-value). If only lower triangle shown, mirror values.
+
+**Step 3a:** Do not treat HTMT, CR, AVE, or the diagonal square-root AVE entries in Fornell-Larcker tables as construct correlations. A Fornell-Larcker table may be used only when its off-diagonal cells are clearly the latent construct correlation matrix; never code the diagonal square-root AVE values as correlations. HTMT may be recorded as measurement-validity evidence, but HTMT-only evidence is not a usable MASEM correlation matrix. If no Pearson/latent correlation matrix is reported, use standardized path coefficients only under the beta-to-r rule in Section 6.3.
 
 **Step 4:** Record sample size per correlation. Use overall study N as default. If pairwise N differs, record pairwise N.
 
@@ -399,6 +401,8 @@ Harmonization maps diverse construct labels onto our 12 standard constructs. **P
 | Computer Self-Efficacy | SCT | SE | High |
 | Anxiety (computer/technology) | Various | ANX | High |
 | Hedonic Motivation | UTAUT2 | ATT | Moderate |
+| Satisfaction / User Satisfaction | Various | Exclude by default | Do not map to ATT unless source definitions/items explicitly measure overall evaluative attitude toward using AI |
+| Perceived Risk / Risk Concern | Various | Exclude by default | Do not map to ANX by label alone; include only if source definitions/items explicitly measure anxiety, fear, apprehension, or AI-related threat affect |
 
 ### 7.3 AI-Specific Construct Mappings
 

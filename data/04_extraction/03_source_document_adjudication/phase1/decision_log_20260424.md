@@ -42,8 +42,10 @@
 - S011: Only structural path coefficients were usable. TAM paths were beta-converted, but TTF -> ATT and TTF -> BI were not mapped to FC and were excluded from the target matrix.
 - S044: GAAIS Positive Attitudes toward AI was mapped to ATT as the primary coding decision. Negative Attitudes was not averaged into ATT; retain it only as a sensitivity or separate negative-attitude candidate if needed.
 - S151: UB included use-frequency items plus one continuation-intention item, so UB rows were flagged.
-- S087: Satisfaction was mapped to ATT.
-- S051: Perceived risk was mapped to ANX.
+- S087: Satisfaction was initially mapped to ATT; superseded by the 2026-04-29
+  amendment below.
+- S051: Perceived risk was initially mapped to ANX; superseded by the 2026-04-29
+  amendment below.
 - S074: AI anxiety correlations were positive; these rows were flagged as a possible scale-orientation issue.
 - S189: Perception using ChatGPT was mapped to ATT. Article text reports N=236, while the table note appears to show n=237.
 - S120: Student and instructor path coefficients were reported separately. Beta-converted subgroup effects were Fisher-z weighted across students (n=320) and instructors (n=31).
@@ -59,6 +61,41 @@
 - Key assignment range A42:I61 was inspected after saving logic and all 20 target studies showed `done`.
 - Render checks were run for ASSIGNMENT, CORRELATIONS, STUDY_METADATA, and EXCLUSION_LOG ranges.
 - Formula scan found one pre-existing `#NAME?` display in CODEBOOK!E22; no newly edited coding sheets showed formula-error hits.
+
+## 2026-04-29 Adjudication Amendments
+
+- General precision rule: preserve source-reported correlation precision up to
+  three decimals when the source table reports three decimals.
+- General HTMT rule: HTMT-only evidence is not treated as a usable MASEM
+  correlation matrix. HTMT can be recorded as measurement-validity evidence, but
+  target correlations must come from Pearson/latent correlations or, if no
+  correlation matrix is available, from standardized path coefficients under
+  the beta-to-r rule.
+- S151: For `FC-UB`, use the source-reported value `.558`.
+- S087: Exclude Satisfaction from `ATT`; the `Satisfaction-Performance
+  Expectancy` row is not a usable `ATT-PE` correlation.
+- S051: Do not map Perceived Risk to `ANX`. Exclude the Perceived Risk rows from
+  the target `ANX` matrix unless source items explicitly measure anxiety, fear,
+  apprehension, or AI-related threat affect.
+- S051: Include R1 direct correlations for the R1-only target pairs:
+  `EE-FC = .59`, `EE-PE = .48`, and `FC-PE = .47`.
+- S120: Use R1 values. These are beta-converted path coefficients from the
+  student/instructor subgroup path table, Fisher-z weighted across students
+  (n=320) and instructors (n=31): `BI-EE = .06`, `BI-FC = .19`,
+  `BI-PE = .32`, `BI-SI = .14`, and `BI-UB = .69`. Exclude the R2-only
+  `SI-TRU`, `SI-UB`, and `TRU-UB` rows for the adjudicated reference.
+- S081: Use R1 direct Table 4 values for all unresolved R1-R2 correlation
+  differences.
+- S035: Use R1 direct Table 4 values for all unresolved R1-R2 correlation
+  differences.
+- S191: Use R2 direct Table 2 values for all unresolved R1-R2 correlation
+  differences.
+- S217: Use R1 direct Table 4 values for all unresolved R1-R2 correlation
+  differences; exclude R2-only construct-pair placements that duplicate R1
+  `IU-PEU` and `IU-PU` mappings under different target labels.
+- S033: Use R1 beta-converted Table 5 path-coefficient values. `ATT-EE = .06`
+  with original beta `.013` is retained; the R2-only `PE-UB = .013` placement is
+  excluded.
 
 ## Protocol Amendment After Phase 1
 

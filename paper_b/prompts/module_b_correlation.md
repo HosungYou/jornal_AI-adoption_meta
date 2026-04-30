@@ -14,6 +14,12 @@ CRITICAL RULES:
 4. Non-significant results MUST be extracted (do not skip p > .05).
 5. Use the EXACT decimal values reported (do not round).
 6. If a value is reported as a range or approximation, note this.
+7. Do NOT treat HTMT, CR, AVE, or Fornell-Larcker diagonal square-root AVE
+   entries as construct correlations. Fornell-Larcker off-diagonal cells may be
+   extracted only when they are clearly latent construct correlations. HTMT-only
+   evidence is not a usable MASEM correlation matrix; if no correlation matrix is
+   reported, extract only standardized path coefficients and flag them for
+   conversion.
 ```
 
 ## Target Constructs (12-Construct MASEM Framework)
