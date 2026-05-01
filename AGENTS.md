@@ -10,6 +10,7 @@ MASEM substitution materials, read:
 1. `data/04_extraction/README.md`
 2. `data/04_extraction/WORKFLOW_STATUS_LOG.md`
 3. `docs/06_decisions/2026-04-25_Reference_Standard_and_Disagreement_Analysis.md`
+4. `data/04_extraction/02_pre_adjudication_disagreement/RATER_COMPARISON_PLAYBOOK.md`
 
 ## Current Workflow Rule
 

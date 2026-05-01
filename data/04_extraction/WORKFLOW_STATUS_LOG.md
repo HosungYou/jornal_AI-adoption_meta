@@ -2,7 +2,7 @@
 
 ## Current Status Snapshot
 
-**Date:** 2026-04-25
+**Date:** 2026-05-01
 
 **Current stage:** Step 3 is in progress for Phase 1. The project has completed
 Phase 1 raw coding and has a Phase 1 pairwise comparison workbook. Source-document
@@ -32,6 +32,7 @@ until Step 4 has a frozen reference file.
 | 2026-04-25 | Step 3 | Current status clarified: adjudication in progress, reference not frozen | This file | Continue source-document adjudication before LLM comparison |
 | 2026-04-25 | Step 3 | Early coding decisions checked against frozen raw workbooks | `03_source_document_adjudication/phase1/coding_decision_application_check_20260425.md` | Apply reviewed decisions in the adjudicated reference rather than editing raw workbooks |
 | 2026-04-25 | Step 1 | Phase 2 combined coder workbooks generated for distribution | `01_raw_human_coder_data_freeze/phase2/coder_packages/` | Distribute files and freeze returned completed coder workbooks |
+| 2026-05-01 | Step 2/3 | R1-R4 pairwise comparison and source-document adjudication workflow documented | `02_pre_adjudication_disagreement/RATER_COMPARISON_PLAYBOOK.md` | Use the playbook to triage meaningful differences before source-document adjudication |
 
 ## Coding Decisions Already Reflected
 

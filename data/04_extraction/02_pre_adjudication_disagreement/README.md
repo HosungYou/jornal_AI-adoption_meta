@@ -13,3 +13,10 @@ Required summaries:
 - Numeric difference distributions for r, beta, N, and reliability values
 - Construct-mapping disagreement list
 - Fields requiring source-document adjudication
+
+## Working Guide
+
+Use `RATER_COMPARISON_PLAYBOOK.md` before running R1-R4 comparison meetings.
+It defines which differences should be discussed, which differences should be
+classified as rounding or source-type mismatches, and how to move source-checked
+decisions into Step 3 without overwriting raw coder workbooks.

@@ -15,6 +15,10 @@ Every adjudication record should include:
 - Adjudicator
 - Date
 
+Use `../02_pre_adjudication_disagreement/RATER_COMPARISON_PLAYBOOK.md` to triage
+which pairwise differences require adjudication and which can be marked as
+rounding-only or source-type mismatches before opening PDFs.
+
 Do not overwrite raw coder workbooks. Step 4 starts only after adjudication is
 complete and the reference file is frozen.
 

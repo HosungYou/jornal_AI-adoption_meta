@@ -42,6 +42,8 @@ returned. Phase 2 will use R1+R4 for 57 studies and R2+R3 for 56 studies.
   promoted from the 2026-04-23 R4 file
 - Phase 1 comparison workbook:
   `02_pre_adjudication_disagreement/phase1/AI_Adoption_Phase1_Pairwise_Comparison_R1R2_R3R4_20260424.xlsx`
+- R1-R4 comparison playbook:
+  `02_pre_adjudication_disagreement/RATER_COMPARISON_PLAYBOOK.md`
 - Phase 1 adjudication decisions:
   `03_source_document_adjudication/phase1/decision_log_20260424.md`
 - Local source PDFs, if available:
