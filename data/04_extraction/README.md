@@ -13,6 +13,7 @@ numbered folders below.
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 adjudication in progress |
 | 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Not frozen |
 | 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Not started |
+| 6 | `06 coding by date/` | Date-stamped operational staging area for share-safe coding packets and transfer artifacts | Active |
 | 99 | `99_archive/` | Historical files not used in the active workflow | Reference only |
 
 ## Current Stage
@@ -49,6 +50,8 @@ returned. Phase 2 will use R1+R4 for 57 studies and R2+R3 for 56 studies.
 - Local source PDFs, if available:
   `03_source_document_adjudication/source_pdfs/` (ignored by Git)
 - Workflow status log: `WORKFLOW_STATUS_LOG.md`
+- Date-stamped coding transfer area:
+  `06 coding by date/`
 
 ## Removed From Active Structure
 

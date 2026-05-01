@@ -33,6 +33,7 @@ until Step 4 has a frozen reference file.
 | 2026-04-25 | Step 3 | Early coding decisions checked against frozen raw workbooks | `03_source_document_adjudication/phase1/coding_decision_application_check_20260425.md` | Apply reviewed decisions in the adjudicated reference rather than editing raw workbooks |
 | 2026-04-25 | Step 1 | Phase 2 combined coder workbooks generated for distribution | `01_raw_human_coder_data_freeze/phase2/coder_packages/` | Distribute files and freeze returned completed coder workbooks |
 | 2026-05-01 | Step 2/3 | R1-R4 pairwise comparison and source-document adjudication workflow documented | `02_pre_adjudication_disagreement/RATER_COMPARISON_PLAYBOOK.md` | Use the playbook to triage meaningful differences before source-document adjudication |
+| 2026-05-01 | Step 0 | Date-stamped coding transfer area added for operational file exchange | `06 coding by date/README.md` | Use date folders for share-safe coding packets, then move finalized artifacts into canonical workflow folders |
 
 ## Coding Decisions Already Reflected
 
