@@ -28,7 +28,9 @@ The project is currently in Step 3 for Phase 1:
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 distribution
 packages have been generated but completed Phase 2 raw coding has not yet been
-returned. Phase 2 will use R1+R4 for 57 studies and R2+R3 for 56 studies.
+fully returned or frozen. A 17-study R1 Pair C working coding batch was
+documented on 2026-05-06 in the date-stamped transfer area. Phase 2 will use
+R1+R4 for 57 studies and R2+R3 for 56 studies.
 
 ## Active Files
 
@@ -52,6 +54,8 @@ returned. Phase 2 will use R1+R4 for 57 studies and R2+R3 for 56 studies.
 - Workflow status log: `WORKFLOW_STATUS_LOG.md`
 - Date-stamped coding transfer area:
   `06 coding by date/`
+- Phase 2 R1 Pair C 17-study working coding notes:
+  `06 coding by date/2026-05-06/r1_pairc_17_study_coding_notes.md`
 
 ## Removed From Active Structure
 

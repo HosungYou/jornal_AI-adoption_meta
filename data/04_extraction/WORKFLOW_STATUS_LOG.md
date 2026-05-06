@@ -2,12 +2,14 @@
 
 ## Current Status Snapshot
 
-**Date:** 2026-05-01
+**Date:** 2026-05-06
 
 **Current stage:** Step 3 is in progress for Phase 1. The project has completed
 Phase 1 raw coding and has a Phase 1 pairwise comparison workbook. Source-document
 adjudication decisions have started, but the source-anchored adjudicated human
-reference standard has not been frozen.
+reference standard has not been frozen. Phase 2 distribution packages have been
+generated, and a 17-study R1 Pair C working coding batch has been documented,
+but Phase 2 raw-coder returns have not been frozen.
 
 **Do not start Step 5** LLM comparison or MASEM substitution as a current result
 until Step 4 has a frozen reference file.
@@ -16,7 +18,7 @@ until Step 4 has a frozen reference file.
 
 | Step | Name | Entry criterion | Exit criterion | Status |
 |---:|---|---|---|---|
-| 1 | Raw human coder data freeze | Independent coder workbooks are submitted and preserved | Raw files are read-only; no consensus overwrites | Phase 1 complete; Phase 2 packages generated |
+| 1 | Raw human coder data freeze | Independent coder workbooks are submitted and preserved | Raw files are read-only; no consensus overwrites | Phase 1 complete; Phase 2 packages generated; partial R1 Pair C working batch documented |
 | 2 | Pre-adjudication human-human disagreement analysis | Raw coder data are frozen | Pairwise differences summarized by field, study, pair, and numeric tolerance | Phase 1 workbook created; summary still needs final export |
 | 3 | Source-document adjudication | Pairwise differences are available | Every discrepancy has a source-anchored decision and rationale | Phase 1 in progress |
 | 4 | Reference standard freeze | Adjudication is complete | Frozen reference file and freeze log are committed | Not started |
@@ -34,6 +36,7 @@ until Step 4 has a frozen reference file.
 | 2026-04-25 | Step 1 | Phase 2 combined coder workbooks generated for distribution | `01_raw_human_coder_data_freeze/phase2/coder_packages/` | Distribute files and freeze returned completed coder workbooks |
 | 2026-05-01 | Step 2/3 | R1-R4 pairwise comparison and source-document adjudication workflow documented | `02_pre_adjudication_disagreement/RATER_COMPARISON_PLAYBOOK.md` | Use the playbook to triage meaningful differences before source-document adjudication |
 | 2026-05-01 | Step 0 | Date-stamped coding transfer area added for operational file exchange | `06 coding by date/README.md` | Use date folders for share-safe coding packets, then move finalized artifacts into canonical workflow folders |
+| 2026-05-06 | Step 1 | Phase 2 R1 Pair C 17-study working coding batch documented; `S136` HM exclusion correction recorded | `06 coding by date/2026-05-06/README.md`; `06 coding by date/2026-05-06/r1_pairc_17_study_coding_notes.md` | Preserve the local workbook outside Git unless approved for raw freeze; compare against R4 when Pair C returns are available |
 
 ## Coding Decisions Already Reflected
 

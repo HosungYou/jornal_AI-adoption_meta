@@ -1,0 +1,4 @@
+date,artifact,purpose,git_status,md5,sha256,notes
+2026-05-05,AI_Adoption_MASEM_Coding_v3_R1_Phase0_1_2_20260425.xlsx,Original R1 Phase 0+1+2 workbook used as preserved input,not committed from local Downloads,95c82926342fcb208118c1381b3bcf10,16cf47f6bf354ec53e24c71479e054812246057db21cfa928a4a972fb6312a45,Original local workbook left untouched
+2026-05-05,AI_Adoption_MASEM_Coding_v3_R1_Phase0_1_2_coded17_20260505.xlsx,R1 Phase 2 Pair C 17-study working coding output,not committed; documented only,1d5b90edd6143581ed1cc7dfdce39084,4f2dda8cec2f96d45cc8b9e412ff2f6c21011868ecfdce8205bf575a06fa37e5,Includes 2026-05-06 S136 HM exclusion correction
+2026-05-06,r1_pairc_17_study_coding_notes.md,Share-safe study-level coding notes,committed,N/A,N/A,No local PDF links or machine-specific paths
