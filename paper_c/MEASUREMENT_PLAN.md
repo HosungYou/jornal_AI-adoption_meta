@@ -1,0 +1,71 @@
+# Measurement Plan: Paper C
+
+## Outcome Families
+
+Paper C separates three outcome families:
+
+1. Extraction accuracy.
+2. Error type and error visibility.
+3. Verifiability, auditability, and reproducibility.
+
+## Accuracy Outcomes
+
+| Field family | Primary metric | Notes |
+|---|---|---|
+| Bibliographic metadata | Exact agreement | DOI/title/year/journal |
+| Sample characteristics | Exact or tolerance agreement | `N`, country, education level, user group |
+| Construct harmonization | Agreement and discrepancy typology | Include confidence and ambiguity flags |
+| Measurement details | Exact/tolerance agreement | Reliability, scale source, instrument |
+| Correlation/statistic values | Absolute error and tolerance agreement | Correlation tolerance should be prespecified |
+| Matrix reconstruction | Completeness and structural diagnostics | Symmetry, construct order, missing cells |
+| Moderator coding | Exact agreement and error typology | Tool type, role, setting, design |
+
+## Harness-Specific Outcomes
+
+| Outcome | Operationalization |
+|---|---|
+| Source-span coverage | Count of fields with page/table/section/span evidence divided by eligible fields |
+| Source-span correctness | Independent reviewer judgment that the span supports the value |
+| Unsupported-value rate | Extracted values without adequate source evidence |
+| Schema validity | JSON/schema pass rate and required-field completeness |
+| Correction recoverability | Whether the error source and correction rationale can be reconstructed |
+| Uncertainty usefulness | Whether uncertainty flags predict `L != H` or source ambiguity |
+| Rerun completeness | Whether prompt, schema, model, date, source, and settings are sufficient to rerun |
+| Run-to-run stability | Agreement between repeated runs under the same condition |
+| Adjudication efficiency | Time or steps required for a human reviewer to verify or correct an extraction |
+
+## Error Types To Code
+
+- Unsupported value.
+- Missing value despite source availability.
+- Wrong statistic type.
+- Wrong table type.
+- Wrong construct mapping.
+- Mixed sample or wrong sample.
+- Wrong moderator category.
+- Matrix reconstruction failure.
+- Schema failure.
+- Overconfident incorrect value.
+- Flagged uncertainty that correctly predicted a problem.
+
+## Minimum LongTable Harness Artifact Set
+
+The LongTable condition must produce:
+
+- Source span or source-location field.
+- Prompt version.
+- Schema version.
+- Model identifier and access date.
+- Field-level extraction decision.
+- Field-level uncertainty flag.
+- Schema validation result.
+- Correction history.
+- Checkpoint or decision trace for ambiguous research choices.
+- Rerun manifest.
+
+## Interpretation Rule
+
+Accuracy and verifiability are interpreted separately. A condition can preserve
+accuracy while improving auditability, or it can be accurate but insufficiently
+auditable. The paper should not treat opaque correct answers as equivalent to
+source-verifiable correct answers.

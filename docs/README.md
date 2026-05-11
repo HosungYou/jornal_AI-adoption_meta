@@ -12,6 +12,7 @@ This directory contains all documentation for the AI Adoption in Education MASEM
 | `04_methodology/` | MASEM methods, model specification, Bayesian & network protocols |
 | `05_manuscript/` | Writing timeline and drafting notes for C&E article |
 | `06_decisions/` | Decision log for methodological choices |
+| `releases/` | Release-note drafts for GitHub releases |
 | `search_strategy/` | Search execution guide, query templates for 4 databases |
 
 ## Key Documents
@@ -22,3 +23,4 @@ This directory contains all documentation for the AI Adoption in Education MASEM
 - **Model Specification** (`04_methodology/model_specification.md`): Three competing structural models (TAM/UTAUT Core, Integrated, AI-Only)
 - **Bayesian Protocol** (`04_methodology/bayesian_masem_protocol.md`): Sabherwal et al. (2006) + Scherer et al. (2019) education-specific priors
 - **Network Protocol** (`04_methodology/network_analysis_protocol.md`): MAGNA methodology with student vs. instructor subgroups
+- **Paper C Harness Benchmark Decision** (`06_decisions/2026-05-10_Paper_C_Harness_Benchmark_Decision.md`): Fixed target journal, corpus, H-C-L comparison design, and LongTable artifact policy

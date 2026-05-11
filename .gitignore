@@ -63,6 +63,10 @@ figures/output/*.svg
 secrets/
 api_keys.yaml
 
+# LongTable runtime state
+.longtable/
+CURRENT.md
+
 # Temporary files
 *.tmp
 *.bak
@@ -94,3 +98,13 @@ ehthumbs.db
 
 # OMC state
 .omc/
+
+# OMX/LongTable local state
+.omx/
+
+# Paper C local/private benchmark artifacts
+data/04_extraction/07_paper_c_harness_benchmark/private/*
+!data/04_extraction/07_paper_c_harness_benchmark/private/README.md
+data/04_extraction/07_paper_c_harness_benchmark/**/raw_outputs/
+data/04_extraction/07_paper_c_harness_benchmark/**/raw_transcripts/
+data/04_extraction/07_paper_c_harness_benchmark/**/rerun_bundles_private/

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HosungYou/jornal_AI-adoption_meta/paper_c/schemas/paper_c_extraction_schema.json",
+  "title": "Paper C Structured Extraction Record",
+  "type": "object",
+  "required": [
+    "study_id",
+    "condition",
+    "prompt_version",
+    "schema_version",
+    "model_identifier",
+    "access_date",
+    "fields"
+  ],
+  "properties": {
+    "study_id": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string",
+      "enum": ["C", "L"]
+    },
+    "prompt_version": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "model_identifier": {
+      "type": "string"
+    },
+    "access_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "source_document_id": {
+      "type": "string"
+    },
+    "rerun_manifest_id": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/extractedField"
+      }
+    }
+  },
+  "$defs": {
+    "extractedField": {
+      "type": "object",
+      "required": [
+        "field_id",
+        "field_family",
+        "value",
+        "uncertainty_flag",
+        "source_span_status"
+      ],
+      "properties": {
+        "field_id": {
+          "type": "string"
+        },
+        "field_family": {
+          "type": "string",
+          "enum": [
+            "bibliographic",
+            "sample",
+            "construct",
+            "measurement",
+            "correlation",
+            "matrix",
+            "moderator",
+            "other"
+          ]
+        },
+        "value": {},
+        "statistic_type": {
+          "type": "string"
+        },
+        "source_span": {
+          "type": "object",
+          "properties": {
+            "page": {
+              "type": ["integer", "null"]
+            },
+            "section": {
+              "type": ["string", "null"]
+            },
+            "table_or_figure": {
+              "type": ["string", "null"]
+            },
+            "quoted_text": {
+              "type": ["string", "null"]
+            }
+          },
+          "additionalProperties": false
+        },
+        "source_span_status": {
+          "type": "string",
+          "enum": ["present", "absent", "not_applicable", "not_found"]
+        },
+        "uncertainty_flag": {
+          "type": "boolean"
+        },
+        "uncertainty_reason": {
+          "type": ["string", "null"]
+        },
+        "schema_validation_note": {
+          "type": ["string", "null"]
+        },
+        "correction_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "reason", "corrected_by"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "corrected_by": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

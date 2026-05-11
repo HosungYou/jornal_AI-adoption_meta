@@ -54,7 +54,8 @@ data/                              # PRISMA 2020 data flow
 │   ├── human_review_queue.csv     #   1,457 records for human review
 │   └── screening_pilot_100.csv    #   Pilot screening sample
 ├── 03_eligibility/                # Step 3: Full-text eligibility (TBD)
-├── 04_extraction/                 # Step 4: Data extraction (TBD)
+├── 04_extraction/                 # Step 4: Data extraction + Paper B/C validation workspaces
+│   └── 07_paper_c_harness_benchmark/ # Paper C H-C-L harness benchmark scaffold
 ├── 05_analysis/                   # Step 5: Pooled matrices + final data (TBD)
 └── templates/                     # Coding templates + archived versions
 
@@ -69,6 +70,7 @@ docs/                              # Documentation (numbered by PRISMA stage)
 
 paper_a/                           # Paper A: MASEM meta-analysis (target TBD)
 paper_b/                           # Paper B: LLM extraction methodology (target TBD)
+paper_c/                           # Paper C: Codex vs Codex+LongTable harness benchmark
 
 analysis/R/                        # 14 MASEM analysis scripts
 analysis/Python/                   # Data cleaning, validation utilities
@@ -108,6 +110,7 @@ tests/                             # Test suite for screening/processing scripts
 | Model specification (4 models) | `docs/04_methodology/model_specification.md` |
 | Preregistration protocol | `supplementary/protocol/preregistration_protocol.md` |
 | Decision log | `docs/06_decisions/decision_log.md` |
+| Paper C harness benchmark specification | `paper_c/RESEARCH_SPECIFICATION.md` |
 | Screening protocol | `docs/02_screening/TIERED_SCREENING_PROTOCOL.md` |
 | Coding manual | `docs/03_data_extraction/coding_manual.md` |
 

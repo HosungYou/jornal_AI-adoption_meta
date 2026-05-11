@@ -24,6 +24,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 | `paper_b/JOURNAL_STRATEGY.md` | Updated RSM strategy to emphasize MASEM-ready extraction and inference stability rather than model ranking |
 | `paper_b/LITERATURE_REVIEW.md` | Updated gap analysis and contribution language to match the new workflow-validation framing |
 
+## [0.4.0] - 2026-05-10
+
+### Overview
+Establishes Paper C as a separate computational evaluation of a stateful LLM
+extraction harness. The study is scoped around a three-way comparison of frozen
+human reference values (`H`), raw Codex outputs (`C`), and Codex + LongTable
+harness outputs (`L`) across the full 213-study Paper B validation corpus, with
+JMIR Metascience and Research Integrity as the primary target journal.
+
+### Added -- Paper C Harness Benchmark
+
+| File | Purpose |
+|------|---------|
+| `paper_c/README.md` | Paper C overview and local structure |
+| `paper_c/RESEARCH_SPECIFICATION.md` | Fixed research direction, corpus, conditions, RQs, and contribution |
+| `paper_c/PROTOCOL.md` | Operational workflow, freeze prerequisite, condition requirements, and data-safety rules |
+| `paper_c/ANALYSIS_PLAN.md` | Accuracy, error-pattern, auditability, and reproducibility analysis plan |
+| `paper_c/MEASUREMENT_PLAN.md` | Metrics for extraction accuracy, source verification, auditability, and reproducibility |
+| `paper_c/JOURNAL_STRATEGY.md` | JMIR Metascience primary target and fallback journal strategy |
+| `paper_c/LITERATURE_REVIEW.md` | Core reference map for LLM extraction, workflow validation, harnessing, provenance, and reporting |
+| `paper_c/schemas/paper_c_extraction_schema.json` | Initial structured extraction schema for Paper C |
+| `paper_c/templates/corpus_manifest_template.csv` | Template for the 213-study benchmark manifest |
+| `paper_c/templates/three_way_comparison_template.csv` | Template for field-level `H-C-L` comparison |
+| `data/04_extraction/07_paper_c_harness_benchmark/` | Paper C benchmark workspace scaffold |
+| `docs/06_decisions/2026-05-10_Paper_C_Harness_Benchmark_Decision.md` | Decision record fixing target journal, corpus, comparison design, and artifact policy |
+| `docs/releases/v0.4.0-paper-c-harness-benchmark.md` | Draft release notes for the Paper C scaffold |
+
+### Changed -- Repository Guardrails
+
+| File | Change |
+|------|--------|
+| `AGENTS.md` | Restored Paper B reference-standard gate and added Paper C harness-benchmark guidance |
+| `.gitignore` | Excludes local LongTable runtime state, `CURRENT.md`, local OMX state, and private Paper C artifacts |
+
 ## [0.3.0] - 2026-03-24
 
 ### Overview
