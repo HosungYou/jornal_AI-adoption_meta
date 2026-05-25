@@ -1,0 +1,646 @@
+{
+  "explicitState": {
+    "field": "education",
+    "careerStage": "doctoral",
+    "experienceLevel": "intermediate",
+    "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
+    "disagreementPreference": "show_on_conflict",
+    "requestedPerspectives": [
+      "reviewer",
+      "methods_critic",
+      "measurement_auditor",
+      "ethics_reviewer",
+      "voice_keeper",
+      "venue_strategist"
+    ]
+  },
+  "workingState": {
+    "currentGoal": "R1-R4 Phase 2 returned coding data를 보존/정리하고, Paper A/B/C의 분석 가능성과 문서화 순서를 source-anchored reference standard 기준으로 구조화한다.",
+    "currentBlocker": "Phase 2 raw/freeze candidates와 disagreement queue는 준비됐지만 source-anchored adjudicated human reference standard가 아직 frozen되지 않았다. S195/S206 duplicate-source issue와 S014/S021/S056/S092/S121/S202 review-source decisions가 남아 있고, Paper C의 최종 model set과 procedure contrast도 고정해야 한다.",
+    "nextAction": "Start source-document adjudication from `phase2_study_review_queue_20260525.csv`, resolve duplicate/source-review studies, then freeze the human reference before writing final LLM or MASEM result claims.",
+    "openQuestions": [
+      "Should S014 indirect PLS-SEM effects through perceived risk be retained, transformed, or excluded from the MASEM-ready reference?",
+      "How should S195/S206 be resolved as duplicate source records with the same DOI/PDF before reference freeze?",
+      "Which versioned models and procedure/harness conditions should Paper C lock before final benchmark runs?"
+    ],
+    "activeModes": [
+      "explore"
+    ],
+    "resumeHint": "I want to continue Phase 2 source adjudication and Paper A/B/C structuring. The unresolved blocker is that the returned R1-R4 data are preserved, but the source-anchored adjudicated human reference standard is not frozen yet."
+  },
+  "inferredHypotheses": [],
+  "openTensions": [
+    "The project has Phase 2 returned raw/freeze-candidate data and disagreement queues, but final Paper A/B/C result claims remain blocked until source-document adjudication and reference freeze are complete.",
+    "Paper C should not rely on a harness-only accuracy claim; model differences and procedure/harness effects need to be separated."
+  ],
+  "decisionLog": [
+    {
+      "id": "decision_mpkj67vj_vl88yc",
+      "timestamp": "2026-05-25T01:31:34.879Z",
+      "checkpointKey": "method_design_commitment",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered 방법론 논문의 우선 역할: Other decision",
+      "selectedOption": "other",
+      "rationale": "방법론 논문의 주된 역할은 AI-assisted review workflow의 한계와 검증 가능성을 보여주는 방법론 사례에 가깝다. 검증 가능성은 인간 raw coding, source-anchored adjudicated human reference standard, AI coding 값을 비교해 확보할 수 있을지 검토 중이다. 특히 수치 기반 extraction과 의미론적/구성개념 판단 task에서 인간과 AI의 강점이 다를 수 있다는 가설이 있다."
+    },
+    {
+      "id": "decision_mpkj9zmf_ok95a2",
+      "timestamp": "2026-05-25T01:34:30.807Z",
+      "checkpointKey": "theory_selection",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered 방법론 논문의 중심 기여: Other decision",
+      "selectedOption": "other",
+      "rationale": "방법론 논문의 중심 기여는 단순한 AI coding 효과성 비교가 아니라, 인간과 AI가 서로 다르게 성공/실패하는 coding task taxonomy 제안이다. 성능 비교는 taxonomy를 검증하거나 예시화하는 evidence layer로 둔다."
+    },
+    {
+      "id": "decision_mpkjd63t_kg92wi",
+      "timestamp": "2026-05-25T01:36:59.176Z",
+      "checkpointKey": "method_design_commitment",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Task taxonomy 구성 방식: Other decision",
+      "selectedOption": "other",
+      "rationale": "Task taxonomy는 실제 human-AI disagreement 패턴에서 귀납적으로 만드는 방향이 더 적절하다. 다만 논문 방어력을 위해 완전한 사후분류가 아니라 언어적/추론적 요구 수준을 sensitizing lens로 두고, disagreement evidence에서 taxonomy를 구성하는 방식이 바람직하다."
+    },
+    {
+      "id": "decision_mpkjeq4n_0abb8v",
+      "timestamp": "2026-05-25T01:38:11.782Z",
+      "checkpointKey": "explore_runtime_guidance",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Taxonomy 분석 단위: Other decision",
+      "selectedOption": "other",
+      "rationale": "귀납적 taxonomy의 기본 분석 단위는 개별 coding field의 disagreement로 둔다. 다만 해석 단계에서 같은 논문 내 맥락을 보조적으로 확인해, field-level disagreement가 단순 독립 항목처럼 과도하게 분리되지 않도록 한다."
+    },
+    {
+      "id": "decision_mpkjpkrv_o3rzzl",
+      "timestamp": "2026-05-25T01:46:38.058Z",
+      "checkpointKey": "analysis_plan",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Disagreement 구조: Other decision",
+      "selectedOption": "other",
+      "rationale": "Field-level disagreement는 AI 오류만 보는 방식이 아니라 다자 disagreement 구조로 분석한다. 인간 raw coder, source-anchored adjudicated human reference standard, AI coding 값을 함께 놓고 각 field에서 인간과 AI가 어떻게 일치/불일치하는지 분류한다."
+    },
+    {
+      "id": "decision_mpkjsy7y_uk72n5",
+      "timestamp": "2026-05-25T01:49:15.453Z",
+      "checkpointKey": "research_question_freeze",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Reference standard의 지위: Other decision",
+      "selectedOption": "other",
+      "rationale": "분석상으로는 source-anchored adjudicated human reference standard를 강한 정답 기준으로 둔다. 다만 manuscript 표현에서는 절대적 truth나 gold standard가 아니라, source evidence에 근거해 adjudicated된 criterion reference로 표현한다."
+    },
+    {
+      "id": "decision_mpkjuf1c_vtgj33",
+      "timestamp": "2026-05-25T01:50:23.903Z",
+      "checkpointKey": "analysis_plan",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Adjudication 기록 수준: Other decision",
+      "selectedOption": "other",
+      "rationale": "Adjudication output은 단일 최종값만 남기는 방식이 아니라, 최종값과 함께 source evidence, disagreement rationale, error type을 남기는 방식으로 한다. 이 기록은 reference standard의 감사 가능성을 높이고, human-AI field-level disagreement taxonomy를 귀납적으로 구성하는 1차 분석 자료가 된다."
+    },
+    {
+      "id": "decision_mpkjxqsa_ep4foa",
+      "timestamp": "2026-05-25T01:52:59.098Z",
+      "checkpointKey": "analysis_plan",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Error type 부여 시점: Other decision",
+      "selectedOption": "other",
+      "rationale": "error type은 adjudication 중에 바로 붙인다. 다만 later analysis에서 error type schema를 검토/정제할 수 있도록 rationale와 source evidence를 함께 보존한다."
+    }
+  ],
+  "invocationLog": [],
+  "questionLog": [
+    {
+      "id": "question_record_mpkj2i67_dqbwxp",
+      "createdAt": "2026-05-25T01:28:41.599Z",
+      "updatedAt": "2026-05-25T01:31:34.879Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkj2i67_30f1sv",
+        "checkpointKey": "method_design_commitment",
+        "title": "방법론 논문의 우선 역할",
+        "question": "방법론 논문을 먼저 쓴다고 할 때, 그 논문의 주된 역할은 메타분석 표본 선택의 정당화인가요, 아니면 AI-assisted review workflow의 한계와 검증 가능성을 보여주는 방법론 사례인가요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise the study design",
+            "description": "Change method, sample, or design before treating it as settled."
+          },
+          {
+            "value": "ethics",
+            "label": "Check participant and ethics implications",
+            "description": "Pause for consent, representation, or trust concerns."
+          },
+          {
+            "value": "evidence",
+            "label": "Check feasibility and evidence first",
+            "description": "Verify that the method can support the intended claims."
+          },
+          {
+            "value": "defer",
+            "label": "Keep method design open",
+            "description": "Do not commit the design yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "Method commitments can silently decide what claims become defensible.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: commitment.",
+          "Trigger confidence: high.",
+          "Original prompt: 방법론 논문과 메타분석 논문의 문서화 순서를 정하기 위한 첫 LongTable 인터뷰 질문. 연구자는 논리적 공격을 덜 받는 자세, AI-assisted screening/extraction의 정당화 범위, excluded cases, 저작권/윤리 disclosure 수준을 고민하고 있다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkj2i67_30f1sv",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "방법론 논문의 주된 역할은 AI-assisted review workflow의 한계와 검증 가능성을 보여주는 방법론 사례에 가깝다. 검증 가능성은 인간 raw coding, source-anchored adjudicated human reference standard, AI coding 값을 비교해 확보할 수 있을지 검토 중이다. 특히 수치 기반 extraction과 의미론적/구성개념 판단 task에서 인간과 AI의 강점이 다를 수 있다는 가설이 있다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkj67vj_vl88yc"
+    },
+    {
+      "id": "question_record_mpkj6vhm_lctdzt",
+      "createdAt": "2026-05-25T01:32:05.481Z",
+      "updatedAt": "2026-05-25T01:34:30.807Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkj6vhm_3xtirq",
+        "checkpointKey": "theory_selection",
+        "title": "방법론 논문의 중심 기여",
+        "question": "이 방법론 논문의 중심 기여를 AI coding의 효과성 비교로 둘까요, 아니면 인간과 AI가 다르게 실패하고 성공하는 coding task taxonomy를 제안하는 것으로 둘까요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise the theory anchor",
+            "description": "Change the conceptual frame before treating it as settled."
+          },
+          {
+            "value": "compare",
+            "label": "Compare candidate theories first",
+            "description": "Keep alternatives visible before choosing one anchor."
+          },
+          {
+            "value": "evidence",
+            "label": "Check construct fit first",
+            "description": "Verify that the theory supports the constructs and claims."
+          },
+          {
+            "value": "defer",
+            "label": "Keep theory selection open",
+            "description": "Do not commit to a theory anchor yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "Theory and construct choices constrain the rest of the study.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: commitment.",
+          "Trigger confidence: high.",
+          "Original prompt: 연구자는 방법론 논문을 AI-assisted review workflow의 한계와 검증 가능성을 보여주는 사례로 보고 있다. 인간 raw coding, source-anchored adjudicated human reference standard, AI coding 값을 비교할 계획이며, 수치 기반 extraction과 의미론적/구성개념 coding에서 인간과 AI의 강점이 다를 수 있다는 가설을 제시했다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkj6vhm_3xtirq",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "방법론 논문의 중심 기여는 단순한 AI coding 효과성 비교가 아니라, 인간과 AI가 서로 다르게 성공/실패하는 coding task taxonomy 제안이다. 성능 비교는 taxonomy를 검증하거나 예시화하는 evidence layer로 둔다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkj9zmf_ok95a2"
+    },
+    {
+      "id": "question_record_mpkja50r_sntzys",
+      "createdAt": "2026-05-25T01:34:37.803Z",
+      "updatedAt": "2026-05-25T01:36:59.176Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkja50r_gfe9y9",
+        "checkpointKey": "method_design_commitment",
+        "title": "Task taxonomy 구성 방식",
+        "question": "이 task taxonomy를 먼저 언어적/추론적 요구 수준에 따라 사전 정의하고 human-AI disagreement로 검증할까요, 아니면 실제 human-AI disagreement 패턴에서 귀납적으로 taxonomy를 만들까요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise the study design",
+            "description": "Change method, sample, or design before treating it as settled."
+          },
+          {
+            "value": "ethics",
+            "label": "Check participant and ethics implications",
+            "description": "Pause for consent, representation, or trust concerns."
+          },
+          {
+            "value": "evidence",
+            "label": "Check feasibility and evidence first",
+            "description": "Verify that the method can support the intended claims."
+          },
+          {
+            "value": "defer",
+            "label": "Keep method design open",
+            "description": "Do not commit the design yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "Method commitments can silently decide what claims become defensible.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: commitment.",
+          "Trigger confidence: high.",
+          "Original prompt: 연구자는 방법론 논문의 중심 기여를 인간과 AI가 서로 다르게 성공/실패하는 coding task taxonomy 제안으로 정했다. 성능 비교는 taxonomy를 검증하거나 예시화하는 evidence layer로 둔다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkja50r_gfe9y9",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "Task taxonomy는 실제 human-AI disagreement 패턴에서 귀납적으로 만드는 방향이 더 적절하다. 다만 논문 방어력을 위해 완전한 사후분류가 아니라 언어적/추론적 요구 수준을 sensitizing lens로 두고, disagreement evidence에서 taxonomy를 구성하는 방식이 바람직하다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkjd63t_kg92wi"
+    },
+    {
+      "id": "question_record_mpkjdc9m_eufiu6",
+      "createdAt": "2026-05-25T01:37:07.161Z",
+      "updatedAt": "2026-05-25T01:38:11.782Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkjdc9m_nki702",
+        "checkpointKey": "explore_runtime_guidance",
+        "title": "Taxonomy 분석 단위",
+        "question": "귀납적 taxonomy를 만들 때 기본 분석 단위는 개별 coding field의 disagreement인가요, 아니면 한 논문 안에서 발생한 disagreement episode인가요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "surface_tensions",
+            "label": "Surface tensions first",
+            "description": "Ask what is unresolved before narrowing the project."
+          },
+          {
+            "value": "narrow_scope",
+            "label": "Narrow the research scope",
+            "description": "Move toward a smaller question while keeping the choice visible."
+          },
+          {
+            "value": "gather_context",
+            "label": "Gather context before narrowing",
+            "description": "Check materials, constraints, or evidence before choosing a direction."
+          },
+          {
+            "value": "defer",
+            "label": "Keep exploration open",
+            "description": "Do not collapse the problem space yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "No strong checkpoint cue was detected; use runtime guidance without forcing closure.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: exploration.",
+          "Trigger confidence: low.",
+          "Original prompt: 연구자는 task taxonomy를 실제 human-AI disagreement 패턴에서 귀납적으로 만들기로 했다. 단, 언어적/추론적 요구 수준은 sensitizing lens로 둔다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkjdc9m_nki702",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "귀납적 taxonomy의 기본 분석 단위는 개별 coding field의 disagreement로 둔다. 다만 해석 단계에서 같은 논문 내 맥락을 보조적으로 확인해, field-level disagreement가 단순 독립 항목처럼 과도하게 분리되지 않도록 한다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkjeq4n_0abb8v"
+    },
+    {
+      "id": "question_record_mpkjpgy4_rjv0bp",
+      "createdAt": "2026-05-25T01:46:33.099Z",
+      "updatedAt": "2026-05-25T01:46:38.058Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkjpgy4_n7726t",
+        "checkpointKey": "analysis_plan",
+        "title": "Disagreement 구조",
+        "question": "Field-level disagreement를 분류할 때 AI가 틀린 경우만 볼까요, 아니면 인간 raw coder도 틀리고 AI도 틀릴 수 있는 다자 disagreement 구조로 볼까요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise the analysis plan",
+            "description": "Change model, coding, or inference strategy before committing."
+          },
+          {
+            "value": "assumptions",
+            "label": "Check assumptions first",
+            "description": "Inspect data, model assumptions, or coding validity before closure."
+          },
+          {
+            "value": "evidence",
+            "label": "Verify analysis fit",
+            "description": "Confirm the analysis can answer the research question."
+          },
+          {
+            "value": "defer",
+            "label": "Keep analysis open",
+            "description": "Do not commit the analysis plan yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "Analysis choices affect inference and should remain inspectable.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: commitment.",
+          "Trigger confidence: high.",
+          "Original prompt: 연구자는 field-level disagreement를 분석 단위로 두고, human-AI task taxonomy를 귀납적으로 구성하려 한다. 다음 결정은 AI 오류만 분석할지, 인간 raw coder와 AI coder가 모두 틀릴 수 있는 다자 disagreement 구조로 분석할지이다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkjpgy4_n7726t",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "Field-level disagreement는 AI 오류만 보는 방식이 아니라 다자 disagreement 구조로 분석한다. 인간 raw coder, source-anchored adjudicated human reference standard, AI coding 값을 함께 놓고 각 field에서 인간과 AI가 어떻게 일치/불일치하는지 분류한다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkjpkrv_o3rzzl"
+    },
+    {
+      "id": "question_record_mpkjst33_xcv6lk",
+      "createdAt": "2026-05-25T01:49:08.798Z",
+      "updatedAt": "2026-05-25T01:49:15.453Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkjst33_a8phz0",
+        "checkpointKey": "research_question_freeze",
+        "title": "Reference standard의 지위",
+        "question": "source-anchored adjudicated human reference standard를 분석상 정답 기준으로 강하게 둘까요, 아니면 가장 방어 가능한 기준이지만 여전히 해석적 판단으로 표현할까요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise the research question",
+            "description": "Change the framing before treating the question as settled."
+          },
+          {
+            "value": "scope",
+            "label": "Choose the scope boundary",
+            "description": "Commit only the boundary, not the full study design."
+          },
+          {
+            "value": "evidence",
+            "label": "Gather support before freezing",
+            "description": "Check literature, feasibility, or data fit before locking the question."
+          },
+          {
+            "value": "defer",
+            "label": "Keep the question open",
+            "description": "Do not freeze the research question yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "Freezing the research question converts ambiguity into a human commitment.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: commitment.",
+          "Trigger confidence: high.",
+          "Original prompt: 연구자는 다자 disagreement 구조에서 source-anchored adjudicated human reference standard를 정답 기준으로 강하게 둘 필요가 있다고 판단한다. 이 결정은 AI/human coding 비교의 criterion을 어떻게 표현할지에 관한 것이다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkjst33_a8phz0",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "분석상으로는 source-anchored adjudicated human reference standard를 강한 정답 기준으로 둔다. 다만 manuscript 표현에서는 절대적 truth나 gold standard가 아니라, source evidence에 근거해 adjudicated된 criterion reference로 표현한다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkjsy7y_uk72n5"
+    },
+    {
+      "id": "question_record_mpkjua87_5lnom2",
+      "createdAt": "2026-05-25T01:50:17.670Z",
+      "updatedAt": "2026-05-25T01:50:23.903Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkjua87_62mu8v",
+        "checkpointKey": "analysis_plan",
+        "title": "Adjudication 기록 수준",
+        "question": "Adjudication은 원문 source evidence를 직접 확인한 후 단일 최종값을 선택하는 방식인가요, 아니면 최종값과 함께 disagreement rationale/error type까지 남기는 방식인가요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise the analysis plan",
+            "description": "Change model, coding, or inference strategy before committing."
+          },
+          {
+            "value": "assumptions",
+            "label": "Check assumptions first",
+            "description": "Inspect data, model assumptions, or coding validity before closure."
+          },
+          {
+            "value": "evidence",
+            "label": "Verify analysis fit",
+            "description": "Confirm the analysis can answer the research question."
+          },
+          {
+            "value": "defer",
+            "label": "Keep analysis open",
+            "description": "Do not commit the analysis plan yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "Analysis choices affect inference and should remain inspectable.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: commitment.",
+          "Trigger confidence: high.",
+          "Original prompt: 연구자는 source-anchored adjudicated human reference standard를 분석상 강한 criterion reference로 두되, manuscript에서는 절대적 truth나 gold standard가 아니라 source evidence에 근거한 adjudicated criterion으로 표현하기로 했다. 다음 결정은 adjudication output을 단일 최종값으로 둘지, disagreement rationale/error type까지 포함할지이다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkjua87_62mu8v",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "Adjudication output은 단일 최종값만 남기는 방식이 아니라, 최종값과 함께 source evidence, disagreement rationale, error type을 남기는 방식으로 한다. 이 기록은 reference standard의 감사 가능성을 높이고, human-AI field-level disagreement taxonomy를 귀납적으로 구성하는 1차 분석 자료가 된다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkjuf1c_vtgj33"
+    },
+    {
+      "id": "question_record_mpkjxmr8_8gz0km",
+      "createdAt": "2026-05-25T01:52:53.875Z",
+      "updatedAt": "2026-05-25T01:52:59.098Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mpkjxmr8_ftiqev",
+        "checkpointKey": "analysis_plan",
+        "title": "Error type 부여 시점",
+        "question": "error type은 adjudication 중에 바로 붙일까요, 아니면 adjudication이 끝난 뒤 별도 second-pass qualitative coding으로 귀납적으로 만들까요?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise the analysis plan",
+            "description": "Change model, coding, or inference strategy before committing."
+          },
+          {
+            "value": "assumptions",
+            "label": "Check assumptions first",
+            "description": "Inspect data, model assumptions, or coding validity before closure."
+          },
+          {
+            "value": "evidence",
+            "label": "Verify analysis fit",
+            "description": "Confirm the analysis can answer the research question."
+          },
+          {
+            "value": "defer",
+            "label": "Keep analysis open",
+            "description": "Do not commit the analysis plan yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "rationale": [
+          "Analysis choices affect inference and should remain inspectable.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: commitment.",
+          "Trigger confidence: high.",
+          "Original prompt: 연구자는 adjudication output에 최종값, source evidence, disagreement rationale, error type을 남기기로 했다. 다음 결정은 error type을 adjudication 중에 바로 붙일지, adjudication 이후 second-pass qualitative coding으로 만들지이다."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpkjxmr8_ftiqev",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "Other decision"
+        ],
+        "rationale": "error type은 adjudication 중에 바로 붙인다. 다만 later analysis에서 error type schema를 검토/정제할 수 있도록 rationale와 source evidence를 함께 보존한다.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpkjxqsa_ep4foa"
+    }
+  ],
+  "artifactRecords": [],
+  "narrativeTraces": [
+    {
+      "id": "project-session-goal",
+      "timestamp": "2026-05-25T01:28:29.288Z",
+      "source": "longtable-start",
+      "traceType": "judgment",
+      "summary": "Current session goal: 방법론 논문과 메타분석 논문의 문서화 순서, 상호 인용관계, AI-assisted screening/extraction의 방어 가능한 역할을 정리한다..",
+      "visibility": "explicit",
+      "importance": "high"
+    },
+    {
+      "id": "project-session-blocker",
+      "timestamp": "2026-05-25T01:28:29.288Z",
+      "source": "longtable-start",
+      "traceType": "tension",
+      "summary": "Current session blocker: 메타분석 표본 선정과 방법론 논문의 검증 주장이 서로를 취약하게 만들 수 있고, AI 활용 윤리와 비공개 full-text 사용 disclosure 수준이 아직 결정되지 않았다..",
+      "visibility": "explicit",
+      "importance": "high"
+    }
+  ]
+}
