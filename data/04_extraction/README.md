@@ -9,7 +9,7 @@ numbered folders below.
 |---:|---|---|---|
 | 0 | `00_protocol/` | Coding manual, PDF tracker, calibration files, generation scripts | Active |
 | 1 | `01_raw_human_coder_data_freeze/` | Raw independent human coder workbooks and freeze candidates | Phase 1 complete; Phase 2 returned raw workbooks and freeze candidates preserved |
-| 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists; Phase 2 derived queue generated |
+| 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists; Phase 2 queue and combined Phase 1+2 queues generated |
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 and Phase 2 adjudication in progress |
 | 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Not frozen |
 | 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Not started |
@@ -27,6 +27,8 @@ not frozen.
 - Step 1 is complete for Phase 2 returned raw workbooks and separate freeze
   candidates.
 - Step 2 has a Phase 2 derived pre-adjudication disagreement queue.
+- Step 2 also has combined Phase 1+2 derived pre-adjudication queues for the
+  full 213-study Paper B validation corpus.
 - Step 3 has started through documented source-check decisions.
 - Step 4 is not complete because no frozen adjudicated reference file exists.
 - Step 5 must not start until Step 4 is frozen.
@@ -35,6 +37,8 @@ For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved
 separately from freeze candidates so that structural repairs, status
 normalization, and source-check notes do not overwrite original coder returns.
+Phase 0 calibration rows and historical `Phase 2: Single` rows in the Phase 1
+workbooks are excluded from the combined analysis.
 
 ## Active Files
 
@@ -52,6 +56,12 @@ normalization, and source-check notes do not overwrite original coder returns.
   `01_raw_human_coder_data_freeze/phase2/RETURN_MANIFEST_20260525.md`
 - Phase 2 pre-adjudication disagreement queue:
   `02_pre_adjudication_disagreement/phase2/derived/phase2_pairwise_disagreement_long_20260525.csv`
+- Combined Phase 1+2 pre-adjudication meeting queue:
+  `02_pre_adjudication_disagreement/combined/derived/combined_correlation_review_queue_20260525.csv`
+- Combined Phase 1+2 all-coding long table:
+  `02_pre_adjudication_disagreement/combined/derived/combined_coder_values_long_20260525.csv`
+- Combined Phase 1+2 disagreement summary:
+  `02_pre_adjudication_disagreement/combined/derived/combined_pairwise_disagreement_summary_20260525.csv`
 - Phase 2 PDF source-check report:
   `03_source_document_adjudication/phase2/phase2_exclusion_source_check_20260525.md`
 - Active R4 raw workbook:

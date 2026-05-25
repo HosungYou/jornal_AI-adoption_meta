@@ -1,0 +1,9 @@
+phase_block,pair,coder,workbook,assigned_studies,nonempty_studies,metadata_values,correlation_values,exclusion_log_ids_in_assignment
+phase1,Pair A,R1,data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R1/AI_Adoption_MASEM_Coding_v3_R1.xlsx,50,50,875,482,6
+phase1,Pair A,R2,data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R2/AI_Adoption_MASEM_Coding_v3_R2.xlsx,50,50,740,450,1
+phase1,Pair B,R3,data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R3/AI_Adoption_MASEM_Coding_v3_R3.xlsx,50,50,610,338,0
+phase1,Pair B,R4,data/04_extraction/01_raw_human_coder_data_freeze/phase1/coder_packages/R4/AI_Adoption_MASEM_Coding_v3_R4.xlsx,50,50,875,478,3
+phase2,Pair C,R1,data/04_extraction/01_raw_human_coder_data_freeze/phase2/freeze_candidates/R1/AI_Adoption_MASEM_Coding_v3_R1_Phase0_1_2_freeze_candidate_20260525.xlsx,57,57,1209,517,4
+phase2,Pair C,R4,data/04_extraction/01_raw_human_coder_data_freeze/phase2/freeze_candidates/R4/AI_Adoption_MASEM_Coding_v3_R4_Phase0_1_2_freeze_candidate_20260525.xlsx,57,57,1173,517,4
+phase2,Pair D,R2,data/04_extraction/01_raw_human_coder_data_freeze/phase2/freeze_candidates/R2/AI_Adoption_MASEM_Coding_v3_R2_Phase0_1_2_freeze_candidate_20260525.xlsx,56,56,904,466,4
+phase2,Pair D,R3,data/04_extraction/01_raw_human_coder_data_freeze/phase2/freeze_candidates/R3/AI_Adoption_MASEM_Coding_v3_R3_Phase0_1_2_latest_consensus_freeze_candidate_20260525.xlsx,56,56,725,428,4

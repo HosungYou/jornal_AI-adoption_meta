@@ -1,0 +1,13 @@
+phase_block,pair,field_family,mismatch_type,n
+phase1,Pair A,correlation,numeric_or_source_diff,373
+phase1,Pair A,correlation,one_coder_only,170
+phase1,Pair A,metadata,metadata_diff,429
+phase1,Pair B,correlation,numeric_or_source_diff,97
+phase1,Pair B,correlation,one_coder_only,276
+phase1,Pair B,metadata,metadata_diff,334
+phase2,Pair C,correlation,numeric_or_source_diff,193
+phase2,Pair C,correlation,one_coder_only,64
+phase2,Pair C,metadata,metadata_diff,463
+phase2,Pair D,correlation,numeric_or_source_diff,71
+phase2,Pair D,correlation,one_coder_only,120
+phase2,Pair D,metadata,metadata_diff,359

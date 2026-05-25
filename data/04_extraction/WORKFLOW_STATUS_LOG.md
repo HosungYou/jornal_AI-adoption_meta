@@ -5,9 +5,10 @@
 **Date:** 2026-05-25
 
 **Current stage:** Step 1 is complete for Phase 2 returned coder workbooks, and
-Step 2 has a generated Phase 2 pre-adjudication disagreement queue. Step 3 is
-active for both Phase 1 and Phase 2 source-document adjudication. The
-source-anchored adjudicated human reference standard has not been frozen.
+Step 2 has generated Phase 2 and combined Phase 1+2 pre-adjudication
+disagreement queues. Step 3 is active for both Phase 1 and Phase 2
+source-document adjudication. The source-anchored adjudicated human reference
+standard has not been frozen.
 
 **Do not start Step 5** LLM comparison or MASEM substitution as a current result
 until Step 4 has a frozen reference file.
@@ -17,7 +18,7 @@ until Step 4 has a frozen reference file.
 | Step | Name | Entry criterion | Exit criterion | Status |
 |---:|---|---|---|---|
 | 1 | Raw human coder data freeze | Independent coder workbooks are submitted and preserved | Raw files are read-only; no consensus overwrites | Phase 1 complete; Phase 2 returned raw workbooks and freeze candidates preserved |
-| 2 | Pre-adjudication human-human disagreement analysis | Raw coder data are frozen | Pairwise differences summarized by field, study, pair, and numeric tolerance | Phase 1 workbook exists; Phase 2 derived queue generated from freeze candidates |
+| 2 | Pre-adjudication human-human disagreement analysis | Raw coder data are frozen | Pairwise differences summarized by field, study, pair, and numeric tolerance | Phase 1 workbook exists; Phase 2 and combined Phase 1+2 derived queues generated from freeze candidates/raw packages |
 | 3 | Source-document adjudication | Pairwise differences are available | Every discrepancy has a source-anchored decision and rationale | Phase 1 and Phase 2 in progress |
 | 4 | Reference standard freeze | Adjudication is complete | Frozen reference file and freeze log are committed | Not started |
 | 5 | LLM comparison + MASEM substitution | Reference standard is frozen | LLM accuracy, triage, and substitution outputs are generated | Not started |
@@ -37,6 +38,7 @@ until Step 4 has a frozen reference file.
 | 2026-05-06 | Step 1 | Phase 2 R1 Pair C 17-study working coding batch documented; `S136` HM exclusion correction recorded | `06 coding by date/2026-05-06/README.md`; `06 coding by date/2026-05-06/r1_pairc_17_study_coding_notes.md` | Preserve the local workbook outside Git unless approved for raw freeze; compare against R4 when Pair C returns are available |
 | 2026-05-25 | Step 1 | Phase 2 R1-R4 returned workbooks preserved as raw returns and separate freeze candidates | `01_raw_human_coder_data_freeze/phase2/RETURN_MANIFEST_20260525.md` | Continue source-document adjudication from freeze candidates; do not edit raw returns |
 | 2026-05-25 | Step 2 | Phase 2 pairwise disagreement queue generated from freeze-candidate workbooks | `02_pre_adjudication_disagreement/phase2/derived/phase2_pairwise_disagreement_summary_20260525.csv` | Triage one-coder-only rows, numeric/source differences, and status mismatches before reference freeze |
+| 2026-05-25 | Step 2 | Combined Phase 1+2 pairwise disagreement queues generated for the full 213-study Paper B validation corpus | `02_pre_adjudication_disagreement/combined/derived/combined_pairwise_disagreement_summary_20260525.csv` | Use the combined correlation/status queue for meeting-first review and the all-study queue for full audit coverage |
 | 2026-05-25 | Step 3 | Phase 2 PDF source checks recorded for confirmed exclusions and review-required candidates | `03_source_document_adjudication/phase2/phase2_exclusion_source_check_20260525.md` | Resolve review-source studies and duplicate-source issue before freezing the reference |
 
 ## Coding Decisions Already Reflected

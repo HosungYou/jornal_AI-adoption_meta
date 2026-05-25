@@ -6,9 +6,11 @@ Date: 2026-05-25
 
 Phase 2 R1-R4 returned coder workbooks are now preserved as raw returns and
 separate freeze candidates. The project can begin Phase 2 pre-adjudication
-disagreement analysis and source-document adjudication, but final Paper A, Paper
-B, and Paper C result claims must wait until the source-anchored adjudicated
-human reference standard is frozen.
+disagreement analysis and source-document adjudication. Phase 1 and Phase 2 are
+also now combined into full-corpus pre-adjudication outputs for the 213-study
+Paper B validation corpus. Final Paper A, Paper B, and Paper C result claims
+must wait until the source-anchored adjudicated human reference standard is
+frozen.
 
 ## Files Accepted for Phase 2 Freeze Candidates
 
@@ -30,6 +32,26 @@ human reference standard is frozen.
 - R3's original `CORRELATIONS` sheet is retained as
   `CORRELATIONS_original_return`.
 - R3's duplicate column-G `original_beta` header is restored to `p_value`.
+
+## Combined Phase 1+2 Outputs
+
+The current pre-adjudication review basis is the full coding corpus:
+
+| Component | Studies | Coder pairs |
+|---|---:|---|
+| Phase 1 | 100 | Pair A R1+R2; Pair B R3+R4 |
+| Phase 2 | 113 | Pair C R1+R4; Pair D R2+R3 |
+| Combined validation corpus | 213 | Four independent pair blocks |
+
+The combined outputs are stored under
+`data/04_extraction/02_pre_adjudication_disagreement/combined/`.
+For meeting review, start with
+`derived/combined_correlation_review_queue_20260525.csv` because it filters to
+correlation, status, exclusion, and source-review issues. Use
+`derived/combined_study_review_queue_20260525.csv` when metadata-only
+differences also need to be audited. Use
+`derived/combined_coder_values_long_20260525.csv` as the all-value long table
+for reproducible analysis.
 
 ## Source-Check Decisions
 
@@ -64,9 +86,10 @@ coding workflow, and planned MASEM strategy. Final MASEM results should not be
 written until the adjudicated reference data are frozen.
 
 Paper B is now draftable as a methodology paper centered on task-contingent
-field-level coding taxonomy. The strongest current contribution is the structure
-of human-human disagreement and source-adjudicated error taxonomy. LLM validity
-and downstream substitution results remain pending.
+field-level coding taxonomy across Phase 1 and Phase 2, not Phase 2 alone. The
+strongest current contribution is the full-corpus structure of human-human
+disagreement and source-adjudicated error taxonomy. LLM validity and downstream
+substitution results remain pending.
 
 Paper C is draftable as a protocol/scaffold and can be integrated with Paper B
 only if its empirical claim is separated: Paper B evaluates the extraction task

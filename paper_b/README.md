@@ -64,6 +64,14 @@ coding taxonomy** 방법론 논문으로 더 강하게 포지셔닝한다. 핵�
 여전히 source-anchored adjudicated human reference standard가 frozen된 뒤에만
 해석 가능하다.
 
+Phase 1+2 전체 코딩값을 대상으로 한 pre-adjudication 산출물은
+`data/04_extraction/02_pre_adjudication_disagreement/combined/`에 있다. 이
+산출물은 Phase 1 Pair A/B 100편과 Phase 2 Pair C/D 113편을 합친 213편
+기준이며, Phase 0 calibration row와 Phase 1 workbook 내부의 historical
+`Phase 2: Single` row는 제외한다. 미팅용 1차 검토 파일은
+`combined_correlation_review_queue_20260525.csv`이고, 전체 값 재현성 확인은
+`combined_coder_values_long_20260525.csv`를 사용한다.
+
 ## Paper A와의 관계
 
 - **Paper A** (parent meta-analysis): AI Adoption in Education MASEM (Computers & Education 타겟)
