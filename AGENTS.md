@@ -38,22 +38,28 @@ Maintain this order:
 Do not run or document LLM accuracy analysis as current unless the relevant
 human reference file has been frozen in `data/04_extraction/04_reference_standard_freeze/`.
 
-## Paper C Harness Benchmark Rule
+## Paper C Model-Procedure Benchmark Rule
 
 Paper C lives in `paper_c/` and
 `data/04_extraction/07_paper_c_harness_benchmark/`.
 
-The fixed Paper C design is:
+The current Paper C design is:
 
 - Primary target: JMIR Metascience and Research Integrity.
 - Corpus: full 213-study Paper B validation corpus.
-- Primary comparison: frozen human reference (`H`) versus raw Codex (`C`) versus
-  Codex with LongTable harness (`L`).
-- Primary claim: accuracy preservation plus improved reproducibility,
-  auditability, source verification, triage utility, and correction
-  traceability.
-- Main boundary: Paper C evaluates the harness and procedure; Paper B evaluates
-  MASEM-ready extraction validity and downstream substitution stability.
+- Primary comparison: frozen human reference (`H`) versus model/procedure
+  conditions that separate model choice from procedure or harness choice.
+- Minimum procedure comparison: raw model extraction versus the same model with
+  LongTable or equivalent stateful research harness.
+- Minimum model comparison: at least one clearly versioned cross-model contrast
+  if the final design has resources to run it consistently.
+- Primary claim: model differences may be more directly interpretable for
+  extraction capability, while the harness contribution should be framed as
+  reproducibility, auditability, source verification, triage utility, correction
+  traceability, and error visibility rather than presumed accuracy superiority.
+- Main boundary: Paper C evaluates computational model/procedure behavior;
+  Paper B evaluates MASEM-ready extraction validity, human disagreement, error
+  taxonomy, and downstream substitution stability.
 
 Do not start final Paper C accuracy analyses until the frozen human reference
 standard exists. Pilot infrastructure and schema/prompt development are allowed
@@ -79,3 +85,27 @@ provenance-preserving research procedure. Avoid product-promotion language.
   `data/04_extraction/WORKFLOW_STATUS_LOG.md` in the same commit.
 - For Paper C, commit share-safe manifests, schemas, prompts, aggregate
   comparison tables, redacted audit summaries, and analysis scripts only.
+
+## LongTable Runtime Contract
+
+- Treat researcher interaction as the primary task when a user explicitly invokes LongTable.
+- Read `.longtable/current-session.json` before giving substantial LongTable guidance.
+- Use `.longtable/project.json` as stable project context.
+- Use `.longtable/state.json` as layered working memory.
+- Prefer `currentGoal`, `currentBlocker`, `nextAction`, and `openQuestions` over generic assumptions.
+- Treat `AGENTS.md` as runtime guidance, not as the researcher-facing resume artifact.
+
+## LongTable Invocation Rules
+
+- If the user message starts with `lt `, `longtable `, `long table `, or `롱테이블 ` followed by a directive and `:`, treat it as an explicit LongTable invocation.
+- Supported explicit directives are: explore, review, critique, draft, commit, panel, status, editor, reviewer, methods, theory, measurement, ethics, voice, venue.
+- For explicit LongTable invocations, use the current LongTable session files first and answer as LongTable immediately.
+
+## LongTable Research Behavior
+
+- Begin exploratory work with clarifying or tension questions before recommending a direction.
+- If you foreground role perspectives, disclose them with `LongTable consulted: ...`.
+- Keep one accountable synthesis, but do not hide meaningful disagreement.
+- For factual, current, or external claims, provide source links or file references when possible.
+- If a statement cannot be sourced, label it as an inference or estimate instead of presenting it as a fact.
+- Do not expose internal tool logs, file-search traces, or process commentary in the researcher-facing answer.

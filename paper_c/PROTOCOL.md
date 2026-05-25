@@ -1,4 +1,4 @@
-# Protocol: Paper C Harness Benchmark
+# Protocol: Paper C Model-by-Procedure Benchmark
 
 ## Prerequisite
 
@@ -12,33 +12,35 @@ schema validation, prompt drafting, and clearly labeled pilot runs.
 
 1. Create the 213-study corpus manifest.
 2. Link each study to the frozen human reference record.
-3. Run raw Codex extraction (`C`) with the prespecified prompt and schema.
-4. Run Codex + LongTable extraction (`L`) with the same extraction schema plus
-   harness artifacts.
-5. Validate both outputs against the schema.
-6. Build a three-way `H-C-L` comparison table.
-7. Classify agreement patterns and error types.
-8. Score auditability, reproducibility, and correction recoverability.
-9. Prepare a share-safe analysis package.
+3. Select versioned model conditions and lock comparable prompts/settings.
+4. Run raw extraction conditions with the prespecified prompt and schema.
+5. Run stateful procedure or harness conditions with the same extraction schema
+   plus procedure artifacts.
+6. Validate all outputs against the schema.
+7. Build a model-by-procedure comparison table against `H`.
+8. Classify agreement patterns and error types.
+9. Score auditability, reproducibility, and correction recoverability.
+10. Prepare a share-safe analysis package.
 
 ## Condition Requirements
 
-### Raw Codex (`C`)
+### Raw Model Condition
 
-Raw Codex is the baseline. It must preserve enough metadata for a fair
+Each raw model condition is a baseline. It must preserve enough metadata for a fair
 comparison:
 
 - PDF or source document identifier.
 - Prompt version.
 - Extraction schema version.
 - Model identifier and access date.
+- Interface or API route.
 - Runtime settings if exposed.
 - Output JSON or table.
 - Parse/schema validation result.
 
-### Codex + LongTable (`L`)
+### Stateful Procedure or Harness Condition
 
-The LongTable condition must include all raw Codex requirements plus:
+The stateful procedure condition must include all raw model requirements plus:
 
 - Source spans for extracted values where applicable.
 - Field-level uncertainty flags.
@@ -71,8 +73,9 @@ process.
 
 Paper C may reuse the same 213-study corpus but must not duplicate Paper B's
 main inferential claim about MASEM downstream substitution stability. Paper C's
-main outcomes are computational and procedural: accuracy preservation, error
-visibility, auditability, source verification, and reproducibility.
+main outcomes are computational and procedural: model differences, procedure
+effects, error visibility, auditability, source verification, and
+reproducibility.
 
 ## Share-Safe Artifacts
 

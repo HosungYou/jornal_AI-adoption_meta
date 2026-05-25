@@ -38,6 +38,32 @@ Current workload from the package generator:
 | Pair C | R1 + R4 | 57 | +7 |
 | Pair D | R2 + R3 | 56 | +6 |
 
+## 2026-05-25 재포지셔닝
+
+Paper B는 단순한 "AI 정확도 비교"보다 **task-contingent field-level
+coding taxonomy** 방법론 논문으로 더 강하게 포지셔닝한다. 핵심 논리는
+다음 순서다.
+
+1. MASEM-ready extraction은 bibliographic fields, sample fields, construct
+   mapping, statistic-type classification, correlation/path recovery, moderator
+   coding이 서로 다른 난이도와 오류 비용을 갖는 복합 작업이다.
+2. R1-R4의 pre-adjudication human-human disagreement는 어떤 필드가
+   본질적으로 애매하고 어떤 필드가 routine extraction인지 보여주는
+   측정 자료다.
+3. LLM 평가는 이 disagreement 구조 위에서 해석해야 한다. 즉, "LLM이
+   전체적으로 몇 퍼센트 맞았는가"보다 "어떤 task family에서 인간도
+   불일치하고, 어떤 task family에서 LLM 오류가 downstream MASEM 결론을
+   흔드는가"가 중심이다.
+
+현재 Phase 2 R1-R4 returned raw workbooks는
+`data/04_extraction/01_raw_human_coder_data_freeze/phase2/returned_raw/`에
+보존되었고, source-check/status normalization이 반영된 freeze candidates는
+`data/04_extraction/01_raw_human_coder_data_freeze/phase2/freeze_candidates/`에
+분리되어 있다. R3는 최신 작업 결과로 `(합의) CORRELATIONS`가 승격되었고,
+중복 `original_beta` header는 `p_value`로 복구되었다. 최종 결과 분석은
+여전히 source-anchored adjudicated human reference standard가 frozen된 뒤에만
+해석 가능하다.
+
 ## Paper A와의 관계
 
 - **Paper A** (parent meta-analysis): AI Adoption in Education MASEM (Computers & Education 타겟)
@@ -117,9 +143,10 @@ paper_b/
 
 ## 핵심 RQ
 
-1. **RQ1**: Prespecified LLM workflow는 adjudicated human reference standard 대비 MASEM-ready extraction을 얼마나 정확하게 수행하는가?
-2. **RQ2**: Extraction family, construct ambiguity, reporting quality에 따라 systematic error가 어떻게 달라지는가?
-3. **RQ3**: LLM-assisted inputs로 대체했을 때 pooled correlations, structural paths, indirect effects의 substantive interpretation이 유지되는가?
+1. **RQ0**: Independent human coders disagree on which MASEM-ready extraction tasks, and what does that reveal about task difficulty before adjudication?
+2. **RQ1**: Prespecified LLM workflow는 source-anchored adjudicated human reference standard 대비 field family별로 얼마나 정확하게 수행되는가?
+3. **RQ2**: Human-human disagreement, LLM-human disagreement, construct ambiguity, and reporting quality가 어떤 systematic error taxonomy를 형성하는가?
+4. **RQ3**: LLM-assisted inputs로 대체했을 때 pooled correlations, structural paths, indirect effects의 substantive interpretation이 유지되는가?
 
 ## IRR 설계
 

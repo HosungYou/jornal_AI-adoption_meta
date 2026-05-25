@@ -11,23 +11,26 @@ important structure.
 
 | Comparison | Purpose |
 |---|---|
-| `C` vs `H` | Baseline raw Codex accuracy and error profile |
-| `L` vs `H` | LongTable-mediated Codex accuracy and error profile |
-| `C` vs `L` | Harness effect on values, source evidence, uncertainty flags, and reproducibility |
-| `H-C-L` pattern | Field-level diagnostic classification |
+| `M1-R` vs `H` | Baseline accuracy and error profile for model 1 |
+| `M2-R` vs `H` | Baseline accuracy and error profile for model 2 |
+| `M1-R` vs `M1-P` | Same-model procedure or harness effect |
+| `M2-R` vs `M2-P` | Optional same-model procedure effect for model 2 |
+| Raw model contrast | Model-choice effect under comparable raw extraction conditions |
+| Procedure contrast | Procedure-choice effect on values, source evidence, uncertainty flags, and reproducibility |
+| Model-by-procedure pattern | Field-level diagnostic classification |
 
 ## Agreement Patterns
 
 | Pattern | Interpretation |
 |---|---|
-| `H = C = L` | Stable/easy field |
-| `H = L != C` | Candidate harness-corrected Codex error |
-| `H = C != L` | Candidate harness-induced error |
-| `C = L != H` | Systematic model error not resolved by harness |
-| `H != C != L` | High-ambiguity field requiring source re-review |
-| `L` has source span and `C` does not | Verifiability gain independent of value agreement |
-| `L` uncertainty flag and `L != H` | Useful triage signal |
-| `L` high confidence and `L != H` | Dangerous-confidence error |
+| `H = M1-R = M2-R` | Stable/easy field across models |
+| `H = M1-R != M2-R` | Candidate model-specific error |
+| `H = M1-P != M1-R` | Candidate procedure-corrected error |
+| `H = M1-R != M1-P` | Candidate procedure-induced error |
+| Raw models agree but both differ from `H` | Systematic extraction task error not solved by model choice |
+| Procedure output has source span and raw output does not | Verifiability gain independent of value agreement |
+| Procedure uncertainty flag and procedure output differs from `H` | Useful triage signal |
+| Procedure high confidence and procedure output differs from `H` | Dangerous-confidence error |
 
 ## Accuracy Metrics
 
@@ -53,16 +56,22 @@ Correlation and matrix fields:
 - Wrong-statistic-type rate, such as beta, loading, reliability, or sqrt(AVE)
   mistaken for a correlation.
 
-## Non-Inferiority Framing
+## Model and Procedure Framing
 
-Because baseline Codex may already be highly accurate, the primary accuracy
-claim should use non-inferiority rather than require large superiority. The
-non-inferiority margin must be prespecified before final analysis.
+The model contrast should be interpreted as an empirical extraction-capability
+comparison under versioned, reproducible conditions. This is likely the clearest
+accuracy comparison for readers.
+
+The procedure or harness contrast should not depend on a large accuracy gain. If
+baseline model accuracy is high, the procedure claim should use
+non-inferiority for accuracy plus superiority or descriptive improvement for
+auditability, source verification, correction traceability, and reproducibility.
+The non-inferiority margin must be prespecified before final analysis.
 
 Candidate margin:
 
 - Overall field-level agreement: LongTable is non-inferior if its agreement is
-  no more than 2 percentage points lower than raw Codex.
+  no more than 2 percentage points lower than the corresponding raw model.
 - High-risk field families: use family-specific margins because expected error
   rates differ by field.
 

@@ -2,6 +2,12 @@
 
 Date: 2026-05-10
 
+Amended by:
+`docs/06_decisions/2026-05-25_Paper_C_Model_Procedure_Repositioning.md`.
+The harness-auditability logic is retained, but the Paper C design is no longer
+treated as harness-only. The active design separates model effects from
+procedure or harness effects.
+
 ## Decision
 
 Paper C will be developed as a computational evaluation of whether a stateful

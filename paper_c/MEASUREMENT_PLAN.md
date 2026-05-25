@@ -2,11 +2,12 @@
 
 ## Outcome Families
 
-Paper C separates three outcome families:
+Paper C separates four outcome families:
 
 1. Extraction accuracy.
-2. Error type and error visibility.
-3. Verifiability, auditability, and reproducibility.
+2. Model-difference profile.
+3. Error type and error visibility.
+4. Verifiability, auditability, and reproducibility.
 
 ## Accuracy Outcomes
 
@@ -20,7 +21,17 @@ Paper C separates three outcome families:
 | Matrix reconstruction | Completeness and structural diagnostics | Symmetry, construct order, missing cells |
 | Moderator coding | Exact agreement and error typology | Tool type, role, setting, design |
 
-## Harness-Specific Outcomes
+## Model-Difference Outcomes
+
+| Outcome | Operationalization |
+|---|---|
+| Cross-model agreement | Share of fields where raw model conditions return the same value |
+| Model-specific error | Field is correct for one model and incorrect for another |
+| Model-specific omission | Source value exists but is omitted by one model condition |
+| Model-specific over-extraction | Unsupported value appears in one model condition only |
+| High-risk family sensitivity | Model differences within construct mapping, statistic-type classification, and correlation recovery |
+
+## Procedure-Specific Outcomes
 
 | Outcome | Operationalization |
 |---|---|
@@ -29,7 +40,7 @@ Paper C separates three outcome families:
 | Unsupported-value rate | Extracted values without adequate source evidence |
 | Schema validity | JSON/schema pass rate and required-field completeness |
 | Correction recoverability | Whether the error source and correction rationale can be reconstructed |
-| Uncertainty usefulness | Whether uncertainty flags predict `L != H` or source ambiguity |
+| Uncertainty usefulness | Whether uncertainty flags predict procedure-output disagreement with `H` or source ambiguity |
 | Rerun completeness | Whether prompt, schema, model, date, source, and settings are sufficient to rerun |
 | Run-to-run stability | Agreement between repeated runs under the same condition |
 | Adjudication efficiency | Time or steps required for a human reviewer to verify or correct an extraction |
@@ -48,9 +59,9 @@ Paper C separates three outcome families:
 - Overconfident incorrect value.
 - Flagged uncertainty that correctly predicted a problem.
 
-## Minimum LongTable Harness Artifact Set
+## Minimum Stateful Procedure Artifact Set
 
-The LongTable condition must produce:
+Each stateful procedure or harness condition must produce:
 
 - Source span or source-location field.
 - Prompt version.
