@@ -1,0 +1,449 @@
+pair,study_id,construct_1,construct_2,coder_a,coder_a_value,coder_a_source,coder_a_notes,coder_b,coder_b_value,coder_b_source,coder_b_notes,abs_difference,mismatch_type
+Pair C,S014,PE,UB,R1,0.31,beta_converted,Indirect effect through perceived risk; dependent adoption mapped to UB.,R4,,,,,one_coder_only
+Pair C,S014,SI,UB,R1,0.3,beta_converted,Indirect effect through perceived risk; dependent adoption mapped to UB.,R4,,,,,one_coder_only
+Pair C,S034,EE,PE,R1,,,,R4,0.68,direct,Fig 2 correlation heatmap (zero-order Pearson correlation between constructs).,,one_coder_only
+Pair C,S058,ATT,BI,R1,0.86,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.81,Table 4: Path coefficient,,0.04999999999999993,numeric_or_source_diff
+Pair C,S058,ATT,EE,R1,0.42,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.369,Table 4: Path coefficient,,0.05099999999999999,numeric_or_source_diff
+Pair C,S058,ATT,PE,R1,0.53,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.484,Table 4: Path coefficient,,0.04600000000000004,numeric_or_source_diff
+Pair C,S058,BI,EE,R1,0.19,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.142,Table 4: Path coefficient,,0.048000000000000015,numeric_or_source_diff
+Pair C,S058,BI,PE,R1,0.46,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.406,Table 4: Path coefficient,,0.05399999999999999,numeric_or_source_diff
+Pair C,S058,EE,PE,R1,0.86,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.806,Table 4: Path coefficient,,0.05399999999999994,numeric_or_source_diff
+Pair C,S061,BI,FC,R1,-0.1,beta_converted,,R4,,,,,one_coder_only
+Pair C,S063,ATT,BI,R1,0.688,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.688,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,ATT,EE,R1,0.638,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.638,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,ATT,PE,R1,0.6,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.6,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,ATT,UB,R1,0.584,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.584,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,BI,EE,R1,0.599,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.599,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,BI,PE,R1,0.544,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.544,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,BI,UB,R1,0.639,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.639,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,EE,PE,R1,0.622,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.62,Table 3 (Fornell-Larcker),,0.0020000000000000018,numeric_or_source_diff
+Pair C,S063,EE,UB,R1,0.47,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.47,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S063,PE,UB,R1,0.511,direct,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,R4,0.511,Table 3 (Fornell-Larcker),,0.0,numeric_or_source_diff
+Pair C,S066,ANX,BI,R1,0.12,beta_converted,"HTMT not coded; standardized PLS path converted. Table 7 prints beta as 0.700, but Table 8 indirect effect implies 0.070; coded as source-corrected typo and flagged.",R4,0.7,Table 7,,0.58,numeric_or_source_diff
+Pair C,S066,ANX,EE,R1,0.14,beta_converted,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,R4,0.123,Table 7,,0.017000000000000015,numeric_or_source_diff
+Pair C,S066,ANX,FC,R1,0.18,beta_converted,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,R4,0.206,Table 7,,0.025999999999999995,numeric_or_source_diff
+Pair C,S066,ANX,PE,R1,0.27,beta_converted,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,R4,0.037,Table 7,,0.233,numeric_or_source_diff
+Pair C,S066,ANX,SI,R1,0.38,beta_converted,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,R4,0.332,Table 7,,0.04799999999999999,numeric_or_source_diff
+Pair C,S066,ANX,TRU,R1,0.19,beta_converted,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,R4,0.14,Table 7,,0.04999999999999999,numeric_or_source_diff
+Pair C,S066,BI,EE,R1,0.23,beta_converted,HTMT not coded; standardized PLS path converted.,R4,0.087,Table 7,,0.14300000000000002,numeric_or_source_diff
+Pair C,S066,BI,FC,R1,0.17,beta_converted,HTMT not coded; standardized PLS path converted.,R4,0.132,Table 7,,0.038000000000000006,numeric_or_source_diff
+Pair C,S066,BI,PE,R1,0.09,beta_converted,HTMT not coded; standardized PLS path converted.,R4,0.215,Table 7,,0.125,numeric_or_source_diff
+Pair C,S066,BI,SI,R1,0.39,beta_converted,HTMT not coded; standardized PLS path converted.,R4,0.339,Table 7,,0.05099999999999999,numeric_or_source_diff
+Pair C,S066,BI,TRU,R1,0.26,beta_converted,HTMT not coded; standardized PLS path converted.,R4,,,,,one_coder_only
+Pair C,S066,BI,UB,R1,0.55,beta_converted,HTMT not coded; standardized PLS path converted.,R4,0.497,Table 7,,0.05300000000000005,numeric_or_source_diff
+Pair C,S066,EE,UB,R1,,,,R4,0.177,Table 7,,,one_coder_only
+Pair C,S067,ATT,BI,R1,0.672,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.53,Table 4 or Path coefficients,,0.14200000000000002,numeric_or_source_diff
+Pair C,S067,ATT,EE,R1,0.264,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.265,Table 4 or Path coefficients,,0.0010000000000000009,numeric_or_source_diff
+Pair C,S067,ATT,PE,R1,0.457,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.415,Table 4 or Path coefficients,,0.04200000000000004,numeric_or_source_diff
+Pair C,S067,ATT,SI,R1,0.236,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.468,Table 4 or Path coefficients,,0.23200000000000004,numeric_or_source_diff
+Pair C,S067,ATT,TRU,R1,0.334,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,,,,,one_coder_only
+Pair C,S067,BI,EE,R1,0.338,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.354,Table 4 or Path coefficients,,0.01599999999999996,numeric_or_source_diff
+Pair C,S067,BI,PE,R1,0.507,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.507,Table 4 or Path coefficients,,0.0,numeric_or_source_diff
+Pair C,S067,BI,SI,R1,0.204,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.204,Table 4 or Path coefficients,,0.0,numeric_or_source_diff
+Pair C,S067,BI,TRU,R1,0.347,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,,,,,one_coder_only
+Pair C,S067,EE,PE,R1,0.354,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.609,Table 4 or Path coefficients,,0.255,numeric_or_source_diff
+Pair C,S067,EE,SI,R1,0.228,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.228,Table 4 or Path coefficients,,0.0,numeric_or_source_diff
+Pair C,S067,EE,TRU,R1,0.276,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,,,,,one_coder_only
+Pair C,S067,PE,SI,R1,0.214,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,0.505,Table 4 or Path coefficients,,0.29100000000000004,numeric_or_source_diff
+Pair C,S067,PE,TRU,R1,0.291,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,,,,,one_coder_only
+Pair C,S067,SI,TRU,R1,0.714,direct,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,R4,,,,,one_coder_only
+Pair C,S069,BI,EE,R1,0.345,direct,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,R4,0.345,Table 2 (discriminant validity),,0.0,numeric_or_source_diff
+Pair C,S069,BI,PE,R1,0.421,direct,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,R4,0.421,Table 2 (discriminant validity),,0.0,numeric_or_source_diff
+Pair C,S069,BI,SI,R1,0.635,direct,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,R4,0.635,Table 2 (discriminant validity),,0.0,numeric_or_source_diff
+Pair C,S069,EE,PE,R1,0.69,direct,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,R4,0.69,Table 2 (discriminant validity),,0.0,numeric_or_source_diff
+Pair C,S069,EE,SI,R1,0.551,direct,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,R4,0.551,Table 2 (discriminant validity),,0.0,numeric_or_source_diff
+Pair C,S069,PE,SI,R1,0.493,direct,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,R4,0.493,Table 2 (discriminant validity),,0.0,numeric_or_source_diff
+Pair C,S070,BI,EE,R1,0.581,direct,,R4,-0.058,beta,"Table 3 standardized path coefficient (EE->BI, ns).",0.639,numeric_or_source_diff
+Pair C,S070,BI,FC,R1,0.469,direct,,R4,,,,,one_coder_only
+Pair C,S070,BI,PE,R1,0.502,direct,,R4,0.228,beta,Table 3 standardized path coefficient (PE->BI).,0.274,numeric_or_source_diff
+Pair C,S070,BI,SI,R1,0.712,direct,,R4,0.566,beta,Table 3 standardized path coefficient (SI->BI).,0.14600000000000002,numeric_or_source_diff
+Pair C,S070,BI,UB,R1,0.832,direct,,R4,0.777,beta,Table 3 standardized path coefficient (BI->UB).,0.05499999999999994,numeric_or_source_diff
+Pair C,S070,EE,UB,R1,0.563,direct,,R4,,,,,one_coder_only
+Pair C,S070,FC,UB,R1,0.488,direct,,R4,0.11,beta,Table 3 standardized path coefficient (FC->UB).,0.378,numeric_or_source_diff
+Pair C,S070,PE,UB,R1,0.524,direct,,R4,,,,,one_coder_only
+Pair C,S070,SI,UB,R1,0.675,direct,,R4,,,,,one_coder_only
+Pair C,S075,BI,EE,R1,0.591,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.271,Table 5: Path coefficient,,0.31999999999999995,numeric_or_source_diff
+Pair C,S075,BI,FC,R1,0.561,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.342,Table 5: Path coefficient,,0.21900000000000003,numeric_or_source_diff
+Pair C,S075,BI,PE,R1,0.525,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.331,Table 5: Path coefficient,,0.194,numeric_or_source_diff
+Pair C,S075,BI,SI,R1,0.473,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.115,Table 5: Path coefficient,,0.358,numeric_or_source_diff
+Pair C,S075,BI,UB,R1,0.584,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.515,Table 5: Path coefficient,,0.06899999999999995,numeric_or_source_diff
+Pair C,S075,EE,FC,R1,0.404,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.404,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,EE,PE,R1,0.4,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.4,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,EE,SI,R1,0.514,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.514,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,EE,UB,R1,0.322,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.322,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,FC,PE,R1,0.287,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.287,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,FC,SI,R1,0.322,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.322,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,FC,UB,R1,0.319,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.319,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,PE,SI,R1,0.306,direct,Fornell-Larcker off-diagonal latent correlation.,R4,,,,,one_coder_only
+Pair C,S075,PE,UB,R1,0.217,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.217,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S075,SI,UB,R1,0.28,direct,Fornell-Larcker off-diagonal latent correlation.,R4,0.28,Table 4: Correlation matrix,,0.0,numeric_or_source_diff
+Pair C,S080,BI,EE,R1,0.49,beta_converted,,R4,0.436,beta,"Table III path coefficient (EE->BI). Raw beta retained, no beta-to-r conversion.",0.05399999999999999,numeric_or_source_diff
+Pair C,S080,BI,FC,R1,-0.11,beta_converted,,R4,-0.058,beta,"Table III path coefficient (FC->BI). Raw beta retained, no beta-to-r conversion.",0.052,numeric_or_source_diff
+Pair C,S080,BI,PE,R1,0.26,beta_converted,,R4,0.207,beta,Table III path coefficient (PE->BI). Raw beta retained. Marginally sig. at 10% (p=.085) in paper; ns at .05.,0.05300000000000002,numeric_or_source_diff
+Pair C,S080,BI,SI,R1,0.12,beta_converted,,R4,0.066,beta,"Table III path coefficient (SI->BI). Raw beta retained, no beta-to-r conversion.",0.05399999999999999,numeric_or_source_diff
+Pair C,S089,BI,EE,R1,0.46,beta_converted,No usable correlation matrix; standardized PLS path converted.,R4,0.412,beta,"Table 8 path coefficient (PEOU->AI using intention (H2)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",0.04800000000000004,numeric_or_source_diff
+Pair C,S089,BI,PE,R1,0.36,beta_converted,No usable correlation matrix; standardized PLS path converted.,R4,0.308,beta,"Table 8 path coefficient (PU->AI using intention (H1)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",0.05199999999999999,numeric_or_source_diff
+Pair C,S089,BI,UB,R1,0.72,beta_converted,No usable correlation matrix; standardized PLS path converted.,R4,0.667,beta,"Table 8 path coefficient (AI using intention->AI adoption (H3)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",0.052999999999999936,numeric_or_source_diff
+Pair C,S089,EE,UB,R1,0.33,beta_converted,No usable correlation matrix; standardized PLS path converted.,R4,0.275,beta,"Table 8 path coefficient (PEOU->AI adoption). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",0.05499999999999999,numeric_or_source_diff
+Pair C,S089,PE,UB,R1,0.26,beta_converted,No usable correlation matrix; standardized PLS path converted.,R4,0.205,beta,"Table 8 path coefficient (PU->AI adoption (H5)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",0.05500000000000002,numeric_or_source_diff
+Pair C,S093,ATT,BI,R1,0.89,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.84,Table 3 Path coefficients,,0.050000000000000044,numeric_or_source_diff
+Pair C,S093,ATT,EE,R1,0.48,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.428,Table 3 Path coefficients,,0.05199999999999999,numeric_or_source_diff
+Pair C,S093,ATT,PE,R1,0.39,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.344,Table 3 Path coefficients,,0.04600000000000004,numeric_or_source_diff
+Pair C,S093,BI,FC,R1,-0.08,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,-0.032,Table 3 Path coefficients,,0.048,numeric_or_source_diff
+Pair C,S093,BI,UB,R1,0.62,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.575,Table 3 Path coefficients,,0.04500000000000004,numeric_or_source_diff
+Pair C,S093,EE,FC,R1,0.15,beta_converted,No usable correlation matrix; standardized SEM path converted.,R4,0.098,Table 3 Path coefficients,,0.05199999999999999,numeric_or_source_diff
+Pair C,S103,ATT,BI,R1,0.701,direct,Pearson r matrix.,R4,0.701,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,ATT,FC,R1,0.57,direct,Pearson r matrix.,R4,0.57,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,ATT,PE,R1,0.727,direct,Pearson r matrix.,R4,0.727,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,ATT,SI,R1,0.265,direct,Pearson r matrix.,R4,0.265,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,BI,FC,R1,0.567,direct,Pearson r matrix.,R4,0.567,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,BI,PE,R1,0.639,direct,Pearson r matrix.,R4,0.639,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,BI,SI,R1,0.288,direct,Pearson r matrix.,R4,0.288,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,FC,PE,R1,0.638,direct,Pearson r matrix.,R4,0.638,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,FC,SI,R1,0.497,direct,Pearson r matrix.,R4,0.497,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S103,PE,SI,R1,0.363,direct,Pearson r matrix.,R4,0.363,Table 2 (correlation matrix),,0.0,numeric_or_source_diff
+Pair C,S108,EE,PE,R1,,,,R4,0.61,Table 2: Effect size (d AI vs Non-AI),,,one_coder_only
+Pair C,S112,BI,EE,R1,0.16,beta_converted,,R4,0.108,beta,"Table 9 CB-SEM (AMOS) standardized path coefficient (EE->BI (H2), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",0.052000000000000005,numeric_or_source_diff
+Pair C,S112,BI,FC,R1,0.16,beta_converted,,R4,0.111,beta,"Table 9 CB-SEM (AMOS) standardized path coefficient (FC->BI (H4), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",0.049,numeric_or_source_diff
+Pair C,S112,BI,PE,R1,0.23,beta_converted,,R4,0.177,beta,"Table 9 CB-SEM (AMOS) standardized path coefficient (PE->BI (H1), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",0.05300000000000002,numeric_or_source_diff
+Pair C,S112,BI,SI,R1,0.29,beta_converted,,R4,0.238,beta,"Table 9 CB-SEM (AMOS) standardized path coefficient (SI->BI (H3), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",0.05199999999999999,numeric_or_source_diff
+Pair C,S112,EE,FC,R1,0.43,beta_converted,,R4,0.377,beta,"Table 9 CB-SEM (AMOS) standardized path coefficient (FC->EE (H7), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",0.05299999999999999,numeric_or_source_diff
+Pair C,S112,EE,PE,R1,0.3,beta_converted,,R4,0.247,beta,"Table 9 CB-SEM (AMOS) standardized path coefficient (EE->PE (H10), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",0.05299999999999999,numeric_or_source_diff
+Pair C,S112,PE,SI,R1,0.27,beta_converted,,R4,0.22,beta,"Table 9 CB-SEM (AMOS) standardized path coefficient (SI->PE (H9), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",0.05000000000000002,numeric_or_source_diff
+Pair C,S113,BI,EE,R1,0.45,beta_converted,Structural path PEU -> IU; direct HTMT association also reported in Table 5.,R4,0.398,beta,"Table 7 PLS-SEM path coefficient (PEU->IU (H6), beta). Raw beta retained. No correlation matrix (HTMT only, Table 5, excluded).",0.05199999999999999,numeric_or_source_diff
+Pair C,S113,BI,PE,R1,0.53,beta_converted,Structural path PU -> IU; direct HTMT association also reported in Table 5.,R4,0.484,beta,"Table 7 PLS-SEM path coefficient (PU->IU (H5), beta). Raw beta retained. No correlation matrix (HTMT only, Table 5, excluded).",0.04600000000000004,numeric_or_source_diff
+Pair C,S113,BI,SE,R1,0.7,direct,HTMT value used as the only reported interconstruct association.,R4,,,,,one_coder_only
+Pair C,S113,EE,PE,R1,0.78,direct,HTMT value used as the only reported interconstruct association.,R4,,,,,one_coder_only
+Pair C,S113,EE,SE,R1,0.76,direct,HTMT value used as the only reported interconstruct association.,R4,0.497,beta,"Table 7 PLS-SEM path coefficient (SE->PEU (H4), beta). Raw beta retained. No correlation matrix (HTMT only, Table 5, excluded).",0.263,numeric_or_source_diff
+Pair C,S113,PE,SE,R1,0.7,direct,HTMT value used as the only reported interconstruct association.,R4,,,,,one_coder_only
+Pair C,S115,ATT,EE,R1,,,,R4,0.79,direct,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,,one_coder_only
+Pair C,S115,ATT,PE,R1,,,,R4,0.74,direct,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,,one_coder_only
+Pair C,S115,EE,PE,R1,,,,R4,0.62,direct,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,,one_coder_only
+Pair C,S119,BI,EE,R1,0.72,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.72,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,BI,FC,R1,0.699,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.699,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,BI,PE,R1,0.737,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.737,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,BI,SI,R1,0.632,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.632,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,EE,FC,R1,0.677,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.677,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,EE,PE,R1,0.854,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.854,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,EE,SI,R1,0.66,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.66,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,FC,PE,R1,0.604,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.604,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,FC,SI,R1,0.873,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.873,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S119,PE,SI,R1,0.596,direct,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,R4,0.596,Table 5 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S129,BI,EE,R1,0.29,beta_converted,,R4,0.243,beta,"Table 5 SEM path coefficient (PEOU->IU (H12)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.046999999999999986,numeric_or_source_diff
+Pair C,S129,BI,PE,R1,0.5,beta_converted,,R4,0.446,beta,"Table 5 SEM path coefficient (PU->IU (H10)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.05399999999999999,numeric_or_source_diff
+Pair C,S129,BI,SI,R1,-0.14,beta_converted,,R4,-0.087,beta,"Table 5 SEM path coefficient (SI->IU (H11)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.05300000000000002,numeric_or_source_diff
+Pair C,S129,BI,UB,R1,0.46,beta_converted,,R4,0.406,beta,"Table 5 SEM path coefficient (IU->AUB (H13)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.05399999999999999,numeric_or_source_diff
+Pair C,S129,EE,FC,R1,0.28,beta_converted,,R4,0.225,beta,"Table 5 SEM path coefficient (FC->PEOU (H4)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.05500000000000002,numeric_or_source_diff
+Pair C,S129,EE,PE,R1,0.52,beta_converted,,R4,0.467,beta,"Table 5 SEM path coefficient (PEOU->PU (H7)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.05299999999999999,numeric_or_source_diff
+Pair C,S129,EE,SI,R1,-0.11,beta_converted,,R4,-0.064,beta,"Table 5 SEM path coefficient (SI->PEOU (H1)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.046,numeric_or_source_diff
+Pair C,S129,EE,TRU,R1,0.4,beta_converted,,R4,0.354,beta,"Table 5 SEM path coefficient (TR->PEOU (H6)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.04600000000000004,numeric_or_source_diff
+Pair C,S129,PE,SI,R1,0.42,beta_converted,,R4,0.369,beta,"Table 5 SEM path coefficient (SI->PU (H8)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",0.05099999999999999,numeric_or_source_diff
+Pair C,S134,BI,EE,R1,0.1,beta_converted,,R4,0.045,beta,"Standardized linear regression coefficient (EE->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",0.05500000000000001,numeric_or_source_diff
+Pair C,S134,BI,FC,R1,0.07,beta_converted,,R4,0.024,beta,"Standardized linear regression coefficient (FC->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",0.046000000000000006,numeric_or_source_diff
+Pair C,S134,BI,PE,R1,0.44,beta_converted,,R4,0.388,beta,"Standardized linear regression coefficient (PE->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",0.05199999999999999,numeric_or_source_diff
+Pair C,S134,BI,SI,R1,0.08,beta_converted,,R4,0.029,beta,"Standardized linear regression coefficient (SI->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",0.051000000000000004,numeric_or_source_diff
+Pair C,S134,BI,UB,R1,0.44,beta_converted,,R4,0.39,beta,"Standardized linear regression coefficient (BI->UB (Table 9), beta). Raw beta retained. No correlation matrix reported (regression study).",0.04999999999999999,numeric_or_source_diff
+Pair C,S134,FC,UB,R1,0.17,beta_converted,,R4,0.118,beta,"Standardized linear regression coefficient (FC->UB (Table 9), beta). Raw beta retained. No correlation matrix reported (regression study).",0.05200000000000002,numeric_or_source_diff
+Pair C,S136,BI,EE,R1,0.418,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.418,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,BI,PE,R1,0.25,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.25,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,BI,SI,R1,0.358,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.358,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,BI,UB,R1,0.55,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.55,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,EE,PE,R1,0.283,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.283,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,EE,SI,R1,0.397,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.397,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,EE,UB,R1,0.374,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.374,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,PE,SI,R1,0.142,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.142,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,PE,UB,R1,0.057,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.057,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S136,SI,UB,R1,0.484,direct,Fornell-Larcker off-diagonal correlation; HM and habit excluded.,R4,0.484,Table 3 Discriminant validity,,0.0,numeric_or_source_diff
+Pair C,S148,ATT,BI,R1,0.99,beta_converted,Large path coefficient capped at converted r=.99 for workbook consistency.,R4,0.69,direct,"Table 4 'r' column = effect-size correlation between constructs (r>.5 large, .3<r<.5 medium). Path coefficient B not used; HTMT (Table 3) not used per project rule.",0.30000000000000004,numeric_or_source_diff
+Pair C,S148,ATT,EE,R1,,,,R4,0.46,direct,"Table 4 'r' column = effect-size correlation between constructs (r>.5 large, .3<r<.5 medium). Path coefficient B not used; HTMT (Table 3) not used per project rule.",,one_coder_only
+Pair C,S148,ATT,PE,R1,,,,R4,0.48,direct,"Table 4 'r' column = effect-size correlation between constructs (r>.5 large, .3<r<.5 medium). Path coefficient B not used; HTMT (Table 3) not used per project rule.",,one_coder_only
+Pair C,S148,BI,UB,R1,,,,R4,0.66,direct,"Table 4 'r' column = effect-size correlation between constructs (r>.5 large, .3<r<.5 medium). Path coefficient B not used; HTMT (Table 3) not used per project rule.",,one_coder_only
+Pair C,S148,EE,PE,R1,,,,R4,0.58,direct,"Table 4 'r' column = effect-size correlation between constructs (r>.5 large, .3<r<.5 medium). Path coefficient B not used; HTMT (Table 3) not used per project rule.",,one_coder_only
+Pair C,S152,ATT,BI,R1,0.21,beta_converted,,R4,0.156,beta,"Table 3 SEM path coefficient (AT->BI, beta). Raw beta retained. No correlation matrix reported (FL mentioned but not tabulated).",0.05399999999999999,numeric_or_source_diff
+Pair C,S152,BI,PE,R1,0.11,beta_converted,,R4,0.057,beta,"Table 3 SEM path coefficient (PU->BI, beta). Raw beta retained. No correlation matrix reported (FL mentioned but not tabulated).",0.053,numeric_or_source_diff
+Pair C,S152,BI,SE,R1,0.16,beta_converted,,R4,0.107,beta,"Table 3 SEM path coefficient (CON->BI, beta). Raw beta retained. No correlation matrix reported (FL mentioned but not tabulated).",0.053000000000000005,numeric_or_source_diff
+Pair C,S153,AUT,BI,R1,0.58,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.58,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,AUT,EE,R1,0.473,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.473,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,AUT,PE,R1,0.667,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.667,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,AUT,SI,R1,0.556,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.556,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,AUT,TRU,R1,0.644,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.644,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,BI,EE,R1,0.502,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.502,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,BI,PE,R1,0.56,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.56,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,BI,SI,R1,0.672,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.672,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,BI,TRU,R1,0.577,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.577,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,EE,PE,R1,0.613,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.613,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,EE,SI,R1,0.333,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.333,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,EE,TRU,R1,0.536,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.536,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,PE,SI,R1,0.433,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.433,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,PE,TRU,R1,0.654,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.654,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S153,SI,TRU,R1,0.487,direct,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",R4,0.487,Table 4 Fornell and Larcker,,0.0,numeric_or_source_diff
+Pair C,S162,ANX,ATT,R1,-0.323,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,-0.323,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ANX,BI,R1,0.184,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.184,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ANX,EE,R1,0.412,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.412,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ANX,PE,R1,0.54,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.54,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ANX,UB,R1,0.132,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.132,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ATT,BI,R1,0.234,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.234,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ATT,EE,R1,0.087,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.087,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ATT,PE,R1,-0.591,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,-0.591,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,ATT,UB,R1,0.166,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.166,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,BI,EE,R1,0.019,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.019,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,BI,PE,R1,0.021,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.021,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,BI,UB,R1,0.619,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.619,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,EE,PE,R1,0.427,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.427,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,EE,UB,R1,0.081,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,0.081,Table 3,,0.0,numeric_or_source_diff
+Pair C,S162,PE,UB,R1,-0.079,direct,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,R4,-0.079,Table 3,,0.0,numeric_or_source_diff
+Pair C,S179,BI,EE,R1,0.19,beta_converted,,R4,0.23,beta,"Table 5 path coefficient (EE->BI, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",0.04000000000000001,numeric_or_source_diff
+Pair C,S179,BI,PE,R1,0.46,beta_converted,,R4,0.504,beta,"Table 5 path coefficient (PE->BI, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",0.043999999999999984,numeric_or_source_diff
+Pair C,S179,BI,SI,R1,0.33,beta_converted,,R4,0.192,beta,"Table 5 path coefficient (SI->BI, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",0.138,numeric_or_source_diff
+Pair C,S179,BI,UB,R1,0.55,beta_converted,,R4,0.61,beta,"Table 5 path coefficient (BI->UB, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",0.05999999999999994,numeric_or_source_diff
+Pair C,S179,FC,UB,R1,0.24,beta_converted,,R4,0.171,beta,"Table 5 path coefficient (FC->UB, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",0.06899999999999998,numeric_or_source_diff
+Pair C,S188,ATT,AUT,R1,,,,R4,0.578,Table 3,,,one_coder_only
+Pair C,S188,ATT,BI,R1,,,,R4,0.733,Table 3,,,one_coder_only
+Pair C,S188,ATT,EE,R1,,,,R4,0.692,Table 3,,,one_coder_only
+Pair C,S188,ATT,PE,R1,,,,R4,0.623,Table 3,,,one_coder_only
+Pair C,S188,ATT,SE,R1,,,,R4,0.627,Table 3,,,one_coder_only
+Pair C,S188,ATT,TRU,R1,,,,R4,0.57,Table 3,,,one_coder_only
+Pair C,S188,AUT,BI,R1,,,,R4,0.532,Table 3,,,one_coder_only
+Pair C,S188,AUT,EE,R1,,,,R4,0.614,Table 3,,,one_coder_only
+Pair C,S188,AUT,PE,R1,,,,R4,0.572,Table 3,,,one_coder_only
+Pair C,S188,AUT,SE,R1,,,,R4,0.398,Table 3,,,one_coder_only
+Pair C,S188,AUT,TRU,R1,,,,R4,0.68,Table 3,,,one_coder_only
+Pair C,S188,BI,EE,R1,0.647,direct,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,R4,0.647,Table 3,,0.0,numeric_or_source_diff
+Pair C,S188,BI,PE,R1,0.645,direct,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,R4,0.645,Table 3,,0.0,numeric_or_source_diff
+Pair C,S188,BI,SE,R1,,,,R4,0.516,Table 3,,,one_coder_only
+Pair C,S188,BI,TRU,R1,0.478,direct,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,R4,0.478,Table 3,,0.0,numeric_or_source_diff
+Pair C,S188,EE,PE,R1,0.679,direct,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,R4,0.889,Table 3,,0.20999999999999996,numeric_or_source_diff
+Pair C,S188,EE,SE,R1,,,,R4,0.545,Table 3,,,one_coder_only
+Pair C,S188,EE,TRU,R1,0.519,direct,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,R4,0.519,Table 3,,0.0,numeric_or_source_diff
+Pair C,S188,PE,SE,R1,,,,R4,0.458,Table 3,,,one_coder_only
+Pair C,S188,PE,TRU,R1,0.369,direct,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,R4,0.369,Table 3,,0.0,numeric_or_source_diff
+Pair C,S188,SE,TRU,R1,,,,R4,0.487,Table 3,,,one_coder_only
+Pair C,S192,ATT,BI,R1,,,,R4,0.03,beta,"Table 5 multivariable linear regression coefficient (Attitude->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",,one_coder_only
+Pair C,S192,BI,EE,R1,0.08,beta_converted,,R4,0.03,beta,"Table 5 multivariable linear regression coefficient (EE->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",0.05,numeric_or_source_diff
+Pair C,S192,BI,FC,R1,0.34,beta_converted,,R4,0.29,beta,"Table 5 multivariable linear regression coefficient (FC->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",0.050000000000000044,numeric_or_source_diff
+Pair C,S192,BI,PE,R1,0.14,beta_converted,,R4,0.09,beta,"Table 5 multivariable linear regression coefficient (PE->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",0.05000000000000002,numeric_or_source_diff
+Pair C,S192,BI,SI,R1,0.37,beta_converted,,R4,0.32,beta,"Table 5 multivariable linear regression coefficient (SI->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",0.04999999999999999,numeric_or_source_diff
+Pair C,S192,BI,UB,R1,0.32,beta_converted,,R4,0.27,beta,"Table 5 multivariable linear regression coefficient (Utilization behavior->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",0.04999999999999999,numeric_or_source_diff
+Pair C,S195,BI,PE,R1,0.31,direct,,R4,,,,,one_coder_only
+Pair C,S195,BI,UB,R1,0.53,direct,,R4,,,,,one_coder_only
+Pair C,S195,EE,UB,R1,0.24,direct,,R4,,,,,one_coder_only
+Pair C,S195,PE,UB,R1,0.31,direct,,R4,,,,,one_coder_only
+Pair C,S195,SI,UB,R1,0.24,direct,,R4,,,,,one_coder_only
+Pair C,S200,BI,EE,R1,0.21,beta_converted,Bootstrapped structural path also reported.,R4,0.156,beta,Table 6 PLS-SEM standardized path coefficient (EE->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,0.05399999999999999,numeric_or_source_diff
+Pair C,S200,BI,FC,R1,-0.17,beta_converted,Bootstrapped structural path also reported.,R4,-0.122,beta,Table 6 PLS-SEM standardized path coefficient (FC->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,0.048000000000000015,numeric_or_source_diff
+Pair C,S200,BI,PE,R1,0.45,beta_converted,Bootstrapped structural path also reported.,R4,0.395,beta,Table 6 PLS-SEM standardized path coefficient (PE->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,0.05499999999999999,numeric_or_source_diff
+Pair C,S200,BI,SI,R1,0.09,beta_converted,Bootstrapped structural path also reported.,R4,0.036,beta,Table 6 PLS-SEM standardized path coefficient (SI->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,0.054,numeric_or_source_diff
+Pair C,S200,BI,UB,R1,0.39,beta_converted,Bootstrapped structural path BI -> USE also reported.,R4,0.341,beta,Table 6 PLS-SEM standardized path coefficient (BI->USE). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,0.04899999999999999,numeric_or_source_diff
+Pair C,S200,EE,FC,R1,0.831,direct,,R4,,,,,one_coder_only
+Pair C,S200,EE,PE,R1,0.525,direct,,R4,,,,,one_coder_only
+Pair C,S200,EE,SI,R1,0.089,direct,,R4,,,,,one_coder_only
+Pair C,S200,EE,UB,R1,0.351,direct,,R4,,,,,one_coder_only
+Pair C,S200,FC,PE,R1,0.565,direct,,R4,,,,,one_coder_only
+Pair C,S200,FC,SI,R1,0.034,direct,,R4,,,,,one_coder_only
+Pair C,S200,FC,UB,R1,0.322,direct,,R4,,,,,one_coder_only
+Pair C,S200,PE,SI,R1,0.241,direct,,R4,,,,,one_coder_only
+Pair C,S200,PE,UB,R1,0.344,direct,,R4,,,,,one_coder_only
+Pair C,S200,SI,UB,R1,0.313,direct,,R4,,,,,one_coder_only
+Pair C,S216,ANX,EE,R1,0.14,beta_converted,,R4,0.085,beta,Table 5 path coefficient (H12: ANX->PEOU). Not supported (p=.091). Raw beta retained. HTMT not used per project rule.,0.05500000000000001,numeric_or_source_diff
+Pair C,S216,BI,EE,R1,0.25,beta_converted,,R4,0.203,beta,Table 5 path coefficient (H2: PEOU->BI). Raw beta retained. HTMT not used per project rule.,0.046999999999999986,numeric_or_source_diff
+Pair C,S216,BI,PE,R1,0.25,beta_converted,,R4,0.203,beta,"Table 5 path coefficient (H1: PU->BI). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",0.046999999999999986,numeric_or_source_diff
+Pair C,S216,BI,SI,R1,0.21,beta_converted,,R4,0.159,beta,Table 5 path coefficient (H6: SN->BI). Raw beta retained. HTMT not used per project rule.,0.05099999999999999,numeric_or_source_diff
+Pair C,S216,EE,PE,R1,0.28,beta_converted,,R4,0.229,beta,Table 5 path coefficient (H3: PEOU->PU). Raw beta retained. HTMT not used per project rule.,0.05100000000000002,numeric_or_source_diff
+Pair C,S216,EE,SE,R1,0.28,beta_converted,,R4,0.231,beta,Table 5 path coefficient (H11: SE->PEOU). Raw beta retained. HTMT not used per project rule.,0.049000000000000016,numeric_or_source_diff
+Pair C,S216,PE,SI,R1,,,,R4,0.427,beta,Table 5 path coefficient (H5: SN->PU). Raw beta retained. HTMT not used per project rule.,,one_coder_only
+Pair C,S224,BI,EE,R1,,,,R4,0.2,beta,Fig 6 combined-model path coefficient (EE->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,,one_coder_only
+Pair C,S224,BI,FC,R1,,,,R4,0.073,beta,Fig 6 combined-model path coefficient (FC->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,,one_coder_only
+Pair C,S224,BI,PE,R1,,,,R4,0.26,beta,Fig 6 combined-model path coefficient (PE->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,,one_coder_only
+Pair C,S224,BI,SI,R1,,,,R4,0.27,beta,Fig 6 combined-model path coefficient (SI->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,,one_coder_only
+Pair C,S224,BI,UB,R1,,,,R4,0.043,beta,Fig 6 combined-model path coefficient (BI->Technology use). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,,one_coder_only
+Pair D,S002,FC,PE,R2,0.694,direct,,R3,0.575,direct,,0.119,numeric_or_source_diff
+Pair D,S002,FC,SI,R2,0.724,direct,,R3,0.632,direct,,0.09199999999999997,numeric_or_source_diff
+Pair D,S004,FC,PE,R2,0.676,direct,,R3,0.676,,,0.0,numeric_or_source_diff
+Pair D,S004,FC,TRU,R2,,,,R3,0.533,direct,,,one_coder_only
+Pair D,S004,FC,UB,R2,0.533,direct,,R3,0.601,direct,,0.06799999999999995,numeric_or_source_diff
+Pair D,S004,PE,SE,R2,0.601,direct,,R3,,,,,one_coder_only
+Pair D,S004,PE,SI,R2,0.637,direct,,R3,0.637,,,0.0,numeric_or_source_diff
+Pair D,S004,PE,UB,R2,0.607,direct,,R3,0.607,,,0.0,numeric_or_source_diff
+Pair D,S024,ATT,SI,R2,0.147,beta_converted,,R3,0.147,,,0.0,numeric_or_source_diff
+Pair D,S024,ATT,TRU,R2,,,,R3,0.249,beta_converted,,,one_coder_only
+Pair D,S024,BI,SI,R2,,,,R3,0.147,beta_converted,,,one_coder_only
+Pair D,S025,BI,SI,R2,−0.187,direct,,R3,-0.187,direct,,,numeric_or_source_diff
+Pair D,S025,SE,UB,R2,−0.073,direct,,R3,−0.073,,,,numeric_or_source_diff
+Pair D,S027,EE,FC,R2,0.28,direct,,R3,0.28,,,0.0,numeric_or_source_diff
+Pair D,S031,BI,SE,R2,,,,R3,0.59,direct,,,one_coder_only
+Pair D,S031,BI,TRU,R2,,,,R3,0.47,direct,,,one_coder_only
+Pair D,S031,PE,SE,R2,0.8,direct,,R3,,,,,one_coder_only
+Pair D,S031,PE,TRU,R2,0.46,direct,,R3,,,,,one_coder_only
+Pair D,S031,PE,UB,R2,0.57,direct,,R3,,,,,one_coder_only
+Pair D,S031,SE,UB,R2,0.59,direct,,R3,,,,,one_coder_only
+Pair D,S031,TRU,UB,R2,0.47,direct,,R3,,,,,one_coder_only
+Pair D,S032,SE,UB,R2,0.554,direct,,R3,,,,,one_coder_only
+Pair D,S032,SI,UB,R2,,,,R3,0.554,direct,,,one_coder_only
+Pair D,S056,ATT,EE,R2,0.437,beta_converted,,R3,,,,,one_coder_only
+Pair D,S056,ATT,PE,R2,0.489,beta_converted,,R3,,,,,one_coder_only
+Pair D,S056,EE,PE,R2,0.541,beta_converted,,R3,,,,,one_coder_only
+Pair D,S065,ATT,PE,R2,0.697,direct,,R3,0.774,direct,,0.07700000000000007,numeric_or_source_diff
+Pair D,S065,ATT,UB,R2,0.673,direct,,R3,0.673,,,0.0,numeric_or_source_diff
+Pair D,S065,AUT,UB,R2,0.654,direct,,R3,,,,,one_coder_only
+Pair D,S065,BI,EE,R2,,,,R3,0.654,direct,,,one_coder_only
+Pair D,S065,BI,FC,R2,0.73,direct,,R3,,,,,one_coder_only
+Pair D,S065,BI,PE,R2,,,,R3,0.73,direct,,,one_coder_only
+Pair D,S065,BI,TRU,R2,0.761,direct,,R3,,,,,one_coder_only
+Pair D,S065,BI,UB,R2,,,,R3,0.761,,,,one_coder_only
+Pair D,S065,EE,FC,R2,0.84,direct,,R3,,,,,one_coder_only
+Pair D,S065,EE,PE,R2,,,,R3,0.84,direct,,,one_coder_only
+Pair D,S065,EE,TRU,R2,0.592,direct,,R3,,,,,one_coder_only
+Pair D,S065,EE,UB,R2,,,,R3,0.592,,,,one_coder_only
+Pair D,S065,PE,UB,R2,0.616,direct,,R3,0.616,,,0.0,numeric_or_source_diff
+Pair D,S068,BI,FC,R2,-0.026,beta_converted,,R3,−0.026,beta_converted,,,numeric_or_source_diff
+Pair D,S077,ATT,SI,R2,,,,R3,0.6,direct,,,one_coder_only
+Pair D,S077,BI,SI,R2,,,,R3,0.63,direct,,,one_coder_only
+Pair D,S077,EE,SI,R2,,,,R3,0.53,direct,,,one_coder_only
+Pair D,S077,PE,SI,R2,,,,R3,0.5,direct,,,one_coder_only
+Pair D,S078,ATT,SE,R2,0.691,direct,,R3,0.691,,,0.0,numeric_or_source_diff
+Pair D,S078,BI,SE,R2,0.491,direct,,R3,0.491,,,0.0,numeric_or_source_diff
+Pair D,S078,SE,SI,R2,0.486,direct,,R3,0.486,,,0.0,numeric_or_source_diff
+Pair D,S085,BI,EE,R2,0.64,direct,,R3,0.64,,,0.0,numeric_or_source_diff
+Pair D,S085,BI,PE,R2,0.87,direct,,R3,0.87,,,0.0,numeric_or_source_diff
+Pair D,S085,BI,SI,R2,0.61,direct,,R3,0.61,,,0.0,numeric_or_source_diff
+Pair D,S092,BI,EE,R2,,,,R3,0.174,beta_converted,,,one_coder_only
+Pair D,S092,BI,PE,R2,,,,R3,0.234,beta_converted,,,one_coder_only
+Pair D,S092,EE,PE,R2,,,,R3,0.354,beta_converted,,,one_coder_only
+Pair D,S094,PE,TRU,R2,0.579,direct,,R3,0.579,beta_converted,,0.0,numeric_or_source_diff
+Pair D,S096,ANX,ATT,R2,0.658,direct,Table 3,R3,0.658,beta_converted,,0.0,numeric_or_source_diff
+Pair D,S096,ANX,UB,R2,−.190,direct,Table 3,R3,−.190,beta_converted,,,numeric_or_source_diff
+Pair D,S098,ANX,PE,R2,0.621,direct,,R3,,,,,one_coder_only
+Pair D,S098,ANX,SE,R2,0.811,direct,,R3,,,,,one_coder_only
+Pair D,S098,ANX,SI,R2,0.523,direct,,R3,,,,,one_coder_only
+Pair D,S098,PE,SE,R2,0.894,direct,,R3,0.708,direct,,0.18600000000000005,numeric_or_source_diff
+Pair D,S098,PE,SI,R2,0.586,direct,,R3,0.681,direct,,0.09500000000000008,numeric_or_source_diff
+Pair D,S099,ATT,SI,R2,,,,R3,0.335,beta_converted,,,one_coder_only
+Pair D,S099,ATT,TRU,R2,,,,R3,0.63,beta_converted,,,one_coder_only
+Pair D,S099,BI,EE,R2,0.347,beta_converted,,R3,,,,,one_coder_only
+Pair D,S099,BI,PE,R2,,,,R3,0.347,beta_converted,,,one_coder_only
+Pair D,S099,BI,SI,R2,0.238,beta_converted,,R3,,,,,one_coder_only
+Pair D,S099,EE,PE,R2,,,,R3,0.367,beta_converted,,,one_coder_only
+Pair D,S099,PE,SI,R2,,,,R3,0.348,beta_converted,,,one_coder_only
+Pair D,S099,PE,TRU,R2,,,,R3,0.525,beta_converted,,,one_coder_only
+Pair D,S099,SE,TRU,R2,0.72,beta_converted,,R3,,,,,one_coder_only
+Pair D,S099,SI,TRU,R2,0.232,beta_converted,,R3,,,,,one_coder_only
+Pair D,S114,EE,UB,R2,,,,R3,0.561,direct,,,one_coder_only
+Pair D,S121,BI,EE,R2,0.67,direct,,R3,,,,,one_coder_only
+Pair D,S121,BI,FC,R2,0.59,direct,,R3,,,,,one_coder_only
+Pair D,S121,BI,PE,R2,0.84,direct,,R3,,,,,one_coder_only
+Pair D,S121,BI,SI,R2,0.66,direct,,R3,,,,,one_coder_only
+Pair D,S121,BI,TRU,R2,0.34,direct,,R3,,,,,one_coder_only
+Pair D,S121,BI,UB,R2,0.58,direct,,R3,,,,,one_coder_only
+Pair D,S121,EE,FC,R2,0.72,direct,,R3,,,,,one_coder_only
+Pair D,S121,EE,PE,R2,0.62,direct,,R3,,,,,one_coder_only
+Pair D,S121,EE,SI,R2,0.53,direct,,R3,,,,,one_coder_only
+Pair D,S121,EE,TRU,R2,0.22,direct,,R3,,,,,one_coder_only
+Pair D,S121,EE,UB,R2,0.39,direct,,R3,,,,,one_coder_only
+Pair D,S121,FC,PE,R2,0.53,direct,,R3,,,,,one_coder_only
+Pair D,S121,FC,SI,R2,0.49,direct,,R3,,,,,one_coder_only
+Pair D,S121,FC,UB,R2,0.16,direct,,R3,,,,,one_coder_only
+Pair D,S121,PE,SE,R2,0.29,direct,,R3,,,,,one_coder_only
+Pair D,S121,PE,SI,R2,0.64,direct,,R3,,,,,one_coder_only
+Pair D,S121,PE,TRU,R2,0.36,direct,,R3,,,,,one_coder_only
+Pair D,S121,PE,UB,R2,0.47,direct,,R3,,,,,one_coder_only
+Pair D,S121,SI,TRU,R2,0.23,direct,,R3,,,,,one_coder_only
+Pair D,S121,SI,UB,R2,0.32,direct,,R3,,,,,one_coder_only
+Pair D,S121,TRU,UB,R2,0.36,direct,,R3,,,,,one_coder_only
+Pair D,S131,BI,EE,R2,,,,R3,0.188,beta_converted,,,one_coder_only
+Pair D,S131,BI,FC,R2,,,,R3,0.188,beta_converted,,,one_coder_only
+Pair D,S131,BI,PE,R2,,,,R3,0.438,beta_converted,,,one_coder_only
+Pair D,S131,BI,SI,R2,,,,R3,0.188,beta_converted,,,one_coder_only
+Pair D,S131,EE,UB,R2,0.188,beta_converted,,R3,,,,,one_coder_only
+Pair D,S131,FC,UB,R2,0.188,beta_converted,,R3,,,,,one_coder_only
+Pair D,S131,PE,UB,R2,0.438,beta_converted,,R3,,,,,one_coder_only
+Pair D,S131,SI,UB,R2,0.188,beta_converted,,R3,,,,,one_coder_only
+Pair D,S135,PE,SE,R2,0.52,direct,,R3,,,,,one_coder_only
+Pair D,S135,PE,SI,R2,,,,R3,0.52,direct,,,one_coder_only
+Pair D,S137,FC,UB,R2,,,,R3,0.351,direct,,,one_coder_only
+Pair D,S137,PE,SE,R2,0.351,direct,,R3,,,,,one_coder_only
+Pair D,S143,BI,PE,R2,-0.139,direct,,R3,−0.139,direct,,,numeric_or_source_diff
+Pair D,S143,EE,SI,R2,-0.129,direct,,R3,−0.129,direct,,,numeric_or_source_diff
+Pair D,S143,FC,PE,R2,-0.02,direct,,R3,−0.020,direct,,,numeric_or_source_diff
+Pair D,S143,FC,SI,R2,-0.047,direct,,R3,−0.047,direct,,,numeric_or_source_diff
+Pair D,S143,PE,SI,R2,-0.295,direct,,R3,−0.295,direct,,,numeric_or_source_diff
+Pair D,S150,BI,FC,R2,-0.163,beta_converted,,R3,-0.163,,,0.0,numeric_or_source_diff
+Pair D,S150,FC,UB,R2,,,,R3,-0.163,beta_converted,,,one_coder_only
+Pair D,S150,SI,UB,R2,,,,R3,0.221,beta_converted,,,one_coder_only
+Pair D,S157,AUT,BI,R2,0.27,direct,,R3,,,,,one_coder_only
+Pair D,S157,AUT,EE,R2,0.14,direct,,R3,,,,,one_coder_only
+Pair D,S157,AUT,FC,R2,0.25,direct,,R3,,,,,one_coder_only
+Pair D,S157,AUT,PE,R2,0.19,direct,,R3,,,,,one_coder_only
+Pair D,S157,AUT,SE,R2,0.48,direct,,R3,,,,,one_coder_only
+Pair D,S157,AUT,SI,R2,0.19,direct,,R3,,,,,one_coder_only
+Pair D,S157,AUT,UB,R2,0.39,direct,,R3,,,,,one_coder_only
+Pair D,S157,BI,SE,R2,0.27,direct,,R3,,,,,one_coder_only
+Pair D,S157,EE,SE,R2,0.17,direct,,R3,,,,,one_coder_only
+Pair D,S157,FC,SE,R2,0.2,direct,,R3,,,,,one_coder_only
+Pair D,S157,PE,SE,R2,0.16,direct,,R3,,,,,one_coder_only
+Pair D,S157,PE,UB,R2,0.23,direct,,R3,0.37,direct,,0.13999999999999999,numeric_or_source_diff
+Pair D,S157,SE,SI,R2,0.12,direct,,R3,,,,,one_coder_only
+Pair D,S157,SE,UB,R2,0.61,direct,,R3,,,,,one_coder_only
+Pair D,S161,ATT,FC,R2,0.463,direct,,R3,,,,,one_coder_only
+Pair D,S161,BI,FC,R2,0.578,direct,,R3,,,,,one_coder_only
+Pair D,S161,EE,FC,R2,0.455,direct,,R3,FC확인,,,,numeric_or_source_diff
+Pair D,S161,EE,PE,R2,0.302,direct,,R3,,,,,one_coder_only
+Pair D,S161,FC,PE,R2,0.407,direct,,R3,0.302,direct,,0.10499999999999998,numeric_or_source_diff
+Pair D,S171,ATT,UB,R2,0.737,direct,,R3,,,,,one_coder_only
+Pair D,S171,BI,UB,R2,0.341,direct,,R3,0.341,,,0.0,numeric_or_source_diff
+Pair D,S171,EE,UB,R2,0.504,direct,,R3,0.504,,,0.0,numeric_or_source_diff
+Pair D,S171,FC,UB,R2,0.417,direct,,R3,0.417,,,0.0,numeric_or_source_diff
+Pair D,S171,PE,UB,R2,0.616,direct,,R3,0.616,,,0.0,numeric_or_source_diff
+Pair D,S173,EE,FC,R2,0.666,direct,,R3,0.666,,,0.0,numeric_or_source_diff
+Pair D,S173,EE,PE,R2,0.8,direct,,R3,0.8,,,0.0,numeric_or_source_diff
+Pair D,S173,EE,SI,R2,0.55,direct,,R3,0.55,,,0.0,numeric_or_source_diff
+Pair D,S173,EE,TRU,R2,0.631,direct,,R3,0.631,,,0.0,numeric_or_source_diff
+Pair D,S173,EE,UB,R2,0.764,direct,,R3,0.764,,,0.0,numeric_or_source_diff
+Pair D,S181,ANX,ATT,R2,0.01,direct,,R3,0.01,,,0.0,numeric_or_source_diff
+Pair D,S181,ANX,BI,R2,0.048,direct,,R3,0.048,,,0.0,numeric_or_source_diff
+Pair D,S181,ANX,SI,R2,0.044,direct,,R3,0.044,,,0.0,numeric_or_source_diff
+Pair D,S181,ATT,BI,R2,0.824,direct,,R3,0.824,,,0.0,numeric_or_source_diff
+Pair D,S181,ATT,SI,R2,0.782,direct,,R3,0.782,,,0.0,numeric_or_source_diff
+Pair D,S181,BI,SI,R2,0.724,direct,,R3,0.724,,,0.0,numeric_or_source_diff
+Pair D,S183,BI,EE,R2,0.283,direct,,R3,0.12,beta_converted,,0.16299999999999998,numeric_or_source_diff
+Pair D,S183,BI,FC,R2,0.025,direct,,R3,0.17,beta_converted,,0.14500000000000002,numeric_or_source_diff
+Pair D,S183,BI,PE,R2,0.049,direct,,R3,0.15,beta_converted,,0.10099999999999999,numeric_or_source_diff
+Pair D,S183,BI,SI,R2,0.132,direct,,R3,-0.045,beta_converted,,0.177,numeric_or_source_diff
+Pair D,S183,BI,TRU,R2,0.021,direct,,R3,,,,,one_coder_only
+Pair D,S183,EE,FC,R2,0.394,direct,,R3,0.395,direct,,0.0010000000000000009,numeric_or_source_diff
+Pair D,S183,EE,PE,R2,0.154,direct,,R3,0.137,direct,,0.016999999999999987,numeric_or_source_diff
+Pair D,S183,EE,SI,R2,0.342,direct,,R3,0.347,direct,,0.004999999999999949,numeric_or_source_diff
+Pair D,S183,EE,TRU,R2,0.356,direct,,R3,,,,,one_coder_only
+Pair D,S183,FC,SI,R2,0.228,direct,,R3,0.279,direct,,0.05100000000000002,numeric_or_source_diff
+Pair D,S183,FC,UB,R2,0.345,direct,,R3,,,,,one_coder_only
+Pair D,S183,PE,SI,R2,0.06,direct,,R3,0.057,direct,,0.0029999999999999957,numeric_or_source_diff
+Pair D,S183,PE,TRU,R2,0.148,direct,,R3,,,,,one_coder_only
+Pair D,S183,SI,TRU,R2,0.309,direct,,R3,,,,,one_coder_only
+Pair D,S197,ATT,EE,R2,0.24,direct,,R3,,,,,one_coder_only
+Pair D,S197,ATT,PE,R2,0.48,direct,,R3,,,,,one_coder_only
+Pair D,S197,ATT,UB,R2,0.34,direct,,R3,,,,,one_coder_only
+Pair D,S197,BI,EE,R2,,,,R3,0.69,direct,,,one_coder_only
+Pair D,S197,BI,PE,R2,,,,R3,0.47,direct,,,one_coder_only
+Pair D,S197,BI,TRU,R2,,,,R3,0.34,direct,,,one_coder_only
+Pair D,S197,EE,TRU,R2,,,,R3,0.24,direct,,,one_coder_only
+Pair D,S197,EE,UB,R2,0.69,direct,,R3,,,,,one_coder_only
+Pair D,S197,PE,TRU,R2,,,,R3,0.48,direct,,,one_coder_only
+Pair D,S197,PE,UB,R2,0.47,,,R3,,,,,one_coder_only
+Pair D,S204,ATT,BI,R2,0.368,beta_converted,,R3,0.405,beta_converted,,0.03700000000000003,numeric_or_source_diff
+Pair D,S204,ATT,PE,R2,0.37,beta_converted,,R3,0.405,beta_converted,,0.03500000000000003,numeric_or_source_diff
+Pair D,S204,BI,EE,R2,,,,R3,0.405,beta_converted,,,one_coder_only
+Pair D,S204,BI,PE,R2,0.405,beta_converted,,R3,,,,,one_coder_only
+Pair D,S204,PE,SE,R2,0.031,beta_converted,,R3,,,,,one_coder_only
+Pair D,S204,PE,SI,R2,,,,R3,0.031,beta_converted,,,one_coder_only
+Pair D,S207,ATT,BI,R2,0.527,,,R3,0.527,direct,,0.0,numeric_or_source_diff
+Pair D,S207,ATT,EE,R2,0.428,,,R3,0.428,direct,,0.0,numeric_or_source_diff
+Pair D,S207,ATT,PE,R2,0.502,,,R3,0.502,direct,,0.0,numeric_or_source_diff
+Pair D,S207,BI,EE,R2,0.514,,,R3,0.514,direct,,0.0,numeric_or_source_diff
+Pair D,S207,BI,PE,R2,520,,,R3,0.52,direct,,519.48,numeric_or_source_diff
+Pair D,S207,EE,PE,R2,0.545,,,R3,0.545,direct,,0.0,numeric_or_source_diff
+Pair D,S210,BI,PE,R2,0.443,direct,,R3,0.177,direct,,0.266,numeric_or_source_diff
+Pair D,S210,EE,PE,R2,0.317,direct,,R3,0.137,direct,,0.18,numeric_or_source_diff
+Pair D,S210,PE,SE,R2,0.212,direct,,R3,0.198,direct,,0.013999999999999985,numeric_or_source_diff
+Pair D,S221,FC,UB,R2,,,,R3,0.592,direct,,,one_coder_only
+Pair D,S221,PE,SE,R2,0.592,direct,,R3,,,,,one_coder_only
+Pair D,S221,PE,UB,R2,0.681,direct,,R3,0.681,,,0.0,numeric_or_source_diff
+Pair D,S221,SI,UB,R2,0.644,direct,,R3,0.644,,,0.0,numeric_or_source_diff
