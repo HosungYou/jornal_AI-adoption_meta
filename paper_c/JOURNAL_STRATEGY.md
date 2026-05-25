@@ -3,8 +3,9 @@
 ## Primary Target: JMIR Metascience and Research Integrity
 
 Paper C is primarily a metascience and research-integrity paper. The central
-claim is that a stateful research harness can make LLM-assisted evidence coding
-more transparent, reproducible, auditable, and correction-recoverable.
+claim is that LLM-assisted evidence coding should be evaluated as a
+model-by-procedure condition with explicit run provenance, repeated-run
+stability checks, and human-auditable source evidence.
 
 ### Fit
 
@@ -15,16 +16,17 @@ more transparent, reproducible, auditable, and correction-recoverable.
 
 ### Cover-Letter Claim
 
-This manuscript evaluates whether a stateful research harness can transform
-LLM-assisted structured extraction from a one-shot black-box output into a
-source-verifiable and auditable evidence-coding procedure.
+This manuscript evaluates how model choice and extraction procedure affect
+LLM-assisted structured extraction from scholarly PDFs, with emphasis on
+source-verifiability, auditability, reproducibility, and the conditions under
+which model-performance comparisons are interpretable.
 
 ## Secondary Target: JMIR AI
 
 JMIR AI is appropriate if the paper is framed as an applied AI-methods
 evaluation. The risk is that the manuscript could be read as a single-product
-platform study. To avoid that, the manuscript must present LongTable as an
-experimental harness condition in a same-model ablation study.
+platform study. To avoid that, the manuscript must present LongTable as one
+procedure condition inside a broader model-by-procedure benchmark.
 
 ## Technical Fallback: Information Processing & Management
 
@@ -46,12 +48,16 @@ Paper C should avoid:
 - LongTable promotion without an ablation design.
 - Treating the human reference as perfect ground truth.
 - Repeating Paper B's MASEM downstream substitution contribution.
+- Treating a single observed model score as independent of prompt, preprocessing,
+  runtime, and repeated-run variability.
 
 Paper C should emphasize:
 
-- Same-model comparison.
+- Same-model procedure comparison.
+- Versioned cross-model comparison where resources permit.
 - Full 213-study corpus.
 - Prespecified schema.
-- Field-level `H-C-L` comparison.
+- Field-level `H` versus model/procedure condition comparison.
 - Auditability and reproducibility metrics.
+- Run-provenance and repeatability tables.
 - Share-safe prompts, schemas, and analysis code.

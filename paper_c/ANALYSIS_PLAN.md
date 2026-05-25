@@ -106,19 +106,52 @@ Errors will be coded into the following initial families:
 ## Reproducibility Metrics
 
 - Prompt/schema/model-version completeness.
+- Run-provenance completeness.
 - Rerun bundle completeness.
 - Repeated-run value stability.
 - Repeated-run source-span stability.
+- Repeated-run rank stability when comparing models.
 - Difference between output reproducibility and procedural reproducibility.
+
+## Execution Variability and Local Environment
+
+Paper C should not treat a model score as a timeless property of the model. The
+claim should be framed as model-by-procedure performance under a locked
+extraction condition.
+
+For API-served models, the local machine usually does not run inference, but it
+can still affect PDF rendering, OCR/text extraction, chunking, prompt
+serialization, wrapper behavior, schema parsing, and retry logic. The provider
+backend, model snapshot, batching, hidden runtime changes, and exposed settings
+can also affect outputs even when the local code is unchanged.
+
+For local or self-hosted models, the local environment is a direct part of the
+experimental condition. Hardware, runtime, quantization, GPU kernels, decoding
+implementation, seeds, package versions, and model weights must be recorded and,
+where possible, locked.
+
+Recommended design:
+
+1. Use a locked single full-corpus run per model-by-procedure condition for the
+   main 213-study comparison if cost or time makes full replication infeasible.
+2. Add repeated runs on a stratified stability subset, prioritizing high-risk
+   fields and studies with human-human disagreement.
+3. Report within-condition variability alongside accuracy. Model differences
+   should not be interpreted as meaningful when they are smaller than run-to-run
+   variability.
+4. Include a run-provenance table and a repeatability table in the main paper or
+   supplement.
 
 ## Statistical Approach
 
-- Use paired comparisons because `C` and `L` are applied to the same studies and
-  fields.
+- Use paired comparisons because model/procedure conditions are applied to the
+  same studies and fields.
 - Use bootstrap confidence intervals clustered by study for field-level metrics.
 - Use McNemar-type tests for paired binary outcomes where appropriate.
 - Use mixed-effects models for error outcomes if fields are nested within study
   and extraction family.
+- For repeated runs, estimate within-condition variability before interpreting
+  between-model or between-procedure contrasts.
 - Report effect sizes and confidence intervals rather than relying only on
   significance tests.
 

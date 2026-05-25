@@ -76,6 +76,8 @@ CURRENT.md
 # Excel lock files
 ~$*.xlsx
 ~$*.xls
+~$*.docx
+~$*.doc
 
 # ChromaDB (RAG index)
 chroma_db/

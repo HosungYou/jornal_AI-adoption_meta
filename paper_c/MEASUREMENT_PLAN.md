@@ -43,6 +43,9 @@ Paper C separates four outcome families:
 | Uncertainty usefulness | Whether uncertainty flags predict procedure-output disagreement with `H` or source ambiguity |
 | Rerun completeness | Whether prompt, schema, model, date, source, and settings are sufficient to rerun |
 | Run-to-run stability | Agreement between repeated runs under the same condition |
+| Source-span stability | Whether repeated runs cite the same supporting page/table/span for the same value |
+| Rank stability | Whether model rankings remain the same across repeat runs or bootstrap samples |
+| Invalid-output stability | Whether schema or formatting failure rates change across repeat runs |
 | Adjudication efficiency | Time or steps required for a human reviewer to verify or correct an extraction |
 
 ## Error Types To Code
@@ -74,9 +77,30 @@ Each stateful procedure or harness condition must produce:
 - Checkpoint or decision trace for ambiguous research choices.
 - Rerun manifest.
 
+## Minimum Run-Provenance Artifact Set
+
+Each raw model and procedure condition must preserve:
+
+- Source PDF identifier and hash.
+- Preprocessing/OCR/text-extraction version.
+- Chunking and input-window policy.
+- Exact prompt payload or prompt serialization hash.
+- Prompt, schema, and parser versions.
+- Model provider, model identifier, endpoint, and snapshot/version when exposed.
+- Run timestamp and timezone.
+- Decoding/runtime settings, including temperature, top-p, max tokens,
+  reasoning/thinking effort, seed if exposed, and retry policy.
+- Client package/runtime version.
+- Local hardware, operating system, model weights/release hash, quantization,
+  and inference runtime for locally hosted models.
+
 ## Interpretation Rule
 
 Accuracy and verifiability are interpreted separately. A condition can preserve
 accuracy while improving auditability, or it can be accurate but insufficiently
 auditable. The paper should not treat opaque correct answers as equivalent to
 source-verifiable correct answers.
+
+When repeated-run variability is measured, model or procedure superiority should
+not be claimed from a difference that is smaller than within-condition
+run-to-run variation.

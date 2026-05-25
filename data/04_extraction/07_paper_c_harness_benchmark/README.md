@@ -1,10 +1,10 @@
-# Paper C Harness Benchmark Workspace
+# Paper C Model-by-Procedure Benchmark Workspace
 
 This folder stores Paper C benchmark artifacts for the 213-study comparison of:
 
 - `H`: frozen source-anchored adjudicated human reference standard.
-- `C`: raw Codex extraction.
-- `L`: Codex + LongTable harness extraction.
+- Raw model conditions, such as `M1-R` and `M2-R`.
+- Procedure-mediated conditions, such as `M1-P`.
 
 ## Status
 
@@ -17,9 +17,9 @@ standard is frozen in `data/04_extraction/04_reference_standard_freeze/`.
 |---|---|
 | `00_manifest/` | Corpus manifest and source-document identifiers |
 | `01_human_reference_snapshot/` | Share-safe frozen-reference snapshot or pointer |
-| `02_codex_raw/` | Raw Codex outputs and validation summaries |
-| `03_codex_longtable/` | LongTable-mediated outputs and validation summaries |
-| `04_three_way_comparison/` | `H-C-L` comparison tables and pattern summaries |
+| `02_raw_model_conditions/` | Raw model outputs and validation summaries |
+| `03_procedure_conditions/` | Procedure-mediated outputs and validation summaries |
+| `04_model_procedure_comparison/` | `H` versus model/procedure comparison tables and pattern summaries |
 | `05_auditability_metrics/` | Source-span, schema, correction, and triage metrics |
 | `06_rerun_bundles/` | Share-safe rerun manifests and reproducibility summaries |
 | `private/` | Local-only private inputs, raw transcripts, PDFs, or sensitive artifacts |

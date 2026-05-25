@@ -1,0 +1,1 @@
+study_id,field_id,field_family,human_reference_value,condition_code,model_id,procedure_id,run_id,extracted_value,agreement_with_h,absolute_error,error_type,source_span_status,source_span_correct,uncertainty_flag,correction_recoverable,schema_valid,notes

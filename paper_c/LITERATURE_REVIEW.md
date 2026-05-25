@@ -14,19 +14,20 @@
 - "What level of automation is good enough?" provides a useful automation-tier
   framing for distinguishing routine fields from fields requiring human review.
 
-## Workflow Validation Rather Than Model Leaderboard
+## Model-by-Procedure Validation Rather Than Simple Leaderboard
 
-Paper C builds on the distinction between model validation and workflow
-validation. The relevant question is not whether one vendor wins at a fixed
-moment, but whether the research procedure becomes more reliable, auditable, and
-reproducible.
+Paper C builds on the distinction between model validation, procedure
+validation, and execution-context reporting. The relevant question is not only
+whether one vendor wins at a fixed moment, but whether model differences remain
+interpretable after prompt, schema, preprocessing, and repeated-run variability
+are controlled.
 
 ## Source-Grounded Structured Extraction
 
 SciDaSynth is the closest system-level precedent because it evaluates LLM-based
 structured extraction from scientific literature with user validation and
-correction. Paper C differs by using a same-model harness ablation:
-raw Codex versus Codex mediated by LongTable.
+correction. Paper C differs by using model-by-procedure contrasts: at minimum,
+a same-model procedure ablation and one versioned cross-model raw contrast.
 
 LangExtract is a practical open-source signal that source-grounded structured
 extraction and visualization are becoming central expectations for LLM document
@@ -49,6 +50,12 @@ foundation for Paper C. The LongTable condition should be treated as a
 provenance-preserving research procedure that records prompts, schemas, model
 metadata, source spans, validation results, correction history, and rerun
 manifests.
+
+Paper C also needs explicit repeated-run stability evidence. When model outputs
+are generated through provider APIs, local code still controls preprocessing,
+chunking, prompt serialization, parsing, and retries. When models are locally
+hosted, hardware, runtime, quantization, and decoding implementation become
+direct parts of the inference condition.
 
 ## Reporting and Research Integrity
 

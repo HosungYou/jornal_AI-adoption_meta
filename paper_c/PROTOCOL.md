@@ -30,13 +30,22 @@ Each raw model condition is a baseline. It must preserve enough metadata for a f
 comparison:
 
 - PDF or source document identifier.
+- Source PDF hash and text-extraction/OCR pipeline identifier.
 - Prompt version.
 - Extraction schema version.
-- Model identifier and access date.
+- Prompt serialization hash or stored exact prompt payload.
+- Model identifier, provider, endpoint, snapshot/version when available, and
+  access date/time.
 - Interface or API route.
-- Runtime settings if exposed.
+- Runtime settings if exposed, including temperature, top-p, max tokens,
+  reasoning/thinking effort, seed, and retry policy.
+- Client package/runtime version.
 - Output JSON or table.
 - Parse/schema validation result.
+
+If the model is locally hosted, also record model weights or release hash,
+quantization, inference runtime, operating system, hardware, accelerator, and
+decoding implementation.
 
 ### Stateful Procedure or Harness Condition
 
@@ -49,6 +58,14 @@ The stateful procedure condition must include all raw model requirements plus:
 - Correction history.
 - Rerun bundle or replay manifest.
 - Link between each corrected value and the source/correction reason.
+
+### Repeated-Run Stability Condition
+
+When full replication is infeasible, run each model-by-procedure condition at
+least three times on a stratified stability subset. The subset should include
+fields with high human-human disagreement, studies with source-review flags,
+and representative routine fields. The analysis should report whether single
+full-corpus scores are stable enough to support model or procedure comparisons.
 
 ## Extraction Families
 
@@ -64,7 +81,7 @@ The benchmark covers the same MASEM-relevant extraction families used in Paper B
 
 ## Blinding and Leakage Guardrail
 
-The human reference must be frozen before final Codex or LongTable comparison
+The human reference must be frozen before final model/procedure comparison
 analyses are interpreted. LLM outputs must not be used to modify the frozen
 human reference except through an explicitly documented post-freeze correction
 process.
