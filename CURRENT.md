@@ -21,7 +21,7 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 
 ## Quick Start
 - Open `codex` in this directory.
-- A good first message is usually `lt explore: How should we adjudicate S014, S195/S206, and the remaining review-source studies from the combined queue before freezing the human reference?`.
+- A good first message is usually `$longtable-start`.
 
 ## Evidence Rule
 - External or current claims should carry a source link or be labeled as inference.
