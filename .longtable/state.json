@@ -115,19 +115,49 @@
       "rationale": "error type은 adjudication 중에 바로 붙인다. 다만 later analysis에서 error type schema를 검토/정제할 수 있도록 rationale와 source evidence를 함께 보존한다."
     },
     {
-      "id": "decision_mpr0f5nn_n489kh",
-      "timestamp": "2026-05-29T14:21:02.434Z",
-      "checkpointKey": "follow_up_research_direction_change_commitment",
+      "id": "decision_mpr0cxc6_xbm7vj",
+      "timestamp": "2026-05-29T14:19:18.341Z",
+      "checkpointKey": "follow_up_research_scope_boundary",
       "level": "adaptive_required",
       "mode": "commit",
-      "summary": "Answered Research direction change: Other",
+      "summary": "Answered Research scope boundary: Other",
       "commitmentFamily": "scope",
       "epistemicBasis": "mixed",
-      "selectedOption": "defer: no project-direction change in this worker task",
+      "selectedOption": "defer: keep current Paper B Step 3 source-document adjudication scope unchanged for this worker task",
       "selectedOptions": [
-        "defer: no project-direction change in this worker task"
+        "defer: keep current Paper B Step 3 source-document adjudication scope unchanged for this worker task"
       ],
-      "rationale": "Worker-2 is executing an already assigned source-document adjudication slice for S014/S021 within the existing Paper B reference-freeze workflow; this does not choose among protected research commitments or change scope, so the broader priority question should remain for the researcher/leader."
+      "rationale": "This worker is not redefining the population, domain, corpus, or research question; it is executing an already-assigned source-anchored adjudication evidence review for specified study IDs before reference freeze."
+    },
+    {
+      "id": "decision_mpr0d57m_2pcg7d",
+      "timestamp": "2026-05-29T14:19:28.545Z",
+      "checkpointKey": "follow_up_scholarly_access_policy",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Scholarly access policy: Other",
+      "commitmentFamily": "evidence",
+      "epistemicBasis": "external_evidence",
+      "selectedOption": "defer: use only already-local repository evidence and PDFs for this worker task",
+      "selectedOptions": [
+        "defer: use only already-local repository evidence and PDFs for this worker task"
+      ],
+      "rationale": "The assigned Task 3 requires read-only review of existing local repo evidence/PDFs and forbids broad corpus changes; no new subscription-only collection or TDM access route is being introduced by this worker."
+    },
+    {
+      "id": "decision_mpr0dytm_2m79ks",
+      "timestamp": "2026-05-29T14:20:06.921Z",
+      "checkpointKey": "follow_up_scholarly_access_policy",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Scholarly access policy: Other",
+      "commitmentFamily": "evidence",
+      "epistemicBasis": "external_evidence",
+      "selectedOption": "defer: no new full-text access route; inspect only existing local queue metadata and already-stored PDFs",
+      "selectedOptions": [
+        "defer: no new full-text access route; inspect only existing local queue metadata and already-stored PDFs"
+      ],
+      "rationale": "Task 3 is bounded to source-document adjudication using files already present in the repo/worktree; this decision avoids expanding the corpus or introducing subscription/TDM collection choices during worker review."
     }
   ],
   "invocationLog": [],
@@ -637,41 +667,41 @@
       "decisionRecordId": "decision_mpkjxqsa_ep4foa"
     },
     {
-      "id": "question_record_mpr0ehsv_jmw2q5",
-      "createdAt": "2026-05-29T14:20:31.517Z",
-      "updatedAt": "2026-05-29T14:21:02.434Z",
+      "id": "question_record_mpr0cq0c_0lzwme",
+      "createdAt": "2026-05-29T14:19:08.842Z",
+      "updatedAt": "2026-05-29T14:19:18.341Z",
       "status": "answered",
       "commitmentFamily": "scope",
       "epistemicBasis": "mixed",
       "hardStop": true,
       "hardStopScope": "scope",
       "prompt": {
-        "id": "question_prompt_mpr0ehsv_wt6z74",
-        "checkpointKey": "follow_up_research_direction_change_commitment",
-        "title": "Research direction change",
-        "question": "Which high-risk research commitment should LongTable clarify first before changing the project direction?",
+        "id": "question_prompt_mpr0cq0c_f7jrmc",
+        "checkpointKey": "follow_up_research_scope_boundary",
+        "title": "Research scope boundary",
+        "question": "What scope boundary should LongTable keep explicit before treating the research direction as changed?",
         "type": "single_choice",
         "options": [
           {
-            "value": "scope_first",
-            "label": "Scope or research question first",
-            "description": "Clarify what the study includes, excludes, or asks before changing downstream work.",
+            "value": "revise_scope",
+            "label": "Revise the scope",
+            "description": "Change the inclusion boundary before downstream work continues.",
             "recommended": true
           },
           {
-            "value": "theory_first",
-            "label": "Theory or construct frame first",
-            "description": "Clarify the conceptual frame before changing methods or analysis."
+            "value": "compare_boundaries",
+            "label": "Compare boundaries first",
+            "description": "Keep candidate scopes visible before choosing one."
           },
           {
-            "value": "method_analysis_first",
-            "label": "Method or analysis first",
-            "description": "Clarify design, data, or analysis implications before changing the artifact."
+            "value": "proceed_with_scope_assumption",
+            "label": "Proceed with scope assumption",
+            "description": "Continue only after stating the assumed boundary."
           },
           {
             "value": "defer",
-            "label": "Keep the direction open",
-            "description": "Do not change the research direction until the commitment order is explicit."
+            "label": "Keep scope open",
+            "description": "Do not settle the scope yet."
           }
         ],
         "allowOther": true,
@@ -679,10 +709,10 @@
         "required": true,
         "source": "runtime_guidance",
         "rationale": [
-          "The prompt touches multiple protected research commitments; proceeding silently would let LongTable choose the priority order for the researcher.",
+          "Scope changes can redefine the population, domain, corpus, or research question before the researcher has explicitly chosen the boundary.",
           "Question kind: research_commitment",
           "Question confidence: high",
-          "Follow-up prompt: You are a bounded parallel probe for OMX team task 2 in repo /Users/newhosung/dev/jornal-ai-adoption-meta-team-clone/.omx/team/paper-b-step-3-source-9a96bfc2/worktrees/worker-2. Do read-only local repo/source inspection only; do not edit files. Scope: S014 only. Find local evidence in source-check files, combined_correlation_review_queue_20260525.csv, coder value rows, coding manual/rules, and any reachable DOI/source metadata if PDFs are missing. Focus on indirect PLS-SEM through perceived risk and population eligibility. Return bullets with: file refs/line or row locators, source locations, evidence type, raw coder conflict, rule applied, freeze-ready yes/no, unresolved questions. Also note any contract risks/edge cases. Do not make Paper B validity/substitution claims."
+          "Follow-up prompt: You are a bounded review probe for OMX Task 3 in repo /Users/newhosung/dev/jornal-ai-adoption-meta-team-clone/.omx/team/paper-b-step-3-source-9a96bfc2/worktrees/worker-3. Do read-only inspection only. Task scope: Paper B Step 3 source-document adjudication evidence split. Need risks/edge cases/contract violations for S195/S206 duplicate-source exclusion and S014/S021/S056/S092/S121/S202 review-source decisions. Do not edit files. Find relevant local files/queues/PDF references and report bullets with file paths, source locations if obvious, evidence type, raw coder conflict/rule clues, unresolved questions, and freeze-readiness risks. Keep concise."
         ],
         "preferredSurfaces": [
           "mcp_elicitation",
@@ -691,18 +721,164 @@
         ]
       },
       "answer": {
-        "promptId": "question_prompt_mpr0ehsv_wt6z74",
+        "promptId": "question_prompt_mpr0cq0c_f7jrmc",
         "selectedValues": [
-          "defer: no project-direction change in this worker task"
+          "defer: keep current Paper B Step 3 source-document adjudication scope unchanged for this worker task"
         ],
         "selectedLabels": [
           "Other"
         ],
-        "otherText": "defer: no project-direction change in this worker task",
-        "rationale": "Worker-2 is executing an already assigned source-document adjudication slice for S014/S021 within the existing Paper B reference-freeze workflow; this does not choose among protected research commitments or change scope, so the broader priority question should remain for the researcher/leader.",
+        "otherText": "defer: keep current Paper B Step 3 source-document adjudication scope unchanged for this worker task",
+        "rationale": "This worker is not redefining the population, domain, corpus, or research question; it is executing an already-assigned source-anchored adjudication evidence review for specified study IDs before reference freeze.",
         "surface": "numbered"
       },
-      "decisionRecordId": "decision_mpr0f5nn_n489kh"
+      "decisionRecordId": "decision_mpr0cxc6_xbm7vj"
+    },
+    {
+      "id": "question_record_mpr0cq0c_2d9nxl",
+      "createdAt": "2026-05-29T14:19:08.842Z",
+      "updatedAt": "2026-05-29T14:19:28.545Z",
+      "status": "answered",
+      "commitmentFamily": "evidence",
+      "epistemicBasis": "external_evidence",
+      "hardStop": true,
+      "hardStopScope": "evidence",
+      "prompt": {
+        "id": "question_prompt_mpr0cq0c_mwt3f3",
+        "checkpointKey": "follow_up_scholarly_access_policy",
+        "title": "Scholarly access policy",
+        "question": "What scholarly access route should LongTable use before collecting PDFs, full text, or subscription-only evidence?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "oa_only",
+            "label": "OA-only",
+            "description": "Use only open-access PDF or full text.",
+            "recommended": true
+          },
+          {
+            "value": "institutional_access",
+            "label": "Institutional access",
+            "description": "Include VPN/proxy/library-login access after the researcher completes login."
+          },
+          {
+            "value": "publisher_tdm",
+            "label": "Publisher API/TDM",
+            "description": "Use configured publisher API/TDM credentials and record entitlement checks."
+          },
+          {
+            "value": "manual_pdf",
+            "label": "Manual PDFs",
+            "description": "Use PDFs supplied by the researcher and record provenance."
+          },
+          {
+            "value": "metadata_only",
+            "label": "Metadata only",
+            "description": "Do not collect full text yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other",
+        "required": true,
+        "source": "runtime_guidance",
+        "rationale": [
+          "Full-text access decisions can change the corpus, inclusion bias, reproducibility, and TDM permission boundary.",
+          "Question kind: evidence_risk",
+          "Question confidence: high",
+          "Follow-up prompt: You are a bounded review probe for OMX Task 3 in repo /Users/newhosung/dev/jornal-ai-adoption-meta-team-clone/.omx/team/paper-b-step-3-source-9a96bfc2/worktrees/worker-3. Do read-only inspection only. Task scope: Paper B Step 3 source-document adjudication evidence split. Need risks/edge cases/contract violations for S195/S206 duplicate-source exclusion and S014/S021/S056/S092/S121/S202 review-source decisions. Do not edit files. Find relevant local files/queues/PDF references and report bullets with file paths, source locations if obvious, evidence type, raw coder conflict/rule clues, unresolved questions, and freeze-readiness risks. Keep concise."
+        ],
+        "preferredSurfaces": [
+          "mcp_elicitation",
+          "terminal_selector",
+          "numbered"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpr0cq0c_mwt3f3",
+        "selectedValues": [
+          "defer: use only already-local repository evidence and PDFs for this worker task"
+        ],
+        "selectedLabels": [
+          "Other"
+        ],
+        "otherText": "defer: use only already-local repository evidence and PDFs for this worker task",
+        "rationale": "The assigned Task 3 requires read-only review of existing local repo evidence/PDFs and forbids broad corpus changes; no new subscription-only collection or TDM access route is being introduced by this worker.",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpr0d57m_2pcg7d"
+    },
+    {
+      "id": "question_record_mpr0dnhu_8eb7zg",
+      "createdAt": "2026-05-29T14:19:52.240Z",
+      "updatedAt": "2026-05-29T14:20:06.921Z",
+      "status": "answered",
+      "commitmentFamily": "evidence",
+      "epistemicBasis": "external_evidence",
+      "hardStop": true,
+      "hardStopScope": "evidence",
+      "prompt": {
+        "id": "question_prompt_mpr0dnhu_zmzv3t",
+        "checkpointKey": "follow_up_scholarly_access_policy",
+        "title": "Scholarly access policy",
+        "question": "What scholarly access route should LongTable use before collecting PDFs, full text, or subscription-only evidence?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "oa_only",
+            "label": "OA-only",
+            "description": "Use only open-access PDF or full text.",
+            "recommended": true
+          },
+          {
+            "value": "institutional_access",
+            "label": "Institutional access",
+            "description": "Include VPN/proxy/library-login access after the researcher completes login."
+          },
+          {
+            "value": "publisher_tdm",
+            "label": "Publisher API/TDM",
+            "description": "Use configured publisher API/TDM credentials and record entitlement checks."
+          },
+          {
+            "value": "manual_pdf",
+            "label": "Manual PDFs",
+            "description": "Use PDFs supplied by the researcher and record provenance."
+          },
+          {
+            "value": "metadata_only",
+            "label": "Metadata only",
+            "description": "Do not collect full text yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other",
+        "required": true,
+        "source": "runtime_guidance",
+        "rationale": [
+          "Full-text access decisions can change the corpus, inclusion bias, reproducibility, and TDM permission boundary.",
+          "Question kind: evidence_risk",
+          "Question confidence: high",
+          "Follow-up prompt: Read-only probe for Task 3. Focus on S195 and S206 duplicate-source exclusion evidence. Find local files, queue artifacts, CSV/XLSX/PDF references, and any rules or conflict clues explaining why these were duplicate-source exclusions or how the exclusion decision is recorded. Return concise bullets with file paths, obvious source locations, evidence type, raw coder conflict, rule applied, unresolved questions, and freeze-readiness risks. No edits."
+        ],
+        "preferredSurfaces": [
+          "mcp_elicitation",
+          "terminal_selector",
+          "numbered"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpr0dnhu_zmzv3t",
+        "selectedValues": [
+          "defer: no new full-text access route; inspect only existing local queue metadata and already-stored PDFs"
+        ],
+        "selectedLabels": [
+          "Other"
+        ],
+        "otherText": "defer: no new full-text access route; inspect only existing local queue metadata and already-stored PDFs",
+        "rationale": "Task 3 is bounded to source-document adjudication using files already present in the repo/worktree; this decision avoids expanding the corpus or introducing subscription/TDM collection choices during worker review.",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpr0dytm_2m79ks"
     }
   ],
   "artifactRecords": [],
