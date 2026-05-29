@@ -113,6 +113,21 @@
       "summary": "Answered Error type 부여 시점: Other decision",
       "selectedOption": "other",
       "rationale": "error type은 adjudication 중에 바로 붙인다. 다만 later analysis에서 error type schema를 검토/정제할 수 있도록 rationale와 source evidence를 함께 보존한다."
+    },
+    {
+      "id": "decision_mpr0dcau_p1qtef",
+      "timestamp": "2026-05-29T14:19:37.733Z",
+      "checkpointKey": "follow_up_scholarly_access_policy",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Scholarly access policy: Other",
+      "commitmentFamily": "evidence",
+      "epistemicBasis": "external_evidence",
+      "selectedOption": "Use only already-local or user-provided repository evidence/PDFs for this adjudication pass; do not collect new PDFs, full text, subscription-only materials, or TDM-only evidence.",
+      "selectedOptions": [
+        "Use only already-local or user-provided repository evidence/PDFs for this adjudication pass; do not collect new PDFs, full text, subscription-only materials, or TDM-only evidence."
+      ],
+      "rationale": "Task 1 is a source-document adjudication over local repo evidence before reference-standard freeze. Limiting access to already-local/user-provided files preserves the current corpus boundary, avoids introducing access-route bias, and keeps reproducibility/permission risk out of this worker lane."
     }
   ],
   "invocationLog": [],
@@ -620,6 +635,79 @@
         "surface": "numbered"
       },
       "decisionRecordId": "decision_mpkjxqsa_ep4foa"
+    },
+    {
+      "id": "question_record_mpr0cumh_uqvops",
+      "createdAt": "2026-05-29T14:19:14.823Z",
+      "updatedAt": "2026-05-29T14:19:37.733Z",
+      "status": "answered",
+      "commitmentFamily": "evidence",
+      "epistemicBasis": "external_evidence",
+      "hardStop": true,
+      "hardStopScope": "evidence",
+      "prompt": {
+        "id": "question_prompt_mpr0cumh_0v2cvt",
+        "checkpointKey": "follow_up_scholarly_access_policy",
+        "title": "Scholarly access policy",
+        "question": "What scholarly access route should LongTable use before collecting PDFs, full text, or subscription-only evidence?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "oa_only",
+            "label": "OA-only",
+            "description": "Use only open-access PDF or full text.",
+            "recommended": true
+          },
+          {
+            "value": "institutional_access",
+            "label": "Institutional access",
+            "description": "Include VPN/proxy/library-login access after the researcher completes login."
+          },
+          {
+            "value": "publisher_tdm",
+            "label": "Publisher API/TDM",
+            "description": "Use configured publisher API/TDM credentials and record entitlement checks."
+          },
+          {
+            "value": "manual_pdf",
+            "label": "Manual PDFs",
+            "description": "Use PDFs supplied by the researcher and record provenance."
+          },
+          {
+            "value": "metadata_only",
+            "label": "Metadata only",
+            "description": "Do not collect full text yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other",
+        "required": true,
+        "source": "runtime_guidance",
+        "rationale": [
+          "Full-text access decisions can change the corpus, inclusion bias, reproducibility, and TDM permission boundary.",
+          "Question kind: evidence_risk",
+          "Question confidence: high",
+          "Follow-up prompt: Task scope: Paper B Step 3 source-document adjudication evidence split in repo /Users/newhosung/dev/jornal-ai-adoption-meta-team-clone/.omx/team/paper-b-step-3-source-9a96bfc2/worktrees/worker-1. Read-only review probe only. Inspect local repo evidence/PDF availability for specified study IDs S195/S206 duplicate-source exclusion and S014/S021/S056/S092/S121/S202 review-source decisions. Do not edit files. Return bullets with risks, edge cases, source/evidence locations you find, and contract violations to avoid. Keep independent; do not duplicate implementation. Child report bullets only."
+        ],
+        "preferredSurfaces": [
+          "mcp_elicitation",
+          "terminal_selector",
+          "numbered"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mpr0cumh_0v2cvt",
+        "selectedValues": [
+          "Use only already-local or user-provided repository evidence/PDFs for this adjudication pass; do not collect new PDFs, full text, subscription-only materials, or TDM-only evidence."
+        ],
+        "selectedLabels": [
+          "Other"
+        ],
+        "otherText": "Use only already-local or user-provided repository evidence/PDFs for this adjudication pass; do not collect new PDFs, full text, subscription-only materials, or TDM-only evidence.",
+        "rationale": "Task 1 is a source-document adjudication over local repo evidence before reference-standard freeze. Limiting access to already-local/user-provided files preserves the current corpus boundary, avoids introducing access-route bias, and keeps reproducibility/permission risk out of this worker lane.",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mpr0dcau_p1qtef"
     }
   ],
   "artifactRecords": [],
@@ -642,5 +730,11 @@
       "visibility": "explicit",
       "importance": "high"
     }
-  ]
+  ],
+  "hooks": [],
+  "interviewTurns": [],
+  "evidenceRecords": [],
+  "specPatches": [],
+  "specRevisions": [],
+  "questionObligations": []
 }
