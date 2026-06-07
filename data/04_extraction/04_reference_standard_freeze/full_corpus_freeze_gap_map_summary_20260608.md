@@ -27,6 +27,9 @@ Status: gap map generated. This is not a full 213-study freeze and does not star
 - `phase1_s191_reconciliation_20260608.md`
 - `phase2_confirmed_exclusion_full_corpus_audit_20260608.csv`
 - `phase1_rule_progress_audit_queue_20260608.csv`
+- `phase1_high_priority_rule_audit_20260608.csv`
+- `phase1_high_priority_rule_reference_draft_20260608.csv`
+- `phase1_high_priority_rule_audit_summary_20260608.md`
 - `full_corpus_residual_adjudication_triage_20260608.csv`
 - `full_corpus_step4_application_progress_20260608.csv`
 - `full_corpus_step4_bundled_progress_summary_20260608.md`
@@ -60,6 +63,7 @@ Status: gap map generated. This is not a full 213-study freeze and does not star
 - `scoped_phase2_frozen` studies are already covered by the scoped Phase 2 freeze package.
 - `phase1_logged_decision_or_progress_pending_step4_application` studies now have a dedicated application audit layer. They are split into logged exclusions, explicit value decisions, explicit rule decisions requiring row filters/source audits, and progress-only studies requiring source-value audit.
 - The highest-confidence Phase 1 subset now has a draft row/status layer: 80 row-level records for S033/S035/S051/S081/S120/S151/S164/S191/S217 and exclusion status records for S041/S180/S220.
+- The high-priority Phase 1 rule subset now has 37 row-level draft records for S054/S074/S091/S189; S074 remains orientation-flagged rather than fully routine.
 - `source_checked_confirmed_exclusion_pending_full_freeze_application` studies have been carried into `phase2_confirmed_exclusion_full_corpus_audit_20260608.csv` as status-draft exclusions, but they are not yet part of a frozen full-corpus package.
 - `correlation_disagreement_pending_adjudication` studies remain the largest full-freeze blocker; the 124 studies are now triaged in `full_corpus_residual_adjudication_triage_20260608.csv` by one-coder-only and numeric/source-difference burden.
 - `metadata_only_or_no_correlation_gap_pending_lightweight_audit` studies are lower-priority for target-row adjudication, but still need status/metadata audit before full freeze.
@@ -79,19 +83,20 @@ Status: gap map generated. This is not a full 213-study freeze and does not star
 |---|---:|
 | `correlation_disagreement_pending_adjudication` | 124 |
 | `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 48 |
-| `phase1_rule_decision_row_filter_or_source_audit_queue` | 12 |
 | `phase1_high_confidence_reference_draft_or_exclusion_status` | 12 |
+| `phase1_rule_decision_row_filter_or_source_audit_queue` | 8 |
 | `scoped_phase2_frozen` | 8 |
 | `phase2_confirmed_exclusion_full_corpus_status_draft` | 6 |
+| `phase1_rule_reference_draft_completed` | 3 |
 | `phase1_progress_only_source_value_audit_queue` | 2 |
+| `phase1_rule_reference_draft_orientation_caveat` | 1 |
 | `correlation_queue_lightweight_audit_pending` | 1 |
 
 ## Recommended Next Action
 
 Prioritize the full-corpus freeze work in this order:
 
-1. Apply explicit Phase 1 rule-decision row filters/source audits, starting with high-priority S054, S074, S091, and S189.
-2. Run source-value audit for S086 and S168.
-3. Process residual `batch_1_high_burden` studies from `full_corpus_residual_adjudication_triage_20260608.csv`.
-4. Run lightweight metadata/status audit for studies without target-row disagreement.
-5. Only after the intended full reference scope is frozen should Step 5 generate result claims.
+1. Process residual `batch_1_high_burden` studies from `full_corpus_residual_adjudication_triage_20260608.csv`.
+2. Continue the remaining Phase 1 rule/progress audit queue when needed: S005, S011, S044, S079, S086, S087, S166, S168, S187, and S223.
+3. Run lightweight metadata/status audit for studies without target-row disagreement.
+4. Only after the intended full reference scope is frozen should Step 5 generate result claims.

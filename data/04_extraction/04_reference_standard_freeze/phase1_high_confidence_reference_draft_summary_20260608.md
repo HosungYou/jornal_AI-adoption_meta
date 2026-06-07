@@ -60,7 +60,6 @@ Status: high-confidence Phase 1 Step 4 reference-draft sub-batch generated and S
 
 ## Recommended Next Action
 
-1. Apply explicit Phase 1 rule-decision row filters/source audits for the 12 remaining rule-decision studies, starting with high-priority S054, S074, S091, and S189.
-2. Run source-value audit for S086 and S168.
-3. Process residual `batch_1_high_burden` studies from `full_corpus_residual_adjudication_triage_20260608.csv`.
-4. Keep full-result Step 5 inactive until the intended reference scope is frozen.
+1. Process residual `batch_1_high_burden` studies from `full_corpus_residual_adjudication_triage_20260608.csv`.
+2. Continue the remaining Phase 1 rule/progress audit queue when needed: S005, S011, S044, S079, S086, S087, S166, S168, S187, and S223.
+3. Keep full-result Step 5 inactive until the intended reference scope is frozen.

@@ -19,6 +19,9 @@ start Step 5.
 - `phase1_high_confidence_reference_draft_status_20260608.csv`
 - `phase1_high_confidence_reference_draft_summary_20260608.md`
 - `phase1_s191_reconciliation_20260608.md`
+- `phase1_high_priority_rule_audit_20260608.csv`
+- `phase1_high_priority_rule_reference_draft_20260608.csv`
+- `phase1_high_priority_rule_audit_summary_20260608.md`
 
 ## Decision-Level Counts
 
@@ -51,6 +54,9 @@ start Step 5.
 - Explicit rule decisions are actionable, but they are not yet final
   freeze-layer rows because they require row filters, source-type checks,
   construct-mapping confirmation, orientation checks, or N reconciliation.
+- Four high-priority explicit rule studies have now been audited into a separate
+  row/status draft layer: S054, S091, and S189 are routine final-freeze audit
+  cases; S074 is drafted with an ANX/AXT orientation caveat.
 - S086 and S168 have Phase 1 progress evidence but no logged final row rule; do
   not advance them to freeze rows without source-value audit.
 - The high-confidence reference-draft/status layer now carries 80 row-level
@@ -59,10 +65,9 @@ start Step 5.
 
 ## Recommended Next Action
 
-1. Apply the explicit rule-decision row filters/source audits, starting with
-   high-priority S054, S074, S091, and S189.
-2. Run source-value audit for S086 and S168.
-3. Process residual `batch_1_high_burden` studies from
+1. Process residual `batch_1_high_burden` studies from
    `full_corpus_residual_adjudication_triage_20260608.csv`.
-4. Keep full-result Step 5 inactive until the intended reference scope is
+2. Continue the remaining Phase 1 rule/progress audit queue when needed: S005,
+   S011, S044, S079, S086, S087, S166, S168, S187, and S223.
+3. Keep full-result Step 5 inactive until the intended reference scope is
    frozen.
