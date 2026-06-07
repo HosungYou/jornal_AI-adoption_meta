@@ -18,6 +18,13 @@ Current clean manifest state:
 - Gemini full run: not started; stratified diagnostic contained row-level
   `model_cli_error`, and a later direct 1-row diagnostic timed out after
   repeated `You have exhausted your capacity on this model.` retries.
+- Gemini cleancheck: a 2026-06-07 model-explicit
+  `gemini:gemini-2.5-pro` one-row probe again failed with provider capacity
+  exhaustion and was not registered as clean evidence.
+- Denominator-family interpretation:
+  `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`
+  separates model-explicit available rows from the Codex GPT-5.5 / Claude
+  Sonnet overlap subset. Use it before drafting any results language.
 
 Gemini stratified/retry/probe CSVs with row-level CLI errors are not in the
 clean manifest because they are diagnostic artifacts, not clean locked model
@@ -82,11 +89,13 @@ Gemini should only be probed, not full-run:
 ```bash
 python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
   --provider gemini \
-  --run-id paper2_gemini_probe1_retry_20260606 \
+  --model-selector gemini-2.5-pro \
+  --run-id paper2_gemini25pro_probe1_cleancheck_YYYYMMDD \
   --offset 0 \
   --limit 1 \
   --chunk-size 1 \
-  --timeout 480
+  --timeout 480 \
+  --register
 ```
 
 ## Clean registration rule
@@ -160,7 +169,8 @@ Run this before handoff or commit:
 
 ```bash
 python3 scripts/llm_scoring_20260606/score_locked_outputs.py && \
-git diff --check && \
+python3 scripts/llm_scoring_20260606/summarize_denominator_family_results.py && \
+git diff --check -- ':!data/04_extraction/05_llm_masem_substitution/results/*.csv' && \
 python3 -m py_compile scripts/llm_scoring_20260606/*.py && \
 python3 -m json.tool \
   data/04_extraction/05_llm_masem_substitution/schemas/MODEL_ANSWER_SCHEMA_20260606.json >/dev/null
@@ -172,6 +182,7 @@ Expected current result:
 status=scored_locked_outputs
 locked_output_files=109
 scored_rows=5898
+summary_rows=25
 ```
 
 ## Commit message template

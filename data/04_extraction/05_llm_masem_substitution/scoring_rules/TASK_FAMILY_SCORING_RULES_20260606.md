@@ -67,4 +67,11 @@ remain usable as CLI-default diagnostics, but they must not be relabeled as
 Sonnet/Opus or GPT-5.5 after locking. Model-explicit continuation starts with
 `claude:sonnet` at 4000-4499 and `codex:gpt-5.5` at 0000-0099 after the
 backfill rerun. Gemini should remain at smoke/probe status until its row-level
-CLI errors and current capacity-exhaustion timeout are eliminated.
+CLI errors and current capacity-exhaustion timeout are eliminated. The
+2026-06-07 `gemini:gemini-2.5-pro` cleancheck probe failed with repeated
+capacity-exhaustion retries and was not registered.
+
+For current model-explicit interpretation, use
+`results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`.
+This table separates Codex GPT-5.5 available rows, Claude Sonnet available
+rows, and the direct Codex/Claude overlap subset.

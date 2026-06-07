@@ -27,6 +27,9 @@ by denominator family.
   when locked model rows exist.
 - `results/paper2_locked_output_score_summary_20260606.csv`: model/family
   summary output when locked model rows exist.
+- `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`:
+  model-explicit denominator-family interpretation table for Codex GPT-5.5 and
+  Claude Sonnet, including their overlap subset.
 
 ## Current status
 
@@ -58,14 +61,18 @@ and a temporary working directory has produced clean model-explicit
 `codex:gpt-5.5` locked outputs for the full `0000-7858` run.
 
 Gemini CLI is usable for smoke and stratified exports, but the current
-stratified run includes row-level CLI errors in some batches. A later direct
-1-row diagnostic hit repeated `You have exhausted your capacity on this model.`
-retries and timed out after 240 seconds, so do not start Gemini full-run
-scoring until a 1-row model-explicit probe is clean.
+stratified run includes row-level CLI errors in some batches. A 2026-06-07
+model-explicit `gemini:gemini-2.5-pro` one-row cleancheck probe hit repeated
+`You have exhausted your capacity on this model.` retries and was not
+registered, so do not start Gemini full-run scoring until a 1-row
+model-explicit probe is clean.
 
 Current clean model-explicit state: `codex:gpt-5.5` is complete for
 `0000-7858`; `claude:sonnet` is complete for `4000-7858`; Gemini full remains
 paused.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
-`denominator_family` and `scoring_eligibility`.
+`denominator_family` and `scoring_eligibility`. Current interpretation should
+start from
+`results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`, which
+separates available model-explicit rows from the Codex/Claude overlap subset.
