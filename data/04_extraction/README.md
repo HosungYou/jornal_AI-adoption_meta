@@ -11,16 +11,18 @@ numbered folders below.
 | 1 | `01_raw_human_coder_data_freeze/` | Raw independent human coder workbooks and freeze candidates | Phase 1 complete; Phase 2 returned raw workbooks and freeze candidates preserved |
 | 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists; Phase 2 queue and combined Phase 1+2 queues generated |
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 and Phase 2 adjudication in progress |
-| 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Not frozen |
+| 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Scoped Phase 2 package frozen; full corpus not complete |
 | 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Not started |
 | 6 | `06 coding by date/` | Date-stamped operational staging area for share-safe coding packets and transfer artifacts | Active |
 | 99 | `99_archive/` | Historical files not used in the active workflow | Reference only |
 
 ## Current Stage
 
-The project is currently in Step 3 adjudication. Phase 2 returned workbooks are
-now preserved, but the source-anchored adjudicated human reference standard is
-not frozen.
+The project is currently between Step 3 adjudication and full-corpus Step 4
+freeze. Phase 2 returned workbooks are now preserved, and a scoped Step 4 freeze
+package has been prepared for the source-adjudicated Phase 2 high-priority
+decisions. This scoped package does not mean the full 213-study
+source-anchored adjudicated human reference standard is complete.
 
 - Step 1 is complete for Phase 1 raw coder packages.
 - Step 2 exists as the Phase 1 pairwise comparison workbook.
@@ -29,7 +31,11 @@ not frozen.
 - Step 2 has a Phase 2 derived pre-adjudication disagreement queue.
 - Step 2 also has combined Phase 1+2 derived pre-adjudication queues for the
   full 213-study Paper B validation corpus.
-- Step 3 has started through documented source-check decisions.
+- Step 3 has source-check and source-value decisions documented for selected
+  Phase 2 high-priority items.
+- Step 4 has a scoped frozen Phase 2 source-adjudicated package,
+  decision-application audit, QA audit record, and post-freeze correction
+  placeholder.
 - Step 4 is not complete because no frozen adjudicated reference file exists.
 - Step 5 must not start until Step 4 is frozen.
 
