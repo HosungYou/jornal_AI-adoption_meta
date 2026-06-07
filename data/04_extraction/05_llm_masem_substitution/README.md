@@ -62,21 +62,22 @@ A hook-free Codex path using `--ignore-user-config`, `--skip-git-repo-check`,
 and a temporary working directory has produced clean model-explicit
 `codex:gpt-5.5` locked outputs for the full `0000-7858` run.
 
-Gemini CLI is usable for smoke and stratified exports, but the current
-stratified run includes row-level CLI errors in some batches. A 2026-06-07
-model-explicit `gemini:gemini-2.5-pro` one-row cleancheck probe hit repeated
-`You have exhausted your capacity on this model.` retries and was not
-registered, so do not start Gemini full-run scoring until a 1-row
-model-explicit probe is clean.
+Gemini 3 Flash is complete for the full `0000-7858` model-explicit range.
+Shards `0000-7249` used the Gemini CLI. The `human_disagreement_trace` tail hit
+Gemini CLI capacity exhaustion, so `7250-7399`, `7400`, and `7401-7858` were
+completed through the Google AI Studio Gemini API with the same
+`gemini-3-flash-preview` model selector. CLI/API surface provenance is preserved
+in locked-output metadata.
 
 Current clean model-explicit state: `codex:gpt-5.5` is complete for
-`0000-7858`; `claude:sonnet` is complete for `4000-7858`; Gemini full remains
-paused.
+`0000-7858`; `claude:sonnet` is complete for `4000-7858`;
+`gemini:gemini-3-flash-preview` is complete for `0000-7858`.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from
 `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`, which
-separates available model-explicit rows from the Codex/Claude overlap subset.
+separates available model-explicit rows from the Codex/Claude/Gemini 3 Flash
+overlap subset.
 Treat `direct_r_effect_size_extraction` and `metadata_extraction` as separate
 primary evidence families.

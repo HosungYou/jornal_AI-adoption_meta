@@ -56,23 +56,23 @@ As of 2026-06-06 local inspection:
   locked through the full `4000-7858` model-explicit continuation. Earlier
   `6500-6999` session-limit 429 artifacts are diagnostic only and are not in
   the clean manifest.
-- `gemini` CLI is available and produced one-row smoke and 77-row stratified
-  diagnostic outputs, but the stratified run retained row-level CLI errors in
-  some batches and is not in the clean manifest.
+- `gemini` CLI is available. Model-explicit `gemini-3-flash-preview` clean
+  shards are locked through `0000-7249`; the remaining tail was completed with
+  the Google AI Studio Gemini API after CLI capacity exhaustion.
 - `openai` CLI command was not found.
-- No API key environment variables were detected in the checked shell output.
+- No API key values are stored in repository artifacts. Gemini API reruns must
+  use `GEMINI_API_KEY` or `GOOGLE_API_KEY` from the local shell environment.
 
 This means model-level comparison should use model-explicit rows, not only CLI
 surface names. Existing Claude rows through 3999 and Codex rows through 0249
 remain usable as CLI-default diagnostics, but they must not be relabeled as
 Sonnet/Opus or GPT-5.5 after locking. Model-explicit continuation starts with
 `claude:sonnet` at 4000-4499 and `codex:gpt-5.5` at 0000-0099 after the
-backfill rerun. Gemini should remain at smoke/probe status until its row-level
-CLI errors and current capacity-exhaustion timeout are eliminated. The
-2026-06-07 `gemini:gemini-2.5-pro` cleancheck probe failed with repeated
-capacity-exhaustion retries and was not registered.
+backfill rerun. Gemini 3 Flash is now full model-explicit evidence for
+`0000-7858`, with CLI/API surface provenance preserved in `model_version` and
+`locked_by`.
 
 For current model-explicit interpretation, use
 `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`.
-This table separates Codex GPT-5.5 available rows, Claude Sonnet available
-rows, and the direct Codex/Claude overlap subset.
+This table separates Codex GPT-5.5, Claude Sonnet, and Gemini 3 Flash available
+rows, plus the direct three-model overlap subset.
