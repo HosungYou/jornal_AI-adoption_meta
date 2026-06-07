@@ -18,6 +18,7 @@ start Step 5.
 - `phase1_high_confidence_reference_draft_20260608.csv`
 - `phase1_high_confidence_reference_draft_status_20260608.csv`
 - `phase1_high_confidence_reference_draft_summary_20260608.md`
+- `phase1_s191_reconciliation_20260608.md`
 
 ## Decision-Level Counts
 
@@ -41,29 +42,27 @@ start Step 5.
 
 - The 26 studies now have a Step 4 application/audit layer rather than a single
   undifferentiated "pending application" bucket.
-- The highest-confidence next sub-batch is the three logged exclusions plus the
-  explicit value-decision studies whose final row sets can be audited directly
-  from the logged R1/R2 choice or source-corrected values.
-- S191 is a special case: the decision log says to use R2 direct Table 2 values,
-  but the current combined extracted long table did not show R2 correlation rows
-  for S191 during this audit. Reconcile the source/workbook/derived table before
-  creating S191 reference rows.
+- The highest-confidence sub-batch now includes the three logged exclusions plus
+  explicit value-decision studies whose row sets can be audited directly from
+  the logged R1/R2 choice, source-corrected values, or the reconciled S191 pairwise
+  workbook values.
+- S191 is no longer held: 21 R2 direct Table 2 values were recovered from the
+  Phase 1 pairwise comparison workbook and checked against the local source PDF.
 - Explicit rule decisions are actionable, but they are not yet final
   freeze-layer rows because they require row filters, source-type checks,
   construct-mapping confirmation, orientation checks, or N reconciliation.
 - S086 and S168 have Phase 1 progress evidence but no logged final row rule; do
   not advance them to freeze rows without source-value audit.
-- The high-confidence reference-draft/status layer now carries 59 row-level
-  draft records, 3 logged exclusion status records, and S191 as a reconciliation
-  hold.
+- The high-confidence reference-draft/status layer now carries 80 row-level
+  draft records and 3 logged exclusion status records, with S191 included as a
+  reconciled draft row set.
 
 ## Recommended Next Action
 
-1. Reconcile S191 against the source/workbook/derived table before row creation.
-2. Carry the six confirmed Phase 2 exclusions into the same full-corpus audit
-   layer.
-3. Apply the explicit rule-decision row filters/source audits.
-4. Run source-value audit for S086 and S168.
-5. Triage the remaining 124 correlation-disagreement studies.
-6. Keep full-result Step 5 inactive until the intended reference scope is
+1. Apply the explicit rule-decision row filters/source audits, starting with
+   high-priority S054, S074, S091, and S189.
+2. Run source-value audit for S086 and S168.
+3. Process residual `batch_1_high_burden` studies from
+   `full_corpus_residual_adjudication_triage_20260608.csv`.
+4. Keep full-result Step 5 inactive until the intended reference scope is
    frozen.
