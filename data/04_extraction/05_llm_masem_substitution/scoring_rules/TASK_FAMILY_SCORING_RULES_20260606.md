@@ -14,8 +14,9 @@ Score locked model outputs only after a file is listed in
   absolute error <= 0.005 unless a later protocol sets a different tolerance.
 - `converted_or_model_derived_effect_size`: sensitivity/source-type rows. Score
   separately from direct-r extraction.
-- `metadata_extraction`: normalized exact match unless a field-specific parser
-  is added.
+- `metadata_extraction`: primary metadata evidence family. Score with
+  normalized exact match unless a field-specific parser is added. Report
+  separately from direct-r numeric accuracy.
 - `eligibility_or_exclusion_decision`: normalized exact match against the
   reference decision label/value.
 - `construct_or_sample_mapping_decision`: normalized exact match.

@@ -276,6 +276,11 @@ def main() -> None:
     parser.add_argument("--max-budget-usd", default="1.00")
     parser.add_argument("--model-selector", default="", help="Exact CLI model selector, e.g. sonnet, opus, gpt-5.5, gemini-2.5-pro.")
     parser.add_argument("--register", action="store_true")
+    parser.add_argument(
+        "--fail-on-model-cli-error",
+        action="store_true",
+        help="Exit nonzero when any row has model_cli_error, preventing wrapper loops from continuing.",
+    )
     args = parser.parse_args()
 
     if args.chunk_size < 1:
@@ -358,6 +363,8 @@ def main() -> None:
     print(f"registered={args.register and clean_for_manifest}")
     if args.register and not clean_for_manifest:
         print("register_skipped=model_cli_error")
+    if args.fail_on_model_cli_error and not clean_for_manifest:
+        raise SystemExit(2)
 
 
 if __name__ == "__main__":

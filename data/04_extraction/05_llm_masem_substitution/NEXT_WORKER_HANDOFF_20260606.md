@@ -25,6 +25,12 @@ Current clean manifest state:
   `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`
   separates model-explicit available rows from the Codex GPT-5.5 / Claude
   Sonnet overlap subset. Use it before drafting any results language.
+- Current analysis decision: treat `direct_r_effect_size_extraction` and
+  `metadata_extraction` as separate primary evidence families.
+- Claude Sonnet backfill `0000-3999` was attempted on 2026-06-07 before the
+  provider reset and hit session-limit 429. Failed backfill CSVs were not
+  registered and were removed from the working tree. Retry after the reset with
+  `--fail-on-model-cli-error`.
 
 Gemini stratified/retry/probe CSVs with row-level CLI errors are not in the
 clean manifest because they are diagnostic artifacts, not clean locked model
@@ -66,7 +72,8 @@ python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
   --chunk-size 50 \
   --timeout 900 \
   --max-budget-usd 3.00 \
-  --register
+  --register \
+  --fail-on-model-cli-error
 ```
 
 Codex GPT-5.5 full model-explicit coverage is complete. Use this shape only

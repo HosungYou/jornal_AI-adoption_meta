@@ -26,7 +26,7 @@ SCORED_STATUSES = {"scored", "scored_abstention"}
 INTERPRETATION_TIER = {
     "direct_r_effect_size_extraction": "primary_numeric_evidence",
     "converted_or_model_derived_effect_size": "source_type_sensitivity",
-    "metadata_extraction": "supporting_metadata",
+    "metadata_extraction": "primary_metadata_evidence",
     "eligibility_or_exclusion_decision": "review_decision",
     "construct_or_sample_mapping_decision": "review_decision",
     "statistic_type_policy_decision": "review_decision",
@@ -115,6 +115,9 @@ def format_md(rows: list[dict[str, object]]) -> str:
             "",
             "- Use `direct_r_effect_size_extraction` as the cleanest primary numeric",
             "  evidence family.",
+            "- Use `metadata_extraction` as a primary metadata evidence family,",
+            "  but report it separately from direct-r because it uses normalized",
+            "  exact-match rather than numeric tolerance scoring.",
             "- Treat `converted_or_model_derived_effect_size` as a source-type",
             "  sensitivity family, not as direct-r equivalence.",
             "- Treat `absence_or_blank_consensus`, `source_absence_decision`, and",

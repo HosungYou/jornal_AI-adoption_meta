@@ -24,14 +24,14 @@ substitution-validity claim.
 | model_explicit_available_rows | claude:sonnet | converted_or_model_derived_effect_size | source_type_sensitivity | 53 | 53 | 0 | 53 | 0.000000 | 0 |
 | model_explicit_available_rows | claude:sonnet | direct_r_effect_size_extraction | primary_numeric_evidence | 276 | 276 | 0 | 276 | 0.000000 | 0 |
 | model_explicit_available_rows | claude:sonnet | human_disagreement_trace | trace_only_not_primary_accuracy | 467 | 467 | 0 | 108 | 0.000000 | 0 |
-| model_explicit_available_rows | claude:sonnet | metadata_extraction | supporting_metadata | 349 | 349 | 0 | 349 | 0.000000 | 0 |
+| model_explicit_available_rows | claude:sonnet | metadata_extraction | primary_metadata_evidence | 349 | 349 | 0 | 349 | 0.000000 | 0 |
 | model_explicit_available_rows | codex:gpt-5.5 | absence_or_blank_consensus | triage_or_blank_behavior | 6412 | 2083 | 0 | 87 | 0.000000 | 4329 |
 | model_explicit_available_rows | codex:gpt-5.5 | construct_or_sample_mapping_decision | review_decision | 2 | 2 | 0 | 2 | 0.000000 | 0 |
 | model_explicit_available_rows | codex:gpt-5.5 | converted_or_model_derived_effect_size | source_type_sensitivity | 88 | 88 | 0 | 88 | 0.000000 | 0 |
 | model_explicit_available_rows | codex:gpt-5.5 | direct_r_effect_size_extraction | primary_numeric_evidence | 366 | 366 | 3 | 363 | 0.008197 | 0 |
 | model_explicit_available_rows | codex:gpt-5.5 | eligibility_or_exclusion_decision | review_decision | 5 | 5 | 0 | 0 | 0.000000 | 0 |
 | model_explicit_available_rows | codex:gpt-5.5 | human_disagreement_trace | trace_only_not_primary_accuracy | 467 | 467 | 0 | 20 | 0.000000 | 0 |
-| model_explicit_available_rows | codex:gpt-5.5 | metadata_extraction | supporting_metadata | 468 | 462 | 47 | 381 | 0.101732 | 6 |
+| model_explicit_available_rows | codex:gpt-5.5 | metadata_extraction | primary_metadata_evidence | 468 | 462 | 47 | 381 | 0.101732 | 6 |
 | model_explicit_available_rows | codex:gpt-5.5 | source_absence_decision | triage_or_blank_behavior | 3 | 3 | 0 | 0 | 0.000000 | 0 |
 | model_explicit_available_rows | codex:gpt-5.5 | statistic_type_policy_decision | review_decision | 7 | 7 | 0 | 4 | 0.000000 | 0 |
 | model_explicit_available_rows | codex:gpt-5.5 | structured_human_review_decision | review_decision | 41 | 41 | 0 | 34 | 0.000000 | 0 |
@@ -39,17 +39,20 @@ substitution-validity claim.
 | overlap_codex_gpt55_claude_sonnet | claude:sonnet | converted_or_model_derived_effect_size | source_type_sensitivity | 53 | 53 | 0 | 53 | 0.000000 | 0 |
 | overlap_codex_gpt55_claude_sonnet | claude:sonnet | direct_r_effect_size_extraction | primary_numeric_evidence | 276 | 276 | 0 | 276 | 0.000000 | 0 |
 | overlap_codex_gpt55_claude_sonnet | claude:sonnet | human_disagreement_trace | trace_only_not_primary_accuracy | 467 | 467 | 0 | 108 | 0.000000 | 0 |
-| overlap_codex_gpt55_claude_sonnet | claude:sonnet | metadata_extraction | supporting_metadata | 349 | 349 | 0 | 349 | 0.000000 | 0 |
+| overlap_codex_gpt55_claude_sonnet | claude:sonnet | metadata_extraction | primary_metadata_evidence | 349 | 349 | 0 | 349 | 0.000000 | 0 |
 | overlap_codex_gpt55_claude_sonnet | codex:gpt-5.5 | absence_or_blank_consensus | triage_or_blank_behavior | 2714 | 813 | 0 | 37 | 0.000000 | 1901 |
 | overlap_codex_gpt55_claude_sonnet | codex:gpt-5.5 | converted_or_model_derived_effect_size | source_type_sensitivity | 53 | 53 | 0 | 53 | 0.000000 | 0 |
 | overlap_codex_gpt55_claude_sonnet | codex:gpt-5.5 | direct_r_effect_size_extraction | primary_numeric_evidence | 276 | 276 | 0 | 276 | 0.000000 | 0 |
 | overlap_codex_gpt55_claude_sonnet | codex:gpt-5.5 | human_disagreement_trace | trace_only_not_primary_accuracy | 467 | 467 | 0 | 20 | 0.000000 | 0 |
-| overlap_codex_gpt55_claude_sonnet | codex:gpt-5.5 | metadata_extraction | supporting_metadata | 349 | 349 | 0 | 348 | 0.000000 | 0 |
+| overlap_codex_gpt55_claude_sonnet | codex:gpt-5.5 | metadata_extraction | primary_metadata_evidence | 349 | 349 | 0 | 348 | 0.000000 | 0 |
 
 ## Interpretation Notes
 
 - Use `direct_r_effect_size_extraction` as the cleanest primary numeric
   evidence family.
+- Use `metadata_extraction` as a primary metadata evidence family,
+  but report it separately from direct-r because it uses normalized
+  exact-match rather than numeric tolerance scoring.
 - Treat `converted_or_model_derived_effect_size` as a source-type
   sensitivity family, not as direct-r equivalence.
 - Treat `absence_or_blank_consensus`, `source_absence_decision`, and

@@ -30,6 +30,8 @@ by denominator family.
 - `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`:
   model-explicit denominator-family interpretation table for Codex GPT-5.5 and
   Claude Sonnet, including their overlap subset.
+- `MODEL_FAMILY_EXTENSION_PLAN_20260607.md`: Claude Sonnet backfill gate,
+  installed CLI model-family inventory, and full-run gate for any added model.
 
 ## Current status
 
@@ -76,3 +78,5 @@ The 8,783 task units must not be treated as one accuracy denominator. Use
 start from
 `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`, which
 separates available model-explicit rows from the Codex/Claude overlap subset.
+Treat `direct_r_effect_size_extraction` and `metadata_extraction` as separate
+primary evidence families.
