@@ -15,6 +15,9 @@ start Step 5.
 ## Output
 
 - `phase1_logged_decision_application_audit_20260608.csv`
+- `phase1_high_confidence_reference_draft_20260608.csv`
+- `phase1_high_confidence_reference_draft_status_20260608.csv`
+- `phase1_high_confidence_reference_draft_summary_20260608.md`
 
 ## Decision-Level Counts
 
@@ -50,15 +53,17 @@ start Step 5.
   construct-mapping confirmation, orientation checks, or N reconciliation.
 - S086 and S168 have Phase 1 progress evidence but no logged final row rule; do
   not advance them to freeze rows without source-value audit.
+- The high-confidence reference-draft/status layer now carries 59 row-level
+  draft records, 3 logged exclusion status records, and S191 as a reconciliation
+  hold.
 
 ## Recommended Next Action
 
-1. Build a high-confidence Phase 1 reference-draft sub-batch from S041, S180,
-   S220 and the explicit value-decision studies, holding S191 until the R2 Table
-   2 reconciliation is complete.
-2. Apply the explicit rule-decision row filters/source audits.
-3. Carry the six confirmed Phase 2 exclusions into the same full-corpus audit
+1. Reconcile S191 against the source/workbook/derived table before row creation.
+2. Carry the six confirmed Phase 2 exclusions into the same full-corpus audit
    layer.
-4. Triage the remaining 124 correlation-disagreement studies.
-5. Keep full-result Step 5 inactive until the intended reference scope is
+3. Apply the explicit rule-decision row filters/source audits.
+4. Run source-value audit for S086 and S168.
+5. Triage the remaining 124 correlation-disagreement studies.
+6. Keep full-result Step 5 inactive until the intended reference scope is
    frozen.

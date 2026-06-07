@@ -21,6 +21,9 @@ Status: gap map generated. This is not a full 213-study freeze and does not star
 - `full_corpus_freeze_gap_map_20260608.csv`
 - `phase1_logged_decision_application_audit_20260608.csv`
 - `phase1_logged_decision_application_summary_20260608.md`
+- `phase1_high_confidence_reference_draft_20260608.csv`
+- `phase1_high_confidence_reference_draft_status_20260608.csv`
+- `phase1_high_confidence_reference_draft_summary_20260608.md`
 
 ## Gap Category Counts
 
@@ -50,6 +53,7 @@ Status: gap map generated. This is not a full 213-study freeze and does not star
 
 - `scoped_phase2_frozen` studies are already covered by the scoped Phase 2 freeze package.
 - `phase1_logged_decision_or_progress_pending_step4_application` studies now have a dedicated application audit layer. They are split into logged exclusions, explicit value decisions, explicit rule decisions requiring row filters/source audits, and progress-only studies requiring source-value audit.
+- The highest-confidence Phase 1 subset now has a draft row/status layer: 59 row-level records for S033/S035/S051/S081/S120/S151/S164/S217, exclusion status records for S041/S180/S220, and an S191 reconciliation hold.
 - `source_checked_confirmed_exclusion_pending_full_freeze_application` studies have source-checked exclusion evidence but are not yet part of a full-corpus freeze package.
 - `correlation_disagreement_pending_adjudication` studies remain the largest full-freeze blocker because their one-coder-only or numeric/source differences still need triage before a defensible 213-study reference freeze.
 - `metadata_only_or_no_correlation_gap_pending_lightweight_audit` studies are lower-priority for target-row adjudication, but still need status/metadata audit before full freeze.
@@ -67,8 +71,9 @@ Status: gap map generated. This is not a full 213-study freeze and does not star
 
 Prioritize the full-corpus freeze work in this order:
 
-1. Build a high-confidence Phase 1 reference-draft sub-batch from the logged exclusions and explicit value decisions, holding S191 until the R2 Table 2 reconciliation is complete.
+1. Reconcile S191 R2 Table 2 values before row creation.
 2. Carry confirmed source-checked exclusions into the full-corpus audit layer.
-3. Triage remaining correlation-disagreement studies by one-coder-only and numeric/source-difference burden.
-4. Run lightweight metadata/status audit for studies without target-row disagreement.
-5. Only after the intended full reference scope is frozen should Step 5 generate result claims.
+3. Apply explicit Phase 1 rule-decision row filters/source audits.
+4. Triage remaining correlation-disagreement studies by one-coder-only and numeric/source-difference burden.
+5. Run lightweight metadata/status audit for studies without target-row disagreement.
+6. Only after the intended full reference scope is frozen should Step 5 generate result claims.

@@ -12,7 +12,7 @@ Final reviewer: Hosung / researcher, approval recorded in the Codex thread on
 2026-06-08.
 
 Frozen artifact commit hash:
-`2c40c37a66229b6f0acac333048aa2b7e3a32679`
+`4f4c49f599fbefcdaf9fa88590dc2c78f8ed2a8d`
 
 ## Frozen Files
 
