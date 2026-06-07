@@ -13,6 +13,10 @@ Separately, 2026-06-08 Phase 2 source-review and source-value decisions were
 recorded for S014/S021/S056/S092/S121/S195/S202/S206 and a scoped Phase 2
 source-adjudicated freeze package was prepared. This scoped package does not
 mean the full 213-study Paper B reference standard is complete.
+The full-corpus freeze gap map has also been extended with a Phase 1 logged
+decision/progress application audit for 26 studies, separating logged
+exclusions, explicit value decisions, explicit rule decisions needing row
+filters/source audits, and progress-only studies needing source-value audit.
 
 **Do not claim Step 5 as complete.** The locked-output shell and scoring harness
 exist, and Claude/Gemini smoke plus staged full-run locked outputs have been
@@ -66,6 +70,9 @@ accuracy or substitution result is reported.
 | 2026-06-08 | Step 4 | Freeze audit completed for the Phase 2 source-adjudicated draft; S092 source betas were reconstructed and draft r values corrected to Peterson-Brown conversions | `04_reference_standard_freeze/qa/freeze_audit_20260608.md`; `04_reference_standard_freeze/paper_b_phase2_source_adjudicated_reference_draft_20260608.csv`; `03_source_document_adjudication/phase2/decision_log_20260608.md` | Final reviewer/date/commit hash and final freeze log are still required before Step 5 |
 | 2026-06-08 | Step 4 | Scoped frozen reference package prepared after researcher approval for the Phase 2 source-adjudicated high-priority package | `04_reference_standard_freeze/paper_b_phase2_source_adjudicated_reference_frozen_20260608.csv`; `04_reference_standard_freeze/reference_standard_freeze_log_20260608.md`; `04_reference_standard_freeze/post_freeze_corrections_20260608.md` | Record artifact commit hash in the freeze log; keep Step 5 inactive until the intended analysis scope is frozen |
 | 2026-06-08 | Step 4 | Scoped frozen reference package artifact commit hash recorded | `04_reference_standard_freeze/reference_standard_freeze_log_20260608.md`; artifact commit `2c40c37a66229b6f0acac333048aa2b7e3a32679` | Decide whether Step 5 should run only on this scoped package or wait for full-corpus reference freeze |
+| 2026-06-08 | Step 5 gate | Step 5 scope gate opened after scoped Phase 2 freeze; full-result Step 5 remains inactive | `docs/06_decisions/2026-06-08_Paper_B_Step5_Scope_Gate.md`; `05_llm_masem_substitution/README.md` | Build full-corpus Step 4 freeze gap map unless researcher explicitly authorizes a scoped Step 5 dry-run |
+| 2026-06-08 | Step 4 | Full-corpus freeze gap map generated for all 213 studies | `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_summary_20260608.md` | Apply/audit 26 logged Phase 1 decision/progress studies, carry 6 confirmed exclusions into the full-corpus audit layer, then triage 124 remaining correlation-disagreement studies |
+| 2026-06-08 | Step 4 | Phase 1 logged decision/progress application audit generated for 26 studies | `04_reference_standard_freeze/phase1_logged_decision_application_audit_20260608.csv`; `04_reference_standard_freeze/phase1_logged_decision_application_summary_20260608.md` | Build a high-confidence Phase 1 reference-draft sub-batch from logged exclusions and explicit value decisions, reconcile S191 before row creation, then apply explicit rule-decision row filters/source audits |
 
 ## Coding Decisions Already Reflected
 

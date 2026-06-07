@@ -16,15 +16,15 @@
   },
   "workingState": {
     "currentGoal": "Phase 1+2 전체 213-study coding disagreement 산출물을 기준으로 source-anchored reference standard freeze 전까지 Paper A/B/C의 분석 가능성과 문서화 순서를 구조화한다.",
-    "currentBlocker": "Combined Phase 1+2 pre-adjudication queues are generated, and a scoped Step 4 frozen package has been committed for the Phase 2 source-adjudicated high-priority decisions after S092 beta-conversion correction and researcher approval. The freeze log records artifact commit 2c40c37a66229b6f0acac333048aa2b7e3a32679. This scoped package does not complete the full 213-study Paper B reference standard. Paper C의 최종 model set, procedure contrast, repeated-run budget도 아직 고정해야 한다.",
-    "nextAction": "Decide whether Step 5 should run only on the scoped Phase 2 frozen package or wait for the full 213-study source-anchored adjudicated human reference standard; keep Step 5 inactive until that intended analysis scope is explicit.",
+    "currentBlocker": "Combined Phase 1+2 pre-adjudication queues are generated, the scoped Phase 2 freeze package is committed, the full-corpus Step 4 freeze gap map covers all 213 studies, and the Phase 1 logged decision/progress application audit now classifies 26 studies. Full-result Step 5 remains inactive because the full reference is not frozen: a high-confidence Phase 1 reference-draft sub-batch still needs construction, S191 requires R2 Table 2 reconciliation before row creation, 6 confirmed Phase 2 exclusions need full-corpus freeze-layer application, 12 explicit Phase 1 rule decisions need row filters/source audits, 2 Phase 1 progress-only studies need source-value audit, and 124 remaining correlation-disagreement studies need triage. Paper C의 최종 model set, procedure contrast, repeated-run budget도 아직 고정해야 한다.",
+    "nextAction": "Build the high-confidence Phase 1 Step 4 reference-draft sub-batch from logged exclusions and explicit value decisions, holding S191 until R2 Table 2 reconciliation is complete; then carry the 6 confirmed Phase 2 exclusions into the audit layer before applying explicit rule-decision filters and triaging the 124 remaining correlation-disagreement studies.",
     "openQuestions": [
       "Which versioned models, procedure/harness conditions, and repeated-run stability subset should Paper C lock before final benchmark runs?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "I want to continue after the scoped Step 4 Paper B Phase 2 freeze. The artifact commit hash is recorded; the next decision is whether Step 5 runs on this scoped package or waits for the full 213-study reference freeze."
+    "resumeHint": "I want to continue after the Phase 1 logged decision application audit. The next task is to build the high-confidence Phase 1 Step 4 reference-draft sub-batch from logged exclusions and explicit value decisions while keeping Step 5 inactive."
   },
   "inferredHypotheses": [],
   "openTensions": [
