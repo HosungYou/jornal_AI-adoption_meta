@@ -8,6 +8,7 @@ Use model names as the analysis unit:
 
 - `codex:gpt-5.5`
 - `claude:sonnet`
+- `gemini:gemini-3-flash-preview`
 
 Primary evidence families:
 
@@ -94,9 +95,36 @@ Not installed in the checked shell path:
 - `mistral`
 - `anthropic`
 
-Gemini is the only currently installed non-OpenAI, non-Anthropic family CLI, but
-its model-explicit cleancheck probe failed with capacity exhaustion. Keep Gemini
-full paused until a clean one-row probe succeeds.
+Gemini is the only currently installed non-OpenAI, non-Anthropic family CLI.
+`gemini-3-flash-preview` produced a clean model-explicit probe and clean full
+shards through `0000-7249` on 2026-06-07. The next shard, `7250-7499`, failed
+only in `human_disagreement_trace` rows beginning at offset `7400`.
+
+A direct one-row probe at offset `7400` failed because the Gemini CLI repeatedly
+returned:
+
+```text
+You have exhausted your capacity on this model.
+```
+
+Keep Gemini 3 Flash paused until capacity resets, then resume at offset `7400`
+with a one-row probe before any larger shard:
+
+```bash
+python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
+  --provider gemini \
+  --model-selector gemini-3-flash-preview \
+  --run-id paper2_gemini3flash_humandisagree_probe_7400_YYYYMMDD \
+  --offset 7400 \
+  --limit 1 \
+  --chunk-size 1 \
+  --timeout 300 \
+  --register \
+  --fail-on-model-cli-error
+```
+
+If clean, continue `7400-7858` in 5- or 10-row chunks. Do not register any file
+that contains `model_cli_error`.
 
 Gemini CLI also exposes local Gemma routing, but status checks show the local
 Gemma binary/model/server are not installed. Gemma setup would be a separate

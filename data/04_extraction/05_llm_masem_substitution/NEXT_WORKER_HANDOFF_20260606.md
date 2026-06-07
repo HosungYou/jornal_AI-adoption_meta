@@ -7,20 +7,21 @@ All model CLI processes were stopped. No active `codex exec`, `gemini --prompt`,
 
 Current clean manifest state:
 
-- Locked model outputs in manifest: 109
+- Locked model outputs in manifest: 139
 - Scoring status: `scored_locked_outputs`
-- Row-level output rows: 16047
-- Scored rows: 5898
+- Scored rows: 12667
 - Claude clean default-unspecified shards: `0000-3999`
 - Claude clean Sonnet shards: `4000-7858`
 - Codex clean default-unspecified shards: `0000-0249`
 - Codex clean GPT-5.5 shards: `0000-7858`
-- Gemini full run: not started; stratified diagnostic contained row-level
-  `model_cli_error`, and a later direct 1-row diagnostic timed out after
-  repeated `You have exhausted your capacity on this model.` retries.
-- Gemini cleancheck: a 2026-06-07 model-explicit
-  `gemini:gemini-2.5-pro` one-row probe again failed with provider capacity
-  exhaustion and was not registered as clean evidence.
+- Gemini clean 3 Flash probe: `gemini:gemini-3-flash-preview`.
+- Gemini clean 3 Flash shards: `0000-7249`.
+- Gemini 3 Flash blocked tail: `7250-7858`. A failed `7250-7499` diagnostic
+  showed clean rows through `7399` and `model_cli_error` only in
+  `human_disagreement_trace` rows `7400-7499`; a direct one-row probe at
+  offset `7400` then failed after repeated `You have exhausted your capacity on
+  this model.` retries. Failed Gemini 3 Flash diagnostic CSVs were not
+  registered and were removed from the working tree.
 - Denominator-family interpretation:
   `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`
   separates model-explicit available rows from the Codex GPT-5.5 / Claude
@@ -54,8 +55,8 @@ Safe rerun guidance:
   new CLI runs only for targeted reruns or audits.
 - Keep Claude reruns at 250-row shards and 50-row chunks.
 - Keep Codex reruns at 100-row shards and 10-row chunks.
-- Do not continue Gemini full runs until a 1-row probe has no
-  `model_cli_error`.
+- Do not continue Gemini tail runs until a 1-row `gemini-3-flash-preview`
+  probe at offset `7400` has no `model_cli_error`.
 
 ## Next commands
 
@@ -91,18 +92,20 @@ python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
   --register
 ```
 
-Gemini should only be probed, not full-run:
+Gemini 3 Flash should resume only from the blocked `human_disagreement_trace`
+tail:
 
 ```bash
 python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
   --provider gemini \
-  --model-selector gemini-2.5-pro \
-  --run-id paper2_gemini25pro_probe1_cleancheck_YYYYMMDD \
-  --offset 0 \
+  --model-selector gemini-3-flash-preview \
+  --run-id paper2_gemini3flash_humandisagree_probe_7400_YYYYMMDD \
+  --offset 7400 \
   --limit 1 \
   --chunk-size 1 \
-  --timeout 480 \
-  --register
+  --timeout 300 \
+  --register \
+  --fail-on-model-cli-error
 ```
 
 ## Clean registration rule
@@ -187,9 +190,9 @@ Expected current result:
 
 ```text
 status=scored_locked_outputs
-locked_output_files=109
-scored_rows=5898
-summary_rows=25
+locked_output_files=139
+scored_rows=12667
+summary_rows=38
 ```
 
 ## Commit message template

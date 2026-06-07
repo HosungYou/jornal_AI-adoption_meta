@@ -20,7 +20,11 @@ DEFAULT_SCORED = STEP5 / "results/paper2_locked_output_scored_20260606.csv"
 DEFAULT_OUTPUT_CSV = STEP5 / "results/paper2_model_explicit_denominator_family_summary_20260607.csv"
 DEFAULT_OUTPUT_MD = STEP5 / "results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md"
 
-MODEL_EXPLICIT_IDS = {"codex:gpt-5.5", "claude:sonnet"}
+MODEL_EXPLICIT_IDS = {
+    "codex:gpt-5.5",
+    "claude:sonnet",
+    "gemini:gemini-3-flash-preview",
+}
 SCORED_STATUSES = {"scored", "scored_abstention"}
 
 INTERPRETATION_TIER = {
@@ -94,6 +98,9 @@ def format_md(rows: list[dict[str, object]]) -> str:
         "",
         "- `codex:gpt-5.5`: model-explicit full range `0000-7858`.",
         "- `claude:sonnet`: model-explicit continuation range `4000-7858`.",
+        "- `gemini:gemini-3-flash-preview`: model-explicit partial clean range",
+        "  `0000-7249`; `7250-7858` remains blocked by Gemini CLI capacity",
+        "  exhaustion on `human_disagreement_trace` as of 2026-06-07.",
         "- `overlap_codex_gpt55_claude_sonnet`: only task units present in both",
         "  model-explicit outputs; use this for direct model comparison.",
         "",
