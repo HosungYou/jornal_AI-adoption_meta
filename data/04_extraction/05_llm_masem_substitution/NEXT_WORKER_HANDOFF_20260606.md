@@ -7,25 +7,24 @@ All model CLI processes were stopped. No active `codex exec`, `gemini --prompt`,
 
 Current clean manifest state:
 
-- Locked model outputs in manifest: 139
+- Locked model outputs in manifest: 141
 - Scoring status: `scored_locked_outputs`
-- Scored rows: 12667
+- Scored rows: 13275
 - Claude clean default-unspecified shards: `0000-3999`
 - Claude clean Sonnet shards: `4000-7858`
 - Codex clean default-unspecified shards: `0000-0249`
 - Codex clean GPT-5.5 shards: `0000-7858`
-- Gemini clean 3 Flash probe: `gemini:gemini-3-flash-preview`.
-- Gemini clean 3 Flash shards: `0000-7249`.
-- Gemini 3 Flash blocked tail: `7250-7858`. A failed `7250-7499` diagnostic
-  showed clean rows through `7399` and `model_cli_error` only in
-  `human_disagreement_trace` rows `7400-7499`; a direct one-row probe at
-  offset `7400` then failed after repeated `You have exhausted your capacity on
-  this model.` retries. Failed Gemini 3 Flash diagnostic CSVs were not
-  registered and were removed from the working tree.
+- Gemini 3 Flash model-explicit full range: `0000-7858`.
+- Gemini 3 Flash CLI shards: `0000-7249`.
+- Gemini 3 Flash API tail: `7250-7399`, `7400`, and `7401-7858`, all clean
+  registered. The API path was used after the Gemini CLI reported repeated
+  `You have exhausted your capacity on this model.` retries on the
+  `human_disagreement_trace` tail.
 - Denominator-family interpretation:
   `results/PAPER2_MODEL_EXPLICIT_DENOMINATOR_FAMILY_SUMMARY_20260607.md`
   separates model-explicit available rows from the Codex GPT-5.5 / Claude
-  Sonnet overlap subset. Use it before drafting any results language.
+  Sonnet / Gemini 3 Flash overlap subset. Use it before drafting any results
+  language.
 - Current analysis decision: treat `direct_r_effect_size_extraction` and
   `metadata_extraction` as separate primary evidence families.
 - Claude Sonnet backfill `0000-3999` was attempted on 2026-06-07 before the
@@ -55,8 +54,8 @@ Safe rerun guidance:
   new CLI runs only for targeted reruns or audits.
 - Keep Claude reruns at 250-row shards and 50-row chunks.
 - Keep Codex reruns at 100-row shards and 10-row chunks.
-- Do not continue Gemini tail runs until a 1-row `gemini-3-flash-preview`
-  probe at offset `7400` has no `model_cli_error`.
+- Gemini API reruns require `GEMINI_API_KEY` or `GOOGLE_API_KEY` in the local
+  environment. Do not commit or document key values.
 
 ## Next commands
 
@@ -92,17 +91,18 @@ python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
   --register
 ```
 
-Gemini 3 Flash should resume only from the blocked `human_disagreement_trace`
-tail:
+Gemini 3 Flash full coverage is complete. Use this API shape only for targeted
+reruns:
 
 ```bash
+export GEMINI_API_KEY='...'
 python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
-  --provider gemini \
+  --provider gemini_api \
   --model-selector gemini-3-flash-preview \
-  --run-id paper2_gemini3flash_humandisagree_probe_7400_YYYYMMDD \
+  --run-id paper2_gemini3flash_api_tail_7401_7858_rerun_YYYYMMDD \
   --offset 7400 \
-  --limit 1 \
-  --chunk-size 1 \
+  --limit 459 \
+  --chunk-size 10 \
   --timeout 300 \
   --register \
   --fail-on-model-cli-error
@@ -190,9 +190,9 @@ Expected current result:
 
 ```text
 status=scored_locked_outputs
-locked_output_files=139
-scored_rows=12667
-summary_rows=38
+locked_output_files=141
+scored_rows=13275
+summary_rows=40
 ```
 
 ## Commit message template
@@ -208,5 +208,5 @@ Confidence: medium
 Scope-risk: moderate
 Directive: Continue provider runs only through clean shard registration and remove any session-limit shard from the manifest before reporting.
 Tested: score_locked_outputs.py; git diff --check; py_compile scripts/llm_scoring_20260606/*.py; MODEL_ANSWER_SCHEMA_20260606.json parsed with json.tool
-Not-tested: Full Claude/Codex/Gemini completion; Gemini clean full-run path
+Not-tested: Claude Sonnet 0000-3999 backfill after provider reset
 ```

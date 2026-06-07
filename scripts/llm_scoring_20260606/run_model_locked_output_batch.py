@@ -7,6 +7,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 import subprocess
 import tempfile
@@ -14,6 +15,7 @@ import uuid
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib import error, request
 
 
 REPO = Path(__file__).resolve().parents[2]
@@ -188,6 +190,43 @@ def run_gemini(prompt: str, timeout: int, model_selector: str) -> list[dict[str,
     return extract_json_payload(completed.stdout)
 
 
+def run_gemini_api(prompt: str, timeout: int, model_selector: str) -> list[dict[str, str]]:
+    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY or GOOGLE_API_KEY is required for gemini_api")
+    model = model_selector or "gemini-3-flash-preview"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    payload = {
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0},
+    }
+    body = json.dumps(payload).encode("utf-8")
+    req = request.Request(
+        url,
+        data=body,
+        headers={
+            "Content-Type": "application/json",
+            "x-goog-api-key": api_key,
+        },
+        method="POST",
+    )
+    try:
+        with request.urlopen(req, timeout=timeout) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except error.HTTPError as exc:
+        text = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"Gemini API HTTP {exc.code}: {text[-2000:]}")
+    parts = (
+        data.get("candidates", [{}])[0]
+        .get("content", {})
+        .get("parts", [])
+    )
+    text = "\n".join(part.get("text", "") for part in parts if isinstance(part, dict))
+    if not text:
+        raise RuntimeError(f"Gemini API response had no text: {json.dumps(data)[:1000]}")
+    return extract_json_payload(text)
+
+
 def run_codex(prompt: str, timeout: int, model_selector: str) -> list[dict[str, str]]:
     with tempfile.NamedTemporaryFile("w+", suffix=".json", delete=False) as output:
         output_path = Path(output.name)
@@ -265,7 +304,7 @@ def has_model_cli_error(rows: list[dict[str, str]]) -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--provider", choices=["claude", "gemini", "codex"], required=True)
+    parser.add_argument("--provider", choices=["claude", "gemini", "gemini_api", "codex"], required=True)
     parser.add_argument("--run-id", default="")
     parser.add_argument("--families", default="", help="Comma-separated denominator families. Empty means all eligible families.")
     parser.add_argument("--stratified-per-family", type=int, default=0)
@@ -301,9 +340,11 @@ def main() -> None:
         "codex": ("openai", "codex_cli", subprocess.run(["codex", "--version"], text=True, capture_output=True).stdout.strip()),
         "claude": ("anthropic", "claude_code", subprocess.run(["claude", "--version"], text=True, capture_output=True).stdout.strip()),
         "gemini": ("google", "gemini_cli", subprocess.run(["gemini", "--version"], text=True, capture_output=True).stdout.strip()),
+        "gemini_api": ("google", "gemini_api", "generativelanguage.googleapis.com/v1beta"),
     }
     model_provider, cli_id, cli_version = cli_meta[args.provider]
-    model_id = f"{args.provider}:{args.model_selector}" if args.model_selector else f"{cli_id}:default_unspecified"
+    model_prefix = "gemini" if args.provider == "gemini_api" else args.provider
+    model_id = f"{model_prefix}:{args.model_selector}" if args.model_selector else f"{cli_id}:default_unspecified"
     model_version = f"{cli_version}; model_selector={args.model_selector or 'default_unspecified'}"
     run_id = args.run_id or f"paper2_{args.provider}_batch_{now.replace(':', '').replace('-', '')}_{uuid.uuid4().hex[:8]}"
 
@@ -314,6 +355,8 @@ def main() -> None:
                 answers = run_claude(prompt_for(batch), args.timeout, args.max_budget_usd, args.model_selector)
             elif args.provider == "gemini":
                 answers = run_gemini(prompt_for(batch), args.timeout, args.model_selector)
+            elif args.provider == "gemini_api":
+                answers = run_gemini_api(prompt_for(batch), args.timeout, args.model_selector)
             else:
                 answers = run_codex(prompt_for(batch), args.timeout, args.model_selector)
         except Exception as exc:
@@ -346,7 +389,7 @@ def main() -> None:
                     "raw_output_ref": "not_persisted_batch",
                     "locked_answer_status": "locked",
                     "lock_timestamp_utc": now,
-                    "locked_by": f"{args.provider}_cli_noninteractive_batch",
+                    "locked_by": f"{args.provider}_noninteractive_batch",
                     "notes": answer.get("notes", ""),
                 }
             )

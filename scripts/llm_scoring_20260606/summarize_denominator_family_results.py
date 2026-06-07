@@ -2,7 +2,7 @@
 """Summarize Paper2 locked LLM scores by denominator family.
 
 This report intentionally avoids an overall accuracy denominator. It separates
-model-specific coverage from the Codex/Claude overlap set so model-explicit
+model-specific coverage from the Codex/Claude/Gemini overlap set so model-explicit
 comparisons are not distorted by different row ranges.
 """
 
@@ -98,11 +98,12 @@ def format_md(rows: list[dict[str, object]]) -> str:
         "",
         "- `codex:gpt-5.5`: model-explicit full range `0000-7858`.",
         "- `claude:sonnet`: model-explicit continuation range `4000-7858`.",
-        "- `gemini:gemini-3-flash-preview`: model-explicit partial clean range",
-        "  `0000-7249`; `7250-7858` remains blocked by Gemini CLI capacity",
-        "  exhaustion on `human_disagreement_trace` as of 2026-06-07.",
-        "- `overlap_codex_gpt55_claude_sonnet`: only task units present in both",
-        "  model-explicit outputs; use this for direct model comparison.",
+        "- `gemini:gemini-3-flash-preview`: model-explicit full range",
+        "  `0000-7858`; `0000-7249` used Gemini CLI and the tail used Gemini API",
+        "  after CLI capacity exhaustion.",
+        "- `overlap_codex_gpt55_claude_sonnet_gemini3flash`: only task units",
+        "  present in all three model-explicit outputs; use this for direct",
+        "  model comparison.",
         "",
         "## Summary Table",
         "",
@@ -153,7 +154,7 @@ def main() -> None:
     overlap_ids = {
         task_id
         for task_id, model_ids in task_models.items()
-        if {"codex:gpt-5.5", "claude:sonnet"}.issubset(model_ids)
+        if MODEL_EXPLICIT_IDS.issubset(model_ids)
     }
 
     summary_rows = []
@@ -161,7 +162,7 @@ def main() -> None:
     summary_rows.extend(
         summarize(
             [row for row in all_rows if row["task_unit_id"] in overlap_ids],
-            "overlap_codex_gpt55_claude_sonnet",
+            "overlap_codex_gpt55_claude_sonnet_gemini3flash",
         )
     )
 

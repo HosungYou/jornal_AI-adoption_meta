@@ -211,6 +211,10 @@ paper2_codex_gpt55_full_allfamilies_7450_7549_20260606,openai,codex:gpt-5.5,huma
 paper2_codex_gpt55_full_allfamilies_7550_7649_20260606,openai,codex:gpt-5.5,human_disagreement_trace,100,0,0.000000,0
 paper2_codex_gpt55_full_allfamilies_7650_7749_20260606,openai,codex:gpt-5.5,human_disagreement_trace,100,0,0.000000,0
 paper2_codex_gpt55_full_allfamilies_7750_7858_20260606,openai,codex:gpt-5.5,human_disagreement_trace,109,0,0.000000,0
+paper2_gemini3flash_api_humandisagree_probe_7400_20260607,google,gemini:gemini-3-flash-preview,human_disagreement_trace,1,0,0.000000,0
+paper2_gemini3flash_api_tail_7250_7399_retry2_20260607,google,gemini:gemini-3-flash-preview,human_disagreement_trace,8,0,0.000000,0
+paper2_gemini3flash_api_tail_7250_7399_retry2_20260607,google,gemini:gemini-3-flash-preview,metadata_extraction,142,0,0.000000,0
+paper2_gemini3flash_api_tail_7401_7858_20260607,google,gemini:gemini-3-flash-preview,human_disagreement_trace,458,0,0.000000,0
 paper2_gemini3flash_full_allfamilies_0000_0249_20260607,google,gemini:gemini-3-flash-preview,absence_or_blank_consensus,35,0,0.000000,0
 paper2_gemini3flash_full_allfamilies_0000_0249_20260607,google,gemini:gemini-3-flash-preview,construct_or_sample_mapping_decision,2,0,0.000000,0
 paper2_gemini3flash_full_allfamilies_0000_0249_20260607,google,gemini:gemini-3-flash-preview,converted_or_model_derived_effect_size,30,0,0.000000,0
@@ -273,5 +277,4 @@ paper2_gemini3flash_full_allfamilies_6750_6999_20260607,google,gemini:gemini-3-f
 paper2_gemini3flash_full_allfamilies_7000_7249_20260607,google,gemini:gemini-3-flash-preview,absence_or_blank_consensus,42,0,0.000000,0
 paper2_gemini3flash_full_allfamilies_7000_7249_20260607,google,gemini:gemini-3-flash-preview,direct_r_effect_size_extraction,1,0,0.000000,0
 paper2_gemini3flash_full_allfamilies_7000_7249_20260607,google,gemini:gemini-3-flash-preview,metadata_extraction,207,0,0.000000,0
-paper2_gemini3flash_probe1_cleancheck_20260607,google,gemini:gemini-3-flash-preview,converted_or_model_derived_effect_size,1,0,0.000000,0
 paper2_gemini_smoke_direct_r_20260606,google,gemini_cli,direct_r_effect_size_extraction,1,0,0.000000,0

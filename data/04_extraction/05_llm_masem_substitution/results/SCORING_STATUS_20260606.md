@@ -5,9 +5,9 @@ Date: 2026-06-06
 Status: `scored_locked_outputs`
 
 - Reference task units: 8783
-- Locked output files in manifest: 139
-- Row-level output rows: 23298
-- Scored rows: 12667
+- Locked output files in manifest: 141
+- Row-level output rows: 23906
+- Scored rows: 13275
 - Scored output: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper2_locked_output_scored_20260606.csv`
 - Summary output: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper2_locked_output_score_summary_20260606.csv`
 

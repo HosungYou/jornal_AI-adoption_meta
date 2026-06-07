@@ -96,35 +96,46 @@ Not installed in the checked shell path:
 - `anthropic`
 
 Gemini is the only currently installed non-OpenAI, non-Anthropic family CLI.
-`gemini-3-flash-preview` produced a clean model-explicit probe and clean full
-shards through `0000-7249` on 2026-06-07. The next shard, `7250-7499`, failed
-only in `human_disagreement_trace` rows beginning at offset `7400`.
+`gemini-3-flash-preview` produced clean model-explicit CLI shards through
+`0000-7249` on 2026-06-07. The next CLI shard, `7250-7499`, failed only in
+`human_disagreement_trace` rows beginning at offset `7400`.
 
-A direct one-row probe at offset `7400` failed because the Gemini CLI repeatedly
-returned:
+A direct CLI one-row probe at offset `7400` failed because the Gemini CLI
+repeatedly returned:
 
 ```text
 You have exhausted your capacity on this model.
 ```
 
-Keep Gemini 3 Flash paused until capacity resets, then resume at offset `7400`
-with a one-row probe before any larger shard:
+The blocked tail was then completed through the Google AI Studio Gemini API with
+the same model selector:
+
+- `7250-7399`: Gemini API retry2, clean registered.
+- `7400`: Gemini API one-row probe, clean registered.
+- `7401-7858`: Gemini API tail shard, clean registered.
+
+This gives `gemini:gemini-3-flash-preview` full clean model-explicit coverage
+for `0000-7858`, while preserving `model_version`/`locked_by` provenance for
+the CLI/API surface difference.
+
+Use Gemini API only through an environment variable; do not write API keys into
+scripts, docs, CSV outputs, shell history notes, or commits:
 
 ```bash
+export GEMINI_API_KEY='...'
 python3 scripts/llm_scoring_20260606/run_model_locked_output_batch.py \
-  --provider gemini \
+  --provider gemini_api \
   --model-selector gemini-3-flash-preview \
-  --run-id paper2_gemini3flash_humandisagree_probe_7400_YYYYMMDD \
+  --run-id paper2_gemini3flash_api_tail_rerun_YYYYMMDD \
   --offset 7400 \
-  --limit 1 \
-  --chunk-size 1 \
+  --limit 459 \
+  --chunk-size 10 \
   --timeout 300 \
   --register \
   --fail-on-model-cli-error
 ```
 
-If clean, continue `7400-7858` in 5- or 10-row chunks. Do not register any file
-that contains `model_cli_error`.
+Do not register any file that contains `model_cli_error`.
 
 Gemini CLI also exposes local Gemma routing, but status checks show the local
 Gemma binary/model/server are not installed. Gemma setup would be a separate
