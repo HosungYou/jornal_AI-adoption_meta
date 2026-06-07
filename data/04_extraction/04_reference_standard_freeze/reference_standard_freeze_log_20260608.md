@@ -11,9 +11,8 @@ entire 213-study Paper B reference standard is complete.
 Final reviewer: Hosung / researcher, approval recorded in the Codex thread on
 2026-06-08.
 
-Frozen artifact commit hash: `PENDING_ARTIFACT_COMMIT_HASH`
-
-Hash-recording commit hash: `PENDING_HASH_RECORDING_COMMIT_HASH`
+Frozen artifact commit hash:
+`2c40c37a66229b6f0acac333048aa2b7e3a32679`
 
 ## Frozen Files
 
