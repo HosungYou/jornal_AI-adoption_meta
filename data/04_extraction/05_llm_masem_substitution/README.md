@@ -55,6 +55,9 @@ by denominator family.
 - `results/FULL_CORPUS_M1_R_SMOKE_STATUS_20260609.md`: post-freeze
   `M1-R-SMOKE` status; this is a schema/export/locking preflight, not an
   accuracy result.
+- `results/FULL_CORPUS_M1_R_SOURCE_RENDERED_SMOKE_STATUS_20260609.md`:
+  source-packet prompt/export preflight on the current PDF-available subset;
+  this is not an accuracy result.
 
 ## Current status
 
@@ -113,6 +116,15 @@ for the current source-rendering placeholder/task-stub setup. This proves the
 post-freeze runner/export/manifest path only. It is not a scoring rerun, LLM
 accuracy result, model comparison, procedure comparison, or MASEM substitution
 claim. No full-corpus model run is authorized yet.
+
+A second source-rendered smoke has been run for the currently PDF-available
+subset (`S021`, `S056`, `S092`): 6 rows, all in
+`secondary_beta_or_path_converted_effect_size`, using private source packets
+stored under the ignored Paper C private folder. The run produced nonblank model
+answers and source locators without committing source quotes. This validates the
+private source-packet prompt/export path only. Full-corpus `M1-R` remains
+blocked until source rendering coverage exists for the intended target scope or
+a smaller PDF-available subset is explicitly authorized.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should

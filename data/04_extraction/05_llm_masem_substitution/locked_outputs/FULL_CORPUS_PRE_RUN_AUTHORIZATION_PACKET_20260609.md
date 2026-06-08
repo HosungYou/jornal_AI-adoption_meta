@@ -29,6 +29,7 @@ not authorize any full-corpus model execution.
 | `M1-P` | Same-model stateful research harness/procedure contrast | Pending approval |
 | `M2-R` | Cross-model raw comparison | Pending approval |
 | `M3-R` | Optional third-family raw robustness check | Pending approval |
+| `M1-R-SOURCE-SMOKE` | Private source-packet prompt/export preflight | Authorized, executed, and manifest-registered |
 
 All model selectors remain `to verify` before execution. The matrix preserves
 prior candidate families from legacy scaffold work, but final model selectors
@@ -38,6 +39,11 @@ Update after researcher approval: `M1-R-SMOKE` was locked to
 `codex:gpt-5.5` through `codex-cli 0.137.0` and executed on 30 stratified
 post-freeze rows. The remaining full-corpus/procedure/model-comparison rows are
 still not authorized.
+
+Second update: `M1-R-SOURCE-SMOKE` was executed for the current PDF-available
+subset (`S021`, `S056`, `S092`) using private source packets with source quotes
+suppressed in committed output. This validates the source-packet prompt/export
+path only; it does not authorize full-corpus execution.
 
 ## Authorization Decision Recorded
 
@@ -67,6 +73,23 @@ The researcher approved Codex's recommended next step on 2026-06-09:
 - Interpretation: all 30 rows abstained with `insufficient_evidence` because
   this smoke used the current task stubs without source-document chunks.
 
+## Source-Rendered Smoke Evidence
+
+- Run ID: `paper_b_full_corpus_m1_raw_source_rendered_smoke_20260609`
+- Locked output:
+  `data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper_b_full_corpus_m1_raw_source_rendered_smoke_20260609.csv`
+- Status summary:
+  `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_SMOKE_STATUS_20260609.md`
+- Source rendering manifest:
+  `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_rendering_available_pdf_manifest_20260609.csv`
+- Rows: 6, across `S021`, `S056`, and `S092`.
+- Denominator family: `secondary_beta_or_path_converted_effect_size` only.
+- `model_cli_error` rows: 0.
+- Source quote policy violations: 0.
+- Nonblank model answers: 6.
+- Nonblank committed source quotes: 0.
+- Manifest registration: true.
+
 ## Approval Items
 
 Before any model condition is run, the researcher must approve:
@@ -93,6 +116,6 @@ Before any model condition is run, the researcher must approve:
 
 ## Recommended Next Decision
 
-Review the `M1-R-SMOKE` smoke status and finalize the source
-rendering/chunking bundle before any full-corpus `M1-R` run. A second
-source-rendered smoke is recommended before all 2,043 target rows are run.
+Expand source rendering coverage or record a smaller-scope authorization before
+any full-corpus `M1-R` run. The current source-rendered smoke covers only three
+PDF-available studies and one denominator family.

@@ -26,7 +26,7 @@ DEFAULT_MANIFEST = STEP5 / "locked_outputs/LOCKED_OUTPUT_MANIFEST_20260606.csv"
 
 DEFAULT_PROMPT_VERSION = "paper2_task_family_prompt_v1_20260606"
 SYSTEM_INSTRUCTIONS = """You are extracting structured answers for a meta-analysis validation task.
-Use only the provided redacted task inputs. Do not infer from the human reference, because it is not provided.
+Use only the provided redacted task inputs and any source-document packets included in the prompt. Do not infer from the human reference, because it is not provided.
 Do not inspect the repository, use tools, search, read files, or explain a strategy.
 Do not return Markdown, prose, plans, or code fences.
 Return JSON only: an array of objects, one object per input task, preserving task_unit_id.
@@ -53,6 +53,18 @@ ANSWER_FIELDS = [
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as handle:
         return list(csv.DictReader(handle))
+
+
+def read_task_ids(path: Path) -> list[str]:
+    if path.suffix.lower() == ".csv":
+        with path.open(newline="", encoding="utf-8") as handle:
+            reader = csv.DictReader(handle)
+            if reader.fieldnames and "task_unit_id" in reader.fieldnames:
+                return [row["task_unit_id"] for row in reader if row.get("task_unit_id")]
+            if reader.fieldnames:
+                first_field = reader.fieldnames[0]
+                return [row[first_field] for row in reader if row.get(first_field)]
+    return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
 def write_csv(path: Path, rows: list[dict[str, str]], fields: list[str]) -> None:
@@ -125,7 +137,24 @@ def normalize_answers(data: list[object]) -> list[dict[str, str]]:
     return rows
 
 
-def prompt_for(rows: list[dict[str, str]]) -> str:
+def load_source_packets(source_packet_dir: Path | None, rows: list[dict[str, str]]) -> dict[str, str]:
+    if not source_packet_dir:
+        return {}
+    packets = {}
+    for study_id in sorted({row["study_id"] for row in rows}):
+        candidates = sorted(source_packet_dir.glob(f"{study_id}_source_packet*.txt"))
+        candidates.extend(sorted(source_packet_dir.glob(f"{study_id}.txt")))
+        if candidates:
+            packets[study_id] = candidates[0].read_text(encoding="utf-8", errors="replace")
+    return packets
+
+
+def prompt_for(
+    rows: list[dict[str, str]],
+    source_packets: dict[str, str] | None = None,
+    suppress_source_quotes: bool = False,
+) -> str:
+    source_packets = source_packets or {}
     tasks = []
     for row in rows:
         tasks.append(
@@ -137,16 +166,40 @@ def prompt_for(rows: list[dict[str, str]]) -> str:
                 "model_input_text": row["model_input_text"],
             }
         )
-    return "\n".join(
+    parts = [
+        SYSTEM_INSTRUCTIONS,
+        "",
+    ]
+    if suppress_source_quotes:
+        parts.extend(
+            [
+                "Run-specific source-text safety policy:",
+                "Do not reproduce source-document wording in model_source_quote. Set model_source_quote to blank and use model_source_locator for page/chunk IDs instead.",
+                "",
+            ]
+        )
+    source_payload = {
+        row["study_id"]: source_packets[row["study_id"]]
+        for row in rows
+        if row["study_id"] in source_packets
+    }
+    if source_payload:
+        parts.extend(
+            [
+                "Source Packets JSON:",
+                json.dumps(source_payload, ensure_ascii=False),
+                "",
+            ]
+        )
+    parts.extend(
         [
-            SYSTEM_INSTRUCTIONS,
-            "",
             "Tasks JSON:",
             json.dumps(tasks, ensure_ascii=False),
             "",
             "Return JSON array only.",
         ]
     )
+    return "\n".join(parts)
 
 
 def run_claude(prompt: str, timeout: int, max_budget_usd: str, model_selector: str) -> list[dict[str, str]]:
@@ -266,6 +319,14 @@ def eligible_rows(rows: list[dict[str, str]], families: set[str]) -> list[dict[s
     return selected
 
 
+def selected_task_rows(rows: list[dict[str, str]], task_ids: list[str]) -> list[dict[str, str]]:
+    by_id = {row["task_unit_id"]: row for row in rows}
+    missing = [task_id for task_id in task_ids if task_id not in by_id]
+    if missing:
+        raise SystemExit(f"Task IDs not found or ineligible: {', '.join(missing[:10])}")
+    return [by_id[task_id] for task_id in task_ids]
+
+
 def stratified_rows(rows: list[dict[str, str]], per_family: int) -> list[dict[str, str]]:
     buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in rows:
@@ -298,8 +359,16 @@ def failure_answers(rows: list[dict[str, str]], exc: Exception) -> list[dict[str
     ]
 
 
-def has_model_cli_error(rows: list[dict[str, str]]) -> bool:
-    return any(row.get("error_code") == "model_cli_error" for row in rows)
+def source_quote_policy_failure(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    answers = failure_answers(rows, RuntimeError("source_quote_policy_violation"))
+    for answer in answers:
+        answer["error_code"] = "source_quote_policy_violation"
+        answer["notes"] = "Model returned source text despite suppress_source_quotes policy; output not registered."
+    return answers
+
+
+def has_manifest_blocking_error(rows: list[dict[str, str]]) -> bool:
+    return any(row.get("error_code") in {"model_cli_error", "source_quote_policy_violation"} for row in rows)
 
 
 def main() -> None:
@@ -313,6 +382,8 @@ def main() -> None:
     parser.add_argument("--locked-by", default="", help="Override locked_by; default is provider_noninteractive_batch.")
     parser.add_argument("--run-id", default="")
     parser.add_argument("--families", default="", help="Comma-separated denominator families. Empty means all eligible families.")
+    parser.add_argument("--study-ids", default="", help="Comma-separated study IDs. Empty means all eligible studies.")
+    parser.add_argument("--task-ids-file", type=Path, default=None, help="CSV/text file listing task_unit_id values to run in file order.")
     parser.add_argument("--stratified-per-family", type=int, default=0)
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int, default=0)
@@ -320,6 +391,9 @@ def main() -> None:
     parser.add_argument("--timeout", type=int, default=240)
     parser.add_argument("--max-budget-usd", default="1.00")
     parser.add_argument("--model-selector", default="", help="Exact CLI model selector, e.g. sonnet, opus, gpt-5.5, gemini-2.5-pro.")
+    parser.add_argument("--source-packet-dir", type=Path, default=None, help="Private directory containing {study_id}_source_packet*.txt files.")
+    parser.add_argument("--require-source-packet", action="store_true", help="Fail if any selected row lacks a private source packet.")
+    parser.add_argument("--suppress-source-quotes", action="store_true", help="Ask the model to leave model_source_quote blank and reject batches that violate it.")
     parser.add_argument("--register", action="store_true")
     parser.add_argument(
         "--fail-on-model-cli-error",
@@ -332,14 +406,24 @@ def main() -> None:
         raise SystemExit("--chunk-size must be >= 1")
 
     families = {item.strip() for item in args.families.split(",") if item.strip()}
+    study_ids = {item.strip() for item in args.study_ids.split(",") if item.strip()}
     template_rows = read_csv(args.template)
     selected = eligible_rows(template_rows, families)
-    if args.stratified_per_family:
+    if study_ids:
+        selected = [row for row in selected if row["study_id"] in study_ids]
+    if args.task_ids_file:
+        selected = selected_task_rows(selected, read_task_ids(args.task_ids_file))
+    elif args.stratified_per_family:
         selected = stratified_rows(selected, args.stratified_per_family)
     if args.offset:
         selected = selected[args.offset:]
     if args.limit:
         selected = selected[:args.limit]
+    source_packets = load_source_packets(args.source_packet_dir, selected)
+    if args.require_source_packet:
+        missing_packets = sorted({row["study_id"] for row in selected if row["study_id"] not in source_packets})
+        if missing_packets:
+            raise SystemExit(f"Missing required source packets for studies: {', '.join(missing_packets)}")
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     cli_meta = {
@@ -358,15 +442,17 @@ def main() -> None:
     for batch_number, batch in enumerate(chunks(selected, args.chunk_size), start=1):
         try:
             if args.provider == "claude":
-                answers = run_claude(prompt_for(batch), args.timeout, args.max_budget_usd, args.model_selector)
+                answers = run_claude(prompt_for(batch, source_packets, args.suppress_source_quotes), args.timeout, args.max_budget_usd, args.model_selector)
             elif args.provider == "gemini":
-                answers = run_gemini(prompt_for(batch), args.timeout, args.model_selector)
+                answers = run_gemini(prompt_for(batch, source_packets, args.suppress_source_quotes), args.timeout, args.model_selector)
             elif args.provider == "gemini_api":
-                answers = run_gemini_api(prompt_for(batch), args.timeout, args.model_selector)
+                answers = run_gemini_api(prompt_for(batch, source_packets, args.suppress_source_quotes), args.timeout, args.model_selector)
             else:
-                answers = run_codex(prompt_for(batch), args.timeout, args.model_selector)
+                answers = run_codex(prompt_for(batch, source_packets, args.suppress_source_quotes), args.timeout, args.model_selector)
         except Exception as exc:
             answers = failure_answers(batch, exc)
+        if args.suppress_source_quotes and any(answer.get("model_source_quote", "").strip() for answer in answers):
+            answers = source_quote_policy_failure(batch)
 
         answer_by_id = {answer["task_unit_id"]: answer for answer in answers}
         for row in batch:
@@ -404,7 +490,7 @@ def main() -> None:
 
     output = args.output_dir / f"{run_id}.csv"
     write_csv(output, output_rows, list(template_rows[0].keys()))
-    clean_for_manifest = not has_model_cli_error(output_rows)
+    clean_for_manifest = not has_manifest_blocking_error(output_rows)
     if args.register and clean_for_manifest:
         register_locked_output(output, args.manifest)
     print(output)

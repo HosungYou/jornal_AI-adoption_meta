@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "ai-adoption-meta-analysis-methodology-strategy-1779672509276",
   "createdAt": "2026-05-25T01:28:29.287Z",
-  "lastUpdatedAt": "2026-06-08T23:30:00.000Z",
+  "lastUpdatedAt": "2026-06-08T23:48:00.000Z",
   "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
   "projectPath": "/Users/hosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/jornal_AI-adoption_meta",
   "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-  "currentBlocker": "M1-R-SMOKE is complete and registered: 30 stratified rows with codex:gpt-5.5 via codex-cli 0.137.0, model_cli_error=0, all rows abstained insufficient_evidence because locked source-document chunks are not yet supplied. The remaining blocker is locked source-rendering/chunking before any full-corpus M1-R/M1-P/M2-R run.",
-  "nextAction": "Finalize and lock the source-document rendering/chunking bundle without human reference values or human-adjudicated source locators, then run a source-rendered smoke before authorizing full-corpus M1-R.",
+  "currentBlocker": "M1-R-SOURCE-SMOKE is complete and registered for the current PDF-available subset: 6 beta/path rows across S021/S056/S092 with codex:gpt-5.5 via codex-cli 0.137.0, model_cli_error=0, source_quote_policy_violation=0, nonblank model answers=6, and committed source quotes=0. Full-corpus M1-R remains blocked because source packets are currently rendered for only 3 studies / 18 target rows, all in the secondary beta/path denominator family.",
+  "nextAction": "Expand source rendering coverage for the intended full-corpus target shell, or record a smaller-scope PDF-available subset authorization before running any additional M1-R/M1-P/M2-R conditions.",
   "openQuestions": [
-    "What source rendering/chunking bundle should be locked for model prompts, and should a second source-rendered smoke be required before full-corpus M1-R?"
+    "Should the next Step 5 execution expand source rendering coverage toward all 2,043 target rows, or explicitly authorize a smaller PDF-available subset analysis first?"
   ],
   "requestedPerspectives": [
     "reviewer",
@@ -23,7 +23,7 @@
   "activeModes": [
     "explore"
   ],
-  "resumeHint": "Continue after M1-R-SMOKE completion. Do not run full-corpus M1-R/M1-P/M2-R yet; first finalize locked source rendering/chunking and run a source-rendered smoke.",
+  "resumeHint": "Continue after M1-R-SOURCE-SMOKE completion. Do not run full-corpus M1-R/M1-P/M2-R yet; source rendering coverage currently covers only S021/S056/S092 and 18 target rows.",
   "locale": "en",
-  "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SMOKE_STATUS_20260609.md"
+  "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_SMOKE_STATUS_20260609.md"
 }

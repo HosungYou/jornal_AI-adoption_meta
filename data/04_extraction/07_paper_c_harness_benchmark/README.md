@@ -11,9 +11,14 @@ This folder stores Paper C benchmark artifacts for the 213-study comparison of:
 Created as a scaffold. The full-corpus human reference was frozen on
 2026-06-09, so the workspace can now move to model/procedure run-condition
 planning. The source-rendering policy placeholder and 120-row repeatability
-subset are now prepared, but final analyses still require explicit approval of
-model selectors, procedure contrast, budget caps, prompt/schema versions, and
-private-output storage before any model run.
+subset are prepared. A partial PDF-available source-rendering preflight has also
+been completed for `S021`, `S056`, and `S092`, with private source packets kept
+out of Git and a 6-row source-rendered smoke registered as a locked output.
+
+This preflight does not authorize full-corpus model execution or accuracy
+claims. Full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` remain blocked
+until source rendering coverage is complete for the intended target scope, or a
+smaller PDF-available subset is explicitly authorized.
 
 Current reference pointer:
 
@@ -22,7 +27,10 @@ Current reference pointer:
 Current pre-run planning artifacts:
 
 - `00_manifest/source_rendering_chunking_manifest_20260609.csv`
+- `00_manifest/source_rendering_available_pdf_manifest_20260609.csv`
+- `00_manifest/SOURCE_RENDERING_PREFLIGHT_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
+- `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
 
 ## Structure
 
