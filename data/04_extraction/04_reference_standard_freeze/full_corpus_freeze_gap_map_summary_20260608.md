@@ -1,8 +1,8 @@
 # Full-Corpus Step 4 Freeze Gap Map Summary
 
-Date: 2026-06-08
+Date: 2026-06-09
 
-Status: gap map generated and extended with residual batches 1-5, manual-blocker resolved row drafts/status decisions, and the remaining Phase 1 rule/progress source-checked row drafts. This is not a full 213-study freeze and does not start Step 5.
+Status: gap map generated and extended with residual batches 1-5, manual-blocker resolved row drafts/status decisions, the remaining Phase 1 rule/progress source-checked row drafts, and the lightweight metadata/status audit. This is not a full 213-study freeze and does not start Step 5.
 
 ## Inputs
 
@@ -15,6 +15,7 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 - `../03_source_document_adjudication/phase2/phase2_source_check_candidates_20260525.csv`
 - `paper_b_phase2_source_adjudicated_reference_frozen_20260608.csv`
 - `paper_b_phase2_step4_decision_application_audit_20260608.csv`
+- `full_corpus_lightweight_status_audit_plan_20260608.csv`
 
 ## Output
 
@@ -63,6 +64,8 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 - `full_corpus_residual_batch5_source_audit_20260608.csv`
 - `full_corpus_residual_batch5_reference_draft_20260608.csv`
 - `full_corpus_residual_batch5_source_audit_summary_20260608.md`
+- `full_corpus_lightweight_status_audit_20260609.csv`
+- `full_corpus_lightweight_status_audit_summary_20260609.md`
 - `full_corpus_step4_application_progress_20260608.csv`
 - `full_corpus_step4_bundled_progress_summary_20260608.md`
 
@@ -71,7 +74,7 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 | Gap category | Studies |
 |---|---:|
 | `residual_batch4_source_checked_reference_draft_pending_full_freeze_application` | 52 |
-| `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 48 |
+| `lightweight_status_audit_completed_pending_final_freeze_application` | 49 |
 | `residual_batch5_source_checked_reference_draft_pending_full_freeze_application` | 31 |
 | `residual_batch2_source_checked_reference_draft_pending_full_freeze_application` | 18 |
 | `phase1_logged_decision_or_progress_pending_step4_application` | 16 |
@@ -81,15 +84,13 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 | `residual_batch1_source_checked_reference_draft_pending_full_freeze_application` | 7 |
 | `source_checked_confirmed_exclusion_pending_full_freeze_application` | 6 |
 | `manual_blocker_resolved_reference_draft_pending_final_freeze` | 4 |
-| `correlation_queue_lightweight_audit_pending` | 1 |
 
 ## Phase by Gap Category
 
 | Phase | Gap category | Studies |
 |---|---|---:|
-| `phase1` | `correlation_queue_lightweight_audit_pending` | 1 |
+| `phase1` | `lightweight_status_audit_completed_pending_final_freeze_application` | 12 |
 | `phase1` | `manual_blocker_resolved_reference_draft_pending_final_freeze` | 1 |
-| `phase1` | `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 11 |
 | `phase1` | `phase1_logged_decision_or_progress_pending_step4_application` | 16 |
 | `phase1` | `phase1_rule_progress_source_checked_reference_draft_pending_full_freeze_application` | 10 |
 | `phase1` | `residual_batch1_source_checked_reference_draft_pending_full_freeze_application` | 6 |
@@ -97,8 +98,8 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 | `phase1` | `residual_batch3_source_checked_reference_draft_pending_full_freeze_application` | 9 |
 | `phase1` | `residual_batch4_source_checked_reference_draft_pending_full_freeze_application` | 27 |
 | `phase1` | `residual_batch5_source_checked_reference_draft_pending_full_freeze_application` | 9 |
+| `phase2` | `lightweight_status_audit_completed_pending_final_freeze_application` | 37 |
 | `phase2` | `manual_blocker_resolved_reference_draft_pending_final_freeze` | 3 |
-| `phase2` | `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 37 |
 | `phase2` | `residual_batch1_source_checked_reference_draft_pending_full_freeze_application` | 1 |
 | `phase2` | `residual_batch2_source_checked_reference_draft_pending_full_freeze_application` | 8 |
 | `phase2` | `residual_batch3_source_checked_reference_draft_pending_full_freeze_application` | 3 |
@@ -114,10 +115,11 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 - The high-priority Phase 1 rule subset has 37 row-level draft records for S054/S074/S091/S189; S074 remains orientation-flagged rather than fully routine.
 - The remaining Phase 1 rule/progress queue has 102 row-level source-checked draft records for S005/S011/S044/S079/S086/S087/S166/S168/S187/S223; S011/S079/S166/S168 retain path/beta conversion caveats, S166/S168 retain HTMT exclusions, and S187 retains a stress-to-ANX mapping caveat.
 - Residual batches 1-5 are source-checked drafts, not a final full-corpus freeze: batch 1 adds 122 rows, batch 2 adds 210 rows, batch 3 adds 159 rows, batch 4 adds 471 rows, and batch 5 adds 231 rows.
+- The lightweight status audit closes 49 studies: 43 have coder-agreed correlation rows to carry forward at final freeze application, and 6 are E-FT1/no-target status-only drafts.
 - Researcher manual decisions resolve S015/S066/S099/S200 into 69 caveat-bearing row-level draft records.
 - `source_checked_confirmed_exclusion_pending_full_freeze_application` studies have been carried into `phase2_confirmed_exclusion_full_corpus_audit_20260608.csv` as status-draft exclusions, but they are not yet part of a frozen full-corpus package.
-- No generic `correlation_disagreement_pending_adjudication` studies and no active Phase 1 rule/progress queue studies remain in the shared application progress layer.
-- `metadata_only_or_no_correlation_gap_pending_lightweight_audit` studies and the single `correlation_queue_lightweight_audit_pending` study remain the active lightweight status-audit queue before full freeze QA.
+- No generic correlation-disagreement, Phase 1 rule/progress, metadata/lightweight, or correlation-queue lightweight active audit queues remain in the shared application progress layer.
+- Final full-corpus freeze application/QA is still required before any Step 5 result claim.
 
 ## Phase 1 Logged Decision Audit Counts
 
@@ -133,7 +135,7 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 | Progress status | Studies |
 |---|---:|
 | `residual_batch4_source_checked_reference_draft` | 52 |
-| `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 48 |
+| `lightweight_status_audit_completed` | 49 |
 | `residual_batch5_source_checked_reference_draft` | 31 |
 | `residual_batch2_source_checked_reference_draft` | 18 |
 | `phase1_high_confidence_reference_draft_or_exclusion_status` | 12 |
@@ -145,26 +147,24 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 | `manual_blocker_resolved_reference_draft` | 4 |
 | `phase1_rule_reference_draft_completed` | 3 |
 | `phase1_rule_reference_draft_orientation_caveat` | 1 |
-| `correlation_queue_lightweight_audit_pending` | 1 |
 
 ## Step 4 Status Counts
 
 | Step 4 status | Studies |
 |---|---:|
 | `residual_batch4_source_checked_reference_draft` | 52 |
-| `not_frozen_lightweight_audit_pending` | 48 |
+| `lightweight_status_audit_completed` | 49 |
 | `source_checked_reference_draft_not_frozen_full_corpus` | 41 |
 | `residual_batch5_source_checked_reference_draft` | 31 |
 | `decision_logged_not_frozen_full_corpus` | 16 |
 | `phase1_rule_progress_source_checked_reference_draft` | 10 |
 | `frozen_scoped_package` | 8 |
 | `source_checked_not_frozen_full_corpus` | 6 |
-| `pre_adjudication_correlation_queue_not_frozen` | 1 |
 
 ## Recommended Next Action
 
 Prioritize the full-corpus freeze work in this order:
 
-1. Run the lightweight metadata/status audit queue: 48 metadata/lightweight studies plus 1 correlation-queue lightweight study.
+1. Assemble the final full-corpus Step 4 freeze application/QA layer across source-checked row drafts, coder-agreed lightweight rows, status-only exclusions, and scoped frozen records.
 2. Preserve caveat-bearing drafted rows/status records in audit form until final full-corpus freeze application and QA.
 3. Only after the intended full reference scope is frozen should Step 5 generate result claims.

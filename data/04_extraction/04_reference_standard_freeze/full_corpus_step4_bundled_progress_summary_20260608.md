@@ -1,8 +1,8 @@
 # Full-Corpus Step 4 Bundled Progress Summary
 
-Date: 2026-06-08
+Date: 2026-06-09
 
-Status: bundled Step 4 progress layer generated and extended with residual batch 1, batch 2, batch 3, manual-blocker resolution artifacts, residual batch 4 Phase 1+2 sub-batch artifacts, residual batch 5 low-burden source-audit artifacts, the remaining Phase 1 rule/progress source-audit artifacts, and the shared progress/gap-map merge for completed batches 4, 5, and Phase 1 rule/progress audits. This is not a full 213-study freeze and does not start Step 5.
+Status: bundled Step 4 progress layer generated and extended with residual batch 1, batch 2, batch 3, manual-blocker resolution artifacts, residual batch 4 Phase 1+2 sub-batch artifacts, residual batch 5 low-burden source-audit artifacts, the remaining Phase 1 rule/progress source-audit artifacts, lightweight metadata/status audit artifacts, and the shared progress/gap-map merge for completed batches 4, 5, Phase 1 rule/progress audits, and lightweight status audits. This is not a full 213-study freeze and does not start Step 5.
 
 ## Outputs
 
@@ -45,6 +45,8 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 - `full_corpus_residual_batch5_source_audit_20260608.csv`
 - `full_corpus_residual_batch5_reference_draft_20260608.csv`
 - `full_corpus_residual_batch5_source_audit_summary_20260608.md`
+- `full_corpus_lightweight_status_audit_20260609.csv`
+- `full_corpus_lightweight_status_audit_summary_20260609.md`
 - `full_corpus_freeze_gap_map_20260608.csv`
 - `full_corpus_step4_application_progress_20260608.csv`
 
@@ -53,7 +55,7 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 | Status | Studies |
 |---|---:|
 | `residual_batch4_source_checked_reference_draft` | 52 |
-| `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 48 |
+| `lightweight_status_audit_completed` | 49 |
 | `residual_batch5_source_checked_reference_draft` | 31 |
 | `residual_batch2_source_checked_reference_draft` | 18 |
 | `phase1_high_confidence_reference_draft_or_exclusion_status` | 12 |
@@ -65,7 +67,6 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 | `manual_blocker_resolved_reference_draft` | 4 |
 | `phase1_rule_reference_draft_completed` | 3 |
 | `phase1_rule_reference_draft_orientation_caveat` | 1 |
-| `correlation_queue_lightweight_audit_pending` | 1 |
 
 ## Residual Correlation-Disagreement Triage Counts
 
@@ -106,11 +107,12 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 - Completed batch 4 source-audit sub-batches were merged into `full_corpus_step4_application_progress_20260608.csv` and `full_corpus_freeze_gap_map_20260608.csv` as 52 `residual_batch4_source_checked_reference_draft` studies.
 - The residual `batch_5_low_burden` studies were source-audited as a grouped batch: 31 studies were converted into 231 row-level draft records.
 - Completed batch 5 source-audit records were merged into `full_corpus_step4_application_progress_20260608.csv` and `full_corpus_freeze_gap_map_20260608.csv` as 31 `residual_batch5_source_checked_reference_draft` studies.
-- No generic correlation-disagreement pending studies and no active Phase 1 rule/progress queue studies remain in the shared application progress layer; one correlation-queue lightweight study and 48 metadata/lightweight studies remain pending lightweight status audit. S015/S066/S099/S200 remain separately visible as resolved caveat-bearing row drafts, not unresolved manual blockers.
+- The lightweight metadata/status audit closed 49 studies: 43 studies carry coder-agreed correlation rows forward to final freeze application, and 6 studies (S023/S105/S109/S144/S196/S215) are E-FT1/no-target status-only drafts pending final freeze QA.
+- No generic correlation-disagreement pending studies, active Phase 1 rule/progress queue studies, metadata/lightweight studies, or correlation-queue lightweight studies remain in the shared application progress layer. S015/S066/S099/S200 remain separately visible as resolved caveat-bearing row drafts, not unresolved manual blockers.
 - Full-result Step 5 remains inactive until the intended reference scope is frozen.
 
 ## Recommended Next Action
 
-1. Run the lightweight metadata/status audit queue: 48 metadata/lightweight studies plus 1 correlation-queue lightweight study.
-2. Keep confirmed exclusions, drafted rows/status records, and caveat-bearing Phase 1 rule/progress drafts in audit form until the full-corpus freeze package is ready.
-3. Keep Step 5 inactive until the full reference scope is frozen.
+1. Assemble the final full-corpus Step 4 freeze application/QA layer across source-checked row drafts, coder-agreed lightweight rows, status-only exclusions, and scoped frozen records.
+2. Preserve confirmed exclusions, drafted rows/status records, and all caveats in audit form until the full-corpus freeze package is ready.
+3. Keep Step 5 inactive until the full reference scope is frozen and the post-freeze gate is explicitly passed.
