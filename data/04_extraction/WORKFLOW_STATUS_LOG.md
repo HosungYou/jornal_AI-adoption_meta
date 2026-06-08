@@ -27,10 +27,13 @@ are routine final-freeze audit cases, while S074 remains drafted with an ANX/AXT
 orientation caveat. The residual batch 1 high-burden studies
 S030/S046/S048/S057/S178/S188/S190 have now been source-checked from local PDFs
 and carried into 122 row-level Step 4 draft records, with their remaining
-construct-mapping caveats preserved for final freeze audit. Ten Phase 1
-rule/progress studies remain queued for row-filter/source-value audit, and 117
-residual correlation-disagreement studies remain to be adjudicated. This bundled
-progress layer still does not complete the full 213-study reference freeze.
+construct-mapping caveats preserved for final freeze audit. The residual batch 2
+numeric/source studies have also been source-checked: 18 studies were carried
+into 210 row-level Step 4 draft records, while S015 and S066 remain separated as
+manual follow-up blockers before row drafting. Ten Phase 1 rule/progress studies
+remain queued for row-filter/source-value audit, and 97 generic residual
+correlation-disagreement studies remain to be adjudicated. This bundled progress
+layer still does not complete the full 213-study reference freeze.
 
 **Do not claim Step 5 as complete.** The locked-output shell and scoring harness
 exist, and Claude/Gemini smoke plus staged full-run locked outputs have been
@@ -91,6 +94,7 @@ accuracy or substitution result is reported.
 | 2026-06-08 | Step 4 | Bundled Step 4 application progress layer added: S191 reconciled, six Phase 2 exclusions carried to status draft, 14 Phase 1 rule/progress studies queued, and 124 residual correlation-disagreement studies triaged | `04_reference_standard_freeze/phase1_s191_reconciliation_20260608.md`; `04_reference_standard_freeze/phase2_confirmed_exclusion_full_corpus_audit_20260608.csv`; `04_reference_standard_freeze/phase1_rule_progress_audit_queue_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_adjudication_triage_20260608.csv`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_step4_bundled_progress_summary_20260608.md` | Work high-priority Phase 1 rule/progress audits S054/S074/S091/S189, then process residual `batch_1_high_burden`; keep Step 5 inactive until the full reference scope is frozen |
 | 2026-06-08 | Step 4 | High-priority Phase 1 rule audit applied for S054/S074/S091/S189, adding 37 row-level draft records and reducing the active Phase 1 rule/progress queue to 10 studies | `04_reference_standard_freeze/phase1_high_priority_rule_audit_20260608.csv`; `04_reference_standard_freeze/phase1_high_priority_rule_reference_draft_20260608.csv`; `04_reference_standard_freeze/phase1_high_priority_rule_audit_summary_20260608.md`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv` | Process residual `batch_1_high_burden`; preserve S074 orientation caveat and keep Step 5 inactive until the full reference scope is frozen |
 | 2026-06-08 | Step 4 | Residual batch 1 high-burden source audit completed for S030/S046/S048/S057/S178/S188/S190, adding 122 source-checked row-level draft records and reducing residual correlation-disagreement pending studies from 124 to 117 | `04_reference_standard_freeze/full_corpus_residual_batch1_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch1_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch1_source_audit_summary_20260608.md`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv` | Process residual `batch_2_numeric_source`; keep batch 1 mapping caveats visible in final full-corpus freeze audit and keep Step 5 inactive until the full reference scope is frozen |
+| 2026-06-08 | Step 4 | Residual batch 2 numeric/source audit completed for 20 studies, adding 210 source-checked row-level draft records for 18 studies and separating S015/S066 as manual follow-up blockers; generic residual correlation-disagreement pending studies reduced from 117 to 97 | `04_reference_standard_freeze/full_corpus_residual_batch2_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch2_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch2_source_audit_summary_20260608.md`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv` | Process residual `batch_3_one_coder_only`; resolve S015/S066 manual follow-up before final full-corpus freeze; keep Step 5 inactive until the full reference scope is frozen |
 
 ## Coding Decisions Already Reflected
 
