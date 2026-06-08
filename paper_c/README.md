@@ -9,7 +9,8 @@ against the frozen human reference.
 ## Fixed Direction
 
 - Primary target journal: JMIR Metascience and Research Integrity.
-- Corpus: the full 213-study Paper B validation corpus.
+- Corpus: the full 213-study Paper B validation corpus, now anchored to the
+  2026-06-09 frozen source-anchored adjudicated human reference.
 - Primary comparison: frozen human reference (`H`) versus versioned
   model-by-procedure conditions.
 - Minimum procedure contrast: raw extraction versus the same model mediated by
@@ -66,3 +67,10 @@ Paper C data artifacts live under:
 
 Raw PDFs, private logs, model raw outputs, and rerun bundles must not be committed
 unless a share-safe derivative has been explicitly prepared.
+
+## Post-Freeze Gate
+
+The full-corpus human reference is now available, but final Paper C model runs
+still require a run-condition gate. See
+`POST_FREEZE_MODEL_PROCEDURE_GATE_20260609.md` and the human-reference pointer
+under `data/04_extraction/07_paper_c_harness_benchmark/01_human_reference_snapshot/`.

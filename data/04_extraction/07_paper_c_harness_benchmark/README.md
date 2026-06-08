@@ -8,8 +8,15 @@ This folder stores Paper C benchmark artifacts for the 213-study comparison of:
 
 ## Status
 
-Created as a scaffold. Final analyses must wait until the human reference
-standard is frozen in `data/04_extraction/04_reference_standard_freeze/`.
+Created as a scaffold. The full-corpus human reference was frozen on
+2026-06-09, so the workspace can now move to model/procedure run-condition
+planning. Final analyses still require a separate gate that fixes model
+selectors, procedure contrast, source rendering, prompt/schema versions, and the
+repeated-run stability subset.
+
+Current reference pointer:
+
+- `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
 
 ## Structure
 

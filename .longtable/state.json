@@ -13,23 +13,23 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "The full 213-study Paper B validation corpus has a frozen source-anchored adjudicated human reference standard authorized on 2026-06-09. The frozen package contains 2,043 target rows and 213 frozen study-status records: 194 included frozen-reference studies, 17 excluded/no-target frozen status studies, and 2 duplicate-source frozen status studies. Caveats are retained rather than removed: S051/S151/S164 partial-completion rows, S203 N=251, S074 ANX/AXT orientation, S187 Stress-to-ANX mapping, path/beta-converted rows, HTMT exclusions, manual-resolution decisions, and status-only exclusions. Step 5 remains inactive until a separate post-freeze gate fixes model/procedure scope, denominator-family reporting, and Paper C model set/procedure contrast/repeated-run budget.",
-    "nextAction": "Open the post-freeze Step 5 gate: decide the full-corpus LLM comparison/MASEM substitution scope, denominator-family reporting plan, and Paper C model/procedure/repeated-run design before generating new result claims.",
-    "resumeHint": "I want to continue after authorizing the full-corpus Step 4 source-anchored reference freeze. The next task is the post-freeze Step 5 gate: define model/procedure scope and denominator-family reporting before any new full-corpus LLM or MASEM claims."
+    "currentBlocker": "The full-corpus Step 4 reference is frozen and the post-freeze Step 5 gate is now opened. A 2,043-row full-corpus Step 5 task shell, 19-row status-only accounting shell, post-freeze input manifest, and Paper C human-reference pointer are prepared. No post-freeze model run, scoring rerun, LLM accuracy claim, or MASEM substitution claim is authorized yet. The remaining blocker is the model/procedure run matrix: versioned model selectors, raw versus stateful-harness procedure contrast, source rendering/chunking, prompt/schema versions, budget, and repeated-run stability subset must be fixed before execution.",
+    "nextAction": "Prepare the post-freeze locked-output template and model/procedure run matrix from full_corpus_step5_task_unit_shell_20260609.csv; then get explicit authorization before running any model condition.",
+    "resumeHint": "I want to continue after opening the post-freeze Step 5 gate. The next task is to prepare the locked-output template and model/procedure run matrix from the full-corpus task shell, without running model conditions until authorized."
   },
   "workingState": {
     "currentGoal": "Phase 1+2 전체 213-study coding disagreement 산출물을 기준으로 source-anchored reference standard freeze 전까지 Paper A/B/C의 분석 가능성과 문서화 순서를 구조화한다.",
-    "currentBlocker": "The full 213-study Paper B validation corpus has a frozen source-anchored adjudicated human reference standard authorized on 2026-06-09. The frozen package contains 2,043 target rows and 213 frozen study-status records: 194 included frozen-reference studies, 17 excluded/no-target frozen status studies, and 2 duplicate-source frozen status studies. Caveats are retained rather than removed: S051/S151/S164 partial-completion rows, S203 N=251, S074 ANX/AXT orientation, S187 Stress-to-ANX mapping, path/beta-converted rows, HTMT exclusions, manual-resolution decisions, and status-only exclusions. Step 5 remains inactive until a separate post-freeze gate fixes model/procedure scope, denominator-family reporting, and Paper C model set/procedure contrast/repeated-run budget.",
-    "nextAction": "Open the post-freeze Step 5 gate: decide the full-corpus LLM comparison/MASEM substitution scope, denominator-family reporting plan, and Paper C model/procedure/repeated-run design before generating new result claims.",
+    "currentBlocker": "The full-corpus Step 4 reference is frozen and the post-freeze Step 5 gate is now opened. A 2,043-row full-corpus Step 5 task shell, 19-row status-only accounting shell, post-freeze input manifest, and Paper C human-reference pointer are prepared. No post-freeze model run, scoring rerun, LLM accuracy claim, or MASEM substitution claim is authorized yet. The remaining blocker is the model/procedure run matrix: versioned model selectors, raw versus stateful-harness procedure contrast, source rendering/chunking, prompt/schema versions, budget, and repeated-run stability subset must be fixed before execution.",
+    "nextAction": "Prepare the post-freeze locked-output template and model/procedure run matrix from full_corpus_step5_task_unit_shell_20260609.csv; then get explicit authorization before running any model condition.",
     "openQuestions": [
       "Which versioned models, procedure/harness conditions, and repeated-run stability subset should Paper C lock before final benchmark runs?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "I want to continue after authorizing the full-corpus Step 4 source-anchored reference freeze. The next task is the post-freeze Step 5 gate: define model/procedure scope and denominator-family reporting before any new full-corpus LLM or MASEM claims.",
-    "researchSpecificationArtifact": "data/04_extraction/04_reference_standard_freeze/full_corpus_reference_standard_freeze_authorization_20260609.md",
-    "lastUpdatedAt": "2026-06-08T22:30:00.000Z"
+    "resumeHint": "I want to continue after opening the post-freeze Step 5 gate. The next task is to prepare the locked-output template and model/procedure run matrix from the full-corpus task shell, without running model conditions until authorized.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/POST_FREEZE_STEP5_GATE_20260609.md",
+    "lastUpdatedAt": "2026-06-08T23:05:00.000Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -136,6 +136,16 @@
       "summary": "Authorized final full-corpus Step 4 source-anchored adjudicated human reference freeze with caveats preserved.",
       "selectedOption": "authorize_with_caveats_preserved",
       "rationale": "Researcher instructed Codex to review QA caveats and record final freeze authorization/log, preserving S051/S151/S164 partial-completion, S203 N=251, S074/S187, path/beta, HTMT, manual-resolution, and status-only caveats. QA contained no fail checks and all caveats were bounded and retained in the frozen package."
+    },
+    {
+      "id": "decision_post_freeze_step5_gate_20260609",
+      "timestamp": "2026-06-08T23:05:00.000Z",
+      "checkpointKey": "post_freeze_step5_gate",
+      "level": "workflow_gate",
+      "mode": "commit",
+      "summary": "Opened post-freeze Step 5 gate and prepared full-corpus task shell without authorizing model runs.",
+      "selectedOption": "prepare_template_and_run_matrix_before_execution",
+      "rationale": "The full-corpus reference is frozen, but previous Paper2 task-unit outputs predate the full-corpus freeze and cannot be reported as final full-corpus results without re-keying/revalidation. A task shell and input manifest were prepared to support a locked-output template rebuild and model/procedure run matrix before execution."
     }
   ],
   "invocationLog": [],
@@ -743,6 +753,15 @@
       "source": "codex-longtable",
       "traceType": "decision",
       "summary": "Full-corpus Step 4 reference freeze authorized: 2,043 target rows, 213 study statuses, caveats preserved; Step 5 requires separate post-freeze gate.",
+      "visibility": "explicit",
+      "importance": "high"
+    },
+    {
+      "id": "post-freeze-step5-gate-opened-20260609",
+      "timestamp": "2026-06-08T23:05:00.000Z",
+      "source": "codex-longtable",
+      "traceType": "decision",
+      "summary": "Post-freeze Step 5 gate opened: 2,043 target task units, 19 status-only records, Paper C reference pointer; model runs not authorized yet.",
       "visibility": "explicit",
       "importance": "high"
     }

@@ -1,7 +1,9 @@
 # Step 5: LLM Comparison and MASEM Substitution
 
-Step 4 has a 2026-06-05 source-anchored tiered reference freeze layer. This
-folder now contains the locked-output shell and scoring harness for Step 5.
+Step 4 has a full-corpus source-anchored adjudicated human reference freeze
+authorized on 2026-06-09. This folder contains the locked-output shell, scoring
+harness, legacy pre-full-corpus model-explicit artifacts, and the post-freeze
+gate artifacts for Step 5.
 
 Do not report current LLM accuracy results or MASEM substitution outputs until a
 model/run output file is frozen, listed in the locked-output manifest, and scored
@@ -32,6 +34,14 @@ by denominator family.
   Claude Sonnet, including their overlap subset.
 - `MODEL_FAMILY_EXTENSION_PLAN_20260607.md`: Claude Sonnet backfill gate,
   installed CLI model-family inventory, and full-run gate for any added model.
+- `POST_FREEZE_STEP5_GATE_20260609.md`: post-freeze gate after the full-corpus
+  reference freeze.
+- `FULL_CORPUS_POST_FREEZE_INPUT_MANIFEST_20260609.csv`: input/reference
+  manifest for post-freeze Step 5.
+- `full_corpus_step5_task_unit_shell_20260609.csv`: 2,043 target-row task shell
+  generated from the frozen full-corpus reference.
+- `full_corpus_step5_status_only_shell_20260609.csv`: 19 status-only corpus
+  accounting records that do not generate target task rows.
 
 ## Current status
 
@@ -69,9 +79,18 @@ completed through the Google AI Studio Gemini API with the same
 `gemini-3-flash-preview` model selector. CLI/API surface provenance is preserved
 in locked-output metadata.
 
-Current clean model-explicit state: `codex:gpt-5.5` is complete for
+Current clean model-explicit legacy state: `codex:gpt-5.5` is complete for
 `0000-7858`; `claude:sonnet` is complete for `4000-7858`;
 `gemini:gemini-3-flash-preview` is complete for `0000-7858`.
+
+These model-explicit artifacts were built before the 2026-06-09 full-corpus
+reference freeze. They must not be reported as final full-corpus accuracy unless
+they are explicitly re-keyed and revalidated against
+`../04_reference_standard_freeze/full_corpus_reference_standard_frozen_20260609.csv`.
+
+Post-freeze task shell state: `full_corpus_step5_task_unit_shell_20260609.csv`
+contains 2,043 target-row task units. No post-freeze model runs are authorized
+yet.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
