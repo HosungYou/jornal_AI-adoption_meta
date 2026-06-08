@@ -20,11 +20,11 @@ from urllib import error, request
 
 REPO = Path(__file__).resolve().parents[2]
 STEP5 = REPO / "data/04_extraction/05_llm_masem_substitution"
-TEMPLATE = STEP5 / "locked_outputs/paper2_locked_output_template_20260606.csv"
-OUTPUT_DIR = STEP5 / "locked_outputs/model_runs"
-MANIFEST = STEP5 / "locked_outputs/LOCKED_OUTPUT_MANIFEST_20260606.csv"
+DEFAULT_TEMPLATE = STEP5 / "locked_outputs/paper2_locked_output_template_20260606.csv"
+DEFAULT_OUTPUT_DIR = STEP5 / "locked_outputs/model_runs"
+DEFAULT_MANIFEST = STEP5 / "locked_outputs/LOCKED_OUTPUT_MANIFEST_20260606.csv"
 
-PROMPT_VERSION = "paper2_task_family_prompt_v1_20260606"
+DEFAULT_PROMPT_VERSION = "paper2_task_family_prompt_v1_20260606"
 SYSTEM_INSTRUCTIONS = """You are extracting structured answers for a meta-analysis validation task.
 Use only the provided redacted task inputs. Do not infer from the human reference, because it is not provided.
 Do not inspect the repository, use tools, search, read files, or explain a strategy.
@@ -58,7 +58,7 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 def write_csv(path: Path, rows: list[dict[str, str]], fields: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -67,8 +67,8 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def register_locked_output(path: Path) -> None:
-    rows = read_csv(MANIFEST) if MANIFEST.exists() else []
+def register_locked_output(path: Path, manifest: Path) -> None:
+    rows = read_csv(manifest) if manifest.exists() else []
     rows = [row for row in rows if row.get("file") != str(path)]
     rows.append(
         {
@@ -81,7 +81,7 @@ def register_locked_output(path: Path) -> None:
         }
     )
     write_csv(
-        MANIFEST,
+        manifest,
         rows,
         ["artifact_role", "file", "bytes", "sha256", "locked_status", "notes"],
     )
@@ -305,6 +305,12 @@ def has_model_cli_error(rows: list[dict[str, str]]) -> bool:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--provider", choices=["claude", "gemini", "gemini_api", "codex"], required=True)
+    parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
+    parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument("--prompt-version", default=DEFAULT_PROMPT_VERSION)
+    parser.add_argument("--procedure-id", default="raw_model_extraction_batch")
+    parser.add_argument("--locked-by", default="", help="Override locked_by; default is provider_noninteractive_batch.")
     parser.add_argument("--run-id", default="")
     parser.add_argument("--families", default="", help="Comma-separated denominator families. Empty means all eligible families.")
     parser.add_argument("--stratified-per-family", type=int, default=0)
@@ -326,7 +332,7 @@ def main() -> None:
         raise SystemExit("--chunk-size must be >= 1")
 
     families = {item.strip() for item in args.families.split(",") if item.strip()}
-    template_rows = read_csv(TEMPLATE)
+    template_rows = read_csv(args.template)
     selected = eligible_rows(template_rows, families)
     if args.stratified_per_family:
         selected = stratified_rows(selected, args.stratified_per_family)
@@ -374,8 +380,8 @@ def main() -> None:
                     "model_provider": model_provider,
                     "model_id": model_id,
                     "model_version": model_version,
-                    "procedure_id": "raw_model_extraction_batch",
-                    "prompt_version": PROMPT_VERSION,
+                    "procedure_id": args.procedure_id,
+                    "prompt_version": args.prompt_version,
                     "run_timestamp_utc": now,
                     "temperature": "0",
                     "seed": "",
@@ -389,18 +395,18 @@ def main() -> None:
                     "raw_output_ref": "not_persisted_batch",
                     "locked_answer_status": "locked",
                     "lock_timestamp_utc": now,
-                    "locked_by": f"{args.provider}_noninteractive_batch",
+                    "locked_by": args.locked_by or f"{args.provider}_noninteractive_batch",
                     "notes": answer.get("notes", ""),
                 }
             )
             output_rows.append(locked_row)
         print(f"batch={batch_number} rows={len(batch)} total_locked={len(output_rows)}", flush=True)
 
-    output = OUTPUT_DIR / f"{run_id}.csv"
+    output = args.output_dir / f"{run_id}.csv"
     write_csv(output, output_rows, list(template_rows[0].keys()))
     clean_for_manifest = not has_model_cli_error(output_rows)
     if args.register and clean_for_manifest:
-        register_locked_output(output)
+        register_locked_output(output, args.manifest)
     print(output)
     print(f"rows={len(output_rows)}")
     print(f"registered={args.register and clean_for_manifest}")

@@ -2,8 +2,8 @@
 
 Date: 2026-06-09
 
-Status: prepared for researcher review. This packet does not authorize any
-model execution.
+Status: `M1-R-SMOKE` was researcher-authorized and executed. This packet does
+not authorize any full-corpus model execution.
 
 ## Prepared Artifacts
 
@@ -24,7 +24,7 @@ model execution.
 
 | Condition | Role | Status |
 |---|---|---|
-| `M1-R-SMOKE` | Small stratified raw-model preflight | Pending approval |
+| `M1-R-SMOKE` | Small stratified raw-model preflight | Authorized, executed, and manifest-registered |
 | `M1-R` | Primary raw model baseline | Pending approval |
 | `M1-P` | Same-model stateful research harness/procedure contrast | Pending approval |
 | `M2-R` | Cross-model raw comparison | Pending approval |
@@ -33,6 +33,39 @@ model execution.
 All model selectors remain `to verify` before execution. The matrix preserves
 prior candidate families from legacy scaffold work, but final model selectors
 must be checked and recorded on the run date.
+
+Update after researcher approval: `M1-R-SMOKE` was locked to
+`codex:gpt-5.5` through `codex-cli 0.137.0` and executed on 30 stratified
+post-freeze rows. The remaining full-corpus/procedure/model-comparison rows are
+still not authorized.
+
+## Authorization Decision Recorded
+
+The researcher approved Codex's recommended next step on 2026-06-09:
+
+1. First executable condition: `M1-R-SMOKE` only.
+2. Exact provider/model surface for the smoke: `openai`; `codex:gpt-5.5`.
+3. Local CLI/version lock: `codex-cli 0.137.0; model_selector=gpt-5.5`.
+4. Budget/scope: smoke-only 30-row preflight; no full-corpus run authorized.
+5. Source rendering/chunking policy: no human reference value and no
+   human-adjudicated source locator in prompts.
+6. Private raw-output policy: raw transcripts not committed; locked structured
+   CSV may be registered.
+7. Repeatability subset: the 120-row 40/40/40 subset remains frozen for later
+   repeated-run stability checks.
+
+## Smoke Execution Evidence
+
+- Run ID: `paper_b_full_corpus_m1_raw_smoke_20260609`
+- Locked output:
+  `data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper_b_full_corpus_m1_raw_smoke_20260609.csv`
+- Status summary:
+  `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SMOKE_STATUS_20260609.md`
+- Rows: 30, balanced 10/10/10 across denominator families.
+- `model_cli_error` rows: 0.
+- Manifest registration: true.
+- Interpretation: all 30 rows abstained with `insufficient_evidence` because
+  this smoke used the current task stubs without source-document chunks.
 
 ## Approval Items
 
@@ -51,7 +84,7 @@ Before any model condition is run, the researcher must approve:
 
 ## Non-Claims
 
-- No post-freeze model run has been executed.
+- No post-freeze full-corpus model run has been executed.
 - No scoring rerun has been executed.
 - No LLM accuracy, model comparison, procedure comparison, or MASEM
   substitution result is current.
@@ -60,5 +93,6 @@ Before any model condition is run, the researcher must approve:
 
 ## Recommended Next Decision
 
-Approve or revise the pre-run matrix. If approved, the first executable unit
-should be `M1-R-SMOKE`, not a full-corpus run.
+Review the `M1-R-SMOKE` smoke status and finalize the source
+rendering/chunking bundle before any full-corpus `M1-R` run. A second
+source-rendered smoke is recommended before all 2,043 target rows are run.

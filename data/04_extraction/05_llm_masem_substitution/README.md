@@ -45,12 +45,16 @@ by denominator family.
 - `locked_outputs/full_corpus_locked_output_template_20260609.csv`: 2,043-row
   post-freeze locked-output template with blank model answer fields.
 - `locked_outputs/FULL_CORPUS_MODEL_PROCEDURE_RUN_MATRIX_20260609.csv`:
-  planned Paper B/C model/procedure conditions; all rows remain pending
-  researcher approval.
+  Paper B/C model/procedure conditions; `M1-R-SMOKE` has been authorized and
+  registered, while full-corpus conditions remain pending researcher approval.
 - `locked_outputs/FULL_CORPUS_PRE_RUN_AUTHORIZATION_PACKET_20260609.md`:
-  approval checklist for the first post-freeze executable condition.
+  approval record and smoke execution evidence for the first post-freeze
+  executable condition.
 - `schemas/FULL_CORPUS_LOCKED_OUTPUT_SCHEMA_20260609.md`: post-freeze schema,
   denominator-family, and leakage-boundary rule.
+- `results/FULL_CORPUS_M1_R_SMOKE_STATUS_20260609.md`: post-freeze
+  `M1-R-SMOKE` status; this is a schema/export/locking preflight, not an
+  accuracy result.
 
 ## Current status
 
@@ -99,9 +103,16 @@ they are explicitly re-keyed and revalidated against
 
 Post-freeze task shell state: `full_corpus_step5_task_unit_shell_20260609.csv`
 contains 2,043 target-row task units. The post-freeze locked-output template and
-model/procedure run matrix are prepared, but no post-freeze model runs are
-authorized yet. The recommended first executable unit after approval is
-`M1-R-SMOKE`, not a full-corpus run.
+model/procedure run matrix are prepared. `M1-R-SMOKE` was authorized and
+executed on 30 stratified rows using `codex:gpt-5.5` through
+`codex-cli 0.137.0`; the locked output is registered in
+`locked_outputs/FULL_CORPUS_LOCKED_OUTPUT_MANIFEST_20260609.csv`.
+
+The `M1-R-SMOKE` rows all abstained with `insufficient_evidence`, as expected
+for the current source-rendering placeholder/task-stub setup. This proves the
+post-freeze runner/export/manifest path only. It is not a scoring rerun, LLM
+accuracy result, model comparison, procedure comparison, or MASEM substitution
+claim. No full-corpus model run is authorized yet.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
