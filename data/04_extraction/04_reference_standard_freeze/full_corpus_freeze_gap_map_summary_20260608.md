@@ -2,7 +2,7 @@
 
 Date: 2026-06-08
 
-Status: gap map generated and extended with residual batch 1, batch 2, and batch 3 source-checked row drafts/status decisions. This is not a full 213-study freeze and does not start Step 5.
+Status: gap map generated and extended with residual batch 1, batch 2, batch 3, and manual-blocker resolved row drafts/status decisions. This is not a full 213-study freeze and does not start Step 5.
 
 ## Inputs
 
@@ -41,6 +41,10 @@ Status: gap map generated and extended with residual batch 1, batch 2, and batch
 - `full_corpus_residual_batch3_source_audit_20260608.csv`
 - `full_corpus_residual_batch3_reference_draft_20260608.csv`
 - `full_corpus_residual_batch3_source_audit_summary_20260608.md`
+- `full_corpus_manual_blocker_audit_20260608.csv`
+- `full_corpus_manual_blocker_reference_draft_20260608.csv`
+- `full_corpus_manual_blocker_status_20260608.csv`
+- `full_corpus_manual_blocker_resolved_register_20260608.csv`
 - `full_corpus_step4_application_progress_20260608.csv`
 - `full_corpus_step4_bundled_progress_summary_20260608.md`
 
@@ -56,8 +60,7 @@ Status: gap map generated and extended with residual batch 1, batch 2, and batch
 | `scoped_phase2_frozen` | 8 |
 | `residual_batch1_source_checked_reference_draft_pending_full_freeze_application` | 7 |
 | `source_checked_confirmed_exclusion_pending_full_freeze_application` | 6 |
-| `residual_batch2_manual_followup_required_before_reference_draft` | 2 |
-| `residual_batch3_manual_followup_required_before_reference_draft` | 2 |
+| `manual_blocker_resolved_reference_draft_pending_final_freeze` | 4 |
 | `correlation_queue_lightweight_audit_pending` | 1 |
 
 ## Phase by Gap Category
@@ -69,15 +72,14 @@ Status: gap map generated and extended with residual batch 1, batch 2, and batch
 | `phase1` | `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 11 |
 | `phase1` | `phase1_logged_decision_or_progress_pending_step4_application` | 26 |
 | `phase1` | `residual_batch1_source_checked_reference_draft_pending_full_freeze_application` | 6 |
-| `phase1` | `residual_batch2_manual_followup_required_before_reference_draft` | 1 |
+| `phase1` | `manual_blocker_resolved_reference_draft_pending_final_freeze` | 1 |
 | `phase1` | `residual_batch2_source_checked_reference_draft_pending_full_freeze_application` | 10 |
 | `phase1` | `residual_batch3_source_checked_reference_draft_pending_full_freeze_application` | 9 |
 | `phase2` | `correlation_disagreement_pending_adjudication` | 47 |
+| `phase2` | `manual_blocker_resolved_reference_draft_pending_final_freeze` | 3 |
 | `phase2` | `metadata_only_or_no_correlation_gap_pending_lightweight_audit` | 37 |
 | `phase2` | `residual_batch1_source_checked_reference_draft_pending_full_freeze_application` | 1 |
-| `phase2` | `residual_batch2_manual_followup_required_before_reference_draft` | 1 |
 | `phase2` | `residual_batch2_source_checked_reference_draft_pending_full_freeze_application` | 8 |
-| `phase2` | `residual_batch3_manual_followup_required_before_reference_draft` | 2 |
 | `phase2` | `residual_batch3_source_checked_reference_draft_pending_full_freeze_application` | 3 |
 | `phase2` | `scoped_phase2_frozen` | 8 |
 | `phase2` | `source_checked_confirmed_exclusion_pending_full_freeze_application` | 6 |
@@ -89,8 +91,9 @@ Status: gap map generated and extended with residual batch 1, batch 2, and batch
 - The highest-confidence Phase 1 subset has a draft row/status layer: 80 row-level records for S033/S035/S051/S081/S120/S151/S164/S191/S217 and exclusion status records for S041/S180/S220.
 - The high-priority Phase 1 rule subset has 37 row-level draft records for S054/S074/S091/S189; S074 remains orientation-flagged rather than fully routine.
 - The residual batch 1 source audit adds 122 row-level draft records for S030/S046/S048/S057/S178/S188/S190; these are source-checked drafts, not a final full-corpus freeze.
-- The residual batch 2 source audit adds 210 row-level draft records for 18 studies and separates S015/S066 into manual follow-up blockers before row drafting.
-- The residual batch 3 source audit adds 159 row-level draft records for 12 studies and separates S099/S200 into manual follow-up blockers before row drafting.
+- The residual batch 2 source audit adds 210 row-level draft records for 18 studies; S015/S066 were initially separated for manual follow-up and are now resolved in the manual-blocker row-draft layer.
+- The residual batch 3 source audit adds 159 row-level draft records for 12 studies; S099/S200 were initially separated for manual follow-up and are now resolved in the manual-blocker row-draft layer.
+- Researcher manual decisions subsequently resolve S015/S066/S099/S200 into 69 caveat-bearing row-level draft records.
 - `source_checked_confirmed_exclusion_pending_full_freeze_application` studies have been carried into `phase2_confirmed_exclusion_full_corpus_audit_20260608.csv` as status-draft exclusions, but they are not yet part of a frozen full-corpus package.
 - `correlation_disagreement_pending_adjudication` remains the largest generic full-freeze blocker at 83 studies after batch 3.
 - `metadata_only_or_no_correlation_gap_pending_lightweight_audit` studies are lower-priority for target-row adjudication, but still need status/metadata audit before full freeze.
@@ -117,10 +120,9 @@ Status: gap map generated and extended with residual batch 1, batch 2, and batch
 | `scoped_phase2_frozen` | 8 |
 | `residual_batch1_source_checked_reference_draft` | 7 |
 | `phase2_confirmed_exclusion_full_corpus_status_draft` | 6 |
+| `manual_blocker_resolved_reference_draft` | 4 |
 | `phase1_rule_reference_draft_completed` | 3 |
 | `phase1_progress_only_source_value_audit_queue` | 2 |
-| `residual_batch2_manual_followup_required` | 2 |
-| `residual_batch3_manual_followup_required` | 2 |
 | `correlation_queue_lightweight_audit_pending` | 1 |
 | `phase1_rule_reference_draft_orientation_caveat` | 1 |
 
@@ -130,19 +132,16 @@ Status: gap map generated and extended with residual batch 1, batch 2, and batch
 |---|---:|
 | `pre_adjudication_disagreement_not_frozen` | 83 |
 | `not_frozen_lightweight_audit_pending` | 48 |
-| `source_checked_reference_draft_not_frozen_full_corpus` | 37 |
+| `source_checked_reference_draft_not_frozen_full_corpus` | 41 |
 | `decision_logged_not_frozen_full_corpus` | 26 |
 | `frozen_scoped_package` | 8 |
 | `source_checked_not_frozen_full_corpus` | 6 |
-| `source_checked_manual_followup_not_frozen_full_corpus` | 4 |
 | `pre_adjudication_correlation_queue_not_frozen` | 1 |
 
 ## Recommended Next Action
 
 Prioritize the full-corpus freeze work in this order:
 
-1. Resolve the accumulated manual follow-up blockers: S015, S066, S099, and S200.
-2. If those are deliberately deferred, process residual `batch_4_moderate` from `full_corpus_residual_adjudication_triage_20260608.csv`.
-3. Continue the remaining Phase 1 rule/progress audit queue when needed: S005, S011, S044, S079, S086, S087, S166, S168, S187, and S223.
-4. Run lightweight metadata/status audit for studies without target-row disagreement.
-5. Only after the intended full reference scope is frozen should Step 5 generate result claims.
+1. Process residual `batch_4_moderate` from `full_corpus_residual_adjudication_triage_20260608.csv` or continue the remaining Phase 1 rule/progress audit queue: S005, S011, S044, S079, S086, S087, S166, S168, S187, and S223.
+2. Run lightweight metadata/status audit for studies without target-row disagreement.
+3. Only after the intended full reference scope is frozen should Step 5 generate result claims.

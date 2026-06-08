@@ -4,6 +4,8 @@ Date: 2026-06-08
 
 Status: residual `batch_3_one_coder_only` source audit completed as a Step 4 draft/status layer. This is not a full 213-study freeze and does not start Step 5.
 
+Post-checkpoint update: S099 and S200 were subsequently resolved by researcher decision in `full_corpus_manual_blocker_reference_draft_20260608.csv` and `full_corpus_manual_blocker_status_20260608.csv`. The batch 3 CSV remains the source-audit snapshot from before that manual resolution.
+
 ## Outputs
 
 - `full_corpus_residual_batch3_source_audit_20260608.csv`
@@ -68,9 +70,9 @@ Fourteen residual `batch_3_one_coder_only` studies were checked against local PD
 
 - `correlation_disagreement_pending_adjudication` is reduced from 97 to 83.
 - A new progress category records 12 studies as `residual_batch3_source_checked_reference_draft`.
-- A second category records 2 studies as `residual_batch3_manual_followup_required`.
+- At the time of this batch-3 source-audit snapshot, a second category recorded 2 studies as `residual_batch3_manual_followup_required`; current progress supersedes this with `manual_blocker_resolved_reference_draft`.
 - The new row-level draft adds 159 source-checked rows pending final full-corpus freeze application.
 
 ## Recommended Next Action
 
-Resolve the accumulated manual follow-up blockers (`S015`, `S066`, `S099`, and `S200`) or proceed to residual `batch_4_moderate` if those manual decisions are deliberately deferred. Keep Step 5 inactive until the intended full reference scope is frozen.
+S099/S200 are now resolved in the manual-blocker row-draft layer, alongside S015/S066. Proceed to residual `batch_4_moderate` or the remaining Phase 1 rule/source-value queue. Keep Step 5 inactive until the intended full reference scope is frozen.

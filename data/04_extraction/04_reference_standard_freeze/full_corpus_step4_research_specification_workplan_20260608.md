@@ -37,16 +37,17 @@ Current Step 4 draft/status layers include:
   S030/S046/S048/S057/S178/S188/S190.
 - 210 residual batch 2 source-checked row draft records for 18 studies.
 - 159 residual batch 3 source-checked row draft records for 12 studies.
+- 69 manual-blocker resolved row draft records for S015/S066/S099/S200.
 - 6 confirmed Phase 2 exclusions in a full-corpus status-draft audit layer.
 
 Current full-freeze blockers:
 
 - 83 generic residual correlation-disagreement studies remain to be adjudicated.
-- S015, S066, S099, and S200 remain manual follow-up blockers before row
-  drafting or exclusion/status decisions.
 - 8 explicit Phase 1 rule decisions still need row filters/source audits.
 - S086 and S168 need source-value audit.
 - S074 remains drafted with an ANX/AXT orientation caveat.
+- S015/S066/S099/S200 are resolved into row drafts but must retain their
+  country-stratum, beta/path, and mixed-evidence caveats in final freeze audit.
 - 48 metadata/lightweight studies plus 1 correlation-queue lightweight study
   need status audit.
 - Paper C still needs final model set, procedure contrast, and repeated-run
@@ -71,7 +72,9 @@ carried into a row-level reference draft.
 
 Status: completed as a Step 4 draft/status layer on 2026-06-08. Twelve studies
 were converted into 159 source-checked row-level reference draft records, and
-S099/S200 were retained as manual follow-up blockers.
+S099/S200 were initially retained as manual follow-up blockers before the
+subsequent researcher decision resolved them into the manual-blocker row-draft
+layer.
 
 Outputs:
 
@@ -159,7 +162,7 @@ Required checks:
 
 ## Next Action
 
-Resolve manual follow-up blockers S015/S066/S099/S200, or process residual
-`batch_4_moderate` from `full_corpus_residual_adjudication_triage_20260608.csv`
-if those manual decisions are deliberately deferred. Keep Step 5 inactive until
-the full reference scope is frozen.
+Process residual `batch_4_moderate` from
+`full_corpus_residual_adjudication_triage_20260608.csv` or continue the
+remaining Phase 1 rule/source-value queue. Keep Step 5 inactive until the full
+reference scope is frozen.

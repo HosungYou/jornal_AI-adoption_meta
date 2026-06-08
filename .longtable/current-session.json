@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "id": "ai-adoption-meta-analysis-methodology-strategy-1779672509276",
   "createdAt": "2026-05-25T01:28:29.287Z",
-  "lastUpdatedAt": "2026-06-08T01:01:36.000Z",
+  "lastUpdatedAt": "2026-06-08T05:30:00.000Z",
   "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
   "projectPath": "/Users/hosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/jornal_AI-adoption_meta",
   "currentGoal": "Phase 1+2 전체 213-study coding disagreement 산출물을 기준으로 source-anchored reference standard freeze 전까지 Paper A/B/C의 분석 가능성과 문서화 순서를 구조화한다.",
-  "currentBlocker": "Combined Phase 1+2 pre-adjudication queues are generated, the scoped Phase 2 freeze package is committed, and the full-corpus Step 4 freeze gap map covers all 213 studies. The Step 4 draft/status layer now carries 80 Phase 1 high-confidence row-level draft records plus 3 logged exclusion status records, 37 high-priority Phase 1 rule-applied row draft records for S054/S074/S091/S189, 122 residual batch 1 source-checked row draft records for S030/S046/S048/S057/S178/S188/S190, 210 residual batch 2 source-checked row draft records for 18 studies, 159 residual batch 3 source-checked row draft records for 12 studies, and 6 confirmed Phase 2 exclusions in a full-corpus status-draft audit layer. Full-result Step 5 remains inactive because the full reference is not frozen: 8 explicit Phase 1 rule decisions still need row filters/source audits, S086/S168 need source-value audit, S074 remains drafted with an ANX/AXT orientation caveat, S015/S066/S099/S200 need manual follow-up before row drafting or exclusion/status decisions, 83 generic residual correlation-disagreement studies need adjudication, 48 metadata/lightweight studies plus 1 correlation-queue lightweight study need status audit, and Paper C의 최종 model set, procedure contrast, repeated-run budget도 아직 고정해야 한다.",
-  "nextAction": "Resolve manual follow-up blockers S015/S066/S099/S200, or process residual batch_4_moderate from full_corpus_residual_adjudication_triage_20260608.csv if those manual decisions are deliberately deferred; keep Step 5 inactive until the full reference scope is frozen.",
+  "currentBlocker": "Combined Phase 1+2 pre-adjudication queues are generated, the scoped Phase 2 freeze package is committed, and the full-corpus Step 4 freeze gap map covers all 213 studies. The Step 4 draft/status layer now carries 80 Phase 1 high-confidence row-level draft records plus 3 logged exclusion status records, 37 high-priority Phase 1 rule-applied row draft records for S054/S074/S091/S189, 122 residual batch 1 source-checked row draft records for S030/S046/S048/S057/S178/S188/S190, 210 residual batch 2 source-checked row draft records for 18 studies, 159 residual batch 3 source-checked row draft records for 12 studies, 69 manual-blocker resolved row draft records for S015/S066/S099/S200, and 6 confirmed Phase 2 exclusions in a full-corpus status-draft audit layer. Full-result Step 5 remains inactive because the full reference is not frozen: 8 explicit Phase 1 rule decisions still need row filters/source audits, S086/S168 need source-value audit, S074 remains drafted with an ANX/AXT orientation caveat, 83 generic residual correlation-disagreement studies need adjudication, 48 metadata/lightweight studies plus 1 correlation-queue lightweight study need status audit, and Paper C의 최종 model set, procedure contrast, repeated-run budget도 아직 고정해야 한다.",
+  "nextAction": "Process residual batch_4_moderate from full_corpus_residual_adjudication_triage_20260608.csv or continue the remaining Phase 1 rule/source-value queue; keep Step 5 inactive until the full reference scope is frozen.",
   "openQuestions": [
     "Which versioned models, procedure/harness conditions, and repeated-run stability subset should Paper C lock before final benchmark runs?"
   ],
@@ -23,7 +23,7 @@
   "activeModes": [
     "explore"
   ],
-  "resumeHint": "I want to continue after the residual batch 3 source audit. The next task is to resolve manual follow-up blockers S015/S066/S099/S200 or process residual batch_4_moderate if those are deferred, while keeping Step 5 inactive.",
+  "resumeHint": "I want to continue after resolving S015/S066/S099/S200 into manual-blocker row drafts. The next task is to process residual batch_4_moderate or continue the remaining Phase 1 rule/source-value queue, while keeping Step 5 inactive.",
   "locale": "en",
   "researchSpecificationArtifact": "data/04_extraction/04_reference_standard_freeze/full_corpus_step4_research_specification_workplan_20260608.md"
 }
