@@ -11,8 +11,8 @@ numbered folders below.
 | 1 | `01_raw_human_coder_data_freeze/` | Raw independent human coder workbooks and freeze candidates | Phase 1 complete; Phase 2 returned raw workbooks and freeze candidates preserved |
 | 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists; Phase 2 queue and combined Phase 1+2 queues generated |
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 and Phase 2 adjudication in progress |
-| 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Scoped Phase 2 package frozen; full corpus not complete |
-| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Not started |
+| 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Full 213-study corpus frozen with retained caveats on 2026-06-09 |
+| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Requires separate post-freeze run/analysis gate for new full-corpus claims |
 | 6 | `06 coding by date/` | Date-stamped operational staging area for share-safe coding packets and transfer artifacts | Active |
 | 99 | `99_archive/` | Historical files not used in the active workflow | Reference only |
 
@@ -33,11 +33,12 @@ source-anchored adjudicated human reference standard is complete.
   full 213-study Paper B validation corpus.
 - Step 3 has source-check and source-value decisions documented for selected
   Phase 2 high-priority items.
-- Step 4 has a scoped frozen Phase 2 source-adjudicated package,
-  decision-application audit, QA audit record, and post-freeze correction
-  placeholder.
-- Step 4 is not complete because no frozen adjudicated reference file exists.
-- Step 5 must not start until Step 4 is frozen.
+- Step 4 has a scoped frozen Phase 2 source-adjudicated package and a full
+  213-study frozen reference package authorized on 2026-06-09.
+- Step 4 is complete for the full-corpus source-anchored adjudicated human
+  reference standard, with caveats retained in the frozen package.
+- Step 5 must use the frozen full-corpus reference only after a separate
+  post-freeze run/analysis gate confirms the intended model/procedure scope.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved

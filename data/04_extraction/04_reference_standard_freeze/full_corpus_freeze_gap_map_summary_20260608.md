@@ -169,8 +169,14 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 - The shared progress and gap-map CSVs now mark all 213 studies as `full_corpus_reference_application_qa_completed_pending_freeze_authorization`.
 - This update does not freeze the full reference and does not start Step 5.
 
+## 2026-06-09 Full-Corpus Freeze Authorization Update
+
+- The shared gap map now marks all 213 studies as `full_corpus_reference_standard_frozen_authorized_20260609`.
+- The full-corpus frozen package includes 2,043 target rows and 213 frozen study-status records.
+- Freeze caveats are retained rather than removed: S051/S151/S164 partial-completion, S203 N=251, S074/S187, path/beta, HTMT, manual-resolution, and status-only records.
+- Step 5 remains a separate post-freeze gate; no new Step 5 result claim is created by the freeze authorization.
+
 ## Recommended Next Action
 
-1. Review `full_corpus_reference_application_qa_summary_20260609.md` and `full_corpus_reference_application_qa_findings_20260609.csv`.
-2. If the retained caveats are acceptable, record final full-corpus freeze authorization/log.
-3. Keep Step 5 inactive until that post-freeze gate is explicitly passed.
+1. Use the frozen reference package for downstream work only after a post-freeze Step 5 gate fixes the model/procedure scope and reporting denominator.
+2. Keep the caveat register attached to any downstream Paper B/Paper C interpretation.

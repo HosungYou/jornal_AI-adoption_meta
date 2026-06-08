@@ -16,8 +16,15 @@ ground truth.
 
 A separate scoped frozen reference file was prepared on 2026-06-08 for the
 Phase 2 source-adjudicated high-priority package. This scoped freeze covers
-`S014`, `S021`, `S056`, `S092`, `S121`, `S195`, `S202`, and `S206`; it does not
-claim that the entire 213-study Paper B reference standard is complete.
+`S014`, `S021`, `S056`, `S092`, `S121`, `S195`, `S202`, and `S206`.
+
+The full 213-study Paper B validation corpus was frozen on 2026-06-09 as a
+source-anchored adjudicated human reference standard with retained caveats. The
+full-corpus freeze package contains 2,043 frozen target rows, 213 frozen
+study-status records, 194 included frozen-reference studies, 17 excluded/no-
+target frozen status studies, and 2 duplicate-source frozen status studies.
+Step 5 still requires a separate post-freeze run/analysis gate before new LLM
+comparison or MASEM substitution claims are generated.
 
 ## Terminology
 
@@ -38,6 +45,12 @@ for current protocol documents.
   `paper_b_phase2_source_adjudicated_reference_frozen_20260608.csv`,
   `paper_b_phase2_step4_decision_application_audit_20260608.csv`, and
   `reference_standard_freeze_log_20260608.md`.
+- Full-corpus 2026-06-09 freeze package: see
+  `full_corpus_reference_standard_frozen_20260609.csv`,
+  `full_corpus_reference_standard_study_status_frozen_20260609.csv`,
+  `full_corpus_reference_standard_freeze_authorization_20260609.md`,
+  `full_corpus_reference_standard_freeze_caveat_register_20260609.csv`, and
+  `CHECKSUMS_FULL_CORPUS_FREEZE_20260609.csv`.
 - Post-freeze corrections must be added as dated entries with reason and
   reviewer before any affected scoring rerun.
 

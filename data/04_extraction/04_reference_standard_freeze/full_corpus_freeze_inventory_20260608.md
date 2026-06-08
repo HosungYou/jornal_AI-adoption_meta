@@ -75,7 +75,7 @@ Status: scope-lock inventory for the Paper B full-corpus Step 4 freeze path afte
 - Phase 1 rule/source-value queue: none active in the shared progress layer; the remaining queue was source-audited into `phase1_rule_progress_reference_draft_20260608.csv`.
 - Residual correlation-disagreement batches: none active in the shared progress layer; batches 1-5 have source-checked row drafts.
 - Metadata/lightweight audit: none active in the shared progress layer; 49 studies are completed in `full_corpus_lightweight_status_audit_20260609.csv`.
-- Active blocker: final full-corpus freeze authorization/log has not yet been recorded after the application QA draft.
+- Active blocker: Step 4 full-corpus freeze is authorized; the next blocker is the separate post-freeze Step 5 gate for model/procedure scope and denominator-family reporting.
 
 ## Existing Step 4 Draft/Status Feeders
 
@@ -107,6 +107,18 @@ Status: scope-lock inventory for the Paper B full-corpus Step 4 freeze path afte
 - Shared progress/gap-map status: `full_corpus_reference_application_qa_completed_pending_freeze_authorization` for all 213 studies.
 - Step 5 remains inactive.
 
+## 2026-06-09 Freeze Authorization Inventory Update
+
+- Frozen target rows: 2043
+- Frozen study-status rows: 213
+- Included frozen-reference studies: 194
+- Excluded/no-target frozen status studies: 17
+- Duplicate-source frozen status studies: 2
+- Shared progress/gap-map status: `full_corpus_reference_standard_frozen_authorized_20260609` for all 213 studies.
+- Freeze authorization: `full_corpus_reference_standard_freeze_authorization_20260609.md`
+- Caveat register: `full_corpus_reference_standard_freeze_caveat_register_20260609.csv`
+- Step 5 remains inactive until a separate post-freeze gate is approved.
+
 ## Next Action
 
-Review the application QA findings and record final full-corpus freeze authorization/log before starting any Step 5 result claims.
+Open a separate post-freeze Step 5 gate before generating new full-corpus LLM comparison or MASEM substitution claims.

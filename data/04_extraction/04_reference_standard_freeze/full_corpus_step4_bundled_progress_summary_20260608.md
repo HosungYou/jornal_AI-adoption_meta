@@ -119,8 +119,16 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 - The shared progress and gap-map CSVs now mark all 213 studies as `full_corpus_reference_application_qa_completed_pending_freeze_authorization`.
 - This update does not freeze the full reference and does not start Step 5.
 
+## 2026-06-09 Full-Corpus Freeze Authorization Update
+
+- `full_corpus_reference_standard_frozen_20260609.csv` freezes 2,043 target rows for the full 213-study Paper B validation corpus.
+- `full_corpus_reference_standard_study_status_frozen_20260609.csv` records 213 frozen study statuses: 194 included frozen-reference studies, 17 excluded/no-target frozen status studies, and 2 duplicate-source frozen status studies.
+- `full_corpus_reference_standard_freeze_authorization_20260609.md` authorizes the final full-corpus freeze with caveats retained.
+- `full_corpus_reference_standard_freeze_caveat_register_20260609.csv` preserves S051/S151/S164 partial-completion, S203 N=251, S074/S187, path/beta, HTMT, manual-resolution, and status-only caveats.
+- The shared progress and gap-map CSVs now mark all 213 studies as `full_corpus_reference_standard_frozen_authorized_20260609`.
+
 ## Recommended Next Action
 
-1. Review `full_corpus_reference_application_qa_summary_20260609.md` and `full_corpus_reference_application_qa_findings_20260609.csv`.
-2. If the retained caveats are acceptable, record final full-corpus freeze authorization/log.
-3. Keep Step 5 inactive until that post-freeze gate is explicitly passed.
+1. Open a separate post-freeze Step 5 gate before generating new full-corpus LLM comparison or MASEM substitution claims.
+2. Use `full_corpus_reference_standard_frozen_20260609.csv` as the full-corpus reference only with the caveat register visible.
+3. Keep post-freeze corrections in `post_freeze_corrections_full_corpus_20260609.md`.
