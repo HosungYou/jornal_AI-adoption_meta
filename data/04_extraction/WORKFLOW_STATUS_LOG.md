@@ -36,10 +36,14 @@ studies have now been source-checked: 12 studies were carried into 159 row-level
 Step 4 draft records. S099 and S200 were initially separated for manual
 follow-up and are now resolved in the manual-blocker row-draft layer. The manual
 blocker resolution layer adds 69 caveat-bearing row-level Step 4 draft records
-for S015/S066/S099/S200. Ten Phase 1 rule/progress studies remain queued for
-row-filter/source-value audit, and 83 generic residual correlation-disagreement
-studies remain to be adjudicated. This bundled progress layer still does not
-complete the full 213-study reference freeze.
+for S015/S066/S099/S200. The residual batch 4 moderate Phase 1 sub-batches have
+also been source-checked into 257 row-level Step 4 draft records across 27
+studies, while shared progress/gap-map files are intentionally held until the
+remaining batch 4 Phase 2 sub-batches are complete. Ten Phase 1 rule/progress
+studies remain queued for row-filter/source-value audit, and 83 generic residual
+correlation-disagreement studies remain to be adjudicated in the shared map.
+This bundled progress layer still does not complete the full 213-study
+reference freeze.
 
 **Do not claim Step 5 as complete.** The locked-output shell and scoring harness
 exist, and Claude/Gemini smoke plus staged full-run locked outputs have been
@@ -105,6 +109,7 @@ accuracy or substitution result is reported.
 | 2026-06-08 | Step 4 | Residual batch 3 one-coder-only source audit completed for 14 studies, adding 159 source-checked row-level draft records for 12 studies and separating S099/S200 as manual follow-up blockers; generic residual correlation-disagreement pending studies reduced from 97 to 83 | `04_reference_standard_freeze/full_corpus_residual_batch3_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch3_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch3_source_audit_summary_20260608.md`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv` | Superseded by the manual-blocker resolution row below for S099/S200; process residual `batch_4_moderate` or the remaining Phase 1 rule/source-value queue; keep Step 5 inactive until the full reference scope is frozen |
 | 2026-06-08 | Step 4 | Manual follow-up blockers resolved by researcher decision: S015 uses R2 split into Poland/India country strata, S066 uses R1, S099 uses R2, and S200 uses R1, adding 69 caveat-bearing row-level draft records | `04_reference_standard_freeze/full_corpus_manual_blocker_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_manual_blocker_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_manual_blocker_status_20260608.csv`; `04_reference_standard_freeze/full_corpus_manual_blocker_resolved_register_20260608.csv`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv` | Process residual `batch_4_moderate` or the remaining Phase 1 rule/source-value queue; keep Step 5 inactive until the full reference scope is frozen |
 | 2026-06-08 | Step 4 | Residual batch 4 phase1/PairB sub-batch source audit completed for 18 studies, adding 192 row-level draft records while intentionally leaving shared progress/gap-map files unchanged until remaining batch 4 sub-batches are complete | `04_reference_standard_freeze/full_corpus_residual_batch4_phase1_pairB_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase1_pairB_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase1_pairB_source_audit_summary_20260608.md` | Process remaining batch 4 sub-batches: phase1/PairA, phase2/PairC, and phase2/PairD; keep Step 5 inactive until the full reference scope is frozen |
+| 2026-06-08 | Step 4 | Residual batch 4 phase1/PairA sub-batch source audit completed for 9 studies, adding 65 row-level draft records while intentionally leaving shared progress/gap-map files unchanged until remaining batch 4 Phase 2 sub-batches are complete | `04_reference_standard_freeze/full_corpus_residual_batch4_phase1_pairA_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase1_pairA_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase1_pairA_source_audit_summary_20260608.md` | Process remaining batch 4 sub-batches: phase2/PairC and phase2/PairD; keep Step 5 inactive until the full reference scope is frozen |
 
 ## Coding Decisions Already Reflected
 
