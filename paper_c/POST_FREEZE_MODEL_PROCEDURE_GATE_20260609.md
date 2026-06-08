@@ -47,4 +47,8 @@ Paper C should use the full-corpus frozen reference as `H`, but it should not tr
 
 ## Next Action
 
-Prepare the locked-output template and run matrix. Do not run final Paper C conditions until the researcher approves the model selectors, procedure contrast, and repeatability subset.
+The locked-output template, run matrix, source-rendering/chunking placeholder,
+and 120-row repeatability subset are now prepared. Do not run final Paper C
+conditions until the researcher approves the first executable condition, exact
+model selector, budget cap, source rendering/chunking policy, private-output
+storage, and repeatability subset.

@@ -13,23 +13,23 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "The full-corpus Step 4 reference is frozen and the post-freeze Step 5 gate is now opened. A 2,043-row full-corpus Step 5 task shell, 19-row status-only accounting shell, post-freeze input manifest, and Paper C human-reference pointer are prepared. No post-freeze model run, scoring rerun, LLM accuracy claim, or MASEM substitution claim is authorized yet. The remaining blocker is the model/procedure run matrix: versioned model selectors, raw versus stateful-harness procedure contrast, source rendering/chunking, prompt/schema versions, budget, and repeated-run stability subset must be fixed before execution.",
-    "nextAction": "Prepare the post-freeze locked-output template and model/procedure run matrix from full_corpus_step5_task_unit_shell_20260609.csv; then get explicit authorization before running any model condition.",
-    "resumeHint": "I want to continue after opening the post-freeze Step 5 gate. The next task is to prepare the locked-output template and model/procedure run matrix from the full-corpus task shell, without running model conditions until authorized."
+    "currentBlocker": "The post-freeze Step 5 locked-output template and model/procedure run matrix are prepared. Artifacts now include a 2,043-row unlocked full-corpus template, five planned conditions (M1-R-SMOKE, M1-R, M1-P, M2-R, optional M3-R), a source-rendering/chunking placeholder, and a 120-row repeatability subset balanced 40/40/40 across denominator families. No post-freeze model run, scoring rerun, LLM accuracy claim, procedure comparison, or MASEM substitution claim is authorized yet. The remaining blocker is researcher approval of the first executable condition, exact model selector/provider surface, budget cap, source rendering/chunking policy, private-output storage, and repeatability subset acceptance.",
+    "nextAction": "Record the researcher pre-run authorization decision. Recommended first executable unit is M1-R-SMOKE only; after approval, verify the exact model selector/provider surface and run the smoke condition before any full-corpus run.",
+    "resumeHint": "I want to continue after preparing the post-freeze locked-output template and model/procedure run matrix. The next task is to approve or revise the pre-run authorization packet; do not run any model condition unless the first executable condition, model selector, budget, source rendering policy, and private-output storage are approved."
   },
   "workingState": {
     "currentGoal": "Phase 1+2 전체 213-study coding disagreement 산출물을 기준으로 source-anchored reference standard freeze 전까지 Paper A/B/C의 분석 가능성과 문서화 순서를 구조화한다.",
-    "currentBlocker": "The full-corpus Step 4 reference is frozen and the post-freeze Step 5 gate is now opened. A 2,043-row full-corpus Step 5 task shell, 19-row status-only accounting shell, post-freeze input manifest, and Paper C human-reference pointer are prepared. No post-freeze model run, scoring rerun, LLM accuracy claim, or MASEM substitution claim is authorized yet. The remaining blocker is the model/procedure run matrix: versioned model selectors, raw versus stateful-harness procedure contrast, source rendering/chunking, prompt/schema versions, budget, and repeated-run stability subset must be fixed before execution.",
-    "nextAction": "Prepare the post-freeze locked-output template and model/procedure run matrix from full_corpus_step5_task_unit_shell_20260609.csv; then get explicit authorization before running any model condition.",
+    "currentBlocker": "The post-freeze Step 5 locked-output template and model/procedure run matrix are prepared. Artifacts now include a 2,043-row unlocked full-corpus template, five planned conditions (M1-R-SMOKE, M1-R, M1-P, M2-R, optional M3-R), a source-rendering/chunking placeholder, and a 120-row repeatability subset balanced 40/40/40 across denominator families. No post-freeze model run, scoring rerun, LLM accuracy claim, procedure comparison, or MASEM substitution claim is authorized yet. The remaining blocker is researcher approval of the first executable condition, exact model selector/provider surface, budget cap, source rendering/chunking policy, private-output storage, and repeatability subset acceptance.",
+    "nextAction": "Record the researcher pre-run authorization decision. Recommended first executable unit is M1-R-SMOKE only; after approval, verify the exact model selector/provider surface and run the smoke condition before any full-corpus run.",
     "openQuestions": [
-      "Which versioned models, procedure/harness conditions, and repeated-run stability subset should Paper C lock before final benchmark runs?"
+      "Does the researcher approve M1-R-SMOKE as the first executable condition, and which exact model selector/provider surface and budget cap should be locked for that smoke run?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "I want to continue after opening the post-freeze Step 5 gate. The next task is to prepare the locked-output template and model/procedure run matrix from the full-corpus task shell, without running model conditions until authorized.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/POST_FREEZE_STEP5_GATE_20260609.md",
-    "lastUpdatedAt": "2026-06-08T23:05:00.000Z"
+    "resumeHint": "I want to continue after preparing the post-freeze locked-output template and model/procedure run matrix. The next task is to approve or revise the pre-run authorization packet; do not run any model condition unless the first executable condition, model selector, budget, source rendering policy, and private-output storage are approved.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/locked_outputs/FULL_CORPUS_PRE_RUN_AUTHORIZATION_PACKET_20260609.md",
+    "lastUpdatedAt": "2026-06-08T23:25:00.000Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -146,6 +146,16 @@
       "summary": "Opened post-freeze Step 5 gate and prepared full-corpus task shell without authorizing model runs.",
       "selectedOption": "prepare_template_and_run_matrix_before_execution",
       "rationale": "The full-corpus reference is frozen, but previous Paper2 task-unit outputs predate the full-corpus freeze and cannot be reported as final full-corpus results without re-keying/revalidation. A task shell and input manifest were prepared to support a locked-output template rebuild and model/procedure run matrix before execution."
+    },
+    {
+      "id": "decision_post_freeze_pre_run_matrix_20260609",
+      "timestamp": "2026-06-08T23:25:00.000Z",
+      "checkpointKey": "post_freeze_pre_run_matrix",
+      "level": "workflow_gate",
+      "mode": "commit",
+      "summary": "Prepared post-freeze locked-output template and model/procedure run matrix without authorizing model runs.",
+      "selectedOption": "prepare_pre_run_packet_and_wait_for_authorization",
+      "rationale": "The 2026-06-09 full-corpus reference allows Step 5 planning, but execution still requires model selector, budget, source rendering, and private-output decisions. The prepared artifacts make those decisions inspectable before any model condition is run."
     }
   ],
   "invocationLog": [],
@@ -762,6 +772,15 @@
       "source": "codex-longtable",
       "traceType": "decision",
       "summary": "Post-freeze Step 5 gate opened: 2,043 target task units, 19 status-only records, Paper C reference pointer; model runs not authorized yet.",
+      "visibility": "explicit",
+      "importance": "high"
+    },
+    {
+      "id": "post-freeze-pre-run-matrix-prepared-20260609",
+      "timestamp": "2026-06-08T23:25:00.000Z",
+      "source": "codex-longtable",
+      "traceType": "artifact",
+      "summary": "Post-freeze Step 5 pre-run matrix prepared: 2,043 unlocked template rows, five planned conditions, source-rendering placeholder, and 120-row repeatability subset; model runs not authorized yet.",
       "visibility": "explicit",
       "importance": "high"
     }

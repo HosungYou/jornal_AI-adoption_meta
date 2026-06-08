@@ -10,13 +10,19 @@ This folder stores Paper C benchmark artifacts for the 213-study comparison of:
 
 Created as a scaffold. The full-corpus human reference was frozen on
 2026-06-09, so the workspace can now move to model/procedure run-condition
-planning. Final analyses still require a separate gate that fixes model
-selectors, procedure contrast, source rendering, prompt/schema versions, and the
-repeated-run stability subset.
+planning. The source-rendering policy placeholder and 120-row repeatability
+subset are now prepared, but final analyses still require explicit approval of
+model selectors, procedure contrast, budget caps, prompt/schema versions, and
+private-output storage before any model run.
 
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
+
+Current pre-run planning artifacts:
+
+- `00_manifest/source_rendering_chunking_manifest_20260609.csv`
+- `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 
 ## Structure
 
