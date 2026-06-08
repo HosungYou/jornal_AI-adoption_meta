@@ -27,6 +27,9 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 - `full_corpus_manual_blocker_reference_draft_20260608.csv`
 - `full_corpus_manual_blocker_status_20260608.csv`
 - `full_corpus_manual_blocker_resolved_register_20260608.csv`
+- `full_corpus_residual_batch4_phase1_pairB_source_audit_20260608.csv`
+- `full_corpus_residual_batch4_phase1_pairB_reference_draft_20260608.csv`
+- `full_corpus_residual_batch4_phase1_pairB_source_audit_summary_20260608.md`
 - `full_corpus_step4_application_progress_20260608.csv`
 
 ## Progress Status Counts
@@ -79,11 +82,12 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 - The residual `batch_2_numeric_source` studies were source-checked as a grouped batch: 18 studies were converted into 210 row-level draft records; S015 and S066 were initially held for manual follow-up and are now resolved in the manual-blocker row-draft layer.
 - The residual `batch_3_one_coder_only` studies were source-checked as a grouped batch: 12 studies were converted into 159 row-level draft records; S099 and S200 were initially held for manual follow-up and are now resolved in the manual-blocker row-draft layer.
 - Researcher manual decisions resolved S015/S066/S099/S200 into 69 row-level draft records: S015 uses R2 split into Poland/India country strata, S066 uses R1, S099 uses R2, and S200 uses R1.
+- The residual `batch_4_moderate::phase1::Pair B` sub-batch was source-audited into 192 row-level draft records for 18 studies. Shared progress/gap-map files are intentionally unchanged until the remaining batch 4 sub-batches are complete.
 - The remaining generic correlation-disagreement blocker count is now 83 studies; S015/S066/S099/S200 remain separately visible as resolved caveat-bearing row drafts, not unresolved manual blockers.
 - Full-result Step 5 remains inactive until the intended reference scope is frozen.
 
 ## Recommended Next Action
 
-1. Process residual `batch_4_moderate` from `full_corpus_residual_adjudication_triage_20260608.csv`, or continue the remaining Phase 1 rule/progress audit queue: S005, S011, S044, S079, S086, S087, S166, S168, S187, and S223.
+1. Process the remaining residual `batch_4_moderate` sub-batches: phase1/PairA, phase2/PairC, and phase2/PairD, or continue the remaining Phase 1 rule/progress audit queue: S005, S011, S044, S079, S086, S087, S166, S168, S187, and S223.
 2. Keep confirmed exclusions and drafted rows/status records in audit form until the full-corpus freeze package is ready.
 3. Keep Step 5 inactive until the full reference scope is frozen.
