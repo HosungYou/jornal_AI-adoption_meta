@@ -42,12 +42,18 @@ studies and merged into the shared progress/gap-map layer as
 `residual_batch4_source_checked_reference_draft`. The residual batch 5
 low-burden studies have now been source-checked into 231 row-level Step 4 draft
 records across 31 studies and merged into the shared progress/gap-map layer as
-`residual_batch5_source_checked_reference_draft`. No generic residual
-correlation-disagreement studies remain in the shared application progress
-layer. Ten Phase 1 rule/progress studies and 48 metadata/lightweight studies
-plus 1 correlation-queue lightweight study remain queued for row-filter,
-source-value, or lightweight status audit. This bundled progress layer still
-does not complete the full 213-study reference freeze.
+`residual_batch5_source_checked_reference_draft`. The remaining Phase 1
+rule/progress queue S005/S011/S044/S079/S086/S087/S166/S168/S187/S223 has now
+been source-checked into 102 row-level Step 4 draft records and merged into the
+shared progress/gap-map layer as
+`phase1_rule_progress_source_checked_reference_draft`. S011/S079/S166/S168
+retain path/beta conversion caveats, S166/S168 retain HTMT exclusions, and S187
+retains a stress-to-ANX mapping caveat. No generic residual
+correlation-disagreement studies and no active Phase 1 rule/progress studies
+remain in the shared application progress layer. The remaining active queue is
+48 metadata/lightweight studies plus 1 correlation-queue lightweight study for
+lightweight status audit. This bundled progress layer still does not complete
+the full 213-study reference freeze.
 
 **Do not claim Step 5 as complete.** The locked-output shell and scoring harness
 exist, and Claude/Gemini smoke plus staged full-run locked outputs have been
@@ -117,6 +123,7 @@ accuracy or substitution result is reported.
 | 2026-06-08 | Step 4 | Residual batch 4 phase2/PairC and phase2/PairD source audits completed for 25 studies, adding 214 row-level draft records | `04_reference_standard_freeze/full_corpus_residual_batch4_phase2_pairC_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase2_pairC_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase2_pairC_source_audit_summary_20260608.md`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase2_pairD_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase2_pairD_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch4_phase2_pairD_source_audit_summary_20260608.md` | Merge completed batch 4 sub-batches into shared progress/gap-map; keep Step 5 inactive until the full reference scope is frozen |
 | 2026-06-08 | Step 4 | Completed residual batch 4 moderate sub-batches merged into the shared full-corpus progress/gap-map layer: 52 studies now carry `residual_batch4_source_checked_reference_draft`, reducing generic residual correlation-disagreement pending studies from 83 to 31 | `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv`; `04_reference_standard_freeze/full_corpus_step4_bundled_progress_summary_20260608.md` | Process residual `batch_5_low_burden` or the remaining Phase 1 rule/progress audit queue; keep Step 5 inactive until the full reference scope is frozen |
 | 2026-06-08 | Step 4 | Residual batch 5 low-burden source audit completed for 31 studies, adding 231 row-level draft records and merging them into the shared full-corpus progress/gap-map layer; generic residual correlation-disagreement pending studies reduced from 31 to 0 | `04_reference_standard_freeze/full_corpus_residual_batch5_source_audit_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch5_reference_draft_20260608.csv`; `04_reference_standard_freeze/full_corpus_residual_batch5_source_audit_summary_20260608.md`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv` | Process the remaining Phase 1 rule/progress audit queue or the lightweight metadata/status audit queue; keep Step 5 inactive until the full reference scope is frozen |
+| 2026-06-08 | Step 4 | Remaining Phase 1 rule/progress source audit completed for 10 studies, adding 102 row-level draft records and merging them into shared full-corpus progress/gap-map; active Phase 1 rule/progress queue reduced from 10 to 0 | `04_reference_standard_freeze/phase1_rule_progress_source_audit_20260608.csv`; `04_reference_standard_freeze/phase1_rule_progress_reference_draft_20260608.csv`; `04_reference_standard_freeze/phase1_rule_progress_source_audit_summary_20260608.md`; `04_reference_standard_freeze/phase1_rule_progress_audit_queue_20260608.csv`; `04_reference_standard_freeze/full_corpus_step4_application_progress_20260608.csv`; `04_reference_standard_freeze/full_corpus_freeze_gap_map_20260608.csv` | Run lightweight metadata/status audit queue: 48 metadata/lightweight studies plus 1 correlation-queue lightweight study; keep Step 5 inactive until the full reference scope is frozen |
 
 ## Coding Decisions Already Reflected
 
