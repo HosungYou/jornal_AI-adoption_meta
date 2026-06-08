@@ -161,10 +161,16 @@ Status: gap map generated and extended with residual batches 1-5, manual-blocker
 | `frozen_scoped_package` | 8 |
 | `source_checked_not_frozen_full_corpus` | 6 |
 
+## 2026-06-09 Full-Corpus Application QA Update
+
+- `full_corpus_reference_application_rows_draft_20260609.csv` now assembles 2043 application-draft rows from all Step 4 row feeders, 449 lightweight coder-agreed rows, and 39 partial Phase 1 application-QA completion rows.
+- `full_corpus_reference_application_study_status_20260609.csv` now covers all 213 studies: 194 included application-draft studies, 17 excluded/no-target status-only studies, and 2 duplicate-source status-only studies.
+- `full_corpus_reference_application_qa_findings_20260609.csv` records 12 checks with warnings retained for partial Phase 1 completion rows, S203 sample-size correction, and caveat preservation.
+- The shared progress and gap-map CSVs now mark all 213 studies as `full_corpus_reference_application_qa_completed_pending_freeze_authorization`.
+- This update does not freeze the full reference and does not start Step 5.
+
 ## Recommended Next Action
 
-Prioritize the full-corpus freeze work in this order:
-
-1. Assemble the final full-corpus Step 4 freeze application/QA layer across source-checked row drafts, coder-agreed lightweight rows, status-only exclusions, and scoped frozen records.
-2. Preserve caveat-bearing drafted rows/status records in audit form until final full-corpus freeze application and QA.
-3. Only after the intended full reference scope is frozen should Step 5 generate result claims.
+1. Review `full_corpus_reference_application_qa_summary_20260609.md` and `full_corpus_reference_application_qa_findings_20260609.csv`.
+2. If the retained caveats are acceptable, record final full-corpus freeze authorization/log.
+3. Keep Step 5 inactive until that post-freeze gate is explicitly passed.

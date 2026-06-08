@@ -111,8 +111,16 @@ Status: bundled Step 4 progress layer generated and extended with residual batch
 - No generic correlation-disagreement pending studies, active Phase 1 rule/progress queue studies, metadata/lightweight studies, or correlation-queue lightweight studies remain in the shared application progress layer. S015/S066/S099/S200 remain separately visible as resolved caveat-bearing row drafts, not unresolved manual blockers.
 - Full-result Step 5 remains inactive until the intended reference scope is frozen.
 
+## 2026-06-09 Full-Corpus Application QA Update
+
+- `full_corpus_reference_application_rows_draft_20260609.csv` now assembles 2043 application-draft rows from all Step 4 row feeders, 449 lightweight coder-agreed rows, and 39 partial Phase 1 application-QA completion rows.
+- `full_corpus_reference_application_study_status_20260609.csv` now covers all 213 studies: 194 included application-draft studies, 17 excluded/no-target status-only studies, and 2 duplicate-source status-only studies.
+- `full_corpus_reference_application_qa_findings_20260609.csv` records 12 checks with warnings retained for partial Phase 1 completion rows, S203 sample-size correction, and caveat preservation.
+- The shared progress and gap-map CSVs now mark all 213 studies as `full_corpus_reference_application_qa_completed_pending_freeze_authorization`.
+- This update does not freeze the full reference and does not start Step 5.
+
 ## Recommended Next Action
 
-1. Assemble the final full-corpus Step 4 freeze application/QA layer across source-checked row drafts, coder-agreed lightweight rows, status-only exclusions, and scoped frozen records.
-2. Preserve confirmed exclusions, drafted rows/status records, and all caveats in audit form until the full-corpus freeze package is ready.
-3. Keep Step 5 inactive until the full reference scope is frozen and the post-freeze gate is explicitly passed.
+1. Review `full_corpus_reference_application_qa_summary_20260609.md` and `full_corpus_reference_application_qa_findings_20260609.csv`.
+2. If the retained caveats are acceptable, record final full-corpus freeze authorization/log.
+3. Keep Step 5 inactive until that post-freeze gate is explicitly passed.
