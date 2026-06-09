@@ -34,6 +34,13 @@ source text, human values, or human-adjudicated source locators. A 3-study
 checker smoke confirmed that the first high-priority files still return
 `not_materialized_or_read_timeout`.
 
+The full 191-study checker has also been rerun after checking for an available
+CLI materialization route. All 191 blocked studies still return
+`not_materialized_or_read_timeout`. The local OneDrive File Provider exposes
+pinning as a context action, but the current CLI surface did not execute that
+action, so the next gate is a OneDrive/Finder "Always Keep on This Device"
+materialization step followed by checker and source-rendering reruns.
+
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
@@ -48,6 +55,9 @@ Current pre-run planning artifacts:
 - `00_manifest/source_pdf_materialization_gap_manifest_20260609.csv`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_PLAN_20260609.md`
 - `00_manifest/source_pdf_materialization_check_smoke_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch01_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_full_20260609.csv`
+- `00_manifest/SOURCE_PDF_MATERIALIZATION_CHECK_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
 - `06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`

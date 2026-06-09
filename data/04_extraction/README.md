@@ -41,7 +41,9 @@ source-anchored adjudicated human reference standard is complete.
   template, run matrix, repeatability subset, smoke/preflight outputs, and a
   source PDF materialization action package. No full-corpus model runs or
   result claims are authorized until source rendering coverage is clean for the
-  intended target scope or a smaller-scope gate is explicitly authorized.
+  intended target scope or a smaller-scope gate is explicitly authorized. The
+  current full materialization checker still reports 191/191 blocked studies as
+  `not_materialized_or_read_timeout`.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved

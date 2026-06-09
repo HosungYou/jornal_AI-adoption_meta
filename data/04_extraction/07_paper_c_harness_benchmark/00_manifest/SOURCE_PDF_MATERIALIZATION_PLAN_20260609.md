@@ -41,6 +41,15 @@ Status: materialization action package prepared. This artifact does not authoriz
 
 After the OneDrive PDFs are locally materialized, run the checker on the relevant batch or full gap manifest. Then rerun the source-rendering coverage audit. A balanced source-rendered smoke is only eligible after rendered private packets cover the intended scope.
 
+## Follow-up Check
+
+The full materialization checker was rerun after verifying that the current
+local CLI surface does not execute the OneDrive `MarkPinned` custom action. All
+191 gap-manifest studies still returned `not_materialized_or_read_timeout`;
+Batch 01 also returned `not_materialized_or_read_timeout` for all 20 checked
+studies. The next gate therefore remains OneDrive/Finder local materialization,
+not additional model execution.
+
 ## Integrity
 
 - `source_pdf_materialization_gap_manifest_20260609.csv` sha256: `ed9013f3328b2f8b0c40411ce0ef575cfe5df9bcbeab35fc5006e32b0862c462`

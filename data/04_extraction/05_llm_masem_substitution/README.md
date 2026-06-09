@@ -139,6 +139,10 @@ blocked studies: 10 batches prioritized by target-row burden, a study-level gap
 manifest, and a local checker that reports readability/materialization status
 without committing PDF paths or source text. A 3-study checker smoke on the
 first high-priority batch still returns `not_materialized_or_read_timeout`.
+The full 191-study checker now also returns `not_materialized_or_read_timeout`
+for all 191 studies after checking that the available CLI surface cannot execute
+the OneDrive `MarkPinned` context action. The next gate is local
+OneDrive/Finder materialization followed by checker and source-rendering reruns.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should

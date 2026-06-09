@@ -149,3 +149,10 @@ for the 191 blocked studies / 2,025 blocked target rows:
 After the relevant PDFs are locally materialized, rerun the checker and then
 rerun source rendering coverage. A balanced source-rendered smoke becomes
 eligible only after rendered private packets cover the intended target scope.
+
+Follow-up checker status: the full 191-study materialization gap was checked
+again after attempting to identify a CLI hydration route. All 191 studies still
+returned `not_materialized_or_read_timeout`, and the available local CLI surface
+did not execute the OneDrive `MarkPinned` context action. The next gate remains
+OneDrive/Finder local materialization followed by checker and source-rendering
+coverage reruns.
