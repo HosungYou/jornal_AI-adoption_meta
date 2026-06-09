@@ -58,11 +58,25 @@ by denominator family.
 - `results/FULL_CORPUS_M1_R_SOURCE_RENDERED_SMOKE_STATUS_20260609.md`:
   source-packet prompt/export preflight on the current PDF-available subset;
   this is not an accuracy result.
+- `results/FULL_CORPUS_M1_R_BETA_PATH_EXCEPTION_LAYER_APPLIED_20260611.md`: first
+  full-corpus exception-layer application record for the 15-row beta/path
+  contract probe.
+- `results/FULL_CORPUS_M1_R_BETA_PATH_EXCEPTION_CORRECTION_LAYER_20260611.md` and
+  `results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_REVIEW_20260611.md`: route/probe
+  review artifacts for the post-freeze beta/path gating path.
+- `results/full_corpus_m1_r_beta_path_exception_correction_layer_20260611.csv`:
+  exception-correction task-family policy table consumed by the full-corpus
+  scorer wrapper.
 - `locked_outputs/model_runs/paper_b_full_corpus_m1_raw_source_rendered_full_coverage_smoke_20260609.csv`:
   30-row balanced full-coverage source-rendered smoke locked output.
 - `results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`:
   balanced source-packet prompt/export/scoring diagnostic across all three
   denominator families; this is not a full-corpus accuracy result.
+- `results/paper_b_full_corpus_m1_raw_scored_20260611.csv`,
+  `results/paper_b_full_corpus_m1_raw_score_summary_20260611.csv`,
+  `results/paper_b_full_corpus_m1_raw_exception_layer_scored_20260611.csv`, and
+  `results/paper_b_full_corpus_m1_raw_exception_layer_scored_summary_20260611.csv`:
+  outputs from the new full-corpus M1-R exception-aware scorer wrapper.
 
 ## Current status
 
@@ -220,6 +234,13 @@ diagnostic correct rows. S003 direct-r/FLC retrieval is unblocked at 10/10
 correct, but S009/S010 true beta/path retrieval remains partial. Full `M1-R`
 remains blocked pending beta/path alias/context disambiguation and a narrower
 follow-up gate or explicit staged-shard authorization.
+
+`score_full_corpus_m1_r_with_exception_layer.py` has now been wired into
+`RUNBOOK_20260606.md` as the post-freeze M1-R scorer gate. The first full-corpus
+gate application (101 rows from the probe run) produced the 20260611 full-scorer
+outputs above: `generic_full_accuracy_included=0`, with 45 rows marked
+`not_scored_no_locked_answer`, 56 rows `not_scored_no_exception_layer_record`,
+and 6 exception-layer rows reaching contract-aware converted-effect scoring.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
