@@ -34,10 +34,11 @@ run, but it clears the prior source materialization/readability blocker.
 
 ## Next Gate
 
-The source-rendering coverage gate is now cleared. The next defensible execution
-gate is a researcher-authorized source-rendered model condition, recommended as
-a balanced 30-row `M1-R-SOURCE-SMOKE` using
-`source_rendered_full_coverage_smoke_task_ids_20260609.csv` before any
-full-corpus `M1-R` run. Full-corpus `M1-R`, `M1-P`, `M2-R`, and optional
-`M3-R` remain pending exact model selector, budget, and run-condition
-authorization.
+The source-rendering coverage gate is cleared, and the balanced 30-row
+full-coverage source-rendered smoke has now been executed and locked as
+`paper_b_full_corpus_m1_raw_source_rendered_full_coverage_smoke_20260609`.
+The next defensible gate is to review the smoke's 17 abstentions and 13
+nonblank answers for prompt/path behavior, then either authorize a larger staged
+`M1-R` shard plan or explicitly authorize a full-corpus `M1-R`. Full-corpus
+`M1-R`, `M1-P`, `M2-R`, and optional `M3-R` remain pending exact model selector,
+budget, and run-condition authorization.

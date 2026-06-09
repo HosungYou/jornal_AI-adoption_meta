@@ -12,7 +12,7 @@ numbered folders below.
 | 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists; Phase 2 queue and combined Phase 1+2 queues generated |
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 and Phase 2 adjudication in progress |
 | 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Full 213-study corpus frozen with retained caveats on 2026-06-09 |
-| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Smoke/preflight runs completed; full source-rendering coverage clean; model runs and result claims remain authorization-gated |
+| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Source-rendered smoke/preflight runs completed; full source-rendering coverage clean; full-corpus model runs and result claims remain authorization-gated |
 | 6 | `06 coding by date/` | Date-stamped operational staging area for share-safe coding packets and transfer artifacts | Active |
 | 99 | `99_archive/` | Historical files not used in the active workflow | Reference only |
 
@@ -44,8 +44,10 @@ authorized.
   source PDF materialization action package. The full materialization/readability
   sweep and full source-rendering coverage audit are now clean: 191/191
   materialization-gap studies, 2,025/2,025 gap rows, 194/194 source-rendered
-  target studies, and 2,043/2,043 target rows. Full-corpus model execution and
-  result claims remain unauthorized pending a specific run-condition approval.
+  target studies, and 2,043/2,043 target rows. A balanced 30-row full-coverage
+  source-rendered smoke has also been locked and diagnostically scored. Full-corpus
+  model execution and result claims remain unauthorized pending a specific
+  run-condition approval.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved

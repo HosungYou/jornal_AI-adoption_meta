@@ -31,6 +31,7 @@ but this packet does not authorize any full-corpus model execution.
 | `M2-R` | Cross-model raw comparison | Pending approval |
 | `M3-R` | Optional third-family raw robustness check | Pending approval |
 | `M1-R-SOURCE-SMOKE` | Private source-packet prompt/export preflight | Authorized, executed, and manifest-registered |
+| `M1-R-SOURCE-SMOKE-FULL-COVERAGE` | Balanced full-coverage source-packet preflight | Authorized, executed, scored diagnostically, and manifest-registered |
 
 All model selectors remain `to verify` before execution. The matrix preserves
 prior candidate families from legacy scaffold work, but final model selectors
@@ -61,6 +62,14 @@ source-rendering coverage audit was then rerun and produced private packets for
 194/194 target studies covering all 2,043 target rows. This clears the prior
 source materialization/readability blocker but does not authorize model
 execution.
+
+Fifth update: after the researcher instructed Codex to proceed with the next
+task, `M1-R-SOURCE-SMOKE-FULL-COVERAGE` was executed on 30 balanced
+source-rendered rows (`S002`, `S003`, `S007`; 10 rows per denominator family)
+using `codex:gpt-5.5`. The locked output was manifest-registered and
+diagnostically scored. This validates the full-coverage source-packet
+prompt/export/scoring path only; it does not authorize full-corpus execution or
+any LLM accuracy/MASEM substitution claim.
 
 ## Authorization Decision Recorded
 
@@ -107,6 +116,26 @@ The researcher approved Codex's recommended next step on 2026-06-09:
 - Nonblank committed source quotes: 0.
 - Manifest registration: true.
 
+## Full-Coverage Source-Rendered Smoke Evidence
+
+- Run ID:
+  `paper_b_full_corpus_m1_raw_source_rendered_full_coverage_smoke_20260609`
+- Locked output:
+  `data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper_b_full_corpus_m1_raw_source_rendered_full_coverage_smoke_20260609.csv`
+- Status summary:
+  `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`
+- Source rendering manifest:
+  `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_rendering_full_coverage_manifest_20260609.csv`
+- Rows: 30, balanced 10/10/10 across the three denominator families.
+- Studies: `S002`, `S003`, and `S007`.
+- `model_cli_error` rows: 0.
+- Source quote policy violations: 0.
+- Nonblank model answers: 13.
+- Abstentions / insufficient-evidence rows: 17.
+- Nonblank committed source quotes: 0.
+- Smoke diagnostic correct rows under numeric tolerance: 9/30.
+- Manifest registration: true.
+
 ## Full Coverage Materialization Audit
 
 - Coverage manifest:
@@ -148,13 +177,12 @@ Before any model condition is run, the researcher must approve:
 
 ## Recommended Next Decision
 
-Authorize a source-rendered model condition now that source coverage is clean.
-The recommended next execution gate is a balanced 30-row source-rendered smoke
-using the full-coverage task list before any full-corpus `M1-R` run:
+Review the balanced full-coverage source-rendered smoke before any full-corpus
+`M1-R` run:
 
-- `data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`
-- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_rendering_full_coverage_manifest_20260609.csv`
-- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md`
+- `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_full_coverage_smoke_scored_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_full_coverage_smoke_status_20260609.csv`
 
 The full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` conditions remain
 pending exact provider/model selector, budget cap, and run authorization. Do not
@@ -210,3 +238,10 @@ studies and 2,025/2,025 target rows text-extractable. Full source-rendering
 coverage was then rerun and rendered private packets for 194/194 target studies
 covering all 2,043 target rows. This authorizes neither a full-corpus model run
 nor result claims by itself.
+
+Full-coverage source-rendered smoke follow-up: the balanced 30-row source smoke
+completed with no CLI errors and no committed source quotes. It produced
+nonblank answers for 13 rows and abstained on 17 rows; smoke diagnostics show
+the prompt path works best for the latent/construct correlation family in this
+small sample. Treat this as prompt/path evidence only, not as a full-corpus
+performance estimate.

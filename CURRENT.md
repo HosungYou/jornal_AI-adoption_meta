@@ -6,20 +6,20 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 
 ## Focus Now
 - Current goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.
-- Current blocker: Source PDF materialization/readability and full source-rendering coverage are now clean: 191/191 materialization-gap studies, 2,025/2,025 gap rows, 194/194 source-rendered target studies, and 2,043/2,043 target rows. Model execution remains blocked only by run-condition authorization: exact condition, model selector, and budget are not yet approved for a new run.
-- Next action: Record authorization for the next source-rendered model condition, recommended as a balanced 30-row M1-R-SOURCE-SMOKE using source_rendered_full_coverage_smoke_task_ids_20260609.csv before any full-corpus M1-R. Do not report LLM accuracy, model comparison, procedure comparison, or MASEM substitution claims until a locked model output is generated, manifest-registered, and scored.
+- Current blocker: Balanced full-coverage source-rendered smoke is complete and locked: 30 rows across S002/S003/S007, 10 rows per denominator family, model_cli_error=0, source_quote_policy_violation=0, nonblank answers=13, abstentions=17, committed source quotes=0, and smoke diagnostic correct rows 9/30. Full-corpus model execution remains blocked by prompt/path review and explicit run-condition authorization, not by source materialization or source-rendering coverage.
+- Next action: Review the 17 abstentions and 13 nonblank answers from the balanced source-rendered smoke for prompt/path behavior, especially direct-r abstentions and beta/path mismatches. Then either authorize a larger staged M1-R shard plan or explicitly authorize full-corpus M1-R with exact model selector and budget. Do not report LLM accuracy, model comparison, procedure comparison, or MASEM substitution claims from the smoke.
 - Perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist
 - Disagreement: show_on_conflict
 
 ## Open Questions
-- Should the next executable gate be the recommended balanced 30-row full-coverage M1-R-SOURCE-SMOKE, or should the researcher explicitly authorize a different source-rendered condition?
+- Should the next gate be prompt/path review and a revised smoke, a larger staged M1-R shard, or explicit full-corpus M1-R authorization?
 
 ## Restart Prompt
-- "Continue after full source-rendering coverage cleared on 2026-06-09: materialization checker is clean for 191/191 gap studies and source-rendering packets cover 194/194 target studies / 2,043 rows. Next gate is authorizing a source-rendered model condition; no accuracy or MASEM substitution claims yet."
+- "Continue after balanced full-coverage M1-R-SOURCE-SMOKE completed on 2026-06-09: 30 rows, no CLI/source-quote failures, 13 nonblank answers, 17 abstentions, smoke diagnostic 9/30. Next gate is prompt/path review and staged/full M1-R authorization; no accuracy or MASEM substitution claims yet."
 
 ## Quick Start
 - Open `codex` in this directory.
-- A good first message is usually `lt explore: Should the next executable gate be the recommended balanced 30-row full-coverage M1-R-SOURCE-SMOKE, or should the researcher explicitly authorize a different source-rendered condition?`.
+- A good first message is usually `lt explore: Should the next gate be prompt/path review and a revised smoke, a larger staged M1-R shard, or explicit full-corpus M1-R authorization?`.
 
 ## Evidence Rule
 - External or current claims should carry a source link or be labeled as inference.

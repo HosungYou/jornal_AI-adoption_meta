@@ -82,6 +82,13 @@ copies placed in the ignored local source-PDF folder. The final checker reports
 191/191 gap studies and 2,025/2,025 gap rows text-extractable. Full
 source-rendering coverage was then rerun and is clean.
 
+A balanced full-coverage source-rendered smoke has now been executed for 30 rows
+across `S002`, `S003`, and `S007` with 10 rows in each denominator family. It
+completed with no CLI errors, no source quote policy violations, 13 nonblank
+answers, 17 abstentions, and no committed source quotes. This is a Paper C
+prompt/export/locking/scoring diagnostic only; it is not a full-corpus model
+comparison or substitution result.
+
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`

@@ -58,6 +58,11 @@ by denominator family.
 - `results/FULL_CORPUS_M1_R_SOURCE_RENDERED_SMOKE_STATUS_20260609.md`:
   source-packet prompt/export preflight on the current PDF-available subset;
   this is not an accuracy result.
+- `locked_outputs/model_runs/paper_b_full_corpus_m1_raw_source_rendered_full_coverage_smoke_20260609.csv`:
+  30-row balanced full-coverage source-rendered smoke locked output.
+- `results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`:
+  balanced source-packet prompt/export/scoring diagnostic across all three
+  denominator families; this is not a full-corpus accuracy result.
 
 ## Current status
 
@@ -175,6 +180,15 @@ studies and 2,025/2,025 gap rows text-extractable. Full source-rendering
 coverage has also been rerun and is clean for 194/194 target studies and
 2,043/2,043 target rows. Model execution remains unauthorized until a specific
 source-rendered condition, exact model selector, and budget are approved.
+
+A balanced 30-row `M1-R-SOURCE-SMOKE-FULL-COVERAGE` has now been executed with
+private source packets for `S002`, `S003`, and `S007`, covering 10 rows in each
+denominator family. The run completed with `model_cli_error=0`, source quote
+policy violations=0, nonblank answers=13, abstentions=17, and committed source
+quotes=0. Smoke diagnostic scoring is recorded in
+`results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`.
+This remains a prompt/export/locking/scoring diagnostic only, not a full-corpus
+accuracy result or MASEM substitution claim.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should

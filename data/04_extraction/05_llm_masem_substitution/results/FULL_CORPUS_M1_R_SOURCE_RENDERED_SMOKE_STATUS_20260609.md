@@ -53,14 +53,18 @@ preserve page/chunk locator provenance, and keep `model_source_quote` blank so
 committed locked output does not include source-document text.
 
 This is still only a preflight. It covers three PDF-available studies and one
-denominator family. Full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R`
-remain blocked until source rendering coverage is complete for the intended
-task scope, or until the researcher explicitly authorizes a smaller
-PDF-available subset analysis.
+denominator family. Its original source-coverage blocker has since been
+superseded by full source-rendering coverage clearance and the balanced 30-row
+full-coverage source-rendered smoke. Full-corpus `M1-R`, `M1-P`, `M2-R`, and
+optional `M3-R` now remain blocked by prompt/path review and explicit
+run-condition authorization, not by source rendering coverage.
 
 ## Next Gate
 
-Expand source rendering coverage beyond `S021`, `S056`, and `S092`, or record a
-smaller-scope authorization. Do not run all 2,043 target rows until source
-packets are available for the full target shell and a share-safe source
-coverage manifest shows no unresolved prompt-input gaps.
+Superseded by the full source-rendering coverage clearance and the balanced
+30-row full-coverage source-rendered smoke:
+
+- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_rendering_full_coverage_manifest_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`
+
+Do not treat either smoke as a full-corpus accuracy or MASEM substitution claim.
