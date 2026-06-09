@@ -43,10 +43,11 @@ explicitly authorized.
   source PDF materialization action package. No full-corpus model runs or
   result claims are authorized until source rendering coverage is clean for the
   intended target scope or a smaller-scope gate is explicitly authorized. The
-  current Finder/OneDrive materialization attempts have partially reduced the
-  blocker. Batches 01, 02, and 04 are now clean across the first four
-  priority materialization batches; Batch 03 remains blocked at 18 studies /
-  270 target rows, so full-corpus model execution remains unauthorized.
+  current Finder/OneDrive materialization attempts and local ignored PDF
+  recovery have reduced the blocker. Batches 01-04 are now clean across the
+  first four priority materialization batches, but full-corpus model execution
+  remains unauthorized pending a full materialization/readability sweep or
+  continuation into Batches 05-10.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved

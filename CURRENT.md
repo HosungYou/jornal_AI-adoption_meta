@@ -6,20 +6,20 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 
 ## Focus Now
 - Current goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.
-- Current blocker: Batches 01, 02, and 04 are now clean across the first four source PDF materialization priority batches. Batch 03 remains blocked at 18/20 studies and 270/300 rows not_materialized_or_read_timeout; full-corpus M1-R/M1-P/M2-R remains blocked because intended-scope source rendering coverage is not clean.
-- Next action: Target local materialization for the 18 remaining Batch 03 studies, rerun the Batch 03 checker, and only then rerun full source-rendering coverage. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.
+- Current blocker: Batches 01-04 are now clean across the first four source PDF materialization priority batches: 80/80 studies and 1,306/1,306 rows are text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked because the remaining full intended source-rendering scope has not yet passed a full materialization/readability sweep.
+- Next action: Run a full materialization/readability sweep or continue into Batches 05-10, then rerun full source-rendering coverage only after intended-scope source readability is clean. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.
 - Perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist
 - Disagreement: show_on_conflict
 
 ## Open Questions
-- Can the 18 remaining Batch 03 studies be locally materialized through OneDrive/Finder requests, or do they require manual OneDrive sync repair before the first four priority batches can clear?
+- Should the next gate be a full 191-study materialization/readability sweep now that Batches 01-04 are clean, or a continuation through Batches 05-10 first to reduce OneDrive timeout load?
 
 ## Restart Prompt
-- "Continue after Batches 01, 02, and 04 are clean. Batch 03 remains 2/20 studies and 30/300 rows text-extractable, with 18 studies / 270 rows blocked; full-corpus M1-R/M1-P/M2-R remains blocked."
+- "Continue after Batches 01-04 are clean at 80/80 studies and 1,306/1,306 rows text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked pending a full materialization/readability sweep or Batches 05-10 follow-up."
 
 ## Quick Start
 - Open `codex` in this directory.
-- A good first message is usually `lt explore: Can the 18 remaining Batch 03 studies be locally materialized through OneDrive/Finder requests, or do they require manual OneDrive sync repair before the first four priority batches can clear?`.
+- A good first message is usually `lt explore: Should the next gate be a full 191-study materialization/readability sweep now that Batches 01-04 are clean, or a continuation through Batches 05-10 first to reduce OneDrive timeout load?`.
 
 ## Evidence Rule
 - External or current claims should carry a source link or be labeled as inference.

@@ -164,6 +164,12 @@ OneDrive was active. Across Batches 01-04, 62/80 studies and 1,036/1,306 target
 rows are text-extractable; Batch 03 remains blocked at 18 studies / 270 target
 rows. This does not authorize model execution.
 
+Batch 03 subsequently cleared after `S126`, `S127`, and `S128` were resolved
+from readable local Downloads archive copies placed in the ignored local
+source-PDF folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306
+target rows. Full-corpus model execution remains unauthorized pending a full
+materialization/readability sweep or continuation into Batches 05-10.
+
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from

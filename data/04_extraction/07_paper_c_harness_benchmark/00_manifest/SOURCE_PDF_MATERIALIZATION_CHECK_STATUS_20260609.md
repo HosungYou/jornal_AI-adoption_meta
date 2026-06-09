@@ -104,15 +104,26 @@ text-extractable. The remaining blocker within these four priority batches is
 Batch 03: 18 studies / 270 target rows still return
 `not_materialized_or_read_timeout`.
 
+## Batch 03 Clearance Follow-up
+
+Batch 03 was rerun while OneDrive was active and improved to 17/20 studies and
+255/300 target rows text-extractable. The remaining blockers were `S126`,
+`S127`, and `S128`. Local readable copies were found in the user's local
+Downloads archive and copied into the ignored local source-PDF folder. The Batch
+03 checker then reported 20/20 studies and 300/300 target rows
+text-extractable.
+
+Batches 01-04 are now clean: 80/80 studies and 1,306/1,306 target rows are
+text-extractable across the first four priority materialization batches.
+
 ## Next Gate
 
-Continue targeted materialization for the remaining Batch 03 blockers, then
-rerun the relevant batch checker. For example:
+Run a full materialization/readability sweep or continue into Batches 05-10
+before rerunning full source-rendering coverage. For example:
 
 ```bash
 python3 scripts/llm_scoring_20260606/check_source_pdf_materialization.py \
-  --batch-id PDFMAT-20260609-03 \
-  --output data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_check_batch03_after_targeted_materialization_20260609.csv
+  --output data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_check_full_after_batches01_04_clean_20260609.csv
 ```
 
 Only if the checker reports local text-extractable PDFs for the intended scope

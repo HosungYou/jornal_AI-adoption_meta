@@ -80,6 +80,14 @@ cleared across repeated wait-based checker reruns. Batch 03 remained blocked at
 62/80 studies and 1,036/1,306 target rows are now text-extractable. The next
 gate is targeted local materialization for the 18 remaining Batch 03 studies.
 
+Batch 03 clearance follow-up: Batch 03 later improved to 17/20 studies while
+OneDrive was active. The remaining three blockers (`S126`, `S127`, `S128`) were
+resolved by copying readable local Downloads archive PDFs into the ignored local
+source-PDF folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306
+target rows text-extractable. The next gate is a full
+materialization/readability sweep or continuation into Batches 05-10 before
+rerunning full source-rendering coverage.
+
 ## Integrity
 
 - `source_pdf_materialization_gap_manifest_20260609.csv` sha256: `ed9013f3328b2f8b0c40411ce0ef575cfe5df9bcbeab35fc5006e32b0862c462`

@@ -13,23 +13,23 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "Batches 01, 02, and 04 are now clean across the first four source PDF materialization priority batches. Batch 03 remains blocked at 18/20 studies and 270/300 rows not_materialized_or_read_timeout; full-corpus M1-R/M1-P/M2-R remains blocked because intended-scope source rendering coverage is not clean.",
-    "nextAction": "Target local materialization for the 18 remaining Batch 03 studies, rerun the Batch 03 checker, and only then rerun full source-rendering coverage. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
-    "resumeHint": "Continue after Batches 01, 02, and 04 are clean. Batch 03 remains 2/20 studies and 30/300 rows text-extractable, with 18 studies / 270 rows blocked; full-corpus M1-R/M1-P/M2-R remains blocked."
+    "currentBlocker": "Batches 01-04 are now clean across the first four source PDF materialization priority batches: 80/80 studies and 1,306/1,306 rows are text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked because the remaining full intended source-rendering scope has not yet passed a full materialization/readability sweep.",
+    "nextAction": "Run a full materialization/readability sweep or continue into Batches 05-10, then rerun full source-rendering coverage only after intended-scope source readability is clean. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
+    "resumeHint": "Continue after Batches 01-04 are clean at 80/80 studies and 1,306/1,306 rows text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked pending a full materialization/readability sweep or Batches 05-10 follow-up."
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "Batches 01, 02, and 04 are now clean across the first four source PDF materialization priority batches. Batch 03 remains blocked at 18/20 studies and 270/300 rows not_materialized_or_read_timeout; full-corpus M1-R/M1-P/M2-R remains blocked because intended-scope source rendering coverage is not clean.",
-    "nextAction": "Target local materialization for the 18 remaining Batch 03 studies, rerun the Batch 03 checker, and only then rerun full source-rendering coverage. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
+    "currentBlocker": "Batches 01-04 are now clean across the first four source PDF materialization priority batches: 80/80 studies and 1,306/1,306 rows are text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked because the remaining full intended source-rendering scope has not yet passed a full materialization/readability sweep.",
+    "nextAction": "Run a full materialization/readability sweep or continue into Batches 05-10, then rerun full source-rendering coverage only after intended-scope source readability is clean. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
     "openQuestions": [
-      "Can the 18 remaining Batch 03 studies be locally materialized through OneDrive/Finder requests, or do they require manual OneDrive sync repair before the first four priority batches can clear?"
+      "Should the next gate be a full 191-study materialization/readability sweep now that Batches 01-04 are clean, or a continuation through Batches 05-10 first to reduce OneDrive timeout load?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after Batches 01, 02, and 04 are clean. Batch 03 remains 2/20 studies and 30/300 rows text-extractable, with 18 studies / 270 rows blocked; full-corpus M1-R/M1-P/M2-R remains blocked.",
-    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_04_FOLLOWUP_STATUS_20260609.md",
-    "lastUpdatedAt": "2026-06-09T03:25:00.000Z"
+    "resumeHint": "Continue after Batches 01-04 are clean at 80/80 studies and 1,306/1,306 rows text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked pending a full materialization/readability sweep or Batches 05-10 follow-up.",
+    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_CLEARANCE_STATUS_20260609.md",
+    "lastUpdatedAt": "2026-06-09T04:05:00.000Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -256,6 +256,16 @@
       "summary": "Recorded Batch 04 materialization clearing and Batch 03 as the remaining four-batch priority blocker.",
       "selectedOption": "target_batch03_before_model_execution",
       "rationale": "Researcher instructed Codex to proceed. Codex reran Batches 03-04 while OneDrive was active and repeated wait-based checks. Batch 04 cleared at 20/20 studies and 208/208 target rows, but Batch 03 remained 2/20 studies and 30/300 target rows text-extractable. Across Batches 01-04, 62/80 studies and 1,036/1,306 rows are text-extractable, so no additional model run or result claim is authorized."
+    },
+    {
+      "id": "decision_source_pdf_materialization_batch03_cleared_20260609",
+      "timestamp": "2026-06-09T04:05:00.000Z",
+      "checkpointKey": "post_freeze_source_pdf_materialization_batch03_cleared",
+      "level": "workflow_gate",
+      "mode": "commit",
+      "summary": "Recorded Batch 03 materialization clearing and preserved the full-corpus model-run block.",
+      "selectedOption": "full_sweep_or_batches05_10_before_model_execution",
+      "rationale": "Researcher instructed Codex to proceed. Codex reran Batch 03, found it improved to 17/20 studies, identified S126/S127/S128 as the remaining blockers, found readable local Downloads archive copies, copied those PDFs into the ignored local source-PDF folder, and confirmed Batch 03 cleared at 20/20 studies and 300/300 target rows. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306 rows, but full-corpus model runs and result claims remain blocked pending full intended-scope source rendering coverage."
     }
   ],
   "invocationLog": [],

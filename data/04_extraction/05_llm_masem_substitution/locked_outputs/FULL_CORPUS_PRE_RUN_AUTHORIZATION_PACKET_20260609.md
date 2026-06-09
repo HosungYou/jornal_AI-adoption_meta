@@ -183,3 +183,10 @@ repeated wait-based checker reruns while OneDrive was active. Across Batches
 01-04, 62/80 studies and 1,036/1,306 target rows are text-extractable; Batch 03
 remains blocked at 18 studies / 270 target rows. This still does not authorize
 any full-corpus model execution.
+
+Batch 03 clearance follow-up: `S126`, `S127`, and `S128` were resolved from
+readable local Downloads archive copies placed in the ignored local source-PDF
+folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306 target
+rows. A full materialization/readability sweep or continuation into Batches
+05-10 remains required before full source-rendering coverage can be rerun; this
+does not authorize any full-corpus model execution.

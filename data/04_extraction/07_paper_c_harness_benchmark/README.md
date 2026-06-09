@@ -70,6 +70,12 @@ OneDrive was active. Across Batches 01-04, 62/80 studies and 1,036/1,306 target
 rows are text-extractable. Batch 03 remains the only blocker within these four
 priority batches at 18 studies / 270 target rows.
 
+Batch 03 subsequently cleared after `S126`, `S127`, and `S128` were resolved
+from readable local Downloads archive copies placed in the ignored local
+source-PDF folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306
+target rows. Full-corpus source rendering remains blocked pending a full
+materialization/readability sweep or continuation into Batches 05-10.
+
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
@@ -109,6 +115,10 @@ Current pre-run planning artifacts:
 - `00_manifest/source_pdf_materialization_check_batch04_after_onedrive_restart_wait_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_batch04_after_onedrive_restart_wait2_20260609.csv`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_04_FOLLOWUP_STATUS_20260609.md`
+- `00_manifest/source_pdf_materialization_check_batch03_current_recheck_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch03_remaining3_after_wait_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch03_after_local_downloads_copy_20260609.csv`
+- `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_CLEARANCE_STATUS_20260609.md`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH01_BLOCKER_REQUEST_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
