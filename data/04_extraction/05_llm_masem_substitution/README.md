@@ -126,6 +126,14 @@ private source-packet prompt/export path only. Full-corpus `M1-R` remains
 blocked until source rendering coverage exists for the intended target scope or
 a smaller PDF-available subset is explicitly authorized.
 
+A full target-shell source coverage audit has now been attempted against the
+OneDrive archive. Study-ID PDF filename coverage exists for all 194 post-freeze
+target studies, but local text rendering still succeeds for only 3 studies / 18
+target rows. The remaining 191 studies / 2,025 target rows fail local PDF
+read/materialization with `Operation timed out`. This blocks full-corpus `M1-R`
+execution until the OneDrive PDFs are locally materialized or equivalent
+share-safe source renderings are available.
+
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from

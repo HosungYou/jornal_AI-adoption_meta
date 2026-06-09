@@ -17,7 +17,7 @@ REPO = Path(__file__).resolve().parents[2]
 STEP5 = REPO / "data/04_extraction/05_llm_masem_substitution"
 PAPER_C = REPO / "data/04_extraction/07_paper_c_harness_benchmark"
 DEFAULT_TEMPLATE = STEP5 / "locked_outputs/full_corpus_locked_output_template_20260609.csv"
-DEFAULT_SOURCE_PDF_DIR = REPO / "data/04_extraction/03_source_document_adjudication/source_pdfs"
+DEFAULT_SOURCE_PDF_DIRS = [REPO / "data/04_extraction/03_source_document_adjudication/source_pdfs"]
 DEFAULT_PRIVATE_OUTPUT_DIR = PAPER_C / "private/source_renderings_20260609/source_packets"
 DEFAULT_MANIFEST_OUTPUT = PAPER_C / "00_manifest/source_rendering_available_pdf_manifest_20260609.csv"
 DEFAULT_SMOKE_TASK_OUTPUT = PAPER_C / "06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv"
@@ -170,6 +170,29 @@ def build_packet(study_id: str, chunks: list[Chunk], rows: list[dict[str, str]],
     return "\n".join(parts).strip() + "\n", len(selected)
 
 
+def pdfs_for_study(study_id: str, source_pdf_dirs: list[Path], include_supplements: bool) -> list[Path]:
+    selected: list[Path] = []
+    for source_pdf_dir in source_pdf_dirs:
+        exact = source_pdf_dir / f"{study_id}.pdf"
+        if exact.exists():
+            selected.append(exact)
+            break
+    if not selected:
+        for source_pdf_dir in source_pdf_dirs:
+            matches = sorted(source_pdf_dir.glob(f"{study_id}*.pdf"))
+            if matches:
+                selected.append(matches[0])
+                break
+    if include_supplements:
+        selected_paths = {path.resolve() for path in selected}
+        for source_pdf_dir in source_pdf_dirs:
+            for supplement in sorted(source_pdf_dir.glob(f"{study_id}_*.pdf")):
+                if supplement.resolve() not in selected_paths:
+                    selected.append(supplement)
+                    selected_paths.add(supplement.resolve())
+    return selected
+
+
 def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
     rows = [
         row for row in read_csv(args.template)
@@ -183,21 +206,56 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
     rendered_study_ids = []
     args.private_output_dir.mkdir(parents=True, exist_ok=True)
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    source_pdf_dirs = args.source_pdf_dir or DEFAULT_SOURCE_PDF_DIRS
 
     for study_id in sorted(rows_by_study):
-        pdfs = sorted(args.source_pdf_dir.glob(f"{study_id}*.pdf"))
-        non_pdf_supplements = sorted(
-            path for path in args.source_pdf_dir.glob(f"{study_id}*")
-            if path.suffix.lower() != ".pdf"
-        )
+        pdfs = pdfs_for_study(study_id, source_pdf_dirs, args.include_supplements)
+        non_pdf_supplements = []
+        for source_pdf_dir in source_pdf_dirs:
+            non_pdf_supplements.extend(
+                path for path in source_pdf_dir.glob(f"{study_id}*")
+                if path.suffix.lower() != ".pdf"
+            )
         if not pdfs:
             continue
         study_rows = rows_by_study[study_id]
         terms = task_terms(study_rows)
         chunks = []
+        extraction_errors = []
         for doc_index, pdf_path in enumerate(pdfs, start=1):
-            chunks.extend(extract_pdf_chunks(pdf_path, f"{study_id}_doc{doc_index}", terms, args.max_chunk_chars, args.overlap_chars))
+            try:
+                chunks.extend(
+                    extract_pdf_chunks(
+                        pdf_path,
+                        f"{study_id}_doc{doc_index}",
+                        terms,
+                        args.max_chunk_chars,
+                        args.overlap_chars,
+                    )
+                )
+            except Exception as exc:
+                extraction_errors.append(f"{pdf_path.name}: {exc}")
         if not chunks:
+            manifest_rows.append(
+                {
+                    "study_id": study_id,
+                    "target_task_count": str(len(study_rows)),
+                    "denominator_families": ";".join(sorted({row["denominator_family"] for row in study_rows})),
+                    "available_source_pdf_count": str(len(pdfs)),
+                    "included_source_pdf_count": "0",
+                    "non_pdf_supplement_count": str(len(non_pdf_supplements)),
+                    "rendered_chunk_count": "0",
+                    "max_chunk_chars": str(args.max_chunk_chars),
+                    "overlap_chars": str(args.overlap_chars),
+                    "max_packet_chars": str(args.max_packet_chars),
+                    "packet_chars": "",
+                    "packet_sha256": "",
+                    "private_packet_ref": "no_private_packet_created",
+                    "render_timestamp_utc": now,
+                    "status": "render_failed_no_extractable_text",
+                    "notes": "; ".join(extraction_errors)[:500] or "No extractable text chunks produced.",
+                }
+            )
             continue
         packet_text, selected_chunk_count = build_packet(study_id, chunks, study_rows, args.max_packet_chars)
         packet_path = args.private_output_dir / f"{study_id}_source_packet_20260609.txt"
@@ -219,23 +277,43 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
                 "packet_sha256": sha256(packet_path),
                 "private_packet_ref": "local_private_packet_not_committed",
                 "render_timestamp_utc": now,
-                "status": "packet_rendered_private",
-                "notes": "Share-safe manifest only; rendered source text remains in ignored private storage.",
+                "status": "packet_rendered_private_with_partial_pdf_errors" if extraction_errors else "packet_rendered_private",
+                "notes": ("Partial PDF extraction errors: " + "; ".join(extraction_errors)[:450]) if extraction_errors else "Share-safe manifest only; rendered source text remains in ignored private storage.",
             }
         )
 
     smoke_rows = []
-    for study_id in rendered_study_ids:
-        for row in rows_by_study[study_id][: args.smoke_rows_per_study]:
+    rendered_study_id_set = set(rendered_study_ids)
+    if args.smoke_stratified_per_family:
+        family_counts: dict[str, int] = {}
+        for row in rows:
+            if row["study_id"] not in rendered_study_id_set:
+                continue
+            family = row["denominator_family"]
+            if family_counts.get(family, 0) >= args.smoke_stratified_per_family:
+                continue
             smoke_rows.append(
                 {
                     "task_unit_id": row["task_unit_id"],
                     "study_id": row["study_id"],
                     "denominator_family": row["denominator_family"],
                     "expected_answer_type": row["expected_answer_type"],
-                    "selection_reason": "source_pdf_available_first_rows_per_study",
+                    "selection_reason": "source_pdf_available_stratified_by_denominator_family",
                 }
             )
+            family_counts[family] = family_counts.get(family, 0) + 1
+    else:
+        for study_id in rendered_study_ids:
+            for row in rows_by_study[study_id][: args.smoke_rows_per_study]:
+                smoke_rows.append(
+                    {
+                        "task_unit_id": row["task_unit_id"],
+                        "study_id": row["study_id"],
+                        "denominator_family": row["denominator_family"],
+                        "expected_answer_type": row["expected_answer_type"],
+                        "selection_reason": "source_pdf_available_first_rows_per_study",
+                    }
+                )
     return manifest_rows, smoke_rows
 
 
@@ -244,22 +322,42 @@ def write_status(path: Path, manifest_rows: list[dict[str, str]], smoke_rows: li
     by_family: dict[str, int] = {}
     for row in smoke_rows:
         by_family[row["denominator_family"]] = by_family.get(row["denominator_family"], 0) + 1
+    rendered_rows = [
+        row for row in manifest_rows
+        if row.get("private_packet_ref") == "local_private_packet_not_committed"
+    ]
+    failed_rows = [row for row in manifest_rows if row not in rendered_rows]
+    status_counts: dict[str, int] = {}
+    for row in manifest_rows:
+        status_counts[row["status"]] = status_counts.get(row["status"], 0) + 1
     lines = [
         "# Source Rendering Preflight Status",
         "",
         "Date: 2026-06-09",
         "",
-        "Status: partial source-rendering preflight prepared. Local source PDFs are currently available only for a small subset of the post-freeze target rows, so this artifact does not authorize a full-corpus model run.",
+        "Status: source-rendering coverage preflight prepared. This artifact does not authorize a full-corpus model run.",
         "",
         "## Rendered Private Packets",
         "",
-        f"- Studies with private rendered packets: {len(manifest_rows)}",
-        f"- Target rows covered by rendered packets: {sum(int(row['target_task_count']) for row in manifest_rows)}",
+        f"- Studies in coverage manifest: {len(manifest_rows)}",
+        f"- Studies with private rendered packets: {len(rendered_rows)}",
+        f"- Studies without rendered packets: {len(failed_rows)}",
+        f"- Target rows covered by rendered packets: {sum(int(row['target_task_count']) for row in rendered_rows)}",
+        f"- Target rows not yet source-rendered: {sum(int(row['target_task_count']) for row in failed_rows)}",
         f"- Source-rendered smoke task rows selected: {len(smoke_rows)}",
         "",
-        "## Smoke Task Family Counts",
+        "## Rendering Status Counts",
         "",
     ]
+    for status, count in sorted(status_counts.items()):
+        lines.append(f"- `{status}`: {count}")
+    lines.extend(
+        [
+            "",
+        "## Smoke Task Family Counts",
+        "",
+        ]
+    )
     for family, count in sorted(by_family.items()):
         lines.append(f"- `{family}`: {count}")
     lines.extend(
@@ -274,7 +372,7 @@ def write_status(path: Path, manifest_rows: list[dict[str, str]], smoke_rows: li
             "",
             "## Next Gate",
             "",
-            "Run the source-rendered smoke on the selected task IDs. If the runner exports a clean locked output without source quotes or CLI errors, record that this validates the prompt/source-packet path only. Full-corpus `M1-R` remains blocked until source PDFs or share-safe source renderings are available for the full 2,043-row target shell.",
+            "Run a source-rendered smoke only if the selected task IDs all have private rendered source packets. Full-corpus `M1-R` remains blocked until source PDFs are locally materialized or share-safe source renderings are available for the full 2,043-row target shell.",
             "",
         ]
     )
@@ -284,7 +382,7 @@ def write_status(path: Path, manifest_rows: list[dict[str, str]], smoke_rows: li
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
-    parser.add_argument("--source-pdf-dir", type=Path, default=DEFAULT_SOURCE_PDF_DIR)
+    parser.add_argument("--source-pdf-dir", type=Path, action="append", default=None)
     parser.add_argument("--private-output-dir", type=Path, default=DEFAULT_PRIVATE_OUTPUT_DIR)
     parser.add_argument("--manifest-output", type=Path, default=DEFAULT_MANIFEST_OUTPUT)
     parser.add_argument("--smoke-task-output", type=Path, default=DEFAULT_SMOKE_TASK_OUTPUT)
@@ -293,6 +391,8 @@ def main() -> None:
     parser.add_argument("--overlap-chars", type=int, default=350)
     parser.add_argument("--max-packet-chars", type=int, default=22000)
     parser.add_argument("--smoke-rows-per-study", type=int, default=2)
+    parser.add_argument("--smoke-stratified-per-family", type=int, default=0)
+    parser.add_argument("--include-supplements", action=argparse.BooleanOptionalAction, default=True)
     args = parser.parse_args()
 
     manifest_rows, smoke_rows = render_packets(args)
@@ -318,7 +418,21 @@ def main() -> None:
     write_csv(args.manifest_output, manifest_rows, manifest_fields)
     write_csv(args.smoke_task_output, smoke_rows, smoke_fields)
     write_status(args.status_output, manifest_rows, smoke_rows)
-    print(json.dumps({"rendered_studies": len(manifest_rows), "smoke_rows": len(smoke_rows)}, sort_keys=True))
+    rendered_studies = sum(
+        row.get("private_packet_ref") == "local_private_packet_not_committed"
+        for row in manifest_rows
+    )
+    print(
+        json.dumps(
+            {
+                "coverage_manifest_studies": len(manifest_rows),
+                "rendered_studies": rendered_studies,
+                "failed_studies": len(manifest_rows) - rendered_studies,
+                "smoke_rows": len(smoke_rows),
+            },
+            sort_keys=True,
+        )
+    )
 
 
 if __name__ == "__main__":

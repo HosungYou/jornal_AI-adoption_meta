@@ -45,6 +45,13 @@ subset (`S021`, `S056`, `S092`) using private source packets with source quotes
 suppressed in committed output. This validates the source-packet prompt/export
 path only; it does not authorize full-corpus execution.
 
+Third update: a full target-shell source coverage audit found archive filename
+coverage for all 194 target studies, but local text rendering still produced
+private packets for only 3 studies / 18 target rows. The remaining 191 studies /
+2,025 target rows failed local PDF read/materialization with `Operation timed
+out`. This blocks full-corpus `M1-R` until the archive PDFs are locally
+materialized or equivalent share-safe source renderings are available.
+
 ## Authorization Decision Recorded
 
 The researcher approved Codex's recommended next step on 2026-06-09:
@@ -90,6 +97,20 @@ The researcher approved Codex's recommended next step on 2026-06-09:
 - Nonblank committed source quotes: 0.
 - Manifest registration: true.
 
+## Full Coverage Materialization Audit
+
+- Coverage manifest:
+  `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_rendering_full_coverage_manifest_20260609.csv`
+- Coverage status:
+  `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md`
+- Target studies audited: 194.
+- Archive filename coverage: 194 studies.
+- Private packets successfully rendered: 3 studies / 18 target rows.
+- Local rendering/materialization failures: 191 studies / 2,025 target rows.
+- Dominant failure mode: `Operation timed out` while reading OneDrive PDF files.
+- Interpretation: source files appear indexed in the archive, but they are not
+  currently usable as local prompt inputs for full-corpus model execution.
+
 ## Approval Items
 
 Before any model condition is run, the researcher must approve:
@@ -118,4 +139,4 @@ Before any model condition is run, the researcher must approve:
 
 Expand source rendering coverage or record a smaller-scope authorization before
 any full-corpus `M1-R` run. The current source-rendered smoke covers only three
-PDF-available studies and one denominator family.
+locally materialized studies and one denominator family.

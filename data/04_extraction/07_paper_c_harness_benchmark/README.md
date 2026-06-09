@@ -20,6 +20,13 @@ claims. Full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` remain blocked
 until source rendering coverage is complete for the intended target scope, or a
 smaller PDF-available subset is explicitly authorized.
 
+A follow-up archive coverage audit found study-ID PDF filename coverage for all
+194 post-freeze target studies, but local text rendering is still blocked:
+private source packets were produced for only 3 studies / 18 target rows. The
+remaining 191 studies / 2,025 target rows failed local PDF read/materialization
+with `Operation timed out`. Treat this as a local OneDrive materialization
+blocker, not as evidence that source PDFs are absent from the archive.
+
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
@@ -29,8 +36,11 @@ Current pre-run planning artifacts:
 - `00_manifest/source_rendering_chunking_manifest_20260609.csv`
 - `00_manifest/source_rendering_available_pdf_manifest_20260609.csv`
 - `00_manifest/SOURCE_RENDERING_PREFLIGHT_STATUS_20260609.md`
+- `00_manifest/source_rendering_full_coverage_manifest_20260609.csv`
+- `00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
+- `06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`
 
 ## Structure
 
