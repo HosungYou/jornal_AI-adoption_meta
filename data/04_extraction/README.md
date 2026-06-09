@@ -45,8 +45,9 @@ authorized.
   sweep and full source-rendering coverage audit are now clean: 191/191
   materialization-gap studies, 2,025/2,025 gap rows, 194/194 source-rendered
   target studies, and 2,043/2,043 target rows. A balanced 30-row full-coverage
-  source-rendered smoke has also been locked and diagnostically scored. Full-corpus
-  model execution and result claims remain unauthorized pending a specific
+  source-rendered smoke has also been locked, diagnostically scored, and
+  prompt/path reviewed. Full-corpus model execution and result claims remain
+  unauthorized pending revised source-packet/routing smoke and specific
   run-condition approval.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for

@@ -177,18 +177,30 @@ Before any model condition is run, the researcher must approve:
 
 ## Recommended Next Decision
 
-Review the balanced full-coverage source-rendered smoke before any full-corpus
-`M1-R` run:
+The balanced full-coverage source-rendered smoke has now been reviewed. The
+active next decision is not a larger shard or full-corpus `M1-R`; it is a
+revised prompt/path smoke:
 
 - `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`
 - `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_full_coverage_smoke_scored_20260609.csv`
 - `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_full_coverage_smoke_status_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_STEP5_PROMPT_PATH_REVIEW_20260609.md`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_smoke_prompt_path_review_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_step5_beta_family_routing_audit_20260609.csv`
+- `data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_revised_smoke_task_ids_20260609.csv`
+
+The review found 9 positive-control successes, 1 matrix-cell selection error,
+10 direct-r abstentions probably tied to source-packet table coverage, and 10
+S007 beta/path-route conflicts where non-path frozen reference evidence was
+routed through the beta/path task family. The full-shell routing audit found
+146/415 beta-family rows with non-path reference evidence. These are downstream
+model-input route conflicts, not human-reference value changes.
 
 The full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` conditions remain
-pending exact provider/model selector, budget cap, and run authorization. Do not
-report LLM accuracy, model comparison, procedure comparison, or MASEM
-substitution claims until a locked model output is generated, manifest-registered,
-and scored against the frozen reference.
+blocked pending source-packet/routing remediation, exact provider/model selector,
+budget cap, and run authorization. Do not report LLM accuracy, model comparison,
+procedure comparison, or MASEM substitution claims until a locked model output is
+generated, manifest-registered, and scored against the frozen reference.
 
 Follow-up checker status: the full 191-study materialization gap was checked
 again after attempting to identify a CLI hydration route. All 191 studies still
@@ -245,3 +257,11 @@ nonblank answers for 13 rows and abstained on 17 rows; smoke diagnostics show
 the prompt path works best for the latent/construct correlation family in this
 small sample. Treat this as prompt/path evidence only, not as a full-corpus
 performance estimate.
+
+Prompt/path review follow-up: the 30-row smoke was reviewed at row level and
+against the full Step 5 task shell. The next executable condition is
+`M1-R-SOURCE-SMOKE-REVISED`, planned but not authorized, after direct-r packet
+selection and beta-family non-path routing are corrected or isolated. A 40-row
+revised smoke task bundle has been prepared with 10 rows each for latent positive
+controls, S003 direct-r packet retrieval, non-path secondary route review, and
+true beta/path controls. Full-corpus model execution remains blocked.

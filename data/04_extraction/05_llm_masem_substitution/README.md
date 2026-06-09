@@ -190,6 +190,19 @@ quotes=0. Smoke diagnostic scoring is recorded in
 This remains a prompt/export/locking/scoring diagnostic only, not a full-corpus
 accuracy result or MASEM substitution claim.
 
+The follow-up prompt/path review is recorded in
+`results/FULL_CORPUS_STEP5_PROMPT_PATH_REVIEW_20260609.md`. It classifies the
+30-row smoke as 9 positive-control successes, 1 matrix-cell selection error, 10
+S003 direct-r abstentions probably tied to source-packet table coverage, and 10
+S007 beta/path-route conflicts caused by non-path frozen reference evidence
+being routed through the beta/path task family. A full-shell beta-family routing
+audit found 146/415 beta-family rows with non-path reference evidence. Full
+`M1-R` remains blocked pending revised packet/routing smoke. The targeted
+`M1-R-SOURCE-SMOKE-REVISED` task bundle is prepared as
+`../07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_revised_smoke_task_ids_20260609.csv`
+with 40 rows balanced across latent positive controls, direct-r packet retrieval,
+non-path secondary route review, and true beta/path controls.
+
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from
