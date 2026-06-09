@@ -68,3 +68,17 @@ Prepare a revised source-rendered smoke condition before any larger shard or ful
   - row-level diagnostic report generated before any larger run authorization.
 
 Do not authorize full-corpus `M1-R`, `M1-P`, `M2-R`, or `M3-R` from the current smoke.
+
+## Revised Smoke Follow-Up
+
+`M1-R-SOURCE-SMOKE-REVISED` was executed after this review using a leakage-safe
+route overlay and revised private packet stubs. The 40-row smoke completed with
+CLI errors 0, source quote policy violations 0, committed source quotes 0,
+nonblank answers 23, abstentions 17, route violations 0, and 21/40 diagnostic
+correct rows. The route overlay resolved the observed non-path secondary
+beta/path conflict in this smoke, but S003 direct-r rows still abstained 10/10
+and true beta/path controls remained partially answerable.
+
+Current gate decision: do not authorize full-corpus `M1-R`; revise packet/table
+retrieval for direct-r and true beta/path controls, then rerun a focused
+retrieval smoke before scaling.

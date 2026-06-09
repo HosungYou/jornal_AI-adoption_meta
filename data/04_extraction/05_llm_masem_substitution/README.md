@@ -203,6 +203,15 @@ audit found 146/415 beta-family rows with non-path reference evidence. Full
 with 40 rows balanced across latent positive controls, direct-r packet retrieval,
 non-path secondary route review, and true beta/path controls.
 
+The 40-row `M1-R-SOURCE-SMOKE-REVISED` has now been executed with a route
+overlay and revised private source-packet stubs. It completed with
+`model_cli_error=0`, source quote policy violations=0, nonblank answers=23,
+abstentions=17, committed source quotes=0, route violations=0, and 21/40
+diagnostic correct rows. The route overlay resolved the prior non-path
+secondary/beta-path conflict in this smoke, but S003 direct-r rows still
+abstained 10/10 and true beta/path controls remain partial. Full `M1-R` remains
+blocked pending packet/table retrieval review.
+
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from

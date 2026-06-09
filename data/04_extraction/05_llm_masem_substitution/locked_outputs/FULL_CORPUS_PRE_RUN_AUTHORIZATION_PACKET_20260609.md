@@ -188,6 +188,9 @@ revised prompt/path smoke:
 - `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_smoke_prompt_path_review_20260609.csv`
 - `data/04_extraction/05_llm_masem_substitution/results/full_corpus_step5_beta_family_routing_audit_20260609.csv`
 - `data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_revised_smoke_task_ids_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_REVISED_SMOKE_STATUS_20260609.md`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_revised_smoke_scored_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_revised_smoke_status_20260609.csv`
 
 The review found 9 positive-control successes, 1 matrix-cell selection error,
 10 direct-r abstentions probably tied to source-packet table coverage, and 10
@@ -195,6 +198,12 @@ S007 beta/path-route conflicts where non-path frozen reference evidence was
 routed through the beta/path task family. The full-shell routing audit found
 146/415 beta-family rows with non-path reference evidence. These are downstream
 model-input route conflicts, not human-reference value changes.
+
+The 40-row `M1-R-SOURCE-SMOKE-REVISED` then ran with route overlay and revised
+private packet stubs: CLI errors 0, source quote policy violations 0, committed
+source quotes 0, nonblank answers 23, abstentions 17, route violations 0, and
+diagnostic correct rows 21/40. This is still a prompt/path diagnostic only. It
+does not authorize full-corpus execution or result claims.
 
 The full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` conditions remain
 blocked pending source-packet/routing remediation, exact provider/model selector,
@@ -259,9 +268,13 @@ small sample. Treat this as prompt/path evidence only, not as a full-corpus
 performance estimate.
 
 Prompt/path review follow-up: the 30-row smoke was reviewed at row level and
-against the full Step 5 task shell. The next executable condition is
-`M1-R-SOURCE-SMOKE-REVISED`, planned but not authorized, after direct-r packet
-selection and beta-family non-path routing are corrected or isolated. A 40-row
-revised smoke task bundle has been prepared with 10 rows each for latent positive
-controls, S003 direct-r packet retrieval, non-path secondary route review, and
-true beta/path controls. Full-corpus model execution remains blocked.
+against the full Step 5 task shell. A 40-row revised smoke task bundle was
+prepared with 10 rows each for latent positive controls, S003 direct-r packet
+retrieval, non-path secondary route review, and true beta/path controls.
+Full-corpus model execution remained blocked pending that revised smoke.
+
+Revised smoke follow-up: `M1-R-SOURCE-SMOKE-REVISED` was executed and locked.
+The route overlay removed the observed S007 non-path/beta-path conflict in the
+smoke (`route_violation_n=0`), but S003 direct-r rows still abstained 10/10 and
+true beta/path controls remain only partially answerable. The next gate is
+packet/table retrieval review, not full-corpus `M1-R`.

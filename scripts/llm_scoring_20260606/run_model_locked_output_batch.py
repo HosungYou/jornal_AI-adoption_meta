@@ -70,7 +70,7 @@ def read_task_ids(path: Path) -> list[str]:
 def write_csv(path: Path, rows: list[dict[str, str]], fields: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
+        writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -149,6 +149,103 @@ def load_source_packets(source_packet_dir: Path | None, rows: list[dict[str, str
     return packets
 
 
+def parse_model_input_field(text: str, label: str) -> str:
+    match = re.search(rf"{re.escape(label)}:\s*([^|]+)", text)
+    return match.group(1).strip() if match else ""
+
+
+def load_task_route_overlay(path: Path | None) -> dict[str, dict[str, str]]:
+    if not path:
+        return {}
+    overlays: dict[str, dict[str, str]] = {}
+    for row in read_csv(path):
+        task_id = row.get("task_unit_id", "")
+        if not task_id:
+            continue
+        leakage_flag = (row.get("human_reference_value_in_prompt") or "").strip().lower()
+        if leakage_flag not in {"", "false", "0", "no"}:
+            raise SystemExit(f"Route overlay row may leak human reference value: {task_id}")
+        overlays[task_id] = row
+    return overlays
+
+
+def route_config(route: str) -> tuple[str, str, str]:
+    if route == "direct_r_effect_size_extraction":
+        return (
+            "numeric_r_effect_size",
+            "primary_direct_r_or_source_reported_correlation",
+            "Recover the source-reported direct/source r effect-size value for the requested construct pair. Prefer source correlation matrices, Fornell-Larcker/correlation tables, or explicit source-reported r tables. Do not use standardized beta/path coefficients unless the source explicitly labels the value as a direct/source r effect size. Abstain if no direct/source r evidence is present.",
+        )
+    if route == "latent_or_construct_correlation":
+        return (
+            "numeric_correlation_with_source_type",
+            "primary_latent_or_construct_correlation_with_source_type_flag",
+            "Recover the source-reported latent, construct, or interconstruct correlation for the requested construct pair. Prefer construct-correlation, Fornell-Larcker off-diagonal, or source-designated discriminant-validity value tables when they are the available source-value evidence. Do not use standardized beta/path coefficients. Include the source value type in model_answer and put the numeric value in model_answer_normalized.",
+        )
+    if route == "latent_or_construct_correlation_or_direct_source_value":
+        return (
+            "numeric_correlation_with_source_type",
+            "non_path_source_value_route",
+            "Recover the source-reported non-path value for the requested construct pair, such as a direct correlation, latent/construct correlation, interconstruct correlation, Fornell-Larcker off-diagonal value, or source-designated discriminant-validity value. Do not use standardized beta/path coefficients. Include the source value type in model_answer and put the numeric value in model_answer_normalized.",
+        )
+    if route == "beta_or_path_converted_effect_size":
+        return (
+            "numeric_effect_size_with_source_type",
+            "secondary_beta_or_path_converted_effect_size",
+            "Recover the standardized beta/path coefficient for the requested directed construct relationship. Use structural/path coefficient, hypothesis, or SEM/PLS path tables. Do not use correlation, Fornell-Larcker, HTMT, or discriminant-validity tables for this route. Include the source value type in model_answer and put the numeric value in model_answer_normalized.",
+        )
+    return (
+        "numeric_effect_size_with_source_type",
+        route or "unspecified_route",
+        "Use the task route and source packet evidence to recover the requested numeric value. Abstain if the source evidence is insufficient.",
+    )
+
+
+def routed_model_input_text(row: dict[str, str], overlay: dict[str, str]) -> tuple[str, str, str]:
+    route = overlay.get("recommended_model_input_route", "").strip()
+    expected_type, prompt_family, instruction = route_config(route)
+    original = row.get("model_input_text", "")
+    sample = parse_model_input_field(original, "Sample/stratum") or "unspecified"
+    construct_pair = parse_model_input_field(original, "Construct pair") or "unspecified"
+    category = overlay.get("revised_smoke_category", "").strip() or "route_overlay"
+    text = (
+        f"Study: {row['study_id']} | Sample/stratum: {sample} | "
+        f"Construct pair: {construct_pair} | Expected answer type: {expected_type} | "
+        f"Prompt task route: {route} | Revised smoke category: {category} | "
+        f"Route instruction: {instruction} "
+        "Use only the locked source-document rendering/chunks for the authorized run condition. "
+        "The human reference value and human-adjudicated source locator are intentionally excluded."
+    )
+    return text, expected_type, prompt_family
+
+
+def apply_task_route_overlay(
+    rows: list[dict[str, str]],
+    overlays: dict[str, dict[str, str]],
+    require_overlay: bool,
+) -> list[dict[str, str]]:
+    if not overlays:
+        return rows
+    routed_rows: list[dict[str, str]] = []
+    for row in rows:
+        task_id = row["task_unit_id"]
+        overlay = overlays.get(task_id)
+        if not overlay:
+            if require_overlay:
+                raise SystemExit(f"Missing required route overlay for task_unit_id={task_id}")
+            routed_rows.append(row)
+            continue
+        routed = dict(row)
+        model_input, expected_type, prompt_family = routed_model_input_text(routed, overlay)
+        routed["model_input_text"] = model_input
+        routed["expected_answer_type"] = expected_type
+        routed["_prompt_denominator_family"] = prompt_family
+        routed["_prompt_task_route"] = overlay.get("recommended_model_input_route", "").strip()
+        routed["_revised_smoke_category"] = overlay.get("revised_smoke_category", "").strip()
+        routed_rows.append(routed)
+    return routed_rows
+
+
 def prompt_for(
     rows: list[dict[str, str]],
     source_packets: dict[str, str] | None = None,
@@ -157,15 +254,18 @@ def prompt_for(
     source_packets = source_packets or {}
     tasks = []
     for row in rows:
-        tasks.append(
-            {
-                "task_unit_id": row["task_unit_id"],
-                "study_id": row["study_id"],
-                "denominator_family": row["denominator_family"],
-                "expected_answer_type": row["expected_answer_type"],
-                "model_input_text": row["model_input_text"],
-            }
-        )
+        task = {
+            "task_unit_id": row["task_unit_id"],
+            "study_id": row["study_id"],
+            "denominator_family": row.get("_prompt_denominator_family", row["denominator_family"]),
+            "expected_answer_type": row["expected_answer_type"],
+            "model_input_text": row["model_input_text"],
+        }
+        if row.get("_prompt_task_route"):
+            task["prompt_task_route"] = row["_prompt_task_route"]
+        if row.get("_revised_smoke_category"):
+            task["revised_smoke_category"] = row["_revised_smoke_category"]
+        tasks.append(task)
     parts = [
         SYSTEM_INSTRUCTIONS,
         "",
@@ -175,6 +275,15 @@ def prompt_for(
             [
                 "Run-specific source-text safety policy:",
                 "Do not reproduce source-document wording in model_source_quote. Set model_source_quote to blank and use model_source_locator for page/chunk IDs instead.",
+                "",
+            ]
+        )
+    if any(row.get("_prompt_task_route") for row in rows):
+        parts.extend(
+            [
+                "Run-specific task-route overlay policy:",
+                "Use each task's prompt_task_route and Route instruction in model_input_text as the active extraction target. If source-packet task stubs conflict with Tasks JSON, Tasks JSON supersedes the packet stubs.",
+                "Never use a beta/path coefficient for a task routed as direct_r_effect_size_extraction, latent_or_construct_correlation, or latent_or_construct_correlation_or_direct_source_value.",
                 "",
             ]
         )
@@ -384,6 +493,8 @@ def main() -> None:
     parser.add_argument("--families", default="", help="Comma-separated denominator families. Empty means all eligible families.")
     parser.add_argument("--study-ids", default="", help="Comma-separated study IDs. Empty means all eligible studies.")
     parser.add_argument("--task-ids-file", type=Path, default=None, help="CSV/text file listing task_unit_id values to run in file order.")
+    parser.add_argument("--task-route-overlay", type=Path, default=None, help="Optional CSV keyed by task_unit_id with revised prompt route metadata.")
+    parser.add_argument("--require-task-route-overlay", action="store_true", help="Fail if any selected task lacks a row in --task-route-overlay.")
     parser.add_argument("--stratified-per-family", type=int, default=0)
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int, default=0)
@@ -419,6 +530,8 @@ def main() -> None:
         selected = selected[args.offset:]
     if args.limit:
         selected = selected[:args.limit]
+    route_overlays = load_task_route_overlay(args.task_route_overlay)
+    selected = apply_task_route_overlay(selected, route_overlays, args.require_task_route_overlay)
     source_packets = load_source_packets(args.source_packet_dir, selected)
     if args.require_source_packet:
         missing_packets = sorted({row["study_id"] for row in selected if row["study_id"] not in source_packets})

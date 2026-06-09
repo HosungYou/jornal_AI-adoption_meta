@@ -46,9 +46,11 @@ authorized.
   materialization-gap studies, 2,025/2,025 gap rows, 194/194 source-rendered
   target studies, and 2,043/2,043 target rows. A balanced 30-row full-coverage
   source-rendered smoke has also been locked, diagnostically scored, and
-  prompt/path reviewed. Full-corpus model execution and result claims remain
-  unauthorized pending revised source-packet/routing smoke and specific
-  run-condition approval.
+  prompt/path reviewed. A 40-row revised source-rendered smoke has now been
+  locked and diagnostically scored with route violations=0, but S003 direct-r
+  rows still abstain and true beta/path controls remain partial. Full-corpus
+  model execution and result claims remain unauthorized pending packet/table
+  retrieval review and specific run-condition approval.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved
