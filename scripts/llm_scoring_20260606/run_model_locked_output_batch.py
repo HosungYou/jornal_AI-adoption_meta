@@ -199,7 +199,12 @@ def route_config(route: str) -> tuple[str, str, str]:
         return (
             "numeric_effect_size_with_source_type",
             "secondary_beta_or_path_converted_effect_size",
-            "Recover the standardized beta/path coefficient for the requested directed construct relationship. Use structural/path coefficient, hypothesis, or SEM/PLS path tables. Do not use correlation, Fornell-Larcker, HTMT, or discriminant-validity tables for this route. Include the source value type in model_answer and put the numeric value in model_answer_normalized.",
+            "Recover the standardized beta/path coefficient for the requested directed construct relationship. Use structural/path coefficient, hypothesis, or SEM/PLS path tables. "
+            "Do not use correlation, Fornell-Larcker, HTMT, discriminant-validity, total-effect, or IPMA/importance tables for this route. "
+            "If a table is clearly labeled as importance/influence/indirect/total effect, that is not a path coefficient and must not be used. "
+            "If no explicit directed standardized beta/path coefficient is reported for the requested direction at the required sample context, abstain. "
+            "If sample contexts conflict with the request (e.g., Nordic-only vs full-sample), treat as insufficient evidence unless the requested directed path is clearly reported in that context. "
+            "Include the source value type in model_answer and put the numeric value in model_answer_normalized.",
         )
     return (
         "numeric_effect_size_with_source_type",
@@ -215,11 +220,24 @@ def routed_model_input_text(row: dict[str, str], overlay: dict[str, str]) -> tup
     sample = parse_model_input_field(original, "Sample/stratum") or "unspecified"
     construct_pair = parse_model_input_field(original, "Construct pair") or "unspecified"
     category = overlay.get("revised_smoke_category", "").strip() or "route_overlay"
+    path_alias = overlay.get("path_alias", "").strip()
+    path_sample_context = overlay.get("path_sample_context", "").strip()
+    path_direction = overlay.get("path_direction", "").strip()
+
+    context_bits: list[str] = []
+    if path_alias:
+        context_bits.append(f"Path alias: {path_alias}")
+    if path_sample_context:
+        context_bits.append(f"Path sample context: {path_sample_context}")
+    if path_direction:
+        context_bits.append(f"Path direction: {path_direction}")
+    context_segment = " " + " | ".join(context_bits) if context_bits else ""
+
     text = (
         f"Study: {row['study_id']} | Sample/stratum: {sample} | "
         f"Construct pair: {construct_pair} | Expected answer type: {expected_type} | "
         f"Prompt task route: {route} | Revised smoke category: {category} | "
-        f"Route instruction: {instruction} "
+        f"Route instruction: {instruction}{context_segment} "
         "Use only the locked source-document rendering/chunks for the authorized run condition. "
         "The human reference value and human-adjudicated source locator are intentionally excluded."
     )
@@ -249,6 +267,9 @@ def apply_task_route_overlay(
         routed["_prompt_denominator_family"] = prompt_family
         routed["_prompt_task_route"] = overlay.get("recommended_model_input_route", "").strip()
         routed["_revised_smoke_category"] = overlay.get("revised_smoke_category", "").strip()
+        routed["_path_alias"] = overlay.get("path_alias", "").strip()
+        routed["_path_sample_context"] = overlay.get("path_sample_context", "").strip()
+        routed["_path_direction"] = overlay.get("path_direction", "").strip()
         routed_rows.append(routed)
     return routed_rows
 

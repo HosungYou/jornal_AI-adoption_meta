@@ -6,20 +6,20 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 
 ## Focus Now
 - Current goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.
-- Current blocker: M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL was re-executed and relocked on 2026-06-11 (25 rows, CLI errors 0, source quote policy violations 0, committed source quotes 0). It yields nonblank answers 5, abstentions 20, and 3/25 smoke-diagnostic correct rows under numeric tolerance. S003 direct-r/Fornell-Larcker retrieval remains 0/10 correct; S009 true beta/path controls are partially answerable at 3/9, and S010 is 0/6.
-- Next action: Review the remaining S009/S010 beta/path mismatches and directed-value controls, then add leakage-safe path alias/context handling or record a bounded staged-shard caveat before any larger M1-R execution. Do not authorize full-corpus M1-R/M1-P/M2-R/M3-R or report accuracy/model-comparison/MASEM substitution claims from this focused smoke.
+- Current blocker: M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL beta/path contract review completed on 2026-06-11. Full-corpus M1-R remains blocked by beta/path contract issues rather than source materialization: v4 path-direction metadata treated construct-pair order as source direction for several S009/S010 rows; S010 raw beta recovery is being scored against Peterson-Brown converted reference values; and S009 has rows labeled beta_converted_peterson_brown that behave like raw beta plus one unresolved FC-UB directed-value mismatch. The current 25-row smoke remains diagnostic only and cannot support accuracy, model-comparison, or MASEM substitution claims.
+- Next action: Prepare a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE before any larger M1-R execution: use source-directed path metadata, separate raw source beta/path coefficients from Peterson-Brown converted effect-size values, reject IPMA/importance/total/indirect-effect tables as path evidence, and keep S009 FC-UB/reference-contract caveats explicit.
 - Perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist
 - Disagreement: show_on_conflict
 
 ## Open Questions
-- What leakage-safe S009/S010 beta/path alias/context handling should be used after the 2026-06-11 rerun?
+- What leakage-safe output schema and scoring patch should be used for the M1-R beta/path contract probe?
 
 ## Restart Prompt
-- "Continue after M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL re-run completed on 2026-06-11: source-packet scoring/path revision plus path-directed alias/context handling produced no route violations and no source quotes; diagnostic was 3/25, with S003 direct-r/FLC now 0/10 and S009/S010 beta/path still partially answerable. Next gate remains S009/S010 beta/path disambiguation, not full-corpus M1-R."
+- "Continue after the 2026-06-11 beta/path contract review: full-corpus M1-R is still blocked, not by source materialization but by S009/S010 beta/path contract issues. Next gate is a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed paths and separate raw-beta versus converted-effect fields."
 
 ## Quick Start
 - Open `codex` in this directory.
-- A good first message is usually `lt explore: What leakage-safe S009/S010 beta/path alias/context handling should be used after the 2026-06-11 rerun?`.
+- A good first message is usually `lt explore: What leakage-safe output schema and scoring patch should be used for the M1-R beta/path contract probe?`.
 
 ## Evidence Rule
 - External or current claims should carry a source link or be labeled as inference.

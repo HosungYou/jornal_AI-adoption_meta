@@ -13,24 +13,24 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed and locked: 25 rows, CLI errors 0, source quote policy violations 0, committed source quotes 0, nonblank answers 18, abstentions 7, route violations 0, and smoke diagnostic correct rows 17/25. S003 direct-r/Fornell-Larcker retrieval is now unblocked at 10/10 correct after source-packet scoring/path revision, but S009/S010 true beta/path controls remain partially answerable. Full-corpus model execution remains blocked by beta/path retrieval disambiguation, not by source materialization, S003 direct-r coverage, or route-overlay leakage.",
-    "nextAction": "Review the remaining S009/S010 beta/path abstentions and S009 FC-UB directed-value mismatch, then add leakage-safe path alias/context handling or record a bounded staged-shard caveat before any larger M1-R execution. Do not authorize full-corpus M1-R/M1-P/M2-R/M3-R or report accuracy/model-comparison/MASEM substitution claims from the focused retrieval smoke.",
-    "resumeHint": "Continue after M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed on 2026-06-09: source-packet scoring/path revision and focused 25-row smoke ran cleanly with no source quotes and no route violations; diagnostic was 17/25, with S003 direct-r/FLC now 10/10 correct and S009/S010 beta/path still partial. Next gate is S009/S010 beta/path disambiguation, not full-corpus M1-R.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_TABLE_RETRIEVAL_SMOKE_STATUS_20260609.md"
+    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL beta/path contract review completed on 2026-06-11. Full-corpus M1-R remains blocked by beta/path contract issues rather than source materialization: v4 path-direction metadata treated construct-pair order as source direction for several S009/S010 rows; S010 raw beta recovery is being scored against Peterson-Brown converted reference values; and S009 has rows labeled beta_converted_peterson_brown that behave like raw beta plus one unresolved FC-UB directed-value mismatch. The current 25-row smoke remains diagnostic only and cannot support accuracy, model-comparison, or MASEM substitution claims.",
+    "nextAction": "Prepare a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE before any larger M1-R execution: use source-directed path metadata, separate raw source beta/path coefficients from Peterson-Brown converted effect-size values, reject IPMA/importance/total/indirect-effect tables as path evidence, and keep S009 FC-UB/reference-contract caveats explicit.",
+    "resumeHint": "Continue after the 2026-06-11 beta/path contract review: full-corpus M1-R is still blocked, not by source materialization but by S009/S010 beta/path contract issues. Next gate is a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed paths and separate raw-beta versus converted-effect fields.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_REVIEW_20260611.md"
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed and locked: 25 rows, CLI errors 0, source quote policy violations 0, committed source quotes 0, nonblank answers 18, abstentions 7, route violations 0, and smoke diagnostic correct rows 17/25. S003 direct-r/Fornell-Larcker retrieval is now unblocked at 10/10 correct after source-packet scoring/path revision, but S009/S010 true beta/path controls remain partially answerable. Full-corpus model execution remains blocked by beta/path retrieval disambiguation, not by source materialization, S003 direct-r coverage, or route-overlay leakage.",
-    "nextAction": "Review the remaining S009/S010 beta/path abstentions and S009 FC-UB directed-value mismatch, then add leakage-safe path alias/context handling or record a bounded staged-shard caveat before any larger M1-R execution. Do not authorize full-corpus M1-R/M1-P/M2-R/M3-R or report accuracy/model-comparison/MASEM substitution claims from the focused retrieval smoke.",
+    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL beta/path contract review completed on 2026-06-11. Full-corpus M1-R remains blocked by beta/path contract issues rather than source materialization: v4 path-direction metadata treated construct-pair order as source direction for several S009/S010 rows; S010 raw beta recovery is being scored against Peterson-Brown converted reference values; and S009 has rows labeled beta_converted_peterson_brown that behave like raw beta plus one unresolved FC-UB directed-value mismatch. The current 25-row smoke remains diagnostic only and cannot support accuracy, model-comparison, or MASEM substitution claims.",
+    "nextAction": "Prepare a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE before any larger M1-R execution: use source-directed path metadata, separate raw source beta/path coefficients from Peterson-Brown converted effect-size values, reject IPMA/importance/total/indirect-effect tables as path evidence, and keep S009 FC-UB/reference-contract caveats explicit.",
     "openQuestions": [
-      "What leakage-safe S009/S010 beta/path alias/context handling should be used after S003 direct-r/FLC retrieval was unblocked?"
+      "What leakage-safe output schema and scoring patch should be used for the M1-R beta/path contract probe?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed on 2026-06-09: source-packet scoring/path revision and focused 25-row smoke ran cleanly with no source quotes and no route violations; diagnostic was 17/25, with S003 direct-r/FLC now 10/10 correct and S009/S010 beta/path still partial. Next gate is S009/S010 beta/path disambiguation, not full-corpus M1-R.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_TABLE_RETRIEVAL_SMOKE_STATUS_20260609.md",
-    "lastUpdatedAt": "2026-06-09T07:20:00Z"
+    "resumeHint": "Continue after the 2026-06-11 beta/path contract review: full-corpus M1-R is still blocked, not by source materialization but by S009/S010 beta/path contract issues. Next gate is a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed paths and separate raw-beta versus converted-effect fields.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_REVIEW_20260611.md",
+    "lastUpdatedAt": "2026-06-11T00:00:00Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -320,6 +320,16 @@
       "selectedOption": "focused_retrieval_revision_before_full_corpus",
       "rationale": "The revised smoke proves the leakage-safe route overlay works, but persistent S003 direct-r abstentions and partial true beta/path controls show the source packet/table retrieval layer is not ready for full-corpus execution.",
       "artifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_REVISED_SMOKE_STATUS_20260609.md"
+    },
+    {
+      "id": "decision_mq77pp3z_rqtb1j",
+      "timestamp": "2026-06-09T22:29:30.335Z",
+      "checkpointKey": "research_review",
+      "level": "recommended",
+      "mode": "commit",
+      "summary": "Answered Step 5 beta/path contract gate: Proceed while logging the risk",
+      "selectedOption": "proceed",
+      "rationale": "Do not authorize larger full-corpus M1-R. Proceed only by logging the beta/path contract gate and preparing a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed path metadata plus separate raw-beta and converted-effect fields."
     }
   ],
   "invocationLog": [],
@@ -1079,6 +1089,69 @@
         "surface": "numbered"
       },
       "decisionRecordId": "decision_mq5vpiyt_67mh0z"
+    },
+    {
+      "id": "question_record_mq77pj2j_jsk8pr",
+      "createdAt": "2026-06-09T22:29:22.505Z",
+      "updatedAt": "2026-06-09T22:29:30.335Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mq77pj2j_gberb2",
+        "checkpointKey": "research_review",
+        "title": "Step 5 beta/path contract gate",
+        "question": "Should the 2026-06-11 S009/S010 review authorize larger full-corpus M1-R execution?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise before accepting the review",
+            "description": "Change the claim, design, or draft before treating the critique as resolved."
+          },
+          {
+            "value": "evidence",
+            "label": "Check evidence for the objection",
+            "description": "Verify whether the review concern is actually supported."
+          },
+          {
+            "value": "proceed",
+            "label": "Proceed while logging the risk",
+            "description": "Accept the objection profile and continue with the decision recorded."
+          },
+          {
+            "value": "defer",
+            "label": "Keep the objection open",
+            "description": "Do not convert the review into closure yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": false,
+        "source": "checkpoint",
+        "rationale": [
+          "Review requests should preserve objections and unresolved assumptions.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: review.",
+          "Trigger confidence: medium.",
+          "Original prompt: Record the Step 5 beta/path contract gate after the 2026-06-11 S009/S010 table-retrieval smoke review."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mq77pj2j_gberb2",
+        "selectedValues": [
+          "proceed"
+        ],
+        "selectedLabels": [
+          "Proceed while logging the risk"
+        ],
+        "rationale": "Do not authorize larger full-corpus M1-R. Proceed only by logging the beta/path contract gate and preparing a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed path metadata plus separate raw-beta and converted-effect fields.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mq77pp3z_rqtb1j"
     }
   ],
   "artifactRecords": [],
