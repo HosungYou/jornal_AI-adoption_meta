@@ -65,10 +65,14 @@ Batch 01 blocker request follow-up: Finder/OneDrive download requests were
 submitted for `S157`, `S036`, `S088`, and `S190`. The immediate post-wait
 checker still reported 4/4 `not_materialized_or_read_timeout`, but a final
 probe after partial OneDrive completion found `S157` and `S190`
-text-extractable. Batch 01 is now 18/20 studies and 450/492 target rows
-text-extractable; `S036` and `S088` remain blocked at 42 target rows. The next
-gate is to make `S036` and `S088` locally readable, rerun the four-file checker
-and Batch 01 checker, then continue Batches 03-04.
+text-extractable. Batch 01 was then 18/20 studies and 450/492 target rows
+text-extractable; `S036` and `S088` remained blocked at 42 target rows at that
+intermediate checkpoint.
+
+OneDrive restart follow-up: after OneDrive was restarted again, `S036` and
+`S088` also became text-extractable. Batch 01 is now clean at 20/20 studies and
+492/492 target rows. Continue targeted materialization for Batches 03-04 before
+any full-corpus source-rendered model run.
 
 ## Integrity
 

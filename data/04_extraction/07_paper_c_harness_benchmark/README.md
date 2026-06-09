@@ -55,9 +55,15 @@ rendering remains blocked.
 
 A targeted Batch 01 blocker follow-up submitted Finder/OneDrive download
 requests for `S157`, `S036`, `S088`, and `S190`. `S157` and `S190`
-subsequently became `materialized_text_extractable`; `S036` and `S088` still
-return `not_materialized_or_read_timeout`. Batch 01 is now 18/20 studies and
-450/492 target rows text-extractable, with 42 target rows still blocked.
+subsequently became `materialized_text_extractable`; at that intermediate
+probe, `S036` and `S088` still returned `not_materialized_or_read_timeout`.
+Batch 01 was then 18/20 studies and 450/492 target rows text-extractable, with
+42 target rows still blocked.
+
+After OneDrive was restarted again, `S036` and `S088` also became
+`materialized_text_extractable`. Batch 01 is now clean at 20/20 studies and
+492/492 target rows. Full-corpus source rendering remains blocked because
+Batches 03-04 remain mostly blocked.
 
 Current reference pointer:
 
@@ -90,6 +96,8 @@ Current pre-run planning artifacts:
 - `00_manifest/source_pdf_materialization_check_batch01_blockers_after_wait_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_batch01_blockers_final_probe_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_batch01_after_blocker_requests_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch01_blockers_after_onedrive_restart_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch01_after_onedrive_restart_20260609.csv`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH01_BLOCKER_REQUEST_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`

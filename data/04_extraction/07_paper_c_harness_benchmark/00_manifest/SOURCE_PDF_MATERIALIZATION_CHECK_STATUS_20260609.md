@@ -82,26 +82,30 @@ post-wait checker rerun still reported 4/4
 
 A final probe after partial OneDrive completion found that `S157` and `S190`
 became `materialized_text_extractable`, while `S036` and `S088` still returned
-`not_materialized_or_read_timeout`. The full Batch 01 checker now reports 18/20
-studies and 450/492 target rows text-extractable, with 2 studies / 42 target
-rows still blocked. A retry for `S036` and `S088` did not preserve an active
+`not_materialized_or_read_timeout`. The full Batch 01 checker then reported
+18/20 studies and 450/492 target rows text-extractable, with 2 studies / 42
+target rows still blocked. A retry for `S036` and `S088` did not preserve an active
 File Provider requested/downloading state.
+
+After OneDrive was restarted again, the four-file checker reported `S157`,
+`S036`, `S088`, and `S190` as `materialized_text_extractable`. The full Batch
+01 checker now reports 20/20 studies and 492/492 target rows text-extractable.
 
 ## Next Gate
 
-After `S036` and `S088` are locally materialized/readable, rerun:
+Continue targeted materialization for Batches 03-04, then rerun the relevant
+batch checker. For example:
 
 ```bash
 python3 scripts/llm_scoring_20260606/check_source_pdf_materialization.py \
-  --batch-id PDFMAT-20260609-01 \
-  --output data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_check_batch01_after_blocker_requests_20260609.csv
+  --batch-id PDFMAT-20260609-03 \
+  --output data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_check_batch03_after_targeted_materialization_20260609.csv
 ```
 
-If Batch 01 clears, continue targeted materialization for Batches 03-04 and
-rerun the relevant checker(s). Only if the checker reports local
-text-extractable PDFs for the intended scope should the full source-rendering
-coverage audit be rerun. A balanced source-rendered smoke remains ineligible
-until source rendering coverage is clean for the intended target scope.
+Only if the checker reports local text-extractable PDFs for the intended scope
+should the full source-rendering coverage audit be rerun. A balanced
+source-rendered smoke remains ineligible until source rendering coverage is
+clean for the intended target scope.
 
 ## Safety Boundary
 

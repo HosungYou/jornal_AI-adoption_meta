@@ -155,9 +155,10 @@ accuracy claims remain unauthorized.
 
 Finder/OneDrive download requests were then submitted for the four remaining
 Batch 01 blockers (`S157`, `S036`, `S088`, `S190`). `S157` and `S190`
-subsequently became text-extractable; `S036` and `S088` remain blocked by local
-read/materialization timeout. Batch 01 is now 18/20 studies and 450/492 target
-rows text-extractable. This does not authorize model execution.
+subsequently became text-extractable, and after OneDrive was restarted again
+`S036` and `S088` also became text-extractable. Batch 01 is now clean at 20/20
+studies and 492/492 target rows. Batches 03-04 remain mostly blocked, so this
+does not authorize model execution.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should

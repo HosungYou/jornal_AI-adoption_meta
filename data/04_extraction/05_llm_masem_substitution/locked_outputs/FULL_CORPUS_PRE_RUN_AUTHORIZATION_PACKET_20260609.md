@@ -171,7 +171,12 @@ model execution.
 Batch 01 blocker request follow-up: download requests were submitted through
 Finder/OneDrive for `S157`, `S036`, `S088`, and `S190`. After partial OneDrive
 completion, `S157` and `S190` became `materialized_text_extractable`, while
-`S036` and `S088` still return `not_materialized_or_read_timeout`. Batch 01 is
-now 18/20 studies and 450/492 target rows text-extractable; the remaining Batch
-01 blocker is 2 studies / 42 target rows. This does not authorize any
-full-corpus model execution.
+`S036` and `S088` still returned `not_materialized_or_read_timeout` at that
+intermediate checkpoint. Batch 01 was then 18/20 studies and 450/492 target
+rows text-extractable; the remaining Batch 01 blocker was 2 studies / 42 target
+rows. This did not authorize any full-corpus model execution.
+
+OneDrive restart follow-up: after OneDrive was restarted again, `S036` and
+`S088` also became `materialized_text_extractable`. Batch 01 is now clean at
+20/20 studies and 492/492 target rows. Batches 03-04 remain mostly blocked, so
+this still does not authorize any full-corpus model execution.
