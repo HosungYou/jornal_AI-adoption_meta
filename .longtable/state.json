@@ -13,24 +13,24 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL beta/path contract review completed on 2026-06-11. Full-corpus M1-R remains blocked by beta/path contract issues rather than source materialization: v4 path-direction metadata treated construct-pair order as source direction for several S009/S010 rows; S010 raw beta recovery is being scored against Peterson-Brown converted reference values; and S009 has rows labeled beta_converted_peterson_brown that behave like raw beta plus one unresolved FC-UB directed-value mismatch. The current 25-row smoke remains diagnostic only and cannot support accuracy, model-comparison, or MASEM substitution claims.",
-    "nextAction": "Prepare a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE before any larger M1-R execution: use source-directed path metadata, separate raw source beta/path coefficients from Peterson-Brown converted effect-size values, reject IPMA/importance/total/indirect-effect tables as path evidence, and keep S009 FC-UB/reference-contract caveats explicit.",
-    "resumeHint": "Continue after the 2026-06-11 beta/path contract review: full-corpus M1-R is still blocked, not by source materialization but by S009/S010 beta/path contract issues. Next gate is a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed paths and separate raw-beta versus converted-effect fields.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_REVIEW_20260611.md"
+    "currentBlocker": "M1-R-BETA-PATH-CONTRACT-PROBE is prepared but not executed. Full-corpus M1-R remains blocked pending this 15-row S009/S010 probe because the previous table-retrieval smoke exposed beta/path contract issues: source-directed paths must be separated from construct-pair order, raw source beta/path coefficients must be separated from Peterson-Brown converted effect values, IPMA/importance/total/indirect-effect tables must be rejected as path evidence, and S009 FC-UB/reference-contract caveats must remain explicit.",
+    "nextAction": "Authorize and run only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE with a specific model selector, budget, private source-packet directory, and suppressed committed source quotes; then score it with scripts/llm_scoring_20260606/score_beta_path_contract_probe.py before considering any larger M1-R shard.",
+    "resumeHint": "Continue after the 2026-06-11 beta/path contract probe preparation: full-corpus M1-R is still blocked. The next gate is to authorize and execute only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE and score it with the contract-aware diagnostic scorer.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_PROBE_PREP_20260611.md"
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL beta/path contract review completed on 2026-06-11. Full-corpus M1-R remains blocked by beta/path contract issues rather than source materialization: v4 path-direction metadata treated construct-pair order as source direction for several S009/S010 rows; S010 raw beta recovery is being scored against Peterson-Brown converted reference values; and S009 has rows labeled beta_converted_peterson_brown that behave like raw beta plus one unresolved FC-UB directed-value mismatch. The current 25-row smoke remains diagnostic only and cannot support accuracy, model-comparison, or MASEM substitution claims.",
-    "nextAction": "Prepare a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE before any larger M1-R execution: use source-directed path metadata, separate raw source beta/path coefficients from Peterson-Brown converted effect-size values, reject IPMA/importance/total/indirect-effect tables as path evidence, and keep S009 FC-UB/reference-contract caveats explicit.",
+    "currentBlocker": "M1-R-BETA-PATH-CONTRACT-PROBE is prepared but not executed. Full-corpus M1-R remains blocked pending this 15-row S009/S010 probe because the previous table-retrieval smoke exposed beta/path contract issues: source-directed paths must be separated from construct-pair order, raw source beta/path coefficients must be separated from Peterson-Brown converted effect values, IPMA/importance/total/indirect-effect tables must be rejected as path evidence, and S009 FC-UB/reference-contract caveats must remain explicit.",
+    "nextAction": "Authorize and run only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE with a specific model selector, budget, private source-packet directory, and suppressed committed source quotes; then score it with scripts/llm_scoring_20260606/score_beta_path_contract_probe.py before considering any larger M1-R shard.",
     "openQuestions": [
-      "What leakage-safe output schema and scoring patch should be used for the M1-R beta/path contract probe?"
+      "Which exact model selector, budget, and private source-packet run condition should be authorized for the 15-row M1-R beta/path contract probe?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after the 2026-06-11 beta/path contract review: full-corpus M1-R is still blocked, not by source materialization but by S009/S010 beta/path contract issues. Next gate is a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed paths and separate raw-beta versus converted-effect fields.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_REVIEW_20260611.md",
-    "lastUpdatedAt": "2026-06-11T00:00:00Z"
+    "resumeHint": "Continue after the 2026-06-11 beta/path contract probe preparation: full-corpus M1-R is still blocked. The next gate is to authorize and execute only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE and score it with the contract-aware diagnostic scorer.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_PROBE_PREP_20260611.md",
+    "lastUpdatedAt": "2026-06-11T00:30:00Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -330,6 +330,16 @@
       "summary": "Answered Step 5 beta/path contract gate: Proceed while logging the risk",
       "selectedOption": "proceed",
       "rationale": "Do not authorize larger full-corpus M1-R. Proceed only by logging the beta/path contract gate and preparing a leakage-safe M1-R-BETA-PATH-CONTRACT-PROBE with source-directed path metadata plus separate raw-beta and converted-effect fields."
+    },
+    {
+      "id": "decision_mq782rjq_6kkfj2",
+      "timestamp": "2026-06-09T22:39:40.022Z",
+      "checkpointKey": "explore_runtime_guidance",
+      "level": "recommended",
+      "mode": "commit",
+      "summary": "Answered M1-R Beta/Path Contract Probe Schema: other: use source-directed path metadata plus separate raw_beta_value converted_effect_value and conversion_method fields; score with a diagnostic beta/path contract scorer rather than the generic full-accuracy scorer",
+      "selectedOption": "other",
+      "rationale": "The 2026-06-11 audit showed that S010 raw beta recovery is being scored against Peterson-Brown converted values and that several S009 rows behave like raw beta despite a beta_converted_peterson_brown label. The prepared probe avoids leakage by keeping human reference values out of prompts, uses source-directed paths instead of construct-pair order, preserves raw beta and converted effect fields in locked outputs, and keeps S009/FC-UB caveats out of full accuracy claims."
     }
   ],
   "invocationLog": [],
@@ -1152,6 +1162,70 @@
         "surface": "numbered"
       },
       "decisionRecordId": "decision_mq77pp3z_rqtb1j"
+    },
+    {
+      "id": "question_record_mq782mx4_rh53y2",
+      "createdAt": "2026-06-09T22:39:34.023Z",
+      "updatedAt": "2026-06-09T22:39:40.022Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mq782mx4_9m7gpn",
+        "checkpointKey": "explore_runtime_guidance",
+        "title": "M1-R Beta/Path Contract Probe Schema",
+        "question": "What leakage-safe output schema and scoring patch should be used for the M1-R beta/path contract probe?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "surface_tensions",
+            "label": "Surface tensions first",
+            "description": "Ask what is unresolved before narrowing the project."
+          },
+          {
+            "value": "narrow_scope",
+            "label": "Narrow the research scope",
+            "description": "Move toward a smaller question while keeping the choice visible."
+          },
+          {
+            "value": "gather_context",
+            "label": "Gather context before narrowing",
+            "description": "Check materials, constraints, or evidence before choosing a direction."
+          },
+          {
+            "value": "defer",
+            "label": "Keep exploration open",
+            "description": "Do not collapse the problem space yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": false,
+        "source": "checkpoint",
+        "rationale": [
+          "No strong checkpoint cue was detected; use runtime guidance without forcing closure.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: exploration.",
+          "Trigger confidence: low.",
+          "Original prompt: Record the contract-probe implementation decision after preparing the S009/S010 beta/path probe overlay, runner output fields, and diagnostic scorer."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mq782mx4_9m7gpn",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "other: use source-directed path metadata plus separate raw_beta_value converted_effect_value and conversion_method fields; score with a diagnostic beta/path contract scorer rather than the generic full-accuracy scorer"
+        ],
+        "otherText": "other: use source-directed path metadata plus separate raw_beta_value converted_effect_value and conversion_method fields; score with a diagnostic beta/path contract scorer rather than the generic full-accuracy scorer",
+        "rationale": "The 2026-06-11 audit showed that S010 raw beta recovery is being scored against Peterson-Brown converted values and that several S009 rows behave like raw beta despite a beta_converted_peterson_brown label. The prepared probe avoids leakage by keeping human reference values out of prompts, uses source-directed paths instead of construct-pair order, preserves raw beta and converted effect fields in locked outputs, and keeps S009/FC-UB caveats out of full accuracy claims.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mq782rjq_6kkfj2"
     }
   ],
   "artifactRecords": [],

@@ -32,12 +32,13 @@ Do not return Markdown, prose, plans, or code fences.
 Return JSON only: an array of objects, one object per input task, preserving task_unit_id.
 Each object must have these keys:
 task_unit_id, model_answer, model_answer_normalized, model_source_locator, model_source_quote, model_confidence, abstained, error_code, notes.
+When a task's model_input_text requests beta/path contract probe fields, also return raw_beta_value, converted_effect_value, and conversion_method.
 If the source evidence is insufficient, set abstained=true, error_code=insufficient_evidence, and leave answer fields blank.
 For numeric effect-size tasks, put the numeric value only in model_answer_normalized when possible.
 Every input task_unit_id must appear exactly once in the returned array.
 """
 
-ANSWER_FIELDS = [
+BASE_ANSWER_FIELDS = [
     "task_unit_id",
     "model_answer",
     "model_answer_normalized",
@@ -48,6 +49,12 @@ ANSWER_FIELDS = [
     "error_code",
     "notes",
 ]
+EXTENDED_ANSWER_FIELDS = [
+    "raw_beta_value",
+    "converted_effect_value",
+    "conversion_method",
+]
+ANSWER_FIELDS = BASE_ANSWER_FIELDS + EXTENDED_ANSWER_FIELDS
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -223,6 +230,17 @@ def routed_model_input_text(row: dict[str, str], overlay: dict[str, str]) -> tup
     path_alias = overlay.get("path_alias", "").strip()
     path_sample_context = overlay.get("path_sample_context", "").strip()
     path_direction = overlay.get("path_direction", "").strip()
+    beta_output_policy = overlay.get("beta_output_policy", "").strip()
+
+    if beta_output_policy == "raw_beta_in_model_answer_converted_effect_in_model_answer_normalized":
+        instruction = (
+            f"{instruction} Beta/path contract probe policy: recover the raw standardized beta/path coefficient from the source. "
+            "Put the raw beta/path coefficient in raw_beta_value and model_answer. "
+            "Compute the Peterson-Brown converted effect as raw beta plus 0.05 when raw beta is positive and raw beta minus 0.05 when raw beta is negative; "
+            "put the converted effect in converted_effect_value and model_answer_normalized. "
+            "Set conversion_method to peterson_brown_2005_beta_plus_0.05_sign_lambda. "
+            "If no explicit source-directed path coefficient exists for the requested path and sample context, abstain and leave raw_beta_value and converted_effect_value blank."
+        )
 
     context_bits: list[str] = []
     if path_alias:
@@ -231,6 +249,8 @@ def routed_model_input_text(row: dict[str, str], overlay: dict[str, str]) -> tup
         context_bits.append(f"Path sample context: {path_sample_context}")
     if path_direction:
         context_bits.append(f"Path direction: {path_direction}")
+    if beta_output_policy:
+        context_bits.append(f"Beta output policy: {beta_output_policy}")
     context_segment = " " + " | ".join(context_bits) if context_bits else ""
 
     text = (
@@ -270,6 +290,7 @@ def apply_task_route_overlay(
         routed["_path_alias"] = overlay.get("path_alias", "").strip()
         routed["_path_sample_context"] = overlay.get("path_sample_context", "").strip()
         routed["_path_direction"] = overlay.get("path_direction", "").strip()
+        routed["_beta_output_policy"] = overlay.get("beta_output_policy", "").strip()
         routed_rows.append(routed)
     return routed_rows
 
@@ -293,6 +314,8 @@ def prompt_for(
             task["prompt_task_route"] = row["_prompt_task_route"]
         if row.get("_revised_smoke_category"):
             task["revised_smoke_category"] = row["_revised_smoke_category"]
+        if row.get("_beta_output_policy"):
+            task["beta_output_policy"] = row["_beta_output_policy"]
         tasks.append(task)
     parts = [
         SYSTEM_INSTRUCTIONS,
@@ -480,20 +503,19 @@ def chunks(rows: list[dict[str, str]], size: int) -> list[list[dict[str, str]]]:
 
 
 def failure_answers(rows: list[dict[str, str]], exc: Exception) -> list[dict[str, str]]:
-    return [
-        {
-            "task_unit_id": row["task_unit_id"],
-            "model_answer": "",
-            "model_answer_normalized": "",
-            "model_source_locator": "",
-            "model_source_quote": "",
-            "model_confidence": "",
-            "abstained": "true",
-            "error_code": "model_cli_error",
-            "notes": str(exc)[:500],
-        }
-        for row in rows
-    ]
+    answers = []
+    for row in rows:
+        answer = {field: "" for field in ANSWER_FIELDS}
+        answer.update(
+            {
+                "task_unit_id": row["task_unit_id"],
+                "abstained": "true",
+                "error_code": "model_cli_error",
+                "notes": str(exc)[:500],
+            }
+        )
+        answers.append(answer)
+    return answers
 
 
 def source_quote_policy_failure(rows: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -506,6 +528,20 @@ def source_quote_policy_failure(rows: list[dict[str, str]]) -> list[dict[str, st
 
 def has_manifest_blocking_error(rows: list[dict[str, str]]) -> bool:
     return any(row.get("error_code") in {"model_cli_error", "source_quote_policy_violation"} for row in rows)
+
+
+def output_fieldnames(template_fields: list[str], rows: list[dict[str, str]]) -> list[str]:
+    fields = list(template_fields)
+    needs_extended_beta_fields = any(
+        row.get("_beta_output_policy", "").strip()
+        or any(row.get(field, "").strip() for field in EXTENDED_ANSWER_FIELDS)
+        for row in rows
+    )
+    if needs_extended_beta_fields:
+        for field in EXTENDED_ANSWER_FIELDS:
+            if field not in fields:
+                fields.append(field)
+    return fields
 
 
 def main() -> None:
@@ -619,6 +655,9 @@ def main() -> None:
                     "model_confidence": answer.get("model_confidence", ""),
                     "abstained": answer.get("abstained", ""),
                     "error_code": answer.get("error_code", ""),
+                    "raw_beta_value": answer.get("raw_beta_value", ""),
+                    "converted_effect_value": answer.get("converted_effect_value", ""),
+                    "conversion_method": answer.get("conversion_method", ""),
                     "raw_output_ref": "not_persisted_batch",
                     "locked_answer_status": "locked",
                     "lock_timestamp_utc": now,
@@ -630,7 +669,7 @@ def main() -> None:
         print(f"batch={batch_number} rows={len(batch)} total_locked={len(output_rows)}", flush=True)
 
     output = args.output_dir / f"{run_id}.csv"
-    write_csv(output, output_rows, list(template_rows[0].keys()))
+    write_csv(output, output_rows, output_fieldnames(list(template_rows[0].keys()), output_rows))
     clean_for_manifest = not has_manifest_blocking_error(output_rows)
     if args.register and clean_for_manifest:
         register_locked_output(output, args.manifest)
