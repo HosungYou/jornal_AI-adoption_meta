@@ -13,23 +13,23 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "Source PDF materialization remains blocked after CLI route inspection and full checker rerun: the current local command surface did not execute OneDrive MarkPinned/pin materialization, and all 191 gap studies / 2,025 target rows still return not_materialized_or_read_timeout. Full-corpus M1-R/M1-P/M2-R remains blocked.",
-    "nextAction": "Use OneDrive/Finder local materialization such as Always Keep on This Device for the archive folder or the materialization batches, then rerun check_source_pdf_materialization.py and the full source-rendering coverage audit. Only after clean intended-scope coverage should a balanced source-rendered smoke be run.",
-    "resumeHint": "Continue after the full source PDF materialization recheck. The checker output source_pdf_materialization_check_full_20260609.csv has 191/191 not_materialized_or_read_timeout; do not run full-corpus M1-R/M1-P/M2-R until OneDrive/Finder local materialization is completed and checker/source-rendering coverage are clean."
+    "currentBlocker": "Partial source PDF materialization has been achieved after a Finder/OneDrive attempt (16/191 gap studies and 376/2,025 target rows text-extractable), but 175 studies / 1,649 target rows still return not_materialized_or_read_timeout and the archive folder keep-local state did not remain stable. Full-corpus M1-R/M1-P/M2-R remains blocked.",
+    "nextAction": "Continue OneDrive/Finder materialization for the remaining high-yield Batch 01 studies (S157, S004, S030, S036, S088, S173, S190, S191), then Batch 02. Rerun check_source_pdf_materialization.py and the full source-rendering coverage audit only after clean intended-scope coverage; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
+    "resumeHint": "Continue after the Finder/OneDrive source PDF materialization attempt. The current full snapshot source_pdf_materialization_check_full_after_finder_click_20260609.csv has 16/191 studies and 376/2,025 target rows text-extractable, with 175 studies / 1,649 rows still timing out; do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean."
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "Source PDF materialization remains blocked after CLI route inspection and full checker rerun: the current local command surface did not execute OneDrive MarkPinned/pin materialization, and all 191 gap studies / 2,025 target rows still return not_materialized_or_read_timeout. Full-corpus M1-R/M1-P/M2-R remains blocked.",
-    "nextAction": "Use OneDrive/Finder local materialization such as Always Keep on This Device for the archive folder or the materialization batches, then rerun check_source_pdf_materialization.py and the full source-rendering coverage audit. Only after clean intended-scope coverage should a balanced source-rendered smoke be run.",
+    "currentBlocker": "Partial source PDF materialization has been achieved after a Finder/OneDrive attempt (16/191 gap studies and 376/2,025 target rows text-extractable), but 175 studies / 1,649 target rows still return not_materialized_or_read_timeout and the archive folder keep-local state did not remain stable. Full-corpus M1-R/M1-P/M2-R remains blocked.",
+    "nextAction": "Continue OneDrive/Finder materialization for the remaining high-yield Batch 01 studies (S157, S004, S030, S036, S088, S173, S190, S191), then Batch 02. Rerun check_source_pdf_materialization.py and the full source-rendering coverage audit only after clean intended-scope coverage; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
     "openQuestions": [
-      "Can the OneDrive archive folder or materialization batches be marked Always Keep on This Device and downloaded locally, so the checker can be rerun to confirm intended-scope source coverage?"
+      "Can the remaining Batch 01 PDFs and then Batch 02 be kept local long enough to reach clean intended-scope source rendering coverage?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after the full source PDF materialization recheck. The checker output source_pdf_materialization_check_full_20260609.csv has 191/191 not_materialized_or_read_timeout; do not run full-corpus M1-R/M1-P/M2-R until OneDrive/Finder local materialization is completed and checker/source-rendering coverage are clean.",
-    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_CHECK_STATUS_20260609.md",
-    "lastUpdatedAt": "2026-06-09T00:26:00.000Z"
+    "resumeHint": "Continue after the Finder/OneDrive source PDF materialization attempt. The current full snapshot source_pdf_materialization_check_full_after_finder_click_20260609.csv has 16/191 studies and 376/2,025 target rows text-extractable, with 175 studies / 1,649 rows still timing out; do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean.",
+    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_FINDER_ATTEMPT_STATUS_20260609.md",
+    "lastUpdatedAt": "2026-06-09T01:24:00.000Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -206,6 +206,16 @@
       "summary": "Rechecked local OneDrive materialization status and preserved full-corpus model-run block.",
       "selectedOption": "confirm_materialization_blocker_before_model_execution",
       "rationale": "Researcher instructed Codex to proceed with the next task. Codex checked the available local File Provider/OneDrive command surface and reran the full materialization checker. Since all 191 gap studies remained not_materialized_or_read_timeout, no additional model run or accuracy claim was authorized."
+    },
+    {
+      "id": "decision_source_pdf_materialization_finder_attempt_20260609",
+      "timestamp": "2026-06-09T01:24:00.000Z",
+      "checkpointKey": "post_freeze_source_pdf_materialization_finder_attempt",
+      "level": "workflow_gate",
+      "mode": "commit",
+      "summary": "Recorded partial Finder/OneDrive source PDF materialization and preserved the full-corpus model-run block.",
+      "selectedOption": "continue_materialization_before_model_execution",
+      "rationale": "Researcher instructed Codex to proceed with the next task. Codex started OneDrive, used Finder on the main PDF archive, and reran share-safe materialization checks. The attempt made 16 studies / 376 target rows text-extractable, but 175 studies / 1,649 target rows remained blocked and the keep-local state was unstable, so no additional model run or result claim was authorized."
     }
   ],
   "invocationLog": [],

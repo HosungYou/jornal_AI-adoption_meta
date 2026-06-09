@@ -156,3 +156,8 @@ returned `not_materialized_or_read_timeout`, and the available local CLI surface
 did not execute the OneDrive `MarkPinned` context action. The next gate remains
 OneDrive/Finder local materialization followed by checker and source-rendering
 coverage reruns.
+
+Finder/OneDrive follow-up: after starting OneDrive and clicking the Finder
+not-downloaded control for the main `PDFs` archive folder, 16 studies / 376
+target rows became text-extractable. The remaining 175 studies / 1,649 target
+rows still block full-corpus `M1-R`, `M1-P`, and `M2-R`.

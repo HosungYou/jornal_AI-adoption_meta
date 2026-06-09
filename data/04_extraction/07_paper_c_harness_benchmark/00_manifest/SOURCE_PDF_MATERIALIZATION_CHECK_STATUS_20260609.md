@@ -2,9 +2,10 @@
 
 Date: 2026-06-09
 
-Status: local materialization/readability remains blocked. This artifact does
-not authorize any additional model run, scoring rerun, accuracy result, or
-smaller-scope claim.
+Status: partial local materialization achieved after a Finder/OneDrive
+follow-up, but full-scope local materialization/readability remains blocked.
+This artifact does not authorize any additional model run, scoring rerun,
+accuracy result, or smaller-scope claim.
 
 ## What Was Checked
 
@@ -14,7 +15,7 @@ smaller-scope claim.
 - One-file CLI materialization route: attempted with `fileproviderctl materialize`; current system command surface returned usage output rather than materializing the file.
 - OneDrive File Provider inspection: the provider exposes `MarkPinned` / `MarkUnpinned` as File Provider context actions, but the available `fileproviderctl evaluate` command does not execute those custom actions.
 
-## Results
+## Initial Recheck Results
 
 | Check | Result |
 |---|---:|
@@ -34,6 +35,25 @@ the first-byte read probe times out for all 191 blocked studies. Because the
 current CLI surface cannot execute the OneDrive `MarkPinned` action, the next
 step has to use a OneDrive/Finder materialization action such as "Always Keep on
 This Device" on the archive folder or on the materialization batch files.
+
+Follow-up Finder/OneDrive attempt: clicking the Finder/OneDrive not-downloaded
+control for the main `PDFs` archive folder produced partial progress. The latest
+full snapshot after that attempt reports 16 text-extractable studies / 376
+target rows and 175 still-blocked studies / 1,649 target rows. Full-corpus model
+execution remains blocked.
+
+## Latest Follow-up Snapshot
+
+| Check | Result |
+|---|---:|
+| Full gap studies checked | 191 |
+| Full gap target rows checked | 2,025 |
+| `materialized_text_extractable` studies | 16 |
+| `materialized_text_extractable` target rows | 376 |
+| `not_materialized_or_read_timeout` studies | 175 |
+| `not_materialized_or_read_timeout` target rows | 1,649 |
+| Batch 01 materialized studies | 12 / 20 |
+| Batch 01 materialized target rows | 317 / 492 |
 
 ## Next Gate
 

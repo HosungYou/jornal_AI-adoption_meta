@@ -41,6 +41,12 @@ pinning as a context action, but the current CLI surface did not execute that
 action, so the next gate is a OneDrive/Finder "Always Keep on This Device"
 materialization step followed by checker and source-rendering reruns.
 
+A follow-up Finder/OneDrive attempt produced partial progress: 16 of the 191
+blocked studies, covering 376 of the 2,025 blocked target rows, became
+`materialized_text_extractable`. Full-corpus source rendering remains blocked
+because 175 studies / 1,649 target rows still return
+`not_materialized_or_read_timeout`.
+
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
@@ -58,6 +64,9 @@ Current pre-run planning artifacts:
 - `00_manifest/source_pdf_materialization_check_batch01_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_full_20260609.csv`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_CHECK_STATUS_20260609.md`
+- `00_manifest/source_pdf_materialization_check_batch01_after_finder_click_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_full_after_finder_click_20260609.csv`
+- `00_manifest/SOURCE_PDF_MATERIALIZATION_FINDER_ATTEMPT_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
 - `06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`

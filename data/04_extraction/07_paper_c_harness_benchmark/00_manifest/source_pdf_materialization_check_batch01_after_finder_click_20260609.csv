@@ -1,0 +1,21 @@
+study_id,batch_id,priority_rank,target_task_count,denominator_families,source_pdf_match_count,first_match_basename,magic_probe_status,magic_probe_bytes,magic_probe_is_pdf,text_probe_status,text_probe_chars_first_two_pages_capped,materialization_status,checked_at_utc,notes
+S121,PDFMAT-20260609-01,1,56,primary_direct_r_or_source_reported_correlation,1,S121.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S015,PDFMAT-20260609-01,2,30,primary_latent_or_construct_correlation_with_source_type_flag,1,S015.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S057,PDFMAT-20260609-01,3,28,primary_latent_or_construct_correlation_with_source_type_flag,1,S057.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S138,PDFMAT-20260609-01,4,28,primary_direct_r_or_source_reported_correlation,1,S138.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S157,PDFMAT-20260609-01,5,28,primary_direct_r_or_source_reported_correlation,1,S157.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out
+S176,PDFMAT-20260609-01,6,28,primary_latent_or_construct_correlation_with_source_type_flag,1,S176.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S004,PDFMAT-20260609-01,7,21,primary_latent_or_construct_correlation_with_source_type_flag,1,S004.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out
+S016,PDFMAT-20260609-01,8,21,primary_direct_r_or_source_reported_correlation,1,S016.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S025,PDFMAT-20260609-01,9,21,primary_latent_or_construct_correlation_with_source_type_flag,1,S025.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S030,PDFMAT-20260609-01,10,21,primary_latent_or_construct_correlation_with_source_type_flag,1,S030.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out
+S035,PDFMAT-20260609-01,11,21,primary_direct_r_or_source_reported_correlation,1,S035.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S036,PDFMAT-20260609-01,12,21,primary_direct_r_or_source_reported_correlation,1,S036.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out
+S048,PDFMAT-20260609-01,13,21,primary_direct_r_or_source_reported_correlation,1,S048.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S055,PDFMAT-20260609-01,14,21,primary_latent_or_construct_correlation_with_source_type_flag,1,S055.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S086,PDFMAT-20260609-01,15,21,primary_latent_or_construct_correlation_with_source_type_flag,1,S086.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S088,PDFMAT-20260609-01,16,21,primary_direct_r_or_source_reported_correlation,1,S088.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out
+S164,PDFMAT-20260609-01,17,21,primary_latent_or_construct_correlation_with_source_type_flag,1,S164.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:20:07Z,
+S173,PDFMAT-20260609-01,18,21,primary_latent_or_construct_correlation_with_source_type_flag,1,S173.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out
+S190,PDFMAT-20260609-01,19,21,primary_direct_r_or_source_reported_correlation,1,S190.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out
+S191,PDFMAT-20260609-01,20,21,secondary_beta_or_path_converted_effect_size,1,S191.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:20:07Z,first-byte read timed out

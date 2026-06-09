@@ -50,6 +50,11 @@ Batch 01 also returned `not_materialized_or_read_timeout` for all 20 checked
 studies. The next gate therefore remains OneDrive/Finder local materialization,
 not additional model execution.
 
+A later Finder/OneDrive attempt partially materialized the main `PDFs` archive:
+16 gap-manifest studies / 376 target rows became text-extractable, while 175
+studies / 1,649 target rows remained blocked. Continue materialization before
+any full-corpus source-rendered model run.
+
 ## Integrity
 
 - `source_pdf_materialization_gap_manifest_20260609.csv` sha256: `ed9013f3328b2f8b0c40411ce0ef575cfe5df9bcbeab35fc5006e32b0862c462`

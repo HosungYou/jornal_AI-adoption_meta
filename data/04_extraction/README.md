@@ -18,11 +18,12 @@ numbered folders below.
 
 ## Current Stage
 
-The project is currently between Step 3 adjudication and full-corpus Step 4
-freeze. Phase 2 returned workbooks are now preserved, and a scoped Step 4 freeze
-package has been prepared for the source-adjudicated Phase 2 high-priority
-decisions. This scoped package does not mean the full 213-study
-source-anchored adjudicated human reference standard is complete.
+The project is currently in the post-freeze Step 5 source-materialization gate
+after the full-corpus Step 4 freeze. The full 213-study source-anchored
+adjudicated human reference standard is frozen with caveats preserved, but
+full-corpus model runs and result claims remain blocked until source rendering
+coverage is clean for the intended target scope or a smaller-scope gate is
+explicitly authorized.
 
 - Step 1 is complete for Phase 1 raw coder packages.
 - Step 2 exists as the Phase 1 pairwise comparison workbook.
@@ -42,7 +43,8 @@ source-anchored adjudicated human reference standard is complete.
   source PDF materialization action package. No full-corpus model runs or
   result claims are authorized until source rendering coverage is clean for the
   intended target scope or a smaller-scope gate is explicitly authorized. The
-  current full materialization checker still reports 191/191 blocked studies as
+  current Finder/OneDrive materialization attempt has partially reduced the
+  blocker to 175 studies / 1,649 target rows that still report
   `not_materialized_or_read_timeout`.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for

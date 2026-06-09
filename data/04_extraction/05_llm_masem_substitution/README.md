@@ -143,6 +143,10 @@ The full 191-study checker now also returns `not_materialized_or_read_timeout`
 for all 191 studies after checking that the available CLI surface cannot execute
 the OneDrive `MarkPinned` context action. The next gate is local
 OneDrive/Finder materialization followed by checker and source-rendering reruns.
+A follow-up Finder/OneDrive attempt partially materialized the main PDF archive:
+16 studies / 376 target rows became `materialized_text_extractable`, while 175
+studies / 1,649 target rows remain blocked. This does not authorize full-corpus
+model execution or accuracy claims.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
