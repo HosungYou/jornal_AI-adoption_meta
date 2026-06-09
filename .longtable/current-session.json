@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "ai-adoption-meta-analysis-methodology-strategy-1779672509276",
   "createdAt": "2026-05-25T01:28:29.287Z",
-  "lastUpdatedAt": "2026-06-11T01:00:00Z",
+  "lastUpdatedAt": "2026-06-11T01:45:00Z",
   "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
   "projectPath": "/Users/hosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/jornal_AI-adoption_meta",
   "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-  "currentBlocker": "M1-R-BETA-PATH-CONTRACT-PROBE was executed and diagnostically scored on 2026-06-11, but full-corpus M1-R remains blocked. The probe confirmed source-directed raw beta recovery for most S009 rows while exposing reference-contract caveats, showed two S010 raw-beta plus Peterson-Brown converted-effect contract passes, preserved safe abstentions where explicit Nordic path evidence was insufficient, and left S009 FC-UB/source-reference QA unresolved.",
-  "nextAction": "Run a bounded source/reference QA pass for the beta/path contract before any larger M1-R shard: classify S009 rows whose beta_converted_peterson_brown label behaves like raw beta, resolve or explicitly caveat S009 FC-UB, and audit S010 source-packet/table completeness for the abstained Nordic paths while preserving the IPMA/importance exclusion rule.",
+  "currentBlocker": "A post-freeze 15-row S009/S010 beta/path exception-correction layer was created on 2026-06-11 without editing frozen reference files, but full-corpus M1-R remains blocked until the Step 5 scoring workflow explicitly consumes the layer. The layer excludes S009 raw-beta-confirmed contract caveats from the generic full-accuracy denominator, holds S009 FC-UB for manual source/reference adjudication, allows two S010 rows only under contract-aware converted-effect scoring, and excludes four S010 rows pending explicit structural path evidence or reference correction.",
+  "nextAction": "Wire the beta/path exception-correction layer into the Step 5 scoring workflow or scorer wrapper, then verify that affected S009/S010 rows are excluded or contract-aware-scored before any larger M1-R shard is run or interpreted.",
   "openQuestions": [
-    "Can the S009 beta_converted_peterson_brown rows be treated as reference-contract caveats without changing the frozen human values, or do they require a post-freeze reference QA correction layer?"
+    "Should the next scorer-wrapper implementation only annotate/exclude affected beta/path rows, or should it also compute contract-aware converted-effect scoring for eligible S010 rows in the same pass?"
   ],
   "requestedPerspectives": [
     "reviewer",
@@ -23,7 +23,7 @@
   "activeModes": [
     "explore"
   ],
-  "resumeHint": "Continue after the 2026-06-11 beta/path contract probe execution: full-corpus M1-R is still blocked. Next gate is bounded source/reference QA for S009 beta-conversion labels, S009 FC-UB, and S010 abstained Nordic path rows before any larger M1-R shard.",
+  "resumeHint": "Continue after the 2026-06-11 beta/path exception-correction layer: full-corpus M1-R is still blocked. Next gate is wiring the layer into the Step 5 scoring workflow or scorer wrapper before any larger shard.",
   "locale": "en",
-  "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_PROBE_STATUS_20260611.md"
+  "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_EXCEPTION_CORRECTION_LAYER_20260611.md"
 }
