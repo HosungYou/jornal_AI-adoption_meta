@@ -6,20 +6,20 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 
 ## Focus Now
 - Current goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.
-- Current blocker: M1-R-BETA-PATH-CONTRACT-PROBE is prepared but not executed. Full-corpus M1-R remains blocked pending this 15-row S009/S010 probe because the previous table-retrieval smoke exposed beta/path contract issues: source-directed paths must be separated from construct-pair order, raw source beta/path coefficients must be separated from Peterson-Brown converted effect values, IPMA/importance/total/indirect-effect tables must be rejected as path evidence, and S009 FC-UB/reference-contract caveats must remain explicit.
-- Next action: Authorize and run only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE with a specific model selector, budget, private source-packet directory, and suppressed committed source quotes; then score it with scripts/llm_scoring_20260606/score_beta_path_contract_probe.py before considering any larger M1-R shard.
+- Current blocker: M1-R-BETA-PATH-CONTRACT-PROBE was executed and diagnostically scored on 2026-06-11, but full-corpus M1-R remains blocked. The probe confirmed source-directed raw beta recovery for most S009 rows while exposing reference-contract caveats, showed two S010 raw-beta plus Peterson-Brown converted-effect contract passes, preserved safe abstentions where explicit Nordic path evidence was insufficient, and left S009 FC-UB/source-reference QA unresolved.
+- Next action: Run a bounded source/reference QA pass for the beta/path contract before any larger M1-R shard: classify S009 rows whose beta_converted_peterson_brown label behaves like raw beta, resolve or explicitly caveat S009 FC-UB, and audit S010 source-packet/table completeness for the abstained Nordic paths while preserving the IPMA/importance exclusion rule.
 - Perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist
 - Disagreement: show_on_conflict
 
 ## Open Questions
-- Which exact model selector, budget, and private source-packet run condition should be authorized for the 15-row M1-R beta/path contract probe?
+- Can the S009 beta_converted_peterson_brown rows be treated as reference-contract caveats without changing the frozen human values, or do they require a post-freeze reference QA correction layer?
 
 ## Restart Prompt
-- "Continue after the 2026-06-11 beta/path contract probe preparation: full-corpus M1-R is still blocked. The next gate is to authorize and execute only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE and score it with the contract-aware diagnostic scorer."
+- "Continue after the 2026-06-11 beta/path contract probe execution: full-corpus M1-R is still blocked. Next gate is bounded source/reference QA for S009 beta-conversion labels, S009 FC-UB, and S010 abstained Nordic path rows before any larger M1-R shard."
 
 ## Quick Start
 - Open `codex` in this directory.
-- A good first message is usually `lt explore: Which exact model selector, budget, and private source-packet run condition should be authorized for the 15-row M1-R beta/path contract probe?`.
+- A good first message is usually `lt explore: Can the S009 beta_converted_peterson_brown rows be treated as reference-contract caveats without changing the frozen human values, or do they require a post-freeze reference QA correction layer?`.
 
 ## Evidence Rule
 - External or current claims should carry a source link or be labeled as inference.

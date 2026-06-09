@@ -13,24 +13,24 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "M1-R-BETA-PATH-CONTRACT-PROBE is prepared but not executed. Full-corpus M1-R remains blocked pending this 15-row S009/S010 probe because the previous table-retrieval smoke exposed beta/path contract issues: source-directed paths must be separated from construct-pair order, raw source beta/path coefficients must be separated from Peterson-Brown converted effect values, IPMA/importance/total/indirect-effect tables must be rejected as path evidence, and S009 FC-UB/reference-contract caveats must remain explicit.",
-    "nextAction": "Authorize and run only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE with a specific model selector, budget, private source-packet directory, and suppressed committed source quotes; then score it with scripts/llm_scoring_20260606/score_beta_path_contract_probe.py before considering any larger M1-R shard.",
-    "resumeHint": "Continue after the 2026-06-11 beta/path contract probe preparation: full-corpus M1-R is still blocked. The next gate is to authorize and execute only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE and score it with the contract-aware diagnostic scorer.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_PROBE_PREP_20260611.md"
+    "currentBlocker": "M1-R-BETA-PATH-CONTRACT-PROBE was executed and diagnostically scored on 2026-06-11, but full-corpus M1-R remains blocked. The probe confirmed source-directed raw beta recovery for most S009 rows while exposing reference-contract caveats, showed two S010 raw-beta plus Peterson-Brown converted-effect contract passes, preserved safe abstentions where explicit Nordic path evidence was insufficient, and left S009 FC-UB/source-reference QA unresolved.",
+    "nextAction": "Run a bounded source/reference QA pass for the beta/path contract before any larger M1-R shard: classify S009 rows whose beta_converted_peterson_brown label behaves like raw beta, resolve or explicitly caveat S009 FC-UB, and audit S010 source-packet/table completeness for the abstained Nordic paths while preserving the IPMA/importance exclusion rule.",
+    "resumeHint": "Continue after the 2026-06-11 beta/path contract probe execution: full-corpus M1-R is still blocked. Next gate is bounded source/reference QA for S009 beta-conversion labels, S009 FC-UB, and S010 abstained Nordic path rows before any larger M1-R shard.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_PROBE_STATUS_20260611.md"
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "M1-R-BETA-PATH-CONTRACT-PROBE is prepared but not executed. Full-corpus M1-R remains blocked pending this 15-row S009/S010 probe because the previous table-retrieval smoke exposed beta/path contract issues: source-directed paths must be separated from construct-pair order, raw source beta/path coefficients must be separated from Peterson-Brown converted effect values, IPMA/importance/total/indirect-effect tables must be rejected as path evidence, and S009 FC-UB/reference-contract caveats must remain explicit.",
-    "nextAction": "Authorize and run only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE with a specific model selector, budget, private source-packet directory, and suppressed committed source quotes; then score it with scripts/llm_scoring_20260606/score_beta_path_contract_probe.py before considering any larger M1-R shard.",
+    "currentBlocker": "M1-R-BETA-PATH-CONTRACT-PROBE was executed and diagnostically scored on 2026-06-11, but full-corpus M1-R remains blocked. The probe confirmed source-directed raw beta recovery for most S009 rows while exposing reference-contract caveats, showed two S010 raw-beta plus Peterson-Brown converted-effect contract passes, preserved safe abstentions where explicit Nordic path evidence was insufficient, and left S009 FC-UB/source-reference QA unresolved.",
+    "nextAction": "Run a bounded source/reference QA pass for the beta/path contract before any larger M1-R shard: classify S009 rows whose beta_converted_peterson_brown label behaves like raw beta, resolve or explicitly caveat S009 FC-UB, and audit S010 source-packet/table completeness for the abstained Nordic paths while preserving the IPMA/importance exclusion rule.",
     "openQuestions": [
-      "Which exact model selector, budget, and private source-packet run condition should be authorized for the 15-row M1-R beta/path contract probe?"
+      "Can the S009 beta_converted_peterson_brown rows be treated as reference-contract caveats without changing the frozen human values, or do they require a post-freeze reference QA correction layer?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after the 2026-06-11 beta/path contract probe preparation: full-corpus M1-R is still blocked. The next gate is to authorize and execute only the 15-row M1-R-BETA-PATH-CONTRACT-PROBE and score it with the contract-aware diagnostic scorer.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_PROBE_PREP_20260611.md",
-    "lastUpdatedAt": "2026-06-11T00:30:00Z"
+    "resumeHint": "Continue after the 2026-06-11 beta/path contract probe execution: full-corpus M1-R is still blocked. Next gate is bounded source/reference QA for S009 beta-conversion labels, S009 FC-UB, and S010 abstained Nordic path rows before any larger M1-R shard.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_CONTRACT_PROBE_STATUS_20260611.md",
+    "lastUpdatedAt": "2026-06-11T01:00:00Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -340,6 +340,16 @@
       "summary": "Answered M1-R Beta/Path Contract Probe Schema: other: use source-directed path metadata plus separate raw_beta_value converted_effect_value and conversion_method fields; score with a diagnostic beta/path contract scorer rather than the generic full-accuracy scorer",
       "selectedOption": "other",
       "rationale": "The 2026-06-11 audit showed that S010 raw beta recovery is being scored against Peterson-Brown converted values and that several S009 rows behave like raw beta despite a beta_converted_peterson_brown label. The prepared probe avoids leakage by keeping human reference values out of prompts, uses source-directed paths instead of construct-pair order, preserves raw beta and converted effect fields in locked outputs, and keeps S009/FC-UB caveats out of full accuracy claims."
+    },
+    {
+      "id": "decision_mq78om5r_xs4iuk",
+      "timestamp": "2026-06-09T22:56:39.471Z",
+      "checkpointKey": "explore_runtime_guidance",
+      "level": "recommended",
+      "mode": "commit",
+      "summary": "Answered Run 15-row M1-R beta/path contract probe: other: authorize and execute the prepared 15-row M1-R-BETA-PATH-CONTRACT-PROBE only with codex:gpt-5.5, private table-retrieval source packets, suppressed committed source quotes, and contract-aware diagnostic scoring",
+      "selectedOption": "other",
+      "rationale": "The researcher asked to proceed with the next step. CURRENT.md identified the next gate as the 15-row beta/path contract probe, not full-corpus M1-R. The run was completed with CLI errors 0 and source quote policy violations 0, then scored diagnostically. Results show S009 raw recovery/reference-contract caveats, S010 two raw+converted contract-pass rows, four safe abstentions, and one unresolved source/reference QA row; full-corpus M1-R remains blocked."
     }
   ],
   "invocationLog": [],
@@ -1226,6 +1236,70 @@
         "surface": "numbered"
       },
       "decisionRecordId": "decision_mq782rjq_6kkfj2"
+    },
+    {
+      "id": "question_record_mq78ohsh_eko1j6",
+      "createdAt": "2026-06-09T22:56:33.809Z",
+      "updatedAt": "2026-06-09T22:56:39.471Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mq78ohsh_ksv1ej",
+        "checkpointKey": "explore_runtime_guidance",
+        "title": "Run 15-row M1-R beta/path contract probe",
+        "question": "Should Codex run the prepared 15-row M1-R beta/path contract probe as the next Step 5 gate?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "surface_tensions",
+            "label": "Surface tensions first",
+            "description": "Ask what is unresolved before narrowing the project."
+          },
+          {
+            "value": "narrow_scope",
+            "label": "Narrow the research scope",
+            "description": "Move toward a smaller question while keeping the choice visible."
+          },
+          {
+            "value": "gather_context",
+            "label": "Gather context before narrowing",
+            "description": "Check materials, constraints, or evidence before choosing a direction."
+          },
+          {
+            "value": "defer",
+            "label": "Keep exploration open",
+            "description": "Do not collapse the problem space yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": false,
+        "source": "checkpoint",
+        "rationale": [
+          "No strong checkpoint cue was detected; use runtime guidance without forcing closure.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: exploration.",
+          "Trigger confidence: low.",
+          "Original prompt: Researcher said to proceed with the next step. Record authorization and execution of the prepared 15-row M1-R-BETA-PATH-CONTRACT-PROBE only, not full-corpus M1-R."
+        ],
+        "preferredSurfaces": [
+          "numbered",
+          "native_structured"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mq78ohsh_ksv1ej",
+        "selectedValues": [
+          "other"
+        ],
+        "selectedLabels": [
+          "other: authorize and execute the prepared 15-row M1-R-BETA-PATH-CONTRACT-PROBE only with codex:gpt-5.5, private table-retrieval source packets, suppressed committed source quotes, and contract-aware diagnostic scoring"
+        ],
+        "otherText": "other: authorize and execute the prepared 15-row M1-R-BETA-PATH-CONTRACT-PROBE only with codex:gpt-5.5, private table-retrieval source packets, suppressed committed source quotes, and contract-aware diagnostic scoring",
+        "rationale": "The researcher asked to proceed with the next step. CURRENT.md identified the next gate as the 15-row beta/path contract probe, not full-corpus M1-R. The run was completed with CLI errors 0 and source quote policy violations 0, then scored diagnostically. Results show S009 raw recovery/reference-contract caveats, S010 two raw+converted contract-pass rows, four safe abstentions, and one unresolved source/reference QA row; full-corpus M1-R remains blocked.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mq78om5r_xs4iuk"
     }
   ],
   "artifactRecords": [],
