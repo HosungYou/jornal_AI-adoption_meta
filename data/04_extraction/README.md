@@ -44,8 +44,9 @@ explicitly authorized.
   result claims are authorized until source rendering coverage is clean for the
   intended target scope or a smaller-scope gate is explicitly authorized. The
   current Finder/OneDrive materialization attempt has partially reduced the
-  blocker to 175 studies / 1,649 target rows that still report
-  `not_materialized_or_read_timeout`.
+  blocker, and a later batch-focused follow-up shows Batch 02 clean and Batch
+  01 mostly clean. Batches 03-04 remain mostly blocked, so full-corpus model
+  execution remains unauthorized.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved

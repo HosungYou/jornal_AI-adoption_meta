@@ -55,6 +55,21 @@ execution remains blocked.
 | Batch 01 materialized studies | 12 / 20 |
 | Batch 01 materialized target rows | 317 / 492 |
 
+## Later Batch Follow-up
+
+A later batch-focused checker run found:
+
+- Batch 01: 16/20 studies and 401/492 target rows text-extractable; remaining
+  blockers are `S157`, `S036`, `S088`, and `S190`.
+- Batch 02: 20/20 studies and 306/306 target rows text-extractable.
+- Batch 03: 2/20 studies and 30/300 target rows text-extractable.
+- Batch 04: 1/20 studies and 14/208 target rows text-extractable.
+
+Across Batches 01-04, 39/80 studies and 751/1,306 target rows are
+text-extractable, while 41 studies / 555 target rows still return
+`not_materialized_or_read_timeout`. This is batch-focused evidence only; it does
+not replace a full 191-study checker snapshot.
+
 ## Next Gate
 
 After the OneDrive files are marked to stay local and finish downloading, rerun:

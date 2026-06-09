@@ -1,0 +1,21 @@
+study_id,batch_id,priority_rank,target_task_count,denominator_families,source_pdf_match_count,first_match_basename,magic_probe_status,magic_probe_bytes,magic_probe_is_pdf,text_probe_status,text_probe_chars_first_two_pages_capped,materialization_status,checked_at_utc,notes
+S126,PDFMAT-20260609-03,41,15,primary_direct_r_or_source_reported_correlation,1,S126.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S127,PDFMAT-20260609-03,42,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S127.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S128,PDFMAT-20260609-03,43,15,primary_direct_r_or_source_reported_correlation,1,S128.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S133,PDFMAT-20260609-03,44,15,primary_direct_r_or_source_reported_correlation,1,S133.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S137,PDFMAT-20260609-03,45,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S137.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S146,PDFMAT-20260609-03,46,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S146.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S153,PDFMAT-20260609-03,47,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S153.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S162,PDFMAT-20260609-03,48,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S162.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S163,PDFMAT-20260609-03,49,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S163.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S165,PDFMAT-20260609-03,50,15,primary_direct_r_or_source_reported_correlation,1,S165.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S171,PDFMAT-20260609-03,51,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S171.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S183,PDFMAT-20260609-03,52,15,secondary_beta_or_path_converted_effect_size,1,S183.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S186,PDFMAT-20260609-03,53,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S186.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S187,PDFMAT-20260609-03,54,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S187.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S193,PDFMAT-20260609-03,55,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S193.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S198,PDFMAT-20260609-03,56,15,primary_direct_r_or_source_reported_correlation,1,S198.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:48:31Z,
+S199,PDFMAT-20260609-03,57,15,primary_direct_r_or_source_reported_correlation,1,S199.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S200,PDFMAT-20260609-03,58,15,secondary_beta_or_path_converted_effect_size,1,S200.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T01:48:31Z,
+S214,PDFMAT-20260609-03,59,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S214.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out
+S221,PDFMAT-20260609-03,60,15,primary_latent_or_construct_correlation_with_source_type_flag,1,S221.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T01:48:31Z,first-byte read timed out

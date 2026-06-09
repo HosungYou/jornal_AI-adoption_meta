@@ -47,6 +47,12 @@ blocked studies, covering 376 of the 2,025 blocked target rows, became
 because 175 studies / 1,649 target rows still return
 `not_materialized_or_read_timeout`.
 
+A later batch-focused follow-up found that Batch 02 is now fully
+text-extractable and Batch 01 improved to 16/20 studies. Across Batches 01-04,
+39/80 studies and 751/1,306 target rows are text-extractable; 41 studies / 555
+target rows still return `not_materialized_or_read_timeout`. Full-corpus source
+rendering remains blocked.
+
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
@@ -67,6 +73,11 @@ Current pre-run planning artifacts:
 - `00_manifest/source_pdf_materialization_check_batch01_after_finder_click_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_full_after_finder_click_20260609.csv`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_FINDER_ATTEMPT_STATUS_20260609.md`
+- `00_manifest/source_pdf_materialization_check_batch01_followup_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch02_followup_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch03_followup_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch04_followup_20260609.csv`
+- `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH_FOLLOWUP_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
 - `06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`

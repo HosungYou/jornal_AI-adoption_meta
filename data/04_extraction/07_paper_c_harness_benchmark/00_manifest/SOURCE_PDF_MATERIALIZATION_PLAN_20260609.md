@@ -55,6 +55,12 @@ A later Finder/OneDrive attempt partially materialized the main `PDFs` archive:
 studies / 1,649 target rows remained blocked. Continue materialization before
 any full-corpus source-rendered model run.
 
+Batch follow-up: Batch 02 is now clean at 20/20 studies and 306/306 target
+rows. Batch 01 improved to 16/20 studies and 401/492 target rows, with `S157`,
+`S036`, `S088`, and `S190` still blocked. Batches 03-04 remain mostly blocked
+at 3/40 studies and 44/508 target rows text-extractable. Continue targeted
+materialization for the remaining Batch 01 blockers, then Batches 03-04.
+
 ## Integrity
 
 - `source_pdf_materialization_gap_manifest_20260609.csv` sha256: `ed9013f3328b2f8b0c40411ce0ef575cfe5df9bcbeab35fc5006e32b0862c462`

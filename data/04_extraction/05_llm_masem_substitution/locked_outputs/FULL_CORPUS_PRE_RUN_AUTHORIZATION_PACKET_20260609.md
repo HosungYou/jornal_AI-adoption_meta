@@ -161,3 +161,9 @@ Finder/OneDrive follow-up: after starting OneDrive and clicking the Finder
 not-downloaded control for the main `PDFs` archive folder, 16 studies / 376
 target rows became text-extractable. The remaining 175 studies / 1,649 target
 rows still block full-corpus `M1-R`, `M1-P`, and `M2-R`.
+
+Batch follow-up: Batch 02 is now fully text-extractable, and Batch 01 improved
+to 16/20 studies. Across Batches 01-04, 39/80 studies and 751/1,306 target rows
+are text-extractable, but 41 studies / 555 rows still return
+`not_materialized_or_read_timeout`. This does not authorize any full-corpus
+model execution.

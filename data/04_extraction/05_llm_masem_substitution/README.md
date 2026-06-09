@@ -148,6 +148,11 @@ A follow-up Finder/OneDrive attempt partially materialized the main PDF archive:
 studies / 1,649 target rows remain blocked. This does not authorize full-corpus
 model execution or accuracy claims.
 
+A later batch-focused follow-up found Batch 02 clean at 20/20 studies and
+306/306 target rows, while Batch 01 improved to 16/20 studies and 401/492 target
+rows. Batches 03-04 remain mostly blocked, so full-corpus model execution and
+accuracy claims remain unauthorized.
+
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from

@@ -13,23 +13,23 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "Partial source PDF materialization has been achieved after a Finder/OneDrive attempt (16/191 gap studies and 376/2,025 target rows text-extractable), but 175 studies / 1,649 target rows still return not_materialized_or_read_timeout and the archive folder keep-local state did not remain stable. Full-corpus M1-R/M1-P/M2-R remains blocked.",
-    "nextAction": "Continue OneDrive/Finder materialization for the remaining high-yield Batch 01 studies (S157, S004, S030, S036, S088, S173, S190, S191), then Batch 02. Rerun check_source_pdf_materialization.py and the full source-rendering coverage audit only after clean intended-scope coverage; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
-    "resumeHint": "Continue after the Finder/OneDrive source PDF materialization attempt. The current full snapshot source_pdf_materialization_check_full_after_finder_click_20260609.csv has 16/191 studies and 376/2,025 target rows text-extractable, with 175 studies / 1,649 rows still timing out; do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean."
+    "currentBlocker": "Batch-focused source PDF materialization improved but remains incomplete: Batch 02 is clean (20/20 studies, 306/306 rows), Batch 01 is 16/20 studies and 401/492 rows text-extractable with S157/S036/S088/S190 still blocked, and Batches 03-04 remain mostly blocked. Full-corpus M1-R/M1-P/M2-R remains blocked.",
+    "nextAction": "Target local materialization for the four remaining Batch 01 blockers (S157, S036, S088, S190), then continue Batches 03-04. Rerun the batch checker after materialization and rerun the full 191-study checker/source-rendering coverage only after enough intended-scope coverage is clean; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
+    "resumeHint": "Continue after the Batches 01-04 source PDF materialization follow-up. Batch 02 is clean; Batch 01 has four blockers (S157, S036, S088, S190); Batches 03-04 remain mostly blocked. Do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean."
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "Partial source PDF materialization has been achieved after a Finder/OneDrive attempt (16/191 gap studies and 376/2,025 target rows text-extractable), but 175 studies / 1,649 target rows still return not_materialized_or_read_timeout and the archive folder keep-local state did not remain stable. Full-corpus M1-R/M1-P/M2-R remains blocked.",
-    "nextAction": "Continue OneDrive/Finder materialization for the remaining high-yield Batch 01 studies (S157, S004, S030, S036, S088, S173, S190, S191), then Batch 02. Rerun check_source_pdf_materialization.py and the full source-rendering coverage audit only after clean intended-scope coverage; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
+    "currentBlocker": "Batch-focused source PDF materialization improved but remains incomplete: Batch 02 is clean (20/20 studies, 306/306 rows), Batch 01 is 16/20 studies and 401/492 rows text-extractable with S157/S036/S088/S190 still blocked, and Batches 03-04 remain mostly blocked. Full-corpus M1-R/M1-P/M2-R remains blocked.",
+    "nextAction": "Target local materialization for the four remaining Batch 01 blockers (S157, S036, S088, S190), then continue Batches 03-04. Rerun the batch checker after materialization and rerun the full 191-study checker/source-rendering coverage only after enough intended-scope coverage is clean; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
     "openQuestions": [
-      "Can the remaining Batch 01 PDFs and then Batch 02 be kept local long enough to reach clean intended-scope source rendering coverage?"
+      "Can S157, S036, S088, and S190 be kept local, and can Batches 03-04 be materialized enough to support clean intended-scope source rendering coverage?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after the Finder/OneDrive source PDF materialization attempt. The current full snapshot source_pdf_materialization_check_full_after_finder_click_20260609.csv has 16/191 studies and 376/2,025 target rows text-extractable, with 175 studies / 1,649 rows still timing out; do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean.",
-    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_FINDER_ATTEMPT_STATUS_20260609.md",
-    "lastUpdatedAt": "2026-06-09T01:24:00.000Z"
+    "resumeHint": "Continue after the Batches 01-04 source PDF materialization follow-up. Batch 02 is clean; Batch 01 has four blockers (S157, S036, S088, S190); Batches 03-04 remain mostly blocked. Do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean.",
+    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH_FOLLOWUP_STATUS_20260609.md",
+    "lastUpdatedAt": "2026-06-09T02:10:00.000Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -216,6 +216,16 @@
       "summary": "Recorded partial Finder/OneDrive source PDF materialization and preserved the full-corpus model-run block.",
       "selectedOption": "continue_materialization_before_model_execution",
       "rationale": "Researcher instructed Codex to proceed with the next task. Codex started OneDrive, used Finder on the main PDF archive, and reran share-safe materialization checks. The attempt made 16 studies / 376 target rows text-extractable, but 175 studies / 1,649 target rows remained blocked and the keep-local state was unstable, so no additional model run or result claim was authorized."
+    },
+    {
+      "id": "decision_source_pdf_materialization_batch_followup_20260609",
+      "timestamp": "2026-06-09T02:10:00.000Z",
+      "checkpointKey": "post_freeze_source_pdf_materialization_batch_followup",
+      "level": "workflow_gate",
+      "mode": "commit",
+      "summary": "Recorded Batches 01-04 source PDF materialization follow-up and preserved the full-corpus model-run block.",
+      "selectedOption": "continue_targeted_materialization_before_model_execution",
+      "rationale": "Researcher instructed Codex to proceed with the next task. Codex reran share-safe materialization checks for Batches 01-04. Batch 02 was clean, Batch 01 improved but retained four blockers, and Batches 03-04 remained mostly blocked, so no additional model run or result claim was authorized."
     }
   ],
   "invocationLog": [],
