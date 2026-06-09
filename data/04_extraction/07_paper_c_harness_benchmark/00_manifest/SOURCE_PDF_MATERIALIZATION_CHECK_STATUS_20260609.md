@@ -91,10 +91,23 @@ After OneDrive was restarted again, the four-file checker reported `S157`,
 `S036`, `S088`, and `S190` as `materialized_text_extractable`. The full Batch
 01 checker now reports 20/20 studies and 492/492 target rows text-extractable.
 
+## Batch 03-04 Follow-up
+
+After the Batch 01 clearing step, Batches 03-04 were rerun while OneDrive was
+active. Batch 03 remained blocked at 2/20 studies and 30/300 target rows
+text-extractable. Batch 04 improved across repeated wait-based checker reruns
+and ultimately cleared at 20/20 studies and 208/208 target rows
+text-extractable.
+
+Across Batches 01-04, 62/80 studies and 1,036/1,306 target rows are now
+text-extractable. The remaining blocker within these four priority batches is
+Batch 03: 18 studies / 270 target rows still return
+`not_materialized_or_read_timeout`.
+
 ## Next Gate
 
-Continue targeted materialization for Batches 03-04, then rerun the relevant
-batch checker. For example:
+Continue targeted materialization for the remaining Batch 03 blockers, then
+rerun the relevant batch checker. For example:
 
 ```bash
 python3 scripts/llm_scoring_20260606/check_source_pdf_materialization.py \

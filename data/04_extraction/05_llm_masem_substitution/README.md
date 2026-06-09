@@ -157,8 +157,12 @@ Finder/OneDrive download requests were then submitted for the four remaining
 Batch 01 blockers (`S157`, `S036`, `S088`, `S190`). `S157` and `S190`
 subsequently became text-extractable, and after OneDrive was restarted again
 `S036` and `S088` also became text-extractable. Batch 01 is now clean at 20/20
-studies and 492/492 target rows. Batches 03-04 remain mostly blocked, so this
-does not authorize model execution.
+studies and 492/492 target rows.
+
+Batch 04 subsequently cleared after repeated wait-based checker reruns while
+OneDrive was active. Across Batches 01-04, 62/80 studies and 1,036/1,306 target
+rows are text-extractable; Batch 03 remains blocked at 18 studies / 270 target
+rows. This does not authorize model execution.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should

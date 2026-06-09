@@ -178,5 +178,8 @@ rows. This did not authorize any full-corpus model execution.
 
 OneDrive restart follow-up: after OneDrive was restarted again, `S036` and
 `S088` also became `materialized_text_extractable`. Batch 01 is now clean at
-20/20 studies and 492/492 target rows. Batches 03-04 remain mostly blocked, so
-this still does not authorize any full-corpus model execution.
+20/20 studies and 492/492 target rows. Batch 04 subsequently cleared after
+repeated wait-based checker reruns while OneDrive was active. Across Batches
+01-04, 62/80 studies and 1,036/1,306 target rows are text-extractable; Batch 03
+remains blocked at 18 studies / 270 target rows. This still does not authorize
+any full-corpus model execution.

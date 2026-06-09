@@ -62,8 +62,13 @@ Batch 01 was then 18/20 studies and 450/492 target rows text-extractable, with
 
 After OneDrive was restarted again, `S036` and `S088` also became
 `materialized_text_extractable`. Batch 01 is now clean at 20/20 studies and
-492/492 target rows. Full-corpus source rendering remains blocked because
-Batches 03-04 remain mostly blocked.
+492/492 target rows. Full-corpus source rendering remained blocked because
+Batches 03-04 still needed follow-up.
+
+Batch 04 subsequently cleared after repeated wait-based checker reruns while
+OneDrive was active. Across Batches 01-04, 62/80 studies and 1,036/1,306 target
+rows are text-extractable. Batch 03 remains the only blocker within these four
+priority batches at 18 studies / 270 target rows.
 
 Current reference pointer:
 
@@ -98,6 +103,12 @@ Current pre-run planning artifacts:
 - `00_manifest/source_pdf_materialization_check_batch01_after_blocker_requests_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_batch01_blockers_after_onedrive_restart_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_batch01_after_onedrive_restart_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch03_after_onedrive_restart_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch03_after_onedrive_restart_wait_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch04_after_onedrive_restart_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch04_after_onedrive_restart_wait_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch04_after_onedrive_restart_wait2_20260609.csv`
+- `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_04_FOLLOWUP_STATUS_20260609.md`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH01_BLOCKER_REQUEST_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`

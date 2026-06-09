@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "ai-adoption-meta-analysis-methodology-strategy-1779672509276",
   "createdAt": "2026-05-25T01:28:29.287Z",
-  "lastUpdatedAt": "2026-06-09T03:05:00.000Z",
+  "lastUpdatedAt": "2026-06-09T03:25:00.000Z",
   "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
   "projectPath": "/Users/hosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/jornal_AI-adoption_meta",
   "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-  "currentBlocker": "Batch 01 source PDF materialization is now clean at 20/20 studies and 492/492 rows after OneDrive restart. Full-corpus M1-R/M1-P/M2-R remains blocked because Batches 03-04 are still mostly not_materialized_or_read_timeout and intended-scope source rendering coverage is not clean.",
-  "nextAction": "Continue targeted local materialization for Batches 03-04, rerun the relevant batch checkers, and only then rerun full source-rendering coverage. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
+  "currentBlocker": "Batches 01, 02, and 04 are now clean across the first four source PDF materialization priority batches. Batch 03 remains blocked at 18/20 studies and 270/300 rows not_materialized_or_read_timeout; full-corpus M1-R/M1-P/M2-R remains blocked because intended-scope source rendering coverage is not clean.",
+  "nextAction": "Target local materialization for the 18 remaining Batch 03 studies, rerun the Batch 03 checker, and only then rerun full source-rendering coverage. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
   "openQuestions": [
-    "Can Batches 03-04 be locally materialized through OneDrive restart/Finder requests, or do remaining OneDrive sync issues require manual repair before full source rendering coverage can clear?"
+    "Can the 18 remaining Batch 03 studies be locally materialized through OneDrive/Finder requests, or do they require manual OneDrive sync repair before the first four priority batches can clear?"
   ],
   "requestedPerspectives": [
     "reviewer",
@@ -23,7 +23,7 @@
   "activeModes": [
     "explore"
   ],
-  "resumeHint": "Continue after Batch 01 materialization cleared. Batch 01 is 20/20 studies and 492/492 rows text-extractable; Batches 03-04 remain mostly blocked; full-corpus M1-R/M1-P/M2-R remains blocked.",
+  "resumeHint": "Continue after Batches 01, 02, and 04 are clean. Batch 03 remains 2/20 studies and 30/300 rows text-extractable, with 18 studies / 270 rows blocked; full-corpus M1-R/M1-P/M2-R remains blocked.",
   "locale": "en",
-  "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH01_BLOCKER_REQUEST_STATUS_20260609.md"
+  "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_04_FOLLOWUP_STATUS_20260609.md"
 }

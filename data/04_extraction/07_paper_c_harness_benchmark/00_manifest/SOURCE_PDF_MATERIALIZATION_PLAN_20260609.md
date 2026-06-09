@@ -74,6 +74,12 @@ OneDrive restart follow-up: after OneDrive was restarted again, `S036` and
 492/492 target rows. Continue targeted materialization for Batches 03-04 before
 any full-corpus source-rendered model run.
 
+Batches 03-04 follow-up: while OneDrive was active, Batch 04 improved and then
+cleared across repeated wait-based checker reruns. Batch 03 remained blocked at
+2/20 studies and 30/300 target rows text-extractable. Across Batches 01-04,
+62/80 studies and 1,036/1,306 target rows are now text-extractable. The next
+gate is targeted local materialization for the 18 remaining Batch 03 studies.
+
 ## Integrity
 
 - `source_pdf_materialization_gap_manifest_20260609.csv` sha256: `ed9013f3328b2f8b0c40411ce0ef575cfe5df9bcbeab35fc5006e32b0862c462`
