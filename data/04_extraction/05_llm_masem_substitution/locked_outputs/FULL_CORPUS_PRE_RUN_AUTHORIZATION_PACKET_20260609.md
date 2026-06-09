@@ -167,3 +167,11 @@ to 16/20 studies. Across Batches 01-04, 39/80 studies and 751/1,306 target rows
 are text-extractable, but 41 studies / 555 rows still return
 `not_materialized_or_read_timeout`. This does not authorize any full-corpus
 model execution.
+
+Batch 01 blocker request follow-up: download requests were submitted through
+Finder/OneDrive for `S157`, `S036`, `S088`, and `S190`. After partial OneDrive
+completion, `S157` and `S190` became `materialized_text_extractable`, while
+`S036` and `S088` still return `not_materialized_or_read_timeout`. Batch 01 is
+now 18/20 studies and 450/492 target rows text-extractable; the remaining Batch
+01 blocker is 2 studies / 42 target rows. This does not authorize any
+full-corpus model execution.

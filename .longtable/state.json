@@ -13,23 +13,23 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "Batch-focused source PDF materialization improved but remains incomplete: Batch 02 is clean (20/20 studies, 306/306 rows), Batch 01 is 16/20 studies and 401/492 rows text-extractable with S157/S036/S088/S190 still blocked, and Batches 03-04 remain mostly blocked. Full-corpus M1-R/M1-P/M2-R remains blocked.",
-    "nextAction": "Target local materialization for the four remaining Batch 01 blockers (S157, S036, S088, S190), then continue Batches 03-04. Rerun the batch checker after materialization and rerun the full 191-study checker/source-rendering coverage only after enough intended-scope coverage is clean; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
-    "resumeHint": "Continue after the Batches 01-04 source PDF materialization follow-up. Batch 02 is clean; Batch 01 has four blockers (S157, S036, S088, S190); Batches 03-04 remain mostly blocked. Do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean."
+    "currentBlocker": "Batch 01 blocker requests partially completed: S157 and S190 are now materialized_text_extractable, while S036 and S088 still return not_materialized_or_read_timeout. Batch 01 is now 18/20 studies and 450/492 rows text-extractable; full-corpus M1-R/M1-P/M2-R remains blocked.",
+    "nextAction": "Make S036 and S088 locally readable, rerun the four-file checker and full Batch 01 checker, then continue targeted materialization for Batches 03-04. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
+    "resumeHint": "Continue after Batch 01 blocker requests partially completed. S157/S190 are materialized_text_extractable; S036/S088 still return not_materialized_or_read_timeout. Batch 01 is 18/20 studies and 450/492 rows; full-corpus M1-R/M1-P/M2-R remains blocked."
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "Batch-focused source PDF materialization improved but remains incomplete: Batch 02 is clean (20/20 studies, 306/306 rows), Batch 01 is 16/20 studies and 401/492 rows text-extractable with S157/S036/S088/S190 still blocked, and Batches 03-04 remain mostly blocked. Full-corpus M1-R/M1-P/M2-R remains blocked.",
-    "nextAction": "Target local materialization for the four remaining Batch 01 blockers (S157, S036, S088, S190), then continue Batches 03-04. Rerun the batch checker after materialization and rerun the full 191-study checker/source-rendering coverage only after enough intended-scope coverage is clean; do not run additional model conditions or make accuracy/MASEM substitution claims before that gate clears.",
+    "currentBlocker": "Batch 01 blocker requests partially completed: S157 and S190 are now materialized_text_extractable, while S036 and S088 still return not_materialized_or_read_timeout. Batch 01 is now 18/20 studies and 450/492 rows text-extractable; full-corpus M1-R/M1-P/M2-R remains blocked.",
+    "nextAction": "Make S036 and S088 locally readable, rerun the four-file checker and full Batch 01 checker, then continue targeted materialization for Batches 03-04. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
     "openQuestions": [
-      "Can S157, S036, S088, and S190 be kept local, and can Batches 03-04 be materialized enough to support clean intended-scope source rendering coverage?"
+      "Can S036 and S088 be kept local/readable, or does OneDrive sync need manual repair before Batch 01 can clear?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after the Batches 01-04 source PDF materialization follow-up. Batch 02 is clean; Batch 01 has four blockers (S157, S036, S088, S190); Batches 03-04 remain mostly blocked. Do not run full-corpus M1-R/M1-P/M2-R until materialization and source-rendering coverage are clean.",
-    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH_FOLLOWUP_STATUS_20260609.md",
-    "lastUpdatedAt": "2026-06-09T02:10:00.000Z"
+    "resumeHint": "Continue after Batch 01 blocker requests partially completed. S157/S190 are materialized_text_extractable; S036/S088 still return not_materialized_or_read_timeout. Batch 01 is 18/20 studies and 450/492 rows; full-corpus M1-R/M1-P/M2-R remains blocked.",
+    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH01_BLOCKER_REQUEST_STATUS_20260609.md",
+    "lastUpdatedAt": "2026-06-09T02:45:00.000Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -226,6 +226,16 @@
       "summary": "Recorded Batches 01-04 source PDF materialization follow-up and preserved the full-corpus model-run block.",
       "selectedOption": "continue_targeted_materialization_before_model_execution",
       "rationale": "Researcher instructed Codex to proceed with the next task. Codex reran share-safe materialization checks for Batches 01-04. Batch 02 was clean, Batch 01 improved but retained four blockers, and Batches 03-04 remained mostly blocked, so no additional model run or result claim was authorized."
+    },
+    {
+      "id": "decision_source_pdf_materialization_batch01_blocker_request_20260609",
+      "timestamp": "2026-06-09T02:45:00.000Z",
+      "checkpointKey": "post_freeze_source_pdf_materialization_batch01_blocker_request",
+      "level": "workflow_gate",
+      "mode": "commit",
+      "summary": "Recorded Batch 01 blocker partial completion and preserved the full-corpus model-run block.",
+      "selectedOption": "continue_targeted_materialization_before_model_execution",
+      "rationale": "Researcher instructed Codex to proceed. Codex submitted Finder/OneDrive download requests for S157, S036, S088, and S190, reran share-safe checks, and found partial completion: S157 and S190 became materialized_text_extractable, while S036 and S088 remained not_materialized_or_read_timeout. Batch 01 is now 18/20 studies and 450/492 rows text-extractable, so no additional model run or result claim is authorized."
     }
   ],
   "invocationLog": [],

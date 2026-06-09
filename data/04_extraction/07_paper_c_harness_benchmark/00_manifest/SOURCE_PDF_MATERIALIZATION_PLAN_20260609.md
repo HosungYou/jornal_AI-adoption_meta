@@ -61,6 +61,15 @@ rows. Batch 01 improved to 16/20 studies and 401/492 target rows, with `S157`,
 at 3/40 studies and 44/508 target rows text-extractable. Continue targeted
 materialization for the remaining Batch 01 blockers, then Batches 03-04.
 
+Batch 01 blocker request follow-up: Finder/OneDrive download requests were
+submitted for `S157`, `S036`, `S088`, and `S190`. The immediate post-wait
+checker still reported 4/4 `not_materialized_or_read_timeout`, but a final
+probe after partial OneDrive completion found `S157` and `S190`
+text-extractable. Batch 01 is now 18/20 studies and 450/492 target rows
+text-extractable; `S036` and `S088` remain blocked at 42 target rows. The next
+gate is to make `S036` and `S088` locally readable, rerun the four-file checker
+and Batch 01 checker, then continue Batches 03-04.
+
 ## Integrity
 
 - `source_pdf_materialization_gap_manifest_20260609.csv` sha256: `ed9013f3328b2f8b0c40411ce0ef575cfe5df9bcbeab35fc5006e32b0862c462`

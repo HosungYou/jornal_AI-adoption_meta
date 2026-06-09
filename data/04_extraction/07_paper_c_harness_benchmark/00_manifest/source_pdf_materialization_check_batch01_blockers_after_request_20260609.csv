@@ -1,0 +1,5 @@
+study_id,batch_id,priority_rank,target_task_count,denominator_families,source_pdf_match_count,first_match_basename,magic_probe_status,magic_probe_bytes,magic_probe_is_pdf,text_probe_status,text_probe_chars_first_two_pages_capped,materialization_status,checked_at_utc,notes
+S157,PDFMAT-20260609-01,5,28,primary_direct_r_or_source_reported_correlation,1,S157.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T02:12:55Z,first-byte read timed out
+S036,PDFMAT-20260609-01,12,21,primary_direct_r_or_source_reported_correlation,1,S036.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T02:12:55Z,first-byte read timed out
+S088,PDFMAT-20260609-01,16,21,primary_direct_r_or_source_reported_correlation,1,S088.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T02:12:55Z,first-byte read timed out
+S190,PDFMAT-20260609-01,19,21,primary_direct_r_or_source_reported_correlation,1,S190.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T02:12:55Z,first-byte read timed out

@@ -46,7 +46,9 @@ explicitly authorized.
   current Finder/OneDrive materialization attempt has partially reduced the
   blocker, and a later batch-focused follow-up shows Batch 02 clean and Batch
   01 mostly clean. Batches 03-04 remain mostly blocked, so full-corpus model
-  execution remains unauthorized.
+  execution remains unauthorized. Finder/OneDrive download requests partially
+  cleared the remaining Batch 01 blockers: `S157` and `S190` are now
+  text-extractable, while `S036` and `S088` still time out.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved
