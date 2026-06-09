@@ -8,6 +8,7 @@ import csv
 import re
 import subprocess
 from pathlib import Path
+import shutil
 from tempfile import NamedTemporaryFile
 
 REPO = Path(__file__).resolve().parents[2]
@@ -135,21 +136,33 @@ def main() -> None:
         ],
     )
 
-    score_cmd = [
-        "python3",
-        str(args.score_script),
-        "--reference",
-        str(temp_reference),
-        "--manifest",
-        str(args.manifest),
-        "--output-dir",
-        str(args.output_dir),
-        "--scored-output",
-        str(scored_output),
-        "--summary-output",
-        str(summary_output),
-    ]
-    subprocess.run(score_cmd, check=True)
+    status_path = args.output_dir / "SCORING_STATUS_20260606.md"
+    status_backup = None
+    if status_path.exists():
+        status_backup = status_path.with_suffix(".backup_20260611.md")
+        shutil.copy2(status_path, status_backup)
+
+    try:
+        score_cmd = [
+            "python3",
+            str(args.score_script),
+            "--reference",
+            str(temp_reference),
+            "--manifest",
+            str(args.manifest),
+            "--output-dir",
+            str(args.output_dir),
+            "--scored-output",
+            str(scored_output),
+            "--summary-output",
+            str(summary_output),
+        ]
+        subprocess.run(score_cmd, check=True)
+    finally:
+        if status_backup and status_backup.exists():
+            shutil.move(status_backup, status_path)
+        elif status_path.exists():
+            status_path.unlink(missing_ok=True)
 
     layer_rows = read_csv(args.exception_layer)
     layer_task_ids = {row["task_unit_id"] for row in layer_rows if row.get("task_unit_id")}
