@@ -1,0 +1,4 @@
+study_id,batch_id,priority_rank,target_task_count,denominator_families,source_pdf_match_count,first_match_basename,magic_probe_status,magic_probe_bytes,magic_probe_is_pdf,text_probe_status,text_probe_chars_first_two_pages_capped,materialization_status,checked_at_utc,notes
+S003,PDFMAT-20260609-04,64,10,primary_direct_r_or_source_reported_correlation,1,S003.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T07:05:26Z,
+S009,PDFMAT-20260609-06,109,9,secondary_beta_or_path_converted_effect_size,1,S009.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T07:05:26Z,
+S010,PDFMAT-20260609-07,121,6,secondary_beta_or_path_converted_effect_size,1,S010.pdf,ok,4096,true,text_extractable,2000,materialized_text_extractable,2026-06-09T07:05:26Z,

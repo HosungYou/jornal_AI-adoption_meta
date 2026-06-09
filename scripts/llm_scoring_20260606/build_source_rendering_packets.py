@@ -14,10 +14,19 @@ from pathlib import Path
 
 
 REPO = Path(__file__).resolve().parents[2]
+PROJECT_DOCS_ROOT = REPO.parents[1]
 STEP5 = REPO / "data/04_extraction/05_llm_masem_substitution"
 PAPER_C = REPO / "data/04_extraction/07_paper_c_harness_benchmark"
 DEFAULT_TEMPLATE = STEP5 / "locked_outputs/full_corpus_locked_output_template_20260609.csv"
-DEFAULT_SOURCE_PDF_DIRS = [REPO / "data/04_extraction/03_source_document_adjudication/source_pdfs"]
+DEFAULT_SOURCE_PDF_DIRS = [
+    REPO / "data/04_extraction/03_source_document_adjudication/source_pdfs",
+    PROJECT_DOCS_ROOT / "Meta/AI Adoption/PDFs",
+    PROJECT_DOCS_ROOT / "Meta/AI Adoption/R1/PDFs",
+    PROJECT_DOCS_ROOT / "Meta/AI Adoption/R2/PDFs",
+    PROJECT_DOCS_ROOT / "Meta/AI Adoption/R3/PDFs",
+    PROJECT_DOCS_ROOT / "Meta/AI Adoption/R4/PDFs",
+    PROJECT_DOCS_ROOT / "Meta/source_pdfs/table36_62",
+]
 DEFAULT_PRIVATE_OUTPUT_DIR = PAPER_C / "private/source_renderings_20260609/source_packets"
 DEFAULT_MANIFEST_OUTPUT = PAPER_C / "00_manifest/source_rendering_available_pdf_manifest_20260609.csv"
 DEFAULT_SMOKE_TASK_OUTPUT = PAPER_C / "06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv"
@@ -29,6 +38,15 @@ class Chunk:
     doc_ref: str
     page: int
     chunk_index: int
+    text: str
+    score: int
+
+
+@dataclass
+class TableBlock:
+    doc_ref: str
+    page: int
+    table_index: int
     text: str
     score: int
 
@@ -58,6 +76,11 @@ def task_terms(rows: list[dict[str, str]]) -> set[str]:
     terms = {
         "correlation",
         "correlations",
+        "flc",
+        "fornell",
+        "fornell-larcker",
+        "discriminant",
+        "validity",
         "path",
         "coefficient",
         "coefficients",
@@ -79,7 +102,20 @@ def task_terms(rows: list[dict[str, str]]) -> set[str]:
         terms.update(term.lower() for term in re.findall(r"\bT[0-9]\b", text))
         for pair in re.findall(r"\b[A-Z]{2,5}-[A-Z]{2,5}\b", text):
             terms.update(part.lower() for part in pair.split("-"))
-    return {term for term in terms if len(term) >= 2}
+    abbreviation_terms = {
+        "att": ["attitude", "attitudes"],
+        "bi": ["behavioral intention", "behavioural intention", "intention"],
+        "ee": ["effort expectancy", "ease of use", "perceived ease"],
+        "fc": ["facilitating condition", "facilitating conditions"],
+        "hm": ["hedonic motivation"],
+        "pe": ["performance expectancy", "perceived performance", "usefulness"],
+        "si": ["social influence"],
+        "ub": ["use behavior", "usage behavior", "use behaviour", "adoption"],
+    }
+    expanded_terms = set(terms)
+    for term in terms:
+        expanded_terms.update(abbreviation_terms.get(term, []))
+    return {term for term in expanded_terms if len(term) >= 2}
 
 
 def score_chunk(text: str, terms: set[str]) -> int:
@@ -88,7 +124,17 @@ def score_chunk(text: str, terms: set[str]) -> int:
     for term in terms:
         if term in lowered:
             score += 3 if len(term) <= 3 else 1
-    for high_value in ("table", "path coefficient", "direct effect", "hypothesis", "structural model"):
+    for high_value in (
+        "table",
+        "flc",
+        "fornell",
+        "fornell-larcker",
+        "path coefficient",
+        "path coefficients",
+        "direct effect",
+        "hypothesis",
+        "structural model",
+    ):
         if high_value in lowered:
             score += 5
     return score
@@ -132,9 +178,82 @@ def extract_pdf_chunks(pdf_path: Path, doc_ref: str, terms: set[str], max_chunk_
     return chunks
 
 
-def build_packet(study_id: str, chunks: list[Chunk], rows: list[dict[str, str]], max_packet_chars: int) -> tuple[str, int]:
-    selected: list[Chunk] = []
+def format_table(table: list[list[str | None]]) -> str:
+    lines = []
+    for row_index, row in enumerate(table, start=1):
+        cells = [normalize_text(cell or "") for cell in row]
+        if any(cells):
+            lines.append(f"row {row_index}: " + " | ".join(cells))
+    return "\n".join(lines)
+
+
+def extract_pdf_tables(pdf_path: Path, doc_ref: str, terms: set[str]) -> list[TableBlock]:
+    try:
+        import pdfplumber
+    except ImportError as exc:
+        raise SystemExit("pdfplumber is required to build source-rendering packets") from exc
+
+    table_blocks: list[TableBlock] = []
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_index, page in enumerate(pdf.pages, start=1):
+            try:
+                tables = page.extract_tables() or []
+            except Exception:
+                tables = []
+            for table_index, table in enumerate(tables, start=1):
+                table_text = format_table(table)
+                if not table_text:
+                    continue
+                score = score_chunk(table_text, terms)
+                if score > 0:
+                    score += 10
+                table_blocks.append(
+                    TableBlock(
+                        doc_ref=doc_ref,
+                        page=page_index,
+                        table_index=table_index,
+                        text=table_text,
+                        score=score,
+                    )
+                )
+    return table_blocks
+
+
+def select_table_blocks(tables: list[TableBlock], max_table_chars: int) -> list[TableBlock]:
+    if not tables:
+        return []
+    selected: list[TableBlock] = []
     char_count = 0
+    ranked = sorted(tables, key=lambda item: (-item.score, item.doc_ref, item.page, item.table_index))
+    for table in ranked:
+        if table.score <= 0 and selected:
+            continue
+        block = f"[{table.doc_ref} page {table.page} table {table.table_index} score {table.score}]\n{table.text}\n"
+        if char_count + len(block) > max_table_chars and selected:
+            continue
+        selected.append(table)
+        char_count += len(block)
+        if char_count >= max_table_chars:
+            break
+    if not selected:
+        selected = ranked[: max(1, min(2, len(ranked)))]
+    return selected
+
+
+def build_packet(
+    study_id: str,
+    chunks: list[Chunk],
+    tables: list[TableBlock],
+    rows: list[dict[str, str]],
+    max_packet_chars: int,
+    max_table_chars: int,
+) -> tuple[str, int, int]:
+    selected: list[Chunk] = []
+    selected_tables = select_table_blocks(tables, max_table_chars)
+    char_count = sum(
+        len(f"[{table.doc_ref} page {table.page} table {table.table_index} score {table.score}]\n{table.text}\n")
+        for table in selected_tables
+    )
     ranked = sorted(chunks, key=lambda item: (-item.score, item.doc_ref, item.page, item.chunk_index))
     for chunk in ranked:
         if chunk.score <= 0 and selected:
@@ -161,13 +280,26 @@ def build_packet(study_id: str, chunks: list[Chunk], rows: list[dict[str, str]],
         "Target task stubs:",
         task_stub,
         "",
-        "Rendered source chunks:",
+        "Extracted table blocks:",
     ]
+    if selected_tables:
+        for table in sorted(selected_tables, key=lambda item: (item.doc_ref, item.page, item.table_index)):
+            parts.append(f"[{table.doc_ref} page {table.page} table {table.table_index} score {table.score}]")
+            parts.append(table.text)
+            parts.append("")
+    else:
+        parts.append("No extractable PDF table blocks selected.")
+        parts.append("")
+    parts.extend(
+        [
+        "Rendered source chunks:",
+        ]
+    )
     for chunk in sorted(selected, key=lambda item: (item.doc_ref, item.page, item.chunk_index)):
         parts.append(f"[{chunk.doc_ref} page {chunk.page} chunk {chunk.chunk_index} score {chunk.score}]")
         parts.append(chunk.text)
         parts.append("")
-    return "\n".join(parts).strip() + "\n", len(selected)
+    return "\n".join(parts).strip() + "\n", len(selected), len(selected_tables)
 
 
 def pdfs_for_study(study_id: str, source_pdf_dirs: list[Path], include_supplements: bool) -> list[Path]:
@@ -198,6 +330,9 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
         row for row in read_csv(args.template)
         if row["scoring_eligibility"].startswith("eligible_after_locked_llm_output")
     ]
+    if args.study_id:
+        wanted_studies = set(args.study_id)
+        rows = [row for row in rows if row["study_id"] in wanted_studies]
     rows_by_study: dict[str, list[dict[str, str]]] = {}
     for row in rows:
         rows_by_study.setdefault(row["study_id"], []).append(row)
@@ -221,6 +356,7 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
         study_rows = rows_by_study[study_id]
         terms = task_terms(study_rows)
         chunks = []
+        tables = []
         extraction_errors = []
         for doc_index, pdf_path in enumerate(pdfs, start=1):
             try:
@@ -233,6 +369,7 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
                         args.overlap_chars,
                     )
                 )
+                tables.extend(extract_pdf_tables(pdf_path, f"{study_id}_doc{doc_index}", terms))
             except Exception as exc:
                 extraction_errors.append(f"{pdf_path.name}: {exc}")
         if not chunks:
@@ -245,9 +382,11 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
                     "included_source_pdf_count": "0",
                     "non_pdf_supplement_count": str(len(non_pdf_supplements)),
                     "rendered_chunk_count": "0",
+                    "rendered_table_count": "0",
                     "max_chunk_chars": str(args.max_chunk_chars),
                     "overlap_chars": str(args.overlap_chars),
                     "max_packet_chars": str(args.max_packet_chars),
+                    "max_table_chars": str(args.max_table_chars),
                     "packet_chars": "",
                     "packet_sha256": "",
                     "private_packet_ref": "no_private_packet_created",
@@ -257,7 +396,14 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
                 }
             )
             continue
-        packet_text, selected_chunk_count = build_packet(study_id, chunks, study_rows, args.max_packet_chars)
+        packet_text, selected_chunk_count, selected_table_count = build_packet(
+            study_id,
+            chunks,
+            tables,
+            study_rows,
+            args.max_packet_chars,
+            args.max_table_chars,
+        )
         packet_path = args.private_output_dir / f"{study_id}_source_packet_20260609.txt"
         packet_path.write_text(packet_text, encoding="utf-8")
         rendered_study_ids.append(study_id)
@@ -270,9 +416,11 @@ def render_packets(args: argparse.Namespace) -> tuple[list[dict[str, str]], list
                 "included_source_pdf_count": str(len(pdfs)),
                 "non_pdf_supplement_count": str(len(non_pdf_supplements)),
                 "rendered_chunk_count": str(selected_chunk_count),
+                "rendered_table_count": str(selected_table_count),
                 "max_chunk_chars": str(args.max_chunk_chars),
                 "overlap_chars": str(args.overlap_chars),
                 "max_packet_chars": str(args.max_packet_chars),
+                "max_table_chars": str(args.max_table_chars),
                 "packet_chars": str(packet_path.stat().st_size),
                 "packet_sha256": sha256(packet_path),
                 "private_packet_ref": "local_private_packet_not_committed",
@@ -387,9 +535,11 @@ def main() -> None:
     parser.add_argument("--manifest-output", type=Path, default=DEFAULT_MANIFEST_OUTPUT)
     parser.add_argument("--smoke-task-output", type=Path, default=DEFAULT_SMOKE_TASK_OUTPUT)
     parser.add_argument("--status-output", type=Path, default=DEFAULT_STATUS_OUTPUT)
+    parser.add_argument("--study-id", action="append", default=None)
     parser.add_argument("--max-chunk-chars", type=int, default=3500)
     parser.add_argument("--overlap-chars", type=int, default=350)
     parser.add_argument("--max-packet-chars", type=int, default=22000)
+    parser.add_argument("--max-table-chars", type=int, default=12000)
     parser.add_argument("--smoke-rows-per-study", type=int, default=2)
     parser.add_argument("--smoke-stratified-per-family", type=int, default=0)
     parser.add_argument("--include-supplements", action=argparse.BooleanOptionalAction, default=True)
@@ -404,9 +554,11 @@ def main() -> None:
         "included_source_pdf_count",
         "non_pdf_supplement_count",
         "rendered_chunk_count",
+        "rendered_table_count",
         "max_chunk_chars",
         "overlap_chars",
         "max_packet_chars",
+        "max_table_chars",
         "packet_chars",
         "packet_sha256",
         "private_packet_ref",

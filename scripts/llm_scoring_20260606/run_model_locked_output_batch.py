@@ -80,12 +80,19 @@ def sha256(path: Path) -> str:
 
 
 def register_locked_output(path: Path, manifest: Path) -> None:
+    try:
+        manifest_file = str(path.resolve().relative_to(REPO))
+    except ValueError:
+        manifest_file = str(path)
     rows = read_csv(manifest) if manifest.exists() else []
-    rows = [row for row in rows if row.get("file") != str(path)]
+    rows = [
+        row for row in rows
+        if row.get("file") not in {str(path), str(path.resolve()), manifest_file}
+    ]
     rows.append(
         {
             "artifact_role": "locked_model_output",
-            "file": str(path),
+            "file": manifest_file,
             "bytes": str(path.stat().st_size),
             "sha256": sha256(path),
             "locked_status": "locked_model_output",

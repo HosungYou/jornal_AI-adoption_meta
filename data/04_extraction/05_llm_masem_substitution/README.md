@@ -212,6 +212,15 @@ secondary/beta-path conflict in this smoke, but S003 direct-r rows still
 abstained 10/10 and true beta/path controls remain partial. Full `M1-R` remains
 blocked pending packet/table retrieval review.
 
+A focused 25-row `M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL` has now been executed after
+expanding the source-packet scoring terms and PDF search paths. It completed
+with `model_cli_error=0`, source quote policy violations=0, nonblank answers=18,
+abstentions=7, committed source quotes=0, route violations=0, and 17/25
+diagnostic correct rows. S003 direct-r/FLC retrieval is unblocked at 10/10
+correct, but S009/S010 true beta/path retrieval remains partial. Full `M1-R`
+remains blocked pending beta/path alias/context disambiguation and a narrower
+follow-up gate or explicit staged-shard authorization.
+
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from

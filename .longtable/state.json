@@ -13,24 +13,24 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "M1-R-SOURCE-SMOKE-REVISED completed and locked: 40 rows, CLI errors 0, source quote policy violations 0, committed source quotes 0, nonblank answers 23, abstentions 17, route violations 0, and smoke diagnostic correct rows 21/40. The route overlay resolved the prior non-path secondary beta/path conflict in this smoke, but S003 direct-r rows still abstained 10/10 and true beta/path controls remain partially answerable. Full-corpus model execution remains blocked by packet/table retrieval quality, not by source materialization or route-overlay leakage.",
-    "nextAction": "Revise packet/table retrieval for direct-r and true beta/path controls, especially S003 correlation/Fornell-Larcker table coverage and S009/S010 path-coefficient table coverage, then rerun a focused retrieval smoke. Do not authorize full-corpus M1-R/M1-P/M2-R/M3-R or report accuracy/model-comparison/MASEM substitution claims from the revised smoke.",
-    "resumeHint": "Continue after M1-R-SOURCE-SMOKE-REVISED completed on 2026-06-09: route overlay and revised private packet stubs ran cleanly with no source quotes and no route violations; diagnostic was 21/40, with S003 direct-r still 10/10 abstention. Next gate is packet/table retrieval revision and focused retrieval smoke, not full-corpus M1-R.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_REVISED_SMOKE_STATUS_20260609.md"
+    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed and locked: 25 rows, CLI errors 0, source quote policy violations 0, committed source quotes 0, nonblank answers 18, abstentions 7, route violations 0, and smoke diagnostic correct rows 17/25. S003 direct-r/Fornell-Larcker retrieval is now unblocked at 10/10 correct after source-packet scoring/path revision, but S009/S010 true beta/path controls remain partially answerable. Full-corpus model execution remains blocked by beta/path retrieval disambiguation, not by source materialization, S003 direct-r coverage, or route-overlay leakage.",
+    "nextAction": "Review the remaining S009/S010 beta/path abstentions and S009 FC-UB directed-value mismatch, then add leakage-safe path alias/context handling or record a bounded staged-shard caveat before any larger M1-R execution. Do not authorize full-corpus M1-R/M1-P/M2-R/M3-R or report accuracy/model-comparison/MASEM substitution claims from the focused retrieval smoke.",
+    "resumeHint": "Continue after M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed on 2026-06-09: source-packet scoring/path revision and focused 25-row smoke ran cleanly with no source quotes and no route violations; diagnostic was 17/25, with S003 direct-r/FLC now 10/10 correct and S009/S010 beta/path still partial. Next gate is S009/S010 beta/path disambiguation, not full-corpus M1-R.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_TABLE_RETRIEVAL_SMOKE_STATUS_20260609.md"
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "M1-R-SOURCE-SMOKE-REVISED completed and locked: 40 rows, CLI errors 0, source quote policy violations 0, committed source quotes 0, nonblank answers 23, abstentions 17, route violations 0, and smoke diagnostic correct rows 21/40. The route overlay resolved the prior non-path secondary beta/path conflict in this smoke, but S003 direct-r rows still abstained 10/10 and true beta/path controls remain partially answerable. Full-corpus model execution remains blocked by packet/table retrieval quality, not by source materialization or route-overlay leakage.",
-    "nextAction": "Revise packet/table retrieval for direct-r and true beta/path controls, especially S003 correlation/Fornell-Larcker table coverage and S009/S010 path-coefficient table coverage, then rerun a focused retrieval smoke. Do not authorize full-corpus M1-R/M1-P/M2-R/M3-R or report accuracy/model-comparison/MASEM substitution claims from the revised smoke.",
+    "currentBlocker": "M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed and locked: 25 rows, CLI errors 0, source quote policy violations 0, committed source quotes 0, nonblank answers 18, abstentions 7, route violations 0, and smoke diagnostic correct rows 17/25. S003 direct-r/Fornell-Larcker retrieval is now unblocked at 10/10 correct after source-packet scoring/path revision, but S009/S010 true beta/path controls remain partially answerable. Full-corpus model execution remains blocked by beta/path retrieval disambiguation, not by source materialization, S003 direct-r coverage, or route-overlay leakage.",
+    "nextAction": "Review the remaining S009/S010 beta/path abstentions and S009 FC-UB directed-value mismatch, then add leakage-safe path alias/context handling or record a bounded staged-shard caveat before any larger M1-R execution. Do not authorize full-corpus M1-R/M1-P/M2-R/M3-R or report accuracy/model-comparison/MASEM substitution claims from the focused retrieval smoke.",
     "openQuestions": [
-      "What packet/table retrieval revision should be used for S003 direct-r and true beta/path controls before another smoke?"
+      "What leakage-safe S009/S010 beta/path alias/context handling should be used after S003 direct-r/FLC retrieval was unblocked?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after M1-R-SOURCE-SMOKE-REVISED completed on 2026-06-09: route overlay and revised private packet stubs ran cleanly with no source quotes and no route violations; diagnostic was 21/40, with S003 direct-r still 10/10 abstention. Next gate is packet/table retrieval revision and focused retrieval smoke, not full-corpus M1-R.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_REVISED_SMOKE_STATUS_20260609.md",
-    "lastUpdatedAt": "2026-06-09T06:47:36Z"
+    "resumeHint": "Continue after M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL completed on 2026-06-09: source-packet scoring/path revision and focused 25-row smoke ran cleanly with no source quotes and no route violations; diagnostic was 17/25, with S003 direct-r/FLC now 10/10 correct and S009/S010 beta/path still partial. Next gate is S009/S010 beta/path disambiguation, not full-corpus M1-R.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_TABLE_RETRIEVAL_SMOKE_STATUS_20260609.md",
+    "lastUpdatedAt": "2026-06-09T07:20:00Z"
   },
   "inferredHypotheses": [],
   "openTensions": [

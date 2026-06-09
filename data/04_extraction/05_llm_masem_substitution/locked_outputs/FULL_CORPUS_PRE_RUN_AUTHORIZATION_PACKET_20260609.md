@@ -2,9 +2,10 @@
 
 Date: 2026-06-09
 
-Status: `M1-R-SMOKE` and the earlier partial `M1-R-SOURCE-SMOKE` were
-researcher-authorized and executed. Full source-rendering coverage is now clean,
-but this packet does not authorize any full-corpus model execution.
+Status: source-rendered smoke/preflight conditions through
+`M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL` were researcher-authorized and executed.
+Full source-rendering coverage is clean, and S003 direct-r/FLC retrieval is now
+unblocked. This packet still does not authorize any full-corpus model execution.
 
 ## Prepared Artifacts
 
@@ -32,6 +33,8 @@ but this packet does not authorize any full-corpus model execution.
 | `M3-R` | Optional third-family raw robustness check | Pending approval |
 | `M1-R-SOURCE-SMOKE` | Private source-packet prompt/export preflight | Authorized, executed, and manifest-registered |
 | `M1-R-SOURCE-SMOKE-FULL-COVERAGE` | Balanced full-coverage source-packet preflight | Authorized, executed, scored diagnostically, and manifest-registered |
+| `M1-R-SOURCE-SMOKE-REVISED` | Route-overlay prompt/path diagnostic | Authorized, executed, scored diagnostically, and manifest-registered |
+| `M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL` | Focused S003/S009/S010 packet/table retrieval diagnostic | Authorized, executed, scored diagnostically, and manifest-registered |
 
 All model selectors remain `to verify` before execution. The matrix preserves
 prior candidate families from legacy scaffold work, but final model selectors
@@ -175,11 +178,11 @@ Before any model condition is run, the researcher must approve:
 - Legacy pre-full-corpus outputs remain scaffold evidence unless explicitly
   re-keyed and revalidated against the 2026-06-09 frozen reference.
 
-## Recommended Next Decision
+## Current Gate
 
-The balanced full-coverage source-rendered smoke has now been reviewed. The
-active next decision is not a larger shard or full-corpus `M1-R`; it is a
-revised prompt/path smoke:
+The table-retrieval smoke has now been reviewed. The active next decision is not
+a larger shard or full-corpus `M1-R`; it is S009/S010 beta/path
+disambiguation:
 
 - `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`
 - `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_full_coverage_smoke_scored_20260609.csv`
@@ -191,6 +194,9 @@ revised prompt/path smoke:
 - `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_REVISED_SMOKE_STATUS_20260609.md`
 - `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_revised_smoke_scored_20260609.csv`
 - `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_revised_smoke_status_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_SOURCE_RENDERED_TABLE_RETRIEVAL_SMOKE_STATUS_20260609.md`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_table_retrieval_smoke_scored_20260609.csv`
+- `data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_source_rendered_table_retrieval_smoke_status_20260609.csv`
 
 The review found 9 positive-control successes, 1 matrix-cell selection error,
 10 direct-r abstentions probably tied to source-packet table coverage, and 10
@@ -205,11 +211,19 @@ source quotes 0, nonblank answers 23, abstentions 17, route violations 0, and
 diagnostic correct rows 21/40. This is still a prompt/path diagnostic only. It
 does not authorize full-corpus execution or result claims.
 
+The 25-row `M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL` then ran after source-packet
+scoring/path revision: CLI errors 0, source quote policy violations 0, committed
+source quotes 0, nonblank answers 18, abstentions 7, route violations 0, and
+diagnostic correct rows 17/25. S003 direct-r/FLC retrieval is now 10/10 correct,
+but S009/S010 beta/path retrieval remains partial. This is still a retrieval-gate
+diagnostic only. It does not authorize full-corpus execution or result claims.
+
 The full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` conditions remain
-blocked pending source-packet/routing remediation, exact provider/model selector,
-budget cap, and run authorization. Do not report LLM accuracy, model comparison,
-procedure comparison, or MASEM substitution claims until a locked model output is
-generated, manifest-registered, and scored against the frozen reference.
+blocked pending S009/S010 beta/path disambiguation, exact provider/model
+selector, budget cap, and run authorization. Do not report LLM accuracy, model
+comparison, procedure comparison, or MASEM substitution claims until a locked
+model output is generated, manifest-registered, and scored against the frozen
+reference.
 
 Follow-up checker status: the full 191-study materialization gap was checked
 again after attempting to identify a CLI hydration route. All 191 studies still
@@ -278,3 +292,9 @@ The route overlay removed the observed S007 non-path/beta-path conflict in the
 smoke (`route_violation_n=0`), but S003 direct-r rows still abstained 10/10 and
 true beta/path controls remain only partially answerable. The next gate is
 packet/table retrieval review, not full-corpus `M1-R`.
+
+Table-retrieval smoke follow-up: `M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL` was
+executed and locked after source-packet scoring/path revision. S003 direct-r/FLC
+retrieval is now unblocked at 10/10 correct. S009/S010 beta/path retrieval still
+has 7 abstentions and one S009 directed-value mismatch, so the next gate is
+S009/S010 beta/path disambiguation, not full-corpus `M1-R`.

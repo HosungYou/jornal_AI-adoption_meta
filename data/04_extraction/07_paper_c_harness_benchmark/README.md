@@ -142,6 +142,8 @@ Current pre-run planning artifacts:
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
 - `06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`
+- `00_manifest/source_rendering_table_retrieval_targets_manifest_20260609.csv`
+- `06_rerun_bundles/source_rendered_table_retrieval_smoke_task_ids_20260609.csv`
 - `06_rerun_bundles/source_pdf_materialization_batches_20260609.csv`
 
 ## Structure

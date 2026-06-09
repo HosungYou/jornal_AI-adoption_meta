@@ -47,10 +47,12 @@ authorized.
   target studies, and 2,043/2,043 target rows. A balanced 30-row full-coverage
   source-rendered smoke has also been locked, diagnostically scored, and
   prompt/path reviewed. A 40-row revised source-rendered smoke has now been
-  locked and diagnostically scored with route violations=0, but S003 direct-r
-  rows still abstain and true beta/path controls remain partial. Full-corpus
-  model execution and result claims remain unauthorized pending packet/table
-  retrieval review and specific run-condition approval.
+  locked and diagnostically scored with route violations=0. A follow-up 25-row
+  table-retrieval smoke unblocked S003 direct-r/FLC retrieval at 10/10 correct,
+  but S009/S010 true beta/path controls remain partial with 7/25 abstentions and
+  one S009 directed-value mismatch. Full-corpus model execution and result claims
+  remain unauthorized pending beta/path retrieval disambiguation and specific
+  run-condition approval.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved
