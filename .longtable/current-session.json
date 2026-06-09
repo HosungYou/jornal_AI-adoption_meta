@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "ai-adoption-meta-analysis-methodology-strategy-1779672509276",
   "createdAt": "2026-05-25T01:28:29.287Z",
-  "lastUpdatedAt": "2026-06-09T04:05:00.000Z",
+  "lastUpdatedAt": "2026-06-09T05:52:03Z",
   "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
   "projectPath": "/Users/hosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/jornal_AI-adoption_meta",
   "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-  "currentBlocker": "Batches 01-04 are now clean across the first four source PDF materialization priority batches: 80/80 studies and 1,306/1,306 rows are text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked because the remaining full intended source-rendering scope has not yet passed a full materialization/readability sweep.",
-  "nextAction": "Run a full materialization/readability sweep or continue into Batches 05-10, then rerun full source-rendering coverage only after intended-scope source readability is clean. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
+  "currentBlocker": "Source PDF materialization/readability and full source-rendering coverage are now clean: 191/191 materialization-gap studies, 2,025/2,025 gap rows, 194/194 source-rendered target studies, and 2,043/2,043 target rows. Model execution remains blocked only by run-condition authorization: exact condition, model selector, and budget are not yet approved for a new run.",
+  "nextAction": "Record authorization for the next source-rendered model condition, recommended as a balanced 30-row M1-R-SOURCE-SMOKE using source_rendered_full_coverage_smoke_task_ids_20260609.csv before any full-corpus M1-R. Do not report LLM accuracy, model comparison, procedure comparison, or MASEM substitution claims until a locked model output is generated, manifest-registered, and scored.",
   "openQuestions": [
-    "Should the next gate be a full 191-study materialization/readability sweep now that Batches 01-04 are clean, or a continuation through Batches 05-10 first to reduce OneDrive timeout load?"
+    "Should the next executable gate be the recommended balanced 30-row full-coverage M1-R-SOURCE-SMOKE, or should the researcher explicitly authorize a different source-rendered condition?"
   ],
   "requestedPerspectives": [
     "reviewer",
@@ -23,7 +23,7 @@
   "activeModes": [
     "explore"
   ],
-  "resumeHint": "Continue after Batches 01-04 are clean at 80/80 studies and 1,306/1,306 rows text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked pending a full materialization/readability sweep or Batches 05-10 follow-up.",
+  "resumeHint": "Continue after full source-rendering coverage cleared on 2026-06-09: materialization checker is clean for 191/191 gap studies and source-rendering packets cover 194/194 target studies / 2,043 rows. Next gate is authorizing a source-rendered model condition; no accuracy or MASEM substitution claims yet.",
   "locale": "en",
-  "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_CLEARANCE_STATUS_20260609.md"
+  "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md"
 }

@@ -2,8 +2,9 @@
 
 Date: 2026-06-09
 
-Status: `M1-R-SMOKE` was researcher-authorized and executed. This packet does
-not authorize any full-corpus model execution.
+Status: `M1-R-SMOKE` and the earlier partial `M1-R-SOURCE-SMOKE` were
+researcher-authorized and executed. Full source-rendering coverage is now clean,
+but this packet does not authorize any full-corpus model execution.
 
 ## Prepared Artifacts
 
@@ -25,7 +26,7 @@ not authorize any full-corpus model execution.
 | Condition | Role | Status |
 |---|---|---|
 | `M1-R-SMOKE` | Small stratified raw-model preflight | Authorized, executed, and manifest-registered |
-| `M1-R` | Primary raw model baseline | Pending approval |
+| `M1-R` | Primary raw model baseline | Source rendering ready; pending approval |
 | `M1-P` | Same-model stateful research harness/procedure contrast | Pending approval |
 | `M2-R` | Cross-model raw comparison | Pending approval |
 | `M3-R` | Optional third-family raw robustness check | Pending approval |
@@ -51,6 +52,15 @@ private packets for only 3 studies / 18 target rows. The remaining 191 studies /
 2,025 target rows failed local PDF read/materialization with `Operation timed
 out`. This blocks full-corpus `M1-R` until the archive PDFs are locally
 materialized or equivalent share-safe source renderings are available.
+
+Fourth update: after the 49 remaining materialization blockers were resolved
+from readable local Downloads archive copies placed in the ignored local
+source-PDF folder, the full materialization checker reported 191/191 gap
+studies and 2,025/2,025 target rows `materialized_text_extractable`. The full
+source-rendering coverage audit was then rerun and produced private packets for
+194/194 target studies covering all 2,043 target rows. This clears the prior
+source materialization/readability blocker but does not authorize model
+execution.
 
 ## Authorization Decision Recorded
 
@@ -104,12 +114,13 @@ The researcher approved Codex's recommended next step on 2026-06-09:
 - Coverage status:
   `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md`
 - Target studies audited: 194.
-- Archive filename coverage: 194 studies.
-- Private packets successfully rendered: 3 studies / 18 target rows.
-- Local rendering/materialization failures: 191 studies / 2,025 target rows.
-- Dominant failure mode: `Operation timed out` while reading OneDrive PDF files.
-- Interpretation: source files appear indexed in the archive, but they are not
-  currently usable as local prompt inputs for full-corpus model execution.
+- Private packets successfully rendered: 194 studies / 2,043 target rows.
+- Local rendering/materialization failures: 0 studies / 0 target rows.
+- Final materialization checker:
+  `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_check_full_after_local_downloads_copy_20260609.csv`.
+- Interpretation: the prior source materialization/readability blocker is
+  cleared. Model execution still requires a separate researcher authorization
+  for the exact condition, model selector, and budget.
 
 ## Approval Items
 
@@ -137,18 +148,19 @@ Before any model condition is run, the researcher must approve:
 
 ## Recommended Next Decision
 
-Resolve the local OneDrive PDF materialization/readability blocker before any
-full-corpus `M1-R` run. A share-safe materialization action package now exists
-for the 191 blocked studies / 2,025 blocked target rows:
+Authorize a source-rendered model condition now that source coverage is clean.
+The recommended next execution gate is a balanced 30-row source-rendered smoke
+using the full-coverage task list before any full-corpus `M1-R` run:
 
-- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_gap_manifest_20260609.csv`
-- `data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_pdf_materialization_batches_20260609.csv`
-- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_PLAN_20260609.md`
-- `scripts/llm_scoring_20260606/check_source_pdf_materialization.py`
+- `data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`
+- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_rendering_full_coverage_manifest_20260609.csv`
+- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md`
 
-After the relevant PDFs are locally materialized, rerun the checker and then
-rerun source rendering coverage. A balanced source-rendered smoke becomes
-eligible only after rendered private packets cover the intended target scope.
+The full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` conditions remain
+pending exact provider/model selector, budget cap, and run authorization. Do not
+report LLM accuracy, model comparison, procedure comparison, or MASEM
+substitution claims until a locked model output is generated, manifest-registered,
+and scored against the frozen reference.
 
 Follow-up checker status: the full 191-study materialization gap was checked
 again after attempting to identify a CLI hydration route. All 191 studies still
@@ -187,6 +199,14 @@ any full-corpus model execution.
 Batch 03 clearance follow-up: `S126`, `S127`, and `S128` were resolved from
 readable local Downloads archive copies placed in the ignored local source-PDF
 folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306 target
-rows. A full materialization/readability sweep or continuation into Batches
-05-10 remains required before full source-rendering coverage can be rerun; this
-does not authorize any full-corpus model execution.
+rows. This cleared the first four materialization priority batches but did not
+authorize any full-corpus model execution.
+
+Full materialization/source-rendering follow-up: the full 191-study
+materialization/readability sweep initially found 49 remaining blockers. All 49
+were resolved by readable local Downloads archive copies into the ignored
+source-PDF folder, after which the final full checker reported 191/191 gap
+studies and 2,025/2,025 target rows text-extractable. Full source-rendering
+coverage was then rerun and rendered private packets for 194/194 target studies
+covering all 2,043 target rows. This authorizes neither a full-corpus model run
+nor result claims by itself.

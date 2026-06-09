@@ -2,7 +2,9 @@
 
 Date: 2026-06-09
 
-Status: materialization action package prepared. This artifact does not authorize any additional model run or any smaller-scope result claim.
+Status: materialization action package completed for the 191-study gap. This
+artifact does not authorize any additional model run or any smaller-scope result
+claim.
 
 ## Scope
 
@@ -39,7 +41,9 @@ Status: materialization action package prepared. This artifact does not authoriz
 
 ## Next Gate
 
-After the OneDrive PDFs are locally materialized, run the checker on the relevant batch or full gap manifest. Then rerun the source-rendering coverage audit. A balanced source-rendered smoke is only eligible after rendered private packets cover the intended scope.
+The materialization/readability gate is now cleared for the full 191-study gap
+manifest. The next gate is source-rendering coverage and then a separately
+authorized source-rendered model condition.
 
 ## Follow-up Check
 
@@ -87,6 +91,16 @@ source-PDF folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306
 target rows text-extractable. The next gate is a full
 materialization/readability sweep or continuation into Batches 05-10 before
 rerunning full source-rendering coverage.
+
+Full sweep follow-up: the full 191-study materialization/readability sweep after
+Batches 01-04 clean found 142/191 studies and 1,810/2,025 target rows
+text-extractable, leaving 49 studies / 215 rows blocked. Wait-based follow-up
+checks for Batches 08-10 did not clear those remaining blockers. A local
+readable-copy resolver then found readable PDFs for all 49 blockers in the
+user's local Downloads archive and copied them into the ignored local source-PDF
+folder. The final full checker after the local copy step reports 191/191 studies
+and 2,025/2,025 target rows `materialized_text_extractable`. The remaining
+source-rendering coverage audit has been rerun separately and is now clean.
 
 ## Integrity
 

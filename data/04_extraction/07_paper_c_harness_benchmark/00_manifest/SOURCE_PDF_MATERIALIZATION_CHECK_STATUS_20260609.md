@@ -2,10 +2,10 @@
 
 Date: 2026-06-09
 
-Status: partial local materialization achieved after a Finder/OneDrive
-follow-up, but full-scope local materialization/readability remains blocked.
-This artifact does not authorize any additional model run, scoring rerun,
-accuracy result, or smaller-scope claim.
+Status: full materialization/readability is clean for the 191-study
+materialization gap after local Downloads archive recovery for the remaining
+blockers. This artifact does not authorize any model run, scoring rerun,
+accuracy result, or smaller-scope claim by itself.
 
 ## What Was Checked
 
@@ -116,20 +116,50 @@ text-extractable.
 Batches 01-04 are now clean: 80/80 studies and 1,306/1,306 target rows are
 text-extractable across the first four priority materialization batches.
 
+## Full Sweep and Final Clearance
+
+After Batches 01-04 cleared, a full 191-study materialization/readability sweep
+was rerun:
+
+| Check | Result |
+|---|---:|
+| Full gap studies checked | 191 |
+| Full gap target rows checked | 2,025 |
+| `materialized_text_extractable` studies | 142 |
+| `materialized_text_extractable` target rows | 1,810 |
+| `not_materialized_or_read_timeout` studies | 49 |
+| `not_materialized_or_read_timeout` target rows | 215 |
+
+Wait-based follow-up checks for Batches 08-10 did not clear the remaining
+blockers. A local readable-copy resolver then found readable PDFs for all 49
+remaining blocker studies in the user's local Downloads archive and copied them
+into the ignored local source-PDF folder:
+
+- Resolved blockers: 49/49.
+- Source location class recorded in the share-safe CSV: `downloads_archive`.
+- Committed PDF paths: 0 (`pdf_path_committed=false` for every row).
+- Local private PDFs: copied only into
+  `data/04_extraction/03_source_document_adjudication/source_pdfs/`, which is
+  ignored by Git.
+
+The final full checker after this local copy step reports:
+
+| Check | Result |
+|---|---:|
+| Full gap studies checked | 191 |
+| Full gap target rows checked | 2,025 |
+| `materialized_text_extractable` studies | 191 |
+| `materialized_text_extractable` target rows | 2,025 |
+| `not_materialized_or_read_timeout` studies | 0 |
+| `not_materialized_or_read_timeout` target rows | 0 |
+
 ## Next Gate
 
-Run a full materialization/readability sweep or continue into Batches 05-10
-before rerunning full source-rendering coverage. For example:
-
-```bash
-python3 scripts/llm_scoring_20260606/check_source_pdf_materialization.py \
-  --output data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_check_full_after_batches01_04_clean_20260609.csv
-```
-
-Only if the checker reports local text-extractable PDFs for the intended scope
-should the full source-rendering coverage audit be rerun. A balanced
-source-rendered smoke remains ineligible until source rendering coverage is
-clean for the intended target scope.
+The materialization/readability blocker is cleared for the full 191-study gap
+manifest. Full source-rendering coverage has therefore been rerun separately in
+`source_rendering_full_coverage_manifest_20260609.csv` and
+`SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md`. Model execution remains a
+separate authorization gate.
 
 ## Safety Boundary
 

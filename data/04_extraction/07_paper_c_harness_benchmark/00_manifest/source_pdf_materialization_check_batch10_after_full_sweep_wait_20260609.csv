@@ -1,0 +1,12 @@
+study_id,batch_id,priority_rank,target_task_count,denominator_families,source_pdf_match_count,first_match_basename,magic_probe_status,magic_probe_bytes,magic_probe_is_pdf,text_probe_status,text_probe_chars_first_two_pages_capped,materialization_status,checked_at_utc,notes
+S100,PDFMAT-20260609-10,181,3,primary_latent_or_construct_correlation_with_source_type_flag,1,S100.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S123,PDFMAT-20260609-10,182,3,primary_direct_r_or_source_reported_correlation,1,S123.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S142,PDFMAT-20260609-10,183,3,primary_latent_or_construct_correlation_with_source_type_flag,1,S142.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S152,PDFMAT-20260609-10,184,3,secondary_beta_or_path_converted_effect_size,1,S152.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S167,PDFMAT-20260609-10,185,3,primary_latent_or_construct_correlation_with_source_type_flag,1,S167.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S177,PDFMAT-20260609-10,186,3,primary_latent_or_construct_correlation_with_source_type_flag,1,S177.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S213,PDFMAT-20260609-10,187,3,primary_latent_or_construct_correlation_with_source_type_flag,1,S213.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S096,PDFMAT-20260609-10,188,2,secondary_beta_or_path_converted_effect_size,1,S096.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S211,PDFMAT-20260609-10,189,2,primary_direct_r_or_source_reported_correlation,1,S211.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S094,PDFMAT-20260609-10,190,1,secondary_beta_or_path_converted_effect_size,1,S094.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out
+S140,PDFMAT-20260609-10,191,1,primary_direct_r_or_source_reported_correlation,1,S140.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T05:36:24Z,first-byte read timed out

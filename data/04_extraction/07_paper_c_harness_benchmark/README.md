@@ -15,10 +15,11 @@ subset are prepared. A partial PDF-available source-rendering preflight has also
 been completed for `S021`, `S056`, and `S092`, with private source packets kept
 out of Git and a 6-row source-rendered smoke registered as a locked output.
 
-This preflight does not authorize full-corpus model execution or accuracy
-claims. Full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` remain blocked
-until source rendering coverage is complete for the intended target scope, or a
-smaller PDF-available subset is explicitly authorized.
+Full source-rendering coverage is now clean for the post-freeze target shell:
+194/194 target studies and 2,043/2,043 target rows have private source packets
+stored outside Git. This clears the source materialization/readability blocker.
+Full-corpus `M1-R`, `M1-P`, `M2-R`, and optional `M3-R` remain pending exact
+model selector, budget, and run-condition authorization.
 
 A follow-up archive coverage audit found study-ID PDF filename coverage for all
 194 post-freeze target studies, but local text rendering is still blocked:
@@ -73,8 +74,13 @@ priority batches at 18 studies / 270 target rows.
 Batch 03 subsequently cleared after `S126`, `S127`, and `S128` were resolved
 from readable local Downloads archive copies placed in the ignored local
 source-PDF folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306
-target rows. Full-corpus source rendering remains blocked pending a full
-materialization/readability sweep or continuation into Batches 05-10.
+target rows.
+
+The subsequent full 191-study materialization/readability sweep initially left
+49 blockers, all of which were resolved from readable local Downloads archive
+copies placed in the ignored local source-PDF folder. The final checker reports
+191/191 gap studies and 2,025/2,025 gap rows text-extractable. Full
+source-rendering coverage was then rerun and is clean.
 
 Current reference pointer:
 
@@ -118,6 +124,12 @@ Current pre-run planning artifacts:
 - `00_manifest/source_pdf_materialization_check_batch03_current_recheck_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_batch03_remaining3_after_wait_20260609.csv`
 - `00_manifest/source_pdf_materialization_check_batch03_after_local_downloads_copy_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_full_after_batches01_04_clean_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch08_after_full_sweep_wait_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch09_after_full_sweep_wait_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_batch10_after_full_sweep_wait_20260609.csv`
+- `00_manifest/source_pdf_materialization_blocked_local_copy_resolution_20260609.csv`
+- `00_manifest/source_pdf_materialization_check_full_after_local_downloads_copy_20260609.csv`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_CLEARANCE_STATUS_20260609.md`
 - `00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH01_BLOCKER_REQUEST_STATUS_20260609.md`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`

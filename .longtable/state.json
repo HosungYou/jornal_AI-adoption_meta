@@ -13,23 +13,23 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "Batches 01-04 are now clean across the first four source PDF materialization priority batches: 80/80 studies and 1,306/1,306 rows are text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked because the remaining full intended source-rendering scope has not yet passed a full materialization/readability sweep.",
-    "nextAction": "Run a full materialization/readability sweep or continue into Batches 05-10, then rerun full source-rendering coverage only after intended-scope source readability is clean. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
-    "resumeHint": "Continue after Batches 01-04 are clean at 80/80 studies and 1,306/1,306 rows text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked pending a full materialization/readability sweep or Batches 05-10 follow-up."
+    "currentBlocker": "Source PDF materialization/readability and full source-rendering coverage are now clean: 191/191 materialization-gap studies, 2,025/2,025 gap rows, 194/194 source-rendered target studies, and 2,043/2,043 target rows. Model execution remains blocked only by run-condition authorization: exact condition, model selector, and budget are not yet approved for a new run.",
+    "nextAction": "Record authorization for the next source-rendered model condition, recommended as a balanced 30-row M1-R-SOURCE-SMOKE using source_rendered_full_coverage_smoke_task_ids_20260609.csv before any full-corpus M1-R. Do not report LLM accuracy, model comparison, procedure comparison, or MASEM substitution claims until a locked model output is generated, manifest-registered, and scored.",
+    "resumeHint": "Continue after full source-rendering coverage cleared on 2026-06-09: materialization checker is clean for 191/191 gap studies and source-rendering packets cover 194/194 target studies / 2,043 rows. Next gate is authorizing a source-rendered model condition; no accuracy or MASEM substitution claims yet."
   },
   "workingState": {
     "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "Batches 01-04 are now clean across the first four source PDF materialization priority batches: 80/80 studies and 1,306/1,306 rows are text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked because the remaining full intended source-rendering scope has not yet passed a full materialization/readability sweep.",
-    "nextAction": "Run a full materialization/readability sweep or continue into Batches 05-10, then rerun full source-rendering coverage only after intended-scope source readability is clean. Do not run additional model conditions or make accuracy/MASEM substitution claims before intended-scope source rendering coverage is clean.",
+    "currentBlocker": "Source PDF materialization/readability and full source-rendering coverage are now clean: 191/191 materialization-gap studies, 2,025/2,025 gap rows, 194/194 source-rendered target studies, and 2,043/2,043 target rows. Model execution remains blocked only by run-condition authorization: exact condition, model selector, and budget are not yet approved for a new run.",
+    "nextAction": "Record authorization for the next source-rendered model condition, recommended as a balanced 30-row M1-R-SOURCE-SMOKE using source_rendered_full_coverage_smoke_task_ids_20260609.csv before any full-corpus M1-R. Do not report LLM accuracy, model comparison, procedure comparison, or MASEM substitution claims until a locked model output is generated, manifest-registered, and scored.",
     "openQuestions": [
-      "Should the next gate be a full 191-study materialization/readability sweep now that Batches 01-04 are clean, or a continuation through Batches 05-10 first to reduce OneDrive timeout load?"
+      "Should the next executable gate be the recommended balanced 30-row full-coverage M1-R-SOURCE-SMOKE, or should the researcher explicitly authorize a different source-rendered condition?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after Batches 01-04 are clean at 80/80 studies and 1,306/1,306 rows text-extractable. Full-corpus M1-R/M1-P/M2-R remains blocked pending a full materialization/readability sweep or Batches 05-10 follow-up.",
-    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_BATCH03_CLEARANCE_STATUS_20260609.md",
-    "lastUpdatedAt": "2026-06-09T04:05:00.000Z"
+    "resumeHint": "Continue after full source-rendering coverage cleared on 2026-06-09: materialization checker is clean for 191/191 gap studies and source-rendering packets cover 194/194 target studies / 2,043 rows. Next gate is authorizing a source-rendered model condition; no accuracy or MASEM substitution claims yet.",
+    "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md",
+    "lastUpdatedAt": "2026-06-09T05:52:03Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -266,6 +266,16 @@
       "summary": "Recorded Batch 03 materialization clearing and preserved the full-corpus model-run block.",
       "selectedOption": "full_sweep_or_batches05_10_before_model_execution",
       "rationale": "Researcher instructed Codex to proceed. Codex reran Batch 03, found it improved to 17/20 studies, identified S126/S127/S128 as the remaining blockers, found readable local Downloads archive copies, copied those PDFs into the ignored local source-PDF folder, and confirmed Batch 03 cleared at 20/20 studies and 300/300 target rows. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306 rows, but full-corpus model runs and result claims remain blocked pending full intended-scope source rendering coverage."
+    },
+    {
+      "id": "decision_source_rendering_full_coverage_cleared_20260609",
+      "timestamp": "2026-06-09T05:52:03Z",
+      "checkpointKey": "post_freeze_source_rendering_full_coverage_cleared",
+      "level": "workflow_gate",
+      "mode": "commit",
+      "summary": "Recorded full source materialization/readability and source-rendering coverage clearance while preserving model-run authorization boundary.",
+      "selectedOption": "clear_source_coverage_gate_pending_model_authorization",
+      "rationale": "Researcher instructed Codex to proceed with the recommended next task. Codex completed the full materialization/readability sweep, resolved the 49 remaining blockers from readable local Downloads archive copies in the ignored source-PDF folder, reran source rendering, and confirmed private packets for 194/194 target studies and 2,043/2,043 target rows. No new model run or result claim is authorized by this coverage clearance."
     }
   ],
   "invocationLog": [],

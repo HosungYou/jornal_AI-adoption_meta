@@ -122,9 +122,8 @@ subset (`S021`, `S056`, `S092`): 6 rows, all in
 `secondary_beta_or_path_converted_effect_size`, using private source packets
 stored under the ignored Paper C private folder. The run produced nonblank model
 answers and source locators without committing source quotes. This validates the
-private source-packet prompt/export path only. Full-corpus `M1-R` remains
-blocked until source rendering coverage exists for the intended target scope or
-a smaller PDF-available subset is explicitly authorized.
+private source-packet prompt/export path only. This partial smoke did not
+authorize a full-corpus model run or accuracy claim.
 
 A full target-shell source coverage audit has now been attempted against the
 OneDrive archive. Study-ID PDF filename coverage exists for all 194 post-freeze
@@ -167,8 +166,15 @@ rows. This does not authorize model execution.
 Batch 03 subsequently cleared after `S126`, `S127`, and `S128` were resolved
 from readable local Downloads archive copies placed in the ignored local
 source-PDF folder. Batches 01-04 are now clean at 80/80 studies and 1,306/1,306
-target rows. Full-corpus model execution remains unauthorized pending a full
-materialization/readability sweep or continuation into Batches 05-10.
+target rows.
+
+The full 191-study materialization/readability sweep then cleared after the 49
+remaining blockers were resolved from readable local Downloads archive copies
+placed in the ignored source-PDF folder. The final checker reports 191/191 gap
+studies and 2,025/2,025 gap rows text-extractable. Full source-rendering
+coverage has also been rerun and is clean for 194/194 target studies and
+2,043/2,043 target rows. Model execution remains unauthorized until a specific
+source-rendered condition, exact model selector, and budget are approved.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
