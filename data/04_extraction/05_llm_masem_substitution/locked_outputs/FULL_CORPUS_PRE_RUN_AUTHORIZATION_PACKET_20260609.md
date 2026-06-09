@@ -137,6 +137,15 @@ Before any model condition is run, the researcher must approve:
 
 ## Recommended Next Decision
 
-Expand source rendering coverage or record a smaller-scope authorization before
-any full-corpus `M1-R` run. The current source-rendered smoke covers only three
-locally materialized studies and one denominator family.
+Resolve the local OneDrive PDF materialization/readability blocker before any
+full-corpus `M1-R` run. A share-safe materialization action package now exists
+for the 191 blocked studies / 2,025 blocked target rows:
+
+- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_pdf_materialization_gap_manifest_20260609.csv`
+- `data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_pdf_materialization_batches_20260609.csv`
+- `data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_PLAN_20260609.md`
+- `scripts/llm_scoring_20260606/check_source_pdf_materialization.py`
+
+After the relevant PDFs are locally materialized, rerun the checker and then
+rerun source rendering coverage. A balanced source-rendered smoke becomes
+eligible only after rendered private packets cover the intended target scope.

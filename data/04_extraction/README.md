@@ -12,7 +12,7 @@ numbered folders below.
 | 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists; Phase 2 queue and combined Phase 1+2 queues generated |
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 and Phase 2 adjudication in progress |
 | 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Full 213-study corpus frozen with retained caveats on 2026-06-09 |
-| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Pre-run template/matrix prepared; model runs not yet authorized |
+| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Smoke/preflight runs completed; full-corpus model runs and result claims blocked pending source materialization |
 | 6 | `06 coding by date/` | Date-stamped operational staging area for share-safe coding packets and transfer artifacts | Active |
 | 99 | `99_archive/` | Historical files not used in the active workflow | Reference only |
 
@@ -38,9 +38,10 @@ source-anchored adjudicated human reference standard is complete.
 - Step 4 is complete for the full-corpus source-anchored adjudicated human
   reference standard, with caveats retained in the frozen package.
 - Step 5 has a post-freeze gate, full-corpus task shell, locked-output
-  template, run matrix, and repeatability subset, but no new model runs or
-  result claims are authorized until the first executable condition and
-  model/procedure details are explicitly approved.
+  template, run matrix, repeatability subset, smoke/preflight outputs, and a
+  source PDF materialization action package. No full-corpus model runs or
+  result claims are authorized until source rendering coverage is clean for the
+  intended target scope or a smaller-scope gate is explicitly authorized.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved

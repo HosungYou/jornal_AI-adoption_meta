@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "ai-adoption-meta-analysis-methodology-strategy-1779672509276",
   "createdAt": "2026-05-25T01:28:29.287Z",
-  "lastUpdatedAt": "2026-06-09T00:08:00.000Z",
+  "lastUpdatedAt": "2026-06-09T00:12:00.000Z",
   "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
   "projectPath": "/Users/hosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/jornal_AI-adoption_meta",
   "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-  "currentBlocker": "Full target-shell source coverage audit found archive filename coverage for all 194 target studies, but local text rendering/materialization currently succeeds for only 3 studies / 18 target rows. The remaining 191 studies / 2,025 target rows fail local PDF read/materialization with Operation timed out. Full-corpus M1-R/M1-P/M2-R remains blocked until OneDrive PDFs are locally materialized or equivalent share-safe source renderings are available.",
-  "nextAction": "Resolve the OneDrive PDF materialization/readability blocker for the 191 failed studies, then rerun the source rendering coverage audit and only after clean coverage run a balanced source-rendered smoke; alternatively record an explicit smaller-scope authorization.",
+  "currentBlocker": "Source PDF materialization action package is prepared, but full-corpus source rendering remains blocked: archive filename coverage exists for all 194 target studies, while local text rendering/materialization currently succeeds for only 3 studies / 18 target rows. The remaining 191 studies / 2,025 target rows are grouped into 10 materialization batches after local PDF read/materialization failed with Operation timed out.",
+  "nextAction": "Materialize/hydrate the OneDrive PDFs by materialization batch or full archive, run check_source_pdf_materialization.py, rerun the full source-rendering coverage audit, and only after clean intended-scope coverage run a balanced source-rendered smoke. Do not run full-corpus M1-R/M1-P/M2-R yet.",
   "openQuestions": [
-    "Can the OneDrive archive PDFs be locally materialized or downloaded for the 191 failed studies, or should Step 5 be scoped to the currently materialized subset until the archive is hydrated?"
+    "After the OneDrive PDFs are locally materialized, does the checker and source-rendering audit reach clean intended-scope coverage, or is an explicit smaller-scope Step 5 authorization required?"
   ],
   "requestedPerspectives": [
     "reviewer",
@@ -23,7 +23,7 @@
   "activeModes": [
     "explore"
   ],
-  "resumeHint": "Continue after the full target-shell source materialization audit. Do not run full-corpus M1-R/M1-P/M2-R; archive filenames cover 194 studies but local source packets render for only S021/S056/S092 due OneDrive Operation timed out errors.",
+  "resumeHint": "Continue after the source PDF materialization action package. Use source_pdf_materialization_gap_manifest_20260609.csv and source_pdf_materialization_batches_20260609.csv; do not run full-corpus M1-R/M1-P/M2-R until checker and source rendering coverage are clean.",
   "locale": "en",
-  "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md"
+  "researchSpecificationArtifact": "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_PDF_MATERIALIZATION_PLAN_20260609.md"
 }

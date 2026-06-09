@@ -134,6 +134,12 @@ read/materialization with `Operation timed out`. This blocks full-corpus `M1-R`
 execution until the OneDrive PDFs are locally materialized or equivalent
 share-safe source renderings are available.
 
+A share-safe materialization action package has been prepared for those 191
+blocked studies: 10 batches prioritized by target-row burden, a study-level gap
+manifest, and a local checker that reports readability/materialization status
+without committing PDF paths or source text. A 3-study checker smoke on the
+first high-priority batch still returns `not_materialized_or_read_timeout`.
+
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
 start from

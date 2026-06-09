@@ -1,0 +1,4 @@
+study_id,batch_id,priority_rank,target_task_count,denominator_families,source_pdf_match_count,first_match_basename,magic_probe_status,magic_probe_bytes,magic_probe_is_pdf,text_probe_status,text_probe_chars_first_two_pages_capped,materialization_status,checked_at_utc,notes
+S121,PDFMAT-20260609-01,1,56,primary_direct_r_or_source_reported_correlation,1,S121.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T00:11:26Z,first-byte read returned Operation timed out
+S015,PDFMAT-20260609-01,2,30,primary_latent_or_construct_correlation_with_source_type_flag,1,S015.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T00:11:26Z,first-byte read returned Operation timed out
+S057,PDFMAT-20260609-01,3,28,primary_latent_or_construct_correlation_with_source_type_flag,1,S057.pdf,timeout,0,false,not_run,0,not_materialized_or_read_timeout,2026-06-09T00:11:26Z,first-byte read returned Operation timed out

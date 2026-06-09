@@ -27,6 +27,13 @@ remaining 191 studies / 2,025 target rows failed local PDF read/materialization
 with `Operation timed out`. Treat this as a local OneDrive materialization
 blocker, not as evidence that source PDFs are absent from the archive.
 
+A materialization action package now groups the 191 blocked studies into 10
+share-safe batches prioritized by target-row burden. The accompanying checker
+records only study-level readability status and does not commit PDF paths,
+source text, human values, or human-adjudicated source locators. A 3-study
+checker smoke confirmed that the first high-priority files still return
+`not_materialized_or_read_timeout`.
+
 Current reference pointer:
 
 - `01_human_reference_snapshot/full_corpus_reference_pointer_20260609.csv`
@@ -38,9 +45,13 @@ Current pre-run planning artifacts:
 - `00_manifest/SOURCE_RENDERING_PREFLIGHT_STATUS_20260609.md`
 - `00_manifest/source_rendering_full_coverage_manifest_20260609.csv`
 - `00_manifest/SOURCE_RENDERING_FULL_COVERAGE_STATUS_20260609.md`
+- `00_manifest/source_pdf_materialization_gap_manifest_20260609.csv`
+- `00_manifest/SOURCE_PDF_MATERIALIZATION_PLAN_20260609.md`
+- `00_manifest/source_pdf_materialization_check_smoke_20260609.csv`
 - `06_rerun_bundles/repeatability_subset_manifest_20260609.csv`
 - `06_rerun_bundles/source_rendered_smoke_task_ids_20260609.csv`
 - `06_rerun_bundles/source_rendered_full_coverage_smoke_task_ids_20260609.csv`
+- `06_rerun_bundles/source_pdf_materialization_batches_20260609.csv`
 
 ## Structure
 
