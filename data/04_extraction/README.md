@@ -60,8 +60,11 @@ full-corpus Step 5 accuracy/substitution claim.
   one S009 directed-value mismatch. The 2026-06-11 beta/path exception layer is
   now consumed by the full-corpus scoring wrapper for the existing smoke/probe
   manifest, but larger full-corpus model execution and result claims remain
-  unauthorized pending specific run-condition approval and exception-aware
-  scoring.
+  unauthorized pending specific run-condition approval, restored/regenerated
+  private source packets in the active workspace, and exception-aware scoring.
+  A bounded 90-row `M1-R` shard preflight now exists as an execution packet, but
+  no new model run was executed because the ignored private source packet
+  directory is absent in the current worktree.
 - Step 5 shell/scoring harness is prepared. Clean model-explicit locked outputs
   are available for `codex:gpt-5.5`, `gemini:gemini-3-flash-preview`, and
   `claude:sonnet` across `0000-7858`. The earlier Claude Code/default-
@@ -134,6 +137,10 @@ workbooks are excluded from the combined analysis.
   `05_llm_masem_substitution/results/PAPER2_MASEM_SUBSTITUTION_RERUN_20260611.md`
 - Step 5 MASEM sample-size reconciliation:
   `05_llm_masem_substitution/results/PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`
+- Step 5 bounded M1-R shard preflight:
+  `05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BOUNDED_SHARD_PREFLIGHT_20260611.md`
+- Step 5 bounded M1-R shard task bundle:
+  `07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_bounded_m1r_shard_task_ids_20260611.csv`
 - Step 5 PDF source-text audit:
   `05_llm_masem_substitution/results/pdf_source_text_audit_20260611/PAPER2_POINTER_ONLY_PDF_SOURCE_TEXT_AUDIT_20260611.md`
 - Step 5 R/metaSEM readiness check:
