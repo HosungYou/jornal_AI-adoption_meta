@@ -6,7 +6,7 @@ Date: 2026-06-11
 
 - R version: R version 4.6.0 (2026-04-24)
 - Platform: aarch64-apple-darwin25.4.0
-- Stage status: `r_environment_ready_input_sample_size_blocked`
+- Stage status: `r_environment_ready_n_eligible_subset_approved_all_row_blocked`
 - Input file: `data/04_extraction/05_llm_masem_substitution/results/paper2_masem_substitution_rerun_input_n_reconciled_20260611.csv`
 - Required R packages available: 9/9
 - Input rows: 804
@@ -16,9 +16,9 @@ Date: 2026-06-11
 
 ## Claim Boundary
 
-The local R environment is ready for Paper2 meta-analytic scripting: `Rscript`, `OpenMx`, and `metaSEM` load successfully. The current input is not yet ready for an all-row final TSSEM Stage 1/Stage 2 claim because 63 of 804 rows still lack numeric `sample_size_numeric`.
+The local R environment is ready for Paper2 meta-analytic scripting: `Rscript`, `OpenMx`, and `metaSEM` load successfully. The approved missing-N rule allows N-weighted analyses on the source-supported eligible subset, but the current input is not ready for an all-row final TSSEM Stage 1/Stage 2 claim because 63 of 804 rows still lack numeric `sample_size_numeric`.
 
-A documented missing-N exclusion rule can support N-weighted analyses on the eligible subset, but excluded missing-N rows must remain outside final TSSEM weighting until a later source check supplies numeric N. This evidence supports deterministic substitution-input readiness and pooled-correlation sensitivity checks, not final SEM path/model-fit stability.
+Under the approved missing-N exclusion rule, excluded missing-N rows remain outside N-weighted TSSEM weighting until a later source check supplies numeric N. This evidence supports deterministic substitution-input readiness, pooled-correlation sensitivity checks, and N-eligible subset diagnostics, not all-row SEM path/model-fit stability.
 
 ## Output Tables
 

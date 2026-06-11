@@ -83,12 +83,12 @@ and downstream consequence. RQ3 evaluates whether model behavior, cross-model
 disagreement, source-risk flags, and human-disagreement traces prioritize expert
 review. Downstream MASEM substitution is treated as a core manuscript result.
 The current N-reconciled legacy rerun input has numeric sample sizes for 741/804
-rows; the remaining 63 rows are excluded from N-weighted SEM weighting unless
-later source checks supply numeric N. A bounded R/metaSEM TSSEM diagnostic is
-reported for the six-construct complete-case subset (PE, EE, SI, FC, BI, UB),
-while final all-construct/all-row SEM stability claims remain gated on the
-approved full model specification and explicit handling of excluded missing-N
-rows.
+rows. Under the approved missing-N rule, the remaining 63 rows are excluded
+from N-weighted SEM weighting unless later source checks supply numeric N. A
+bounded R/metaSEM TSSEM diagnostic is reported for the six-construct
+complete-case subset (PE, EE, SI, FC, BI, UB), while final all-construct/all-row
+SEM stability claims remain gated on the approved full model specification and
+source-supported numeric N for every SEM input row.
 
 ## Results Draft
 
@@ -210,10 +210,11 @@ workbooks, and private OneDrive-only working materials are excluded. The
 repository should be interpreted with the same claim boundary used in this
 draft: denominator-family scoring is required, legacy Claude default-unspecified
 outputs remain audit provenance only, and the bounded TSSEM diagnostic is limited
-to the documented core complete-case subset. Final all-construct/all-row SEM
-substitution-stability claims require the approved full model specification using
-the documented N-reconciled eligible subset or later source-supported N
-completion for excluded rows.
+to the documented source-supported N-eligible core complete-case subset. Under
+the approved missing-N rule, broader SEM wording must use N-eligible subset
+language. Final all-construct/all-row SEM substitution-stability claims require
+the approved full model specification and source-supported numeric N for every
+SEM input row.
 
 ## Claim Boundary
 
@@ -226,5 +227,5 @@ human-reference baseline. The bounded core-6 TSSEM diagnostic further shows
 identical pooled correlations, structural paths, and fit for PE, EE, SI, FC, BI,
 and UB in the 15-study complete-case subset. Any broader statement about all
 constructs, all rows, indirect effects, or substantive conclusions must wait for
-the approved full model specification and the documented missing-N
-inclusion/exclusion rule.
+the approved full model specification. Any all-row wording additionally requires
+source-supported numeric N for every SEM input row.

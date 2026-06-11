@@ -109,7 +109,7 @@ sample_size_ready <- sample_size_rows == nrow(readiness)
 stage_status <- if (all_packages_available && sample_size_ready) {
   "ready_for_full_tssem"
 } else if (all_packages_available) {
-  "r_environment_ready_input_sample_size_blocked"
+  "r_environment_ready_n_eligible_subset_approved_all_row_blocked"
 } else {
   "r_environment_incomplete"
 }
@@ -137,7 +137,7 @@ report <- c(
     "The current input carries numeric sample sizes for all rows, so remaining TSSEM readiness depends on analysis-specification decisions rather than N coverage."
   } else {
     paste0(
-      "The local R environment is ready for Paper2 meta-analytic scripting: `Rscript`, `OpenMx`, and `metaSEM` load successfully. The current input is not yet ready for an all-row final TSSEM Stage 1/Stage 2 claim because ",
+      "The local R environment is ready for Paper2 meta-analytic scripting: `Rscript`, `OpenMx`, and `metaSEM` load successfully. The approved missing-N rule allows N-weighted analyses on the source-supported eligible subset, but the current input is not ready for an all-row final TSSEM Stage 1/Stage 2 claim because ",
       missing_sample_size_rows,
       " of ",
       nrow(readiness),
@@ -145,7 +145,7 @@ report <- c(
     )
   },
   "",
-  "A documented missing-N exclusion rule can support N-weighted analyses on the eligible subset, but excluded missing-N rows must remain outside final TSSEM weighting until a later source check supplies numeric N. This evidence supports deterministic substitution-input readiness and pooled-correlation sensitivity checks, not final SEM path/model-fit stability.",
+  "Under the approved missing-N exclusion rule, excluded missing-N rows remain outside N-weighted TSSEM weighting until a later source check supplies numeric N. This evidence supports deterministic substitution-input readiness, pooled-correlation sensitivity checks, and N-eligible subset diagnostics, not all-row SEM path/model-fit stability.",
   "",
   "## Output Tables",
   "",

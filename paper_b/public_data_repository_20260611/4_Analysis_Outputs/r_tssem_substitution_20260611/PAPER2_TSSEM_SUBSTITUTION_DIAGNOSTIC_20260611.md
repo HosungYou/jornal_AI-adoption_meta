@@ -5,7 +5,7 @@ Date: 2026-06-11
 ## Scope
 
 - Input file: `data/04_extraction/05_llm_masem_substitution/results/paper2_masem_substitution_rerun_input_n_weighted_eligible_20260611.csv`
-- Analysis subset: N-weighted eligible rows after deterministic sample-size reconciliation.
+- Analysis subset: N-weighted eligible rows after deterministic sample-size reconciliation and the approved missing-N exclusion rule.
 - Constructs: PE, EE, SI, FC, BI, UB.
 - Complete-case TSSEM subset: studies reporting all 15 pairwise correlations among these six constructs.
 - Structural model: PE, EE, and SI to BI; FC and BI to UB.
@@ -22,7 +22,7 @@ Date: 2026-06-11
 
 ## Claim Boundary
 
-The expert-reviewed LLM-assisted primary input is numerically unchanged relative to the human-reference primary input in this diagnostic subset when high-risk rows are retained rather than autonomously replaced. Any final structural-path or model-fit stability claim must use the final approved model specification and document excluded missing-N rows.
+The expert-reviewed LLM-assisted primary input is numerically unchanged relative to the human-reference primary input in this diagnostic subset when high-risk rows are retained rather than autonomously replaced. Any broader structural-path or model-fit stability claim must use the final approved model specification and must be worded as N-eligible subset evidence unless source-supported numeric N is completed for every SEM input row.
 
 ## Output Files
 

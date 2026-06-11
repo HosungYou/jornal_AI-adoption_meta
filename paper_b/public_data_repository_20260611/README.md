@@ -43,5 +43,5 @@ provenance.
 
 `MANIFEST.csv` and `CHECKSUMS_SHA256.csv` list every copied/generated file and
 checksum. Copied source file count before generated archive documentation:
-308. The final manifest also includes the generated archive
+309. The final manifest also includes the generated archive
 documentation files.

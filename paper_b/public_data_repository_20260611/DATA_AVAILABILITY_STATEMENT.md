@@ -19,9 +19,11 @@ exclude copyrighted source text.
 
 Downstream MASEM claims require explicit sample-size handling. As of this
 archive, the deterministic reconciliation fills numeric `sample_size_numeric`
-for 741 of 804 substitution rerun rows. The remaining 63 rows are excluded from
-N-weighted TSSEM/MASEM weighting unless a later source check supplies numeric
-N. R/metaSEM readiness, eligible-subset inputs, and a bounded core-6
-complete-case TSSEM diagnostic are included, but final all-construct/all-row
-structural-path or model-fit claims still require the final approved model
-specification and documented handling of excluded missing-N rows.
+for 741 of 804 substitution rerun rows. Under the approved missing-N rule, the
+remaining 63 rows are excluded from N-weighted TSSEM/MASEM weighting unless a
+later source check supplies numeric N. R/metaSEM readiness, eligible-subset
+inputs, and a bounded core-6 complete-case TSSEM diagnostic are included, but
+all-construct/all-row structural-path or model-fit claims still require the
+final approved model specification and source-supported numeric N for every SEM
+input row. Analyses using the approved exclusion rule must be described as
+N-eligible subset evidence.

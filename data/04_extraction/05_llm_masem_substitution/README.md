@@ -9,8 +9,9 @@ Report only locked/scored results by task family and denominator family. A
 bounded core-6 complete-case R/metaSEM TSSEM diagnostic has been run for the
 Paper1 human-reference baseline versus the expert-reviewed LLM-assisted primary
 input. It supports a narrow diagnostic stability claim for that subset only; do
-not claim final all-construct/all-row SEM substitution stability until the final
-approved TSSEM/MASEM specification and missing-N exclusions are carried through.
+not claim final all-construct/all-row SEM substitution stability. The approved
+missing-N rule permits N-weighted SEM only on source-supported N-eligible rows;
+all-row SEM wording requires source-supported numeric N for every SEM input row.
 
 ## Active files
 
@@ -118,6 +119,9 @@ approved TSSEM/MASEM specification and missing-N exclusions are carried through.
   expert-reviewed LLM-assisted primary input.
 - `results/PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`: deterministic
   sample-size reconciliation from the 2026-06-09 frozen full-corpus reference.
+- `results/PAPER2_MISSING_N_AND_CLAIM_BOUNDARY_DECISION_20260611.md`: approved
+  missing-N exclusion rule, sample-size hierarchy, and manuscript claim
+  boundary.
 - `results/paper2_masem_substitution_rerun_input_n_reconciled_20260611.csv`:
   derived MASEM rerun input with numeric N filled where source-supported.
 - `results/paper2_masem_substitution_rerun_input_n_weighted_eligible_20260611.csv`:
@@ -358,12 +362,13 @@ These are source-text audit layers, not overwrites of the frozen human reference
 4.6.0, `OpenMx` 2.22.11, and `metaSEM` 1.5.0. The 804-row expert-reviewed
 substitution input has `r_numeric` for all rows. A deterministic sample-size
 reconciliation layer fills numeric N for 741/804 rows from the 2026-06-09
-frozen full-corpus reference; the remaining 63 rows are excluded from N-weighted
-TSSEM/MASEM weighting until later source checking supplies numeric N. A bounded
-core-6 complete-case TSSEM diagnostic was run on PE, EE, SI, FC, BI, and UB:
+frozen full-corpus reference. The approved missing-N rule excludes the remaining
+63 rows from N-weighted TSSEM/MASEM weighting until later source checking
+supplies numeric N. A bounded core-6 complete-case TSSEM diagnostic was run on
+PE, EE, SI, FC, BI, and UB:
 baseline and expert-reviewed LLM-assisted inputs both converged in Stage 1 REM
 and Stage 2, with 15 complete-case studies, 225 aggregated pair rows, maximum
 pooled-r delta 0.00000000, and identical path/fit results. This is diagnostic
-subset evidence only; final all-construct/all-row structural-path/model-fit
-claims still require the final approved TSSEM/MASEM specification and the
-documented missing-N exclusion/completion rule.
+N-eligible subset evidence only; final all-construct/all-row
+structural-path/model-fit claims still require the final approved TSSEM/MASEM
+specification and source-supported numeric N for every SEM input row.

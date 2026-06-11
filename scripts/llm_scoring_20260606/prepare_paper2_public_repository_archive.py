@@ -396,12 +396,14 @@ exclude copyrighted source text.
 
 Downstream MASEM claims require explicit sample-size handling. As of this
 archive, the deterministic reconciliation fills numeric `sample_size_numeric`
-for 741 of 804 substitution rerun rows. The remaining 63 rows are excluded from
-N-weighted TSSEM/MASEM weighting unless a later source check supplies numeric
-N. R/metaSEM readiness, eligible-subset inputs, and a bounded core-6
-complete-case TSSEM diagnostic are included, but final all-construct/all-row
-structural-path or model-fit claims still require the final approved model
-specification and documented handling of excluded missing-N rows.
+for 741 of 804 substitution rerun rows. Under the approved missing-N rule, the
+remaining 63 rows are excluded from N-weighted TSSEM/MASEM weighting unless a
+later source check supplies numeric N. R/metaSEM readiness, eligible-subset
+inputs, and a bounded core-6 complete-case TSSEM diagnostic are included, but
+all-construct/all-row structural-path or model-fit claims still require the
+final approved model specification and source-supported numeric N for every SEM
+input row. Analyses using the approved exclusion rule must be described as
+N-eligible subset evidence.
 """
     (ARCHIVE / "DATA_AVAILABILITY_STATEMENT.md").write_text(data_statement, encoding="utf-8")
 
@@ -432,6 +434,11 @@ be used for bounded substitution-stability diagnostics.
 The 2026-06-11 bounded 90-row full-corpus M1-R shard is diagnostic evidence for
 the source-rendered extraction path. It is not a full-corpus LLM accuracy or
 replacement claim.
+
+The approved missing-N rule excludes 63/804 expert-reviewed substitution rows
+from N-weighted TSSEM/MASEM weighting because they lack source-supported numeric
+N after deterministic reconciliation. Therefore, current SEM diagnostics must be
+described as N-eligible subset evidence, not all-row evidence.
 
 It does not support an unrestricted replacement claim. Model performance must be
 reported by denominator family and source condition. Pointer-only source rows

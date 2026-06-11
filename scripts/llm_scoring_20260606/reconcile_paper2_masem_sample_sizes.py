@@ -286,11 +286,20 @@ def report_text(summary: list[dict[str, object]], audit_rows: list[dict[str, obj
         lines.append(f"- {row['label']}: {row['row_n']}")
     lines.extend(["", "## Missing-N Exclusion Rule", ""])
     lines.append(
-        "Rows that still lack source-supported `sample_size_numeric` after this "
-        "deterministic merge are excluded from N-weighted TSSEM/MASEM weighting "
-        "until a later PDF-level source check supplies N. They may still be used "
-        "for unweighted descriptive or audit-only sensitivity summaries when "
-        "clearly labeled."
+        "The approved missing-N rule excludes rows that still lack "
+        "source-supported `sample_size_numeric` after this deterministic merge "
+        "from N-weighted TSSEM/MASEM weighting until a later PDF-level source "
+        "check supplies N. They remain available for extraction/scoring audit, "
+        "unweighted descriptive summaries, or explicitly labeled sensitivity "
+        "diagnostics."
+    )
+    lines.extend(
+        [
+            "",
+            "Do not describe analyses using this eligible file as all-row SEM.",
+            "Use `N-eligible subset` or `source-supported N-weighted subset` unless",
+            "source-supported numeric N has been completed for every SEM input row.",
+        ]
     )
     if missing:
         lines.extend(["", "## Remaining Missing-N Studies", ""])

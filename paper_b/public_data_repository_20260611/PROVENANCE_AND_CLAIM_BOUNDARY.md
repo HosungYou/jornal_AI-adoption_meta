@@ -10,6 +10,11 @@ The 2026-06-11 bounded 90-row full-corpus M1-R shard is diagnostic evidence for
 the source-rendered extraction path. It is not a full-corpus LLM accuracy or
 replacement claim.
 
+The approved missing-N rule excludes 63/804 expert-reviewed substitution rows
+from N-weighted TSSEM/MASEM weighting because they lack source-supported numeric
+N after deterministic reconciliation. Therefore, current SEM diagnostics must be
+described as N-eligible subset evidence, not all-row evidence.
+
 It does not support an unrestricted replacement claim. Model performance must be
 reported by denominator family and source condition. Pointer-only source rows
 require the PDF source-text audit boundary. Rows where the audit did not locate
