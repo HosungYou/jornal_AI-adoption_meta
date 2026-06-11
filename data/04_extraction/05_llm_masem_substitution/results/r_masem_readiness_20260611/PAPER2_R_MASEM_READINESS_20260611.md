@@ -7,7 +7,7 @@ Date: 2026-06-11
 - R version: R version 4.6.0 (2026-04-24)
 - Platform: aarch64-apple-darwin25.4.0
 - Stage status: `r_environment_ready_input_sample_size_blocked`
-- Input file: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper2_masem_substitution_rerun_input_20260611.csv`
+- Input file: `data/04_extraction/05_llm_masem_substitution/results/paper2_masem_substitution_rerun_input_20260611.csv`
 - Required R packages available: 9/9
 - Input rows: 804
 - Rows with `r_numeric`: 804/804

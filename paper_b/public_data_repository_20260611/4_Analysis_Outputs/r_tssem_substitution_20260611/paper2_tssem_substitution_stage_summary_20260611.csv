@@ -1,0 +1,3 @@
+scenario,input_rows,eligible_pair_rows,tssem_complete_case_rows,study_n,construct_n,total_n,harmonic_n,min_pooled_eigenvalue,stage1_method,stage1_status,stage1_status_code,stage2_status,stage2_status_code,stage_error
+baseline_primary_human,741,506,225,15,6,14837,569.103309088147,0.3040494180841776,REM,converged,0,converged,0,
+expert_reviewed_llm_assisted_primary,741,506,225,15,6,14837,569.103309088147,0.3040494180841776,REM,converged,0,converged,0,

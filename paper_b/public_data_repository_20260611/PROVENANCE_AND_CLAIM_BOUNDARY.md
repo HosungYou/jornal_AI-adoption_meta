@@ -6,6 +6,10 @@ This archive supports a paper claim that a prespecified LLM workflow can be
 evaluated against a source-anchored adjudicated human reference standard and can
 be used for bounded substitution-stability diagnostics.
 
+The 2026-06-11 bounded 90-row full-corpus M1-R shard is diagnostic evidence for
+the source-rendered extraction path. It is not a full-corpus LLM accuracy or
+replacement claim.
+
 It does not support an unrestricted replacement claim. Model performance must be
 reported by denominator family and source condition. Pointer-only source rows
 require the PDF source-text audit boundary. Rows where the audit did not locate

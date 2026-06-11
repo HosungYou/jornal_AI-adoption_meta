@@ -5,11 +5,12 @@ authorized on 2026-06-09. This folder contains the locked-output shell, scoring
 harness, legacy pre-full-corpus model-explicit artifacts, and the post-freeze
 gate artifacts for Step 5.
 
-Report only locked/scored results by task family and denominator family. Do not
-claim final SEM substitution stability until the expert-reviewed substitution
-input has been run through the full R/metaSEM TSSEM pipeline. The deterministic
-input and pooled-correlation sensitivity rerun is complete, but it is not a
-Stage 1/Stage 2 SEM rerun.
+Report only locked/scored results by task family and denominator family. A
+bounded core-6 complete-case R/metaSEM TSSEM diagnostic has been run for the
+Paper1 human-reference baseline versus the expert-reviewed LLM-assisted primary
+input. It supports a narrow diagnostic stability claim for that subset only; do
+not claim final all-construct/all-row SEM substitution stability until the final
+approved TSSEM/MASEM specification and missing-N exclusions are carried through.
 
 ## Active files
 
@@ -74,6 +75,12 @@ Stage 1/Stage 2 SEM rerun.
 - `results/FULL_CORPUS_M1_R_SOURCE_RENDERED_FULL_COVERAGE_SMOKE_STATUS_20260609.md`:
   balanced source-packet prompt/export/scoring diagnostic across all three
   denominator families; this is not a full-corpus accuracy result.
+- `locked_outputs/model_runs/paper_b_full_corpus_m1_raw_bounded_shard_0090_20260611.csv`:
+  90-row bounded post-freeze source-rendered `M1-R` locked output with
+  `model_cli_error=0` and source quotes suppressed.
+- `results/FULL_CORPUS_M1_R_BOUNDED_SHARD_STATUS_20260611.md`:
+  staged bounded-shard execution and scoring status; this is not a full-corpus
+  accuracy result or MASEM substitution-stability claim.
 - `results/paper_b_full_corpus_m1_raw_scored_20260611.csv`,
   `results/paper_b_full_corpus_m1_raw_score_summary_20260611.csv`,
   `results/paper_b_full_corpus_m1_raw_exception_layer_scored_20260611.csv`, and
@@ -109,6 +116,12 @@ Stage 1/Stage 2 SEM rerun.
   expert-reviewed substitution-input and pooled-correlation sensitivity rerun.
 - `results/paper2_masem_substitution_rerun_input_20260611.csv`: model-ready
   expert-reviewed LLM-assisted primary input.
+- `results/PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`: deterministic
+  sample-size reconciliation from the 2026-06-09 frozen full-corpus reference.
+- `results/paper2_masem_substitution_rerun_input_n_reconciled_20260611.csv`:
+  derived MASEM rerun input with numeric N filled where source-supported.
+- `results/paper2_masem_substitution_rerun_input_n_weighted_eligible_20260611.csv`:
+  N-weighted eligible subset after excluding rows still missing numeric N.
 - `results/paper2_masem_substitution_rerun_pair_impact_20260611.csv`:
   pair-level pooled-correlation impact table.
 - `results/paper2_masem_substitution_rerun_summary_20260611.csv`: rerun summary
@@ -119,6 +132,9 @@ Stage 1/Stage 2 SEM rerun.
 - `results/r_masem_readiness_20260611/PAPER2_R_MASEM_READINESS_20260611.md`:
   local R/OpenMx/metaSEM package and input-readiness check for the Paper2
   substitution input.
+- `results/r_tssem_substitution_20260611/PAPER2_TSSEM_SUBSTITUTION_DIAGNOSTIC_20260611.md`:
+  bounded core-6 complete-case TSSEM diagnostic comparing the Paper1
+  human-reference baseline with the expert-reviewed LLM-assisted primary input.
 - `../../../paper_b/manuscript/PAPER_B_METHODS_RESULTS_DRAFT_20260611.md`:
   methods/results draft for the task-contingent LLM augmentation manuscript.
 
@@ -282,11 +298,20 @@ remains blocked pending beta/path alias/context disambiguation and a narrower
 follow-up gate or explicit staged-shard authorization.
 
 `score_full_corpus_m1_r_with_exception_layer.py` has now been wired into
-`RUNBOOK_20260606.md` as the post-freeze M1-R scorer gate. The first full-corpus
-gate application (101 rows from the probe run) produced the 20260611 full-scorer
-outputs above: `generic_full_accuracy_included=0`, with 45 rows marked
-`not_scored_no_locked_answer`, 56 rows `not_scored_no_exception_layer_record`,
-and 6 exception-layer rows reaching contract-aware converted-effect scoring.
+`RUNBOOK_20260606.md` as the post-freeze M1-R scorer gate. The full-corpus
+wrapper now parses full-corpus reference-record IDs correctly and processes 191
+registered post-freeze smoke/probe/shard rows. The 90-row bounded source-
+rendered shard has 90/90 locked rows, `model_cli_error=0`, source quote policy
+violations=0, 65/90 nonblank answers, and 25/90 abstentions. Generic numeric
+scoring by denominator family is direct/source-r 15/30, latent/construct
+correlation 27/30, and secondary beta/path 13/30. The exception-layer gate still
+restricts contract-aware beta/path interpretation to matching exception-layer
+records, with 45 total exception-layer hits and 2/2 contract-aware converted-
+effect rows correct across the registered post-freeze outputs.
+
+This bounded shard is staged source-rendered evidence only. It should not be
+reported as full-corpus LLM accuracy, model-comparison evidence, or SEM
+substitution-stability evidence.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
@@ -330,8 +355,15 @@ construct/source context but no numeric value hit, and 2 rows with no target hit
 These are source-text audit layers, not overwrites of the frozen human reference.
 
 2026-06-11 R/metaSEM status: the local environment now provides `Rscript`
-4.6.0, `OpenMx` 2.22.11, and `metaSEM` 1.5.0. The current 804-row
-expert-reviewed substitution input has `r_numeric` for all rows but
-`sample_size_numeric` for only 49 rows, so the R/metaSEM runtime is ready while
-the full TSSEM Stage 1/Stage 2 claim remains input-blocked until sample sizes
-are completed or a documented missing-N exclusion rule is applied.
+4.6.0, `OpenMx` 2.22.11, and `metaSEM` 1.5.0. The 804-row expert-reviewed
+substitution input has `r_numeric` for all rows. A deterministic sample-size
+reconciliation layer fills numeric N for 741/804 rows from the 2026-06-09
+frozen full-corpus reference; the remaining 63 rows are excluded from N-weighted
+TSSEM/MASEM weighting until later source checking supplies numeric N. A bounded
+core-6 complete-case TSSEM diagnostic was run on PE, EE, SI, FC, BI, and UB:
+baseline and expert-reviewed LLM-assisted inputs both converged in Stage 1 REM
+and Stage 2, with 15 complete-case studies, 225 aggregated pair rows, maximum
+pooled-r delta 0.00000000, and identical path/fit results. This is diagnostic
+subset evidence only; final all-construct/all-row structural-path/model-fit
+claims still require the final approved TSSEM/MASEM specification and the
+documented missing-N exclusion/completion rule.

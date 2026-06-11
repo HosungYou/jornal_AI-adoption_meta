@@ -37,6 +37,16 @@ input_path <- if (length(input_arg) > 0) {
   )
 }
 
+repo_relative <- function(path) {
+  normalized <- normalizePath(path, mustWork = FALSE)
+  repo_prefix <- paste0(repo, .Platform$file.sep)
+  if (startsWith(normalized, repo_prefix)) {
+    sub(repo_prefix, "", normalized, fixed = TRUE)
+  } else {
+    normalized
+  }
+}
+
 required_packages <- c("readr", "dplyr", "tidyr", "purrr", "tibble", "OpenMx", "metaSEM", "Matrix", "jsonlite")
 package_status <- tibble(
   package = required_packages,
@@ -114,7 +124,7 @@ report <- c(
   paste0("- R version: ", R.version.string),
   paste0("- Platform: ", R.version$platform),
   paste0("- Stage status: `", stage_status, "`"),
-  paste0("- Input file: `", input_path, "`"),
+  paste0("- Input file: `", repo_relative(input_path), "`"),
   paste0("- Required R packages available: ", sum(package_status$available), "/", nrow(package_status)),
   paste0("- Input rows: ", nrow(readiness)),
   paste0("- Rows with `r_numeric`: ", sum(readiness$has_r), "/", nrow(readiness)),

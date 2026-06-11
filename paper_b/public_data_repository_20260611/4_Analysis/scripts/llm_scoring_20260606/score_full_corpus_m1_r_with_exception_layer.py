@@ -37,7 +37,7 @@ def parse_reference_record_id(output_row: dict[str, str]) -> str:
     if direct:
         return direct
     eval_text = output_row.get("evaluation_unit_text", "")
-    match = re.search(r"Reference record:\\s*([^|;\\n]+)", eval_text)
+    match = re.search(r"Reference record:\s*([^|;\n]+)", eval_text)
     if match:
         return match.group(1).strip()
     return ""
@@ -184,6 +184,8 @@ def main() -> None:
         str(tmp_path),
         "--layer",
         str(args.exception_layer),
+        "--manifest",
+        str(args.manifest),
         "--scored-output",
         str(exception_scored_output),
         "--summary-output",

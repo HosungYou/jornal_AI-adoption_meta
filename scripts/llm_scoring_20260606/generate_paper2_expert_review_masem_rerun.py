@@ -42,6 +42,10 @@ DEFAULT_SUMMARY = OUTPUT_DIR / "paper2_masem_substitution_rerun_summary_20260611
 DEFAULT_RERUN_MD = OUTPUT_DIR / "PAPER2_MASEM_SUBSTITUTION_RERUN_20260611.md"
 DEFAULT_RECONCILIATION_SUMMARY = OUTPUT_DIR / "paper2_masem_sample_size_reconciliation_summary_20260611.csv"
 DEFAULT_RECONCILIATION_MD = OUTPUT_DIR / "PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md"
+DEFAULT_TSSEM_DIAGNOSTIC_MD = (
+    OUTPUT_DIR
+    / "r_tssem_substitution_20260611/PAPER2_TSSEM_SUBSTITUTION_DIAGNOSTIC_20260611.md"
+)
 DEFAULT_PDF_AUDIT_CSV = OUTPUT_DIR / "pdf_source_text_audit_20260611/paper2_pointer_only_pdf_source_text_audit_20260611.csv"
 DEFAULT_ONEDRIVE_MIRROR = PAPER2 / "10_expert_review_masem_rerun_20260611"
 
@@ -633,6 +637,8 @@ def format_rerun_md(
     reconciliation = read_optional_summary(DEFAULT_RECONCILIATION_SUMMARY)
     reconciled_present = reconciliation.get(("rows_with_sample_size_numeric", "after_reconciliation"))
     reconciled_missing = reconciliation.get(("rows_missing_sample_size_numeric", "after_reconciliation"))
+    tssem_diagnostic_path = "r_tssem_substitution_20260611/PAPER2_TSSEM_SUBSTITUTION_DIAGNOSTIC_20260611.md"
+    has_tssem_diagnostic = DEFAULT_TSSEM_DIAGNOSTIC_MD.exists()
 
     lines = [
         "# Paper2 Expert-Reviewed MASEM Substitution Rerun",
@@ -654,9 +660,9 @@ def format_rerun_md(
                 f"for {reconciled_present}/{len(substitution_rows)} rows; the remaining {reconciled_missing} rows",
                 "are excluded from N-weighted TSSEM/MASEM weighting unless later source",
                 "checks supply numeric N. The output",
-                "therefore supports substitution-input readiness and pooled-correlation",
-                "impact claims, not final SEM path-coefficient or model-fit stability",
-                "claims.",
+                "therefore supports substitution-input readiness, pooled-correlation",
+                "impact claims, and the bounded core-6 TSSEM diagnostic when",
+                "interpreted within its documented complete-case scope.",
             ]
         )
     else:
@@ -694,6 +700,13 @@ def format_rerun_md(
                 "  TSSEM/metaSEM run.",
             ]
         )
+    if has_tssem_diagnostic:
+        lines.extend(
+            [
+                f"- Bounded core-6 TSSEM diagnostic: `{tssem_diagnostic_path}`.",
+                "- Diagnostic scope: PE, EE, SI, FC, BI, UB; 15 complete-case studies; Stage 1/Stage 2 converged; max pooled-r delta 0.00000000.",
+            ]
+        )
     lines.extend(["", "## Substitution Actions", ""])
     for label, count in sorted(actions.items()):
         lines.append(f"- {label}: {count}")
@@ -724,10 +737,13 @@ def format_rerun_md(
             "- Source-risk exclusion and converted-input augmentation are sensitivity",
             "  diagnostics, not replacements for the primary source-anchored human",
             "  reference baseline.",
-            "- A final MASEM stability claim still requires TSSEM/metaSEM Stage 1/Stage",
-            "  2 on an N-weighted eligible input, or later source-supported N",
-            "  completion for rows excluded by the sample-size reconciliation layer",
-            "  before any all-row weighted claim.",
+            "- The bounded core-6 complete-case TSSEM diagnostic supports a narrow",
+            "  path/fit stability check for PE, EE, SI, FC, BI, and UB only; it is",
+            "  not an all-construct or all-row MASEM stability claim.",
+            "- A final all-row MASEM stability claim still requires the approved",
+            "  full model specification on an N-weighted eligible input, or later",
+            "  source-supported N completion for rows excluded by the sample-size",
+            "  reconciliation layer.",
             "",
         ]
     )

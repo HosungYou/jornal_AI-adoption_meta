@@ -13,9 +13,9 @@ reconciliation layer. The N-reconciled derived input carries numeric N
 for 741/804 rows; the remaining 63 rows
 are excluded from N-weighted TSSEM/MASEM weighting unless later source
 checks supply numeric N. The output
-therefore supports substitution-input readiness and pooled-correlation
-impact claims, not final SEM path-coefficient or model-fit stability
-claims.
+therefore supports substitution-input readiness, pooled-correlation
+impact claims, and the bounded core-6 TSSEM diagnostic when
+interpreted within its documented complete-case scope.
 
 ## Inputs
 
@@ -26,6 +26,8 @@ claims.
 - N-reconciled rows with `sample_size_numeric`: 741/804.
 - Rows excluded from N-weighted TSSEM/MASEM for missing N: 63.
 - Sample-size reconciliation: `PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`.
+- Bounded core-6 TSSEM diagnostic: `r_tssem_substitution_20260611/PAPER2_TSSEM_SUBSTITUTION_DIAGNOSTIC_20260611.md`.
+- Diagnostic scope: PE, EE, SI, FC, BI, UB; 15 complete-case studies; Stage 1/Stage 2 converged; max pooled-r delta 0.00000000.
 
 ## Substitution Actions
 
@@ -53,7 +55,10 @@ claims.
 - Source-risk exclusion and converted-input augmentation are sensitivity
   diagnostics, not replacements for the primary source-anchored human
   reference baseline.
-- A final MASEM stability claim still requires TSSEM/metaSEM Stage 1/Stage
-  2 on an N-weighted eligible input, or later source-supported N
-  completion for rows excluded by the sample-size reconciliation layer
-  before any all-row weighted claim.
+- The bounded core-6 complete-case TSSEM diagnostic supports a narrow
+  path/fit stability check for PE, EE, SI, FC, BI, and UB only; it is
+  not an all-construct or all-row MASEM stability claim.
+- A final all-row MASEM stability claim still requires the approved
+  full model specification on an N-weighted eligible input, or later
+  source-supported N completion for rows excluded by the sample-size
+  reconciliation layer.

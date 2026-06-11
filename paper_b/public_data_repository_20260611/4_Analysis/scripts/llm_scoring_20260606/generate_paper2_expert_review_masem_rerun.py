@@ -18,7 +18,7 @@ AI_ADOPTION_ROOT = Path(
         "AI_ADOPTION_META_ROOT",
         str(
             Path.home()
-            / "Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity"
+            / "<PRIVATE_ONEDRIVE_SHARED_LIBRARY>"
             / "AI Adoption Meta Analysis - Documents/Meta/AI Adoption"
         ),
     )
@@ -40,6 +40,13 @@ DEFAULT_RERUN_INPUT = OUTPUT_DIR / "paper2_masem_substitution_rerun_input_202606
 DEFAULT_PAIR_IMPACT = OUTPUT_DIR / "paper2_masem_substitution_rerun_pair_impact_20260611.csv"
 DEFAULT_SUMMARY = OUTPUT_DIR / "paper2_masem_substitution_rerun_summary_20260611.csv"
 DEFAULT_RERUN_MD = OUTPUT_DIR / "PAPER2_MASEM_SUBSTITUTION_RERUN_20260611.md"
+DEFAULT_RECONCILIATION_SUMMARY = OUTPUT_DIR / "paper2_masem_sample_size_reconciliation_summary_20260611.csv"
+DEFAULT_RECONCILIATION_MD = OUTPUT_DIR / "PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md"
+DEFAULT_TSSEM_DIAGNOSTIC_MD = (
+    OUTPUT_DIR
+    / "r_tssem_substitution_20260611/PAPER2_TSSEM_SUBSTITUTION_DIAGNOSTIC_20260611.md"
+)
+DEFAULT_PDF_AUDIT_CSV = OUTPUT_DIR / "pdf_source_text_audit_20260611/paper2_pointer_only_pdf_source_text_audit_20260611.csv"
 DEFAULT_ONEDRIVE_MIRROR = PAPER2 / "10_expert_review_masem_rerun_20260611"
 
 PRIMARY_MODEL = "codex:gpt-5.5"
@@ -72,6 +79,20 @@ STRUCTURAL_EDGES = {
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8-sig") as handle:
         return list(csv.DictReader(handle))
+
+
+def read_optional_summary(path: Path) -> dict[tuple[str, str], int]:
+    if not path.exists():
+        return {}
+    rows = read_csv(path)
+    summary: dict[tuple[str, str], int] = {}
+    for row in rows:
+        try:
+            row_n = int(str(row.get("row_n", "")).strip())
+        except ValueError:
+            continue
+        summary[(row.get("metric", ""), row.get("label", ""))] = row_n
+    return summary
 
 
 def write_csv(path: Path, rows: list[dict[str, object]], fields: list[str]) -> None:
@@ -500,6 +521,8 @@ def format_review_md(review_rows: list[dict[str, object]]) -> str:
     roles = Counter(str(row["rerun_input_role"]) for row in review_rows)
     priorities = Counter(str(row["review_priority"]) for row in review_rows)
     source_status = Counter(str(row["source_evidence_status"]) for row in review_rows)
+    pdf_audit_rows = read_csv(DEFAULT_PDF_AUDIT_CSV) if DEFAULT_PDF_AUDIT_CSV.exists() else []
+    pdf_status = Counter(str(row["pdf_text_review_status"]) for row in pdf_audit_rows)
 
     lines = [
         "# Paper2 P0/P1 Expert Review Layer",
@@ -523,6 +546,29 @@ def format_review_md(review_rows: list[dict[str, object]]) -> str:
     lines.extend(["", "## Source Evidence Status", ""])
     for label, count in sorted(source_status.items()):
         lines.append(f"- {label}: {count}")
+    if pdf_audit_rows:
+        lines.extend(
+            [
+                "",
+                "## PDF Source-Text Audit",
+                "",
+                f"All {len(pdf_audit_rows)} pointer-only source rows were audited against local PDFs. No source PDF",
+                "was missing and no PDF text extraction failed. The audit found:",
+                "",
+            ]
+        )
+        status_order = [
+            "pdf_text_value_and_pair_terms_found",
+            "pdf_text_value_found_pair_terms_not_on_best_page",
+            "pdf_text_context_found_value_not_found",
+            "pdf_text_no_target_hit",
+        ]
+        for label in status_order:
+            if label in pdf_status:
+                lines.append(f"- {label}: {pdf_status[label]}")
+        for label, count in sorted(pdf_status.items()):
+            if label not in status_order:
+                lines.append(f"- {label}: {count}")
     lines.extend(["", "## Review Decisions", ""])
     for label, count in sorted(counts.items()):
         lines.append(f"- {label}: {count}")
@@ -539,8 +585,9 @@ def format_review_md(review_rows: list[dict[str, object]]) -> str:
             "  or where the source evidence was pointer-only.",
             "- Converted beta/path/source-statistic rows remain sensitivity inputs.",
             "- Trace-only and duplicate-source rows remain outside primary substitution.",
-            "- Rows with source pointers but no evidence text require the separate PDF",
-            "  source-text audit layer and final alignment checks before final",
+            "- The PDF source-text audit supports a stronger source-risk triage layer, but",
+            "  rows without numeric value hits or pair-term alignment remain manual",
+            "  table-review/OCR or final alignment-check candidates before final",
             "  substitution-stability claims.",
             "",
         ]
@@ -587,6 +634,11 @@ def format_rerun_md(
         for row in substitution_rows
         if parse_float(str(row.get("sample_size_numeric") or row.get("sample_size") or "")) is not None
     )
+    reconciliation = read_optional_summary(DEFAULT_RECONCILIATION_SUMMARY)
+    reconciled_present = reconciliation.get(("rows_with_sample_size_numeric", "after_reconciliation"))
+    reconciled_missing = reconciliation.get(("rows_missing_sample_size_numeric", "after_reconciliation"))
+    tssem_diagnostic_path = "r_tssem_substitution_20260611/PAPER2_TSSEM_SUBSTITUTION_DIAGNOSTIC_20260611.md"
+    has_tssem_diagnostic = DEFAULT_TSSEM_DIAGNOSTIC_MD.exists()
 
     lines = [
         "# Paper2 Expert-Reviewed MASEM Substitution Rerun",
@@ -597,21 +649,65 @@ def format_rerun_md(
         "",
         "This rerun is a deterministic model-ready-input and pooled-correlation",
         "sensitivity rerun. The local R environment provides `Rscript`, `OpenMx`,",
-        "and `metaSEM`, but the current expert-reviewed substitution input has sparse",
-        "`sample_size_numeric` coverage. The output therefore supports",
-        "substitution-input readiness and pooled-correlation impact claims, not final",
-        "SEM path-coefficient or model-fit stability claims.",
-        "",
-        "## Inputs",
-        "",
-        "- Baseline: Paper1 primary model-ready tiered freeze input, 804 rows.",
-        f"- P0/P1 expert-review layer: {len(review_rows)} task units.",
-        f"- Expert-reviewed LLM-assisted primary input: {len(substitution_rows)} rows.",
-        f"- Rows with `sample_size_numeric`: {sample_size_present}/{len(substitution_rows)}.",
-        "",
-        "## Substitution Actions",
-        "",
+        "and `metaSEM`.",
     ]
+    if reconciled_present is not None and reconciled_missing is not None:
+        lines.extend(
+            [
+                "The baseline expert-reviewed substitution input has sparse",
+                "`sample_size_numeric` coverage before the deterministic sample-size",
+                "reconciliation layer. The N-reconciled derived input carries numeric N",
+                f"for {reconciled_present}/{len(substitution_rows)} rows; the remaining {reconciled_missing} rows",
+                "are excluded from N-weighted TSSEM/MASEM weighting unless later source",
+                "checks supply numeric N. The output",
+                "therefore supports substitution-input readiness, pooled-correlation",
+                "impact claims, and the bounded core-6 TSSEM diagnostic when",
+                "interpreted within its documented complete-case scope.",
+            ]
+        )
+    else:
+        lines.extend(
+            [
+                "The baseline expert-reviewed substitution input has sparse",
+                "`sample_size_numeric` coverage. The output therefore supports",
+                "substitution-input readiness and pooled-correlation impact claims, not",
+                "final SEM path-coefficient or model-fit stability claims.",
+            ]
+        )
+    lines.extend(
+        [
+            "",
+            "## Inputs",
+            "",
+            "- Baseline: Paper1 primary model-ready tiered freeze input, 804 rows.",
+            f"- P0/P1 expert-review layer: {len(review_rows)} task units.",
+            f"- Expert-reviewed LLM-assisted primary input: {len(substitution_rows)} rows.",
+            f"- Baseline rows with `sample_size_numeric` before any later reconciliation layer: {sample_size_present}/{len(substitution_rows)}.",
+        ]
+    )
+    if reconciled_present is not None and reconciled_missing is not None:
+        lines.extend(
+            [
+                f"- N-reconciled rows with `sample_size_numeric`: {reconciled_present}/{len(substitution_rows)}.",
+                f"- Rows excluded from N-weighted TSSEM/MASEM for missing N: {reconciled_missing}.",
+                f"- Sample-size reconciliation: `{DEFAULT_RECONCILIATION_MD.name}`.",
+            ]
+        )
+    else:
+        lines.extend(
+            [
+                "- Use the separate sample-size reconciliation artifact before any N-weighted",
+                "  TSSEM/metaSEM run.",
+            ]
+        )
+    if has_tssem_diagnostic:
+        lines.extend(
+            [
+                f"- Bounded core-6 TSSEM diagnostic: `{tssem_diagnostic_path}`.",
+                "- Diagnostic scope: PE, EE, SI, FC, BI, UB; 15 complete-case studies; Stage 1/Stage 2 converged; max pooled-r delta 0.00000000.",
+            ]
+        )
+    lines.extend(["", "## Substitution Actions", ""])
     for label, count in sorted(actions.items()):
         lines.append(f"- {label}: {count}")
     lines.extend(
@@ -641,9 +737,13 @@ def format_rerun_md(
             "- Source-risk exclusion and converted-input augmentation are sensitivity",
             "  diagnostics, not replacements for the primary source-anchored human",
             "  reference baseline.",
-            "- A final MASEM stability claim still requires sample-size completion or",
-            "  an explicit missing-N exclusion rule before TSSEM/metaSEM Stage 1/Stage",
-            "  2 is run.",
+            "- The bounded core-6 complete-case TSSEM diagnostic supports a narrow",
+            "  path/fit stability check for PE, EE, SI, FC, BI, and UB only; it is",
+            "  not an all-construct or all-row MASEM stability claim.",
+            "- A final all-row MASEM stability claim still requires the approved",
+            "  full model specification on an N-weighted eligible input, or later",
+            "  source-supported N completion for rows excluded by the sample-size",
+            "  reconciliation layer.",
             "",
         ]
     )

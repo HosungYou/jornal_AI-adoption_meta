@@ -1,0 +1,8 @@
+metric,value
+rows_scored,15
+tolerance,0.005
+status:contract_pass_raw_and_converted,2
+status:raw_recovered_reference_contract_caveat,3
+status:scored_abstention,4
+status:source_directed_raw_recovered_reference_contract_caveat,5
+status:source_value_reference_qa_unresolved,1

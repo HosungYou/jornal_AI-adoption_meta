@@ -81,11 +81,14 @@ RQ1 evaluates extraction validity by denominator family and task stratum. RQ2
 classifies errors by source condition, source-type status, denominator family,
 and downstream consequence. RQ3 evaluates whether model behavior, cross-model
 disagreement, source-risk flags, and human-disagreement traces prioritize expert
-review. Downstream MASEM substitution is treated as a core manuscript result,
-but final SEM stability claims require the full R/metaSEM TSSEM Stage 1/Stage 2
-rerun. The current N-reconciled legacy rerun input has numeric sample sizes for
-741/804 rows; the remaining 63 rows are excluded from N-weighted SEM weighting
-unless later source checks supply numeric N.
+review. Downstream MASEM substitution is treated as a core manuscript result.
+The current N-reconciled legacy rerun input has numeric sample sizes for 741/804
+rows; the remaining 63 rows are excluded from N-weighted SEM weighting unless
+later source checks supply numeric N. A bounded R/metaSEM TSSEM diagnostic is
+reported for the six-construct complete-case subset (PE, EE, SI, FC, BI, UB),
+while final all-construct/all-row SEM stability claims remain gated on the
+approved full model specification and explicit handling of excluded missing-N
+rows.
 
 ## Results Draft
 
@@ -167,10 +170,20 @@ has a maximum absolute mean-r delta of 0.000000 and no structural edges with
 nonzero change. Source-risk exclusion and converted-input augmentation are
 therefore treated as sensitivity diagnostics rather than primary replacements;
 their maximum absolute mean-r deltas are 0.407000 and 0.116229 respectively,
-with nonzero changes on 9 structural edges in each sensitivity layer. Final SEM
-substitution claims still require a full R/metaSEM TSSEM Stage 1/Stage 2 rerun
-on the N-weighted eligible input before comparing structural paths, indirect
-effects, model-fit decisions, and substantive conclusions.
+with nonzero changes on 9 structural edges in each sensitivity layer.
+
+The bounded R/metaSEM TSSEM diagnostic used the N-weighted eligible rows and the
+six-construct complete-case subset PE, EE, SI, FC, BI, and UB. Fifteen studies
+reported all 15 pairwise correlations for this subset, yielding 225 aggregated
+pair rows. Stage 1 random-effects TSSEM and Stage 2 path models converged for
+both the human-reference baseline and the expert-reviewed LLM-assisted input.
+The maximum absolute pooled-correlation delta was 0.00000000, and the structural
+paths were identical across scenarios: PE to BI = 0.376578, EE to BI = 0.271255,
+SI to BI = 0.242604, FC to UB = 0.222908, and BI to UB = 0.566349. Model fit was
+also identical: chi-square = 3.554181, df = 4, p = 0.469688, CFI = 1.000000,
+RMSEA = 0.000000, and SRMR = 0.025199. These results support a narrow diagnostic
+stability claim for this core complete-case subset, not a final all-construct or
+all-row SEM stability claim.
 
 ## Table and Figure Targets
 
@@ -178,8 +191,9 @@ Table 1 should describe the five data states and artifact boundaries. Table 2
 should report RQ1 extraction validity by task family and stratum. Table 3 should
 report RQ2 error classes by source condition. Table 4 should report RQ3 review
 priority and triage signal counts. Table 5 should report the deterministic
-substitution-input and pooled-correlation sensitivity rerun, while clearly
-marking full TSSEM Stage 1/Stage 2 SEM results as pending.
+substitution-input, pooled-correlation sensitivity rerun, and bounded core-6
+TSSEM diagnostic, while clearly marking all-construct/all-row SEM claims as
+outside the current diagnostic scope.
 
 Figure 1 should show the workflow from raw human coding through reference freeze,
 locked LLM outputs, task-family scoring, triage, and downstream substitution.
@@ -195,9 +209,11 @@ reporting checklists, and decision records. Raw article PDFs, raw human coder
 workbooks, and private OneDrive-only working materials are excluded. The
 repository should be interpreted with the same claim boundary used in this
 draft: denominator-family scoring is required, legacy Claude default-unspecified
-outputs remain audit provenance only, and final SEM substitution-stability
-claims require the full R/metaSEM TSSEM rerun using the documented N-reconciled
-eligible subset or later source-supported N completion for excluded rows.
+outputs remain audit provenance only, and the bounded TSSEM diagnostic is limited
+to the documented core complete-case subset. Final all-construct/all-row SEM
+substitution-stability claims require the approved full model specification using
+the documented N-reconciled eligible subset or later source-supported N
+completion for excluded rows.
 
 ## Claim Boundary
 
@@ -206,6 +222,9 @@ for structured locked-output evaluation and review triage, but current locked
 outputs are not sufficient for unsupervised MASEM substitution. The
 expert-reviewed deterministic rerun supports a narrow claim that the primary
 LLM-assisted input made no nonzero pooled-correlation changes relative to the
-human-reference baseline. Any final statement about preserving structural paths,
-model fit, indirect effects, or substantive conclusions must wait for sample-size
-reconciliation/exclusion to be carried through the full R/metaSEM TSSEM rerun.
+human-reference baseline. The bounded core-6 TSSEM diagnostic further shows
+identical pooled correlations, structural paths, and fit for PE, EE, SI, FC, BI,
+and UB in the 15-study complete-case subset. Any broader statement about all
+constructs, all rows, indirect effects, or substantive conclusions must wait for
+the approved full model specification and the documented missing-N
+inclusion/exclusion rule.

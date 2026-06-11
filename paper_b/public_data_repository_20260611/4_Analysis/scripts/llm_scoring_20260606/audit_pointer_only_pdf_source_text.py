@@ -27,7 +27,7 @@ AI_ADOPTION_ROOT = Path(
         "AI_ADOPTION_META_ROOT",
         str(
             Path.home()
-            / "Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity"
+            / "<PRIVATE_ONEDRIVE_SHARED_LIBRARY>"
             / "AI Adoption Meta Analysis - Documents/Meta/AI Adoption"
         ),
     )

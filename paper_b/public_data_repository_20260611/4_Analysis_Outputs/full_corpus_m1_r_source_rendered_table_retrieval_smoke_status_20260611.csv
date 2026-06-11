@@ -1,0 +1,4 @@
+retrieval_smoke_category,study_id,rows,correct,abstentions,nonblank_answers,nonblank_locators,route_violations
+direct_r_table_retrieval_retest,S003,10,0,10,0,0,0
+true_beta_path_table_retrieval_retest,S009,9,3,5,4,4,0
+true_beta_path_table_retrieval_retest,S010,6,0,5,1,1,0

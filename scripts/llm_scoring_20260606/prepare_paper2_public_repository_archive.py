@@ -19,6 +19,18 @@ REPO = Path(__file__).resolve().parents[2]
 DATE = "20260611"
 ARCHIVE = REPO / f"paper_b/public_data_repository_{DATE}"
 OSF_URL = "https://osf.io/mkrgd/overview"
+TEXT_SUFFIXES = {
+    ".csv",
+    ".json",
+    ".md",
+    ".py",
+    ".r",
+    ".R",
+    ".sh",
+    ".txt",
+    ".yaml",
+    ".yml",
+}
 
 
 @dataclass(frozen=True)
@@ -42,6 +54,7 @@ def copy_item(item: ArchiveItem) -> dict[str, str]:
     target = ARCHIVE / item.target
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(item.source, target)
+    sanitize_public_text_file(target)
     return {
         "archive_path": str(item.target),
         "source_path": str(item.source.relative_to(REPO)),
@@ -51,6 +64,33 @@ def copy_item(item: ArchiveItem) -> dict[str, str]:
         "role": item.role,
         "notes": item.notes,
     }
+
+
+def sanitize_public_text_file(path: Path) -> None:
+    if path.suffix not in TEXT_SUFFIXES:
+        return
+    try:
+        text = path.read_text(encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        return
+    private_docs_root = (
+        Path.home()
+        / "Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity"
+        / "AI Adoption Meta Analysis - Documents"
+    )
+    replacements = {
+        str(private_docs_root): "<PRIVATE_AI_ADOPTION_DOCUMENTS_ROOT>",
+        str(REPO): "<REPO_ROOT>",
+        str(Path.home()): "<USER_HOME>",
+        "Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity": "<PRIVATE_ONEDRIVE_SHARED_LIBRARY>",
+        "OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity": "<PRIVATE_ONEDRIVE_SHARED_LIBRARY>",
+    }
+    sanitized = text
+    for old, new in replacements.items():
+        sanitized = sanitized.replace(old, new)
+    if sanitized != text:
+        with path.open("w", encoding="utf-8", newline="") as handle:
+            handle.write(sanitized)
 
 
 def existing(paths: list[Path]) -> list[Path]:
@@ -83,8 +123,36 @@ def locked_model_outputs_from_manifest() -> list[Path]:
     return sorted(set(paths))
 
 
+def locked_full_corpus_outputs_from_manifest() -> list[Path]:
+    manifest = (
+        REPO
+        / "data/04_extraction/05_llm_masem_substitution/locked_outputs/FULL_CORPUS_LOCKED_OUTPUT_MANIFEST_20260609.csv"
+    )
+    if not manifest.exists():
+        return []
+    paths: list[Path] = []
+    with manifest.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            if row.get("artifact_role") != "locked_model_output":
+                continue
+            if row.get("locked_status") != "locked_model_output":
+                continue
+            path = Path(row.get("file", ""))
+            if not path.is_absolute():
+                path = REPO / path
+            if path.exists() and path.is_file() and path.parent.name == "model_runs":
+                paths.append(path)
+    return sorted(set(paths))
+
+
 def model_run_notes(path: Path) -> str:
     name = path.name
+    if "paper_b_full_corpus_m1_raw_bounded_shard_0090" in name:
+        return "Codex GPT-5.5 bounded 90-row M1-R diagnostic shard with private source packets; not a full-corpus replacement claim."
+    if "paper_b_full_corpus_m1_raw_source_rendered_beta_path_contract_probe" in name:
+        return "Codex GPT-5.5 beta/path source-rendered contract probe; diagnostic exception-layer evidence only."
+    if "paper_b_full_corpus_m1_raw_source_rendered" in name or "paper_b_full_corpus_m1_raw_smoke" in name:
+        return "Codex GPT-5.5 full-corpus M1-R smoke/probe output; pipeline validation only."
     if "gemini3flash_api_humandisagree_probe_7400" in name:
         return "Gemini 3 Flash API tail row; legacy probe filename but manifest-registered as clean locked output."
     if "probe" in name:
@@ -132,6 +200,10 @@ def build_items() -> list[ArchiveItem]:
             REPO / locked_root / "LOCKED_OUTPUT_MANIFEST_20260606.csv",
             REPO / locked_root / "MODEL_RUN_MATRIX_20260606.csv",
             REPO / locked_root / "paper2_locked_output_template_20260606.csv",
+            REPO / locked_root / "FULL_CORPUS_LOCKED_OUTPUT_MANIFEST_20260609.csv",
+            REPO / locked_root / "FULL_CORPUS_MODEL_PROCEDURE_RUN_MATRIX_20260609.csv",
+            REPO / locked_root / "FULL_CORPUS_PRE_RUN_AUTHORIZATION_PACKET_20260609.md",
+            REPO / locked_root / "full_corpus_locked_output_template_20260609.csv",
         ]
     ):
         items.append(
@@ -152,13 +224,29 @@ def build_items() -> list[ArchiveItem]:
                 model_run_notes(path),
             )
         )
+    for path in locked_full_corpus_outputs_from_manifest():
+        items.append(
+            ArchiveItem(
+                path,
+                Path("2_Raw_AI_Outputs/full_corpus_model_runs") / path.name,
+                "public_with_provenance",
+                "locked_model_output",
+                model_run_notes(path),
+            )
+        )
 
     result_patterns = [
         "data/04_extraction/05_llm_masem_substitution/results/paper2_*.csv",
         "data/04_extraction/05_llm_masem_substitution/results/PAPER2_*.md",
         "data/04_extraction/05_llm_masem_substitution/results/SCORING_STATUS_20260606.md",
-        "data/04_extraction/05_llm_masem_substitution/results/pdf_source_text_audit_20260611/*",
+        "data/04_extraction/05_llm_masem_substitution/results/full_corpus_*.csv",
+        "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_*.md",
+        "data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_*.csv",
+        "data/04_extraction/05_llm_masem_substitution/results/pdf_source_text_audit_20260611/PAPER2_POINTER_ONLY_PDF_SOURCE_TEXT_AUDIT_20260611.md",
         "data/04_extraction/05_llm_masem_substitution/results/r_masem_readiness_20260611/*",
+        "data/04_extraction/05_llm_masem_substitution/results/r_masem_readiness_n_reconciled_20260611/*",
+        "data/04_extraction/05_llm_masem_substitution/results/r_tssem_substitution_20260611/*.csv",
+        "data/04_extraction/05_llm_masem_substitution/results/r_tssem_substitution_20260611/*.md",
     ]
     for pattern in result_patterns:
         for path in glob_files(pattern):
@@ -170,6 +258,25 @@ def build_items() -> list[ArchiveItem]:
                     "analysis_output",
                 )
             )
+
+    source_rendering_files = [
+        "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/SOURCE_RENDERING_BOUNDED_M1R_SHARD_PACKET_STATUS_20260611.md",
+        "data/04_extraction/07_paper_c_harness_benchmark/00_manifest/source_rendering_bounded_m1r_shard_packet_manifest_20260611.csv",
+        "data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_bounded_m1r_shard_task_ids_20260611.csv",
+        "data/04_extraction/07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_bounded_m1r_shard_packet_smoke_task_ids_20260611.csv",
+    ]
+    for path in existing([REPO / rel for rel in source_rendering_files]):
+        items.append(
+            ArchiveItem(
+                path,
+                Path("3_Source_Rendering_Audit") / path.relative_to(
+                    REPO / "data/04_extraction/07_paper_c_harness_benchmark"
+                ),
+                "public_derived",
+                "source_rendering_manifest_or_task_bundle",
+                "Share-safe manifest or task bundle; private packet text and PDF paths are excluded.",
+            )
+        )
 
     for path in glob_files("scripts/llm_scoring_20260606/*.py"):
         items.append(
@@ -232,13 +339,19 @@ reference standard. Do not describe it as a gold standard. Raw PDFs, raw human
 coder workbooks, and private OneDrive-only materials are excluded from this
 archive.
 
+Public copies of text artifacts replace local machine and OneDrive paths with
+placeholders such as `<REPO_ROOT>` and `<PRIVATE_AI_ADOPTION_DOCUMENTS_ROOT>`.
+
 ## Top-Level Structure
 
 - `1_Prompts/`: prompt modules, scoring rules, and locked-output schemas.
 - `2_Raw_AI_Outputs/`: manifest-registered locked model output shards and
   provenance metadata.
+- `3_Source_Rendering_Audit/`: share-safe source-rendering manifests and task
+  bundles; private packet text and PDF paths are excluded.
 - `4_Analysis_Outputs/`: RQ1-RQ3 outputs, expert-review layers, MASEM bridge
-  outputs, and PDF source-text audit outputs.
+  outputs, and redacted PDF source-text audit summaries. Row-level PDF text
+  snippets and local PDF paths are excluded.
 - `4_Analysis/scripts/`: scripts needed to recreate scoring and derived outputs.
 - `5_Checklists/`: reporting checklist materials.
 - `6_Protocol_and_Decisions/`: methods, decision logs, and workflow records.
@@ -266,22 +379,29 @@ documentation files.
 
 The public repository contains prompts, schemas, scoring rules,
 manifest-registered locked model output CSVs, derived scoring outputs,
-source-text audit outputs, R/metaSEM readiness outputs, analysis
-scripts, reporting checklists, and decision records sufficient to inspect and
-reproduce the Paper 2 LLM evaluation and substitution-stability pipeline.
+redacted source-text audit summaries, R/metaSEM readiness and bounded TSSEM
+diagnostic outputs, analysis scripts, reporting checklists, and decision records
+sufficient to inspect and reproduce the Paper 2 LLM evaluation and
+substitution-stability pipeline.
 
 Repository URL: {OSF_URL}
 
-Raw article PDFs and raw human coder workbooks are not redistributed because
-they are copyrighted or private project materials. The analysis uses a
-source-anchored adjudicated human reference standard derived from human review;
-public release of any row-level human reference file must preserve source
-boundaries and exclude copyrighted source text beyond short audit snippets.
+Raw article PDFs, raw human coder workbooks, row-level PDF text snippets, and
+local PDF paths are not redistributed because they are copyrighted or private
+project materials. Text artifacts in this archive use placeholder paths rather
+than local machine or OneDrive locations. The analysis uses a source-anchored
+adjudicated human reference standard derived from human review; public release
+of any row-level human reference file must preserve source boundaries and
+exclude copyrighted source text.
 
-Downstream MASEM claims require complete sample-size handling. As of this
-archive, the substitution rerun input has sparse sample-size coverage, so
-R/metaSEM execution should be treated as an environment and pipeline readiness
-artifact unless a sample-size completion or exclusion rule is added.
+Downstream MASEM claims require explicit sample-size handling. As of this
+archive, the deterministic reconciliation fills numeric `sample_size_numeric`
+for 741 of 804 substitution rerun rows. The remaining 63 rows are excluded from
+N-weighted TSSEM/MASEM weighting unless a later source check supplies numeric
+N. R/metaSEM readiness, eligible-subset inputs, and a bounded core-6
+complete-case TSSEM diagnostic are included, but final all-construct/all-row
+structural-path or model-fit claims still require the final approved model
+specification and documented handling of excluded missing-N rows.
 """
     (ARCHIVE / "DATA_AVAILABILITY_STATEMENT.md").write_text(data_statement, encoding="utf-8")
 
@@ -308,6 +428,10 @@ Repository URL: {OSF_URL}
 This archive supports a paper claim that a prespecified LLM workflow can be
 evaluated against a source-anchored adjudicated human reference standard and can
 be used for bounded substitution-stability diagnostics.
+
+The 2026-06-11 bounded 90-row full-corpus M1-R shard is diagnostic evidence for
+the source-rendered extraction path. It is not a full-corpus LLM accuracy or
+replacement claim.
 
 It does not support an unrestricted replacement claim. Model performance must be
 reported by denominator family and source condition. Pointer-only source rows
