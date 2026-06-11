@@ -184,6 +184,8 @@ def main() -> None:
         str(tmp_path),
         "--layer",
         str(args.exception_layer),
+        "--manifest",
+        str(args.manifest),
         "--scored-output",
         str(exception_scored_output),
         "--summary-output",

@@ -152,7 +152,8 @@ def manifest_output_files(manifest: Path) -> list[Path]:
         locked_status = row.get("locked_status", "")
         if not path_text or locked_status != "locked_model_output":
             continue
-        files.append(Path(path_text))
+        path = Path(path_text)
+        files.append(path if path.is_absolute() else REPO / path)
     return files
 
 
@@ -168,6 +169,8 @@ def main() -> None:
     parser.add_argument("--reference", type=Path, default=DEFAULT_REFERENCE)
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     parser.add_argument("--output-dir", type=Path, default=RESULTS)
+    parser.add_argument("--scored-output", type=Path, default=None)
+    parser.add_argument("--summary-output", type=Path, default=None)
     args = parser.parse_args()
 
     references = {row["task_unit_id"]: row for row in read_csv(args.reference)}
@@ -212,8 +215,8 @@ def main() -> None:
             )
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    scored_path = args.output_dir / "paper2_locked_output_scored_20260606.csv"
-    summary_path = args.output_dir / "paper2_locked_output_score_summary_20260606.csv"
+    scored_path = args.scored_output or (args.output_dir / "paper2_locked_output_scored_20260606.csv")
+    summary_path = args.summary_output or (args.output_dir / "paper2_locked_output_score_summary_20260606.csv")
     status_path = args.output_dir / "SCORING_STATUS_20260606.md"
 
     scored_fields = [

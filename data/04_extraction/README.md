@@ -57,9 +57,11 @@ full-corpus Step 5 accuracy/substitution claim.
   locked and diagnostically scored with route violations=0. A follow-up 25-row
   table-retrieval smoke unblocked S003 direct-r/FLC retrieval at 10/10 correct,
   but S009/S010 true beta/path controls remain partial with 7/25 abstentions and
-  one S009 directed-value mismatch. Full-corpus model execution and result claims
-  remain unauthorized pending beta/path retrieval disambiguation and specific
-  run-condition approval.
+  one S009 directed-value mismatch. The 2026-06-11 beta/path exception layer is
+  now consumed by the full-corpus scoring wrapper for the existing smoke/probe
+  manifest, but larger full-corpus model execution and result claims remain
+  unauthorized pending specific run-condition approval and exception-aware
+  scoring.
 - Step 5 shell/scoring harness is prepared. Clean model-explicit locked outputs
   are available for `codex:gpt-5.5`, `gemini:gemini-3-flash-preview`, and
   `claude:sonnet` across `0000-7858`. The earlier Claude Code/default-
