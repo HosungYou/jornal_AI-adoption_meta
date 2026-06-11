@@ -1,0 +1,7 @@
+substitution_action,has_sample_size,rows
+llm_exact_numeric_replacement,FALSE,3
+retain_human_reference_after_p0_p1_review,TRUE,28
+retain_human_reference_after_p0_p1_review,FALSE,335
+retain_human_reference_after_source_risk_review,FALSE,358
+retain_human_reference_after_trace_review,TRUE,21
+retain_human_reference_after_trace_review,FALSE,59

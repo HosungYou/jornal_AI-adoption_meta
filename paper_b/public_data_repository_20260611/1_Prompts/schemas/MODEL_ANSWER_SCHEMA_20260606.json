@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "model_answer": {
+      "type": "string"
+    },
+    "model_answer_normalized": {
+      "type": "string"
+    },
+    "model_source_locator": {
+      "type": "string"
+    },
+    "model_source_quote": {
+      "type": "string"
+    },
+    "model_confidence": {
+      "type": "string"
+    },
+    "abstained": {
+      "type": "string"
+    },
+    "error_code": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "model_answer",
+    "model_answer_normalized",
+    "model_source_locator",
+    "model_source_quote",
+    "model_confidence",
+    "abstained",
+    "error_code",
+    "notes"
+  ]
+}

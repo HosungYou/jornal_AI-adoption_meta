@@ -43,6 +43,23 @@ data/04_extraction/phase*/llm_comparison/raw_outputs/
 data/04_extraction/reference/private/
 data/04_extraction/04_reference_standard_freeze/private/
 data/04_extraction/05_llm_masem_substitution/raw_outputs/
+# Paper B local diagnostic LLM outputs. Clean locked outputs are controlled by
+# LOCKED_OUTPUT_MANIFEST_20260606.csv; failed or unregistered probes/retries
+# and superseded shards stay local.
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/*probe*.csv
+!data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_gemini3flash_api_humandisagree_probe_7400_20260607.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/*dryrun*.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/*promptfix*.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/*retry_probe*.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/*retry2*.csv
+!data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_gemini3flash_api_tail_7250_7399_retry2_20260607.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_claude_full_allfamilies_3500_3999_20260606.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_claude_sonnet_full_allfamilies_5000_5249_20260606.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_claude_sonnet_full_allfamilies_5000_5499_20260606.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_claude_sonnet_full_allfamilies_5500_5999_20260606.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_claude_sonnet_full_allfamilies_6000_6499_20260606.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_codex_smoke_direct_r_20260606.csv
+data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_gemini_stratified10_allfamilies_20260606.csv
 pdfs/*.pdf
 data/00_raw/correlation_matrices/*.pdf
 data/00_raw/search_results/*.csv
@@ -70,6 +87,7 @@ CURRENT.md
 # Temporary files
 *.tmp
 *.bak
+*.bak_*
 *.log
 !scripts/ai_coding_pipeline/*.log
 
