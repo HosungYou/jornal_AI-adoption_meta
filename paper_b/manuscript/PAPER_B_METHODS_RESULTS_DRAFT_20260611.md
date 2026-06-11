@@ -82,8 +82,10 @@ classifies errors by source condition, source-type status, denominator family,
 and downstream consequence. RQ3 evaluates whether model behavior, cross-model
 disagreement, source-risk flags, and human-disagreement traces prioritize expert
 review. Downstream MASEM substitution is treated as a core manuscript result,
-but final SEM stability claims require sample-size completion or a documented
-missing-N exclusion rule before the full R/metaSEM TSSEM Stage 1/Stage 2 rerun.
+but final SEM stability claims require the full R/metaSEM TSSEM Stage 1/Stage 2
+rerun. The current N-reconciled legacy rerun input has numeric sample sizes for
+741/804 rows; the remaining 63 rows are excluded from N-weighted SEM weighting
+unless later source checks supply numeric N.
 
 ## Results Draft
 
@@ -166,10 +168,9 @@ nonzero change. Source-risk exclusion and converted-input augmentation are
 therefore treated as sensitivity diagnostics rather than primary replacements;
 their maximum absolute mean-r deltas are 0.407000 and 0.116229 respectively,
 with nonzero changes on 9 structural edges in each sensitivity layer. Final SEM
-substitution claims still require sample-size completion or a documented
-missing-N exclusion rule before a full R/metaSEM TSSEM Stage 1/Stage 2 rerun
-can compare structural paths, indirect effects, model-fit decisions, and
-substantive conclusions.
+substitution claims still require a full R/metaSEM TSSEM Stage 1/Stage 2 rerun
+on the N-weighted eligible input before comparing structural paths, indirect
+effects, model-fit decisions, and substantive conclusions.
 
 ## Table and Figure Targets
 
@@ -195,7 +196,8 @@ workbooks, and private OneDrive-only working materials are excluded. The
 repository should be interpreted with the same claim boundary used in this
 draft: denominator-family scoring is required, legacy Claude default-unspecified
 outputs remain audit provenance only, and final SEM substitution-stability
-claims require sample-size completion or a documented missing-N exclusion rule.
+claims require the full R/metaSEM TSSEM rerun using the documented N-reconciled
+eligible subset or later source-supported N completion for excluded rows.
 
 ## Claim Boundary
 
@@ -206,5 +208,4 @@ expert-reviewed deterministic rerun supports a narrow claim that the primary
 LLM-assisted input made no nonzero pooled-correlation changes relative to the
 human-reference baseline. Any final statement about preserving structural paths,
 model fit, indirect effects, or substantive conclusions must wait for sample-size
-completion or a documented missing-N exclusion rule followed by the full
-R/metaSEM TSSEM rerun.
+reconciliation/exclusion to be carried through the full R/metaSEM TSSEM rerun.

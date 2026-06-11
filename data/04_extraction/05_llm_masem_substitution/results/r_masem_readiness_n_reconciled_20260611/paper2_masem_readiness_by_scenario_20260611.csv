@@ -1,0 +1,3 @@
+substitution_scenario,has_sample_size,rows
+expert_reviewed_llm_assisted_primary,TRUE,741
+expert_reviewed_llm_assisted_primary,FALSE,63

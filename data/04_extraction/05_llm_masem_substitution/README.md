@@ -109,6 +109,12 @@ Stage 1/Stage 2 SEM rerun.
   expert-reviewed substitution-input and pooled-correlation sensitivity rerun.
 - `results/paper2_masem_substitution_rerun_input_20260611.csv`: model-ready
   expert-reviewed LLM-assisted primary input.
+- `results/PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`: deterministic
+  sample-size reconciliation from the 2026-06-09 frozen full-corpus reference.
+- `results/paper2_masem_substitution_rerun_input_n_reconciled_20260611.csv`:
+  derived MASEM rerun input with numeric N filled where source-supported.
+- `results/paper2_masem_substitution_rerun_input_n_weighted_eligible_20260611.csv`:
+  N-weighted eligible subset after excluding rows still missing numeric N.
 - `results/paper2_masem_substitution_rerun_pair_impact_20260611.csv`:
   pair-level pooled-correlation impact table.
 - `results/paper2_masem_substitution_rerun_summary_20260611.csv`: rerun summary
@@ -330,8 +336,11 @@ construct/source context but no numeric value hit, and 2 rows with no target hit
 These are source-text audit layers, not overwrites of the frozen human reference.
 
 2026-06-11 R/metaSEM status: the local environment now provides `Rscript`
-4.6.0, `OpenMx` 2.22.11, and `metaSEM` 1.5.0. The current 804-row
-expert-reviewed substitution input has `r_numeric` for all rows but
-`sample_size_numeric` for only 49 rows, so the R/metaSEM runtime is ready while
-the full TSSEM Stage 1/Stage 2 claim remains input-blocked until sample sizes
-are completed or a documented missing-N exclusion rule is applied.
+4.6.0, `OpenMx` 2.22.11, and `metaSEM` 1.5.0. The 804-row expert-reviewed
+substitution input has `r_numeric` for all rows. A deterministic sample-size
+reconciliation layer fills numeric N for 741/804 rows from the 2026-06-09
+frozen full-corpus reference; the remaining 63 rows are excluded from N-weighted
+TSSEM/MASEM weighting until later source checking supplies numeric N. The
+R/metaSEM runtime is ready, but final structural-path/model-fit claims still
+require the full TSSEM Stage 1/Stage 2 rerun under this documented exclusion
+boundary.

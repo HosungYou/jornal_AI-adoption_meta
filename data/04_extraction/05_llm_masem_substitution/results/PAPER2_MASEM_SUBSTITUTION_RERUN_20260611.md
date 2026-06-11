@@ -5,19 +5,27 @@ Date: 2026-06-11
 ## Boundary
 
 This rerun is a deterministic model-ready-input and pooled-correlation
-sensitivity rerun. The local R environment now provides `Rscript`, `OpenMx`,
-and `metaSEM`, but the current expert-reviewed substitution input has
-`sample_size_numeric` for only 49 of 804 rows. The output therefore supports
-substitution-input readiness and pooled-correlation impact claims, not final
-SEM path-coefficient or model-fit stability claims.
+sensitivity rerun. The local R environment provides `Rscript`, `OpenMx`,
+and `metaSEM`.
+The baseline expert-reviewed substitution input has sparse
+`sample_size_numeric` coverage before the deterministic sample-size
+reconciliation layer. The N-reconciled derived input carries numeric N
+for 741/804 rows; the remaining 63 rows
+are excluded from N-weighted TSSEM/MASEM weighting unless later source
+checks supply numeric N. The output
+therefore supports substitution-input readiness and pooled-correlation
+impact claims, not final SEM path-coefficient or model-fit stability
+claims.
 
 ## Inputs
 
 - Baseline: Paper1 primary model-ready tiered freeze input, 804 rows.
 - P0/P1 expert-review layer: 1845 task units.
 - Expert-reviewed LLM-assisted primary input: 804 rows.
-- R/metaSEM readiness: `Rscript` 4.6.0, `OpenMx` 2.22.11, and `metaSEM` 1.5.0
-  are available; `sample_size_numeric` is present for 49/804 rows.
+- Baseline rows with `sample_size_numeric` before any later reconciliation layer: 49/804.
+- N-reconciled rows with `sample_size_numeric`: 741/804.
+- Rows excluded from N-weighted TSSEM/MASEM for missing N: 63.
+- Sample-size reconciliation: `PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`.
 
 ## Substitution Actions
 
@@ -45,5 +53,7 @@ SEM path-coefficient or model-fit stability claims.
 - Source-risk exclusion and converted-input augmentation are sensitivity
   diagnostics, not replacements for the primary source-anchored human
   reference baseline.
-- A final MASEM stability claim still requires sample-size completion or an
-  explicit missing-N exclusion rule before TSSEM/metaSEM Stage 1/Stage 2 is run.
+- A final MASEM stability claim still requires TSSEM/metaSEM Stage 1/Stage
+  2 on an N-weighted eligible input, or later source-supported N
+  completion for rows excluded by the sample-size reconciliation layer
+  before any all-row weighted claim.

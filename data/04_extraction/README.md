@@ -69,11 +69,13 @@ full-corpus Step 5 accuracy/substitution claim.
   and deterministic substitution-input/pooled-correlation rerun were also
   generated on 2026-06-11. The local R/OpenMx/metaSEM environment is available,
   and all 746 P0/P1 pointer-only source rows have a PDF source-text audit layer.
-  Final SEM substitution-stability claims still require sample-size completion
-  or a documented missing-N exclusion rule before a full R/metaSEM TSSEM Stage
-  1/Stage 2 rerun, and they must not use one 8,783-row denominator. This legacy
-  package remains superseded by the 2026-06-09 full-corpus freeze for final
-  Paper B claim construction.
+  A deterministic sample-size reconciliation layer now fills numeric N for
+  741/804 legacy rerun rows from the 2026-06-09 frozen full-corpus reference,
+  with 63 rows excluded from N-weighted TSSEM/MASEM weighting unless later
+  source checking supplies numeric N. Final SEM substitution-stability claims
+  still require the full R/metaSEM TSSEM Stage 1/Stage 2 rerun, and they must
+  not use one 8,783-row denominator. This legacy package remains superseded by
+  the 2026-06-09 full-corpus freeze for final Paper B claim construction.
 
 For the combined Phase 1+2 Paper B validation corpus, Phase 2 uses R1+R4 for
 57 studies and R2+R3 for 56 studies. Raw returned workbooks are preserved
@@ -128,10 +130,14 @@ workbooks are excluded from the combined analysis.
   `05_llm_masem_substitution/results/PAPER2_P0_P1_EXPERT_REVIEW_20260611.md`
 - Step 5 deterministic MASEM substitution-input rerun:
   `05_llm_masem_substitution/results/PAPER2_MASEM_SUBSTITUTION_RERUN_20260611.md`
+- Step 5 MASEM sample-size reconciliation:
+  `05_llm_masem_substitution/results/PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`
 - Step 5 PDF source-text audit:
   `05_llm_masem_substitution/results/pdf_source_text_audit_20260611/PAPER2_POINTER_ONLY_PDF_SOURCE_TEXT_AUDIT_20260611.md`
 - Step 5 R/metaSEM readiness check:
   `05_llm_masem_substitution/results/r_masem_readiness_20260611/PAPER2_R_MASEM_READINESS_20260611.md`
+- Step 5 N-reconciled R/metaSEM readiness check:
+  `05_llm_masem_substitution/results/r_masem_readiness_n_reconciled_20260611/PAPER2_R_MASEM_READINESS_20260611.md`
 - Paper B public repository archive folder:
   `../../paper_b/public_data_repository_20260611/`
 - Paper B OSF public repository:
