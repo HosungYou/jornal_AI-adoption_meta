@@ -87,6 +87,23 @@ all-row SEM wording requires source-supported numeric N for every SEM input row.
   `results/paper_b_full_corpus_m1_raw_exception_layer_scored_20260611.csv`, and
   `results/paper_b_full_corpus_m1_raw_exception_layer_scored_summary_20260611.csv`:
   outputs from the new full-corpus M1-R exception-aware scorer wrapper.
+- `locked_outputs/FULL_CORPUS_M1_R_FULL_RUN_MANIFEST_20260612.csv`: dedicated
+  manifest for the completed 2,043-row source-packet-required full-corpus `M1-R`
+  expansion.
+- `locked_outputs/model_runs/paper_b_full_corpus_m1_raw_full_0000_0249_20260612.csv`
+  through
+  `locked_outputs/model_runs/paper_b_full_corpus_m1_raw_full_2000_2042_20260612.csv`:
+  completed full-corpus `M1-R` locked-output shards.
+- `results/paper_b_full_corpus_m1_raw_full_scored_20260612.csv` and
+  `results/paper_b_full_corpus_m1_raw_full_score_summary_20260612.csv`:
+  denominator-family scoring outputs for the completed full-corpus `M1-R` run.
+- `results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_20260612.csv`
+  and
+  `results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_summary_20260612.csv`:
+  exception-aware scoring outputs for the completed full-corpus `M1-R` run.
+- `results/PAPER_B_STEP5_FULL_CORPUS_M1R_STATUS_AND_NEXT_WORK_20260612.md`:
+  status and next-work memo for the completed full-corpus `M1-R` documentation
+  sync.
 - `../../../docs/06_decisions/2026-06-11_Paper_B_Canonical_Reference_and_Model_Framing.md`:
   accepted canonical reference, scoring-boundary, and model-framing decisions
   for the legacy pre-full-corpus Step 5 evidence package.
@@ -144,6 +161,26 @@ all-row SEM wording requires source-supported numeric N for every SEM input row.
 
 ## Current status
 
+As of 2026-06-12, the post-freeze source-packet-required full-corpus `M1-R`
+expansion is complete. Nine shards cover exactly 2,043 eligible task units, with
+0 duplicate task IDs, 0 `model_cli_error` rows after repair-aware wrapper
+completion, and 0 committed source-quote rows. The completed full-corpus results
+must be interpreted by denominator family and exception-aware gate status, not as
+a single corpus-wide accuracy score, vendor-ranking result, or autonomous
+replacement claim.
+
+For the completed full-corpus `M1-R` scored output, denominator-family outcomes
+are: `primary_latent_or_construct_correlation_with_source_type_flag` 931 rows
+total / 715 scored / 672 correct / 216 abstentions;
+`primary_direct_r_or_source_reported_correlation` 697 rows total / 572 scored /
+517 correct / 125 abstentions; and
+`secondary_beta_or_path_converted_effect_size` 415 rows total / 338 scored / 153
+correct / 77 abstentions. The exception-aware layer records 15 gate-status rows:
+8 source-reference contract caveats, 4 no-explicit-structural-path exclusions, 1
+manual source/reference adjudication exclusion, and 2 contract-aware converted-
+effect rows allowed by policy but not counted as scored/correct in the generic
+full-corpus exception summary.
+
 The shell is prepared. One-row direct-r smoke outputs are locked for Claude and
 Gemini. Claude's 77-row stratified output is also locked. The earlier Gemini
 77-row stratified output remains on disk as a diagnostic artifact, but it was
@@ -200,7 +237,7 @@ The `M1-R-SMOKE` rows all abstained with `insufficient_evidence`, as expected
 for the current source-rendering placeholder/task-stub setup. This proves the
 post-freeze runner/export/manifest path only. It is not a scoring rerun, LLM
 accuracy result, model comparison, procedure comparison, or MASEM substitution
-claim. No full-corpus model run is authorized yet.
+claim. At that stage, no full-corpus model run had been authorized.
 
 A second source-rendered smoke has been run for the currently PDF-available
 subset (`S021`, `S056`, `S092`): 6 rows, all in
@@ -246,7 +283,7 @@ studies and 492/492 target rows.
 Batch 04 subsequently cleared after repeated wait-based checker reruns while
 OneDrive was active. Across Batches 01-04, 62/80 studies and 1,036/1,306 target
 rows are text-extractable; Batch 03 remains blocked at 18 studies / 270 target
-rows. This does not authorize model execution.
+rows. At that stage, this did not authorize model execution.
 
 Batch 03 subsequently cleared after `S126`, `S127`, and `S128` were resolved
 from readable local Downloads archive copies placed in the ignored local
@@ -258,8 +295,9 @@ remaining blockers were resolved from readable local Downloads archive copies
 placed in the ignored source-PDF folder. The final checker reports 191/191 gap
 studies and 2,025/2,025 gap rows text-extractable. Full source-rendering
 coverage has also been rerun and is clean for 194/194 target studies and
-2,043/2,043 target rows. Model execution remains unauthorized until a specific
-source-rendered condition, exact model selector, and budget are approved.
+2,043/2,043 target rows. This cleared the source-rendering prerequisite; model
+execution still required a specific source-rendered condition, exact model
+selector, and budget authorization.
 
 A balanced 30-row `M1-R-SOURCE-SMOKE-FULL-COVERAGE` has now been executed with
 private source packets for `S002`, `S003`, and `S007`, covering 10 rows in each
@@ -277,7 +315,7 @@ S003 direct-r abstentions probably tied to source-packet table coverage, and 10
 S007 beta/path-route conflicts caused by non-path frozen reference evidence
 being routed through the beta/path task family. A full-shell beta-family routing
 audit found 146/415 beta-family rows with non-path reference evidence. Full
-`M1-R` remains blocked pending revised packet/routing smoke. The targeted
+`M1-R` was blocked at that point pending revised packet/routing smoke. The targeted
 `M1-R-SOURCE-SMOKE-REVISED` task bundle is prepared as
 `../07_paper_c_harness_benchmark/06_rerun_bundles/source_rendered_revised_smoke_task_ids_20260609.csv`
 with 40 rows balanced across latent positive controls, direct-r packet retrieval,
@@ -290,7 +328,7 @@ abstentions=17, committed source quotes=0, route violations=0, and 21/40
 diagnostic correct rows. The route overlay resolved the prior non-path
 secondary/beta-path conflict in this smoke, but S003 direct-r rows still
 abstained 10/10 and true beta/path controls remain partial. Full `M1-R` remains
-blocked pending packet/table retrieval review.
+blocked at that point pending packet/table retrieval review.
 
 A focused 25-row `M1-R-SOURCE-SMOKE-TABLE-RETRIEVAL` has now been executed after
 expanding the source-packet scoring terms and PDF search paths. It completed
@@ -298,7 +336,7 @@ with `model_cli_error=0`, source quote policy violations=0, nonblank answers=18,
 abstentions=7, committed source quotes=0, route violations=0, and 17/25
 diagnostic correct rows. S003 direct-r/FLC retrieval is unblocked at 10/10
 correct, but S009/S010 true beta/path retrieval remains partial. Full `M1-R`
-remains blocked pending beta/path alias/context disambiguation and a narrower
+was blocked at that point pending beta/path alias/context disambiguation and a narrower
 follow-up gate or explicit staged-shard authorization.
 
 `score_full_corpus_m1_r_with_exception_layer.py` has now been wired into
@@ -316,6 +354,13 @@ effect rows correct across the registered post-freeze outputs.
 This bounded shard is staged source-rendered evidence only. It should not be
 reported as full-corpus LLM accuracy, model-comparison evidence, or SEM
 substitution-stability evidence.
+
+The subsequent full-corpus expansion supersedes the bounded shard as the main
+post-freeze `M1-R` locked-output evidence, while preserving the same boundaries.
+It is full-corpus Stage-5 evidence for denominator-family extraction behavior and
+review-triage interpretation, not a final all-row SEM substitution-stability
+claim. All full-corpus manuscript statements must route through the dedicated
+2026-06-12 manifest and exception-aware scoring outputs.
 
 The 8,783 task units must not be treated as one accuracy denominator. Use
 `denominator_family` and `scoring_eligibility`. Current interpretation should
@@ -358,17 +403,15 @@ the numeric value found but pair terms not on the best page, 163 rows with
 construct/source context but no numeric value hit, and 2 rows with no target hit.
 These are source-text audit layers, not overwrites of the frozen human reference.
 
-2026-06-11 R/metaSEM status: the local environment now provides `Rscript`
-4.6.0, `OpenMx` 2.22.11, and `metaSEM` 1.5.0. The 804-row expert-reviewed
-substitution input has `r_numeric` for all rows. A deterministic sample-size
-reconciliation layer fills numeric N for 741/804 rows from the 2026-06-09
-frozen full-corpus reference. The approved missing-N rule excludes the remaining
-63 rows from N-weighted TSSEM/MASEM weighting until later source checking
-supplies numeric N. A bounded core-6 complete-case TSSEM diagnostic was run on
-PE, EE, SI, FC, BI, and UB:
-baseline and expert-reviewed LLM-assisted inputs both converged in Stage 1 REM
-and Stage 2, with 15 complete-case studies, 225 aggregated pair rows, maximum
-pooled-r delta 0.00000000, and identical path/fit results. This is diagnostic
-N-eligible subset evidence only; final all-construct/all-row
-structural-path/model-fit claims still require the final approved TSSEM/MASEM
-specification and source-supported numeric N for every SEM input row.
+2026-06-12 R/metaSEM status: the local environment provides `Rscript` 4.6.0,
+`OpenMx` 2.22.11, and `metaSEM` 1.5.0. The 804-row expert-reviewed substitution
+input has `r_numeric` for all rows, and the approved PDF source-supported N
+override closes numeric N coverage for the derived 804-row MASEM rerun input
+without overwriting raw workbooks or frozen reference files. A bounded core-6
+complete-case TSSEM diagnostic was run on PE, EE, SI, FC, BI, and UB: baseline
+and expert-reviewed LLM-assisted inputs both converged in Stage 1 REM and Stage
+2, with 15 complete-case studies, 225 aggregated pair rows, maximum pooled-r
+delta 0.00000000, and identical path/fit results. This is diagnostic subset
+evidence only; final all-construct/all-row structural-path/model-fit claims still
+require the final approved TSSEM/MASEM specification and explicit handling of
+matrix/source-type boundaries, including the ANX-TRU gap.

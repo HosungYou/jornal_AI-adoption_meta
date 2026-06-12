@@ -1,0 +1,7 @@
+metric,value
+total_rows,804
+rows_with_r_numeric,804
+rows_with_sample_size_numeric,804
+rows_missing_sample_size_numeric,0
+unique_studies,74
+unique_construct_pairs,51

@@ -475,6 +475,17 @@ def write_status(path: Path, manifest_rows: list[dict[str, str]], smoke_rows: li
         if row.get("private_packet_ref") == "local_private_packet_not_committed"
     ]
     failed_rows = [row for row in manifest_rows if row not in rendered_rows]
+    if failed_rows:
+        next_gate = (
+            "Full-corpus `M1-R` remains blocked until source PDFs are locally materialized "
+            "or private rendered source packets are available for every target study."
+        )
+    else:
+        next_gate = (
+            "Source packet availability is closed for the full target shell. Next run the "
+            "source-packet-required scoring pass with quote suppression and the exception-aware "
+            "wrapper before making full-corpus accuracy or substitution-risk claims."
+        )
     status_counts: dict[str, int] = {}
     for row in manifest_rows:
         status_counts[row["status"]] = status_counts.get(row["status"], 0) + 1
@@ -520,7 +531,7 @@ def write_status(path: Path, manifest_rows: list[dict[str, str]], smoke_rows: li
             "",
             "## Next Gate",
             "",
-            "Run a source-rendered smoke only if the selected task IDs all have private rendered source packets. Full-corpus `M1-R` remains blocked until source PDFs are locally materialized or share-safe source renderings are available for the full 2,043-row target shell.",
+            next_gate,
             "",
         ]
     )

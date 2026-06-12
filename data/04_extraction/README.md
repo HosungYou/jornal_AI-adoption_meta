@@ -12,23 +12,28 @@ numbered folders below.
 | 2 | `02_pre_adjudication_disagreement/` | Pairwise comparison workbooks and raw human-human disagreement summaries | Phase 1 comparison workbook exists; Phase 2 queue and combined Phase 1+2 queues generated |
 | 3 | `03_source_document_adjudication/` | Source-check decisions and adjudication logs | Phase 1 and Phase 2 adjudication in progress |
 | 4 | `04_reference_standard_freeze/` | Frozen source-anchored adjudicated human reference standard | Full 213-study corpus frozen with retained caveats on 2026-06-09 |
-| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Source-rendered smoke/preflight runs, a scored 90-row bounded M1-R shard, and a bounded core-6 TSSEM diagnostic completed; full source-rendering coverage clean; legacy pre-full-corpus RQ1-RQ3/OSF package preserved; full-corpus/all-construct result claims remain gated |
+| 5 | `05_llm_masem_substitution/` | Post-freeze LLM comparison and MASEM substitution analyses | Source-rendered smoke/preflight runs, a scored 90-row bounded M1-R shard, a completed source-packet-required 2,043-row full-corpus M1-R run, a bounded core-6 TSSEM diagnostic, and a derived 804-row N-complete MASEM input exist; all-construct/all-row SEM claims remain gated by the final TSSEM/MASEM specification and source-type boundaries |
 | 6 | `06 coding by date/` | Date-stamped operational staging area for share-safe coding packets and transfer artifacts | Active |
 | 99 | `99_archive/` | Historical files not used in the active workflow | Reference only |
 
 ## Current Stage
 
-The project is currently past the post-freeze Step 5 source-materialization gate
-after the full-corpus Step 4 freeze. The full 213-study source-anchored
-adjudicated human reference standard is frozen with caveats preserved, and full
-source-rendering coverage is now clean for the 194-study / 2,043-row target
-shell. A 90-row bounded source-rendered `M1-R` shard has now been executed and
-scored as staged diagnostic evidence. A bounded core-6 complete-case R/metaSEM
-TSSEM diagnostic has also been run for the Paper1 human-reference baseline
-versus the expert-reviewed LLM-assisted primary input. Full-corpus/all-construct
-result claims remain blocked until a larger claim-bearing run plan is explicitly
-authorized and interpreted through the exception-aware workflow and final
-TSSEM/MASEM specification.
+The project is currently past the post-freeze Step 5 full-corpus `M1-R`
+execution gate after the full-corpus Step 4 freeze. The full 213-study
+source-anchored adjudicated human reference standard is frozen with caveats
+preserved, and full source-rendering coverage is clean for the 194-study /
+2,043-row target shell. A 90-row bounded source-rendered `M1-R` shard was
+executed and scored as staged diagnostic evidence, then the dedicated
+source-packet-required 2,043-row full-corpus `M1-R` expansion completed across
+nine shards with 0 duplicate task IDs and 0 model CLI failures. The full-corpus
+outputs are scored through the exception-aware wrapper and may be interpreted
+only by denominator family and contract-aware exception status. A bounded core-6
+complete-case R/metaSEM TSSEM diagnostic has also been run for the Paper1
+human-reference baseline versus the expert-reviewed LLM-assisted primary input.
+The derived 804-row MASEM rerun input now has numeric N for every row after
+approved PDF source-supported N overrides. All-construct/all-row SEM result
+claims remain gated by the final TSSEM/MASEM specification, matrix sparsity, and
+source-type boundaries.
 
 The 2026-06-05 tiered Paper1/Paper2 package remains preserved as a legacy
 pre-full-corpus evidence package. Its clean model-explicit `0000-7858` locked
@@ -68,11 +73,15 @@ full-corpus Step 5 accuracy/substitution claim.
   `model_cli_error=0`, source quote policy violations=0, and denominator-family
   generic numeric scoring of direct/source-r 15/30, latent/construct
   correlation 27/30, and secondary beta/path 13/30. This is staged diagnostic
-  evidence only. A bounded core-6 complete-case TSSEM diagnostic was also run
-  on PE, EE, SI, FC, BI, and UB with 15 complete-case studies; Stage 1 REM and
-  Stage 2 converged for both the Paper1 human-reference baseline and the
+  evidence only. The dedicated 2,043-row full-corpus `M1-R` expansion was then
+  locked and scored through the exception-aware gate on 2026-06-12, with 0
+  duplicate task IDs, 0 model CLI failures, and denominator-family scoring
+  separated for latent/source-flagged, direct/source-r, and secondary
+  beta/path-converted rows. A bounded core-6 complete-case TSSEM diagnostic was
+  also run on PE, EE, SI, FC, BI, and UB with 15 complete-case studies; Stage 1
+  REM and Stage 2 converged for both the Paper1 human-reference baseline and the
   expert-reviewed LLM-assisted primary input, with maximum pooled-r delta
-  0.00000000. Larger full-corpus/all-construct result claims remain gated.
+  0.00000000. All-construct/all-row SEM result claims remain gated.
 - Step 5 shell/scoring harness is prepared. Clean model-explicit locked outputs
   are available for `codex:gpt-5.5`, `gemini:gemini-3-flash-preview`, and
   `claude:sonnet` across `0000-7858`. The earlier Claude Code/default-
@@ -82,12 +91,13 @@ full-corpus Step 5 accuracy/substitution claim.
   and deterministic substitution-input/pooled-correlation rerun were also
   generated on 2026-06-11. The local R/OpenMx/metaSEM environment is available,
   and all 746 P0/P1 pointer-only source rows have a PDF source-text audit layer.
-  A deterministic sample-size reconciliation layer now fills numeric N for
-  741/804 legacy rerun rows from the 2026-06-09 frozen full-corpus reference,
-  with 63 rows excluded from N-weighted TSSEM/MASEM weighting unless later
-  source checking supplies numeric N. The bounded core-6 TSSEM diagnostic
-  supports only subset stability; final all-construct/all-row SEM substitution
-  claims still require the final approved TSSEM/MASEM specification, and they
+  A deterministic sample-size reconciliation layer fills numeric N for 741/804
+  legacy rerun rows from the 2026-06-09 frozen full-corpus reference, and the
+  approved PDF source check supplies derived source-supported N for the
+  remaining 63 rows. The current derived input is therefore N-complete, but the
+  bounded core-6 TSSEM diagnostic still supports only subset stability. Final
+  all-construct/all-row SEM substitution claims require the final approved
+  TSSEM/MASEM specification and an explicit ANX-TRU/source-type boundary; they
   must not use one 8,783-row denominator. This legacy package remains
   superseded by the 2026-06-09 full-corpus freeze for final Paper B claim
   construction.
@@ -147,6 +157,30 @@ workbooks are excluded from the combined analysis.
   `05_llm_masem_substitution/results/PAPER2_MASEM_SUBSTITUTION_RERUN_20260611.md`
 - Step 5 MASEM sample-size reconciliation:
   `05_llm_masem_substitution/results/PAPER2_MASEM_SAMPLE_SIZE_RECONCILIATION_20260611.md`
+- Step 5 PDF-supported N override:
+  `05_llm_masem_substitution/results/PAPER2_MASEM_SAMPLE_SIZE_PDF_OVERRIDE_20260612.md`
+- Step 5 N-complete R/metaSEM readiness check:
+  `05_llm_masem_substitution/results/r_masem_readiness_n_pdf_override_20260612/PAPER2_R_MASEM_READINESS_20260612.md`
+- Step 5 matrix/source-type boundary audit:
+  `05_llm_masem_substitution/results/PAPER2_MASEM_MATRIX_IDENTIFICATION_AUDIT_20260612.md`
+- Step 5 ANX-TRU source-type panel:
+  `05_llm_masem_substitution/results/PAPER_A_ANX_TRU_SOURCE_TYPE_PANEL_20260612.md`
+- Step 5 full-corpus M1-R expansion gate:
+  `05_llm_masem_substitution/results/FULL_CORPUS_M1_R_EXPANSION_GATE_20260612.md`
+- Step 5 full-corpus M1-R dedicated manifest:
+  `05_llm_masem_substitution/locked_outputs/FULL_CORPUS_M1_R_FULL_RUN_MANIFEST_20260612.csv`
+- Step 5 full-corpus M1-R shard commands:
+  `07_paper_c_harness_benchmark/06_rerun_bundles/run_full_corpus_m1r_expansion_20260612.sh`
+- Step 5 full-corpus M1-R locked outputs:
+  `05_llm_masem_substitution/locked_outputs/model_runs/paper_b_full_corpus_m1_raw_full_0000_0249_20260612.csv`
+  through
+  `05_llm_masem_substitution/locked_outputs/model_runs/paper_b_full_corpus_m1_raw_full_2000_2042_20260612.csv`
+- Step 5 full-corpus M1-R scoring outputs:
+  `05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_scored_20260612.csv`
+  and
+  `05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_20260612.csv`
+- Step 5 full-corpus M1-R status and next-work memo:
+  `05_llm_masem_substitution/results/PAPER_B_STEP5_FULL_CORPUS_M1R_STATUS_AND_NEXT_WORK_20260612.md`
 - Step 5 bounded M1-R shard preflight:
   `05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BOUNDED_SHARD_PREFLIGHT_20260611.md`
 - Step 5 bounded M1-R shard task bundle:

@@ -2,9 +2,9 @@
 
 Date: 2026-06-09
 
-Status: full source-rendering coverage is clean for the post-freeze Step 5
-target shell. This artifact does not by itself authorize a full-corpus model
-run, but it clears the prior source materialization/readability blocker.
+Status: source-rendering coverage preflight cleared for the post-freeze Step 5
+target shell. This artifact documents source-packet availability; it does not
+by itself authorize pooled accuracy, replacement, or SEM stability claims.
 
 ## Rendered Private Packets
 
@@ -34,11 +34,8 @@ run, but it clears the prior source materialization/readability blocker.
 
 ## Next Gate
 
-The source-rendering coverage gate is cleared, and the balanced 30-row
-full-coverage source-rendered smoke has now been executed and locked as
-`paper_b_full_corpus_m1_raw_source_rendered_full_coverage_smoke_20260609`.
-The next defensible gate is to review the smoke's 17 abstentions and 13
-nonblank answers for prompt/path behavior, then either authorize a larger staged
-`M1-R` shard plan or explicitly authorize a full-corpus `M1-R`. Full-corpus
-`M1-R`, `M1-P`, `M2-R`, and optional `M3-R` remain pending exact model selector,
-budget, and run-condition authorization.
+Source packet availability is closed for the full target shell. The subsequent
+2026-06-12 source-packet-required full-corpus M1-R run and exception-aware
+scoring outputs supersede the preflight as the manuscript evidence base. Report
+those outputs by denominator family and exception gate; do not collapse them
+into one pooled accuracy, replacement, or all-row SEM stability claim.

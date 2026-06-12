@@ -15,7 +15,12 @@ script_path <- if (length(file_arg) > 0) {
   normalizePath("scripts/llm_scoring_20260606/check_paper2_r_masem_readiness_20260611.R", mustWork = TRUE)
 }
 repo <- normalizePath(file.path(dirname(script_path), "..", ".."), mustWork = TRUE)
-date_tag <- "20260611"
+date_arg <- grep("^--date-tag=", command_args, value = TRUE)
+date_tag <- if (length(date_arg) > 0) {
+  sub("^--date-tag=", "", date_arg[[1]])
+} else {
+  "20260611"
+}
 results_arg <- grep("^--results-dir=", command_args, value = TRUE)
 results_dir <- if (length(results_arg) > 0) {
   normalizePath(sub("^--results-dir=", "", results_arg[[1]]), mustWork = FALSE)
@@ -93,10 +98,10 @@ by_action <- readiness %>%
   count(substitution_action, has_sample_size, name = "rows") %>%
   arrange(substitution_action, desc(has_sample_size))
 
-package_csv <- file.path(results_dir, "paper2_r_package_status_20260611.csv")
-overall_csv <- file.path(results_dir, "paper2_masem_readiness_overall_20260611.csv")
-scenario_csv <- file.path(results_dir, "paper2_masem_readiness_by_scenario_20260611.csv")
-action_csv <- file.path(results_dir, "paper2_masem_readiness_by_action_20260611.csv")
+package_csv <- file.path(results_dir, paste0("paper2_r_package_status_", date_tag, ".csv"))
+overall_csv <- file.path(results_dir, paste0("paper2_masem_readiness_overall_", date_tag, ".csv"))
+scenario_csv <- file.path(results_dir, paste0("paper2_masem_readiness_by_scenario_", date_tag, ".csv"))
+action_csv <- file.path(results_dir, paste0("paper2_masem_readiness_by_action_", date_tag, ".csv"))
 write_csv(package_status, package_csv)
 write_csv(overall, overall_csv)
 write_csv(by_scenario, scenario_csv)
@@ -117,7 +122,7 @@ stage_status <- if (all_packages_available && sample_size_ready) {
 report <- c(
   "# Paper2 R/metaSEM Readiness Check",
   "",
-  "Date: 2026-06-11",
+  paste0("Date: ", format(Sys.Date(), "%Y-%m-%d")),
   "",
   "## Status",
   "",
@@ -145,15 +150,19 @@ report <- c(
     )
   },
   "",
-  "Under the approved missing-N exclusion rule, excluded missing-N rows remain outside N-weighted TSSEM weighting until a later source check supplies numeric N. This evidence supports deterministic substitution-input readiness, pooled-correlation sensitivity checks, and N-eligible subset diagnostics, not all-row SEM path/model-fit stability.",
+  if (sample_size_ready) {
+    "The approved PDF-supported N override closes the N-coverage gate for this derived input. This evidence supports N-weighted TSSEM/OSMASEM execution readiness, while substantive all-construct claims remain gated by matrix sparsity, identification, source-type, and model-specification checks."
+  } else {
+    "Under the approved missing-N exclusion rule, excluded missing-N rows remain outside N-weighted TSSEM weighting until a later source check supplies numeric N. This evidence supports deterministic substitution-input readiness, pooled-correlation sensitivity checks, and N-eligible subset diagnostics, not all-row SEM path/model-fit stability."
+  },
   "",
   "## Output Tables",
   "",
-  "- `paper2_r_package_status_20260611.csv`",
-  "- `paper2_masem_readiness_overall_20260611.csv`",
-  "- `paper2_masem_readiness_by_scenario_20260611.csv`",
-  "- `paper2_masem_readiness_by_action_20260611.csv`"
+  paste0("- `paper2_r_package_status_", date_tag, ".csv`"),
+  paste0("- `paper2_masem_readiness_overall_", date_tag, ".csv`"),
+  paste0("- `paper2_masem_readiness_by_scenario_", date_tag, ".csv`"),
+  paste0("- `paper2_masem_readiness_by_action_", date_tag, ".csv`")
 )
 
-writeLines(report, file.path(results_dir, "PAPER2_R_MASEM_READINESS_20260611.md"))
+writeLines(report, file.path(results_dir, paste0("PAPER2_R_MASEM_READINESS_", date_tag, ".md")))
 cat(stage_status, "\n")

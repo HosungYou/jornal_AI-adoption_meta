@@ -81,14 +81,13 @@ RQ1 evaluates extraction validity by denominator family and task stratum. RQ2
 classifies errors by source condition, source-type status, denominator family,
 and downstream consequence. RQ3 evaluates whether model behavior, cross-model
 disagreement, source-risk flags, and human-disagreement traces prioritize expert
-review. Downstream MASEM substitution is treated as a core manuscript result.
-The current N-reconciled legacy rerun input has numeric sample sizes for 741/804
-rows. Under the approved missing-N rule, the remaining 63 rows are excluded
-from N-weighted SEM weighting unless later source checks supply numeric N. A
-bounded R/metaSEM TSSEM diagnostic is reported for the six-construct
-complete-case subset (PE, EE, SI, FC, BI, UB), while final all-construct/all-row
-SEM stability claims remain gated on the approved full model specification and
-source-supported numeric N for every SEM input row.
+review. Downstream MASEM substitution is treated as a core manuscript result. The
+approved 2026-06-12 PDF-supported N override supplies numeric sample sizes for
+all 804 derived substitution rerun rows without overwriting raw human workbooks
+or frozen reference files. A bounded R/metaSEM TSSEM diagnostic is reported for
+the six-construct complete-case subset (PE, EE, SI, FC, BI, UB), while final
+all-construct/all-row SEM stability claims remain gated on the approved full
+model specification and matrix/source-type reporting boundaries.
 
 ## Results Draft
 
@@ -185,6 +184,14 @@ RMSEA = 0.000000, and SRMR = 0.025199. These results support a narrow diagnostic
 stability claim for this core complete-case subset, not a final all-construct or
 all-row SEM stability claim.
 
+A post-freeze 2,043-row `M1-R` full-corpus expansion also reported denominator-family
+boundaries. In this layer, `primary_latent_or_construct_correlation_with_source_type_flag`
+had 931 rows (715 scored, 672 correct), `primary_direct_r_or_source_reported_correlation`
+had 697 rows (572 scored, 517 correct), and `secondary_beta_or_path_converted_effect_size`
+had 415 rows (338 scored, 153 correct). Converted-effect rows remain a sensitivity
+stratum because this layer is contract-aware and source-reference caveats are still
+tracked as exception-bounded exclusions.
+
 ## Table and Figure Targets
 
 Table 1 should describe the five data states and artifact boundaries. Table 2
@@ -192,13 +199,45 @@ should report RQ1 extraction validity by task family and stratum. Table 3 should
 report RQ2 error classes by source condition. Table 4 should report RQ3 review
 priority and triage signal counts. Table 5 should report the deterministic
 substitution-input, pooled-correlation sensitivity rerun, and bounded core-6
-TSSEM diagnostic, while clearly marking all-construct/all-row SEM claims as
-outside the current diagnostic scope.
+TSSEM diagnostic, and the 2,043-row full-corpus Stage-5 `M1-R` outcomes by
+denominator family. Pre-existing 10-construct and all-row SEM claims should remain
+explicitly gated as a separate TSSEM section until missing-N and structural-path
+evidence decisions are finalized.
 
 Figure 1 should show the workflow from raw human coding through reference freeze,
 locked LLM outputs, task-family scoring, triage, and downstream substitution.
 Figure 2 should visualize the error-consequence gradient across task families.
 Figure 3 should visualize downstream substitution stability after rerun.
+
+### Table 2. RQ1 Extraction Validity by Denominator Family
+
+| Evidence layer | Denominator family or stratum | Rows total | Scored rows | Correct rows | Abstention rows | Manuscript boundary |
+|---|---|---:|---:|---:|---:|---|
+| Post-freeze full-corpus `M1-R` | `primary_latent_or_construct_correlation_with_source_type_flag` | 931 | 715 | 672 | 216 | Source-flagged primary correlation evidence; report separately from direct-r and converted-effect rows. |
+| Post-freeze full-corpus `M1-R` | `primary_direct_r_or_source_reported_correlation` | 697 | 572 | 517 | 125 | Primary source-reported/direct-r evidence; report as a separate denominator family. |
+| Post-freeze full-corpus `M1-R` | `secondary_beta_or_path_converted_effect_size` | 415 | 338 | 153 | 77 | Converted-effect sensitivity stratum; do not collapse into primary direct-r accuracy. |
+| Exception-aware full-corpus gate | Source-reference contract caveat | 8 | 0 | 0 | 0 | Exclude from generic full-accuracy numerator until the contract layer is explicitly consumed. |
+| Exception-aware full-corpus gate | No explicit structural-path evidence | 4 | 0 | 0 | 0 | Exclude pending structural-path evidence or reference correction. |
+| Exception-aware full-corpus gate | Manual source/reference adjudication required | 1 | 0 | 0 | 0 | Hold out of automated accuracy interpretation. |
+| Exception-aware full-corpus gate | Contract-aware converted-effect allowed | 2 | 0 | 0 | 0 | Policy-allowed rows; do not count as scored/correct in the generic full-corpus exception summary unless the contract-aware layer is explicitly consumed with locked answers. |
+
+Note. Correct rows are counted only within the denominator family or exception
+gate listed in the row. This table should not be collapsed into a single
+full-corpus accuracy denominator.
+
+### Table 5. Substitution and SEM Readiness
+
+| Analysis layer | Scope | Main result | Manuscript boundary |
+|---|---|---|---|
+| Expert-reviewed LLM-assisted primary input | 804 MASEM input rows | 3 exact numeric replacements; 0 nonzero primary value deltas relative to the human-reference baseline | Supports deterministic assisted-input stability only, not autonomous replacement. |
+| Pooled-correlation rerun | Primary expert-reviewed input | Maximum absolute mean-r delta = 0.000000; no structural edges with nonzero change | Primary claim is bounded to the rerun input and denominator-family review layer. |
+| Sensitivity reruns | Source-risk exclusion and converted-input augmentation | Maximum absolute mean-r deltas = 0.407000 and 0.116229; 9 changed structural edges in each layer | Sensitivity diagnostics only; not primary replacements. |
+| Core-6 TSSEM diagnostic | PE, EE, SI, FC, BI, UB in 15 complete-case studies | 225 aggregated pair rows; pooled correlations, paths, and fit identical across baseline and assisted input | Narrow complete-case diagnostic; not an all-construct/all-row SEM claim. |
+| Post-freeze full-corpus `M1-R` | 2,043 task units across nine source-packet-required shards | 0 duplicates, 0 model CLI failures, denominator-family scoring complete, 15 exception-layer rows | Stage-5 extraction/review evidence; use with exception-aware gate and no vendor-ranking or broad replacement claim. |
+
+Note. Table 5 separates deterministic substitution-input stability, sensitivity
+diagnostics, bounded TSSEM evidence, and the full-corpus Step-5 extraction layer.
+It should not be used to imply all-row SEM stability or autonomous replacement.
 
 ## Data and Code Availability
 
@@ -229,3 +268,62 @@ and UB in the 15-study complete-case subset. Any broader statement about all
 constructs, all rows, indirect effects, or substantive conclusions must wait for
 the approved full model specification. Any all-row wording additionally requires
 source-supported numeric N for every SEM input row.
+
+The post-freeze full-corpus Stage-5 `M1-R` expansion is complete under the
+source-packet contract, with 2,043 unique task units and 0 model CLI failures.
+No model-vendor ranking claim is supported by the current evidence; model-specific
+results remain bounded to contract-aware workflow interpretation and review triage
+diagnostics.
+
+## Post-Freeze Step 5 Boundary Update (2026-06-12)
+
+The full post-freeze `M1-R` expansion was completed with the source-rendered,
+denominator-family-aware, exception-aware workflow. Nine shards were run and
+registered under one manifest, covering exactly 2,043 eligible task units with
+no duplicates and no model CLI failures.
+
+### Post-Freeze Coverage and Scoring Facts
+
+- Manifest: `05_llm_masem_substitution/locked_outputs/FULL_CORPUS_M1_R_FULL_RUN_MANIFEST_20260612.csv`
+- Shards: `paper_b_full_corpus_m1_raw_full_0000_0249_20260612.csv` through
+  `paper_b_full_corpus_m1_raw_full_2000_2042_20260612.csv`
+- Run scope: 2,043 rows, task IDs `FC-S5-TASK-00001` to `FC-S5-TASK-02043`
+- Coverage: 2,043 rows, 2,043 unique task IDs, 0 duplicates
+- Lock quality: 0 `model_cli_error` rows after repair-aware wrapper completion
+- Source quote policy: 0 rows with `model_source_quote` content
+
+### Denominator-Family Scoring Outcomes
+
+For this full-corpus post-freeze run (`..._full_scored_20260612.csv`):
+
+- `primary_latent_or_construct_correlation_with_source_type_flag`
+  - 931 rows total
+  - 715 scored rows, 672 correct
+  - 216 abstention rows
+- `primary_direct_r_or_source_reported_correlation`
+  - 697 rows total
+  - 572 scored rows, 517 correct
+  - 125 abstention rows
+- `secondary_beta_or_path_converted_effect_size`
+  - 415 rows total
+  - 338 scored rows, 153 correct
+  - 77 abstention rows
+
+### Exception-Aware Layer Effects
+
+The full exception layer file records 15 rows with gate status effects:
+
+- 8 `not_scored_reference_contract_caveat`
+- 4 `not_scored_no_explicit_structural_path_evidence`
+- 1 `not_scored_manual_source_reference_adjudication_required`
+- 2 `contract_aware_converted_effect_scoring_allowed_after_layer_consumed`
+- 2,028 rows without a matching exception record (`not_scored_no_exception_layer_record`)
+
+### Claim Boundary for Interpretation
+
+In the manuscript, these 2,043-row full-corpus results should be labeled as
+post-freeze Stage-5 bound evidence, not a broad final replacement result. Primary
+accuracy statements must be reported with denominator-family separation, and
+source-reference contract caveat rows should be treated as excluded from the
+generic full-accuracy numerator until the approved contract layer is explicitly
+consumed.

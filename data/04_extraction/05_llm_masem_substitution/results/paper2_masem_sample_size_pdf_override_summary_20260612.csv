@@ -1,0 +1,13 @@
+metric,label,row_n
+total_rows,all,804
+rows_with_sample_size_numeric,after_pdf_override,804
+rows_missing_sample_size_numeric,after_pdf_override,0
+pdf_override_status,applied_pdf_recovered_study_level_n,63
+pdf_override_status,not_needed_existing_source_supported_n,741
+pdf_override_applied_study,S028,10
+pdf_override_applied_study,S100,2
+pdf_override_applied_study,S145,6
+pdf_override_applied_study,S185,14
+pdf_override_applied_study,S194,15
+pdf_override_applied_study,S208,10
+pdf_override_applied_study,S218,6

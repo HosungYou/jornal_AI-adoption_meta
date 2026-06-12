@@ -15,6 +15,14 @@ archive.
 Public copies of text artifacts replace local machine and OneDrive paths with
 placeholders such as `<REPO_ROOT>` and `<PRIVATE_AI_ADOPTION_DOCUMENTS_ROOT>`.
 
+## 2026-06-12 Update Note
+
+The local repository now includes post-archive full-corpus M1-R documentation,
+locked scoring outputs, and source-supported N override artifacts. If the OSF
+archive is redistributed as containing the 2026-06-12 full-corpus artifacts,
+refresh `MANIFEST.csv`, `CHECKSUMS_SHA256.csv`, and the copied file set before
+making that public-archive claim.
+
 ## Top-Level Structure
 
 - `1_Prompts/`: prompt modules, scoring rules, and locked-output schemas.
