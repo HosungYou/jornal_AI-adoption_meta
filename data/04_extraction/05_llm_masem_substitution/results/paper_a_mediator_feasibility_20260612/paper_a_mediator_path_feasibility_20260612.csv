@@ -1,0 +1,26 @@
+mediator,mechanism_family,path_label,x,m,y,a_pair,b_pair,c_pair,a_rows,a_studies,b_rows,b_studies,c_rows,c_studies,ab_same_study_overlap,abc_same_study_overlap,feasibility_status
+ATT,standard_attitude_mediation,PE -> ATT -> BI,PE,ATT,BI,ATT-PE,ATT-BI,BI-PE,27,27,30,30,57,57,25,21,main_indirect_candidate
+ATT,standard_attitude_mediation,EE -> ATT -> BI,EE,ATT,BI,ATT-EE,ATT-BI,BI-EE,26,26,30,30,54,54,24,20,main_indirect_candidate
+ATT,standard_attitude_mediation,SI -> ATT -> BI,SI,ATT,BI,ATT-SI,ATT-BI,BI-SI,12,12,30,30,39,39,12,12,main_indirect_candidate
+ATT,standard_attitude_mediation,FC -> ATT -> BI,FC,ATT,BI,ATT-FC,ATT-BI,BI-FC,10,10,30,30,36,36,9,9,main_indirect_candidate
+SE,self_efficacy_mechanism,FC -> SE -> BI,FC,SE,BI,FC-SE,BI-SE,BI-FC,6,6,9,9,36,36,6,6,sensitivity_indirect_candidate
+SE,self_efficacy_mechanism,EE -> SE -> BI,EE,SE,BI,EE-SE,BI-SE,BI-EE,7,7,9,9,54,54,6,6,sensitivity_indirect_candidate
+SE,self_efficacy_mechanism,PE -> SE -> BI,PE,SE,BI,PE-SE,BI-SE,BI-PE,15,15,9,9,57,57,7,7,sensitivity_indirect_candidate
+SE,self_efficacy_mechanism,SI -> SE -> BI,SI,SE,BI,SE-SI,BI-SE,BI-SI,6,6,9,9,39,39,5,5,sensitivity_indirect_candidate
+SE,self_efficacy_to_attitude,FC -> SE -> ATT,FC,SE,ATT,FC-SE,ATT-SE,ATT-FC,6,6,5,5,10,10,2,2,theory_only_underpowered
+SE,self_efficacy_to_attitude,EE -> SE -> ATT,EE,SE,ATT,EE-SE,ATT-SE,ATT-EE,7,7,5,5,26,26,3,3,sensitivity_indirect_candidate
+SE,self_efficacy_to_attitude,PE -> SE -> ATT,PE,SE,ATT,PE-SE,ATT-SE,ATT-PE,15,15,5,5,27,27,4,4,sensitivity_indirect_candidate
+TRU,trust_mechanism,PE -> TRU -> BI,PE,TRU,BI,PE-TRU,BI-TRU,BI-PE,12,12,12,12,57,57,10,10,main_indirect_candidate
+TRU,trust_mechanism,EE -> TRU -> BI,EE,TRU,BI,EE-TRU,BI-TRU,BI-EE,10,10,12,12,54,54,10,9,main_indirect_candidate
+TRU,trust_mechanism,SI -> TRU -> BI,SI,TRU,BI,SI-TRU,BI-TRU,BI-SI,9,9,12,12,39,39,9,9,sensitivity_indirect_candidate
+TRU,trust_mechanism,FC -> TRU -> BI,FC,TRU,BI,FC-TRU,BI-TRU,BI-FC,4,4,12,12,36,36,4,4,theory_only_underpowered
+TRU,trust_mechanism,ATT -> TRU -> BI,ATT,TRU,BI,ATT-TRU,BI-TRU,ATT-BI,2,2,12,12,30,30,2,2,not_identified_current_input
+TRU,trust_mechanism,SE -> TRU -> BI,SE,TRU,BI,SE-TRU,BI-TRU,BI-SE,1,1,12,12,9,9,0,0,not_identified_current_input
+ANX,anxiety_mechanism,SE -> ANX -> BI,SE,ANX,BI,ANX-SE,ANX-BI,BI-SE,2,2,3,3,9,9,1,1,not_identified_current_input
+ANX,anxiety_mechanism,FC -> ANX -> BI,FC,ANX,BI,ANX-FC,ANX-BI,BI-FC,2,2,3,3,36,36,1,1,not_identified_current_input
+ANX,anxiety_mechanism,EE -> ANX -> BI,EE,ANX,BI,ANX-EE,ANX-BI,BI-EE,3,3,3,3,54,54,2,2,theory_only_underpowered
+ANX,anxiety_mechanism,PE -> ANX -> BI,PE,ANX,BI,ANX-PE,ANX-BI,BI-PE,4,4,3,3,57,57,2,2,theory_only_underpowered
+ANX,anxiety_to_attitude,SE -> ANX -> ATT,SE,ANX,ATT,ANX-SE,ANX-ATT,ATT-SE,2,2,6,6,5,5,1,1,not_identified_current_input
+ANX,anxiety_to_attitude,FC -> ANX -> ATT,FC,ANX,ATT,ANX-FC,ANX-ATT,ATT-FC,2,2,6,6,10,10,2,2,not_identified_current_input
+ANX,anxiety_to_attitude,EE -> ANX -> ATT,EE,ANX,ATT,ANX-EE,ANX-ATT,ATT-EE,3,3,6,6,26,26,3,3,theory_only_underpowered
+ANX,anxiety_to_attitude,PE -> ANX -> ATT,PE,ANX,ATT,ANX-PE,ANX-ATT,ATT-PE,4,4,6,6,27,27,3,3,theory_only_underpowered

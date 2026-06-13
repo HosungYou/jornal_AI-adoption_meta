@@ -1,0 +1,6 @@
+construct_set,constructs,construct_count,required_pairs,covered_pairs,coverage_rate,missing_pairs,min_pair_study_count,complete_case_studies,identification_gate_original,initial_execution_validation
+core6_legacy_tssem_diagnostic,PE;EE;SI;FC;BI;UB,6,15,15,1.0,,22,16,eligible_for_bounded_tssem_diagnostic,candidate_for_main_or_extended_diagnostic
+core7_add_att,PE;EE;SI;FC;ATT;BI;UB,7,21,21,1.0,,10,3,eligible_for_bounded_tssem_diagnostic,sparse_broader_rebuild_probe_only
+core8_add_tru,PE;EE;SI;FC;ATT;TRU;BI;UB,8,28,28,1.0,,2,1,eligible_for_bounded_tssem_diagnostic,sparse_broader_rebuild_probe_only
+core9_add_anx,PE;EE;SI;FC;ATT;TRU;ANX;BI;UB,9,36,35,0.9722222222222222,ANX-TRU,0,0,not_identified_as_complete_case_model,not_ready_current_input
+theory_target_10,PE;EE;SI;FC;ATT;SE;TRU;ANX;BI;UB,10,45,44,0.9777777777777777,ANX-TRU,0,0,not_identified_as_complete_case_model,not_ready_current_input

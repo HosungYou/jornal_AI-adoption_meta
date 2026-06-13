@@ -1,0 +1,3 @@
+dataset,rows,numeric_rows,studies,pairs,required_pairs,missing_pairs,study_pair_cells,complete_10construct_studies,studies_with_15plus_pairs
+latest_R1_R4_human_workbooks,3654,3654,181,45,45,0,1975,0,64
+current_20260612_rerun_input,796,796,74,44,45,1,796,0,26

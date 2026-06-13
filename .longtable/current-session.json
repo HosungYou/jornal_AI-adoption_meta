@@ -2,14 +2,15 @@
   "schemaVersion": 1,
   "id": "ai-adoption-meta-analysis-methodology-strategy-1779672509276",
   "createdAt": "2026-05-25T01:28:29.287Z",
-  "lastUpdatedAt": "2026-06-12T06:00:00Z",
+  "lastUpdatedAt": "2026-06-13T19:57:35.617Z",
   "projectName": "AI Adoption Meta-Analysis Methodology Strategy",
   "projectPath": "<REPO_ROOT>",
-  "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-  "currentBlocker": "The full-corpus M1-R execution blocker is resolved: the exception layer is consumed by the scorer/gate and the 2,043-row source-packet-required full-corpus run has been locked and exception-aware scored. Remaining blockers are manuscript-derivation blockers, not run blockers: all-construct/all-row SEM claims still require the final TSSEM/MASEM specification and explicit matrix/source-type boundaries.",
-  "nextAction": "Decide the staged SEM reporting lane before any broader TSSEM/MASEM claim: core-6 diagnostic only, core-plus-extension, or a later source-type-approved 10-construct rebuild. Keep Table 2/Table 5 in target-journal formatting queue until the manuscript template is fixed.",
+  "currentGoal": "Publish the 2026-06-14 Paper A latest-workbook/source-evidence correction and release artifacts.",
+  "currentBlocker": "Latest-human workbooks restore corpus-level full10 pair coverage to 45/45, but no study has a complete full10 matrix; full10 Stage 2 MASEM remains blocked. Trust6 complete-case MASEM converges only as a reduced diagnostic/sensitivity result. AI M1-R used source-packet locked-output validation, not the same independent human coding procedure.",
+  "nextAction": "Freeze the Paper A latest-human analytic input with inclusion/provenance rules, manually review source/PDF miss candidates, and source-densify high-coverage full10 studies before final primary MASEM claims.",
   "openQuestions": [
-    "Which staged SEM reporting lane should become the manuscript primary: core-6 diagnostic only, core-plus-extension, or a later source-type-approved 10-construct rebuild?"
+    "Should Paper A keep full10 as the primary theory target while reporting trust6 as a reduced diagnostic/sensitivity result, or should final submission wait for additional source-level matrix densification toward full10?",
+    "Should Paper A submit with full10 as theory target plus trust6 diagnostic/sensitivity, or delay final Paper A MASEM claims until source-level densification makes full10 estimable?"
   ],
   "requestedPerspectives": [
     "reviewer",
@@ -23,7 +24,7 @@
   "activeModes": [
     "explore"
   ],
-  "resumeHint": "Continue after the 2026-06-12 full-corpus M1-R documentation sync: Table 2/Table 5 drafts exist, the full-corpus M1-R run is complete, and the next gate is choosing the staged SEM reporting lane before any broader TSSEM/MASEM claim.",
+  "resumeHint": "Continue after the 2026-06-14 latest-human-workbook recheck: provided Drive folder is not the final source by itself; latest local R1-R4 copies restore full10 pair coverage to 45/45; full10 still has 0 complete-case studies; trust6 complete-case Stage 1 and Stage 2 converged and its values have local PDF/source support.",
   "locale": "en",
   "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_summary_20260612.csv"
 }

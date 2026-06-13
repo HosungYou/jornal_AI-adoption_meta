@@ -1,0 +1,8 @@
+moderator_candidate,label,rows_nonmissing,studies_nonmissing,studies_usable_unambiguous,ambiguous_studies,level_count,min_level_studies,max_level_studies,construct_pairs_with_nonmissing,n_ready_rows_nonmissing,total_studies,total_construct_pairs,gate_status,top_levels
+ai_type,AI tool type / generative vs general,389,36,36,0,2,15,21,48,389,74,51,eligible_main_candidate,generative=21; general=15
+common_method_bias,Common-method-bias handling,389,36,36,0,2,14,22,48,389,74,51,eligible_main_candidate,not_addressed=22; addressed=14
+user_role,User role,389,36,36,0,3,2,29,48,389,74,51,not_feasible_current_input,student=29; instructor=5; both=2
+country,Country / cultural context,102,11,11,0,9,1,2,35,102,74,51,not_feasible_current_input,Saudi Arabia=2; Palestine=2; Nigeria=1; Pakistan=1; Qatar=1; Germany=1; Austria=1; mixed=1
+region_derived_initial,Initial derived region,102,11,11,0,5,1,5,35,102,74,51,not_feasible_current_input,Middle East=5; South Asia=2; Europe=2; Africa=1; mixed_region=1
+education_level,Education level,140,10,10,0,2,2,8,36,140,74,51,not_feasible_current_input,mixed=8; graduate=2
+theoretical_framework,Theory/framework family,13,2,2,0,2,1,1,10,13,74,51,not_feasible_current_input,TAM; HISAM; TRI=1; TAM+UTAUT=1

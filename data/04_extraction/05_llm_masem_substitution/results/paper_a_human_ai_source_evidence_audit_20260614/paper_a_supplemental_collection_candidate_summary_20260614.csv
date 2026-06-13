@@ -1,0 +1,6 @@
+metric,value
+review_candidate_rows,727
+p1_value_not_found_in_any_text_rows,451
+p2_source_or_pdf_presence_gap_rows,276
+high_coverage_full10_candidate_studies_present_pairs_gte_20,25
+top_high_coverage_studies,S057(28/45);S138(28/45);S176(28/45);S072(26/45);S004(21/45);S016(21/45);S025(21/45);S030(21/45);S035(21/45);S036(21/45);S048(21/45);S051(21/45);S055(21/45);S086(21/45);S088(21/45);S121-1(21/45);S121-2(21/45);S157(21/45);S164(21/45);S173(21/45)

@@ -1,0 +1,10 @@
+mediator,feasibility_status,path_count
+ANX,not_identified_current_input,4
+ANX,theory_only_underpowered,4
+ATT,main_indirect_candidate,4
+SE,sensitivity_indirect_candidate,6
+SE,theory_only_underpowered,1
+TRU,main_indirect_candidate,2
+TRU,not_identified_current_input,2
+TRU,sensitivity_indirect_candidate,1
+TRU,theory_only_underpowered,1

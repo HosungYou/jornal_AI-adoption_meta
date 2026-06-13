@@ -4,6 +4,27 @@ Target journal: Research Synthesis Methods
 
 Decision state: Paper B is a source-anchored, human-adjudicated LLM augmentation/validation study with downstream MASEM/TSSEM diagnostic checks. It is not an LLM replacement paper and not a vendor-ranking benchmark.
 
+## Researcher-Approved Route Recorded on 2026-06-12
+
+| Item | Current decision |
+| --- | --- |
+| RQ3 status | Cross-model disagreement is a main RQ3 triage signal, together with human-human disagreement, LLM uncertainty, and source-risk flags. |
+| RQ3 boundary | Cross-model disagreement is not a vendor-ranking or model-replacement claim. |
+| RQ4 status | Broader TSSEM/MASEM rebuild attempted as sparse probes; extension currently blocked. |
+| Current RQ4 evidence boundary | Core-6 SEM remains the completed bounded diagnostic; core7/core8 sparse probes do not support stronger main-text extension. |
+| Submission sequencing | Paper A and Paper B proceed together, with paper-specific claim boundaries. |
+
+## Sparse TSSEM Probe Update Recorded on 2026-06-12
+
+Probe report: `data/04_extraction/05_llm_masem_substitution/results/paper_b_sparse_tssem_probe_20260612/PAPER_B_SPARSE_TSSEM_PROBE_20260612.md`
+
+| Probe | Result | Manuscript implication |
+| --- | --- | --- |
+| `core7_add_att` | Conservative complete-case Stage 1 completed with 3 studies, but Stage 2 failed because `aCov` was not positive definite. | Do not promote core7 to main SEM result; mention only as sparse-probe evidence if useful. |
+| `core8_add_tru` | Only 1 complete-case study under the conservative matrix rule. | Not runnable as a TSSEM path diagnostic from current complete-case input. |
+
+Therefore the current RQ4 reporting lane remains: core-6 completed diagnostic as the main downstream SEM evidence; broader rebuild documented as attempted but not currently supportable for stronger main-text SEM claims.
+
 ## Current Full-Corpus Gate
 
 | Check | Current value | Implication |
@@ -12,7 +33,7 @@ Decision state: Paper B is a source-anchored, human-adjudicated LLM augmentation
 | Task rows in shell | 2043 | Full-corpus denominator before exception handling |
 | Full-corpus M1-R execution | Completed 2026-06-12 | Nine source-packet-required shards locked and scored |
 | Locked/scored rows | 2,043 | 0 duplicates, 0 model CLI failures, 15 exception-layer rows |
-| SEM reporting lane | Core-6 diagnostic only | No all-construct/all-row SEM claim until final specification |
+| SEM reporting lane | Broader TSSEM/MASEM probe attempted; core-6 completed diagnostic retained | No all-construct/all-row SEM claim from current sparse-probe evidence |
 | Post-freeze reference | 213 studies frozen on 2026-06-09 | Governing reference layer |
 | OSF archive | https://osf.io/mkrgd/overview | Share-safe public repository exists |
 
@@ -56,9 +77,9 @@ The design shows how to evaluate LLM extraction as auditable workflow augmentati
 | Table 4 | Locked model outputs and coverage | Ready for legacy plus completed full-corpus M1-R |
 | Table 5 | RQ1 extraction validity by denominator family | Ready with full-corpus M1-R evidence and exception caveat |
 | Table 6 | RQ2 error taxonomy by source condition | Ready with legacy package |
-| Table 7 | RQ3 review-priority triage | Ready with legacy package |
+| Table 7 | RQ3 review-priority triage | Cross-model disagreement fixed as main RQ3 signal; final table still needed |
 | Table 8 | Post-freeze full-corpus M1-R outcomes | Ready as denominator-family result, not pooled accuracy |
-| Table 9 | Downstream substitution and TSSEM diagnostics | Ready as core-6 diagnostic only |
+| Table 9 | Downstream substitution and TSSEM diagnostics | Core-6 completed diagnostic; core7/core8 broader probes attempted but not main-claim ready |
 
 ## Figure Spine
 
@@ -69,10 +90,10 @@ The design shows how to evaluate LLM extraction as auditable workflow augmentati
 | Figure 3 | Locked-output and model-provenance flow | Ready |
 | Figure 4 | Accuracy/abstention profile by denominator family | Ready with caveats |
 | Figure 5 | Source-risk and human-disagreement triage heatmap | Ready |
-| Figure 6 | Downstream substitution diagnostic | Ready as bounded subset only |
+| Figure 6 | Downstream substitution diagnostic | Ready as bounded core-6 subset only; broader probes should be documented as sparse/failed rather than extended main claim |
 
 ## Manuscript Boundary
 
 Permitted: Paper B can claim a reproducible, source-anchored workflow for evaluating LLM-assisted extraction by task family, report the completed full-corpus `M1-R` outcomes by denominator family and exception-aware gate status, and report bounded diagnostic evidence that the expert-reviewed primary LLM-assisted input did not change the current primary pooled-correlation subset.
 
-Not permitted: one pooled full-corpus accuracy denominator, all-construct/all-row SEM substitution stability, autonomous LLM replacement, silent pooling of direct-r/source-flagged/converted rows, or vendor ranking.
+Not permitted: one pooled full-corpus accuracy denominator, final all-construct/all-row SEM substitution stability before the broader rebuild succeeds, autonomous LLM replacement, silent pooling of direct-r/source-flagged/converted rows, or vendor ranking.

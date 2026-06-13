@@ -1,0 +1,26 @@
+moderator_candidate,study_level_value,study_count
+ai_type,generative,21
+ai_type,general,15
+user_role,student,29
+user_role,instructor,5
+user_role,both,2
+common_method_bias,not_addressed,22
+common_method_bias,addressed,14
+education_level,mixed,8
+education_level,graduate,2
+country,Saudi Arabia,2
+country,Palestine,2
+country,Nigeria,1
+country,Pakistan,1
+country,Qatar,1
+country,Germany,1
+country,Austria,1
+country,mixed,1
+country,India,1
+region_derived_initial,Middle East,5
+region_derived_initial,South Asia,2
+region_derived_initial,Europe,2
+region_derived_initial,Africa,1
+region_derived_initial,mixed_region,1
+theoretical_framework,TAM; HISAM; TRI,1
+theoretical_framework,TAM+UTAUT,1

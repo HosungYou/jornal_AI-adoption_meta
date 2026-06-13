@@ -1,0 +1,2 @@
+input_rows,rows_with_r_numeric,rows_with_sample_size_numeric,rows_missing_sample_size_numeric,unique_studies,unique_construct_pairs,total_pairs,pairs_with_1plus_n_ready_study,pairs_with_3plus_n_ready_studies,pairs_with_5plus_n_ready_studies,pairs_with_10plus_n_ready_studies,min_n_ready_studies_per_pair,median_n_ready_studies_per_pair,max_n_ready_studies_per_pair
+804,804,804,0,74,51,45,44,39,34,25,0.0,12.0,58.0

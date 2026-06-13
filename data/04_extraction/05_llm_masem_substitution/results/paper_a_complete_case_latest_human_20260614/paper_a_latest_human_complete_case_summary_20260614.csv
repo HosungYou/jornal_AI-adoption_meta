@@ -1,0 +1,3 @@
+route,constructs,candidate_complete_case_studies,positive_definite_complete_case_studies,stage1_status,stage1_method,stage1_error,stage2_status,stage2_error
+paper_a_core7_att_complete_case,"PE,EE,SI,FC,ATT,BI,UB",4,3,converged,REM,,failed,"""aCov"" is not positive definite. "
+paper_a_trust6_complete_case,"PE,EE,SI,TRU,BI,UB",8,8,converged,REM,,converged,

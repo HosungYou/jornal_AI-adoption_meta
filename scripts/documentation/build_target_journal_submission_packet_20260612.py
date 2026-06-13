@@ -224,6 +224,16 @@ Target journal: Computers & Education
 
 Decision state: target journal, construct scope, figure spine, and table spine are approved. The actual TSSEM/OSMASEM/sensitivity estimate insertion is approved but cannot be treated as complete from the current input because the model-ready primary file lacks source-supported numeric sample size for most rows.
 
+## Researcher-Approved Route Recorded on 2026-06-12
+
+| Item | Current decision |
+| --- | --- |
+| Primary SEM route | Full 10-construct route. |
+| Sample-size policy | Source-supported PDF/workbook N override is allowed with provenance. |
+| Evidence class | Direct-r is primary; expanded direct-r-form and converted effects are sensitivity evidence. |
+| Construct/moderator boundary | Trust, anxiety, and self-efficacy are focal mediator/mechanism candidates inside the 10-construct SEM, not study-level moderators. |
+| Moderator candidates | `ai_type` is the strongest current substantive moderator candidate. `common_method_bias` is QC/sensitivity. Year/generative-AI era was merged but is not feasible as pre/post moderator from current data because available years are all post-2023. |
+
 ## Current Analysis Gate
 
 {md_table(
@@ -307,6 +317,15 @@ Target journal: Research Synthesis Methods
 
 Decision state: Paper B is a source-anchored, human-adjudicated LLM augmentation/validation study with downstream MASEM/TSSEM diagnostic checks. It is not an LLM replacement paper and not a vendor-ranking benchmark.
 
+## Researcher-Approved Route Recorded on 2026-06-12
+
+| Item | Current decision |
+| --- | --- |
+| RQ3 status | Cross-model disagreement is a main RQ3 triage signal, together with human-human disagreement, LLM uncertainty, and source-risk flags. |
+| RQ3 boundary | Cross-model disagreement is not a vendor-ranking or model-replacement claim. |
+| RQ4 status | Broader TSSEM/MASEM rebuild attempted as sparse probes; extension currently blocked. |
+| Current RQ4 evidence boundary | Core-6 SEM remains the completed bounded diagnostic; core7/core8 sparse probes do not support stronger main-text extension. |
+
 ## Current Full-Corpus Gate
 
 {md_table(
@@ -361,7 +380,7 @@ The design shows how to evaluate LLM extraction as auditable workflow augmentati
             ["Table 6", "RQ2 error taxonomy by source condition", "Ready with legacy package"],
             ["Table 7", "RQ3 review-priority triage", "Ready with legacy package"],
             ["Table 8", "Post-freeze full-corpus M1-R outcomes", "Ready as denominator-family result, not pooled accuracy"],
-            ["Table 9", "Downstream substitution and TSSEM diagnostics", "Ready as core-6 diagnostic only"],
+            ["Table 9", "Downstream substitution and TSSEM diagnostics", "Broader rebuild selected; current completed evidence remains core-6 diagnostic only"],
         ],
     )}
 
@@ -481,7 +500,7 @@ Date: 2026-06-12
             ["Paper A", "Closed target exemplar PDF", "Scherer C&E PDF not available in share-safe workspace", "Use PSU access PDF locally for final exact table/figure comparison if needed"],
             ["Paper B", "Full-corpus M1-R expansion", "Completed 2,043-row source-packet-required run with exception-aware scoring", "Report only by denominator family and exception-aware gate status"],
             ["Paper B", "Full-corpus accuracy claim", "Full-corpus denominator-family scoring exists", "Do not collapse into one pooled accuracy denominator"],
-            ["Paper B", "SEM reporting lane", "Core-6 diagnostic only selected for current manuscript state", "Complete final TSSEM/MASEM specification before any all-construct/all-row claim"],
+        ["Paper B", "SEM reporting lane", "Broader TSSEM/MASEM rebuild selected; core-6 diagnostic remains current completed evidence", "Complete final TSSEM/MASEM specification before any all-construct/all-row claim"],
             ["Paper B", "Closed comparator PDFs", "Annals/RSM exact PDF layouts not all locally available", "Use PSU access PDFs for exact final table/figure deconstruction if target formatting requires it"],
         ],
     )}
@@ -562,6 +581,8 @@ Decision: The user approved and completed full-corpus expansion centered on the 
 ## Claim Boundary
 
 Paper B may report the completed full-corpus `M1-R` denominator-family outcomes and the bounded core-6 TSSEM diagnostic. It may not report one pooled full-corpus accuracy denominator or all-row SEM substitution stability.
+
+Researcher-approved update recorded on 2026-06-12: Paper B attempted broader TSSEM/MASEM sparse probes, which did not support stronger main-text SEM extension. Cross-model disagreement remains a main RQ3 descriptive triage signal rather than supplementary-only evidence.
 """
 
     paper_a_target = f"""# AI Adoption in Higher Education: A Meta-Analytic Structural Equation Modeling Study
@@ -573,6 +594,13 @@ Draft date: 2026-06-12
 ## Submission Package State
 
 This target-journal draft updates the existing APA-style shell for Computers & Education. It includes the introduction, methods, input/QC results, table/figure spine, and team insertion points. It deliberately does not invent Stage 1/Stage 2 estimates. The lead-approved TSSEM/OSMASEM run remains gated by Paper A numeric sample-size reconciliation.
+
+Researcher-approved route recorded on 2026-06-12:
+
+- Primary model: full 10-construct TSSEM/OSMASEM route.
+- N policy: source-supported PDF/workbook N override is allowed with provenance.
+- Evidence class: direct correlations are primary; expanded direct-r-form and converted beta/path/source-statistic evidence are sensitivity.
+- Mediator/moderator boundary: trust, anxiety, and self-efficacy are focal mediator/mechanism candidates inside the path model, not study-level moderators.
 
 ## Highlights
 
@@ -594,7 +622,7 @@ Artificial intelligence tools are now embedded in higher education through large
 
 Meta-analytic structural equation modeling is well suited to this problem because it can synthesize study-level correlation matrices and test a theory-guided network of relationships. In AI adoption research, this is especially important. Performance expectancy, effort expectancy, social influence, facilitating conditions, attitude, self-efficacy, behavioral intention, and use behavior provide continuity with TAM, TPB, and UTAUT. Trust in AI and AI anxiety capture psychological features of AI systems that are not fully reducible to general usefulness or ease-of-use beliefs.
 
-The present study develops a MASEM of AI adoption in higher education that integrates traditional technology acceptance constructs with AI-specific psychological constructs. The working model treats attitude as a theoretically meaningful mediator rather than assuming that the parsimonious UTAUT exclusion of attitude applies unchanged to AI adoption contexts. It also tests whether trust and anxiety contribute to behavioral intention beyond standard acceptance predictors.
+The present study develops a MASEM of AI adoption in higher education that integrates traditional technology acceptance constructs with AI-specific psychological constructs. The working model treats attitude as a theoretically meaningful mediator rather than assuming that the parsimonious UTAUT exclusion of attitude applies unchanged to AI adoption contexts. It also tests whether trust, anxiety, and self-efficacy operate as AI-specific mechanism constructs where the correlation network supports indirect-effect estimation.
 
 ## Literature Review
 
@@ -612,11 +640,15 @@ The documented search workflow yielded 22,166 records. After deduplication, 16,1
 
 ### Constructs and Model Architecture
 
-The primary model uses 10 constructs: performance expectancy, effort expectancy, social influence, facilitating conditions, attitude, self-efficacy, trust in AI, AI anxiety, behavioral intention, and use behavior. The planned architecture places performance expectancy and effort expectancy upstream of attitude, attitude upstream of behavioral intention, behavioral intention upstream of use behavior, and trust/anxiety as AI-specific antecedents of behavioral intention.
+The primary model uses 10 constructs: performance expectancy, effort expectancy, social influence, facilitating conditions, attitude, self-efficacy, trust in AI, AI anxiety, behavioral intention, and use behavior. The planned architecture places performance expectancy and effort expectancy upstream of attitude, attitude upstream of behavioral intention, behavioral intention upstream of use behavior, and trust/anxiety/self-efficacy as AI-specific mechanism candidates where indirect paths are identifiable.
 
 ### Analysis Plan
 
-The primary analysis will use two-stage MASEM after numeric sample-size reconciliation. Stage 1 will pool study-level correlation matrices with random-effects TSSEM when feasible. Stage 2 will fit the prespecified structural model to the pooled matrix. OSMASEM or equivalent meta-regression will test moderators when moderator data are sufficiently complete. Sensitivity analyses will separate primary direct-r evidence from expanded direct-r-form and converted beta/path/source-statistic evidence.
+The primary analysis will use the full 10-construct two-stage MASEM route after numeric sample-size reconciliation. Stage 1 will pool study-level correlation matrices with random-effects TSSEM when feasible. Stage 2 will fit the prespecified structural model to the pooled matrix and estimate indirect effects where the path network supports them. OSMASEM or equivalent meta-regression will test true study-level moderators when moderator data are sufficiently complete. Sensitivity analyses will separate primary direct-r evidence from expanded direct-r-form and converted beta/path/source-statistic evidence.
+
+Source-supported numeric sample sizes will be required for final analytic inclusion. Rows lacking sample-size support may be reconciled from source PDFs or original coder workbooks when provenance is recorded; otherwise, they will be excluded from primary TSSEM estimation or retained only in sensitivity diagnostics.
+
+Trust, anxiety, and self-efficacy are treated as focal mediator/mechanism candidates in the structural model, not as study-level moderators. The first-pass mediator audit indicates that attitude is the strongest standard mediator; trust can be tested as an AI-specific mediator for `PE/EE -> TRU -> BI`, with `SI -> TRU -> BI` as sensitivity; self-efficacy is sensitivity-level only; and anxiety mediation is underpowered or not identified in the current input. Moderator feasibility is separate: `ai_type` is the current substantive moderator candidate, `common_method_bias` is a methodological/QC sensitivity moderator, and year/generative-AI era is not feasible as a current pre/post moderator because the merged available years are all post-2023.
 
 ## Results
 
@@ -652,9 +684,16 @@ Draft date: 2026-06-12
 
 This target-journal draft updates the existing APA-style shell for Research Synthesis Methods. It keeps the claim boundary approved by the lead: Paper B is an LLM augmentation and validation study against a source-anchored adjudicated human reference standard, with bounded downstream diagnostics. It is not an autonomous replacement paper and not a vendor-ranking benchmark.
 
+Researcher-approved route recorded on 2026-06-12:
+
+- RQ3: cross-model disagreement is a main triage signal, together with human-human disagreement, LLM uncertainty, and source-risk flags.
+- RQ3 boundary: cross-model disagreement is not a vendor-ranking or model-replacement claim.
+- RQ4: broader TSSEM/MASEM rebuild was attempted as sparse probes.
+- RQ4 boundary: core-6 SEM remains the current bounded diagnostic because the broader sparse probes do not support stronger main-text extension.
+
 ## Abstract
 
-Data extraction for meta-analytic structural equation modeling requires more than article summarization: reviewers must recover numeric source evidence, map constructs, preserve provenance, distinguish direct correlations from converted statistics, and maintain sample-size eligibility for downstream models. We evaluate a prespecified locked-output LLM workflow against a source-anchored adjudicated human reference standard in an AI adoption evidence-synthesis project. Task units are analyzed by denominator family rather than as one pooled accuracy score. The workflow records model provenance, source conditions, abstentions, human-disagreement traces, and review-priority signals. Current post-freeze evidence includes a 213-study reference standard, clean model-explicit legacy outputs for Codex GPT-5.5, Claude Sonnet, and Gemini 3 Flash, a completed 2,043-row source-rendered full-corpus M1-R run, and a bounded six-construct TSSEM substitution diagnostic. The results support a workflow-augmentation claim: locked LLM outputs and cross-model disagreement can structure review triage, but high-consequence numeric extraction should remain under human review and exception-aware scoring. Full-corpus results are reported by denominator family and gate status; all-row SEM stability and autonomous replacement claims remain outside the current evidence.
+Data extraction for meta-analytic structural equation modeling requires more than article summarization: reviewers must recover numeric source evidence, map constructs, preserve provenance, distinguish direct correlations from converted statistics, and maintain sample-size eligibility for downstream models. We evaluate a prespecified locked-output LLM workflow against a source-anchored adjudicated human reference standard in an AI adoption evidence-synthesis project. Task units are analyzed by denominator family rather than as one pooled accuracy score. The workflow records model provenance, source conditions, abstentions, human-disagreement traces, cross-model disagreement, and review-priority signals. Current post-freeze evidence includes a 213-study reference standard, clean model-explicit legacy outputs for Codex GPT-5.5, Claude Sonnet, and Gemini 3 Flash, a completed 2,043-row source-rendered full-corpus M1-R run, and a bounded six-construct TSSEM substitution diagnostic. The results support a workflow-augmentation claim: locked LLM outputs and cross-model disagreement can structure review triage, but high-consequence numeric extraction should remain under human review and exception-aware scoring. Full-corpus results are reported by denominator family and gate status; broader TSSEM/MASEM sparse probes were attempted, but all-row SEM stability and autonomous replacement claims remain outside the current evidence.
 
 Keywords: evidence synthesis; data extraction; large language models; MASEM; validation; human-in-the-loop
 
@@ -694,11 +733,11 @@ Task units are not interpreted as one accuracy denominator. Direct-r extraction 
 
 ### Model Scope and Locked Outputs
 
-Codex GPT-5.5 is the primary prespecified workflow. Claude Sonnet and Gemini 3 Flash are retained as supplementary sensitivity and triage evidence only. Earlier Claude default-unspecified rows are retained only as audit provenance after the Sonnet backfill.
+Codex GPT-5.5 is the primary prespecified workflow for the full-corpus M1-R execution. Claude Sonnet and Gemini 3 Flash are retained to support cross-model disagreement as a main RQ3 triage signal, not to rank vendors or claim autonomous replacement. Earlier Claude default-unspecified rows are retained only as audit provenance after the Sonnet backfill.
 
 ### Analysis Plan
 
-RQ1 evaluates extraction validity by denominator family and task stratum. RQ2 classifies errors by source condition and downstream consequence. RQ3 evaluates whether model behavior, cross-model disagreement, source-risk flags, and human-disagreement traces prioritize expert review. Downstream substitution analyses are reported only as bounded diagnostics.
+RQ1 evaluates extraction validity by denominator family and task stratum. RQ2 classifies errors by source condition and downstream consequence. RQ3 evaluates whether model behavior, cross-model disagreement, source-risk flags, and human-disagreement traces prioritize expert review. RQ4 reports the completed core-6 diagnostic as the current bounded evidence and documents broader sparse probes as not yet supporting stronger SEM extension.
 
 ## Results
 
@@ -719,11 +758,11 @@ The completed full-corpus M1-R run covers 2,043 source-rendered task rows across
 
 ### Downstream Diagnostic
 
-The bounded core-6 TSSEM diagnostic used PE, EE, SI, FC, BI, and UB in 15 complete-case studies. The current manuscript lane is core-6 diagnostic only. It supports subset diagnostic stability and does not support all-construct or all-row substitution claims.
+The bounded core-6 TSSEM diagnostic used PE, EE, SI, FC, BI, and UB in 15 complete-case studies. The current completed evidence supports subset diagnostic stability and does not support all-construct or all-row substitution claims. A 2026-06-12 sparse broader probe did not support extension: `core7_add_att` completed Stage 1 with three complete-case studies but failed the Stage 2 path-model probe because `aCov` was not positive definite, and `core8_add_tru` had only one complete-case study under the conservative matrix rule. The main-text downstream SEM claim should therefore remain bounded to the core-6 diagnostic unless later model-specific diagnostics overcome these sparse-probe limits.
 
 ## Discussion
 
-[Reserved for team contribution after the lead confirms whether the manuscript should remain on the core-6 diagnostic lane or later add a source-type-approved broader TSSEM/MASEM specification.]
+[Reserved for team contribution after final table/figure integration. The Discussion should explicitly retain the core-6 diagnostic boundary and describe the core7/core8 attempt as sparse-probe evidence that currently blocks stronger all-construct SEM substitution claims.]
 
 ## Data Availability
 

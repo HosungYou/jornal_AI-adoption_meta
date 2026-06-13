@@ -194,3 +194,95 @@ source-anchored decisions.
 
 Whenever the project advances from one step to the next, add a new row to the
 status log and cite the file that proves the transition.
+
+## 2026-06-12 Researcher Decision Sync
+
+Status update: the prior decision questions are now resolved. Paper A uses the full 10-construct primary route, source-supported PDF/workbook N overrides are allowed, and direct-r evidence is primary with expanded/converted evidence retained as sensitivity. Trust, anxiety, and self-efficacy are constructs/antecedents, not study-level moderators; moderator feasibility should be audited for year/generative-AI era, culture/region or Hofstede IDV, education level/user role, and AI tool type.
+
+Paper B now treats cross-model disagreement as a main RQ3 triage signal and will attempt the broader TSSEM/MASEM rebuild. The completed core-6 diagnostic remains the current bounded evidence until the broader rebuild specification, source-type sufficiency audit, and successful run are complete. Paper A and Paper B should proceed together, and share-safe rendered PDFs/PNGs may be included in submission packets while raw/private inputs remain excluded unless explicitly cleared.
+
+Evidence files: `docs/07_manuscript_exemplars/20260612/RESEARCHER_APPROVED_SUBMISSION_ROUTE_DECISIONS_20260612.md`, `CURRENT.md`, `.longtable/current-session.json`, `.longtable/state.json`, `paper_b/ANALYSIS_PLAN.md`.
+
+Next required work: Paper A N reconciliation and moderator feasibility audit; Paper A full 10-construct TSSEM/OSMASEM attempt; Paper B broader TSSEM/MASEM specification and source-type sufficiency audit; Paper B RQ3 cross-model disagreement table/figure; manuscript Results integration for both papers.
+
+## 2026-06-12 Initial Execution Validation
+
+Status update: first-pass execution validation was run for the three post-decision technical questions. Outputs were written under `data/04_extraction/05_llm_masem_substitution/results/initial_execution_validation_20260612/`.
+
+Findings: Paper A moderator feasibility supports `ai_type` and `common_method_bias` as first-pass main-candidate fields, but `common_method_bias` is better treated as methodological/QC sensitivity unless explicitly promoted. `user_role`, `education_level`, country/region, and theoretical framework are not feasible from the current input. Trust, anxiety, and self-efficacy remain constructs/antecedents rather than moderators.
+
+Findings: Paper B RQ3 supports cross-model disagreement as a main descriptive triage dimension, but not as a standalone high-yield numeric-extraction detector. First-pass precision is high because baseline review-needed rate is already high; lift is approximately 1.0, and direct-r/converted numeric families are not flagged by cross-model disagreement in this file.
+
+Findings: Paper B RQ4 supports staged SEM reporting. Core-6 remains the completed diagnostic. `core7_add_att` and `core8_add_tru` are sparse broader probes. `core9_add_anx` and full 10-construct claims remain blocked by current coverage.
+
+LongTable checkpoint created: `question_record_mqaona4o_wblv1z` asks the researcher to confirm the post-analysis reporting route before manuscript result integration.
+
+## 2026-06-12 Paper A Mediator Correction and Audit
+
+Status update: the researcher clarified that Trust, anxiety, and self-efficacy were intended as mediator/mechanism constructs in the MASEM model, not as moderators. LongTable checkpoint `question_record_mqaona4o_wblv1z` was answered as `proceed_with_trace` with this correction recorded in decision `decision_mqaoydxx_d03ztl`.
+
+A Paper A mediator feasibility audit was run from the N-ready 804-row MASEM input. Outputs were written under `data/04_extraction/05_llm_masem_substitution/results/paper_a_mediator_feasibility_20260612/`.
+
+Findings: `ATT` is the strongest standard mediator. `TRU` is a main AI-specific mediation candidate for `PE -> TRU -> BI` and `EE -> TRU -> BI`, with `SI -> TRU -> BI` sensitivity-level. `SE` is sensitivity-level only. `ANX` is underpowered or not identified for confirmed mediation in the current input.
+
+Next required work: update Paper A Stage 2 path specification with feasible indirect effects, prepare Paper A year/generative-era merge only if that moderator remains required, attempt Paper B core7/core8 sparse probes under staged SEM boundaries, and integrate bounded Results prose/tables/figures.
+
+## 2026-06-12 Paper A/B Execution Sequence Completion
+
+Status update: completed the requested sequential execution after the mediator correction.
+
+Paper A outputs: mediator/mechanism audit, Stage 2 indirect-effect specification, and year/generative-era moderator merge are complete. `ATT` is the main standard mediator. `TRU` is main for `PE/EE -> TRU -> BI`, with `SI -> TRU -> BI` sensitivity. `SE` is sensitivity-level. `ANX` is underpowered or not identified. `ai_type` is the substantive main moderator candidate. `common_method_bias` is QC/sensitivity. Year/generative-era pre/post moderation is not feasible because available merged years are all post-2023 and 8 studies remain missing year.
+
+Paper B outputs: sparse TSSEM probes were run for `core7_add_att` and `core8_add_tru`. `core7_add_att` completed Stage 1 with 3 complete-case studies but failed Stage 2 because `aCov` was not positive definite. `core8_add_tru` had only 1 complete-case study. Therefore core-6 remains the completed downstream SEM diagnostic and broader SEM extension is not main-claim ready.
+
+Evidence files: `data/04_extraction/05_llm_masem_substitution/results/paper_a_mediator_feasibility_20260612/PAPER_A_MEDIATOR_FEASIBILITY_AUDIT_20260612.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_mediator_feasibility_20260612/PAPER_A_STAGE2_INDIRECT_EFFECT_SPEC_20260612.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_year_moderator_merge_20260612/PAPER_A_YEAR_GENERATIVE_ERA_MODERATOR_MERGE_20260612.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_b_sparse_tssem_probe_20260612/PAPER_B_SPARSE_TSSEM_PROBE_20260612.md`.
+
+Next required work: manuscript/table/figure integration from the generated outputs. No route-level LongTable checkpoint is pending.
+
+## 2026-06-12 Target Draft Results-Table Integration
+
+Status update: target-journal drafts were updated with bounded first-pass result tables. Paper A now includes mediator/mechanism feasibility and moderator feasibility tables. Paper B now includes RQ3 cross-model disagreement triage metrics and RQ4 downstream SEM diagnostic/probe boundary tables.
+
+Boundary: these are feasibility/probe/result-boundary tables, not final Paper A Stage 1/Stage 2 path-estimate tables. Paper A final MASEM estimates still require the final Stage 1/Stage 2 model run. Paper B broader SEM extension remains blocked; core-6 is the completed downstream SEM diagnostic.
+
+## 2026-06-14 Paper A TSSEM/MASEM Execution Attempt
+
+Status update: an actual Paper A TSSEM/MASEM execution was attempted from the N-ready 804-row input. Three routes were tested: `paper_a_core7_att_mediation`, `paper_a_trust6_mechanism`, and `paper_a_full10_theory_target`.
+
+Findings: all three routes failed at `metaSEM::tssem1` because sparse partial-matrix input produced non-positive definite implied covariance. The fixed-effects fallback also failed. Stage 2 was therefore not run for any route. Pairwise random-effects pooled correlation outputs and coverage diagnostics were generated, but they are input-readiness/feasibility artifacts, not final structural path estimates.
+
+Route boundary: core7 ATT mediation had 21/21 pair coverage, 71 partial studies, and 3 complete-case studies; trust6 had 15/15 pair coverage, 72 partial studies, and 6 complete-case studies; full10 had 44/45 pair coverage, one missing/unestimated pair, one single-study pair, 74 partial studies, and 0 complete-case studies. Full10 remains the primary theory target but is not estimable from the current sparse partial matrices.
+
+Evidence files: `data/04_extraction/05_llm_masem_substitution/results/paper_a_masem_execution_20260614/PAPER_A_MASEM_EXECUTION_ATTEMPT_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_masem_execution_20260614/paper_a_masem_execution_summary_20260614.csv`, `scripts/analysis/run_paper_a_masem_execution_20260614.R`, `docs/07_manuscript_exemplars/20260614/PAPER_A_MASEM_EXECUTION_INTEGRATION_NOTE_20260614.md`.
+
+Next required work: choose the next estimable Paper A route before claiming final MASEM results: source/matrix densification toward full10, a reduced complete-case diagnostic, or an explicitly labeled pooled-correlation sensitivity model.
+
+## 2026-06-14 Paper A Latest Human Workbook and PDF Recheck
+
+Status update: after the researcher flagged that the sparse partial-matrix conclusion seemed inconsistent with prior coding documentation, the supplied Google Drive folder, Drive-wide workbook candidates, local OneDrive/SSD workspaces, Git workspaces, and source PDFs/source packets were rechecked.
+
+Findings: the supplied Drive folder is accessible, but it contains the original 2026-04-25 R1-R4 coder package folders. Drive-wide search and local OneDrive/SSD inspection show later candidate final read-only copies under `Meta/AI Adoption/Coding_Latest_R1_R4_20260605`, including `AI_Adoption_MASEM_Coding_v3_R4_Phase0_1_2_20260425_v2.xlsx`. Therefore the supplied folder alone should not be treated as the final human-value source.
+
+Findings: latest-human-workbook extraction produced 3,654 numeric target-construct rows, 181 studies, and 45/45 full10 pair coverage, compared with 796 rows, 74 studies, and 44/45 pair coverage in the prior 20260612 rerun input. The earlier sparse-input result was therefore partly an analytic-input construction problem, not proof that the final human coding set lacked pair coverage.
+
+Re-run result: partial-matrix TSSEM still failed for core7, trust6, and full10 when all latest human rows were used. However, complete-case reduced probing changed the conclusion: trust6 complete-case Stage 1 and Stage 2 converged with 8 positive-definite complete-case studies; core7 Stage 1 converged with 3 positive-definite complete cases but Stage 2 failed because `aCov` was not positive definite; full10 still had 0 complete-case studies.
+
+PDF/source result: trust6 complete-case studies `S004`, `S035`, `S086`, `S088`, `S138`, `S173`, `S176`, and `S223` all have local PDFs and source packets. Automated `pdftotext` checks found coded values in PDF text for all trust6 complete-case rows.
+
+Evidence files: `docs/07_manuscript_exemplars/20260614/PAPER_A_LATEST_HUMAN_WORKBOOK_RECHECK_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_latest_human_workbook_audit_20260614/PAPER_A_LATEST_HUMAN_WORKBOOK_AUDIT_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_masem_latest_human_execution_20260614/PAPER_A_MASEM_EXECUTION_ATTEMPT_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_complete_case_latest_human_20260614/PAPER_A_LATEST_HUMAN_COMPLETE_CASE_TSSEM_PROBE_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_latest_human_workbook_audit_20260614/TRUST6_COMPLETE_CASE_PDF_SOURCE_VALUE_AUDIT_20260614.md`.
+
+Next required work: rebuild the Paper A analytic input from the latest human workbook set with explicit inclusion rules, then decide whether the submission reports full10 as the theory target with trust6 as reduced diagnostic/sensitivity, or whether additional source-level matrix densification is required before final Paper A primary MASEM claims.
+
+## 2026-06-14 Paper A Workbook Snapshot and Human/AI Source Evidence Audit
+
+Status update: the latest candidate R1-R4 human coder workbooks from `Meta/AI Adoption/Coding_Latest_R1_R4_20260605` were copied into a non-overwriting read-only snapshot under `data/04_extraction/01_raw_human_coder_data_freeze/phase2/latest_R1_R4_read_only_copies_20260614/`, with a checksum manifest. This preserves the original distribution and returned_raw workbooks while making the latest candidate workbook set explicit in the repo.
+
+Findings: a full latest-human row-level PDF/source audit checked 3,654 numeric target rows across 181 studies and 45 construct pairs. Source packets existed for 3,224/3,654 rows and PDF text was readable for 3,565/3,654 rows. Coded values were found by automated text search in 2,681 source-packet rows and 3,174 PDF-text rows. Missing text hits are review candidates, not proof of miscoding.
+
+Findings: full10 corpus-level pair coverage remains 45/45, but no study has a complete 10-construct matrix; the highest single-study full10 coverage observed in the latest-human audit is 28/45 pairs. The trust6 reduced complete-case route remains the only converged MASEM diagnostic and must be labeled as diagnostic/sensitivity rather than the full10 primary-theory result.
+
+AI procedure boundary: AI `M1-R` coding was not identical to human independent coding. Human coding proceeded through independent workbooks, disagreement review, and source-anchored adjudication. AI `M1-R` used post-freeze source packets and locked-output schemas keyed to the frozen reference task shell, which is appropriate for Paper B/Paper C validation but should not be treated as the primary Paper A premise.
+
+Evidence files: `docs/07_manuscript_exemplars/20260614/PAPER_A_WORKBOOK_SOURCE_AI_RELEASE_CONTEXT_20260614.md`, `data/04_extraction/01_raw_human_coder_data_freeze/phase2/latest_R1_R4_read_only_copies_20260614/LATEST_R1_R4_READ_ONLY_COPY_MANIFEST_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_human_ai_source_evidence_audit_20260614/PAPER_A_HUMAN_AI_SOURCE_EVIDENCE_AUDIT_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_human_ai_source_evidence_audit_20260614/paper_a_latest_human_source_pdf_review_candidates_20260614.csv`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_human_ai_source_evidence_audit_20260614/paper_a_full10_high_coverage_densification_candidates_20260614.csv`.
+
+Next required work: freeze the Paper A latest-human analytic input with inclusion/provenance rules; manually review source/PDF miss candidates; source-densify high-coverage full10 studies; then choose whether to submit with full10 theory target plus trust6 diagnostic or delay final Paper A MASEM claims until full10 is estimable.

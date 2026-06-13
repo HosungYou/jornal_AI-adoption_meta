@@ -1,0 +1,7 @@
+group,rows,studies,pairs,source_packet_exists_rows,source_packet_value_hit_rows,pdf_exists_rows,pdf_text_ok_rows,pdf_value_hit_rows,source_packet_value_hit_pct,pdf_value_hit_pct
+all_latest_human_numeric_target_rows,3654,181,45,3224,2681,3565,3565,3174,73.4,86.9
+source_file::latest_human_R1_CORRELATIONS,1005,99,45,940,681,1005,1005,803,67.8,79.9
+source_file::latest_human_R2_CORRELATIONS,57,7,27,0,0,57,57,56,0.0,98.2
+source_file::latest_human_R3_(합의) CORRELATIONS,785,73,44,671,591,743,743,686,75.3,87.4
+source_file::latest_human_R3_CORRELATIONS,749,72,44,635,563,707,707,653,75.2,87.2
+source_file::latest_human_R4_CORRELATIONS,1058,105,45,978,846,1053,1053,976,80.0,92.2

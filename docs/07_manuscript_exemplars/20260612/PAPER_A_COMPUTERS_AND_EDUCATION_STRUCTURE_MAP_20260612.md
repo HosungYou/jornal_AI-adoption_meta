@@ -4,6 +4,43 @@ Target journal: Computers & Education
 
 Decision state: target journal, construct scope, figure spine, and table spine are approved. The actual TSSEM/OSMASEM/sensitivity estimate insertion is approved but cannot be treated as complete from the current input because the model-ready primary file lacks source-supported numeric sample size for most rows.
 
+## Researcher-Approved Route Recorded on 2026-06-12
+
+| Item | Current decision |
+| --- | --- |
+| Primary SEM route | Full 10-construct route. |
+| Sample-size policy | Source-supported PDF/workbook N override is allowed with provenance. |
+| Evidence class | Direct-r is primary; expanded direct-r-form and converted effects are sensitivity evidence. |
+| Construct/moderator boundary | Trust, anxiety, and self-efficacy are focal mediator/mechanism candidates inside the 10-construct SEM, not study-level moderators. |
+| Moderator candidates | `ai_type` is the strongest current substantive moderator candidate. `common_method_bias` is QC/sensitivity. Year/generative-AI era was merged but is not feasible as pre/post moderator from current data because available years are all post-2023. |
+
+Trust, anxiety, and self-efficacy can be studied as moderators only if a separate study-level variable is defined, such as construct presence, measurement role, or construct framing. That route is weaker than the current construct-level SEM and should not replace the primary model. The current researcher intent is to test them as mediator/mechanism constructs through indirect paths where coverage permits.
+
+## Mediator/Mechanism Feasibility Update
+
+First-pass audit file: `data/04_extraction/05_llm_masem_substitution/results/paper_a_mediator_feasibility_20260612/PAPER_A_MEDIATOR_FEASIBILITY_AUDIT_20260612.md`.
+
+| Construct | Feasibility result | Manuscript treatment |
+| --- | --- | --- |
+| `ATT` | Main indirect candidate for `PE/EE/SI/FC -> ATT -> BI`. | Standard TAM mediation family. |
+| `TRU` | Main indirect candidate for `PE/EE -> TRU -> BI`; sensitivity for `SI -> TRU -> BI`. | AI-specific trust mediation/mechanism. |
+| `SE` | Sensitivity-level mechanism for `FC/EE/PE/SI -> SE -> BI` and selected `SE -> ATT` paths. | Sensitivity/mechanism evidence only. |
+| `ANX` | Underpowered or not identified for current candidate paths. | Theory-specified construct; avoid confirmed mediation claim. |
+
+## Moderator Feasibility Update
+
+Initial moderator report: `data/04_extraction/05_llm_masem_substitution/results/initial_execution_validation_20260612/PAPER_A_B_INITIAL_EXECUTION_VALIDATION_20260612.md`.
+
+Year/generative-era merge report: `data/04_extraction/05_llm_masem_substitution/results/paper_a_year_moderator_merge_20260612/PAPER_A_YEAR_GENERATIVE_ERA_MODERATOR_MERGE_20260612.md`.
+
+| Moderator | Result | Manuscript treatment |
+| --- | --- | --- |
+| `ai_type` | 36 nonmissing studies, two usable levels: generative=21, general=15. | Main substantive moderator candidate. |
+| `common_method_bias` | 36 nonmissing studies, two usable levels: not addressed=22, addressed=14. | Methodological/QC sensitivity moderator. |
+| `year/generative-AI era` | 66 studies with year all post-2023; 8 missing; no pre/post contrast. | Not feasible as current pre/post moderator. |
+| `user_role` | 36 nonmissing studies but smallest level has 2 studies. | Not feasible as current main moderator. |
+| `education_level`, `country/region`, `theoretical_framework` | Sparse or unbalanced. | Not feasible from current input. |
+
 ## Current Analysis Gate
 
 | Check | Current value | Implication |
@@ -55,7 +92,7 @@ Least-covered pairs:
 1. Introduction: higher-education AI adoption problem, why structural synthesis is needed, why AI trust/anxiety expand TAM/UTAUT.
 2. Theory and hypotheses: TAM/UTAUT, attitude mediation, self-efficacy, trust, anxiety, use behavior.
 3. Method: search, screening, source adjudication, coding, 10-construct harmonization, TSSEM/OSMASEM, sensitivity.
-4. Results: PRISMA, study characteristics, input coverage, Stage 1 pooled matrix, Stage 2 model paths, moderators, sensitivity.
+4. Results: PRISMA, study characteristics, input coverage, Stage 1 pooled matrix, Stage 2 model paths, indirect effects/mediator feasibility, moderators, sensitivity.
 5. Discussion: theory, institutional implications, limitations, reproducibility, future AI-adoption measurement.
 
 ## Table Spine

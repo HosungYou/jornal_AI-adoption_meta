@@ -1,0 +1,9 @@
+study_id,coded_rows,unique_pairs,source_packet_exists,pdf_exists,rows_value_found_in_source_packet_text,rows_value_found_in_pdf_text
+S004,28,15,True,True,28,28
+S035,15,15,True,True,15,15
+S086,15,15,True,True,14,14
+S088,30,15,True,True,16,30
+S138,30,15,True,True,30,30
+S173,26,15,True,True,26,26
+S176,45,15,True,True,45,45
+S223,15,15,True,True,15,15

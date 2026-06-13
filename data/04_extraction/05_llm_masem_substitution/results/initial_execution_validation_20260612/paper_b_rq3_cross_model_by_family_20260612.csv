@@ -1,0 +1,11 @@
+signal,scope_n,flagged_n,review_needed_n,true_positive_n,false_positive_n,false_negative_n,precision_review_needed,recall_review_needed,review_burden_share,baseline_review_needed_rate,precision_lift_vs_baseline
+cross_model_behavior_disagreement | absence_or_blank_consensus,6412,6104,6412,6104,0,308,1.0,0.9519650655021834,0.9519650655021834,1.0,1.0
+cross_model_behavior_disagreement | construct_or_sample_mapping_decision,2,2,2,2,0,0,1.0,1.0,1.0,1.0,1.0
+cross_model_behavior_disagreement | human_disagreement_trace,467,396,467,396,0,71,1.0,0.8479657387580299,0.8479657387580299,1.0,1.0
+cross_model_behavior_disagreement | source_absence_decision,3,3,3,3,0,0,1.0,1.0,1.0,1.0,1.0
+cross_model_behavior_disagreement | statistic_type_policy_decision,7,5,7,5,0,2,1.0,0.7142857142857143,0.7142857142857143,1.0,1.0
+cross_model_behavior_disagreement | structured_human_review_decision,41,28,41,28,0,13,1.0,0.6829268292682927,0.6829268292682927,1.0,1.0
+cross_model_behavior_disagreement | metadata_extraction,468,54,421,46,8,375,0.8518518518518519,0.10926365795724466,0.11538461538461539,0.8995726495726496,0.9469517022961204
+cross_model_behavior_disagreement | converted_or_model_derived_effect_size,88,0,88,0,0,88,,0.0,0.0,1.0,
+cross_model_behavior_disagreement | direct_r_effect_size_extraction,366,0,363,0,0,363,,0.0,0.0,0.9918032786885246,
+cross_model_behavior_disagreement | eligibility_or_exclusion_decision,5,0,5,0,0,5,,0.0,0.0,1.0,

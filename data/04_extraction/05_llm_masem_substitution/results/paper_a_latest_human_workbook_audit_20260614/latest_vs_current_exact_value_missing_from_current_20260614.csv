@@ -1,0 +1,1992 @@
+coder,sheet,study_id,construct_1,construct_2,pair,r_value,original_beta,r_source,source_location,flag,notes,sample_size
+R1,CORRELATIONS,S222,BI,EE,BI-EE,0.46,0.405,beta_converted,"Table 6, p.2028",,,50.0
+R1,CORRELATIONS,S222,BI,PE,BI-PE,0.58,0.531,beta_converted,"Table 6, p.2028",,,50.0
+R1,CORRELATIONS,S218,ATT,EE,ATT-EE,0.69,,direct,"Table 1, p.5",,,242.0
+R1,CORRELATIONS,S185,ANX,BI,ANX-BI,0.47,,direct,"Table 3, p.7",,DIS mapped to ANX,298.0
+R1,CORRELATIONS,S185,ANX,EE,ANX-EE,0.47,,direct,"Table 3, p.7",,DIS mapped to ANX,298.0
+R1,CORRELATIONS,S185,ANX,PE,ANX-PE,0.44,,direct,"Table 3, p.7",,DIS mapped to ANX,298.0
+R1,CORRELATIONS,S185,ATT,BI,ATT-BI,0.45,,direct,"Table 3, p.7",,,298.0
+R1,CORRELATIONS,S185,ATT,EE,ATT-EE,0.47,,direct,"Table 3, p.7",,,298.0
+R1,CORRELATIONS,S185,ATT,PE,ATT-PE,0.5,,direct,"Table 3, p.7",,,298.0
+R1,CORRELATIONS,S185,BI,EE,BI-EE,0.52,,direct,"Table 3, p.7",,,298.0
+R1,CORRELATIONS,S185,BI,PE,BI-PE,0.46,,direct,"Table 3, p.7",,,298.0
+R1,CORRELATIONS,S185,EE,PE,EE-PE,0.48,,direct,"Table 3, p.7",,,298.0
+R1,CORRELATIONS,S208,EE,TRU,EE-TRU,0.4,,direct,"Table 2, p.829",,,526.0
+R1,CORRELATIONS,S208,PE,SI,PE-SI,0.3,,direct,"Table 2, p.829",,,526.0
+R1,CORRELATIONS,S208,PE,TRU,PE-TRU,0.3,,direct,"Table 2, p.829",,,526.0
+R1,CORRELATIONS,S028,ATT,BI,ATT-BI,0.88,,direct,"Table 4, p.7",,,508.0
+R1,CORRELATIONS,S028,ATT,PE,ATT-PE,0.81,,direct,"Table 4, p.7",,,508.0
+R1,CORRELATIONS,S028,BI,EE,BI-EE,0.63,,direct,"Table 4, p.7",,,508.0
+R1,CORRELATIONS,S028,BI,SE,BI-SE,0.69,,direct,"Table 4, p.7",,,508.0
+R1,CORRELATIONS,S028,EE,PE,EE-PE,0.67,,direct,"Table 4, p.7",,,508.0
+R1,CORRELATIONS,S028,PE,SE,PE-SE,0.69,,direct,"Table 4, p.7",,,508.0
+R1,CORRELATIONS,S059,ATT,BI,ATT-BI,0.9,0.854,beta_converted,"Table 4, p.9",,,645.0
+R1,CORRELATIONS,S059,ATT,EE,ATT-EE,0.26,0.212,beta_converted,"Table 4, p.9",,,645.0
+R1,CORRELATIONS,S059,ATT,PE,ATT-PE,0.29,0.24,beta_converted,"Table 4, p.9",,,645.0
+R1,CORRELATIONS,S059,EE,PE,EE-PE,0.18,0.129,beta_converted,"Table 4, p.9",,,645.0
+R1,CORRELATIONS,S145,BI,UB,BI-UB,0.34,,direct,"Table 3, p.24",,AU mapped to UB,374.0
+R1,CORRELATIONS,S110,BI,EE,BI-EE,0.62,,direct,"Table 4, p.627",,r column in Table 4 (distinct from beta),353.0
+R1,CORRELATIONS,S110,BI,PE,BI-PE,0.68,,direct,"Table 4, p.627",,r column in Table 4 (distinct from beta),353.0
+R1,CORRELATIONS,S110,BI,SI,BI-SI,0.52,,direct,"Table 4, p.627",,r column in Table 4 (distinct from beta),353.0
+R1,CORRELATIONS,S177,BI,EE,BI-EE,0.718,0.229,fornell_larcker_plssem,"Table 3 (Fornell-Larcker), p.8",,r from Fornell-Larcker. Path PEOU->ITU beta=0.229.,283.0
+R1,CORRELATIONS,S177,BI,PE,BI-PE,0.712,0.338,fornell_larcker_plssem,"Table 3 (Fornell-Larcker), p.8",,r from Fornell-Larcker. Path PU->ITU beta=0.338.,283.0
+R1,CORRELATIONS,S177,EE,PE,EE-PE,0.571,0.571,fornell_larcker_plssem,"Table 3 (Fornell-Larcker), p.8",,PLS-SEM composite correlations. Also path PEOU->PU beta=0.571.,283.0
+R1,CORRELATIONS,S169,ATT,BI,ATT-BI,0.792,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,ATT,EE,ATT-EE,0.628,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,ATT,FC,ATT-FC,0.464,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,ATT,PE,ATT-PE,0.808,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,BI,EE,BI-EE,0.533,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,BI,FC,BI-FC,0.292,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,BI,PE,BI-PE,0.703,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,EE,FC,EE-FC,0.27,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,EE,PE,EE-PE,0.609,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S169,FC,PE,FC-PE,0.369,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.12",,,250.0
+R1,CORRELATIONS,S015,BI,EE,BI-EE,0.686,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,BI,FC,BI-FC,0.579,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,BI,PE,BI-PE,0.816,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,BI,SI,BI-SI,0.59,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,BI,UB,BI-UB,0.79,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,EE,FC,EE-FC,0.76,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,EE,PE,EE-PE,0.627,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,EE,SI,EE-SI,0.451,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,EE,UB,EE-UB,0.617,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,FC,PE,FC-PE,0.527,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,FC,SI,FC-SI,0.449,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,FC,UB,FC-UB,0.512,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,PE,SI,PE-SI,0.577,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,PE,UB,PE-UB,0.604,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S015,SI,UB,SI-UB,0.454,,fornell_larcker_cbsem,"Table 1 (Fornell-Larcker Poland), p.8",,CB-SEM (AMOS). Poland sample.,528.0
+R1,CORRELATIONS,S156,BI,FC,BI-FC,0.65,0.23,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",,Path FC->IBL beta=0.23,305.0
+R1,CORRELATIONS,S156,BI,PE,BI-PE,0.65,0.24,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",,Path PE->IBL beta=0.24,305.0
+R1,CORRELATIONS,S156,BI,SI,BI-SI,0.7,0.18,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",review,TI mapped to SI (moderate). Path TI->IBL beta=0.18.,305.0
+R1,CORRELATIONS,S156,BI,UB,BI-UB,0.71,0.2,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",,Path IBL->AU beta=0.20,305.0
+R1,CORRELATIONS,S156,FC,PE,FC-PE,0.59,,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",,,305.0
+R1,CORRELATIONS,S156,FC,SI,FC-SI,0.65,,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",review,TI mapped to SI (moderate).,305.0
+R1,CORRELATIONS,S156,FC,UB,FC-UB,0.64,,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",,,305.0
+R1,CORRELATIONS,S156,PE,SI,PE-SI,0.65,,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",review,TI mapped to SI (moderate). Interaction/peer influence construct.,305.0
+R1,CORRELATIONS,S156,PE,UB,PE-UB,0.57,,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",,,305.0
+R1,CORRELATIONS,S156,SI,UB,SI-UB,0.72,0.39,fornell_larcker_plssem,"Table 9 (Fornell-Larcker complete), p.14",review,TI mapped to SI (moderate). Path TI->AU beta=0.39.,305.0
+R1,CORRELATIONS,S030,ATT,BI,ATT-BI,0.613,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,ATT,EE,ATT-EE,0.556,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,ATT,FC,ATT-FC,0.571,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,ATT,PE,ATT-PE,0.504,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,ATT,SI,ATT-SI,0.666,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,ATT,TRU,ATT-TRU,0.619,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,BI,EE,BI-EE,0.555,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,BI,FC,BI-FC,0.57,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,BI,PE,BI-PE,0.581,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,BI,SI,BI-SI,0.703,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,BI,TRU,BI-TRU,0.612,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,EE,FC,EE-FC,0.56,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,EE,PE,EE-PE,0.542,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,EE,SI,EE-SI,0.674,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,EE,TRU,EE-TRU,0.636,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,FC,PE,FC-PE,0.598,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,FC,SI,FC-SI,0.649,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,FC,TRU,FC-TRU,0.594,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,PE,SI,PE-SI,0.635,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,PE,TRU,PE-TRU,0.539,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S030,SI,TRU,SI-TRU,0.646,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.7",,,226.0
+R1,CORRELATIONS,S201,BI,EE,BI-EE,0.215,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",,,238.0
+R1,CORRELATIONS,S201,BI,PE,BI-PE,0.595,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",,,238.0
+R1,CORRELATIONS,S201,BI,SE,BI-SE,0.269,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",review,AL mapped to SE (moderate).,238.0
+R1,CORRELATIONS,S201,BI,SI,BI-SI,0.514,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",,,238.0
+R1,CORRELATIONS,S201,EE,PE,EE-PE,0.344,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",,,238.0
+R1,CORRELATIONS,S201,EE,SE,EE-SE,0.577,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",review,AL mapped to SE (moderate). Items measure self-reported AI competence.,238.0
+R1,CORRELATIONS,S201,EE,SI,EE-SI,0.342,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",,,238.0
+R1,CORRELATIONS,S201,PE,SE,PE-SE,0.309,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",review,AL mapped to SE (moderate).,238.0
+R1,CORRELATIONS,S201,PE,SI,PE-SI,0.494,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",,,238.0
+R1,CORRELATIONS,S201,SE,SI,SE-SI,0.277,,fornell_larcker_plssem,"Table 4 (correlation matrix), p.7",review,AL mapped to SE (moderate).,238.0
+R1,CORRELATIONS,S019,PE,TRU,PE-TRU,0.479,,fornell_larcker_plssem,"Table 3 (Fornell-Larcker), p.21332",,,572.0
+R1,CORRELATIONS,S178,BI,EE,BI-EE,0.635,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,BI,PE,BI-PE,0.649,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,BI,SI,BI-SI,0.532,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,BI,TRU,BI-TRU,0.532,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,EE,PE,EE-PE,0.664,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,EE,SI,EE-SI,0.506,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,EE,TRU,EE-TRU,0.518,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,PE,SI,PE-SI,0.479,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,PE,TRU,PE-TRU,0.587,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S178,SI,TRU,SI-TRU,0.568,,fornell_larcker_cbsem,"Table 4 (Fornell-Larcker), p.9",,CB-SEM (AMOS). Teacher sample.,529.0
+R1,CORRELATIONS,S046,ANX,BI,ANX-BI,-0.377,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",review,AI-STB mapped to ANX (moderate confidence).,361.0
+R1,CORRELATIONS,S046,ANX,EE,ANX-EE,-0.423,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",review,AI-STB mapped to ANX (moderate confidence).,361.0
+R1,CORRELATIONS,S046,ANX,PE,ANX-PE,-0.462,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",review,AI-STB mapped to ANX (moderate confidence).,361.0
+R1,CORRELATIONS,S046,ANX,SE,ANX-SE,-0.069,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",review,AI-STB mapped to ANX (moderate confidence).,361.0
+R1,CORRELATIONS,S046,ANX,SI,ANX-SI,-0.032,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",review,AI-STB mapped to ANX (moderate confidence).,361.0
+R1,CORRELATIONS,S046,BI,EE,BI-EE,0.726,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,BI,PE,BI-PE,0.661,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,BI,SE,BI-SE,0.442,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,BI,SI,BI-SI,0.087,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,EE,PE,EE-PE,0.724,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,EE,SE,EE-SE,0.537,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,EE,SI,EE-SI,0.031,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,PE,SE,PE-SE,0.508,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,PE,SI,PE-SI,0.383,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S046,SE,SI,SE-SI,0.04,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.12",,,361.0
+R1,CORRELATIONS,S053,BI,EE,BI-EE,0.155,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,BI,PE,BI-PE,0.596,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,BI,SE,BI-SE,0.429,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,BI,UB,BI-UB,0.236,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,EE,PE,EE-PE,0.103,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,EE,SE,EE-SE,0.113,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,EE,UB,EE-UB,-0.032,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,PE,SE,PE-SE,0.453,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,PE,UB,PE-UB,0.185,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S053,SE,UB,SE-UB,0.131,,fornell_larcker_plssem,"Table 5 (Fornell-Larcker), p.5676",,,445.0
+R1,CORRELATIONS,S095,EE,FC,EE-FC,0.704,,correlation_matrix,Text p.14,,Bivariate Pearson r.,1055.0
+R1,CORRELATIONS,S095,EE,PE,EE-PE,0.644,,correlation_matrix,Text p.14,,Bivariate Pearson r reported in text.,1055.0
+R1,CORRELATIONS,S095,FC,SI,FC-SI,0.692,,correlation_matrix,Text p.14,,Bivariate Pearson r.,1055.0
+R1,CORRELATIONS,S095,PE,SI,PE-SI,0.672,,correlation_matrix,Text p.14,,Bivariate Pearson r.,1055.0
+R1,CORRELATIONS,S102,ANX,BI,ANX-BI,0.203,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,Technostress mapped to ANX (moderate). Emotional/cognitive strain.,284.0
+R1,CORRELATIONS,S102,ANX,EE,ANX-EE,0.108,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,Technostress mapped to ANX (moderate). Emotional/cognitive strain.,284.0
+R1,CORRELATIONS,S102,ANX,PE,ANX-PE,0.136,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,Technostress mapped to ANX (moderate). Emotional/cognitive strain.,284.0
+R1,CORRELATIONS,S102,ANX,TRU,ANX-TRU,0.027,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,Technostress mapped to ANX (moderate). Emotional/cognitive strain.,284.0
+R1,CORRELATIONS,S102,BI,EE,BI-EE,0.712,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,284.0
+R1,CORRELATIONS,S102,BI,PE,BI-PE,0.682,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,284.0
+R1,CORRELATIONS,S102,BI,TRU,BI-TRU,0.368,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,284.0
+R1,CORRELATIONS,S102,EE,PE,EE-PE,0.63,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,284.0
+R1,CORRELATIONS,S102,EE,TRU,EE-TRU,0.435,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,284.0
+R1,CORRELATIONS,S102,PE,TRU,PE-TRU,0.46,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,284.0
+R1,CORRELATIONS,S018,ATT,BI,ATT-BI,0.88,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,ATT,EE,ATT-EE,0.847,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,ATT,PE,ATT-PE,0.893,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,ATT,SI,ATT-SI,0.653,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,BI,EE,BI-EE,0.832,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,BI,PE,BI-PE,0.867,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,BI,SI,BI-SI,0.659,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,EE,PE,EE-PE,0.856,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,EE,SI,EE-SI,0.671,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S018,PE,SI,PE-SI,0.642,,fornell_larcker_cbsem,"Table 2 (Fornell-Larcker), p.20927",,,748.0
+R1,CORRELATIONS,S190,ANX,ATT,ANX-ATT,0.64,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,Perceived Enjoyment mapped to ATT (moderate).,330.0
+R1,CORRELATIONS,S190,ANX,BI,ANX-BI,0.45,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,"Time & Psychological Risks mapped to ANX (moderate, AVE<0.50).",330.0
+R1,CORRELATIONS,S190,ANX,EE,ANX-EE,0.49,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,"Time & Psychological Risks mapped to ANX (moderate, AVE<0.50).",330.0
+R1,CORRELATIONS,S190,ANX,FC,ANX-FC,0.64,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,"Time & Psychological Risks mapped to ANX (moderate, AVE<0.50).",330.0
+R1,CORRELATIONS,S190,ANX,PE,ANX-PE,0.48,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,"Time & Psychological Risks mapped to ANX (moderate, AVE<0.50).",330.0
+R1,CORRELATIONS,S190,ANX,SI,ANX-SI,0.39,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,"Time & Psychological Risks mapped to ANX (moderate, AVE<0.50).",330.0
+R1,CORRELATIONS,S190,ATT,BI,ATT-BI,0.39,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,Perceived Enjoyment mapped to ATT (moderate).,330.0
+R1,CORRELATIONS,S190,ATT,EE,ATT-EE,0.64,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,Perceived Enjoyment mapped to ATT (moderate).,330.0
+R1,CORRELATIONS,S190,ATT,FC,ATT-FC,0.6,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,Perceived Enjoyment mapped to ATT (moderate).,330.0
+R1,CORRELATIONS,S190,ATT,PE,ATT-PE,0.58,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,Perceived Enjoyment mapped to ATT (moderate).,330.0
+R1,CORRELATIONS,S190,ATT,SI,ATT-SI,0.5,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,Perceived Enjoyment mapped to ATT (moderate).,330.0
+R1,CORRELATIONS,S190,BI,EE,BI-EE,0.53,,correlation_matrix,"Table 2 (Pearson correlation), p.7",,,330.0
+R1,CORRELATIONS,S190,BI,FC,BI-FC,0.64,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,TTF mapped to FC (moderate).,330.0
+R1,CORRELATIONS,S190,BI,PE,BI-PE,0.54,,correlation_matrix,"Table 2 (Pearson correlation), p.7",,,330.0
+R1,CORRELATIONS,S190,BI,SI,BI-SI,0.62,,correlation_matrix,"Table 2 (Pearson correlation), p.7",,,330.0
+R1,CORRELATIONS,S190,EE,FC,EE-FC,0.63,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,TTF mapped to FC (moderate).,330.0
+R1,CORRELATIONS,S190,EE,PE,EE-PE,0.7,,correlation_matrix,"Table 2 (Pearson correlation), p.7",,,330.0
+R1,CORRELATIONS,S190,EE,SI,EE-SI,0.51,,correlation_matrix,"Table 2 (Pearson correlation), p.7",,,330.0
+R1,CORRELATIONS,S190,FC,PE,FC-PE,0.61,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,TTF mapped to FC (moderate).,330.0
+R1,CORRELATIONS,S190,FC,SI,FC-SI,0.71,,correlation_matrix,"Table 2 (Pearson correlation), p.7",review,TTF mapped to FC (moderate).,330.0
+R1,CORRELATIONS,S190,PE,SI,PE-SI,0.47,,correlation_matrix,"Table 2 (Pearson correlation), p.7",,,330.0
+R1,CORRELATIONS,S076,ATT,BI,ATT-BI,0.815,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,ATT,EE,ATT-EE,0.74,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,ATT,FC,ATT-FC,0.664,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,ATT,PE,ATT-PE,0.743,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,ATT,SI,ATT-SI,0.752,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,BI,EE,BI-EE,0.67,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,BI,FC,BI-FC,0.558,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,BI,PE,BI-PE,0.702,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,BI,SI,BI-SI,0.759,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,EE,FC,EE-FC,0.731,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,EE,PE,EE-PE,0.787,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,EE,SI,EE-SI,0.739,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,FC,PE,FC-PE,0.658,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,FC,SI,FC-SI,0.67,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S076,PE,SI,PE-SI,0.746,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.15",,,526.0
+R1,CORRELATIONS,S164,ATT,BI,ATT-BI,0.85,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,ATT,EE,ATT-EE,0.763,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,ATT,FC,ATT-FC,0.833,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,ATT,PE,ATT-PE,0.714,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,ATT,SI,ATT-SI,-0.031,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,SN near-zero; possible measurement artifact.,2078.0
+R1,CORRELATIONS,S164,ATT,UB,ATT-UB,0.784,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,BI,EE,BI-EE,0.729,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,BI,FC,BI-FC,0.82,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,BI,PE,BI-PE,0.687,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,BI,SI,BI-SI,-0.03,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,SN near-zero.,2078.0
+R1,CORRELATIONS,S164,BI,UB,BI-UB,0.806,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,EE,FC,EE-FC,0.742,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,EE,PE,EE-PE,0.716,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,EE,SI,EE-SI,-0.024,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,SN near-zero.,2078.0
+R1,CORRELATIONS,S164,EE,UB,EE-UB,0.659,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,FC,PE,FC-PE,0.632,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,FC,SI,FC-SI,-0.011,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,SN near-zero.,2078.0
+R1,CORRELATIONS,S164,FC,UB,FC-UB,0.751,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",,,2078.0
+R1,CORRELATIONS,S164,PE,SI,PE-SI,-0.021,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,SN near-zero.,2078.0
+R1,CORRELATIONS,S164,PE,UB,PE-UB,-0.031,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,PE-UB negative; likely extraction error or suppression.,2078.0
+R1,CORRELATIONS,S164,SI,UB,SI-UB,-0.005,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8",review,SN near-zero.,2078.0
+R1,CORRELATIONS,S091,ATT,BI,ATT-BI,0.478,,fornell_larcker_plssem,"Table 7 (Fornell-Larcker), p.12",,,382.0
+R1,CORRELATIONS,S091,ATT,FC,ATT-FC,0.687,,fornell_larcker_plssem,"Table 7 (Fornell-Larcker), p.12",,,382.0
+R1,CORRELATIONS,S091,ATT,PE,ATT-PE,0.748,,fornell_larcker_plssem,"Table 7 (Fornell-Larcker), p.12",,,382.0
+R1,CORRELATIONS,S091,BI,FC,BI-FC,0.516,,fornell_larcker_plssem,"Table 7 (Fornell-Larcker), p.12",,,382.0
+R1,CORRELATIONS,S091,BI,PE,BI-PE,0.523,,fornell_larcker_plssem,"Table 7 (Fornell-Larcker), p.12",,,382.0
+R1,CORRELATIONS,S091,FC,PE,FC-PE,0.684,,fornell_larcker_plssem,"Table 7 (Fornell-Larcker), p.12",,,382.0
+R1,CORRELATIONS,S187,ANX,BI,ANX-BI,0.002,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",review,Stress near-zero.,352.0
+R1,CORRELATIONS,S187,ANX,EE,ANX-EE,0.03,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",review,Stress near-zero.,352.0
+R1,CORRELATIONS,S187,ANX,FC,ANX-FC,0.052,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",review,Stress near-zero.,352.0
+R1,CORRELATIONS,S187,ANX,PE,ANX-PE,0.031,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",review,Stress(ANX) near-zero.,352.0
+R1,CORRELATIONS,S187,ANX,SI,ANX-SI,0.026,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",review,Stress near-zero.,352.0
+R1,CORRELATIONS,S187,BI,EE,BI-EE,0.591,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,BI,FC,BI-FC,0.598,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,BI,PE,BI-PE,0.655,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,BI,SI,BI-SI,0.639,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,EE,FC,EE-FC,0.703,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,EE,PE,EE-PE,0.572,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,EE,SI,EE-SI,0.571,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,FC,PE,FC-PE,0.535,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,FC,SI,FC-SI,0.655,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S187,PE,SI,PE-SI,0.614,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.10",,,352.0
+R1,CORRELATIONS,S223,BI,EE,BI-EE,0.808,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,BI,FC,BI-FC,0.737,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,BI,PE,BI-PE,0.818,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,BI,SI,BI-SI,0.703,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,BI,TRU,BI-TRU,0.732,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,BI,UB,BI-UB,0.799,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,EE,FC,EE-FC,0.785,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,EE,PE,EE-PE,0.732,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,EE,SI,EE-SI,0.579,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,EE,TRU,EE-TRU,0.666,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,EE,UB,EE-UB,0.66,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,FC,PE,FC-PE,0.667,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,FC,SI,FC-SI,0.657,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,FC,TRU,FC-TRU,0.706,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,FC,UB,FC-UB,0.616,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,PE,SI,PE-SI,0.607,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,PE,TRU,PE-TRU,0.678,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,PE,UB,PE-UB,0.707,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,SI,TRU,SI-TRU,0.668,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,SI,UB,SI-UB,0.748,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S223,TRU,UB,TRU-UB,0.688,,fornell_larcker_plssem,"Table 4 (Fornell-Larcker), p.8082",,,300.0
+R1,CORRELATIONS,S005,ANX,BI,ANX-BI,0.174,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",,,230.0
+R1,CORRELATIONS,S005,ANX,FC,ANX-FC,0.205,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",review,CON mapped to FC.,230.0
+R1,CORRELATIONS,S005,ANX,PE,ANX-PE,0.233,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",,,230.0
+R1,CORRELATIONS,S005,ANX,SE,ANX-SE,0.173,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",,,230.0
+R1,CORRELATIONS,S005,BI,FC,BI-FC,0.734,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",review,CON mapped to FC.,230.0
+R1,CORRELATIONS,S005,BI,PE,BI-PE,0.706,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",,,230.0
+R1,CORRELATIONS,S005,BI,SE,BI-SE,0.722,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",,,230.0
+R1,CORRELATIONS,S005,FC,PE,FC-PE,0.665,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",review,"CON mapped to FC (moderate, PBC-like).",230.0
+R1,CORRELATIONS,S005,FC,SE,FC-SE,0.711,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",review,CON mapped to FC.,230.0
+R1,CORRELATIONS,S005,PE,SE,PE-SE,0.663,,fornell_larcker_plssem,"Table 2 (Fornell-Larcker), p.970",,,230.0
+R1,CORRELATIONS,S168,BI,EE,BI-EE,0.14,0.085,beta_converted,Table 4,review,Beta converted because only structural path coefficients were reported; HTMT table not used as Pearson correlations.,534.0
+R1,CORRELATIONS,S168,BI,FC,BI-FC,-0.05,-0.005,beta_converted,Table 4,review,Beta converted because only structural path coefficients were reported; HTMT table not used as Pearson correlations.,534.0
+R1,CORRELATIONS,S168,BI,PE,BI-PE,0.31,0.261,beta_converted,Table 4,review,Beta converted because only structural path coefficients were reported; HTMT table not used as Pearson correlations.,534.0
+R1,CORRELATIONS,S168,BI,SI,BI-SI,0.15,0.099,beta_converted,Table 4,review,Beta converted because only structural path coefficients were reported; HTMT table not used as Pearson correlations.,534.0
+R1,CORRELATIONS,S168,BI,UB,BI-UB,0.47,0.415,beta_converted,Table 4,review,Beta converted because only structural path coefficients were reported; HTMT table not used as Pearson correlations.,534.0
+R1,CORRELATIONS,S168,FC,UB,FC-UB,0.23,0.179,beta_converted,Table 4,review,Beta converted because only structural path coefficients were reported; HTMT table not used as Pearson correlations.,534.0
+R1,CORRELATIONS,S054,BI,EE,BI-EE,0.66,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,BI,FC,BI-FC,0.67,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,BI,PE,BI-PE,0.57,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,BI,SI,BI-SI,0.64,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,EE,FC,EE-FC,0.66,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,EE,PE,EE-PE,0.52,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,EE,SI,EE-SI,0.6,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,FC,PE,FC-PE,0.58,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,FC,SI,FC-SI,0.78,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S054,PE,SI,PE-SI,0.57,,direct,Table 4,review,Fisher-z weighted teacher (n=299) and student (n=347) correlations.,646.0
+R1,CORRELATIONS,S011,ATT,BI,ATT-BI,0.29,0.241,beta_converted,Table 6,review,Beta converted. TTF mapped to FC where applicable.,304.0
+R1,CORRELATIONS,S011,ATT,EE,ATT-EE,0.29,0.242,beta_converted,Table 6,review,Beta converted. TTF mapped to FC where applicable.,304.0
+R1,CORRELATIONS,S011,ATT,FC,ATT-FC,0.58,0.532,beta_converted,Table 6,review,Beta converted. TTF mapped to FC where applicable.,304.0
+R1,CORRELATIONS,S011,ATT,PE,ATT-PE,0.28,0.227,beta_converted,Table 6,review,Beta converted. TTF mapped to FC where applicable.,304.0
+R1,CORRELATIONS,S011,BI,FC,BI-FC,0.72,0.674,beta_converted,Table 6,review,Beta converted. TTF mapped to FC where applicable.,304.0
+R1,CORRELATIONS,S044,ATT,EE,ATT-EE,0.64,,direct,Table 2,review,Positive Attitudes toward AI mapped to ATT; negative attitude subscale not coded.,441.0
+R1,CORRELATIONS,S044,ATT,FC,ATT-FC,0.47,,direct,Table 2,review,Positive Attitudes toward AI mapped to ATT; negative attitude subscale not coded.,441.0
+R1,CORRELATIONS,S044,ATT,PE,ATT-PE,0.54,,direct,Table 2,review,Positive Attitudes toward AI mapped to ATT; negative attitude subscale not coded.,441.0
+R1,CORRELATIONS,S044,ATT,SI,ATT-SI,0.64,,direct,Table 2,review,Positive Attitudes toward AI mapped to ATT; negative attitude subscale not coded.,441.0
+R1,CORRELATIONS,S044,EE,FC,EE-FC,0.53,,direct,Table 2,,,441.0
+R1,CORRELATIONS,S044,EE,PE,EE-PE,0.66,,direct,Table 2,,,441.0
+R1,CORRELATIONS,S044,EE,SI,EE-SI,0.53,,direct,Table 2,,,441.0
+R1,CORRELATIONS,S044,FC,PE,FC-PE,0.55,,direct,Table 2,,,441.0
+R1,CORRELATIONS,S044,FC,SI,FC-SI,0.57,,direct,Table 2,,,441.0
+R1,CORRELATIONS,S044,PE,SI,PE-SI,0.68,,direct,Table 2,,,441.0
+R1,CORRELATIONS,S151,EE,FC,EE-FC,0.54,,direct,Table 2,,,295.0
+R1,CORRELATIONS,S151,EE,PE,EE-PE,0.46,,direct,Table 2,,,295.0
+R1,CORRELATIONS,S151,EE,SE,EE-SE,0.42,,direct,Table 2,,,295.0
+R1,CORRELATIONS,S151,EE,UB,EE-UB,0.54,,direct,Table 2,review,UB scale includes use-frequency items plus one continuation-intention item.,295.0
+R1,CORRELATIONS,S151,FC,PE,FC-PE,0.47,,direct,Table 2,,,295.0
+R1,CORRELATIONS,S151,FC,SE,FC-SE,0.5,,direct,Table 2,,,295.0
+R1,CORRELATIONS,S151,FC,UB,FC-UB,0.56,,direct,Table 2,review,UB scale includes use-frequency items plus one continuation-intention item.,295.0
+R1,CORRELATIONS,S151,PE,SE,PE-SE,0.48,,direct,Table 2,,,295.0
+R1,CORRELATIONS,S151,PE,UB,PE-UB,0.57,,direct,Table 2,review,UB scale includes use-frequency items plus one continuation-intention item.,295.0
+R1,CORRELATIONS,S151,SE,UB,SE-UB,0.56,,direct,Table 2,review,UB scale includes use-frequency items plus one continuation-intention item.,295.0
+R1,CORRELATIONS,S087,ATT,BI,ATT-BI,0.62,,direct,Table 4,review,Satisfaction mapped to ATT.,620.0
+R1,CORRELATIONS,S087,ATT,EE,ATT-EE,0.61,,direct,Table 4,review,Satisfaction mapped to ATT.,620.0
+R1,CORRELATIONS,S087,ATT,FC,ATT-FC,0.52,,direct,Table 4,review,Satisfaction mapped to ATT.,620.0
+R1,CORRELATIONS,S087,ATT,PE,ATT-PE,0.59,,direct,Table 4,review,Satisfaction mapped to ATT.,620.0
+R1,CORRELATIONS,S087,ATT,SI,ATT-SI,0.62,,direct,Table 4,review,Satisfaction mapped to ATT.,620.0
+R1,CORRELATIONS,S087,BI,EE,BI-EE,0.39,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,BI,FC,BI-FC,0.29,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,BI,PE,BI-PE,0.4,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,BI,SI,BI-SI,0.63,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,EE,FC,EE-FC,0.49,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,EE,PE,EE-PE,0.63,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,EE,SI,EE-SI,0.47,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,FC,PE,FC-PE,0.43,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,FC,SI,FC-SI,0.39,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S087,PE,SI,PE-SI,0.48,,direct,Table 4,,,620.0
+R1,CORRELATIONS,S051,ANX,BI,ANX-BI,-0.23,,direct,Table 2,review,Perceived risk mapped to ANX.,524.0
+R1,CORRELATIONS,S051,ANX,EE,ANX-EE,-0.14,,direct,Table 2,review,Perceived risk mapped to ANX.,524.0
+R1,CORRELATIONS,S051,ANX,FC,ANX-FC,-0.34,,direct,Table 2,review,Perceived risk mapped to ANX.,524.0
+R1,CORRELATIONS,S051,ANX,PE,ANX-PE,-0.16,,direct,Table 2,review,Perceived risk mapped to ANX.,524.0
+R1,CORRELATIONS,S051,ANX,SI,ANX-SI,-0.21,,direct,Table 2,review,Perceived risk mapped to ANX.,524.0
+R1,CORRELATIONS,S051,ANX,UB,ANX-UB,-0.06,,direct,Table 2,review,Perceived risk mapped to ANX.,524.0
+R1,CORRELATIONS,S051,BI,EE,BI-EE,0.45,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,BI,FC,BI-FC,0.51,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,BI,PE,BI-PE,0.69,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,BI,SI,BI-SI,0.58,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,BI,UB,BI-UB,0.42,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,EE,FC,EE-FC,0.59,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,EE,PE,EE-PE,0.48,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,EE,SI,EE-SI,0.5,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,EE,UB,EE-UB,0.44,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,FC,PE,FC-PE,0.47,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,FC,SI,FC-SI,0.53,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,FC,UB,FC-UB,0.56,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,PE,SI,PE-SI,0.57,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,PE,UB,PE-UB,0.44,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S051,SI,UB,SI-UB,0.41,,direct,Table 2,,,524.0
+R1,CORRELATIONS,S086,BI,EE,BI-EE,0.5,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,BI,FC,BI-FC,0.32,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,BI,PE,BI-PE,0.64,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,BI,SI,BI-SI,0.55,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,BI,TRU,BI-TRU,0.7,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,BI,UB,BI-UB,0.62,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,EE,FC,EE-FC,0.24,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,EE,PE,EE-PE,0.55,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,EE,SI,EE-SI,0.39,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,EE,TRU,EE-TRU,0.48,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,EE,UB,EE-UB,0.46,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,FC,PE,FC-PE,0.19,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,FC,SI,FC-SI,0.46,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,FC,TRU,FC-TRU,0.41,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,FC,UB,FC-UB,0.15,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,PE,SI,PE-SI,0.44,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,PE,TRU,PE-TRU,0.53,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,PE,UB,PE-UB,0.62,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,SI,TRU,SI-TRU,0.51,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,SI,UB,SI-UB,0.41,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S086,TRU,UB,TRU-UB,0.46,,direct,Table 2,,,235.0
+R1,CORRELATIONS,S074,ANX,ATT,ANX-ATT,0.65,,direct,Table 3,review,Anxiety correlations are positive; possible scale orientation issue.,1260.0
+R1,CORRELATIONS,S074,ANX,BI,ANX-BI,0.6,,direct,Table 3,review,Anxiety correlations are positive; possible scale orientation issue.,1260.0
+R1,CORRELATIONS,S074,ANX,EE,ANX-EE,0.18,,direct,Table 3,review,Anxiety correlations are positive; possible scale orientation issue.,1260.0
+R1,CORRELATIONS,S074,ANX,PE,ANX-PE,0.5,,direct,Table 3,review,Anxiety correlations are positive; possible scale orientation issue.,1260.0
+R1,CORRELATIONS,S074,ANX,SE,ANX-SE,0.68,,direct,Table 3,review,Anxiety correlations are positive; possible scale orientation issue.,1260.0
+R1,CORRELATIONS,S074,ATT,BI,ATT-BI,0.64,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,ATT,EE,ATT-EE,0.27,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,ATT,PE,ATT-PE,0.7,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,ATT,SE,ATT-SE,0.69,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,BI,EE,BI-EE,0.33,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,BI,PE,BI-PE,0.59,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,BI,SE,BI-SE,0.65,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,EE,PE,EE-PE,0.34,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,EE,SE,EE-SE,0.3,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S074,PE,SE,PE-SE,0.64,,direct,Table 3,,,1260.0
+R1,CORRELATIONS,S189,ATT,BI,ATT-BI,0.4,,direct,Table 7,review,Perception using ChatGPT mapped to ATT.,236.0
+R1,CORRELATIONS,S189,ATT,EE,ATT-EE,0.36,,direct,Table 7,review,Perception using ChatGPT mapped to ATT.,236.0
+R1,CORRELATIONS,S189,ATT,PE,ATT-PE,0.39,,direct,Table 7,review,Perception using ChatGPT mapped to ATT.,236.0
+R1,CORRELATIONS,S189,BI,EE,BI-EE,0.51,,direct,Table 7,,,236.0
+R1,CORRELATIONS,S189,BI,PE,BI-PE,0.55,,direct,Table 7,,,236.0
+R1,CORRELATIONS,S189,EE,PE,EE-PE,0.6,,direct,Table 7,,,236.0
+R1,CORRELATIONS,S120,BI,EE,BI-EE,0.06,0.01,beta_converted,Table 10,review,"Beta converted separately for students (n=320) and instructors (n=31), then Fisher-z weighted. Subgroup p-values differ for some paths.",351.0
+R1,CORRELATIONS,S120,BI,FC,BI-FC,0.19,0.14,beta_converted,Table 10,review,"Beta converted separately for students (n=320) and instructors (n=31), then Fisher-z weighted. Subgroup p-values differ for some paths.",351.0
+R1,CORRELATIONS,S120,BI,PE,BI-PE,0.32,0.27,beta_converted,Table 10,review,"Beta converted separately for students (n=320) and instructors (n=31), then Fisher-z weighted. Subgroup p-values differ for some paths.",351.0
+R1,CORRELATIONS,S120,BI,SI,BI-SI,0.14,0.09,beta_converted,Table 10,review,"Beta converted separately for students (n=320) and instructors (n=31), then Fisher-z weighted. Subgroup p-values differ for some paths.",351.0
+R1,CORRELATIONS,S120,BI,UB,BI-UB,0.69,0.64,beta_converted,Table 10,review,"Beta converted separately for students (n=320) and instructors (n=31), then Fisher-z weighted. Subgroup p-values differ for some paths.",351.0
+R1,CORRELATIONS,S081,BI,EE,BI-EE,0.47,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,BI,FC,BI-FC,0.43,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,BI,PE,BI-PE,0.41,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,BI,SI,BI-SI,0.46,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,EE,FC,EE-FC,0.36,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,EE,PE,EE-PE,0.4,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,EE,SI,EE-SI,0.43,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,FC,PE,FC-PE,0.2,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,FC,SI,FC-SI,0.25,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S081,PE,SI,PE-SI,0.38,,direct,Table 4,,,305.0
+R1,CORRELATIONS,S035,BI,EE,BI-EE,0.74,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,BI,FC,BI-FC,0.79,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,BI,PE,BI-PE,0.68,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,BI,SI,BI-SI,0.74,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,BI,TRU,BI-TRU,0.75,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,BI,UB,BI-UB,0.87,,direct,Table 4,review,ChatGPT Adoption mapped to UB although items include continuation-intention wording.,622.0
+R1,CORRELATIONS,S035,EE,FC,EE-FC,0.58,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,EE,PE,EE-PE,0.78,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,EE,SI,EE-SI,0.72,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,EE,TRU,EE-TRU,0.63,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,EE,UB,EE-UB,0.64,,direct,Table 4,review,ChatGPT Adoption mapped to UB although items include continuation-intention wording.,622.0
+R1,CORRELATIONS,S035,FC,PE,FC-PE,0.57,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,FC,SI,FC-SI,0.66,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,FC,TRU,FC-TRU,0.73,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,FC,UB,FC-UB,0.88,,direct,Table 4,review,ChatGPT Adoption mapped to UB although items include continuation-intention wording.,622.0
+R1,CORRELATIONS,S035,PE,SI,PE-SI,0.7,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,PE,TRU,PE-TRU,0.56,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,PE,UB,PE-UB,0.67,,direct,Table 4,review,ChatGPT Adoption mapped to UB although items include continuation-intention wording.,622.0
+R1,CORRELATIONS,S035,SI,TRU,SI-TRU,0.68,,direct,Table 4,,,622.0
+R1,CORRELATIONS,S035,SI,UB,SI-UB,0.68,,direct,Table 4,review,ChatGPT Adoption mapped to UB although items include continuation-intention wording.,622.0
+R1,CORRELATIONS,S035,TRU,UB,TRU-UB,0.76,,direct,Table 4,review,ChatGPT Adoption mapped to UB although items include continuation-intention wording.,622.0
+R1,CORRELATIONS,S191,BI,EE,BI-EE,0.81,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,BI,FC,BI-FC,0.81,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,BI,PE,BI-PE,0.76,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,BI,SE,BI-SE,0.58,,direct,Table 2,review,Computer self-efficacy mapped to SE.,331.0
+R1,CORRELATIONS,S191,BI,SI,BI-SI,0.7,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,BI,UB,BI-UB,0.72,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,EE,FC,EE-FC,0.62,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,EE,PE,EE-PE,0.71,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,EE,SE,EE-SE,0.35,,direct,Table 2,review,Computer self-efficacy mapped to SE.,331.0
+R1,CORRELATIONS,S191,EE,SI,EE-SI,0.59,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,EE,UB,EE-UB,0.51,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,FC,PE,FC-PE,0.56,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,FC,SE,FC-SE,0.49,,direct,Table 2,review,Computer self-efficacy mapped to SE.,331.0
+R1,CORRELATIONS,S191,FC,SI,FC-SI,0.54,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,FC,UB,FC-UB,0.67,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,PE,SE,PE-SE,0.26,,direct,Table 2,review,Computer self-efficacy mapped to SE.,331.0
+R1,CORRELATIONS,S191,PE,SI,PE-SI,0.53,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,PE,UB,PE-UB,0.45,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S191,SE,SI,SE-SI,0.35,,direct,Table 2,review,Computer self-efficacy mapped to SE.,331.0
+R1,CORRELATIONS,S191,SE,UB,SE-UB,0.58,,direct,Table 2,review,Computer self-efficacy mapped to SE.,331.0
+R1,CORRELATIONS,S191,SI,UB,SI-UB,0.5,,direct,Table 2,,,331.0
+R1,CORRELATIONS,S217,ATT,BI,ATT-BI,0.77,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,ATT,EE,ATT-EE,0.77,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,ATT,PE,ATT-PE,0.77,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,ATT,TRU,ATT-TRU,0.73,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,BI,EE,BI-EE,0.81,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,BI,PE,BI-PE,0.75,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,BI,TRU,BI-TRU,0.78,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,EE,PE,EE-PE,0.83,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,EE,TRU,EE-TRU,0.8,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S217,PE,TRU,PE-TRU,0.77,,direct,Table 4,,,344.0
+R1,CORRELATIONS,S166,BI,EE,BI-EE,-0.15,-0.096,beta_converted,Table 4,review,Beta converted because only structural paths and HTMT were reported.,104.0
+R1,CORRELATIONS,S166,BI,PE,BI-PE,0.55,0.495,beta_converted,Table 4,review,Beta converted because only structural paths and HTMT were reported.,104.0
+R1,CORRELATIONS,S166,BI,SI,BI-SI,0.15,0.098,beta_converted,Table 4,review,Beta converted because only structural paths and HTMT were reported.,104.0
+R1,CORRELATIONS,S166,BI,UB,BI-UB,0.63,0.579,beta_converted,Table 4,review,Beta converted because only structural paths and HTMT were reported.,104.0
+R1,CORRELATIONS,S166,FC,UB,FC-UB,-0.14,-0.09,beta_converted,Table 4,review,Beta converted because only structural paths and HTMT were reported.,104.0
+R1,CORRELATIONS,S033,ATT,EE,ATT-EE,0.06,0.013,beta_converted,Table 5,review,Beta converted because no construct correlation matrix was reported. Ethics not coded as target construct.,437.0
+R1,CORRELATIONS,S033,ATT,PE,ATT-PE,0.84,0.793,beta_converted,Table 5,review,Beta converted because no construct correlation matrix was reported. Ethics not coded as target construct.,437.0
+R1,CORRELATIONS,S033,ATT,UB,ATT-UB,0.34,0.292,beta_converted,Table 5,review,Beta converted because no construct correlation matrix was reported. Ethics not coded as target construct.,437.0
+R1,CORRELATIONS,S033,EE,PE,EE-PE,0.54,0.493,beta_converted,Table 5,review,Beta converted because no construct correlation matrix was reported. Ethics not coded as target construct.,437.0
+R1,CORRELATIONS,S033,SI,UB,SI-UB,0.21,0.158,beta_converted,Table 5,review,Beta converted because no construct correlation matrix was reported. Ethics not coded as target construct.,437.0
+R1,CORRELATIONS,S033,TRU,UB,TRU-UB,0.29,0.237,beta_converted,Table 5,review,Beta converted because no construct correlation matrix was reported. Ethics not coded as target construct.,437.0
+R1,CORRELATIONS,S089,BI,EE,BI-EE,0.46,0.412,beta_converted,Table 8,,No usable correlation matrix; standardized PLS path converted.,322.0
+R1,CORRELATIONS,S089,BI,PE,BI-PE,0.36,0.308,beta_converted,Table 8,,No usable correlation matrix; standardized PLS path converted.,322.0
+R1,CORRELATIONS,S089,BI,UB,BI-UB,0.72,0.667,beta_converted,Table 8,,No usable correlation matrix; standardized PLS path converted.,322.0
+R1,CORRELATIONS,S089,EE,UB,EE-UB,0.33,0.275,beta_converted,Table 8,,No usable correlation matrix; standardized PLS path converted.,322.0
+R1,CORRELATIONS,S089,PE,UB,PE-UB,0.26,0.205,beta_converted,Table 8,,No usable correlation matrix; standardized PLS path converted.,322.0
+R1,CORRELATIONS,S075,BI,EE,BI-EE,0.591,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,BI,FC,BI-FC,0.561,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,BI,PE,BI-PE,0.525,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,BI,SI,BI-SI,0.473,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,BI,UB,BI-UB,0.584,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,EE,FC,EE-FC,0.404,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,EE,PE,EE-PE,0.4,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,EE,SI,EE-SI,0.514,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,EE,UB,EE-UB,0.322,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,FC,PE,FC-PE,0.287,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,FC,SI,FC-SI,0.322,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,FC,UB,FC-UB,0.319,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,PE,SI,PE-SI,0.306,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,PE,UB,PE-UB,0.217,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S075,SI,UB,SI-UB,0.28,,direct,Table 4,,Fornell-Larcker off-diagonal latent correlation.,402.0
+R1,CORRELATIONS,S058,ATT,BI,ATT-BI,0.86,0.81,beta_converted,Table 4,,No usable correlation matrix; standardized SEM path converted.,541.0
+R1,CORRELATIONS,S058,ATT,EE,ATT-EE,0.42,0.369,beta_converted,Table 4,,No usable correlation matrix; standardized SEM path converted.,541.0
+R1,CORRELATIONS,S058,ATT,PE,ATT-PE,0.53,0.484,beta_converted,Table 4,,No usable correlation matrix; standardized SEM path converted.,541.0
+R1,CORRELATIONS,S058,BI,EE,BI-EE,0.19,0.142,beta_converted,Table 4,,No usable correlation matrix; standardized SEM path converted.,541.0
+R1,CORRELATIONS,S058,BI,PE,BI-PE,0.46,0.406,beta_converted,Table 4,,No usable correlation matrix; standardized SEM path converted.,541.0
+R1,CORRELATIONS,S058,EE,PE,EE-PE,0.86,0.806,beta_converted,Table 4,,No usable correlation matrix; standardized SEM path converted.,541.0
+R1,CORRELATIONS,S067,ATT,BI,ATT-BI,0.672,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,ATT,EE,ATT-EE,0.264,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,ATT,PE,ATT-PE,0.457,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,ATT,SI,ATT-SI,0.236,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,ATT,TRU,ATT-TRU,0.334,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,BI,EE,BI-EE,0.338,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,BI,PE,BI-PE,0.507,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,BI,SI,BI-SI,0.204,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,BI,TRU,BI-TRU,0.347,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,EE,PE,EE-PE,0.354,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,EE,SI,EE-SI,0.228,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,EE,TRU,EE-TRU,0.276,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,PE,SI,PE-SI,0.214,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,PE,TRU,PE-TRU,0.291,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S067,SI,TRU,SI-TRU,0.714,,direct,Table 4,,Fornell-Larcker off-diagonal correlation; PC mapped to TRU.,598.0
+R1,CORRELATIONS,S103,ATT,BI,ATT-BI,0.701,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,ATT,FC,ATT-FC,0.57,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,ATT,PE,ATT-PE,0.727,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,ATT,SI,ATT-SI,0.265,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,BI,FC,BI-FC,0.567,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,BI,PE,BI-PE,0.639,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,BI,SI,BI-SI,0.288,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,FC,PE,FC-PE,0.638,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,FC,SI,FC-SI,0.497,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S103,PE,SI,PE-SI,0.363,,direct,Table 2,,Pearson r matrix.,770.0
+R1,CORRELATIONS,S069,BI,EE,BI-EE,0.345,,direct,Table 2,,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,597.0
+R1,CORRELATIONS,S069,BI,PE,BI-PE,0.421,,direct,Table 2,,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,597.0
+R1,CORRELATIONS,S069,BI,SI,BI-SI,0.635,,direct,Table 2,,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,597.0
+R1,CORRELATIONS,S069,EE,PE,EE-PE,0.69,,direct,Table 2,,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,597.0
+R1,CORRELATIONS,S069,EE,SI,EE-SI,0.551,,direct,Table 2,,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,597.0
+R1,CORRELATIONS,S069,PE,SI,PE-SI,0.493,,direct,Table 2,,Fornell-Larcker off-diagonal correlation; perceived ethics excluded.,597.0
+R1,CORRELATIONS,S063,ATT,BI,ATT-BI,0.688,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,ATT,EE,ATT-EE,0.638,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,ATT,PE,ATT-PE,0.6,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,ATT,UB,ATT-UB,0.584,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,BI,EE,BI-EE,0.599,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,BI,PE,BI-PE,0.544,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,BI,UB,BI-UB,0.639,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,EE,PE,EE-PE,0.622,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,EE,UB,EE-UB,0.47,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S063,PE,UB,PE-UB,0.511,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; AH mapped to UB.,388.0
+R1,CORRELATIONS,S119,BI,EE,BI-EE,0.72,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,BI,FC,BI-FC,0.699,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,BI,PE,BI-PE,0.737,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,BI,SI,BI-SI,0.632,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,EE,FC,EE-FC,0.677,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,EE,PE,EE-PE,0.854,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,EE,SI,EE-SI,0.66,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,FC,PE,FC-PE,0.604,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,FC,SI,FC-SI,0.873,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S119,PE,SI,PE-SI,0.596,,direct,Table 5,,Fornell-Larcker off-diagonal correlation; PU selected as primary PE.,432.0
+R1,CORRELATIONS,S093,ATT,BI,ATT-BI,0.89,0.84,beta_converted,Table 3,,No usable correlation matrix; standardized SEM path converted.,127.0
+R1,CORRELATIONS,S093,ATT,EE,ATT-EE,0.48,0.428,beta_converted,Table 3,,No usable correlation matrix; standardized SEM path converted.,127.0
+R1,CORRELATIONS,S093,ATT,PE,ATT-PE,0.39,0.344,beta_converted,Table 3,,No usable correlation matrix; standardized SEM path converted.,127.0
+R1,CORRELATIONS,S093,BI,FC,BI-FC,-0.08,-0.032,beta_converted,Table 3,,No usable correlation matrix; standardized SEM path converted.,127.0
+R1,CORRELATIONS,S093,BI,UB,BI-UB,0.62,0.575,beta_converted,Table 3,,No usable correlation matrix; standardized SEM path converted.,127.0
+R1,CORRELATIONS,S093,EE,FC,EE-FC,0.15,0.098,beta_converted,Table 3,,No usable correlation matrix; standardized SEM path converted.,127.0
+R1,CORRELATIONS,S153,BI,EE,BI-EE,0.502,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,BI,PE,BI-PE,0.56,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,BI,SI,BI-SI,0.672,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,BI,TRU,BI-TRU,0.577,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,EE,PE,EE-PE,0.613,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,EE,SI,EE-SI,0.333,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,EE,TRU,EE-TRU,0.536,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,PE,SI,PE-SI,0.433,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,PE,TRU,PE-TRU,0.654,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S153,SI,TRU,SI-TRU,0.487,,direct,Table 4,,"Fornell-Larcker off-diagonal correlation; PA mapped to AUT, PT to TRU.",207.0
+R1,CORRELATIONS,S049,BI,EE,BI-EE,0.49,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,BI,FC,BI-FC,0.507,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,BI,PE,BI-PE,0.478,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,BI,SI,BI-SI,0.566,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,BI,UB,BI-UB,0.684,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,EE,FC,EE-FC,0.56,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,EE,PE,EE-PE,0.397,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,EE,SI,EE-SI,0.48,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,EE,UB,EE-UB,0.493,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,FC,PE,FC-PE,0.385,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,FC,SI,FC-SI,0.565,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,FC,UB,FC-UB,0.443,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,PE,SI,PE-SI,0.497,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,PE,UB,PE-UB,0.412,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S049,SI,UB,SI-UB,0.474,,direct,Table 3,,Fornell-Larcker off-diagonal correlation.,419.0
+R1,CORRELATIONS,S066,ANX,BI,ANX-BI,0.12,0.07,beta_converted,Table 7,Y,"HTMT not coded; standardized PLS path converted. Table 7 prints beta as 0.700, but Table 8 indirect effect implies 0.070; coded as source-corrected typo and flagged.",175.0
+R1,CORRELATIONS,S066,ANX,EE,ANX-EE,0.14,0.087,beta_converted,Table 7,Y,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,175.0
+R1,CORRELATIONS,S066,ANX,FC,ANX-FC,0.18,0.132,beta_converted,Table 7,Y,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,175.0
+R1,CORRELATIONS,S066,ANX,PE,ANX-PE,0.27,0.215,beta_converted,Table 7,Y,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,175.0
+R1,CORRELATIONS,S066,ANX,SI,ANX-SI,0.38,0.332,beta_converted,Table 7,Y,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,175.0
+R1,CORRELATIONS,S066,ANX,TRU,ANX-TRU,0.19,0.14,beta_converted,Table 7,Y,HTMT not coded; standardized PLS path converted. Path table p/t values appear inconsistent.,175.0
+R1,CORRELATIONS,S066,BI,EE,BI-EE,0.23,0.177,beta_converted,Table 7,,HTMT not coded; standardized PLS path converted.,175.0
+R1,CORRELATIONS,S066,BI,FC,BI-FC,0.17,0.123,beta_converted,Table 7,,HTMT not coded; standardized PLS path converted.,175.0
+R1,CORRELATIONS,S066,BI,PE,BI-PE,0.09,0.037,beta_converted,Table 7,,HTMT not coded; standardized PLS path converted.,175.0
+R1,CORRELATIONS,S066,BI,SI,BI-SI,0.39,0.339,beta_converted,Table 7,,HTMT not coded; standardized PLS path converted.,175.0
+R1,CORRELATIONS,S066,BI,TRU,BI-TRU,0.26,0.206,beta_converted,Table 7,,HTMT not coded; standardized PLS path converted.,175.0
+R1,CORRELATIONS,S066,BI,UB,BI-UB,0.55,0.497,beta_converted,Table 7,,HTMT not coded; standardized PLS path converted.,175.0
+R1,CORRELATIONS,S162,ANX,ATT,ANX-ATT,-0.323,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ANX,BI,ANX-BI,0.184,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ANX,EE,ANX-EE,0.412,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ANX,PE,ANX-PE,0.54,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ANX,UB,ANX-UB,0.132,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ATT,BI,ATT-BI,0.234,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ATT,EE,ATT-EE,0.087,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ATT,PE,ATT-PE,-0.591,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,ATT,UB,ATT-UB,0.166,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,BI,EE,BI-EE,0.019,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,BI,PE,BI-PE,0.021,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,BI,UB,BI-UB,0.619,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,EE,PE,EE-PE,0.427,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,EE,UB,EE-UB,0.081,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S162,PE,UB,PE-UB,-0.079,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; perceived stress excluded.,156.0
+R1,CORRELATIONS,S136,BI,EE,BI-EE,0.418,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,BI,PE,BI-PE,0.25,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,BI,SI,BI-SI,0.358,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,BI,UB,BI-UB,0.55,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,EE,PE,EE-PE,0.283,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,EE,SI,EE-SI,0.397,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,EE,UB,EE-UB,0.374,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,PE,SI,PE-SI,0.142,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,PE,UB,PE-UB,0.057,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S136,SI,UB,SI-UB,0.484,,direct,Table 3,,,105.0
+R1,CORRELATIONS,S188,BI,EE,BI-EE,0.647,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,147.0
+R1,CORRELATIONS,S188,BI,PE,BI-PE,0.645,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,147.0
+R1,CORRELATIONS,S188,BI,TRU,BI-TRU,0.478,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,147.0
+R1,CORRELATIONS,S188,EE,PE,EE-PE,0.679,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,147.0
+R1,CORRELATIONS,S188,EE,TRU,EE-TRU,0.519,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,147.0
+R1,CORRELATIONS,S188,PE,TRU,PE-TRU,0.369,,direct,Table 3,,Fornell-Larcker off-diagonal correlation; PTA mapped to TRU.,147.0
+R1,CORRELATIONS,S080,BI,EE,BI-EE,0.49,0.436,beta_converted,Table III,,,251.0
+R1,CORRELATIONS,S080,BI,FC,BI-FC,-0.11,-0.058,beta_converted,Table III,,,251.0
+R1,CORRELATIONS,S080,BI,PE,BI-PE,0.26,0.207,beta_converted,Table III,,,251.0
+R1,CORRELATIONS,S080,BI,SI,BI-SI,0.12,0.066,beta_converted,Table III,,,251.0
+R1,CORRELATIONS,S216,ANX,EE,ANX-EE,0.14,0.085,beta_converted,Table 5,,,348.0
+R1,CORRELATIONS,S216,BI,EE,BI-EE,0.25,0.203,beta_converted,Table 5,,,348.0
+R1,CORRELATIONS,S216,BI,PE,BI-PE,0.25,0.203,beta_converted,Table 5,,,348.0
+R1,CORRELATIONS,S216,BI,SI,BI-SI,0.21,0.159,beta_converted,Table 5,,,348.0
+R1,CORRELATIONS,S216,EE,PE,EE-PE,0.28,0.229,beta_converted,Table 5,,,348.0
+R1,CORRELATIONS,S216,EE,SE,EE-SE,0.28,0.231,beta_converted,Table 5,,,348.0
+R1,CORRELATIONS,S088,BI,EE,BI-EE,0.29,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,BI,FC,BI-FC,0.353,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,BI,PE,BI-PE,0.41,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,BI,SI,BI-SI,0.152,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,BI,TRU,BI-TRU,0.128,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,BI,UB,BI-UB,0.399,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,EE,FC,EE-FC,0.409,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,EE,PE,EE-PE,0.319,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,EE,SI,EE-SI,0.175,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,EE,TRU,EE-TRU,0.141,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,EE,UB,EE-UB,0.184,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,FC,PE,FC-PE,0.393,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,FC,SI,FC-SI,0.164,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,FC,TRU,FC-TRU,0.093,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,FC,UB,FC-UB,0.246,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,PE,SI,PE-SI,0.346,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,PE,TRU,PE-TRU,0.194,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,PE,UB,PE-UB,0.29,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,SI,TRU,SI-TRU,0.132,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,SI,UB,SI-UB,0.207,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S088,TRU,UB,TRU-UB,0.224,,direct,Table 3,,,353.0
+R1,CORRELATIONS,S192,BI,EE,BI-EE,0.08,0.03,beta_converted,Table 5,,,693.0
+R1,CORRELATIONS,S192,BI,FC,BI-FC,0.34,0.29,beta_converted,Table 5,,,693.0
+R1,CORRELATIONS,S192,BI,PE,BI-PE,0.14,0.09,beta_converted,Table 5,,,693.0
+R1,CORRELATIONS,S192,BI,SI,BI-SI,0.37,0.32,beta_converted,Table 5,,,693.0
+R1,CORRELATIONS,S192,BI,UB,BI-UB,0.32,0.27,beta_converted,Table 5,,,693.0
+R1,CORRELATIONS,S006,BI,EE,BI-EE,0.367,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,BI,FC,BI-FC,0.22,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,BI,PE,BI-PE,0.626,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,BI,SI,BI-SI,0.421,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,BI,UB,BI-UB,0.596,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,EE,FC,EE-FC,0.333,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,EE,PE,EE-PE,0.334,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,EE,SI,EE-SI,0.377,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,EE,UB,EE-UB,0.307,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,FC,PE,FC-PE,0.134,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,FC,SI,FC-SI,-0.029,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,FC,UB,FC-UB,0.402,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,PE,SI,PE-SI,0.403,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,PE,UB,PE-UB,0.469,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S006,SI,UB,SI-UB,0.334,,direct,Table 6,,,1167.0
+R1,CORRELATIONS,S003,EE,FC,EE-FC,0.271,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,EE,PE,EE-PE,0.496,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,EE,SI,EE-SI,0.414,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,EE,UB,EE-UB,0.241,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,FC,PE,FC-PE,0.448,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,FC,SI,FC-SI,0.565,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,FC,UB,FC-UB,0.609,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,PE,SI,PE-SI,0.644,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,PE,UB,PE-UB,0.726,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S003,SI,UB,SI-UB,0.73,,direct,Table 5,,,195.0
+R1,CORRELATIONS,S037,BI,EE,BI-EE,0.601,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,BI,PE,BI-PE,0.692,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,BI,SI,BI-SI,0.528,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,BI,TRU,BI-TRU,0.72,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,EE,PE,EE-PE,0.664,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,EE,SI,EE-SI,0.542,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,EE,TRU,EE-TRU,0.539,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,PE,SI,PE-SI,0.542,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,PE,TRU,PE-TRU,0.601,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S037,SI,TRU,SI-TRU,0.519,,direct,Table 4,,,635.0
+R1,CORRELATIONS,S112,BI,EE,BI-EE,0.16,0.108,beta_converted,Table 9,,,500.0
+R1,CORRELATIONS,S112,BI,FC,BI-FC,0.16,0.111,beta_converted,Table 9,,,500.0
+R1,CORRELATIONS,S112,BI,PE,BI-PE,0.23,0.177,beta_converted,Table 9,,,500.0
+R1,CORRELATIONS,S112,BI,SI,BI-SI,0.29,0.238,beta_converted,Table 9,,,500.0
+R1,CORRELATIONS,S112,EE,FC,EE-FC,0.43,0.377,beta_converted,Table 9,,,500.0
+R1,CORRELATIONS,S112,EE,PE,EE-PE,0.3,0.247,beta_converted,Table 9,,,500.0
+R1,CORRELATIONS,S112,PE,SI,PE-SI,0.27,0.22,beta_converted,Table 9,,,500.0
+R1,CORRELATIONS,S040,BI,EE,BI-EE,0.59,,direct,Table 6,,,290.0
+R1,CORRELATIONS,S040,BI,PE,BI-PE,0.55,,direct,Table 6,,,290.0
+R1,CORRELATIONS,S040,BI,TRU,BI-TRU,0.84,,direct,Table 6,,,290.0
+R1,CORRELATIONS,S040,EE,PE,EE-PE,0.48,,direct,Table 6,,,290.0
+R1,CORRELATIONS,S040,EE,TRU,EE-TRU,0.65,,direct,Table 6,,,290.0
+R1,CORRELATIONS,S040,PE,TRU,PE-TRU,0.59,,direct,Table 6,,,290.0
+R1,CORRELATIONS,S116,BI,EE,BI-EE,0.35,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,BI,FC,BI-FC,0.37,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,BI,PE,BI-PE,0.43,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,BI,SI,BI-SI,0.32,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,BI,UB,BI-UB,0.66,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,EE,FC,EE-FC,0.57,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,EE,PE,EE-PE,0.61,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,EE,SI,EE-SI,0.28,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,EE,UB,EE-UB,0.4,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,FC,PE,FC-PE,0.49,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,FC,SI,FC-SI,0.29,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,FC,UB,FC-UB,0.5,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,PE,SI,PE-SI,0.22,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,PE,UB,PE-UB,0.41,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S116,SI,UB,SI-UB,0.32,,direct,Table 5,,,8496.0
+R1,CORRELATIONS,S172,BI,EE,BI-EE,0.889,,direct,Table 4,,,330.0
+R1,CORRELATIONS,S172,BI,PE,BI-PE,0.779,,direct,Table 4,,,330.0
+R1,CORRELATIONS,S172,BI,UB,BI-UB,0.881,,direct,Table 4,,,330.0
+R1,CORRELATIONS,S172,EE,PE,EE-PE,0.692,,direct,Table 4,,,330.0
+R1,CORRELATIONS,S172,EE,UB,EE-UB,0.878,,direct,Table 4,,,330.0
+R1,CORRELATIONS,S172,PE,UB,PE-UB,0.787,,direct,Table 4,,,330.0
+R1,CORRELATIONS,S159,BI,EE,BI-EE,0.103,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,BI,PE,BI-PE,0.127,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,BI,SI,BI-SI,0.053,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,BI,TRU,BI-TRU,0.137,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,EE,PE,EE-PE,0.139,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,EE,SI,EE-SI,0.02,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,EE,TRU,EE-TRU,0.087,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,PE,SI,PE-SI,0.154,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,PE,TRU,PE-TRU,0.008,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S159,SI,TRU,SI-TRU,0.037,,direct,Table 5,,,483.0
+R1,CORRELATIONS,S134,BI,EE,BI-EE,0.1,0.045,beta_converted,Tables 8-9,,,506.0
+R1,CORRELATIONS,S134,BI,FC,BI-FC,0.07,0.024,beta_converted,Tables 8-9,,,506.0
+R1,CORRELATIONS,S134,BI,PE,BI-PE,0.44,0.388,beta_converted,Tables 8-9,,,506.0
+R1,CORRELATIONS,S134,BI,SI,BI-SI,0.08,0.029,beta_converted,Tables 8-9,,,506.0
+R1,CORRELATIONS,S134,BI,UB,BI-UB,0.44,0.39,beta_converted,Tables 8-9,,,506.0
+R1,CORRELATIONS,S134,FC,UB,FC-UB,0.17,0.118,beta_converted,Tables 8-9,,,506.0
+R1,CORRELATIONS,S082,BI,EE,BI-EE,0.61,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,BI,FC,BI-FC,0.58,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,BI,PE,BI-PE,0.73,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,BI,SI,BI-SI,0.3,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,EE,FC,EE-FC,0.68,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,EE,PE,EE-PE,0.74,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,EE,SI,EE-SI,0.22,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,FC,PE,FC-PE,0.56,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,FC,SI,FC-SI,0.33,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S082,PE,SI,PE-SI,0.26,,direct,Table 4,,,308.0
+R1,CORRELATIONS,S182,BI,EE,BI-EE,0.5,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,BI,FC,BI-FC,0.56,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,BI,PE,BI-PE,0.601,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,BI,SI,BI-SI,0.64,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,EE,FC,EE-FC,0.657,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,EE,PE,EE-PE,0.54,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,EE,SI,EE-SI,0.505,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,FC,PE,FC-PE,0.522,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,FC,SI,FC-SI,0.617,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S182,PE,SI,PE-SI,0.562,,direct,Table 4,,,380.0
+R1,CORRELATIONS,S199,BI,EE,BI-EE,0.207,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,BI,FC,BI-FC,0.388,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,BI,PE,BI-PE,0.703,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,BI,SI,BI-SI,0.559,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,BI,UB,BI-UB,0.738,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,EE,FC,EE-FC,0.462,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,EE,PE,EE-PE,0.45,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,EE,SI,EE-SI,0.044,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,EE,UB,EE-UB,0.179,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,FC,PE,FC-PE,0.502,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,FC,SI,FC-SI,0.352,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,FC,UB,FC-UB,0.434,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,PE,SI,PE-SI,0.489,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,PE,UB,PE-UB,0.614,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S199,SI,UB,SI-UB,0.498,,direct,Table 4,,,197.0
+R1,CORRELATIONS,S148,ATT,BI,ATT-BI,0.99,0.95,beta_converted,Table 4 / results text,Y,Large path coefficient capped at converted r=.99 for workbook consistency.,603.0
+R1,CORRELATIONS,S122,BI,EE,BI-EE,0.806,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,BI,FC,BI-FC,0.722,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,BI,PE,BI-PE,0.746,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,BI,SI,BI-SI,0.56,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,EE,FC,EE-FC,0.717,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,EE,PE,EE-PE,0.687,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,EE,SI,EE-SI,0.577,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,FC,PE,FC-PE,0.708,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,FC,SI,FC-SI,0.728,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S122,PE,SI,PE-SI,0.594,,direct,Table 5,,,842.0
+R1,CORRELATIONS,S062,ATT,EE,ATT-EE,0.208,,direct,Table 3,,,729.0
+R1,CORRELATIONS,S062,ATT,PE,ATT-PE,0.179,,direct,Table 3,,,729.0
+R1,CORRELATIONS,S062,ATT,UB,ATT-UB,0.322,,direct,Table 3,,,729.0
+R1,CORRELATIONS,S062,EE,PE,EE-PE,0.167,,direct,Table 3,,,729.0
+R1,CORRELATIONS,S062,EE,UB,EE-UB,0.494,,direct,Table 3,,,729.0
+R1,CORRELATIONS,S062,PE,UB,PE-UB,0.554,,direct,Table 3,,,729.0
+R1,CORRELATIONS,S129,BI,EE,BI-EE,0.29,0.243,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,BI,PE,BI-PE,0.5,0.446,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,BI,SI,BI-SI,-0.14,-0.087,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,BI,UB,BI-UB,0.46,0.406,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,EE,FC,EE-FC,0.28,0.225,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,EE,PE,EE-PE,0.52,0.467,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,EE,SI,EE-SI,-0.11,-0.064,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,EE,TRU,EE-TRU,0.4,0.354,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S129,PE,SI,PE-SI,0.42,0.369,beta_converted,Table 5,,,300.0
+R1,CORRELATIONS,S205,BI,EE,BI-EE,0.539,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,BI,FC,BI-FC,0.623,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,BI,PE,BI-PE,0.729,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,BI,SI,BI-SI,0.55,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,EE,FC,EE-FC,0.822,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,EE,PE,EE-PE,0.463,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,EE,SI,EE-SI,0.442,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,FC,PE,FC-PE,0.465,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,FC,SI,FC-SI,0.531,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S205,PE,SI,PE-SI,0.541,,direct,Table 4,,,136.0
+R1,CORRELATIONS,S126,BI,EE,BI-EE,0.58,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,BI,FC,BI-FC,0.511,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,BI,PE,BI-PE,0.757,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,BI,SI,BI-SI,0.483,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,BI,UB,BI-UB,0.613,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,EE,FC,EE-FC,0.662,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,EE,PE,EE-PE,0.55,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,EE,SI,EE-SI,0.381,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,EE,UB,EE-UB,0.498,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,FC,PE,FC-PE,0.543,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,FC,SI,FC-SI,0.283,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,FC,UB,FC-UB,0.432,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,PE,SI,PE-SI,0.584,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,PE,UB,PE-UB,0.534,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S126,SI,UB,SI-UB,0.359,,direct,Table 5,,,194.0
+R1,CORRELATIONS,S115,ATT,BI,ATT-BI,0.78,,direct,Figure 2 / results text,,,112.0
+R1,CORRELATIONS,S115,BI,EE,BI-EE,0.68,,direct,Figure 2 / results text,,,112.0
+R1,CORRELATIONS,S115,BI,PE,BI-PE,0.62,,direct,Figure 2 / results text,,,112.0
+R1,CORRELATIONS,S029,BI,EE,BI-EE,0.488,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,BI,PE,BI-PE,0.665,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,BI,SI,BI-SI,0.435,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,BI,TRU,BI-TRU,0.284,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,EE,PE,EE-PE,0.706,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,EE,SI,EE-SI,0.335,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,EE,TRU,EE-TRU,0.247,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,PE,SI,PE-SI,0.472,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,PE,TRU,PE-TRU,0.301,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S029,SI,TRU,SI-TRU,0.281,,direct,Table 3,,,411.0
+R1,CORRELATIONS,S139,BI,EE,BI-EE,0.578,,direct,Table 4,,,435.0
+R1,CORRELATIONS,S139,BI,PE,BI-PE,0.356,,direct,Table 4,,,435.0
+R1,CORRELATIONS,S139,BI,TRU,BI-TRU,0.515,,direct,Table 4,,,435.0
+R1,CORRELATIONS,S139,EE,PE,EE-PE,0.433,,direct,Table 4,,,435.0
+R1,CORRELATIONS,S139,EE,TRU,EE-TRU,0.454,,direct,Table 4,,,435.0
+R1,CORRELATIONS,S139,PE,TRU,PE-TRU,0.377,,direct,Table 4,,,435.0
+R1,CORRELATIONS,S014,PE,UB,PE-UB,0.31,0.262,beta_converted_sensitivity,Table 4,Y,Freeze 2026-06-05: sensitivity-only indirect path via perceived risk; exclude from primary direct-r.,750.0
+R1,CORRELATIONS,S014,SI,UB,SI-UB,0.3,0.247,beta_converted_sensitivity,Table 4,Y,Freeze 2026-06-05: sensitivity-only indirect path via perceived risk; exclude from primary direct-r.,750.0
+R1,CORRELATIONS,S036,ANX,BI,ANX-BI,-0.336,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,ANX,EE,ANX-EE,-0.321,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,ANX,PE,ANX-PE,-0.366,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,ANX,SE,ANX-SE,-0.318,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,ANX,SI,ANX-SI,-0.374,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,ANX,TRU,ANX-TRU,-0.26,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,BI,EE,BI-EE,0.689,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,BI,PE,BI-PE,0.678,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,BI,SE,BI-SE,0.586,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,BI,SI,BI-SI,0.511,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,BI,TRU,BI-TRU,0.535,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,EE,PE,EE-PE,0.566,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,EE,SE,EE-SE,0.46,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,EE,SI,EE-SI,0.427,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,EE,TRU,EE-TRU,0.419,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,PE,SE,PE-SE,0.377,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,PE,SI,PE-SI,0.535,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,PE,TRU,PE-TRU,0.537,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,SE,SI,SE-SI,0.51,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,SE,TRU,SE-TRU,0.333,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S036,SI,TRU,SI-TRU,0.43,,direct,Table 4,,,480.0
+R1,CORRELATIONS,S061,BI,EE,BI-EE,0.103,,direct,Table 5,,,473.0
+R1,CORRELATIONS,S061,BI,FC,BI-FC,-0.1,-0.047,beta_converted,Table 6,,,473.0
+R1,CORRELATIONS,S061,BI,PE,BI-PE,0.127,,direct,Table 5,,,473.0
+R1,CORRELATIONS,S061,BI,SI,BI-SI,0.053,,direct,Table 5,,,473.0
+R1,CORRELATIONS,S061,EE,PE,EE-PE,0.139,,direct,Table 5,,,473.0
+R1,CORRELATIONS,S061,EE,SI,EE-SI,0.02,,direct,Table 5,,,473.0
+R1,CORRELATIONS,S061,PE,SI,PE-SI,0.154,,direct,Table 5,,,473.0
+R1,CORRELATIONS,S203,BI,EE,BI-EE,0.363,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,BI,PE,BI-PE,0.409,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,BI,SE,BI-SE,0.349,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,BI,TRU,BI-TRU,0.342,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,EE,PE,EE-PE,0.367,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,EE,SE,EE-SE,0.549,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,EE,TRU,EE-TRU,0.42,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,PE,SE,PE-SE,0.309,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,PE,TRU,PE-TRU,0.437,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S203,SE,TRU,SE-TRU,0.431,,direct,Table 8,,,251.0
+R1,CORRELATIONS,S179,BI,EE,BI-EE,0.19,0.14,beta_converted,Figure 2,,,928.0
+R1,CORRELATIONS,S179,BI,PE,BI-PE,0.46,0.413,beta_converted,Figure 2,,,928.0
+R1,CORRELATIONS,S179,BI,SI,BI-SI,0.33,0.278,beta_converted,Figure 2,,,928.0
+R1,CORRELATIONS,S179,BI,UB,BI-UB,0.55,0.497,beta_converted,Figure 2,,,928.0
+R1,CORRELATIONS,S179,FC,UB,FC-UB,0.24,0.186,beta_converted,Figure 2,,,928.0
+R1,CORRELATIONS,S138,ATT,BI,ATT-BI,0.766,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,ATT,EE,ATT-EE,0.707,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,ATT,PE,ATT-PE,0.735,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,ATT,SE,ATT-SE,0.534,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,ATT,SI,ATT-SI,0.557,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,ATT,TRU,ATT-TRU,0.687,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,ATT,UB,ATT-UB,0.552,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,BI,EE,BI-EE,0.686,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,BI,PE,BI-PE,0.733,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,BI,SE,BI-SE,0.469,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,BI,SI,BI-SI,0.561,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,BI,TRU,BI-TRU,0.763,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,BI,UB,BI-UB,0.602,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,EE,PE,EE-PE,0.73,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,EE,SE,EE-SE,0.662,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,EE,SI,EE-SI,0.57,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,EE,TRU,EE-TRU,0.719,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,EE,UB,EE-UB,0.582,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,PE,SE,PE-SE,0.584,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,PE,SI,PE-SI,0.516,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,PE,TRU,PE-TRU,0.681,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,PE,UB,PE-UB,0.592,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,SE,SI,SE-SI,0.593,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,SE,TRU,SE-TRU,0.521,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,SE,UB,SE-UB,0.524,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,SI,TRU,SI-TRU,0.572,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,SI,UB,SI-UB,0.403,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S138,TRU,UB,TRU-UB,0.597,,direct,Table 5,,,200.0
+R1,CORRELATIONS,S128,BI,EE,BI-EE,0.829,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,BI,FC,BI-FC,-0.216,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,BI,PE,BI-PE,0.124,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,BI,SI,BI-SI,0.357,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,BI,UB,BI-UB,0.432,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,EE,FC,EE-FC,-0.121,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,EE,PE,EE-PE,0.007,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,EE,SI,EE-SI,0.374,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,EE,UB,EE-UB,0.378,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,FC,PE,FC-PE,-0.065,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,FC,SI,FC-SI,-0.063,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,FC,UB,FC-UB,-0.101,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,PE,SI,PE-SI,-0.22,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,PE,UB,PE-UB,0.074,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S128,SI,UB,SI-UB,0.385,,direct,Table 3,,,395.0
+R1,CORRELATIONS,S152,ATT,BI,ATT-BI,0.21,0.156,beta_converted,Table 3,,,604.0
+R1,CORRELATIONS,S152,BI,PE,BI-PE,0.11,0.057,beta_converted,Table 3,,,604.0
+R1,CORRELATIONS,S152,BI,SE,BI-SE,0.16,0.107,beta_converted,Table 3,,,604.0
+R1,CORRELATIONS,S113,BI,EE,BI-EE,0.45,0.398,beta_converted,Table 7,,Structural path PEU -> IU; direct HTMT association also reported in Table 5.,118.0
+R1,CORRELATIONS,S113,BI,PE,BI-PE,0.53,0.484,beta_converted,Table 7,,Structural path PU -> IU; direct HTMT association also reported in Table 5.,118.0
+R1,CORRELATIONS,S113,BI,SE,BI-SE,0.7,,direct,Table 5,,HTMT value used as the only reported interconstruct association.,118.0
+R1,CORRELATIONS,S113,EE,PE,EE-PE,0.78,,direct,Table 5,,HTMT value used as the only reported interconstruct association.,118.0
+R1,CORRELATIONS,S113,EE,SE,EE-SE,0.76,,direct,Table 5,,HTMT value used as the only reported interconstruct association.,118.0
+R1,CORRELATIONS,S113,PE,SE,PE-SE,0.7,,direct,Table 5,,HTMT value used as the only reported interconstruct association.,118.0
+R1,CORRELATIONS,S070,BI,EE,BI-EE,0.581,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,BI,FC,BI-FC,0.469,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,BI,PE,BI-PE,0.502,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,BI,SI,BI-SI,0.712,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,BI,UB,BI-UB,0.832,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,EE,FC,EE-FC,0.576,,direct,Figure 4 / results text,,,245.0
+R1,CORRELATIONS,S070,EE,PE,EE-PE,0.502,,direct,Figure 4 / results text,,,245.0
+R1,CORRELATIONS,S070,EE,SI,EE-SI,0.84,,direct,Figure 4 / results text,,,245.0
+R1,CORRELATIONS,S070,EE,UB,EE-UB,0.563,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,FC,PE,FC-PE,0.346,,direct,Figure 4 / results text,,,245.0
+R1,CORRELATIONS,S070,FC,SI,FC-SI,0.611,,direct,Figure 4 / results text,,,245.0
+R1,CORRELATIONS,S070,FC,UB,FC-UB,0.488,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,PE,SI,PE-SI,0.471,,direct,Figure 4 / results text,,,245.0
+R1,CORRELATIONS,S070,PE,UB,PE-UB,0.524,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S070,SI,UB,SI-UB,0.675,,direct,Figure 3 / results text,,,245.0
+R1,CORRELATIONS,S140,BI,TRU,BI-TRU,0.495,,direct,Section 4.3 / Pearson correlation,,,823.0
+R1,CORRELATIONS,S200,BI,EE,BI-EE,0.21,0.156,beta_converted,Table 6,,Bootstrapped structural path also reported.,431.0
+R1,CORRELATIONS,S200,BI,FC,BI-FC,-0.17,-0.122,beta_converted,Table 6,,Bootstrapped structural path also reported.,431.0
+R1,CORRELATIONS,S200,BI,PE,BI-PE,0.45,0.395,beta_converted,Table 6,,Bootstrapped structural path also reported.,431.0
+R1,CORRELATIONS,S200,BI,SI,BI-SI,0.09,0.036,beta_converted,Table 6,,Bootstrapped structural path also reported.,431.0
+R1,CORRELATIONS,S200,BI,UB,BI-UB,0.39,0.341,beta_converted,Table 6,,Bootstrapped structural path BI -> USE also reported.,431.0
+R1,CORRELATIONS,S200,EE,FC,EE-FC,0.831,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,EE,PE,EE-PE,0.525,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,EE,SI,EE-SI,0.089,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,EE,UB,EE-UB,0.351,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,FC,PE,FC-PE,0.565,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,FC,SI,FC-SI,0.034,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,FC,UB,FC-UB,0.322,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,PE,SI,PE-SI,0.241,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,PE,UB,PE-UB,0.344,,direct,Table 5,,,431.0
+R1,CORRELATIONS,S200,SI,UB,SI-UB,0.313,,direct,Table 5,,,431.0
+R2,CORRELATIONS,S218,ATT,BI,ATT-BI,0.784,,direct,Table1,,,242.0
+R2,CORRELATIONS,S218,ATT,EE,ATT-EE,0.688,,direct,Table1,,,242.0
+R2,CORRELATIONS,S218,ATT,PE,ATT-PE,0.701,,direct,Table1,,,242.0
+R2,CORRELATIONS,S218,BI,PE,BI-PE,0.632,,direct,Table1,,,242.0
+R2,CORRELATIONS,S185,BI,SI,BI-SI,0.216,,direct,Table3,,,298.0
+R2,CORRELATIONS,S208,BI,EE,BI-EE,0.434,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,BI,PE,BI-PE,0.241,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,BI,SI,BI-SI,0.462,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,BI,TRU,BI-TRU,0.524,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,EE,PE,EE-PE,0.402,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,EE,SI,EE-SI,0.632,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,EE,TRU,EE-TRU,0.395,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,PE,SI,PE-SI,0.296,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,PE,TRU,PE-TRU,0.295,,direct,Table2,,,526.0
+R2,CORRELATIONS,S208,SI,TRU,SI-TRU,0.241,,direct,Table2,,,526.0
+R2,CORRELATIONS,S028,ATT,BI,ATT-BI,0.877,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,ATT,PE,ATT-PE,0.809,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,ATT,SE,ATT-SE,0.721,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,BI,EE,BI-EE,0.627,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,BI,PE,BI-PE,0.823,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,BI,SE,BI-SE,0.685,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,EE,PE,EE-PE,0.667,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,EE,SE,EE-SE,0.792,,direct,Table4,,,508.0
+R2,CORRELATIONS,S028,PE,SE,PE-SE,0.744,,direct,Table4,,,508.0
+R2,CORRELATIONS,S145,BI,EE,BI-EE,0.201,,direct,Table3,,,374.0
+R2,CORRELATIONS,S145,BI,UB,BI-UB,0.338,,direct,Table3,,,374.0
+R2,CORRELATIONS,S145,EE,UB,EE-UB,0.204,,direct,Table3,,,374.0
+R2,CORRELATIONS,S110,BI,EE,BI-EE,0.623,,direct,Figure3,,,353.0
+R2,CORRELATIONS,S110,BI,PE,BI-PE,0.681,,direct,Figure3,,,353.0
+R2,CORRELATIONS,S110,BI,SI,BI-SI,0.52,,direct,Figure3,,,353.0
+R3,(합의) CORRELATIONS,S222,BI,EE,BI-EE,0.45,0.405,beta_converted,"Table 6, p. 2028",,,50.0
+R3,(합의) CORRELATIONS,S222,BI,PE,BI-PE,0.58,0.531,beta_converted,"Table 6, p. 2028",,,50.0
+R3,(합의) CORRELATIONS,S059,ATT,BI,ATT-BI,0.9,0.85,beta_converted,"Table 4, p. 9",,,645.0
+R3,(합의) CORRELATIONS,S059,ATT,EE,ATT-EE,0.26,0.21,beta_converted,"Table 4, p. 9",,,645.0
+R3,(합의) CORRELATIONS,S059,ATT,PE,ATT-PE,0.29,0.24,beta_converted,"Table 4, p. 9",,,645.0
+R3,(합의) CORRELATIONS,S059,BI,FC,BI-FC,0.13,0.08,beta_converted,"Table 4, p. 9",,,645.0
+R3,(합의) CORRELATIONS,S059,EE,FC,EE-FC,0.93,0.88,beta_converted,"Table 4, p. 9",,,645.0
+R3,(합의) CORRELATIONS,S059,EE,PE,EE-PE,0.17,0.12,beta_converted,"Table 4, p. 9",,,645.0
+R3,(합의) CORRELATIONS,S110,BI,EE,BI-EE,0.17,0.122,beta_converted,"Table 4, p. 627",,,353.0
+R3,(합의) CORRELATIONS,S110,BI,PE,BI-PE,0.19,0.143,beta_converted,"Table 4, p. 627",,,353.0
+R3,(합의) CORRELATIONS,S110,BI,SI,BI-SI,0.05,0.072,beta_converted,"Table 4, p. 627",,,353.0
+R3,(합의) CORRELATIONS,S097,ATT,EE,ATT-EE,0.88,,,,,,210.0
+R3,(합의) CORRELATIONS,S097,ATT,PE,ATT-PE,0.87,,,,,,210.0
+R3,(합의) CORRELATIONS,S072,BI,PE,BI-PE,0.636,,,,,,500.0
+R3,(합의) CORRELATIONS,S072,BI,UB,BI-UB,0.646,,,,,,500.0
+R3,(합의) CORRELATIONS,S072,FC,UB,FC-UB,0.591,,,,,,500.0
+R3,(합의) CORRELATIONS,S072,PE,UB,PE-UB,0.464,,,,,,500.0
+R3,(합의) CORRELATIONS,S146,BI,EE,BI-EE,0.566,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,BI,PE,BI-PE,0.459,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,BI,SE,BI-SE,0.33,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,BI,SI,BI-SI,0.379,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,EE,PE,EE-PE,0.587,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,EE,SE,EE-SE,0.268,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,EE,SI,EE-SI,0.468,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,PE,SE,PE-SE,0.529,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,PE,SI,PE-SI,0.487,,,,,,346.0
+R3,(합의) CORRELATIONS,S146,SE,SI,SE-SI,0.438,,,,,,346.0
+R3,(합의) CORRELATIONS,S184,FC,SI,FC-SI,0.56,,,,,,907.0
+R3,(합의) CORRELATIONS,S135,PE,SI,PE-SI,0.52,,direct,,,,302.0
+R3,(합의) CORRELATIONS,S032,SI,UB,SI-UB,0.554,,direct,,,,804.0
+R3,(합의) CORRELATIONS,S025,EE,SI,EE-SI,0.118,,direct,,,,361.0
+R3,(합의) CORRELATIONS,S025,FC,SI,FC-SI,0.215,,direct,,,,361.0
+R3,(합의) CORRELATIONS,S025,PE,SI,PE-SI,0.065,,direct,,,,361.0
+R3,(합의) CORRELATIONS,S025,SE,SI,SE-SI,0.11,,direct,,,,361.0
+R3,(합의) CORRELATIONS,S025,SE,UB,SE-UB,0.073,,,,,,361.0
+R3,(합의) CORRELATIONS,S025,SI,UB,SI-UB,0.147,,direct,,,,361.0
+R3,(합의) CORRELATIONS,S114,EE,UB,EE-UB,0.561,,direct,,,,255.0
+R3,(합의) CORRELATIONS,S098,PE,SE,PE-SE,0.708,,direct,"p. 10, Table 3",,,482.0
+R3,(합의) CORRELATIONS,S098,PE,SI,PE-SI,0.681,,direct,"p. 10, Table 3",,,482.0
+R3,(합의) CORRELATIONS,S008,FC,SI,FC-SI,0.017,,direct,,,,289.0
+R3,(합의) CORRELATIONS,S210,EE,PE,EE-PE,0.137,,direct,,,,400.0
+R3,(합의) CORRELATIONS,S143,BI,PE,BI-PE,0.139,,direct,,,,390.0
+R3,(합의) CORRELATIONS,S143,EE,SI,EE-SI,0.129,,direct,,,,390.0
+R3,(합의) CORRELATIONS,S143,FC,PE,FC-PE,0.02,,direct,,,,390.0
+R3,(합의) CORRELATIONS,S143,FC,SI,FC-SI,0.047,,direct,,,,390.0
+R3,(합의) CORRELATIONS,S143,PE,SI,PE-SI,0.295,,direct,,,,390.0
+R3,(합의) CORRELATIONS,S137,FC,UB,FC-UB,0.351,,direct,,,,760.0
+R3,(합의) CORRELATIONS,S221,FC,UB,FC-UB,0.592,,direct,,,,400.0
+R3,(합의) CORRELATIONS,S183,EE,FC,EE-FC,0.395,,direct,Table 3,,,430.0
+R3,(합의) CORRELATIONS,S183,EE,PE,EE-PE,0.137,,direct,Table 3,,,430.0
+R3,(합의) CORRELATIONS,S183,EE,SI,EE-SI,0.347,,direct,Table 3,,,430.0
+R3,(합의) CORRELATIONS,S183,FC,SI,FC-SI,0.279,,direct,Table 3,,,430.0
+R3,(합의) CORRELATIONS,S183,PE,SI,PE-SI,0.057,,direct,Table 3,,,430.0
+R3,(합의) CORRELATIONS,S004,FC,TRU,FC-TRU,0.533,,direct,,,,485.0
+R3,(합의) CORRELATIONS,S004,FC,UB,FC-UB,0.601,,direct,,,,485.0
+R3,(합의) CORRELATIONS,S077,ATT,SI,ATT-SI,0.6,,direct,,,,308.0
+R3,(합의) CORRELATIONS,S077,BI,SI,BI-SI,0.63,,direct,,,,308.0
+R3,(합의) CORRELATIONS,S077,EE,SI,EE-SI,0.53,,direct,,,,308.0
+R3,(합의) CORRELATIONS,S077,PE,SI,PE-SI,0.5,,direct,,,,308.0
+R3,(합의) CORRELATIONS,S031,BI,SE,BI-SE,0.59,,direct,,,,353.0
+R3,(합의) CORRELATIONS,S031,BI,TRU,BI-TRU,0.47,,direct,,,,353.0
+R3,(합의) CORRELATIONS,S002,FC,PE,FC-PE,0.575,,direct,,,,300.0
+R3,(합의) CORRELATIONS,S002,FC,SI,FC-SI,0.632,,direct,,,,300.0
+R3,(합의) CORRELATIONS,S065,ATT,PE,ATT-PE,0.774,,direct,,,,517.0
+R3,(합의) CORRELATIONS,S065,BI,EE,BI-EE,0.654,,direct,,,,517.0
+R3,(합의) CORRELATIONS,S065,BI,PE,BI-PE,0.73,,direct,,,,517.0
+R3,(합의) CORRELATIONS,S065,EE,PE,EE-PE,0.84,,direct,,,,517.0
+R3,(합의) CORRELATIONS,S207,ATT,BI,ATT-BI,0.527,,direct,Table 3,,,880.0
+R3,(합의) CORRELATIONS,S207,ATT,EE,ATT-EE,0.428,,direct,,,,880.0
+R3,(합의) CORRELATIONS,S207,ATT,PE,ATT-PE,0.502,,direct,,,,880.0
+R3,(합의) CORRELATIONS,S207,BI,EE,BI-EE,0.514,,direct,,,,880.0
+R3,(합의) CORRELATIONS,S207,BI,PE,BI-PE,0.52,,direct,,,,880.0
+R3,(합의) CORRELATIONS,S207,EE,PE,EE-PE,0.545,,direct,Table 3,,,880.0
+R3,(합의) CORRELATIONS,S197,BI,EE,BI-EE,0.69,,direct,Table 3,,,237.0
+R3,(합의) CORRELATIONS,S197,BI,PE,BI-PE,0.47,,direct,,,,237.0
+R3,(합의) CORRELATIONS,S197,BI,TRU,BI-TRU,0.34,,direct,,,,237.0
+R3,(합의) CORRELATIONS,S197,EE,TRU,EE-TRU,0.24,,direct,,,,237.0
+R3,(합의) CORRELATIONS,S197,PE,TRU,PE-TRU,0.48,,direct,,,,237.0
+R3,CORRELATIONS,S222,BI,EE,BI-EE,0.45,0.405,beta_converted,"Table 6, p. 2028",,,50.0
+R3,CORRELATIONS,S222,BI,PE,BI-PE,0.58,0.531,beta_converted,"Table 6, p. 2028",,,50.0
+R3,CORRELATIONS,S059,ATT,BI,ATT-BI,0.9,0.85,beta_converted,"Table 4, p. 9",,,645.0
+R3,CORRELATIONS,S059,ATT,EE,ATT-EE,0.26,0.21,beta_converted,"Table 4, p. 9",,,645.0
+R3,CORRELATIONS,S059,ATT,PE,ATT-PE,0.29,0.24,beta_converted,"Table 4, p. 9",,,645.0
+R3,CORRELATIONS,S059,BI,FC,BI-FC,0.13,0.08,beta_converted,"Table 4, p. 9",,,645.0
+R3,CORRELATIONS,S059,EE,FC,EE-FC,0.93,0.88,beta_converted,"Table 4, p. 9",,,645.0
+R3,CORRELATIONS,S059,EE,PE,EE-PE,0.17,0.12,beta_converted,"Table 4, p. 9",,,645.0
+R3,CORRELATIONS,S110,BI,EE,BI-EE,0.17,0.122,beta_converted,"Table 4, p. 627",,,353.0
+R3,CORRELATIONS,S110,BI,PE,BI-PE,0.19,0.143,beta_converted,"Table 4, p. 627",,,353.0
+R3,CORRELATIONS,S110,BI,SI,BI-SI,0.05,0.072,beta_converted,"Table 4, p. 627",,,353.0
+R3,CORRELATIONS,S097,ATT,EE,ATT-EE,0.88,,,,,,210.0
+R3,CORRELATIONS,S097,ATT,PE,ATT-PE,0.87,,,,,,210.0
+R3,CORRELATIONS,S072,BI,PE,BI-PE,0.636,,,,,,500.0
+R3,CORRELATIONS,S072,BI,UB,BI-UB,0.646,,,,,,500.0
+R3,CORRELATIONS,S072,FC,UB,FC-UB,0.591,,,,,,500.0
+R3,CORRELATIONS,S072,PE,UB,PE-UB,0.464,,,,,,500.0
+R3,CORRELATIONS,S146,BI,EE,BI-EE,0.566,,,,,,346.0
+R3,CORRELATIONS,S146,BI,PE,BI-PE,0.459,,,,,,346.0
+R3,CORRELATIONS,S146,BI,SE,BI-SE,0.33,,,,,,346.0
+R3,CORRELATIONS,S146,BI,SI,BI-SI,0.379,,,,,,346.0
+R3,CORRELATIONS,S146,EE,PE,EE-PE,0.587,,,,,,346.0
+R3,CORRELATIONS,S146,EE,SE,EE-SE,0.268,,,,,,346.0
+R3,CORRELATIONS,S146,EE,SI,EE-SI,0.468,,,,,,346.0
+R3,CORRELATIONS,S146,PE,SE,PE-SE,0.529,,,,,,346.0
+R3,CORRELATIONS,S146,PE,SI,PE-SI,0.487,,,,,,346.0
+R3,CORRELATIONS,S146,SE,SI,SE-SI,0.438,,,,,,346.0
+R3,CORRELATIONS,S184,FC,SI,FC-SI,0.56,,,,,,907.0
+R3,CORRELATIONS,S161,FC,PE,FC-PE,0.302,,direct,"p.9, Table 3",,,315.0
+R3,CORRELATIONS,S135,PE,SI,PE-SI,0.52,,direct,,,,302.0
+R3,CORRELATIONS,S032,SI,UB,SI-UB,0.554,,direct,,,,804.0
+R3,CORRELATIONS,S157,PE,UB,PE-UB,0.37,,direct,,,,633.0
+R3,CORRELATIONS,S025,EE,SI,EE-SI,0.118,,direct,,,,361.0
+R3,CORRELATIONS,S025,FC,SI,FC-SI,0.215,,direct,,,,361.0
+R3,CORRELATIONS,S025,PE,SI,PE-SI,0.065,,direct,,,,361.0
+R3,CORRELATIONS,S025,SE,SI,SE-SI,0.11,,direct,,,,361.0
+R3,CORRELATIONS,S025,SE,UB,SE-UB,0.073,,direct,,,,361.0
+R3,CORRELATIONS,S025,SI,UB,SI-UB,0.147,,direct,,,,361.0
+R3,CORRELATIONS,S114,EE,UB,EE-UB,0.561,,direct,,,,255.0
+R3,CORRELATIONS,S098,PE,SE,PE-SE,0.708,,direct,"p. 10, Table 3",,,482.0
+R3,CORRELATIONS,S098,PE,SI,PE-SI,0.681,,direct,"p. 10, Table 3",,,482.0
+R3,CORRELATIONS,S008,FC,SI,FC-SI,0.017,,direct,,,,289.0
+R3,CORRELATIONS,S210,BI,PE,BI-PE,0.177,,direct,,,,400.0
+R3,CORRELATIONS,S210,EE,PE,EE-PE,0.137,,direct,,,,400.0
+R3,CORRELATIONS,S210,PE,SE,PE-SE,0.198,,direct,,,,400.0
+R3,CORRELATIONS,S143,BI,PE,BI-PE,0.139,,direct,,,,390.0
+R3,CORRELATIONS,S143,EE,SI,EE-SI,0.129,,direct,,,,390.0
+R3,CORRELATIONS,S143,FC,PE,FC-PE,0.02,,direct,,,,390.0
+R3,CORRELATIONS,S143,FC,SI,FC-SI,0.047,,direct,,,,390.0
+R3,CORRELATIONS,S143,PE,SI,PE-SI,0.295,,direct,,,,390.0
+R3,CORRELATIONS,S137,FC,UB,FC-UB,0.351,,direct,,,,760.0
+R3,CORRELATIONS,S221,FC,UB,FC-UB,0.592,,direct,,,,400.0
+R3,CORRELATIONS,S183,EE,FC,EE-FC,0.395,,direct,Table 3,,,430.0
+R3,CORRELATIONS,S183,EE,PE,EE-PE,0.137,,direct,Table 3,,,430.0
+R3,CORRELATIONS,S183,EE,SI,EE-SI,0.347,,direct,Table 3,,,430.0
+R3,CORRELATIONS,S183,FC,SI,FC-SI,0.279,,direct,Table 3,,,430.0
+R3,CORRELATIONS,S183,PE,SI,PE-SI,0.057,,direct,Table 3,,,430.0
+R3,CORRELATIONS,S004,FC,TRU,FC-TRU,0.533,,direct,,,,485.0
+R3,CORRELATIONS,S004,FC,UB,FC-UB,0.601,,direct,,,,485.0
+R3,CORRELATIONS,S077,ATT,SI,ATT-SI,0.6,,direct,,,,308.0
+R3,CORRELATIONS,S077,BI,SI,BI-SI,0.63,,direct,,,,308.0
+R3,CORRELATIONS,S077,EE,SI,EE-SI,0.53,,direct,,,,308.0
+R3,CORRELATIONS,S077,PE,SI,PE-SI,0.5,,direct,,,,308.0
+R3,CORRELATIONS,S031,BI,SE,BI-SE,0.59,,direct,,,,353.0
+R3,CORRELATIONS,S031,BI,TRU,BI-TRU,0.47,,direct,,,,353.0
+R3,CORRELATIONS,S002,FC,PE,FC-PE,0.575,,direct,,,,300.0
+R3,CORRELATIONS,S002,FC,SI,FC-SI,0.632,,direct,,,,300.0
+R3,CORRELATIONS,S065,ATT,PE,ATT-PE,0.774,,direct,,,,517.0
+R3,CORRELATIONS,S065,BI,EE,BI-EE,0.654,,direct,,,,517.0
+R3,CORRELATIONS,S065,BI,PE,BI-PE,0.73,,direct,,,,517.0
+R3,CORRELATIONS,S065,EE,PE,EE-PE,0.84,,direct,,,,517.0
+R3,CORRELATIONS,S207,ATT,BI,ATT-BI,0.527,,direct,Table 3,,,880.0
+R3,CORRELATIONS,S207,ATT,EE,ATT-EE,0.428,,direct,,,,880.0
+R3,CORRELATIONS,S207,ATT,PE,ATT-PE,0.502,,direct,,,,880.0
+R3,CORRELATIONS,S207,BI,EE,BI-EE,0.514,,direct,,,,880.0
+R3,CORRELATIONS,S207,BI,PE,BI-PE,0.52,,direct,,,,880.0
+R3,CORRELATIONS,S207,EE,PE,EE-PE,0.545,,direct,Table 3,,,880.0
+R3,CORRELATIONS,S197,BI,EE,BI-EE,0.69,,direct,Table 3,,,237.0
+R3,CORRELATIONS,S197,BI,PE,BI-PE,0.47,,direct,,,,237.0
+R3,CORRELATIONS,S197,BI,TRU,BI-TRU,0.34,,direct,,,,237.0
+R3,CORRELATIONS,S197,EE,TRU,EE-TRU,0.24,,direct,,,,237.0
+R3,CORRELATIONS,S197,PE,TRU,PE-TRU,0.48,,direct,,,,237.0
+R4,CORRELATIONS,S218,ATT,BI,ATT-BI,0.784,,direct,,,,242.0
+R4,CORRELATIONS,S218,ATT,EE,ATT-EE,0.688,,direct,,,,242.0
+R4,CORRELATIONS,S218,ATT,PE,ATT-PE,0.701,,direct,,,,242.0
+R4,CORRELATIONS,S218,BI,PE,BI-PE,0.632,,direct,,,,242.0
+R4,CORRELATIONS,S218,PE,UB,PE-UB,0.032,,direct,,,,242.0
+R4,CORRELATIONS,S185,ANX,BI,ANX-BI,0.47,,direct,,,,298.0
+R4,CORRELATIONS,S185,ANX,EE,ANX-EE,0.47,,direct,,,,298.0
+R4,CORRELATIONS,S185,ANX,FC,ANX-FC,0.218,,direct,,,,298.0
+R4,CORRELATIONS,S185,ANX,PE,ANX-PE,0.44,,direct,,,,298.0
+R4,CORRELATIONS,S185,ATT,FC,ATT-FC,0.162,,direct,,,,298.0
+R4,CORRELATIONS,S185,BI,FC,BI-FC,0.419,,direct,,,,298.0
+R4,CORRELATIONS,S185,EE,FC,EE-FC,0.156,,direct,,,,298.0
+R4,CORRELATIONS,S185,FC,PE,FC-PE,0.173,,direct,,,,298.0
+R4,CORRELATIONS,S185,FC,SI,FC-SI,0.164,,direct,,,,298.0
+R4,CORRELATIONS,S208,BI,EE,BI-EE,0.434,,direct,,,,526.0
+R4,CORRELATIONS,S208,BI,PE,BI-PE,0.241,,direct,,,,526.0
+R4,CORRELATIONS,S208,BI,SI,BI-SI,0.462,,direct,,,,526.0
+R4,CORRELATIONS,S208,BI,TRU,BI-TRU,0.524,,direct,,,,526.0
+R4,CORRELATIONS,S208,EE,PE,EE-PE,0.402,,direct,,,"Perceived Cybersecurity, Novelty Value, Willingness to Accept AI in Education - not coded",526.0
+R4,CORRELATIONS,S208,EE,SI,EE-SI,0.362,,direct,,,,526.0
+R4,CORRELATIONS,S208,EE,TRU,EE-TRU,0.395,,direct,,,,526.0
+R4,CORRELATIONS,S208,PE,SI,PE-SI,0.296,,direct,,,,526.0
+R4,CORRELATIONS,S208,PE,TRU,PE-TRU,0.295,,direct,,,,526.0
+R4,CORRELATIONS,S208,SI,TRU,SI-TRU,0.241,,direct,,,,526.0
+R4,CORRELATIONS,S028,ATT,BI,ATT-BI,0.877,,direct,,,Novelty-seeking - not coded,508.0
+R4,CORRELATIONS,S028,ATT,PE,ATT-PE,0.809,,direct,,,,508.0
+R4,CORRELATIONS,S028,ATT,SE,ATT-SE,0.721,,direct,,,,508.0
+R4,CORRELATIONS,S028,BI,EE,BI-EE,0.627,,direct,,,,508.0
+R4,CORRELATIONS,S028,BI,PE,BI-PE,0.823,,direct,,,,508.0
+R4,CORRELATIONS,S028,BI,SE,BI-SE,0.685,,direct,,,,508.0
+R4,CORRELATIONS,S028,EE,PE,EE-PE,0.667,,direct,,,,508.0
+R4,CORRELATIONS,S028,EE,SE,EE-SE,0.792,,direct,,,,508.0
+R4,CORRELATIONS,S028,PE,SE,PE-SE,0.744,,direct,,,,508.0
+R4,CORRELATIONS,S145,BI,EE,BI-EE,0.201,,direct,,,"Supplemental resource, information accuracy, hedonic motivation, perceived cost - not coded",374.0
+R4,CORRELATIONS,S145,BI,UB,BI-UB,0.338,,direct,,,,374.0
+R4,CORRELATIONS,S145,EE,UB,EE-UB,0.204,,direct,,,,374.0
+R4,CORRELATIONS,S110,BI,EE,BI-EE,0.623,,direct,,,Learning value - not coded,353.0
+R4,CORRELATIONS,S110,BI,PE,BI-PE,0.681,,direct,,,,353.0
+R4,CORRELATIONS,S110,BI,SI,BI-SI,0.52,,direct,,,,353.0
+R4,CORRELATIONS,S097,ATT,EE,ATT-EE,0.88,,direct,,,,210.0
+R4,CORRELATIONS,S097,ATT,PE,ATT-PE,0.87,,direct,,,,210.0
+R4,CORRELATIONS,S072,ANX,BI,ANX-BI,-0.623,,direct,,,,500.0
+R4,CORRELATIONS,S072,ANX,EE,ANX-EE,-0.592,,direct,,,,500.0
+R4,CORRELATIONS,S072,ANX,FC,ANX-FC,-0.568,,direct,,,,500.0
+R4,CORRELATIONS,S072,ANX,PE,ANX-PE,-0.522,,direct,,,,500.0
+R4,CORRELATIONS,S072,ANX,SI,ANX-SI,-0.571,,direct,,,,500.0
+R4,CORRELATIONS,S072,ANX,UB,ANX-UB,-0.506,,direct,,,,500.0
+R4,CORRELATIONS,S072,BI,PE,BI-PE,0.636,,direct,,,,500.0
+R4,CORRELATIONS,S072,BI,UB,BI-UB,0.646,,direct,,,,500.0
+R4,CORRELATIONS,S072,FC,UB,FC-UB,0.591,,direct,,,,500.0
+R4,CORRELATIONS,S072,PE,UB,PE-UB,0.464,,direct,,,,500.0
+R4,CORRELATIONS,S052,BI,EE,BI-EE,0.701,,direct,,,,524.0
+R4,CORRELATIONS,S052,BI,FC,BI-FC,0.546,,direct,,,,524.0
+R4,CORRELATIONS,S052,BI,PE,BI-PE,0.804,,direct,,,,524.0
+R4,CORRELATIONS,S052,BI,SI,BI-SI,0.613,,direct,,,,524.0
+R4,CORRELATIONS,S052,EE,FC,EE-FC,0.557,,direct,,,,524.0
+R4,CORRELATIONS,S052,EE,PE,EE-PE,0.796,,direct,,,,524.0
+R4,CORRELATIONS,S052,EE,SI,EE-SI,0.542,,direct,,,,524.0
+R4,CORRELATIONS,S052,FC,PE,FC-PE,0.538,,direct,,,,524.0
+R4,CORRELATIONS,S052,FC,SI,FC-SI,0.413,,direct,,,,524.0
+R4,CORRELATIONS,S052,PE,SI,PE-SI,0.651,,direct,,,,524.0
+R4,CORRELATIONS,S146,BI,EE,BI-EE,0.566,,direct,,,,346.0
+R4,CORRELATIONS,S146,BI,PE,BI-PE,0.459,,direct,,,,346.0
+R4,CORRELATIONS,S146,BI,SE,BI-SE,0.33,,direct,,,,346.0
+R4,CORRELATIONS,S146,BI,SI,BI-SI,0.379,,direct,,,,346.0
+R4,CORRELATIONS,S146,BI,UB,BI-UB,0.482,,direct,,,,346.0
+R4,CORRELATIONS,S146,EE,PE,EE-PE,0.587,,direct,,,,346.0
+R4,CORRELATIONS,S146,EE,SE,EE-SE,0.268,,direct,,,,346.0
+R4,CORRELATIONS,S146,EE,SI,EE-SI,0.468,,direct,,,,346.0
+R4,CORRELATIONS,S146,EE,UB,EE-UB,0.327,,direct,,,,346.0
+R4,CORRELATIONS,S146,PE,SE,PE-SE,0.529,,direct,,,,346.0
+R4,CORRELATIONS,S146,PE,SI,PE-SI,0.487,,direct,,,,346.0
+R4,CORRELATIONS,S146,PE,UB,PE-UB,0.338,,direct,,,,346.0
+R4,CORRELATIONS,S146,SE,SI,SE-SI,0.438,,direct,,,,346.0
+R4,CORRELATIONS,S146,SE,UB,SE-UB,0.38,,direct,,,,346.0
+R4,CORRELATIONS,S146,SI,UB,SI-UB,0.383,,direct,,,,346.0
+R4,CORRELATIONS,S111,BI,PE,BI-PE,0.703,,direct,,,,224.0
+R4,CORRELATIONS,S111,BI,SE,BI-SE,0.769,,direct,,,,224.0
+R4,CORRELATIONS,S111,BI,SI,BI-SI,0.806,,direct,,,,224.0
+R4,CORRELATIONS,S111,PE,SE,PE-SE,0.722,,direct,,,,224.0
+R4,CORRELATIONS,S111,PE,SI,PE-SI,0.667,,direct,,,,224.0
+R4,CORRELATIONS,S111,SE,SI,SE-SI,0.828,,direct,,,,224.0
+R4,CORRELATIONS,S045,ATT,BI,ATT-BI,0.712,,direct,,,,184.0
+R4,CORRELATIONS,S045,ATT,EE,ATT-EE,0.561,,direct,,,,184.0
+R4,CORRELATIONS,S045,ATT,PE,ATT-PE,0.748,,direct,,,,184.0
+R4,CORRELATIONS,S045,ATT,UB,ATT-UB,0.683,,direct,,,,184.0
+R4,CORRELATIONS,S045,BI,EE,BI-EE,0.393,,direct,,,,184.0
+R4,CORRELATIONS,S045,BI,PE,BI-PE,0.745,,direct,,,,184.0
+R4,CORRELATIONS,S045,BI,UB,BI-UB,0.615,,direct,,,,184.0
+R4,CORRELATIONS,S045,EE,PE,EE-PE,0.572,,direct,,,,184.0
+R4,CORRELATIONS,S045,EE,UB,EE-UB,0.388,,direct,,,,184.0
+R4,CORRELATIONS,S045,PE,UB,PE-UB,0.682,,direct,,,,184.0
+R4,CORRELATIONS,S212,ATT,BI,ATT-BI,0.521,,direct,,,,465.0
+R4,CORRELATIONS,S212,ATT,PE,ATT-PE,0.198,,direct,,,,465.0
+R4,CORRELATIONS,S212,ATT,UB,ATT-UB,0.198,,direct,,,,465.0
+R4,CORRELATIONS,S212,BI,EE,BI-EE,0.618,,direct,,,,465.0
+R4,CORRELATIONS,S212,BI,PE,BI-PE,0.256,,direct,,,,465.0
+R4,CORRELATIONS,S212,EE,PE,EE-PE,0.179,,direct,,,,465.0
+R4,CORRELATIONS,S212,EE,UB,EE-UB,0.179,,direct,,,,465.0
+R4,CORRELATIONS,S186,BI,EE,BI-EE,0.327,,direct,,,,657.0
+R4,CORRELATIONS,S186,BI,FC,BI-FC,0.566,,direct,,,,657.0
+R4,CORRELATIONS,S186,BI,PE,BI-PE,0.599,,direct,,,,657.0
+R4,CORRELATIONS,S186,BI,SE,BI-SE,0.159,,direct,,,,657.0
+R4,CORRELATIONS,S186,BI,UB,BI-UB,0.237,,direct,,,,657.0
+R4,CORRELATIONS,S186,EE,FC,EE-FC,0.507,,direct,,,,657.0
+R4,CORRELATIONS,S186,EE,SE,EE-SE,0.05,,direct,,,,657.0
+R4,CORRELATIONS,S186,EE,UB,EE-UB,0.169,,direct,,,,657.0
+R4,CORRELATIONS,S186,FC,PE,FC-PE,0.628,,direct,,,,657.0
+R4,CORRELATIONS,S186,FC,SE,FC-SE,0.084,,direct,,,,657.0
+R4,CORRELATIONS,S186,FC,UB,FC-UB,0.127,,direct,,,,657.0
+R4,CORRELATIONS,S186,PE,SE,PE-SE,0.095,,direct,,,,657.0
+R4,CORRELATIONS,S186,PE,UB,PE-UB,0.168,,direct,,,,657.0
+R4,CORRELATIONS,S186,SE,UB,SE-UB,-0.029,,direct,,,,657.0
+R4,CORRELATIONS,S163,ATT,BI,ATT-BI,0.74,,direct,,,,300.0
+R4,CORRELATIONS,S163,ATT,PE,ATT-PE,0.68,,direct,,,,300.0
+R4,CORRELATIONS,S163,ATT,SE,ATT-SE,0.68,,direct,,,,300.0
+R4,CORRELATIONS,S163,ATT,SI,ATT-SI,0.74,,direct,,,,300.0
+R4,CORRELATIONS,S163,ATT,TRU,ATT-TRU,0.74,,direct,,,,300.0
+R4,CORRELATIONS,S163,BI,PE,BI-PE,0.59,,direct,,,,300.0
+R4,CORRELATIONS,S163,BI,SE,BI-SE,0.61,,direct,,,,300.0
+R4,CORRELATIONS,S163,BI,SI,BI-SI,0.67,,direct,,,,300.0
+R4,CORRELATIONS,S163,BI,TRU,BI-TRU,0.66,,direct,,,,300.0
+R4,CORRELATIONS,S163,PE,SE,PE-SE,0.68,,direct,,,,300.0
+R4,CORRELATIONS,S163,PE,SI,PE-SI,0.64,,direct,,,,300.0
+R4,CORRELATIONS,S163,PE,TRU,PE-TRU,0.66,,direct,,,,300.0
+R4,CORRELATIONS,S163,SE,SI,SE-SI,0.62,,direct,,,,300.0
+R4,CORRELATIONS,S163,SE,TRU,SE-TRU,0.65,,direct,,,,300.0
+R4,CORRELATIONS,S163,SI,TRU,SI-TRU,0.68,,direct,,,,300.0
+R4,CORRELATIONS,S048,ATT,BI,ATT-BI,0.82,,direct,,,,355.0
+R4,CORRELATIONS,S048,ATT,EE,ATT-EE,0.453,,direct,,,,355.0
+R4,CORRELATIONS,S048,ATT,FC,ATT-FC,0.34,,direct,,,,355.0
+R4,CORRELATIONS,S048,ATT,PE,ATT-PE,0.659,,direct,,,,355.0
+R4,CORRELATIONS,S048,ATT,SI,ATT-SI,0.589,,direct,,,,355.0
+R4,CORRELATIONS,S048,ATT,TRU,ATT-TRU,0.527,,direct,,,,355.0
+R4,CORRELATIONS,S048,ATT,UB,ATT-UB,0.769,,direct,,,,355.0
+R4,CORRELATIONS,S048,BI,EE,BI-EE,0.398,,direct,,,,355.0
+R4,CORRELATIONS,S048,BI,TRU,BI-TRU,0.442,,direct,,,,355.0
+R4,CORRELATIONS,S048,BI,UB,BI-UB,0.829,,direct,,,,355.0
+R4,CORRELATIONS,S048,EE,FC,EE-FC,0.364,,direct,,,,355.0
+R4,CORRELATIONS,S048,EE,PE,EE-PE,0.31,,direct,,,,355.0
+R4,CORRELATIONS,S048,EE,SI,EE-SI,0.323,,direct,,,,355.0
+R4,CORRELATIONS,S048,EE,TRU,EE-TRU,0.235,,direct,,,,355.0
+R4,CORRELATIONS,S048,FC,PE,FC-PE,0.471,,direct,,,,355.0
+R4,CORRELATIONS,S048,FC,SI,FC-SI,0.259,,direct,,,,355.0
+R4,CORRELATIONS,S048,FC,TRU,FC-TRU,-0.035,,direct,,,,355.0
+R4,CORRELATIONS,S048,PE,SI,PE-SI,0.538,,direct,,,,355.0
+R4,CORRELATIONS,S048,PE,TRU,PE-TRU,0.481,,direct,,,,355.0
+R4,CORRELATIONS,S048,PE,UB,PE-UB,0.596,,direct,,,,355.0
+R4,CORRELATIONS,S048,SI,TRU,SI-TRU,0.28,,direct,,,,355.0
+R4,CORRELATIONS,S007,ATT,BI,ATT-BI,0.403,0.403,beta,,,,363.0
+R4,CORRELATIONS,S007,BI,FC,BI-FC,-0.086,-0.086,beta,,,,363.0
+R4,CORRELATIONS,S007,BI,PE,BI-PE,0.255,0.255,beta,,,,363.0
+R4,CORRELATIONS,S007,BI,SE,BI-SE,-0.029,-0.029,beta,,,,363.0
+R4,CORRELATIONS,S007,BI,SI,BI-SI,-0.054,-0.054,beta,,,,363.0
+R4,CORRELATIONS,S012,BI,EE,BI-EE,0.776,,direct,,,sqrt of squared correlation 0.602,1190.0
+R4,CORRELATIONS,S012,BI,FC,BI-FC,0.766,,direct,,,sqrt of squared correlation 0.586,1190.0
+R4,CORRELATIONS,S012,BI,PE,BI-PE,0.787,,direct,,,sqrt of squared correlation 0.619,1190.0
+R4,CORRELATIONS,S012,BI,SI,BI-SI,0.491,,direct,,,sqrt of squared correlation 0.241,1190.0
+R4,CORRELATIONS,S012,EE,FC,EE-FC,0.79,,direct,,,sqrt of squared correlation 0.624,1190.0
+R4,CORRELATIONS,S012,EE,PE,EE-PE,0.787,,direct,,,sqrt of squared correlation 0.62,1190.0
+R4,CORRELATIONS,S012,EE,SI,EE-SI,0.335,,direct,,,sqrt of squared correlation 0.112,1190.0
+R4,CORRELATIONS,S012,FC,PE,FC-PE,0.741,,direct,,,sqrt of squared correlation 0.549,1190.0
+R4,CORRELATIONS,S012,FC,SI,FC-SI,0.366,,direct,,,sqrt of squared correlation 0.134,1190.0
+R4,CORRELATIONS,S012,PE,SI,PE-SI,0.383,,direct,,,sqrt of squared correlation 0.147,1190.0
+R4,CORRELATIONS,S184,FC,SI,FC-SI,0.56,,direct,,,,907.0
+R4,CORRELATIONS,S020,ANX,BI,ANX-BI,-0.303,,direct,,,,249.0
+R4,CORRELATIONS,S020,ANX,EE,ANX-EE,-0.192,,direct,,,,249.0
+R4,CORRELATIONS,S020,ANX,FC,ANX-FC,-0.236,,direct,,,,249.0
+R4,CORRELATIONS,S020,ANX,PE,ANX-PE,-0.209,,direct,,,,249.0
+R4,CORRELATIONS,S055,PE,UB,PE-UB,0.862,,direct,,,,486.0
+R4,CORRELATIONS,S055,SI,UB,SI-UB,0.741,,direct,,,,486.0
+R4,CORRELATIONS,S100,BI,UB,BI-UB,0.184,,direct,,,,682 / 40
+R4,CORRELATIONS,S050,BI,FC,BI-FC,0.599,,direct,,,,500.0
+R4,CORRELATIONS,S050,EE,PE,EE-PE,0.642,,direct,,,,500.0
+R4,CORRELATIONS,S050,EE,UB,EE-UB,0.619,,direct,,,,500.0
+R4,CORRELATIONS,S125,ATT,BI,ATT-BI,0.707,,direct,,,,498.0
+R4,CORRELATIONS,S125,ATT,FC,ATT-FC,0.314,,direct,,,,498.0
+R4,CORRELATIONS,S125,BI,EE,BI-EE,0.615,,direct,,,,498.0
+R4,CORRELATIONS,S125,BI,FC,BI-FC,0.357,,direct,,,,498.0
+R4,CORRELATIONS,S125,BI,PE,BI-PE,0.687,,direct,,,,498.0
+R4,CORRELATIONS,S125,BI,SE,BI-SE,0.52,,direct,,,,498.0
+R4,CORRELATIONS,S125,EE,FC,EE-FC,0.531,,direct,,,,498.0
+R4,CORRELATIONS,S125,FC,PE,FC-PE,0.431,,direct,,,,498.0
+R4,CORRELATIONS,S125,FC,SE,FC-SE,0.43,,direct,,,,498.0
+R4,CORRELATIONS,S010,BI,EE,BI-EE,0.086,0.036,beta_converted,,,,296.0
+R4,CORRELATIONS,S010,BI,FC,BI-FC,0.113,0.063,beta_converted,,,,296.0
+R4,CORRELATIONS,S010,BI,PE,BI-PE,0.429,0.379,beta_converted,,,,296.0
+R4,CORRELATIONS,S010,BI,SI,BI-SI,0.121,0.071,beta_converted,,,,296.0
+R4,CORRELATIONS,S010,BI,UB,BI-UB,0.435,0.385,beta_converted,,,,296.0
+R4,CORRELATIONS,S010,FC,UB,FC-UB,0.067,0.017,beta_converted,,,,296.0
+R4,CORRELATIONS,S057,ANX,ATT,ANX-ATT,0.4,,direct,,,,582.0
+R4,CORRELATIONS,S057,ANX,BI,ANX-BI,0.39,,direct,,,,582.0
+R4,CORRELATIONS,S057,ANX,EE,ANX-EE,0.36,,direct,,,,582.0
+R4,CORRELATIONS,S057,ANX,FC,ANX-FC,0.33,,direct,,,,582.0
+R4,CORRELATIONS,S057,ANX,PE,ANX-PE,0.34,,direct,,,,582.0
+R4,CORRELATIONS,S057,ANX,SE,ANX-SE,0.27,,direct,,,,582.0
+R4,CORRELATIONS,S057,ANX,SI,ANX-SI,0.39,,direct,,,,582.0
+R4,CORRELATIONS,S057,ATT,BI,ATT-BI,0.48,,direct,,,,582.0
+R4,CORRELATIONS,S057,ATT,EE,ATT-EE,0.61,,direct,,,,582.0
+R4,CORRELATIONS,S057,ATT,FC,ATT-FC,0.35,,direct,,,,582.0
+R4,CORRELATIONS,S057,ATT,PE,ATT-PE,0.67,,direct,,,,582.0
+R4,CORRELATIONS,S057,ATT,SE,ATT-SE,0.33,,direct,,,,582.0
+R4,CORRELATIONS,S057,ATT,SI,ATT-SI,0.51,,direct,,,,582.0
+R4,CORRELATIONS,S057,BI,EE,BI-EE,0.49,,direct,,,,582.0
+R4,CORRELATIONS,S057,BI,FC,BI-FC,0.35,,direct,,,,582.0
+R4,CORRELATIONS,S057,BI,PE,BI-PE,0.51,,direct,,,,582.0
+R4,CORRELATIONS,S057,BI,SE,BI-SE,0.37,,direct,,,,582.0
+R4,CORRELATIONS,S057,BI,SI,BI-SI,0.44,,direct,,,,582.0
+R4,CORRELATIONS,S057,EE,FC,EE-FC,0.31,,direct,,,,582.0
+R4,CORRELATIONS,S057,EE,PE,EE-PE,0.71,,direct,,,,582.0
+R4,CORRELATIONS,S057,EE,SE,EE-SE,0.33,,direct,,,,582.0
+R4,CORRELATIONS,S057,EE,SI,EE-SI,0.53,,direct,,,,582.0
+R4,CORRELATIONS,S057,FC,PE,FC-PE,0.29,,direct,,,,582.0
+R4,CORRELATIONS,S057,FC,SE,FC-SE,0.33,,direct,,,,582.0
+R4,CORRELATIONS,S057,FC,SI,FC-SI,0.39,,direct,,,,582.0
+R4,CORRELATIONS,S057,PE,SE,PE-SE,0.39,,direct,,,,582.0
+R4,CORRELATIONS,S057,PE,SI,PE-SI,0.48,,direct,,,,582.0
+R4,CORRELATIONS,S057,SE,SI,SE-SI,0.34,,direct,,,,582.0
+R4,CORRELATIONS,S174,BI,EE,BI-EE,0.385,,direct,,,,1380.0
+R4,CORRELATIONS,S174,BI,PE,BI-PE,0.303,,direct,,,,1380.0
+R4,CORRELATIONS,S174,BI,TRU,BI-TRU,0.227,,direct,,,,1380.0
+R4,CORRELATIONS,S174,BI,UB,BI-UB,0.204,,direct,,,,1380.0
+R4,CORRELATIONS,S174,EE,PE,EE-PE,0.688,,direct,,,,1380.0
+R4,CORRELATIONS,S174,EE,TRU,EE-TRU,0.471,,direct,,,,1380.0
+R4,CORRELATIONS,S174,EE,UB,EE-UB,0.291,,direct,,,,1380.0
+R4,CORRELATIONS,S174,PE,TRU,PE-TRU,0.542,,direct,,,,1380.0
+R4,CORRELATIONS,S174,PE,UB,PE-UB,0.108,,direct,,,,1380.0
+R4,CORRELATIONS,S174,TRU,UB,TRU-UB,0.243,,direct,,,,1380.0
+R4,CORRELATIONS,S154,BI,EE,BI-EE,0.594,,direct,,,,108.0
+R4,CORRELATIONS,S154,BI,PE,BI-PE,0.713,,direct,,,,108.0
+R4,CORRELATIONS,S154,BI,TRU,BI-TRU,0.4,,direct,,,,108.0
+R4,CORRELATIONS,S154,BI,UB,BI-UB,0.746,,direct,,,,108.0
+R4,CORRELATIONS,S154,EE,PE,EE-PE,0.706,,direct,,,,108.0
+R4,CORRELATIONS,S154,EE,TRU,EE-TRU,0.355,,direct,,,,108.0
+R4,CORRELATIONS,S154,EE,UB,EE-UB,0.557,,direct,,,,108.0
+R4,CORRELATIONS,S154,PE,TRU,PE-TRU,0.443,,direct,,,,108.0
+R4,CORRELATIONS,S154,PE,UB,PE-UB,0.723,,direct,,,,108.0
+R4,CORRELATIONS,S154,TRU,UB,TRU-UB,0.402,,direct,,,,108.0
+R4,CORRELATIONS,S170,ATT,BI,ATT-BI,0.45,0.4,beta_converted,,,,90.0
+R4,CORRELATIONS,S170,ATT,PE,ATT-PE,0.43,0.38,beta_converted,,,,90.0
+R4,CORRELATIONS,S170,ATT,SI,ATT-SI,0.485,0.435,beta_converted,,,,90.0
+R4,CORRELATIONS,S170,BI,PE,BI-PE,-0.101,-0.051,beta_converted,,,,90.0
+R4,CORRELATIONS,S170,BI,SI,BI-SI,0.408,0.358,beta_converted,,,,90.0
+R4,CORRELATIONS,S130,ANX,EE,ANX-EE,-0.52,,direct,,,,500.0
+R4,CORRELATIONS,S130,ANX,FC,ANX-FC,-0.49,,direct,,,,500.0
+R4,CORRELATIONS,S130,ANX,PE,ANX-PE,0.47,,direct,,Y,"Printed as +0.47*** in Table 2, but paper's Results §3.1 explicitly states ""technology anxiety is negatively correlated with other variables"". All other ANX correlations are negative (-0.50, -0.51, -0.52, -0.49). Likely a sign-typo in Table 2; actual value probably -0.47. Coded AS-PRINTED per coding rule; VERIFY with authors or recalculate before MASEM inclusion.",500.0
+R4,CORRELATIONS,S130,ANX,UB,ANX-UB,-0.5,,direct,,,,500.0
+R4,CORRELATIONS,S130,EE,FC,EE-FC,0.62,,direct,,,,500.0
+R4,CORRELATIONS,S130,EE,PE,EE-PE,0.48,,direct,,,,500.0
+R4,CORRELATIONS,S130,EE,UB,EE-UB,0.52,,direct,,,,500.0
+R4,CORRELATIONS,S130,FC,PE,FC-PE,0.56,,direct,,,,500.0
+R4,CORRELATIONS,S130,FC,UB,FC-UB,0.57,,direct,,,,500.0
+R4,CORRELATIONS,S130,PE,UB,PE-UB,0.59,,direct,,,,500.0
+R4,CORRELATIONS,S225,BI,EE,BI-EE,-0.057,-0.007,beta_converted,,,,302.0
+R4,CORRELATIONS,S225,BI,FC,BI-FC,0.091,0.041,beta_converted,,,,302.0
+R4,CORRELATIONS,S225,BI,PE,BI-PE,0.184,0.134,beta_converted,,,,302.0
+R4,CORRELATIONS,S225,BI,SI,BI-SI,-0.076,-0.026,beta_converted,,,,302.0
+R4,CORRELATIONS,S225,BI,TRU,BI-TRU,0.435,0.385,beta_converted,,,,302.0
+R4,CORRELATIONS,S225,BI,UB,BI-UB,0.687,0.637,beta_converted,,,,302.0
+R4,CORRELATIONS,S193,ATT,BI,ATT-BI,0.702,,direct,,,,186.0
+R4,CORRELATIONS,S193,ATT,EE,ATT-EE,0.464,,direct,,,,186.0
+R4,CORRELATIONS,S193,ATT,FC,ATT-FC,0.457,,direct,,,,186.0
+R4,CORRELATIONS,S193,ATT,PE,ATT-PE,0.756,,direct,,,,186.0
+R4,CORRELATIONS,S193,ATT,SI,ATT-SI,0.658,,direct,,,,186.0
+R4,CORRELATIONS,S193,BI,EE,BI-EE,0.663,,direct,,,,186.0
+R4,CORRELATIONS,S193,BI,FC,BI-FC,0.742,,direct,,,,186.0
+R4,CORRELATIONS,S193,BI,PE,BI-PE,0.685,,direct,,,,186.0
+R4,CORRELATIONS,S193,BI,SI,BI-SI,0.771,,direct,,,,186.0
+R4,CORRELATIONS,S193,EE,FC,EE-FC,0.656,,direct,,,,186.0
+R4,CORRELATIONS,S193,EE,PE,EE-PE,0.629,,direct,,,,186.0
+R4,CORRELATIONS,S193,EE,SI,EE-SI,0.723,,direct,,,,186.0
+R4,CORRELATIONS,S193,FC,PE,FC-PE,0.747,,direct,,,,186.0
+R4,CORRELATIONS,S193,FC,SI,FC-SI,0.676,,direct,,,,186.0
+R4,CORRELATIONS,S193,PE,SI,PE-SI,0.461,,direct,,,,186.0
+R4,CORRELATIONS,S060,ATT,BI,ATT-BI,0.685,,direct,,,,415.0
+R4,CORRELATIONS,S060,ATT,EE,ATT-EE,0.629,,direct,,,,415.0
+R4,CORRELATIONS,S060,ATT,FC,ATT-FC,0.652,,direct,,,,415.0
+R4,CORRELATIONS,S060,ATT,PE,ATT-PE,0.673,,direct,,,,415.0
+R4,CORRELATIONS,S060,ATT,SI,ATT-SI,0.596,,direct,,,,415.0
+R4,CORRELATIONS,S060,BI,EE,BI-EE,0.541,,direct,,,,415.0
+R4,CORRELATIONS,S060,BI,FC,BI-FC,0.596,,direct,,,,415.0
+R4,CORRELATIONS,S060,BI,PE,BI-PE,0.585,,direct,,,,415.0
+R4,CORRELATIONS,S060,BI,SI,BI-SI,0.463,,direct,,,,415.0
+R4,CORRELATIONS,S060,EE,FC,EE-FC,0.552,,direct,,,,415.0
+R4,CORRELATIONS,S060,EE,PE,EE-PE,0.562,,direct,,,,415.0
+R4,CORRELATIONS,S060,EE,SI,EE-SI,0.417,,direct,,,,415.0
+R4,CORRELATIONS,S060,FC,PE,FC-PE,0.618,,direct,,,,415.0
+R4,CORRELATIONS,S060,FC,SI,FC-SI,0.473,,direct,,,,415.0
+R4,CORRELATIONS,S060,PE,SI,PE-SI,0.487,,direct,,,,415.0
+R4,CORRELATIONS,S160,BI,PE,BI-PE,0.075,,direct,,,,351.0
+R4,CORRELATIONS,S160,BI,SE,BI-SE,0.803,,direct,,,,351.0
+R4,CORRELATIONS,S160,BI,UB,BI-UB,0.294,,direct,,,,351.0
+R4,CORRELATIONS,S160,PE,SE,PE-SE,0.008,,direct,,,,351.0
+R4,CORRELATIONS,S160,PE,UB,PE-UB,-0.014,,direct,,,,351.0
+R4,CORRELATIONS,S160,SE,UB,SE-UB,0.229,,direct,,,,351.0
+R4,CORRELATIONS,S141,BI,EE,BI-EE,0.494,,direct,,,,793.0
+R4,CORRELATIONS,S141,BI,FC,BI-FC,0.456,,direct,,,,793.0
+R4,CORRELATIONS,S141,BI,PE,BI-PE,0.735,,direct,,,,793.0
+R4,CORRELATIONS,S141,BI,SI,BI-SI,0.558,,direct,,,,793.0
+R4,CORRELATIONS,S141,EE,FC,EE-FC,0.76,,direct,,,,793.0
+R4,CORRELATIONS,S141,EE,PE,EE-PE,0.75,,direct,,,,793.0
+R4,CORRELATIONS,S141,EE,SI,EE-SI,0.38,,direct,,,,793.0
+R4,CORRELATIONS,S141,FC,PE,FC-PE,0.61,,direct,,,,793.0
+R4,CORRELATIONS,S141,FC,SI,FC-SI,0.36,,direct,,,,793.0
+R4,CORRELATIONS,S141,PE,SI,PE-SI,0.58,,direct,,,,793.0
+R4,CORRELATIONS,S043,BI,EE,BI-EE,0.669,,direct,,,,210.0
+R4,CORRELATIONS,S043,BI,PE,BI-PE,0.688,,direct,,,,210.0
+R4,CORRELATIONS,S043,BI,UB,BI-UB,0.534,,direct,,,,210.0
+R4,CORRELATIONS,S043,EE,FC,EE-FC,0.407,,direct,,,,210.0
+R4,CORRELATIONS,S043,EE,PE,EE-PE,0.65,,direct,,,,210.0
+R4,CORRELATIONS,S043,EE,TRU,EE-TRU,0.634,,direct,,,,210.0
+R4,CORRELATIONS,S213,BI,EE,BI-EE,0.141,,direct,,,,473.0
+R4,CORRELATIONS,S213,BI,PE,BI-PE,0.087,,direct,,,,473.0
+R4,CORRELATIONS,S213,EE,PE,EE-PE,0.082,,direct,,,,473.0
+R4,CORRELATIONS,S127,ANX,BI,ANX-BI,-0.302,,direct,,,,265.0
+R4,CORRELATIONS,S127,ANX,EE,ANX-EE,-0.351,,direct,,,,265.0
+R4,CORRELATIONS,S127,ANX,PE,ANX-PE,-0.273,,direct,,,,265.0
+R4,CORRELATIONS,S127,ANX,SE,ANX-SE,-0.319,,direct,,,,265.0
+R4,CORRELATIONS,S127,ANX,SI,ANX-SI,-0.105,,direct,,,,265.0
+R4,CORRELATIONS,S127,BI,EE,BI-EE,0.314,,direct,,,,265.0
+R4,CORRELATIONS,S127,BI,PE,BI-PE,0.592,,direct,,,,265.0
+R4,CORRELATIONS,S127,BI,SE,BI-SE,0.317,,direct,,,,265.0
+R4,CORRELATIONS,S127,BI,SI,BI-SI,0.426,,direct,,,,265.0
+R4,CORRELATIONS,S127,EE,PE,EE-PE,0.41,,direct,,,,265.0
+R4,CORRELATIONS,S127,EE,SE,EE-SE,0.593,,direct,,,,265.0
+R4,CORRELATIONS,S127,EE,SI,EE-SI,0.138,,direct,,,,265.0
+R4,CORRELATIONS,S127,PE,SE,PE-SE,0.366,,direct,,,,265.0
+R4,CORRELATIONS,S127,PE,SI,PE-SI,0.264,,direct,,,,265.0
+R4,CORRELATIONS,S127,SE,SI,SE-SI,0.14,,direct,,,,265.0
+R4,CORRELATIONS,S089,BI,EE,BI-EE,0.412,0.412,beta,,,"Table 8 path coefficient (PEOU->AI using intention (H2)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",322.0
+R4,CORRELATIONS,S089,BI,PE,BI-PE,0.308,0.308,beta,,,"Table 8 path coefficient (PU->AI using intention (H1)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",322.0
+R4,CORRELATIONS,S089,BI,UB,BI-UB,0.667,0.667,beta,,,"Table 8 path coefficient (AI using intention->AI adoption (H3)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",322.0
+R4,CORRELATIONS,S089,EE,UB,EE-UB,0.275,0.275,beta,,,"Table 8 path coefficient (PEOU->AI adoption). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",322.0
+R4,CORRELATIONS,S089,PE,UB,PE-UB,0.205,0.205,beta,,,"Table 8 path coefficient (PU->AI adoption (H5)). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",322.0
+R4,CORRELATIONS,S075,BI,EE,BI-EE,0.271,,Table 5: Path coefficient,,,,402.0
+R4,CORRELATIONS,S075,BI,FC,BI-FC,0.342,,Table 5: Path coefficient,,,,402.0
+R4,CORRELATIONS,S075,BI,PE,BI-PE,0.331,,Table 5: Path coefficient,,,,402.0
+R4,CORRELATIONS,S075,BI,SI,BI-SI,0.115,,Table 5: Path coefficient,,,,402.0
+R4,CORRELATIONS,S075,BI,UB,BI-UB,0.515,,Table 5: Path coefficient,,,,402.0
+R4,CORRELATIONS,S075,EE,FC,EE-FC,0.404,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,EE,PE,EE-PE,0.4,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,EE,SI,EE-SI,0.514,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,EE,UB,EE-UB,0.322,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,FC,PE,FC-PE,0.287,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,FC,SI,FC-SI,0.322,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,FC,UB,FC-UB,0.319,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,PE,UB,PE-UB,0.217,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S075,SI,UB,SI-UB,0.28,,Table 4: Correlation matrix,,,,402.0
+R4,CORRELATIONS,S058,ATT,BI,ATT-BI,0.81,,Table 4: Path coefficient,,,,485.0
+R4,CORRELATIONS,S058,ATT,EE,ATT-EE,0.369,,Table 4: Path coefficient,,,,485.0
+R4,CORRELATIONS,S058,ATT,PE,ATT-PE,0.484,,Table 4: Path coefficient,,,,485.0
+R4,CORRELATIONS,S058,BI,EE,BI-EE,0.142,,Table 4: Path coefficient,,,,485.0
+R4,CORRELATIONS,S058,BI,PE,BI-PE,0.406,,Table 4: Path coefficient,,,,485.0
+R4,CORRELATIONS,S058,EE,PE,EE-PE,0.806,,Table 4: Path coefficient,,,,485.0
+R4,CORRELATIONS,S108,EE,PE,EE-PE,0.61,,Table 2: Effect size (d AI vs Non-AI),,,,114.0
+R4,CORRELATIONS,S067,ATT,BI,ATT-BI,0.53,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,ATT,EE,ATT-EE,0.265,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,ATT,PE,ATT-PE,0.415,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,ATT,SI,ATT-SI,0.468,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,BI,EE,BI-EE,0.354,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,BI,PE,BI-PE,0.507,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,BI,SI,BI-SI,0.204,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,EE,PE,EE-PE,0.609,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,EE,SI,EE-SI,0.228,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S067,PE,SI,PE-SI,0.505,,Table 4 or Path coefficients,,,,598.0
+R4,CORRELATIONS,S103,ATT,BI,ATT-BI,0.701,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,ATT,FC,ATT-FC,0.57,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,ATT,PE,ATT-PE,0.727,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,ATT,SI,ATT-SI,0.265,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,BI,FC,BI-FC,0.567,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,BI,PE,BI-PE,0.639,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,BI,SI,BI-SI,0.288,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,FC,PE,FC-PE,0.638,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,FC,SI,FC-SI,0.497,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S103,PE,SI,PE-SI,0.363,,Table 2 (correlation matrix),,,,770.0
+R4,CORRELATIONS,S069,BI,EE,BI-EE,0.345,,Table 2 (discriminant validity),,,,597.0
+R4,CORRELATIONS,S069,BI,PE,BI-PE,0.421,,Table 2 (discriminant validity),,,,597.0
+R4,CORRELATIONS,S069,BI,SI,BI-SI,0.635,,Table 2 (discriminant validity),,,,597.0
+R4,CORRELATIONS,S069,EE,PE,EE-PE,0.69,,Table 2 (discriminant validity),,,,597.0
+R4,CORRELATIONS,S069,EE,SI,EE-SI,0.551,,Table 2 (discriminant validity),,,,597.0
+R4,CORRELATIONS,S069,PE,SI,PE-SI,0.493,,Table 2 (discriminant validity),,,,597.0
+R4,CORRELATIONS,S063,ATT,BI,ATT-BI,0.688,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,ATT,EE,ATT-EE,0.638,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,ATT,PE,ATT-PE,0.6,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,ATT,UB,ATT-UB,0.584,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,BI,EE,BI-EE,0.599,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,BI,PE,BI-PE,0.544,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,BI,UB,BI-UB,0.639,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,EE,PE,EE-PE,0.62,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,EE,UB,EE-UB,0.47,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S063,PE,UB,PE-UB,0.511,,Table 3 (Fornell-Larcker),,,,388.0
+R4,CORRELATIONS,S119,BI,EE,BI-EE,0.72,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,BI,FC,BI-FC,0.699,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,BI,PE,BI-PE,0.737,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,BI,SI,BI-SI,0.632,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,EE,FC,EE-FC,0.677,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,EE,PE,EE-PE,0.854,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,EE,SI,EE-SI,0.66,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,FC,PE,FC-PE,0.604,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,FC,SI,FC-SI,0.873,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S119,PE,SI,PE-SI,0.596,,Table 5 Discriminant validity,,,,432.0
+R4,CORRELATIONS,S093,ATT,BI,ATT-BI,0.84,,Table 3 Path coefficients,,,,127.0
+R4,CORRELATIONS,S093,ATT,EE,ATT-EE,0.428,,Table 3 Path coefficients,,,,127.0
+R4,CORRELATIONS,S093,ATT,PE,ATT-PE,0.344,,Table 3 Path coefficients,,,,127.0
+R4,CORRELATIONS,S093,BI,FC,BI-FC,-0.032,,Table 3 Path coefficients,,,,127.0
+R4,CORRELATIONS,S093,BI,UB,BI-UB,0.575,,Table 3 Path coefficients,,,,127.0
+R4,CORRELATIONS,S093,EE,FC,EE-FC,0.098,,Table 3 Path coefficients,,,,127.0
+R4,CORRELATIONS,S153,BI,EE,BI-EE,0.502,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,BI,PE,BI-PE,0.56,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,BI,SI,BI-SI,0.672,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,BI,TRU,BI-TRU,0.577,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,EE,PE,EE-PE,0.613,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,EE,SI,EE-SI,0.333,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,EE,TRU,EE-TRU,0.536,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,PE,SI,PE-SI,0.433,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,PE,TRU,PE-TRU,0.654,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S153,SI,TRU,SI-TRU,0.487,,Table 4 Fornell and Larcker,,,,207.0
+R4,CORRELATIONS,S049,BI,EE,BI-EE,0.49,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,BI,FC,BI-FC,0.507,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,BI,PE,BI-PE,0.478,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,BI,SI,BI-SI,0.566,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,BI,UB,BI-UB,0.684,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,EE,FC,EE-FC,0.56,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,EE,PE,EE-PE,0.397,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,EE,SI,EE-SI,0.48,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,EE,UB,EE-UB,0.493,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,FC,PE,FC-PE,0.385,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,FC,SI,FC-SI,0.565,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,FC,UB,FC-UB,0.443,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,PE,SI,PE-SI,0.497,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,PE,UB,PE-UB,0.412,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S049,SI,UB,SI-UB,0.474,,direct,,,"Table 3 Fornell-Larcker criterion (off-diagonal correlation). Mapping: FCs->FC, AU->UB.",419.0
+R4,CORRELATIONS,S066,ANX,BI,ANX-BI,0.7,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,ANX,EE,ANX-EE,0.123,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,ANX,FC,ANX-FC,0.206,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,ANX,PE,ANX-PE,0.037,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,ANX,SI,ANX-SI,0.332,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,ANX,TRU,ANX-TRU,0.14,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,BI,EE,BI-EE,0.087,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,BI,FC,BI-FC,0.132,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,BI,PE,BI-PE,0.215,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,BI,SI,BI-SI,0.339,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,BI,UB,BI-UB,0.497,,Table 7,,,,300.0
+R4,CORRELATIONS,S066,EE,UB,EE-UB,0.177,,Table 7,,,,300.0
+R4,CORRELATIONS,S162,ANX,ATT,ANX-ATT,-0.323,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ANX,BI,ANX-BI,0.184,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ANX,EE,ANX-EE,0.412,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ANX,PE,ANX-PE,0.54,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ANX,UB,ANX-UB,0.132,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ATT,BI,ATT-BI,0.234,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ATT,EE,ATT-EE,0.087,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ATT,PE,ATT-PE,-0.591,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,ATT,UB,ATT-UB,0.166,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,BI,EE,BI-EE,0.019,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,BI,PE,BI-PE,0.021,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,BI,UB,BI-UB,0.619,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,EE,PE,EE-PE,0.427,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,EE,UB,EE-UB,0.081,,Table 3,,,,156.0
+R4,CORRELATIONS,S162,PE,UB,PE-UB,-0.079,,Table 3,,,,156.0
+R4,CORRELATIONS,S136,BI,EE,BI-EE,0.418,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,BI,PE,BI-PE,0.25,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,BI,SI,BI-SI,0.358,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,BI,UB,BI-UB,0.55,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,EE,PE,EE-PE,0.283,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,EE,SI,EE-SI,0.397,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,EE,UB,EE-UB,0.374,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,PE,SI,PE-SI,0.142,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,PE,UB,PE-UB,0.057,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S136,SI,UB,SI-UB,0.484,,Table 3 Discriminant validity,,,,105.0
+R4,CORRELATIONS,S188,ATT,BI,ATT-BI,0.733,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,ATT,EE,ATT-EE,0.692,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,ATT,PE,ATT-PE,0.623,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,ATT,SE,ATT-SE,0.627,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,ATT,TRU,ATT-TRU,0.57,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,BI,EE,BI-EE,0.647,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,BI,PE,BI-PE,0.645,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,BI,SE,BI-SE,0.516,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,BI,TRU,BI-TRU,0.478,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,EE,PE,EE-PE,0.889,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,EE,SE,EE-SE,0.545,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,EE,TRU,EE-TRU,0.519,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,PE,SE,PE-SE,0.458,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,PE,TRU,PE-TRU,0.369,,Table 3,,,,147.0
+R4,CORRELATIONS,S188,SE,TRU,SE-TRU,0.487,,Table 3,,,,147.0
+R4,CORRELATIONS,S080,BI,EE,BI-EE,0.436,0.436,beta,Table III,,"Table III path coefficient (EE->BI). Raw beta retained, no beta-to-r conversion.",251.0
+R4,CORRELATIONS,S080,BI,FC,BI-FC,-0.058,-0.058,beta,Table III,,"Table III path coefficient (FC->BI). Raw beta retained, no beta-to-r conversion.",251.0
+R4,CORRELATIONS,S080,BI,PE,BI-PE,0.207,0.207,beta,Table III,,Table III path coefficient (PE->BI). Raw beta retained. Marginally sig. at 10% (p=.085) in paper; ns at .05.,251.0
+R4,CORRELATIONS,S080,BI,SI,BI-SI,0.066,0.066,beta,Table III,,"Table III path coefficient (SI->BI). Raw beta retained, no beta-to-r conversion.",251.0
+R4,CORRELATIONS,S216,ANX,EE,ANX-EE,0.085,0.085,beta,,,Table 5 path coefficient (H12: ANX->PEOU). Not supported (p=.091). Raw beta retained. HTMT not used per project rule.,348.0
+R4,CORRELATIONS,S216,BI,EE,BI-EE,0.203,0.203,beta,,,Table 5 path coefficient (H2: PEOU->BI). Raw beta retained. HTMT not used per project rule.,348.0
+R4,CORRELATIONS,S216,BI,PE,BI-PE,0.203,0.203,beta,,,"Table 5 path coefficient (H1: PU->BI). Raw beta retained, no beta-to-r conversion. HTMT not used per project rule.",348.0
+R4,CORRELATIONS,S216,BI,SI,BI-SI,0.159,0.159,beta,,,Table 5 path coefficient (H6: SN->BI). Raw beta retained. HTMT not used per project rule.,348.0
+R4,CORRELATIONS,S216,EE,PE,EE-PE,0.229,0.229,beta,,,Table 5 path coefficient (H3: PEOU->PU). Raw beta retained. HTMT not used per project rule.,348.0
+R4,CORRELATIONS,S216,EE,SE,EE-SE,0.231,0.231,beta,,,Table 5 path coefficient (H11: SE->PEOU). Raw beta retained. HTMT not used per project rule.,348.0
+R4,CORRELATIONS,S216,PE,SI,PE-SI,0.427,0.427,beta,,,Table 5 path coefficient (H5: SN->PU). Raw beta retained. HTMT not used per project rule.,348.0
+R4,CORRELATIONS,S088,BI,EE,BI-EE,0.29,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,BI,FC,BI-FC,0.353,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,BI,PE,BI-PE,0.41,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,BI,SI,BI-SI,0.152,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,BI,TRU,BI-TRU,0.128,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,BI,UB,BI-UB,0.399,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,EE,FC,EE-FC,0.409,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,EE,PE,EE-PE,0.319,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,EE,SI,EE-SI,0.175,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,EE,TRU,EE-TRU,0.141,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,EE,UB,EE-UB,0.184,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,FC,PE,FC-PE,0.393,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,FC,SI,FC-SI,0.164,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,FC,TRU,FC-TRU,0.093,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,FC,UB,FC-UB,0.246,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,PE,SI,PE-SI,0.346,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,PE,TRU,PE-TRU,0.194,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,PE,UB,PE-UB,0.29,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,SI,TRU,SI-TRU,0.132,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,SI,UB,SI-UB,0.207,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S088,TRU,UB,TRU-UB,0.224,,direct,,,Table 3 correlation matrix (Fornell-Larcker; diagonal=sqrt AVE).,353.0
+R4,CORRELATIONS,S192,ATT,BI,ATT-BI,0.03,0.03,beta,,,"Table 5 multivariable linear regression coefficient (Attitude->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",693.0
+R4,CORRELATIONS,S192,BI,EE,BI-EE,0.03,0.03,beta,,,"Table 5 multivariable linear regression coefficient (EE->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",693.0
+R4,CORRELATIONS,S192,BI,FC,BI-FC,0.29,0.29,beta,,,"Table 5 multivariable linear regression coefficient (FC->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",693.0
+R4,CORRELATIONS,S192,BI,PE,BI-PE,0.09,0.09,beta,,,"Table 5 multivariable linear regression coefficient (PE->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",693.0
+R4,CORRELATIONS,S192,BI,SI,BI-SI,0.32,0.32,beta,,,"Table 5 multivariable linear regression coefficient (SI->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",693.0
+R4,CORRELATIONS,S192,BI,UB,BI-UB,0.27,0.27,beta,,,"Table 5 multivariable linear regression coefficient (Utilization behavior->BI, beta). Raw beta retained. No correlation matrix reported (regression study).",693.0
+R4,CORRELATIONS,S006,BI,EE,BI-EE,0.367,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,BI,FC,BI-FC,0.22,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,BI,PE,BI-PE,0.626,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,BI,SI,BI-SI,0.421,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,BI,UB,BI-UB,0.596,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,EE,FC,EE-FC,0.333,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,EE,PE,EE-PE,0.334,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,EE,SI,EE-SI,0.377,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,EE,UB,EE-UB,0.307,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,FC,PE,FC-PE,0.134,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,FC,SI,FC-SI,-0.029,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,FC,UB,FC-UB,0.402,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,PE,SI,PE-SI,0.403,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,PE,UB,PE-UB,0.469,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S006,SI,UB,SI-UB,0.334,,direct,,,Table 6 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,1167.0
+R4,CORRELATIONS,S003,EE,FC,EE-FC,0.271,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,EE,PE,EE-PE,0.496,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,EE,SI,EE-SI,0.414,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,EE,UB,EE-UB,0.241,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,FC,PE,FC-PE,0.448,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,FC,SI,FC-SI,0.565,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,FC,UB,FC-UB,0.609,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,PE,SI,PE-SI,0.644,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,PE,UB,PE-UB,0.726,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S003,SI,UB,SI-UB,0.73,,direct,,,Table 5 FLC (Fornell-Larcker criterion; off-diagonal correlation; diagonal=sqrt AVE).,195.0
+R4,CORRELATIONS,S037,BI,EE,BI-EE,0.601,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,BI,PE,BI-PE,0.692,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,BI,SI,BI-SI,0.528,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,BI,TRU,BI-TRU,0.72,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,EE,PE,EE-PE,0.664,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,EE,SI,EE-SI,0.542,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,EE,TRU,EE-TRU,0.539,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,PE,SI,PE-SI,0.542,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,PE,TRU,PE-TRU,0.601,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S037,SI,TRU,SI-TRU,0.519,,direct,,,Table 4 lower triangle (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; upper triangle HTMT not used).,635.0
+R4,CORRELATIONS,S112,BI,EE,BI-EE,0.108,0.108,beta,,,"Table 9 CB-SEM (AMOS) standardized path coefficient (EE->BI (H2), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",500.0
+R4,CORRELATIONS,S112,BI,FC,BI-FC,0.111,0.111,beta,,,"Table 9 CB-SEM (AMOS) standardized path coefficient (FC->BI (H4), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",500.0
+R4,CORRELATIONS,S112,BI,PE,BI-PE,0.177,0.177,beta,,,"Table 9 CB-SEM (AMOS) standardized path coefficient (PE->BI (H1), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",500.0
+R4,CORRELATIONS,S112,BI,SI,BI-SI,0.238,0.238,beta,,,"Table 9 CB-SEM (AMOS) standardized path coefficient (SI->BI (H3), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",500.0
+R4,CORRELATIONS,S112,EE,FC,EE-FC,0.377,0.377,beta,,,"Table 9 CB-SEM (AMOS) standardized path coefficient (FC->EE (H7), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",500.0
+R4,CORRELATIONS,S112,EE,PE,EE-PE,0.247,0.247,beta,,,"Table 9 CB-SEM (AMOS) standardized path coefficient (EE->PE (H10), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",500.0
+R4,CORRELATIONS,S112,PE,SI,PE-SI,0.22,0.22,beta,,,"Table 9 CB-SEM (AMOS) standardized path coefficient (SI->PE (H9), beta). Raw beta retained. No correlation matrix reported (CB-SEM).",500.0
+R4,CORRELATIONS,S040,BI,EE,BI-EE,0.59,,direct,,,Table 6 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; BIAC=BI). HTMT (Table 5) not used per project rule.,290.0
+R4,CORRELATIONS,S040,BI,PE,BI-PE,0.55,,direct,,,Table 6 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; BIAC=BI). HTMT (Table 5) not used per project rule.,290.0
+R4,CORRELATIONS,S040,BI,TRU,BI-TRU,0.84,,direct,,,Table 6 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; BIAC=BI). HTMT (Table 5) not used per project rule.,290.0
+R4,CORRELATIONS,S040,EE,PE,EE-PE,0.48,,direct,,,Table 6 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; BIAC=BI). HTMT (Table 5) not used per project rule.,290.0
+R4,CORRELATIONS,S040,EE,TRU,EE-TRU,0.65,,direct,,,Table 6 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; BIAC=BI). HTMT (Table 5) not used per project rule.,290.0
+R4,CORRELATIONS,S040,PE,TRU,PE-TRU,0.59,,direct,,,Table 6 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; BIAC=BI). HTMT (Table 5) not used per project rule.,290.0
+R4,CORRELATIONS,S224,BI,EE,BI-EE,0.2,0.2,beta,,,Fig 6 combined-model path coefficient (EE->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,301.0
+R4,CORRELATIONS,S224,BI,FC,BI-FC,0.073,0.073,beta,,,Fig 6 combined-model path coefficient (FC->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,301.0
+R4,CORRELATIONS,S224,BI,PE,BI-PE,0.26,0.26,beta,,,Fig 6 combined-model path coefficient (PE->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,301.0
+R4,CORRELATIONS,S224,BI,SI,BI-SI,0.27,0.27,beta,,,Fig 6 combined-model path coefficient (SI->BI). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,301.0
+R4,CORRELATIONS,S224,BI,UB,BI-UB,0.043,0.043,beta,,,Fig 6 combined-model path coefficient (BI->Technology use). APPEARS UNSTANDARDIZED (figure inter-construct covariances >1). Raw value retained. No correlation matrix (separate-model Tables 3-5 had unstandardized b>1).,301.0
+R4,CORRELATIONS,S116,BI,EE,BI-EE,0.35,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,BI,FC,BI-FC,0.37,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,BI,PE,BI-PE,0.43,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,BI,SI,BI-SI,0.32,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,BI,UB,BI-UB,0.66,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,EE,FC,EE-FC,0.57,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,EE,PE,EE-PE,0.61,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,EE,SI,EE-SI,0.28,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,EE,UB,EE-UB,0.4,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,FC,PE,FC-PE,0.49,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,FC,SI,FC-SI,0.29,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,FC,UB,FC-UB,0.5,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,PE,SI,PE-SI,0.22,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,PE,UB,PE-UB,0.41,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S116,SI,UB,SI-UB,0.32,,direct,,,Table 5 below-diagonal (Fornell-Larcker inter-construct correlation; diagonal=sqrt AVE; above-diagonal=HTMT not used).,8496.0
+R4,CORRELATIONS,S172,BI,EE,BI-EE,0.889,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). AIHE(AI adoption)=UB. Interaction terms (EE.BI/PE.BI/PR.BI) and Perceived Risk excluded. NOTE: discriminant validity concern (some r > sqrt AVE).,330.0
+R4,CORRELATIONS,S172,BI,PE,BI-PE,0.779,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). AIHE(AI adoption)=UB. Interaction terms (EE.BI/PE.BI/PR.BI) and Perceived Risk excluded. NOTE: discriminant validity concern (some r > sqrt AVE).,330.0
+R4,CORRELATIONS,S172,BI,UB,BI-UB,0.881,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). AIHE(AI adoption)=UB. Interaction terms (EE.BI/PE.BI/PR.BI) and Perceived Risk excluded. NOTE: discriminant validity concern (some r > sqrt AVE).,330.0
+R4,CORRELATIONS,S172,EE,PE,EE-PE,0.692,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). AIHE(AI adoption)=UB. Interaction terms (EE.BI/PE.BI/PR.BI) and Perceived Risk excluded. NOTE: discriminant validity concern (some r > sqrt AVE).,330.0
+R4,CORRELATIONS,S172,EE,UB,EE-UB,0.878,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). AIHE(AI adoption)=UB. Interaction terms (EE.BI/PE.BI/PR.BI) and Perceived Risk excluded. NOTE: discriminant validity concern (some r > sqrt AVE).,330.0
+R4,CORRELATIONS,S172,PE,UB,PE-UB,0.787,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). AIHE(AI adoption)=UB. Interaction terms (EE.BI/PE.BI/PR.BI) and Perceived Risk excluded. NOTE: discriminant validity concern (some r > sqrt AVE).,330.0
+R4,CORRELATIONS,S159,BI,EE,BI-EE,0.103,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,BI,PE,BI-PE,0.127,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,BI,SI,BI-SI,0.053,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,BI,TRU,BI-TRU,0.137,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,EE,PE,EE-PE,0.139,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,EE,SI,EE-SI,0.02,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,EE,TRU,EE-TRU,0.087,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,PE,SI,PE-SI,0.154,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,PE,TRU,PE-TRU,0.008,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S159,SI,TRU,SI-TRU,0.037,,direct,,,Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE).,483.0
+R4,CORRELATIONS,S134,BI,EE,BI-EE,0.045,0.045,beta,,,"Standardized linear regression coefficient (EE->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",484.0
+R4,CORRELATIONS,S134,BI,FC,BI-FC,0.024,0.024,beta,,,"Standardized linear regression coefficient (FC->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",484.0
+R4,CORRELATIONS,S134,BI,PE,BI-PE,0.388,0.388,beta,,,"Standardized linear regression coefficient (PE->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",484.0
+R4,CORRELATIONS,S134,BI,SI,BI-SI,0.029,0.029,beta,,,"Standardized linear regression coefficient (SI->BI (Table 8), beta). Raw beta retained. No correlation matrix reported (regression study).",484.0
+R4,CORRELATIONS,S134,BI,UB,BI-UB,0.39,0.39,beta,,,"Standardized linear regression coefficient (BI->UB (Table 9), beta). Raw beta retained. No correlation matrix reported (regression study).",484.0
+R4,CORRELATIONS,S134,FC,UB,FC-UB,0.118,0.118,beta,,,"Standardized linear regression coefficient (FC->UB (Table 9), beta). Raw beta retained. No correlation matrix reported (regression study).",484.0
+R4,CORRELATIONS,S082,BI,EE,BI-EE,0.61,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,BI,FC,BI-FC,0.58,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,BI,PE,BI-PE,0.73,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,BI,SI,BI-SI,0.3,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,EE,FC,EE-FC,0.68,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,EE,PE,EE-PE,0.74,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,EE,SI,EE-SI,0.22,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,FC,PE,FC-PE,0.56,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,FC,SI,FC-SI,0.33,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S082,PE,SI,PE-SI,0.26,,direct,,,Table 4 correlation matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 3) not used per project rule.,308.0
+R4,CORRELATIONS,S182,BI,EE,BI-EE,0.5,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,BI,FC,BI-FC,0.56,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,BI,PE,BI-PE,0.601,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,BI,SI,BI-SI,0.64,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,EE,FC,EE-FC,0.657,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,EE,PE,EE-PE,0.54,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,EE,SI,EE-SI,0.505,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,FC,PE,FC-PE,0.522,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,FC,SI,FC-SI,0.617,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S182,PE,SI,PE-SI,0.562,,direct,,,Table 4 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 5) not used per project rule.,380.0
+R4,CORRELATIONS,S199,BI,EE,BI-EE,0.207,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,BI,FC,BI-FC,0.388,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,BI,PE,BI-PE,0.703,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,BI,SI,BI-SI,0.559,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,BI,UB,BI-UB,0.738,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,EE,FC,EE-FC,0.462,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,EE,PE,EE-PE,0.45,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,EE,SI,EE-SI,0.044,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,EE,UB,EE-UB,0.179,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,FC,PE,FC-PE,0.502,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,FC,SI,FC-SI,0.352,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,FC,UB,FC-UB,0.434,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,PE,SI,PE-SI,0.489,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,PE,UB,PE-UB,0.614,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S199,SI,UB,SI-UB,0.498,,direct,,,"Table 4 Pearson correlation matrix (lower triangle; diagonal=sqrt AVE/Fornell-Larcker). ** p<.01, * p<.05.",197.0
+R4,CORRELATIONS,S122,BI,EE,BI-EE,0.806,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,BI,FC,BI-FC,0.722,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,BI,PE,BI-PE,0.746,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,BI,SI,BI-SI,0.56,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,EE,FC,EE-FC,0.717,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,EE,PE,EE-PE,0.687,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,EE,SI,EE-SI,0.577,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,FC,PE,FC-PE,0.708,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,FC,SI,FC-SI,0.728,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S122,PE,SI,PE-SI,0.594,,direct,,,"Table 5 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). Mapped Performance expectancy->PE; Perceived usefulness excluded (redundant, both map to PE). HTMT (Table 6) not used.",842.0
+R4,CORRELATIONS,S062,ATT,EE,ATT-EE,0.208,,direct,,,Table 3 correlation matrix. Study reported significance at p<.05/p<.01; all mapped r (>=0.16) with N=729 are p<.01.,729.0
+R4,CORRELATIONS,S062,ATT,PE,ATT-PE,0.179,,direct,,,Table 3 correlation matrix. Study reported significance at p<.05/p<.01; all mapped r (>=0.16) with N=729 are p<.01.,729.0
+R4,CORRELATIONS,S062,ATT,UB,ATT-UB,0.322,,direct,,,Table 3 correlation matrix. Study reported significance at p<.05/p<.01; all mapped r (>=0.16) with N=729 are p<.01.,729.0
+R4,CORRELATIONS,S062,EE,PE,EE-PE,0.167,,direct,,,Table 3 correlation matrix. Study reported significance at p<.05/p<.01; all mapped r (>=0.16) with N=729 are p<.01.,729.0
+R4,CORRELATIONS,S062,EE,UB,EE-UB,0.494,,direct,,,Table 3 correlation matrix. Study reported significance at p<.05/p<.01; all mapped r (>=0.16) with N=729 are p<.01.,729.0
+R4,CORRELATIONS,S062,PE,UB,PE-UB,0.554,,direct,,,Table 3 correlation matrix. Study reported significance at p<.05/p<.01; all mapped r (>=0.16) with N=729 are p<.01.,729.0
+R4,CORRELATIONS,S129,BI,EE,BI-EE,0.243,0.243,beta,,,"Table 5 SEM path coefficient (PEOU->IU (H12)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,BI,PE,BI-PE,0.446,0.446,beta,,,"Table 5 SEM path coefficient (PU->IU (H10)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,BI,SI,BI-SI,-0.087,-0.087,beta,,,"Table 5 SEM path coefficient (SI->IU (H11)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,BI,UB,BI-UB,0.406,0.406,beta,,,"Table 5 SEM path coefficient (IU->AUB (H13)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,EE,FC,EE-FC,0.225,0.225,beta,,,"Table 5 SEM path coefficient (FC->PEOU (H4)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,EE,PE,EE-PE,0.467,0.467,beta,,,"Table 5 SEM path coefficient (PEOU->PU (H7)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,EE,SI,EE-SI,-0.064,-0.064,beta,,,"Table 5 SEM path coefficient (SI->PEOU (H1)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,EE,TRU,EE-TRU,0.354,0.354,beta,,,"Table 5 SEM path coefficient (TR->PEOU (H6)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S129,PE,SI,PE-SI,0.369,0.369,beta,,,"Table 5 SEM path coefficient (SI->PU (H8)). Table labels 'Unstandardised' but text reports as beta; value in [-1,1]. Raw value retained. HTMT (Table 4) not used; no Fornell-Larcker matrix tabulated.",300.0
+R4,CORRELATIONS,S205,BI,EE,BI-EE,0.539,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,BI,FC,BI-FC,0.623,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,BI,PE,BI-PE,0.729,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,BI,SI,BI-SI,0.55,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,EE,FC,EE-FC,0.822,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,EE,PE,EE-PE,0.463,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,EE,SI,EE-SI,0.442,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,FC,PE,FC-PE,0.465,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,FC,SI,FC-SI,0.531,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S205,PE,SI,PE-SI,0.541,,direct,,,Table 4 Discriminant Validity Index (Fornell-Larcker; off-diagonal correlation; diagonal=sqrt AVE).,136.0
+R4,CORRELATIONS,S126,BI,EE,BI-EE,0.58,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,BI,FC,BI-FC,0.511,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,BI,PE,BI-PE,0.757,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,BI,SI,BI-SI,0.483,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,BI,UB,BI-UB,0.613,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,EE,FC,EE-FC,0.662,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,EE,PE,EE-PE,0.55,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,EE,SI,EE-SI,0.381,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,EE,UB,EE-UB,0.498,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,FC,PE,FC-PE,0.543,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,FC,SI,FC-SI,0.283,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,FC,UB,FC-UB,0.432,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,PE,SI,PE-SI,0.584,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,PE,UB,PE-UB,0.534,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S126,SI,UB,SI-UB,0.359,,direct,,,Table 5 Fornell-Larcker criterion (off-diagonal correlation; diagonal=sqrt AVE).,194.0
+R4,CORRELATIONS,S115,ATT,BI,ATT-BI,0.78,,direct,,,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,112.0
+R4,CORRELATIONS,S115,ATT,EE,ATT-EE,0.79,,direct,,,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,112.0
+R4,CORRELATIONS,S115,ATT,PE,ATT-PE,0.74,,direct,,,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,112.0
+R4,CORRELATIONS,S115,BI,EE,BI-EE,0.68,,direct,,,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,112.0
+R4,CORRELATIONS,S115,BI,PE,BI-PE,0.62,,direct,,,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,112.0
+R4,CORRELATIONS,S115,EE,PE,EE-PE,0.62,,direct,,,Figure 2 category-wise correlation matrix (Pearson correlation between constructs).,112.0
+R4,CORRELATIONS,S029,BI,EE,BI-EE,0.488,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,BI,PE,BI-PE,0.665,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,BI,SI,BI-SI,0.435,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,BI,TRU,BI-TRU,0.284,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,EE,PE,EE-PE,0.706,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,EE,SI,EE-SI,0.335,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,EE,TRU,EE-TRU,0.247,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,PE,SI,PE-SI,0.472,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,PE,TRU,PE-TRU,0.301,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S029,SI,TRU,SI-TRU,0.281,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used per project rule.,411.0
+R4,CORRELATIONS,S139,BI,EE,BI-EE,0.578,,direct,,,Table 4 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of use->our EE; 'PUSE'=Perceived Usefulness->our PE. HTMT (Table 3) not used.,435.0
+R4,CORRELATIONS,S139,BI,PE,BI-PE,0.356,,direct,,,Table 4 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of use->our EE; 'PUSE'=Perceived Usefulness->our PE. HTMT (Table 3) not used.,435.0
+R4,CORRELATIONS,S139,BI,TRU,BI-TRU,0.515,,direct,,,Table 4 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of use->our EE; 'PUSE'=Perceived Usefulness->our PE. HTMT (Table 3) not used.,435.0
+R4,CORRELATIONS,S139,EE,PE,EE-PE,0.433,,direct,,,Table 4 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of use->our EE; 'PUSE'=Perceived Usefulness->our PE. HTMT (Table 3) not used.,435.0
+R4,CORRELATIONS,S139,EE,TRU,EE-TRU,0.454,,direct,,,Table 4 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of use->our EE; 'PUSE'=Perceived Usefulness->our PE. HTMT (Table 3) not used.,435.0
+R4,CORRELATIONS,S139,PE,TRU,PE-TRU,0.377,,direct,,,Table 4 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of use->our EE; 'PUSE'=Perceived Usefulness->our PE. HTMT (Table 3) not used.,435.0
+R4,CORRELATIONS,S036,ANX,BI,ANX-BI,-0.336,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,ANX,EE,ANX-EE,-0.321,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,ANX,PE,ANX-PE,-0.366,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,ANX,SE,ANX-SE,-0.318,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,ANX,SI,ANX-SI,-0.374,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,ANX,TRU,ANX-TRU,-0.26,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,BI,EE,BI-EE,0.689,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,BI,PE,BI-PE,0.678,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,BI,SE,BI-SE,0.586,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,BI,SI,BI-SI,0.511,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,BI,TRU,BI-TRU,0.535,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,EE,PE,EE-PE,0.566,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,EE,SE,EE-SE,0.46,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,EE,SI,EE-SI,0.427,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,EE,TRU,EE-TRU,0.419,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,PE,SE,PE-SE,0.377,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,PE,SI,PE-SI,0.535,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,PE,TRU,PE-TRU,0.537,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,SE,SI,SE-SI,0.51,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,SE,TRU,SE-TRU,0.333,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S036,SI,TRU,SI-TRU,0.43,,direct,,,Fornell-Larcker matrix (off-diagonal correlation; diagonal=sqrt AVE). HTMT not used per project rule.,480.0
+R4,CORRELATIONS,S061,BI,EE,BI-EE,0.103,,direct,,,Table 5 Fornell-Larcker. WARNING: matrix IDENTICAL to S159 (Lai et al. 2024) - likely duplicate/fabricated data.,473.0
+R4,CORRELATIONS,S061,BI,PE,BI-PE,0.127,,direct,,,Table 5 Fornell-Larcker. WARNING: matrix IDENTICAL to S159 (Lai et al. 2024) - likely duplicate/fabricated data.,473.0
+R4,CORRELATIONS,S061,BI,SI,BI-SI,0.053,,direct,,,Table 5 Fornell-Larcker. WARNING: matrix IDENTICAL to S159 (Lai et al. 2024) - likely duplicate/fabricated data.,473.0
+R4,CORRELATIONS,S061,EE,PE,EE-PE,0.139,,direct,,,Table 5 Fornell-Larcker. WARNING: matrix IDENTICAL to S159 (Lai et al. 2024) - likely duplicate/fabricated data.,473.0
+R4,CORRELATIONS,S061,EE,SI,EE-SI,0.02,,direct,,,Table 5 Fornell-Larcker. WARNING: matrix IDENTICAL to S159 (Lai et al. 2024) - likely duplicate/fabricated data.,473.0
+R4,CORRELATIONS,S061,PE,SI,PE-SI,0.154,,direct,,,Table 5 Fornell-Larcker. WARNING: matrix IDENTICAL to S159 (Lai et al. 2024) - likely duplicate/fabricated data.,473.0
+R4,CORRELATIONS,S203,BI,EE,BI-EE,0.363,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,BI,PE,BI-PE,0.409,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,BI,SE,BI-SE,0.349,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,BI,TRU,BI-TRU,0.342,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,EE,PE,EE-PE,0.367,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,EE,SE,EE-SE,0.549,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,EE,TRU,EE-TRU,0.42,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,PE,SE,PE-SE,0.309,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,PE,TRU,PE-TRU,0.437,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S203,SE,TRU,SE-TRU,0.431,,direct,,,Table 8 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE; all mapped pairs *** p<.001).,303.0
+R4,CORRELATIONS,S179,BI,EE,BI-EE,0.23,0.23,beta,,,"Table 5 path coefficient (EE->BI, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",543.0
+R4,CORRELATIONS,S179,BI,PE,BI-PE,0.504,0.504,beta,,,"Table 5 path coefficient (PE->BI, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",543.0
+R4,CORRELATIONS,S179,BI,SI,BI-SI,0.192,0.192,beta,,,"Table 5 path coefficient (SI->BI, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",543.0
+R4,CORRELATIONS,S179,BI,UB,BI-UB,0.61,0.61,beta,,,"Table 5 path coefficient (BI->UB, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",543.0
+R4,CORRELATIONS,S179,FC,UB,FC-UB,0.171,0.171,beta,,,"Table 5 path coefficient (FC->UB, beta), Poland subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",543.0
+R4,CORRELATIONS,S138,ATT,BI,ATT-BI,0.766,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,ATT,EE,ATT-EE,0.707,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,ATT,PE,ATT-PE,0.735,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,ATT,SE,ATT-SE,0.534,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,ATT,SI,ATT-SI,0.557,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,ATT,TRU,ATT-TRU,0.687,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,ATT,UB,ATT-UB,0.552,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,BI,EE,BI-EE,0.686,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,BI,PE,BI-PE,0.733,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,BI,SE,BI-SE,0.469,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,BI,SI,BI-SI,0.561,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,BI,TRU,BI-TRU,0.763,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,BI,UB,BI-UB,0.602,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,EE,PE,EE-PE,0.73,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,EE,SE,EE-SE,0.662,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,EE,SI,EE-SI,0.57,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,EE,TRU,EE-TRU,0.719,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,EE,UB,EE-UB,0.582,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,PE,SE,PE-SE,0.584,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,PE,SI,PE-SI,0.516,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,PE,TRU,PE-TRU,0.681,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,PE,UB,PE-UB,0.592,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,SE,SI,SE-SI,0.593,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,SE,TRU,SE-TRU,0.521,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,SE,UB,SE-UB,0.524,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,SI,TRU,SI-TRU,0.572,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,SI,UB,SI-UB,0.403,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S138,TRU,UB,TRU-UB,0.597,,direct,,,Table 5 Fornell-Larcker. NOTE: paper 'PE'=Perceived Ease of Use->EE; 'PU'=Perceived Usefulness->PE; ST=Students' Trust->TRU. HTMT (Table 6) not used.,200.0
+R4,CORRELATIONS,S128,BI,EE,BI-EE,0.829,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,BI,FC,BI-FC,-0.216,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,BI,PE,BI-PE,0.124,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,BI,SI,BI-SI,0.357,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,BI,UB,BI-UB,0.432,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,EE,FC,EE-FC,-0.121,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,EE,PE,EE-PE,0.007,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,EE,SI,EE-SI,0.374,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,EE,UB,EE-UB,0.378,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,FC,PE,FC-PE,-0.065,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,FC,SI,FC-SI,-0.063,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,FC,UB,FC-UB,-0.101,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,PE,SI,PE-SI,-0.22,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,PE,UB,PE-UB,0.074,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S128,SI,UB,SI-UB,0.385,,direct,,,Table 3 Fornell-Larcker (off-diagonal correlation; diagonal=sqrt AVE). HTMT (Table 4) not used. Special population (visually impaired students); FC negatively correlated.,395.0
+R4,CORRELATIONS,S152,ATT,BI,ATT-BI,0.156,0.156,beta,,,"Table 3 SEM path coefficient (AT->BI, beta). Raw beta retained. No correlation matrix reported (FL mentioned but not tabulated).",604.0
+R4,CORRELATIONS,S152,BI,PE,BI-PE,0.057,0.057,beta,,,"Table 3 SEM path coefficient (PU->BI, beta). Raw beta retained. No correlation matrix reported (FL mentioned but not tabulated).",604.0
+R4,CORRELATIONS,S152,BI,SE,BI-SE,0.107,0.107,beta,,,"Table 3 SEM path coefficient (CON->BI, beta). Raw beta retained. No correlation matrix reported (FL mentioned but not tabulated).",604.0
+R4,CORRELATIONS,S113,BI,EE,BI-EE,0.398,0.398,beta,,,"Table 7 PLS-SEM path coefficient (PEU->IU (H6), beta). Raw beta retained. No correlation matrix (HTMT only, Table 5, excluded).",118.0
+R4,CORRELATIONS,S113,BI,PE,BI-PE,0.484,0.484,beta,,,"Table 7 PLS-SEM path coefficient (PU->IU (H5), beta). Raw beta retained. No correlation matrix (HTMT only, Table 5, excluded).",118.0
+R4,CORRELATIONS,S113,EE,SE,EE-SE,0.497,0.497,beta,,,"Table 7 PLS-SEM path coefficient (SE->PEU (H4), beta). Raw beta retained. No correlation matrix (HTMT only, Table 5, excluded).",118.0
+R4,CORRELATIONS,S070,BI,EE,BI-EE,-0.058,-0.058,beta,,,"Table 3 standardized path coefficient (EE->BI, ns).",245.0
+R4,CORRELATIONS,S070,BI,PE,BI-PE,0.228,0.228,beta,,,Table 3 standardized path coefficient (PE->BI).,245.0
+R4,CORRELATIONS,S070,BI,SI,BI-SI,0.566,0.566,beta,,,Table 3 standardized path coefficient (SI->BI).,245.0
+R4,CORRELATIONS,S070,BI,UB,BI-UB,0.777,0.777,beta,,,Table 3 standardized path coefficient (BI->UB).,245.0
+R4,CORRELATIONS,S070,EE,FC,EE-FC,0.576,,direct,,,"Section 7.3.2 latent variable correlation among exogenous (significant per 7.3.3, p<.05).",245.0
+R4,CORRELATIONS,S070,EE,PE,EE-PE,0.502,,direct,,,"Section 7.3.2 latent variable correlation among exogenous (significant per 7.3.3, p<.05).",245.0
+R4,CORRELATIONS,S070,EE,SI,EE-SI,0.84,,direct,,,"Section 7.3.2 latent variable correlation among exogenous (significant per 7.3.3, p<.05).",245.0
+R4,CORRELATIONS,S070,FC,PE,FC-PE,0.346,,direct,,,"Section 7.3.2 latent variable correlation among exogenous (significant per 7.3.3, p<.05).",245.0
+R4,CORRELATIONS,S070,FC,SI,FC-SI,0.611,,direct,,,"Section 7.3.2 latent variable correlation among exogenous (significant per 7.3.3, p<.05).",245.0
+R4,CORRELATIONS,S070,FC,UB,FC-UB,0.11,0.11,beta,,,Table 3 standardized path coefficient (FC->UB).,245.0
+R4,CORRELATIONS,S070,PE,SI,PE-SI,0.471,,direct,,,"Section 7.3.2 latent variable correlation among exogenous (significant per 7.3.3, p<.05).",245.0
+R4,CORRELATIONS,S140,BI,TRU,BI-TRU,0.495,,direct,,,"Section 4.3 Pearson correlation between trust (TRfs) and behavioral intention (BIfs); r=0.495, p<.001, N=823. Other predictors are demographics (not mappable).",823.0
+R4,CORRELATIONS,S200,BI,EE,BI-EE,0.156,0.156,beta,,,Table 6 PLS-SEM standardized path coefficient (EE->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,431.0
+R4,CORRELATIONS,S200,BI,FC,BI-FC,-0.122,-0.122,beta,,,Table 6 PLS-SEM standardized path coefficient (FC->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,431.0
+R4,CORRELATIONS,S200,BI,PE,BI-PE,0.395,0.395,beta,,,Table 6 PLS-SEM standardized path coefficient (PE->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,431.0
+R4,CORRELATIONS,S200,BI,SI,BI-SI,0.036,0.036,beta,,,Table 6 PLS-SEM standardized path coefficient (SI->BI). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,431.0
+R4,CORRELATIONS,S200,BI,UB,BI-UB,0.341,0.341,beta,,,Table 6 PLS-SEM standardized path coefficient (BI->USE). Raw beta retained. No correlation matrix (discriminant validity via cross-loadings only).,431.0
+R4,CORRELATIONS,S179b,BI,EE,BI-EE,0.013,0.013,beta,,,"Table 5 path coefficient (EE->BI, beta), Egypt subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",385.0
+R4,CORRELATIONS,S179b,BI,PE,BI-PE,0.285,0.285,beta,,,"Table 5 path coefficient (PE->BI, beta), Egypt subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",385.0
+R4,CORRELATIONS,S179b,BI,SI,BI-SI,0.398,0.398,beta,,,"Table 5 path coefficient (SI->BI, beta), Egypt subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",385.0
+R4,CORRELATIONS,S179b,BI,UB,BI-UB,0.338,0.338,beta,,,"Table 5 path coefficient (BI->UB, beta), Egypt subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",385.0
+R4,CORRELATIONS,S179b,FC,UB,FC-UB,0.206,0.206,beta,,,"Table 5 path coefficient (FC->UB, beta), Egypt subsample. Raw beta retained. No correlation matrix (HTMT only, excluded).",385.0

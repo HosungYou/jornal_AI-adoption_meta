@@ -13,24 +13,24 @@
       "voice_keeper",
       "venue_strategist"
     ],
-    "currentBlocker": "A post-freeze 15-row S009/S010 beta/path exception-correction layer was created on 2026-06-11 without editing frozen reference files, but full-corpus M1-R remains blocked until the Step 5 scoring workflow explicitly consumes the layer. The layer excludes S009 raw-beta-confirmed contract caveats from the generic full-accuracy denominator, holds S009 FC-UB for manual source/reference adjudication, allows two S010 rows only under contract-aware converted-effect scoring, and excludes four S010 rows pending explicit structural path evidence or reference correction.",
-    "nextAction": "Wire the beta/path exception-correction layer into the Step 5 scoring workflow or scorer wrapper, then verify that affected S009/S010 rows are excluded or contract-aware-scored before any larger M1-R shard is run or interpreted.",
-    "resumeHint": "Continue after the 2026-06-11 beta/path exception-correction layer: full-corpus M1-R is still blocked. Next gate is wiring the layer into the Step 5 scoring workflow or scorer wrapper before any larger shard.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_EXCEPTION_CORRECTION_LAYER_20260611.md"
+    "currentBlocker": "The earlier 20260612 analytic input was not the full latest human workbook universe. Latest R1-R4 workbook extraction yields 3,654 numeric target-construct rows, 181 studies, and 45/45 full10 pair coverage, but still 0 full10 complete-case studies. Partial-matrix TSSEM still fails, while reduced trust6 complete-case MASEM converges at Stage 1 and Stage 2 with 8 positive-definite complete-case studies. PDF/source audit supports the trust6 complete-case coded values in local PDFs/source packets.",
+    "nextAction": "Rebuild Paper A analytic input from latest human workbook values with explicit inclusion/provenance rules, then decide whether to report full10 as theory target plus trust6 reduced diagnostic/sensitivity, or perform further source-level densification before primary full10 MASEM claims.",
+    "resumeHint": "Continue after the 2026-06-14 latest-human-workbook recheck: provided Drive folder is not the final source by itself; latest local R1-R4 copies restore full10 pair coverage to 45/45; full10 still has 0 complete-case studies; trust6 complete-case Stage 1 and Stage 2 converged and its values have local PDF/source support.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_summary_20260612.csv"
   },
   "workingState": {
-    "currentGoal": "Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.",
-    "currentBlocker": "A post-freeze 15-row S009/S010 beta/path exception-correction layer was created on 2026-06-11 without editing frozen reference files, but full-corpus M1-R remains blocked until the Step 5 scoring workflow explicitly consumes the layer. The layer excludes S009 raw-beta-confirmed contract caveats from the generic full-accuracy denominator, holds S009 FC-UB for manual source/reference adjudication, allows two S010 rows only under contract-aware converted-effect scoring, and excludes four S010 rows pending explicit structural path evidence or reference correction.",
-    "nextAction": "Wire the beta/path exception-correction layer into the Step 5 scoring workflow or scorer wrapper, then verify that affected S009/S010 rows are excluded or contract-aware-scored before any larger M1-R shard is run or interpreted.",
+    "currentGoal": "Correct Paper A MASEM execution state after latest-human-workbook, Drive, SSD, Git, and PDF/source recheck.",
+    "currentBlocker": "The earlier 20260612 analytic input was not the full latest human workbook universe. Latest R1-R4 workbook extraction yields 3,654 numeric target-construct rows, 181 studies, and 45/45 full10 pair coverage, but still 0 full10 complete-case studies. Partial-matrix TSSEM still fails, while reduced trust6 complete-case MASEM converges at Stage 1 and Stage 2 with 8 positive-definite complete-case studies. PDF/source audit supports the trust6 complete-case coded values in local PDFs/source packets.",
+    "nextAction": "Rebuild Paper A analytic input from latest human workbook values with explicit inclusion/provenance rules, then decide whether to report full10 as theory target plus trust6 reduced diagnostic/sensitivity, or perform further source-level densification before primary full10 MASEM claims.",
     "openQuestions": [
-      "Should the next scorer-wrapper implementation only annotate/exclude affected beta/path rows, or should it also compute contract-aware converted-effect scoring for eligible S010 rows in the same pass?"
+      "Should Paper A keep full10 as the primary theory target while reporting trust6 as a reduced diagnostic/sensitivity result, or should final submission wait for additional source-level matrix densification toward full10?"
     ],
     "activeModes": [
       "explore"
     ],
-    "resumeHint": "Continue after the 2026-06-11 beta/path exception-correction layer: full-corpus M1-R is still blocked. Next gate is wiring the layer into the Step 5 scoring workflow or scorer wrapper before any larger shard.",
-    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/FULL_CORPUS_M1_R_BETA_PATH_EXCEPTION_CORRECTION_LAYER_20260611.md",
-    "lastUpdatedAt": "2026-06-11T01:45:00Z"
+    "resumeHint": "Continue after the 2026-06-14 latest-human-workbook recheck: provided Drive folder is not the final source by itself; latest local R1-R4 copies restore full10 pair coverage to 45/45; full10 still has 0 complete-case studies; trust6 complete-case Stage 1 and Stage 2 converged and its values have local PDF/source support.",
+    "researchSpecificationArtifact": "data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_summary_20260612.csv",
+    "lastUpdatedAt": "2026-06-13T19:57:35.617Z"
   },
   "inferredHypotheses": [],
   "openTensions": [
@@ -370,9 +370,323 @@
       "summary": "Created the post-freeze S009/S010 beta/path exception-correction layer; full-corpus M1-R remains blocked until Step 5 scoring consumes the layer.",
       "selectedOption": "wire_exception_layer_into_scorer_before_m1_r",
       "rationale": "The layer preserves frozen reference files while making scoring eligibility explicit: eight S009 raw-beta-confirmed rows are excluded from the generic full-accuracy denominator, S009 FC-UB is held for manual source/reference adjudication, two S010 contract-pass rows are eligible only under contract-aware converted-effect scoring after the layer is consumed, and four S010 rows remain excluded pending explicit structural path evidence or reference correction."
+    },
+    {
+      "id": "decision_mqaa6azs_mc3qnt",
+      "timestamp": "2026-06-12T02:01:42.951Z",
+      "checkpointKey": "panel_next_decision",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Panel follow-up decision: Revise before proceeding",
+      "selectedOption": "revise",
+      "selectedOptions": [
+        "revise"
+      ],
+      "rationale": "The current target-journal shells do not yet contain claim-carrying table/figure spines. The next step is to revise the manuscript architecture around empirical evidence, analysis gates, and submission-grade tables/figures before treating the drafts as full manuscripts."
+    },
+    {
+      "id": "decision_mqaoesw4_9lpjtv",
+      "timestamp": "2026-06-12T08:40:14.019Z",
+      "checkpointKey": "panel_next_decision",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Panel follow-up decision: Gather or verify evidence first",
+      "selectedOption": "evidence",
+      "selectedOptions": [
+        "evidence"
+      ],
+      "rationale": "The researcher instructed that the remaining questions must be answered from first-pass analyses rather than assumption or prose-only judgment.\nResearcher requested initial data analyses for Paper A moderator feasibility, Paper B cross-model disagreement triage, and Paper B broader TSSEM/MASEM feasibility before further decisions."
+    },
+    {
+      "id": "decision_mqaoydxx_d03ztl",
+      "timestamp": "2026-06-12T08:55:27.764Z",
+      "checkpointKey": "panel_disagreement_resolution",
+      "level": "adaptive_required",
+      "mode": "commit",
+      "summary": "Answered Post-analysis route checkpoint: Proceed with an explicit trace",
+      "commitmentFamily": "method",
+      "epistemicBasis": "mixed",
+      "selectedOption": "proceed_with_trace",
+      "selectedOptions": [
+        "proceed_with_trace"
+      ],
+      "rationale": "Proceed with explicit trace, corrected by researcher clarification: Trust, anxiety, and self-efficacy are not moderators; they are candidate mediator/mechanism constructs inside the Paper A MASEM path model. Paper A moderator reporting remains ai_type main and common_method_bias QC/sensitivity unless later changed. Paper B RQ3/RQ4 bounded route remains as analyzed."
     }
   ],
-  "invocationLog": [],
+  "invocationLog": [
+    {
+      "id": "invocation_record_mqa9xcra_fuvio1",
+      "createdAt": "2026-06-12T01:54:45.334Z",
+      "updatedAt": "2026-06-12T02:01:42.952Z",
+      "intent": {
+        "id": "invocation_mqa9xcra_nua4qf",
+        "kind": "panel",
+        "mode": "critique",
+        "prompt": "LongTable project context\nproject: AI Adoption Meta-Analysis Methodology Strategy\ncurrent session goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.\ncurrent blocker: A post-freeze 15-row S009/S010 beta/path exception-correction layer was created on 2026-06-11 without editing frozen reference files, but full-corpus M1-R remains blocked until the Step 5 scoring workflow explicitly consumes the layer. The layer excludes S009 raw-beta-confirmed contract caveats from the generic full-accuracy denominator, holds S009 FC-UB for manual source/reference adjudication, allows two S010 rows only under contract-aware converted-effect scoring, and excludes four S010 rows pending explicit structural path evidence or reference correction.\nrequested perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist\ndisagreement preference: show_on_conflict\n\nThe researcher rejected the current Paper A/B target-journal manuscript shells because the promised table/figure spine was not reflected and the tables/figures have little manuscript value. Review the current repository state for Paper A and Paper B. Critique what is missing for a full submission-ready manuscript, especially: (1) target-journal fit; (2) empirical analysis gates; (3) table spine that actually carries claims; (4) figure spine that actually carries claims; (5) Paper A 10-construct TSSEM/OSMASEM readiness; (6) Paper B post-freeze 213-study full-corpus M1-R/Step 5 gate; (7) downstream MASEM/TSSEM substitution diagnostics; (8) team-writing boundaries for Literature Review and Discussion; and (9) precise researcher decisions needed before execution. Output role-specific objections, conflicts, recommended goal plan, and prioritized questions. Do not collapse disagreement early. Do not claim final estimates exist unless repository evidence supports it.",
+        "roles": [
+          "reviewer",
+          "methods_critic",
+          "measurement_auditor",
+          "ethics_reviewer",
+          "voice_keeper",
+          "venue_strategist"
+        ],
+        "provider": "codex",
+        "requestedSurface": "native_workers",
+        "visibility": "always_visible",
+        "checkpointSensitivity": "high",
+        "rationale": [
+          "Option A uses provider-neutral panel semantics before native provider orchestration.",
+          "LongTable-native workers may execute role passes through durable worker state; outputs must normalize back to this PanelResult, and bridge failure must be reported separately from any later sequential fallback.",
+          "Sequential fallback remains the ordinary degradation path, but it is not treated as executed merely because a native-worker bridge request failed.",
+          "The panel is constrained by explicitly requested roles."
+        ]
+      },
+      "status": "planned",
+      "provider": "codex",
+      "surface": "native_workers",
+      "interactionDepth": "independent",
+      "panelPlan": {
+        "id": "panel_plan_mqa9xcra_887j5w",
+        "createdAt": "2026-06-12T01:54:45.334Z",
+        "mode": "critique",
+        "prompt": "LongTable project context\nproject: AI Adoption Meta-Analysis Methodology Strategy\ncurrent session goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.\ncurrent blocker: A post-freeze 15-row S009/S010 beta/path exception-correction layer was created on 2026-06-11 without editing frozen reference files, but full-corpus M1-R remains blocked until the Step 5 scoring workflow explicitly consumes the layer. The layer excludes S009 raw-beta-confirmed contract caveats from the generic full-accuracy denominator, holds S009 FC-UB for manual source/reference adjudication, allows two S010 rows only under contract-aware converted-effect scoring, and excludes four S010 rows pending explicit structural path evidence or reference correction.\nrequested perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist\ndisagreement preference: show_on_conflict\n\nThe researcher rejected the current Paper A/B target-journal manuscript shells because the promised table/figure spine was not reflected and the tables/figures have little manuscript value. Review the current repository state for Paper A and Paper B. Critique what is missing for a full submission-ready manuscript, especially: (1) target-journal fit; (2) empirical analysis gates; (3) table spine that actually carries claims; (4) figure spine that actually carries claims; (5) Paper A 10-construct TSSEM/OSMASEM readiness; (6) Paper B post-freeze 213-study full-corpus M1-R/Step 5 gate; (7) downstream MASEM/TSSEM substitution diagnostics; (8) team-writing boundaries for Literature Review and Discussion; and (9) precise researcher decisions needed before execution. Output role-specific objections, conflicts, recommended goal plan, and prioritized questions. Do not collapse disagreement early. Do not claim final estimates exist unless repository evidence supports it.",
+        "members": [
+          {
+            "role": "reviewer",
+            "label": "Reviewer",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "methods_critic",
+            "label": "Methods Critic",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "measurement_auditor",
+            "label": "Measurement Auditor",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "ethics_reviewer",
+            "label": "Ethics Reviewer",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "voice_keeper",
+            "label": "Voice Keeper",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "venue_strategist",
+            "label": "Venue Strategist",
+            "reason": "explicitly requested",
+            "required": true
+          }
+        ],
+        "visibility": "always_visible",
+        "preferredSurface": "native_workers",
+        "fallbackSurface": "sequential_fallback",
+        "checkpointSensitivity": "high",
+        "rationale": [
+          "Option A uses provider-neutral panel semantics before native provider orchestration.",
+          "LongTable-native workers may execute role passes through durable worker state; outputs must normalize back to this PanelResult, and bridge failure must be reported separately from any later sequential fallback.",
+          "Sequential fallback remains the ordinary degradation path, but it is not treated as executed merely because a native-worker bridge request failed.",
+          "The panel is constrained by explicitly requested roles."
+        ]
+      },
+      "panelResult": {
+        "id": "panel_result_mqa9xcra_el29hl",
+        "planId": "panel_plan_mqa9xcra_887j5w",
+        "createdAt": "2026-06-12T01:54:45.334Z",
+        "updatedAt": "2026-06-12T02:01:42.952Z",
+        "provider": "codex",
+        "surface": "native_workers",
+        "status": "planned",
+        "interactionDepth": "independent",
+        "memberResults": [
+          {
+            "role": "reviewer",
+            "label": "Reviewer",
+            "status": "planned"
+          },
+          {
+            "role": "methods_critic",
+            "label": "Methods Critic",
+            "status": "planned"
+          },
+          {
+            "role": "measurement_auditor",
+            "label": "Measurement Auditor",
+            "status": "planned"
+          },
+          {
+            "role": "ethics_reviewer",
+            "label": "Ethics Reviewer",
+            "status": "planned"
+          },
+          {
+            "role": "voice_keeper",
+            "label": "Voice Keeper",
+            "status": "planned"
+          },
+          {
+            "role": "venue_strategist",
+            "label": "Venue Strategist",
+            "status": "planned"
+          }
+        ],
+        "linkedQuestionRecordIds": [
+          "question_record_mqa9xcra_i8ev41"
+        ],
+        "linkedDecisionRecordIds": [
+          "decision_mqaa6azs_mc3qnt"
+        ]
+      },
+      "degradationReason": "LongTable-native panel workers are optional; bridge failure is reported explicitly, and sequential_fallback remains available only when it is deliberately executed."
+    },
+    {
+      "id": "invocation_record_mqaa6irq_x3ywhd",
+      "createdAt": "2026-06-12T02:01:53.030Z",
+      "updatedAt": "2026-06-12T08:40:14.020Z",
+      "intent": {
+        "id": "invocation_mqaa6irq_2lywli",
+        "kind": "panel",
+        "mode": "critique",
+        "prompt": "LongTable project context\nproject: AI Adoption Meta-Analysis Methodology Strategy\ncurrent session goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.\ncurrent blocker: A post-freeze 15-row S009/S010 beta/path exception-correction layer was created on 2026-06-11 without editing frozen reference files, but full-corpus M1-R remains blocked until the Step 5 scoring workflow explicitly consumes the layer. The layer excludes S009 raw-beta-confirmed contract caveats from the generic full-accuracy denominator, holds S009 FC-UB for manual source/reference adjudication, allows two S010 rows only under contract-aware converted-effect scoring, and excludes four S010 rows pending explicit structural path evidence or reference correction.\nrequested perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist\ndisagreement preference: show_on_conflict\n\nThe researcher rejected the current Paper A/B target-journal manuscript shells because the promised table/figure spine was not reflected and the tables/figures have little manuscript value. Produce a LongTable panel critique and goal-ready plan for full manuscript value. Preserve disagreement. Focus on empirical analysis gates, claim-carrying tables/figures, Paper A 10-construct TSSEM/OSMASEM readiness, Paper B post-freeze 213-study full-corpus M1-R/Step 5, downstream substitution diagnostics, team writing boundaries, and precise researcher questions.",
+        "roles": [
+          "reviewer",
+          "methods_critic",
+          "measurement_auditor",
+          "ethics_reviewer",
+          "voice_keeper",
+          "venue_strategist"
+        ],
+        "provider": "codex",
+        "requestedSurface": "sequential_fallback",
+        "visibility": "always_visible",
+        "checkpointSensitivity": "high",
+        "rationale": [
+          "Option A uses provider-neutral panel semantics before native provider orchestration.",
+          "Sequential fallback is the stable execution path for both Claude Code and Codex.",
+          "Sequential fallback remains the ordinary degradation path, but it is not treated as executed merely because a native-worker bridge request failed.",
+          "The panel is constrained by explicitly requested roles."
+        ]
+      },
+      "status": "planned",
+      "provider": "codex",
+      "surface": "sequential_fallback",
+      "interactionDepth": "independent",
+      "panelPlan": {
+        "id": "panel_plan_mqaa6irq_gzddin",
+        "createdAt": "2026-06-12T02:01:53.029Z",
+        "mode": "critique",
+        "prompt": "LongTable project context\nproject: AI Adoption Meta-Analysis Methodology Strategy\ncurrent session goal: Execute post-freeze Step 5 Paper B/C model/procedure validation from the frozen 213-study source-anchored reference standard while preserving leakage boundaries and caveats.\ncurrent blocker: A post-freeze 15-row S009/S010 beta/path exception-correction layer was created on 2026-06-11 without editing frozen reference files, but full-corpus M1-R remains blocked until the Step 5 scoring workflow explicitly consumes the layer. The layer excludes S009 raw-beta-confirmed contract caveats from the generic full-accuracy denominator, holds S009 FC-UB for manual source/reference adjudication, allows two S010 rows only under contract-aware converted-effect scoring, and excludes four S010 rows pending explicit structural path evidence or reference correction.\nrequested perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist\ndisagreement preference: show_on_conflict\n\nThe researcher rejected the current Paper A/B target-journal manuscript shells because the promised table/figure spine was not reflected and the tables/figures have little manuscript value. Produce a LongTable panel critique and goal-ready plan for full manuscript value. Preserve disagreement. Focus on empirical analysis gates, claim-carrying tables/figures, Paper A 10-construct TSSEM/OSMASEM readiness, Paper B post-freeze 213-study full-corpus M1-R/Step 5, downstream substitution diagnostics, team writing boundaries, and precise researcher questions.",
+        "members": [
+          {
+            "role": "reviewer",
+            "label": "Reviewer",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "methods_critic",
+            "label": "Methods Critic",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "measurement_auditor",
+            "label": "Measurement Auditor",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "ethics_reviewer",
+            "label": "Ethics Reviewer",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "voice_keeper",
+            "label": "Voice Keeper",
+            "reason": "explicitly requested",
+            "required": true
+          },
+          {
+            "role": "venue_strategist",
+            "label": "Venue Strategist",
+            "reason": "explicitly requested",
+            "required": true
+          }
+        ],
+        "visibility": "always_visible",
+        "preferredSurface": "sequential_fallback",
+        "fallbackSurface": "sequential_fallback",
+        "checkpointSensitivity": "high",
+        "rationale": [
+          "Option A uses provider-neutral panel semantics before native provider orchestration.",
+          "Sequential fallback is the stable execution path for both Claude Code and Codex.",
+          "Sequential fallback remains the ordinary degradation path, but it is not treated as executed merely because a native-worker bridge request failed.",
+          "The panel is constrained by explicitly requested roles."
+        ]
+      },
+      "panelResult": {
+        "id": "panel_result_mqaa6irq_xn6gyx",
+        "planId": "panel_plan_mqaa6irq_gzddin",
+        "createdAt": "2026-06-12T02:01:53.030Z",
+        "updatedAt": "2026-06-12T08:40:14.020Z",
+        "provider": "codex",
+        "surface": "sequential_fallback",
+        "status": "planned",
+        "interactionDepth": "independent",
+        "memberResults": [
+          {
+            "role": "reviewer",
+            "label": "Reviewer",
+            "status": "planned"
+          },
+          {
+            "role": "methods_critic",
+            "label": "Methods Critic",
+            "status": "planned"
+          },
+          {
+            "role": "measurement_auditor",
+            "label": "Measurement Auditor",
+            "status": "planned"
+          },
+          {
+            "role": "ethics_reviewer",
+            "label": "Ethics Reviewer",
+            "status": "planned"
+          },
+          {
+            "role": "voice_keeper",
+            "label": "Voice Keeper",
+            "status": "planned"
+          },
+          {
+            "role": "venue_strategist",
+            "label": "Venue Strategist",
+            "status": "planned"
+          }
+        ],
+        "linkedQuestionRecordIds": [
+          "question_record_mqaa6irq_kns0lg"
+        ],
+        "linkedDecisionRecordIds": [
+          "decision_mqaoesw4_9lpjtv"
+        ]
+      },
+      "degradationReason": "Sequential fallback is the stable LongTable panel surface."
+    }
+  ],
   "questionLog": [
     {
       "id": "question_record_mpkj2i67_dqbwxp",
@@ -1320,6 +1634,202 @@
         "surface": "numbered"
       },
       "decisionRecordId": "decision_mq78om5r_xs4iuk"
+    },
+    {
+      "id": "question_record_mqa9xcra_i8ev41",
+      "createdAt": "2026-06-12T01:54:45.334Z",
+      "updatedAt": "2026-06-12T02:01:42.951Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mqa9xcra_2wx37k",
+        "checkpointKey": "panel_next_decision",
+        "title": "Panel follow-up decision",
+        "question": "What should LongTable treat as the next human decision after this panel review?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise before proceeding",
+            "description": "Use the panel result to revise the claim, design, or draft first."
+          },
+          {
+            "value": "evidence",
+            "label": "Gather or verify evidence first",
+            "description": "Do not proceed until the relevant evidence or citation support is checked."
+          },
+          {
+            "value": "proceed",
+            "label": "Proceed with current direction",
+            "description": "Accept the risk profile and continue with the current direction."
+          },
+          {
+            "value": "defer",
+            "label": "Keep this open",
+            "description": "Do not commit yet; keep the panel issue visible as an open tension."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "runtime_guidance",
+        "rationale": [
+          "Panel review creates disagreement or risk visibility that should connect to an explicit researcher decision.",
+          "Panel checkpoint sensitivity: high."
+        ],
+        "displayReason": "Panel review can surface role disagreement that should not be collapsed without researcher approval.",
+        "preferredSurfaces": [
+          "mcp_elicitation",
+          "numbered"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mqa9xcra_2wx37k",
+        "selectedValues": [
+          "revise"
+        ],
+        "selectedLabels": [
+          "Revise before proceeding"
+        ],
+        "rationale": "The current target-journal shells do not yet contain claim-carrying table/figure spines. The next step is to revise the manuscript architecture around empirical evidence, analysis gates, and submission-grade tables/figures before treating the drafts as full manuscripts.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mqaa6azs_mc3qnt"
+    },
+    {
+      "id": "question_record_mqaa6irq_kns0lg",
+      "createdAt": "2026-06-12T02:01:53.030Z",
+      "updatedAt": "2026-06-12T08:40:14.019Z",
+      "status": "answered",
+      "prompt": {
+        "id": "question_prompt_mqaa6irq_pxfrvk",
+        "checkpointKey": "panel_next_decision",
+        "title": "Panel follow-up decision",
+        "question": "What should LongTable treat as the next human decision after this panel review?",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "revise",
+            "label": "Revise before proceeding",
+            "description": "Use the panel result to revise the claim, design, or draft first."
+          },
+          {
+            "value": "evidence",
+            "label": "Gather or verify evidence first",
+            "description": "Do not proceed until the relevant evidence or citation support is checked."
+          },
+          {
+            "value": "proceed",
+            "label": "Proceed with current direction",
+            "description": "Accept the risk profile and continue with the current direction."
+          },
+          {
+            "value": "defer",
+            "label": "Keep this open",
+            "description": "Do not commit yet; keep the panel issue visible as an open tension."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "runtime_guidance",
+        "rationale": [
+          "Panel review creates disagreement or risk visibility that should connect to an explicit researcher decision.",
+          "Panel checkpoint sensitivity: high."
+        ],
+        "displayReason": "Panel review can surface role disagreement that should not be collapsed without researcher approval.",
+        "preferredSurfaces": [
+          "mcp_elicitation",
+          "numbered"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mqaa6irq_pxfrvk",
+        "selectedValues": [
+          "evidence"
+        ],
+        "selectedLabels": [
+          "Gather or verify evidence first"
+        ],
+        "rationale": "The researcher instructed that the remaining questions must be answered from first-pass analyses rather than assumption or prose-only judgment.\nResearcher requested initial data analyses for Paper A moderator feasibility, Paper B cross-model disagreement triage, and Paper B broader TSSEM/MASEM feasibility before further decisions.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mqaoesw4_9lpjtv"
+    },
+    {
+      "id": "question_record_mqaona4o_wblv1z",
+      "createdAt": "2026-06-12T08:46:49.607Z",
+      "updatedAt": "2026-06-12T08:55:27.764Z",
+      "status": "answered",
+      "commitmentFamily": "method",
+      "epistemicBasis": "mixed",
+      "hardStop": true,
+      "hardStopScope": "method",
+      "prompt": {
+        "id": "question_prompt_mqaona4o_7t75fv",
+        "checkpointKey": "panel_disagreement_resolution",
+        "title": "Post-analysis route checkpoint",
+        "question": "Confirm the post-analysis reporting route: use ai_type as the Paper A main moderator and common_method_bias as QC/sensitivity; describe cross-model disagreement as main RQ3 descriptive triage evidence but not a standalone numeric-extraction detector; and use staged Paper B SEM reporting with core6 main diagnostic, core7/core8 probes, and core9/core10 blocked until coverage improves. If not, specify the changes.",
+        "type": "single_choice",
+        "options": [
+          {
+            "value": "surface_disagreement",
+            "label": "Surface disagreement first",
+            "description": "Show the role conflict before choosing a synthesis."
+          },
+          {
+            "value": "compare_frames",
+            "label": "Compare candidate framings",
+            "description": "Keep alternatives visible before selecting one frame."
+          },
+          {
+            "value": "proceed_with_trace",
+            "label": "Proceed with an explicit trace",
+            "description": "Choose a synthesis, but record the unresolved disagreement."
+          },
+          {
+            "value": "defer",
+            "label": "Keep disagreement open",
+            "description": "Do not collapse the disagreement into one conclusion yet."
+          }
+        ],
+        "allowOther": true,
+        "otherLabel": "Other decision",
+        "required": true,
+        "source": "checkpoint",
+        "displayReason": "Panel disagreement should not be collapsed into one synthesis without an explicit researcher decision.",
+        "rationale": [
+          "Panel disagreement should not be collapsed into one synthesis without an explicit researcher decision.",
+          "Existing unresolved tensions increase the need to keep questions visible.",
+          "Trigger family: review.",
+          "Trigger confidence: high.",
+          "Original prompt: Initial execution validation has completed from local data. Paper A: ai_type and common_method_bias meet first-pass main-candidate moderator thresholds, but common_method_bias is more plausibly QC/sensitivity than theory. Trust/anxiety/self-efficacy are constructs, not moderators. Paper B RQ3: cross-model disagreement has high recall but almost no lift over a very high review-needed baseline, and does not flag direct-r/converted numeric families in the first-pass file. Paper B RQ4: core6 is the completed diagnostic; core7_add_att and core8_add_tru are sparse probes; core9/core10 are not ready."
+        ],
+        "preferredSurfaces": [
+          "tmux_popup",
+          "mcp_elicitation",
+          "numbered"
+        ]
+      },
+      "answer": {
+        "promptId": "question_prompt_mqaona4o_7t75fv",
+        "selectedValues": [
+          "proceed_with_trace"
+        ],
+        "selectedLabels": [
+          "Proceed with an explicit trace"
+        ],
+        "rationale": "Proceed with explicit trace, corrected by researcher clarification: Trust, anxiety, and self-efficacy are not moderators; they are candidate mediator/mechanism constructs inside the Paper A MASEM path model. Paper A moderator reporting remains ai_type main and common_method_bias QC/sensitivity unless later changed. Paper B RQ3/RQ4 bounded route remains as analyzed.",
+        "provider": "codex",
+        "surface": "numbered"
+      },
+      "decisionRecordId": "decision_mqaoydxx_d03ztl",
+      "transportStatus": {
+        "surface": "numbered",
+        "status": "accepted",
+        "updatedAt": "2026-06-12T08:55:27.764Z"
+      }
     }
   ],
   "artifactRecords": [],
@@ -1377,6 +1887,58 @@
       "summary": "Post-freeze Step 5 pre-run matrix prepared: 2,043 unlocked template rows, five planned conditions, source-rendering placeholder, and 120-row repeatability subset; model runs not authorized yet.",
       "visibility": "explicit",
       "importance": "high"
+    },
+    {
+      "id": "paper-a-masem-execution-attempt-20260614",
+      "timestamp": "2026-06-13T19:41:03.774Z",
+      "source": "codex-longtable",
+      "traceType": "artifact",
+      "summary": "Paper A TSSEM/MASEM execution attempted from N-ready input; core7 ATT, trust6, and full10 routes all failed at TSSEM1 because sparse partial matrices produced non-positive definite implied covariance; Stage 2 was not run.",
+      "visibility": "explicit",
+      "importance": "high"
+    },
+    {
+      "id": "paper-a-latest-human-workbook-recheck-20260614",
+      "timestamp": "2026-06-13T19:57:35.617Z",
+      "source": "codex-longtable",
+      "traceType": "artifact",
+      "summary": "Latest human workbook recheck restored Paper A full10 pair coverage to 45/45 and found trust6 complete-case Stage 1/2 convergence with PDF/source support; full10 still has 0 complete-case studies.",
+      "visibility": "explicit",
+      "importance": "high"
     }
+  ],
+  "hooks": [],
+  "interviewTurns": [],
+  "evidenceRecords": [
+    {
+      "id": "paper-a-masem-execution-attempt-20260614",
+      "timestamp": "2026-06-13T19:41:03.774Z",
+      "source": "codex-analysis",
+      "artifact": "data/04_extraction/05_llm_masem_substitution/results/paper_a_masem_execution_20260614/PAPER_A_MASEM_EXECUTION_ATTEMPT_20260614.md",
+      "summary": "Paper A TSSEM/MASEM execution attempted from N-ready input; core7 ATT, trust6, and full10 routes all failed at TSSEM1 because sparse partial matrices produced non-positive definite implied covariance; Stage 2 was not run."
+    }
+  ],
+  "specPatches": [],
+  "specRevisions": [],
+  "questionObligations": [
+    {
+      "id": "question_obligation_mqaona4p_qypyez",
+      "kind": "required_question",
+      "status": "satisfied",
+      "createdAt": "2026-06-12T08:46:49.607Z",
+      "updatedAt": "2026-06-12T08:55:27.765Z",
+      "prompt": "Confirm the post-analysis reporting route: use ai_type as the Paper A main moderator and common_method_bias as QC/sensitivity; describe cross-model disagreement as main RQ3 descriptive triage evidence but not a standalone numeric-extraction detector; and use staged Paper B SEM reporting with core6 main diagnostic, core7/core8 probes, and core9/core10 blocked until coverage improves. If not, specify the changes.",
+      "reason": "Panel disagreement should not be collapsed into one synthesis without an explicit researcher decision.",
+      "hardStop": true,
+      "hardStopScope": "method",
+      "questionId": "question_record_mqaona4o_wblv1z",
+      "decisionId": "decision_mqaoydxx_d03ztl"
+    }
+  ],
+  "currentGoal": "Publish the 2026-06-14 Paper A latest-workbook/source-evidence correction and release artifacts.",
+  "currentBlocker": "Latest-human workbooks restore corpus-level full10 pair coverage to 45/45, but no study has a complete full10 matrix; full10 Stage 2 MASEM remains blocked. Trust6 complete-case MASEM converges only as a reduced diagnostic/sensitivity result. AI M1-R used source-packet locked-output validation, not the same independent human coding procedure.",
+  "nextAction": "Freeze the Paper A latest-human analytic input with inclusion/provenance rules, manually review source/PDF miss candidates, and source-densify high-coverage full10 studies before final primary MASEM claims.",
+  "openQuestions": [
+    "Should Paper A submit with full10 as theory target plus trust6 diagnostic/sensitivity, or delay final Paper A MASEM claims until source-level densification makes full10 estimable?"
   ]
 }

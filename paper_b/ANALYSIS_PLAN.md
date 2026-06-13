@@ -2,7 +2,7 @@
 
 ## Current Positioning
 
-Updated 2026-04-24. This plan supersedes the earlier three-model comparative framework. Paper B is now framed as a validation study of one prespecified LLM-assisted workflow for MASEM-ready data extraction. Additional LLMs may be used only as supplementary robustness or triage analyses.
+Updated 2026-04-24. This plan supersedes the earlier three-model comparative framework. Paper B is now framed as a validation study of one prespecified LLM-assisted workflow for MASEM-ready data extraction. Additional LLMs are not used for vendor ranking; their current role is to support cross-model disagreement as a main RQ3 triage signal.
 
 The central methodological question is not which model wins. The central question is whether a transparent, documented, human-supervised LLM workflow can assist with extraction tasks that matter for MASEM: construct harmonization, correlation matrix recovery, moderator coding, and downstream inference stability.
 
@@ -33,7 +33,7 @@ rotated human pairs rather than AI-first single verification. Phase 1 and Phase
 
 **RQ4. Downstream substitution stability.** If human-supervised LLM-assisted values are substituted into the MASEM input, do the pooled correlations, structural path coefficients, indirect effects, model-fit decisions, and substantive conclusions remain stable?
 
-**Supplementary RQ. Model sensitivity.** If additional models are evaluated, does cross-model disagreement help identify extraction fields requiring human review?
+**Model-sensitivity boundary.** If additional models are evaluated, they support RQ3 triage through cross-model disagreement and do not create a vendor-ranking or autonomous-replacement claim.
 
 ## Data Structure
 
@@ -203,6 +203,8 @@ reconstruction failures.
 ## RQ4: Downstream Substitution Analysis
 
 The substitution analysis is the core methodological contribution. It asks whether LLM-assisted extraction would change the substantive conclusions of the MASEM after human-supervised review.
+
+Researcher-approved route recorded on 2026-06-12: attempt a broader TSSEM/MASEM rebuild. The existing core-6 diagnostic remains the completed bounded evidence until the broader rebuild specification, source-type sufficiency audit, and successful run are complete.
 
 Planned comparisons:
 

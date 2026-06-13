@@ -1,0 +1,16 @@
+route,pair,study_pair_rows
+paper_a_trust6_mechanism,BI-EE,143
+paper_a_trust6_mechanism,BI-PE,152
+paper_a_trust6_mechanism,BI-SI,103
+paper_a_trust6_mechanism,BI-TRU,34
+paper_a_trust6_mechanism,BI-UB,73
+paper_a_trust6_mechanism,EE-PE,140
+paper_a_trust6_mechanism,EE-SI,84
+paper_a_trust6_mechanism,EE-TRU,30
+paper_a_trust6_mechanism,EE-UB,60
+paper_a_trust6_mechanism,PE-SI,92
+paper_a_trust6_mechanism,PE-TRU,31
+paper_a_trust6_mechanism,PE-UB,63
+paper_a_trust6_mechanism,SI-TRU,19
+paper_a_trust6_mechanism,SI-UB,44
+paper_a_trust6_mechanism,TRU-UB,13
