@@ -32,3 +32,13 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 
 ## Evidence Rule
 - External or current claims should carry a source link or be labeled as inference.
+
+## 2026-06-14 update - Paper A/C full10 pair 04_ATT-PE source review
+
+- Completed the ordered source-packet review for `04_ATT-PE` across 13 AI-candidate rows.
+- Preliminary decision: do not promote any ATT-PE values. The reviewed sources show PE/PU or performance-expectancy counterparts, but no measured full10 ATT construct.
+- Generated evidence artifacts under `data/04_extraction/05_llm_masem_substitution/results/paper_a_ai_candidate_source_trace_20260614/`:
+  - `paper_a_C_pair04_ATT_PE_source_evidence_draft_20260614.csv`
+  - `PAPER_A_C_PAIR04_ATT_PE_REVIEW_LOG_KO_20260614.md`
+- Current next action: continue full10 ordered densification review at the next pair after `04_ATT-PE`; keep AI candidates as source-trace review evidence only until researcher confirmation.
+

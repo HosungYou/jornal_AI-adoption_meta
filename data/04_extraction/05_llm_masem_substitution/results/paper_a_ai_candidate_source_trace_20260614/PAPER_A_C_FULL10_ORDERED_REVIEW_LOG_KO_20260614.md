@@ -30,3 +30,11 @@ The first actionable full10 pair shows that the queue must pass a construct-mapp
 ## Next review item
 
 Continue with pair order 04 `ATT-PE` in `paper_a_C_full10_pair_ordered_batch01_20260614.csv`.
+
+
+## 2026-06-14 pair 04_ATT-PE preliminary source review
+
+- 대상 row: 13
+- 예비 결론: 승격 후보 0개. 모든 row에서 PE/PU 대응 construct는 확인되지만 full10 `ATT` 측정 construct가 보이지 않아 `do_not_promote_construct_mapping_failure_no_ATT`로 분류했다.
+- 산출물: `paper_a_C_pair04_ATT_PE_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR04_ATT_PE_REVIEW_LOG_KO_20260614.md`
+- 다음 pair: `05_PE-SE`
