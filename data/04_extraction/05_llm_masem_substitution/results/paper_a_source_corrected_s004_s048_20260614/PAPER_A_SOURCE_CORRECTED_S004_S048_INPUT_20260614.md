@@ -37,6 +37,6 @@ Use this input for diagnostic reruns only. If the rerun materially improves Pape
 
 ## Output files
 
-- `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper_a_source_corrected_s004_s048_20260614/paper_a_source_corrected_s004_s048_input_20260614.csv`
-- `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper_a_source_corrected_s004_s048_20260614/paper_a_source_corrected_s004_s048_changelog_20260614.csv`
-- `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper_a_source_corrected_s004_s048_20260614/paper_a_source_corrected_s004_s048_coverage_summary_20260614.csv`
+- `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/05_llm_masem_substitution/results/paper_a_source_corrected_s004_s048_20260614/paper_a_source_corrected_s004_s048_input_20260614.csv`
+- `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/05_llm_masem_substitution/results/paper_a_source_corrected_s004_s048_20260614/paper_a_source_corrected_s004_s048_changelog_20260614.csv`
+- `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/05_llm_masem_substitution/results/paper_a_source_corrected_s004_s048_20260614/paper_a_source_corrected_s004_s048_coverage_summary_20260614.csv`

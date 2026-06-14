@@ -389,7 +389,7 @@ def main():
         create_data_sheet(wb, sheet_name, col_defs)
 
     # Save
-    output_path = "/Users/hosung/jornal_AI-adoption_meta/data/templates/AI_Adoption_MASEM_Coding_v1.xlsx"
+    output_path = "/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/templates/AI_Adoption_MASEM_Coding_v1.xlsx"
     wb.save(output_path)
     print(f"\nSaved to: {output_path}")
 

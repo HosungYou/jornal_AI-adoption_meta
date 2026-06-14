@@ -11,10 +11,10 @@ import os
 from pathlib import Path
 from datetime import datetime, timezone
 
-ACADEMIC_OLD = Path('/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/journal_AI-adoption_meta')
-ACADEMIC_NEW = Path('/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/journal_AI-adoption_meta')
+ACADEMIC_OLD = Path('/Users/newhosung/Academic/2026/AI Adoption Meta Analysis')
+ACADEMIC_NEW = Path('/Users/newhosung/Academic/2026/AI Adoption Meta Analysis')
 ONEDRIVE_BASE = Path('/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents')
-ONEDRIVE_OLD = ONEDRIVE_BASE / 'Git/jornal_AI-adoption_meta'
+ONEDRIVE_OLD = ONEDRIVE_BASE / 'Git/journal_AI-adoption_meta'
 ONEDRIVE_NEW = ONEDRIVE_BASE / 'Git/journal_AI-adoption_meta'
 OUT_REPO = ACADEMIC_OLD / 'docs/08_operations/repo_restructure_20260614'
 OUT_ONEDRIVE = ONEDRIVE_BASE / 'Meta/AI Adoption/99_archive/repo_restructure_20260614'
@@ -97,7 +97,7 @@ def parent_project_index() -> list[dict[str, str]]:
     names = sorted(set(acad) | set(od))
     rows = []
     for name in names:
-        if name in {'jornal_AI-adoption_meta', 'journal_AI-adoption_meta'}:
+        if name in {'journal_AI-adoption_meta', 'journal_AI-adoption_meta'}:
             role = 'ai_adoption_target_restructure'
             rec = 'rename typo to journal_AI-adoption_meta; archive old OneDrive clone; create read-only mirror'
         elif name.startswith('.'):

@@ -4,10 +4,10 @@ Date: 2026-06-14T10:01:55.073577+00:00
 
 ## Canonical decision
 
-- Canonical execution clone: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/journal_AI-adoption_meta`
-- Old Academic typo path: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta`
-- Old OneDrive active clone to archive: `/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/jornal_AI-adoption_meta`
-- New OneDrive read-only mirror path: `/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Git/journal_AI-adoption_meta`
+- Canonical execution clone: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis`
+- Old Academic typo path: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis`
+- Old OneDrive active clone to archive: `/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Meta/AI Adoption/90_repository_mirror/journal_AI-adoption_meta`
+- New OneDrive read-only mirror path: `/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Meta/AI Adoption/90_repository_mirror/journal_AI-adoption_meta`
 
 ## Counts
 

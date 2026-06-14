@@ -1,7 +1,7 @@
 metric,value,notes
-task_shell_rows,2043,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/full_corpus_step5_task_unit_shell_20260609.csv
+task_shell_rows,2043,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/05_llm_masem_substitution/full_corpus_step5_task_unit_shell_20260609.csv
 task_shell_studies,194,post-freeze target-row studies
-source_packet_files_available,194,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/07_paper_c_harness_benchmark/private/source_renderings_20260609_full_coverage/source_packets
+source_packet_files_available,194,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/07_paper_c_harness_benchmark/private/source_renderings_20260609_full_coverage/source_packets
 task_shell_studies_with_source_packets,194,study-id matched source packets
 task_shell_studies_missing_source_packets,0,
 task_denominator_family::primary_latent_or_construct_correlation_with_source_type_flag,931,
@@ -10,10 +10,10 @@ task_denominator_family::secondary_beta_or_path_converted_effect_size,415,
 task_evidence_family::latent_or_construct_correlation,931,
 task_evidence_family::direct_r_effect_size_extraction,697,
 task_evidence_family::beta_or_path_converted_effect_size,415,
-locked_model_output_files,9,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/locked_outputs/FULL_CORPUS_M1_R_FULL_RUN_MANIFEST_20260612.csv
+locked_model_output_files,9,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/05_llm_masem_substitution/locked_outputs/FULL_CORPUS_M1_R_FULL_RUN_MANIFEST_20260612.csv
 locked_model_output_bytes_total,3502347,registered locked model output files only
-scored_rows_file_rows,2043,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_scored_20260612.csv
-exception_layer_rows_file_rows,2043,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta/data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_20260612.csv
+scored_rows_file_rows,2043,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_scored_20260612.csv
+exception_layer_rows_file_rows,2043,/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/data/04_extraction/05_llm_masem_substitution/results/paper_b_full_corpus_m1_raw_full_exception_layer_scored_20260612.csv
 scored_model_provider::openai,2043,
 scored_model_id::codex:gpt-5.5,2043,
 score_summary::primary_direct_r_or_source_reported_correlation,"{'run_id': 'paper_b_full_corpus_m1_raw_full_0000_0249_20260612', 'model_provider': 'openai', 'model_id': 'codex:gpt-5.5', 'denominator_family': 'primary_direct_r_or_source_reported_correlation', 'scored_n': '79', 'correct_n': '49', 'accuracy': '0.620253', 'not_scored_n': '0'}",raw row serialized from score summary

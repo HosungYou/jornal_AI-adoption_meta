@@ -31,7 +31,7 @@ hope-action-batch-4,true,true,unrelated_project_in_shared_git_parent,do not move
 hosung-bot,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
 hosungyou.github.io,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
 humanizer,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
-jornal_AI-adoption_meta,true,true,ai_adoption_target_restructure,rename typo to journal_AI-adoption_meta; archive old OneDrive clone; create read-only mirror
+journal_AI-adoption_meta,true,true,ai_adoption_target_restructure,rename typo to journal_AI-adoption_meta; archive old OneDrive clone; create read-only mirror
 korean-church-website,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
 research-os,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
 scholar-graphrag,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only

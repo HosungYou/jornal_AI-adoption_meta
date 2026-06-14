@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/HosungYou/jornal_AI-adoption_meta/paper_c/schemas/paper_c_extraction_schema.json",
+  "$id": "https://github.com/HosungYou/journal_AI-adoption_meta/paper_c/schemas/paper_c_extraction_schema.json",
   "title": "Paper C Structured Extraction Record",
   "type": "object",
   "required": [

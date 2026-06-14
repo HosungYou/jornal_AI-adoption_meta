@@ -12,9 +12,9 @@ records and are not used directly as final model inputs.
 
 ## Search Scope
 
-- Current repo: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/jornal_AI-adoption_meta`
+- Current repo: `/Users/newhosung/Academic/2026/AI Adoption Meta Analysis`
 - OneDrive Paper1/Paper2 working and consensus folders under `/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents`
-- Mounted SSD candidate folders: `/Volumes/External SSD/Projects/Meta-Analysis/jornal_AI-adoption_meta; /Volumes/External SSD/Projects/Meta-Analysis/dissertation_AI-adoption_meta; /Volumes/External SSD/Projects/Research/AI-Adoption; /Volumes/External SSD/Projects/GoogleDrive/Academic`
+- Mounted SSD candidate folders: `/Volumes/External SSD/Projects/Meta-Analysis/journal_AI-adoption_meta; /Volumes/External SSD/Projects/Meta-Analysis/dissertation_AI-adoption_meta; /Volumes/External SSD/Projects/Research/AI-Adoption; /Volumes/External SSD/Projects/GoogleDrive/Academic`
 
 Scanned CSV/TSV files: 2255
 Files skipped or unreadable: 0
@@ -29,7 +29,7 @@ Deduplicated numeric source-type candidates: 10
 | --- | --- |
 | current_repo | 1881 |
 | onedrive_documents | 851 |
-| ssd:jornal_AI-adoption_meta | 9 |
+| ssd:journal_AI-adoption_meta | 9 |
 
 ## Numeric Candidate Hits by Collection
 
@@ -37,7 +37,7 @@ Deduplicated numeric source-type candidates: 10
 | --- | --- |
 | current_repo | 87 |
 | onedrive_documents | 17 |
-| ssd:jornal_AI-adoption_meta | 6 |
+| ssd:journal_AI-adoption_meta | 6 |
 
 ## Unique Candidate Classes
 

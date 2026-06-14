@@ -3,7 +3,7 @@
 # Usage: bash scripts/screening/run_post_screening.sh
 
 set -euo pipefail
-PROJ="/Users/hosung/journal_AI-adoption_meta"
+PROJ="/Users/newhosung/Academic/2026/AI Adoption Meta Analysis"
 CSV="$PROJ/data/03_screening/screening_ai_dual.csv"
 
 echo "=== Post-Screening Pipeline ==="

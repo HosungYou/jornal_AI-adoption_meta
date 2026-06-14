@@ -5,7 +5,7 @@ from pathlib import Path
 
 @pytest.fixture
 def project_root():
-    return Path("/Users/hosung/jornal_AI-adoption_meta")
+    return Path("/Users/newhosung/Academic/2026/AI Adoption Meta Analysis")
 
 @pytest.fixture
 def sample_screening_csv(tmp_path):

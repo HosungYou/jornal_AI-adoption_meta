@@ -7,7 +7,7 @@
 - Scope: Phase 1 pairwise adjudication support for R1-R2 and R3-R4 coding comparisons.
 - Protocol link: Phase 2 will use rotated pairs (R1-R4 and R2-R3) after this Phase 1 consensus version. Phase 1 and Phase 2 together form the Paper B validation corpus.
 - Current Git branch: `codex/phase1-consensus-20260424`
-- Pull request: `https://github.com/HosungYou/jornal_AI-adoption_meta/pull/1`
+- Pull request: `https://github.com/HosungYou/journal_AI-adoption_meta/pull/1`
 
 ## Purpose
 

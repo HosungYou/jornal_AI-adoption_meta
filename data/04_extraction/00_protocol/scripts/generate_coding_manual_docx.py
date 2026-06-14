@@ -37,7 +37,7 @@ COLOR_BORDER = "B4C7DC"                            # Table border
 COLOR_TIP_BG = "FFF3E0"                            # Tip box bg
 COLOR_CODE_BG = "F5F5F5"                           # Code block bg
 
-OUTPUT_PATH = "/Volumes/External SSD/Projects/Meta-Analysis/jornal_AI-adoption_meta/data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.docx"
+OUTPUT_PATH = "/Volumes/External SSD/Projects/Meta-Analysis/journal_AI-adoption_meta/data/04_extraction/00_protocol/AI_Adoption_MASEM_Coding_Manual_v2.docx"
 
 
 def create_document():

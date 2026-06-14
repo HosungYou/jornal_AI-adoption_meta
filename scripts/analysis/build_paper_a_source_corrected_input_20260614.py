@@ -16,7 +16,7 @@ from copy import deepcopy
 from pathlib import Path
 
 
-REPO = Path("/Users/newhosung/Academic/2026/AI Adoption Meta Analysis/Git/journal_AI-adoption_meta")
+REPO = Path("/Users/newhosung/Academic/2026/AI Adoption Meta Analysis")
 ONEDRIVE = Path(
     "/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/"
     "AI Adoption Meta Analysis - Documents"

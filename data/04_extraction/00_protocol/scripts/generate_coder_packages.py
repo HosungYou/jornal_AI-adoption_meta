@@ -36,7 +36,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
 # ── Paths ──
-BASE = Path("/Volumes/External SSD/Projects/Meta-Analysis/jornal_AI-adoption_meta")
+BASE = Path("/Volumes/External SSD/Projects/Meta-Analysis/journal_AI-adoption_meta")
 CONFIRMED = BASE / "data/02_screening/confirmed_includes.csv"
 TRACKER = BASE / "data/04_extraction/00_protocol/pdf_download_tracker.xlsx"
 PDF_DIR = BASE / "data/04_extraction/03_source_document_adjudication/source_pdfs"
