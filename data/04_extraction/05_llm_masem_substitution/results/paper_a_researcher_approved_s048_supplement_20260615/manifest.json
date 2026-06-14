@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-15",
+  "input": "data/04_extraction/05_llm_masem_substitution/results/paper_a_researcher_approved_pe_se_s121_supplement_20260614/paper_a_source_corrected_plus_researcher_approved_anx_tru_pe_se_input_20260614.csv",
+  "output_input": "data/04_extraction/05_llm_masem_substitution/results/paper_a_researcher_approved_s048_supplement_20260615/paper_a_source_corrected_plus_researcher_approved_anx_tru_pe_se_s048_input_20260615.csv",
+  "approved_pairs": [
+    "BI-FC",
+    "BI-PE",
+    "BI-SI",
+    "EE-UB",
+    "FC-UB",
+    "SI-UB",
+    "TRU-UB"
+  ],
+  "updated_existing_rows": 7,
+  "inserted_rows": 0,
+  "row_count": 836,
+  "paper_b_reference_mutated": false
+}

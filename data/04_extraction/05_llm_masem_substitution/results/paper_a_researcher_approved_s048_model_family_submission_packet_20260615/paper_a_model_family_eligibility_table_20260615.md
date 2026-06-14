@@ -1,0 +1,5 @@
+| model_family | constructs | required_pairs | observed_pairs_after_rescue | min_pair_k | partial_matrix_studies | complete_case_studies | positive_definite_complete_cases | partial_tssem_status | complete_case_stage1 | complete_case_stage2 | pooled_min_eigen | primary_status | manuscript_role |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| core7 ATT mediation | PE,EE,SI,FC,ATT,BI,UB | 21 | 21 | 11 | 72 | 4 | 4 | failed | converged |  | 0.3141589957898905 | eligible complete-case diagnostic model | primary empirical model-family member |
+| trust6 trust mechanism | PE,EE,SI,TRU,BI,UB | 15 | 15 | 9 | 73 | 7 | 7 | failed | converged |  | 0.3151627736366538 | eligible complete-case diagnostic model | primary empirical model-family member |
+| full10 theoretical target | PE,EE,SI,FC,ATT,SE,TRU,ANX,BI,UB | 45 | 45 | 1 | 77 | 0 | 0 | failed | not_run |  | -0.0108915179124434 | not empirically estimable as one SEM in current data | theoretical target and evidence map; not current primary SEM estimate |
