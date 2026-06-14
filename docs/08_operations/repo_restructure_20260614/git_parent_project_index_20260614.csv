@@ -1,0 +1,40 @@
+project_dir_name,exists_in_academic_git_parent,exists_in_onedrive_git_parent,classification,recommendation
+-CPS-Civic-Engagement-Volunteering-Supplement,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+.cursor-tutor,true,true,runtime_or_hidden_workspace,do not delete automatically; review separately
+.longtable,true,true,runtime_or_hidden_workspace,do not delete automatically; review separately
+.omx,true,true,runtime_or_hidden_workspace,do not delete automatically; review separately
+AI_Polarization_Pew,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+Artificial-Intelligence-Ethics-in-Human-Resource,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+Auto-Meta-Analysis,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+Automated-Meta-Analysis-System,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+CPS-Education-Supplement,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+Dissertation-meta,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+Effects-of-Agentic-AI-on-Learning-Outcomes-Across-Educational-Contexts,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+GenAI-Creativity,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+Generative-AI-in-Higher-Education,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+LongTable,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+LongTable-archive,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+SLR-Automation-with-GPT-4,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+ScholaRAG,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+ScholaRAG-helper,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+ScholarGraph3D,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+StackOverFlow_HRD_2024_Research,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+TaeJeon-Platform-Core,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+Trust-Calibration-Scaffolds-research,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+UAS_AI_Polarization_Research,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+claurst,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+dissertation_AI-adoption_meta,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+diverga-docs,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+diverga-evaluation-paper,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+govfundingchatbot,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+hope-action-batch-4,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+hosung-bot,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+hosungyou.github.io,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+humanizer,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+jornal_AI-adoption_meta,true,true,ai_adoption_target_restructure,rename typo to journal_AI-adoption_meta; archive old OneDrive clone; create read-only mirror
+korean-church-website,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+research-os,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+scholar-graphrag,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+scopi-cardnews,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+scopi-workspace,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only
+wfed119,true,true,unrelated_project_in_shared_git_parent,do not move/delete in this task; add parent index only

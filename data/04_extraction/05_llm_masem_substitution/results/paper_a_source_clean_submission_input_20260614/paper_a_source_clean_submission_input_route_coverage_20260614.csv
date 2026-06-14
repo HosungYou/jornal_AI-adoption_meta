@@ -1,0 +1,4 @@
+route,constructs,required_pairs,observed_pairs,missing_pairs,complete_case_count,complete_case_ids
+full10_theory_target,"PE,EE,SI,FC,ATT,SE,TRU,ANX,BI,UB",45,45,,0,
+core7_att_mediation,"PE,EE,SI,FC,ATT,BI,UB",21,21,,4,S048;S055;S176;S214
+trust6_mechanism,"PE,EE,SI,TRU,BI,UB",15,15,,7,S004;S048;S121;S121-1;S121-2;S173;S176

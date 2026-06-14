@@ -1,0 +1,1193 @@
+human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_or_human_value,final_value_if_confirmed,evidence_type,source_location_confirmed,decision_rationale,promote_to_supplemental_input
+,,,S222,BI-EE,0.46,,,"Table 6, p.2028",,no
+,,,S222,BI-PE,0.58,,,"Table 6, p.2028",,no
+,,,S218,ATT-BI,0.78,,,"Table 1, p.5",,no
+,,,S218,ATT-EE,0.69,,,"Table 1, p.5",,no
+,,,S218,ATT-PE,0.7,,,"Table 1, p.5",,no
+,,,S218,BI-EE,0.59,,,"Table 1, p.5",,no
+,,,S218,BI-PE,0.63,,,"Table 1, p.5",,no
+,,,S218,EE-PE,0.66,,,"Table 1, p.5",,no
+,,,S185,ANX-ATT,0.46,,,"Table 3, p.7",,no
+,,,S185,ANX-BI,0.47,,,"Table 3, p.7",,no
+,,,S185,ANX-EE,0.47,,,"Table 3, p.7",,no
+,,,S185,ANX-PE,0.44,,,"Table 3, p.7",,no
+,,,S185,ATT-BI,0.45,,,"Table 3, p.7",,no
+,,,S185,ATT-EE,0.47,,,"Table 3, p.7",,no
+,,,S185,ATT-PE,0.5,,,"Table 3, p.7",,no
+,,,S185,BI-EE,0.52,,,"Table 3, p.7",,no
+,,,S185,BI-PE,0.46,,,"Table 3, p.7",,no
+,,,S185,EE-PE,0.48,,,"Table 3, p.7",,no
+,,,S194,BI-EE,0.44,,,"Table 3, p.825",,no
+,,,S194,BI-FC,0.49,,,"Table 3, p.825",,no
+,,,S194,BI-PE,-0.08,,,"Table 3, p.825",,no
+,,,S194,BI-SI,0.62,,,"Table 3, p.825",,no
+,,,S194,BI-UB,0.64,,,"Table 3, p.825",,no
+,,,S194,EE-FC,0.55,,,"Table 3, p.825",,no
+,,,S194,EE-PE,-0.1,,,"Table 3, p.825",,no
+,,,S194,EE-SI,0.52,,,"Table 3, p.825",,no
+,,,S194,EE-UB,0.49,,,"Table 3, p.825",,no
+,,,S194,FC-PE,-0.12,,,"Table 3, p.825",,no
+,,,S194,FC-SI,0.59,,,"Table 3, p.825",,no
+,,,S194,FC-UB,0.52,,,"Table 3, p.825",,no
+,,,S194,PE-SI,-0.12,,,"Table 3, p.825",,no
+,,,S194,PE-UB,-0.05,,,"Table 3, p.825",,no
+,,,S194,SI-UB,0.56,,,"Table 3, p.825",,no
+,,,S208,BI-EE,0.43,,,"Table 2, p.829",,no
+,,,S208,BI-PE,0.24,,,"Table 2, p.829",,no
+,,,S208,BI-SI,0.46,,,"Table 2, p.829",,no
+,,,S208,BI-TRU,0.52,,,"Table 2, p.829",,no
+,,,S208,EE-PE,0.4,,,"Table 2, p.829",,no
+,,,S208,EE-SI,0.36,,,"Table 2, p.829",,no
+,,,S208,EE-TRU,0.4,,,"Table 2, p.829",,no
+,,,S208,PE-SI,0.3,,,"Table 2, p.829",,no
+,,,S208,PE-TRU,0.3,,,"Table 2, p.829",,no
+,,,S208,SI-TRU,0.24,,,"Table 2, p.829",,no
+,,,S028,ATT-BI,0.88,,,"Table 4, p.7",,no
+,,,S028,ATT-EE,0.63,,,"Table 4, p.7",,no
+,,,S028,ATT-PE,0.81,,,"Table 4, p.7",,no
+,,,S028,ATT-SE,0.72,,,"Table 4, p.7",,no
+,,,S028,BI-EE,0.63,,,"Table 4, p.7",,no
+,,,S028,BI-PE,0.82,,,"Table 4, p.7",,no
+,,,S028,BI-SE,0.69,,,"Table 4, p.7",,no
+,,,S028,EE-PE,0.67,,,"Table 4, p.7",,no
+,,,S028,EE-SE,0.79,,,"Table 4, p.7",,no
+,,,S028,PE-SE,0.69,,,"Table 4, p.7",,no
+,,,S059,ATT-BI,0.9,,,"Table 4, p.9",,no
+,,,S059,ATT-EE,0.26,,,"Table 4, p.9",,no
+,,,S059,ATT-PE,0.29,,,"Table 4, p.9",,no
+,,,S059,EE-PE,0.18,,,"Table 4, p.9",,no
+,,,S145,BI-EE,0.2,,,"Table 3, p.24",,no
+,,,S145,BI-UB,0.34,,,"Table 3, p.24",,no
+,,,S145,EE-UB,0.2,,,"Table 3, p.24",,no
+,,,S110,BI-EE,0.62,,,"Table 4, p.627",,no
+,,,S110,BI-PE,0.68,,,"Table 4, p.627",,no
+,,,S110,BI-SI,0.52,,,"Table 4, p.627",,no
+,,,S015,BI-PE,0.816,,,"Table 1 (Fornell-Larcker Poland), p.8",,no
+,,,S015,BI-SI,0.59,,,"Table 1 (Fornell-Larcker Poland), p.8",,no
+,,,S046,ANX-BI,-0.377,,,"Table 5 (Fornell-Larcker), p.12",,no
+,,,S046,ANX-EE,-0.423,,,"Table 5 (Fornell-Larcker), p.12",,no
+,,,S046,ANX-PE,-0.462,,,"Table 5 (Fornell-Larcker), p.12",,no
+,,,S046,ANX-SE,-0.069,,,"Table 5 (Fornell-Larcker), p.12",,no
+,,,S046,ANX-SI,-0.032,,,"Table 5 (Fornell-Larcker), p.12",,no
+,,,S053,EE-UB,-0.032,,,"Table 5 (Fornell-Larcker), p.5676",,no
+,,,S164,ATT-SI,-0.031,,,"Table 4 (Fornell-Larcker), p.8",,no
+,,,S164,BI-SI,-0.03,,,"Table 4 (Fornell-Larcker), p.8",,no
+,,,S164,EE-SI,-0.024,,,"Table 4 (Fornell-Larcker), p.8",,no
+,,,S164,FC-SI,-0.011,,,"Table 4 (Fornell-Larcker), p.8",,no
+,,,S164,PE-SI,-0.021,,,"Table 4 (Fornell-Larcker), p.8",,no
+,,,S164,PE-UB,-0.031,,,"Table 4 (Fornell-Larcker), p.8",,no
+,,,S164,SI-UB,-0.005,,,"Table 4 (Fornell-Larcker), p.8",,no
+,,,S168,BI-EE,0.14,,,Table 4,,no
+,,,S168,BI-FC,-0.05,,,Table 4,,no
+,,,S168,BI-UB,0.47,,,Table 4,,no
+,,,S011,ATT-PE,0.28,,,Table 6,,no
+,,,S044,ATT-EE,0.64,,,Table 2,,no
+,,,S044,ATT-SI,0.64,,,Table 2,,no
+,,,S044,EE-PE,0.66,,,Table 2,,no
+,,,S044,FC-SI,0.57,,,Table 2,,no
+,,,S044,PE-SI,0.68,,,Table 2,,no
+,,,S151,FC-UB,0.56,,,Table 2,,no
+,,,S151,PE-UB,0.57,,,Table 2,,no
+,,,S151,SE-UB,0.56,,,Table 2,,no
+,,,S051,ANX-EE,-0.14,,,Table 2,,no
+,,,S051,ANX-FC,-0.34,,,Table 2,,no
+,,,S051,ANX-PE,-0.16,,,Table 2,,no
+,,,S051,ANX-SI,-0.21,,,Table 2,,no
+,,,S051,ANX-UB,-0.06,,,Table 2,,no
+,,,S086,BI-FC,0.32,,,Table 2,,no
+,,,S086,BI-PE,0.64,,,Table 2,,no
+,,,S086,EE-SI,0.39,,,Table 2,,no
+,,,S086,FC-TRU,0.41,,,Table 2,,no
+,,,S086,PE-SI,0.44,,,Table 2,,no
+,,,S086,SI-UB,0.41,,,Table 2,,no
+,,,S074,ANX-BI,0.6,,,Table 3,,no
+,,,S074,ANX-EE,0.18,,,Table 3,,no
+,,,S074,ATT-BI,0.64,,,Table 3,,no
+,,,S074,ATT-EE,0.27,,,Table 3,,no
+,,,S074,BI-EE,0.33,,,Table 3,,no
+,,,S074,BI-PE,0.59,,,Table 3,,no
+,,,S074,EE-PE,0.34,,,Table 3,,no
+,,,S074,EE-SE,0.3,,,Table 3,,no
+,,,S074,PE-SE,0.64,,,Table 3,,no
+,,,S189,ATT-BI,0.4,,,Table 7,,no
+,,,S189,ATT-EE,0.36,,,Table 7,,no
+,,,S189,ATT-PE,0.39,,,Table 7,,no
+,,,S120,BI-PE,0.32,,,Table 10,,no
+,,,S081,BI-FC,0.43,,,Table 4,,no
+,,,S081,BI-PE,0.41,,,Table 4,,no
+,,,S081,EE-PE,0.4,,,Table 4,,no
+,,,S081,EE-SI,0.43,,,Table 4,,no
+,,,S035,BI-EE,0.74,,,Table 4,,no
+,,,S035,BI-PE,0.68,,,Table 4,,no
+,,,S035,BI-SI,0.74,,,Table 4,,no
+,,,S035,BI-TRU,0.75,,,Table 4,,no
+,,,S035,EE-SI,0.72,,,Table 4,,no
+,,,S035,EE-TRU,0.63,,,Table 4,,no
+,,,S035,EE-UB,0.64,,,Table 4,,no
+,,,S035,FC-PE,0.57,,,Table 4,,no
+,,,S035,FC-SI,0.66,,,Table 4,,no
+,,,S035,FC-TRU,0.73,,,Table 4,,no
+,,,S035,PE-TRU,0.56,,,Table 4,,no
+,,,S035,PE-UB,0.67,,,Table 4,,no
+,,,S035,SI-TRU,0.68,,,Table 4,,no
+,,,S035,SI-UB,0.68,,,Table 4,,no
+,,,S035,TRU-UB,0.76,,,Table 4,,no
+,,,S191,BI-PE,0.76,,,Table 2,,no
+,,,S191,BI-SE,0.58,,,Table 2,,no
+,,,S191,BI-UB,0.72,,,Table 2,,no
+,,,S191,EE-FC,0.62,,,Table 2,,no
+,,,S191,EE-PE,0.71,,,Table 2,,no
+,,,S191,EE-SI,0.59,,,Table 2,,no
+,,,S191,FC-PE,0.56,,,Table 2,,no
+,,,S191,FC-UB,0.67,,,Table 2,,no
+,,,S191,PE-SE,0.26,,,Table 2,,no
+,,,S191,SE-UB,0.58,,,Table 2,,no
+,,,S217,ATT-TRU,0.73,,,Table 4,,no
+,,,S217,BI-PE,0.75,,,Table 4,,no
+,,,S217,BI-TRU,0.78,,,Table 4,,no
+,,,S217,EE-TRU,0.8,,,Table 4,,no
+,,,S166,BI-EE,-0.15,,,Table 4,,no
+,,,S166,FC-UB,-0.14,,,Table 4,,no
+,,,S033,ATT-PE,0.84,,,Table 5,,no
+,,,S089,BI-PE,0.36,,,Table 8,,no
+,,,S058,ATT-EE,0.42,,,Table 4,,no
+,,,S058,ATT-PE,0.53,,,Table 4,,no
+,,,S093,ATT-BI,0.89,,,Table 3,,no
+,,,S093,ATT-EE,0.48,,,Table 3,,no
+,,,S093,ATT-PE,0.39,,,Table 3,,no
+,,,S093,BI-FC,-0.08,,,Table 3,,no
+,,,S093,BI-UB,0.62,,,Table 3,,no
+,,,S093,EE-FC,0.15,,,Table 3,,no
+,,,S066,ANX-BI,0.12,,,Table 7,,no
+,,,S066,ANX-FC,0.18,,,Table 7,,no
+,,,S066,ANX-TRU,0.19,,,Table 7,,no
+,,,S066,BI-EE,0.23,,,Table 7,,no
+,,,S162,ANX-ATT,-0.323,,,Table 3,,no
+,,,S162,ATT-PE,-0.591,,,Table 3,,no
+,,,S162,PE-UB,-0.079,,,Table 3,,no
+,,,S080,BI-FC,-0.11,,,Table III,,no
+,,,S080,BI-PE,0.26,,,Table III,,no
+,,,S216,ANX-EE,0.14,,,Table 5,,no
+,,,S216,BI-EE,0.25,,,Table 5,,no
+,,,S216,BI-PE,0.25,,,Table 5,,no
+,,,S216,BI-SI,0.21,,,Table 5,,no
+,,,S216,EE-PE,0.28,,,Table 5,,no
+,,,S216,EE-SE,0.28,,,Table 5,,no
+,,,S192,BI-FC,0.34,,,Table 5,,no
+,,,S112,BI-EE,0.16,,,Table 9,,no
+,,,S112,BI-FC,0.16,,,Table 9,,no
+,,,S112,BI-PE,0.23,,,Table 9,,no
+,,,S134,BI-EE,0.1,,,Tables 8-9,,no
+,,,S134,BI-FC,0.07,,,Tables 8-9,,no
+,,,S148,ATT-BI,0.99,,,Table 4 / results text,,no
+,,,S129,BI-EE,0.29,,,Table 5,,no
+,,,S129,BI-SI,-0.14,,,Table 5,,no
+,,,S129,BI-UB,0.46,,,Table 5,,no
+,,,S129,EE-FC,0.28,,,Table 5,,no
+,,,S129,EE-PE,0.52,,,Table 5,,no
+,,,S129,EE-SI,-0.11,,,Table 5,,no
+,,,S129,EE-TRU,0.4,,,Table 5,,no
+,,,S129,PE-SI,0.42,,,Table 5,,no
+,,,S014,PE-UB,0.31,,,Table 4,,no
+,,,S014,SI-UB,0.3,,,Table 4,,no
+,,,S036,ANX-BI,-0.336,,,Table 4,,no
+,,,S036,ANX-EE,-0.321,,,Table 4,,no
+,,,S036,ANX-PE,-0.366,,,Table 4,,no
+,,,S036,ANX-SE,-0.318,,,Table 4,,no
+,,,S036,ANX-SI,-0.374,,,Table 4,,no
+,,,S036,ANX-TRU,-0.26,,,Table 4,,no
+,,,S061,BI-FC,-0.1,,,Table 6,,no
+,,,S128,BI-FC,-0.216,,,Table 3,,no
+,,,S128,EE-FC,-0.121,,,Table 3,,no
+,,,S128,FC-PE,-0.065,,,Table 3,,no
+,,,S128,FC-SI,-0.063,,,Table 3,,no
+,,,S128,FC-UB,-0.101,,,Table 3,,no
+,,,S128,PE-SI,-0.22,,,Table 3,,no
+,,,S152,ATT-BI,0.21,,,Table 3,,no
+,,,S152,BI-PE,0.11,,,Table 3,,no
+,,,S152,BI-SE,0.16,,,Table 3,,no
+,,,S113,BI-EE,0.45,,,Table 7,,no
+,,,S113,BI-PE,0.53,,,Table 7,,no
+,,,S070,BI-EE,0.581,,,Figure 3 / results text,,no
+,,,S070,BI-FC,0.469,,,Figure 3 / results text,,no
+,,,S070,BI-PE,0.502,,,Figure 3 / results text,,no
+,,,S070,EE-FC,0.576,,,Figure 4 / results text,,no
+,,,S070,EE-PE,0.502,,,Figure 4 / results text,,no
+,,,S070,EE-UB,0.563,,,Figure 3 / results text,,no
+,,,S070,FC-PE,0.346,,,Figure 4 / results text,,no
+,,,S070,FC-SI,0.611,,,Figure 4 / results text,,no
+,,,S070,FC-UB,0.488,,,Figure 3 / results text,,no
+,,,S070,PE-SI,0.471,,,Figure 4 / results text,,no
+,,,S070,PE-UB,0.524,,,Figure 3 / results text,,no
+,,,S070,SI-UB,0.675,,,Figure 3 / results text,,no
+,,,S200,BI-FC,-0.17,,,Table 6,,no
+,,,S218,ATT-BI,0.784,,,Table1,,no
+,,,S218,ATT-EE,0.688,,,Table1,,no
+,,,S218,ATT-PE,0.701,,,Table1,,no
+,,,S218,BI-EE,0.59,,,"Table 1, p.5",,no
+,,,S218,BI-PE,0.632,,,Table1,,no
+,,,S218,EE-PE,0.66,,,"Table 1, p.5",,no
+,,,S185,ATT-BI,0.453,,,Table3,,no
+,,,S185,ATT-EE,0.473,,,Table3,,no
+,,,S185,ATT-PE,0.504,,,Table3,,no
+,,,S185,ATT-SI,0.207,,,Table3,,no
+,,,S185,BI-EE,0.524,,,Table3,,no
+,,,S185,BI-PE,0.459,,,Table3,,no
+,,,S185,BI-SI,0.216,,,Table3,,no
+,,,S185,EE-PE,0.482,,,Table3,,no
+,,,S185,EE-SI,0.279,,,Table3,,no
+,,,S185,PE-SI,0.28,,,Table3,,no
+,,,S194,BI-EE,0.44,,,"Table 3, p.825",,no
+,,,S194,BI-FC,0.49,,,"Table 3, p.825",,no
+,,,S194,BI-PE,-0.08,,,"Table 3, p.825",,no
+,,,S194,BI-SI,0.62,,,"Table 3, p.825",,no
+,,,S194,BI-UB,0.64,,,"Table 3, p.825",,no
+,,,S194,EE-FC,0.55,,,"Table 3, p.825",,no
+,,,S194,EE-PE,-0.1,,,"Table 3, p.825",,no
+,,,S194,EE-SI,0.52,,,"Table 3, p.825",,no
+,,,S194,EE-UB,0.49,,,"Table 3, p.825",,no
+,,,S194,FC-PE,-0.12,,,"Table 3, p.825",,no
+,,,S194,FC-SI,0.59,,,"Table 3, p.825",,no
+,,,S194,FC-UB,0.52,,,"Table 3, p.825",,no
+,,,S194,PE-SI,-0.12,,,"Table 3, p.825",,no
+,,,S194,PE-UB,-0.05,,,"Table 3, p.825",,no
+,,,S194,SI-UB,0.56,,,"Table 3, p.825",,no
+,,,S208,BI-EE,0.434,,,Table2,,no
+,,,S208,BI-PE,0.241,,,Table2,,no
+,,,S208,BI-SI,0.462,,,Table2,,no
+,,,S208,BI-TRU,0.524,,,Table2,,no
+,,,S208,EE-PE,0.402,,,Table2,,no
+,,,S208,EE-SI,0.632,,,Table2,,no
+,,,S208,EE-TRU,0.395,,,Table2,,no
+,,,S208,PE-SI,0.296,,,Table2,,no
+,,,S208,PE-TRU,0.295,,,Table2,,no
+,,,S208,SI-TRU,0.241,,,Table2,,no
+,,,S028,ATT-BI,0.877,,,Table4,,no
+,,,S028,ATT-EE,0.63,,,"Table 4, p.7",,no
+,,,S028,ATT-PE,0.809,,,Table4,,no
+,,,S028,ATT-SE,0.721,,,Table4,,no
+,,,S028,BI-EE,0.627,,,Table4,,no
+,,,S028,BI-PE,0.823,,,Table4,,no
+,,,S028,BI-SE,0.685,,,Table4,,no
+,,,S028,EE-PE,0.667,,,Table4,,no
+,,,S028,EE-SE,0.792,,,Table4,,no
+,,,S028,PE-SE,0.744,,,Table4,,no
+,,,S145,BI-EE,0.201,,,Table3,,no
+,,,S145,BI-UB,0.338,,,Table3,,no
+,,,S145,EE-UB,0.204,,,Table3,,no
+,,,S110,BI-EE,0.623,,,Figure3,,no
+,,,S110,BI-PE,0.681,,,Figure3,,no
+,,,S110,BI-SI,0.52,,,"Table 4, p.627",,no
+,,,S222,BI-EE,0.45,,,"Table 6, p. 2028",,no
+,,,S222,BI-PE,0.58,,,"Table 6, p.2028",,no
+,,,S218,ATT-BI,0.78,,,"Table 1, p.5",,no
+,,,S218,ATT-EE,0.68,,,"Table 1, p. 5",,no
+,,,S218,ATT-PE,0.7,,,"Table 1, p.5",,no
+,,,S218,BI-EE,0.59,,,"Table 1, p.5",,no
+,,,S218,BI-PE,0.63,,,"Table 1, p.5",,no
+,,,S218,EE-PE,0.66,,,"Table 1, p.5",,no
+,,,S185,ANX-ATT,0.46,,,"Table 3, p.7",,no
+,,,S185,ANX-EE,0.473,,,,,no
+,,,S185,ANX-PE,0.435,,,,,no
+,,,S185,ANX-SI,0.216,,,,,no
+,,,S185,ATT-BI,0.453,,,Table3,,no
+,,,S185,ATT-EE,0.473,,,Table3,,no
+,,,S185,ATT-PE,0.504,,,Table3,,no
+,,,S185,ATT-SI,0.207,,,Table3,,no
+,,,S185,BI-EE,0.524,,,Table3,,no
+,,,S185,BI-PE,0.459,,,Table3,,no
+,,,S185,BI-SI,0.433,,,,,no
+,,,S185,EE-PE,0.482,,,Table3,,no
+,,,S185,EE-SI,0.279,,,Table3,,no
+,,,S185,PE-SI,0.28,,,Table3,,no
+,,,S194,BI-EE,0.44,,,"Table 3, p.825",,no
+,,,S194,BI-FC,0.49,,,"Table 3, p.825",,no
+,,,S194,BI-PE,-0.08,,,"Table 3, p.825",,no
+,,,S194,BI-SI,0.62,,,"Table 3, p.825",,no
+,,,S194,BI-UB,0.64,,,"Table 3, p.825",,no
+,,,S194,EE-FC,0.55,,,"Table 3, p.825",,no
+,,,S194,EE-PE,-0.1,,,"Table 3, p.825",,no
+,,,S194,EE-SI,0.52,,,"Table 3, p.825",,no
+,,,S194,EE-UB,0.49,,,"Table 3, p.825",,no
+,,,S194,FC-PE,-0.12,,,"Table 3, p.825",,no
+,,,S194,FC-SI,0.59,,,"Table 3, p.825",,no
+,,,S194,FC-UB,0.52,,,"Table 3, p.825",,no
+,,,S194,PE-SI,-0.12,,,"Table 3, p.825",,no
+,,,S194,PE-UB,-0.05,,,"Table 3, p.825",,no
+,,,S194,SI-UB,0.56,,,"Table 3, p.825",,no
+,,,S208,BI-EE,0.43,,,"Table 2, p.829",,no
+,,,S208,BI-PE,0.24,,,"Table 2, p.829",,no
+,,,S208,BI-SI,0.46,,,"Table 2, p.829",,no
+,,,S208,BI-TRU,0.52,,,"Table 2, p.829",,no
+,,,S208,EE-PE,0.4,,,"Table 2, p.829",,no
+,,,S208,EE-SI,0.36,,,"Table 2, p.829",,no
+,,,S208,EE-TRU,0.39,,,"Table 2, p. 829",,no
+,,,S208,PE-SI,0.29,,,"Table 2, p. 829",,no
+,,,S208,PE-TRU,0.29,,,"Table 2, p. 829",,no
+,,,S208,SI-TRU,0.24,,,"Table 2, p.829",,no
+,,,S028,ATT-BI,0.87,,,"Table 4, p. 7",,no
+,,,S028,ATT-EE,0.63,,,"Table 4, p.7",,no
+,,,S028,ATT-PE,0.8,,,"Table 4, p. 7",,no
+,,,S028,ATT-SE,0.72,,,"Table 4, p.7",,no
+,,,S028,BI-EE,0.62,,,"Table 4, p. 7",,no
+,,,S028,BI-PE,0.82,,,"Table 4, p.7",,no
+,,,S028,BI-SE,0.68,,,"Table 4, p. 7",,no
+,,,S028,EE-PE,0.66,,,"Table 4, p. 7",,no
+,,,S028,EE-SE,0.79,,,"Table 4, p.7",,no
+,,,S028,PE-SE,0.74,,,"Table 4, p. 7",,no
+,,,S059,ATT-BI,0.9,,,"Table 4, p.9",,no
+,,,S059,ATT-EE,0.26,,,"Table 4, p.9",,no
+,,,S059,ATT-PE,0.29,,,"Table 4, p.9",,no
+,,,S059,BI-FC,0.13,,,"Table 4, p. 9",,no
+,,,S059,EE-FC,0.93,,,"Table 4, p. 9",,no
+,,,S059,EE-PE,0.17,,,"Table 4, p. 9",,no
+,,,S145,ATT-BI,0.17,,,"Table 3, p. 24",,no
+,,,S145,ATT-EE,0.4,,,"Table 3, p. 24",,no
+,,,S145,ATT-UB,0.15,,,"Table 3, p. 24",,no
+,,,S145,BI-EE,0.2,,,"Table 3, p.24",,no
+,,,S145,BI-UB,0.33,,,"Table 3, p. 24",,no
+,,,S145,EE-UB,0.2,,,"Table 3, p.24",,no
+,,,S110,BI-EE,0.17,,,"Table 4, p. 627",,no
+,,,S110,BI-PE,0.19,,,"Table 4, p. 627",,no
+,,,S110,BI-SI,0.05,,,"Table 4, p. 627",,no
+,,,S072,ATT-PE,0.31,,,,,no
+,,,S219,ANX-ATT,-0.08,,,,,no
+,,,S219,ANX-BI,-0.12,,,,,no
+,,,S219,ANX-EE,-0.1,,,,,no
+,,,S219,ANX-PE,-0.07,,,,,no
+,,,S052,BI-SI,0.61,,,,,no
+,,,S052,EE-FC,0.55,,,,,no
+,,,S052,EE-PE,0.79,,,,,no
+,,,S052,FC-SI,0.41,,,,,no
+,,,S052,PE-SI,0.65,,,,,no
+,,,S111,BI-SI,0.8,,,,,no
+,,,S212,ATT-BI,0.52,,,,,no
+,,,S212,ATT-PE,0.19,,,,,no
+,,,S212,BI-PE,0.25,,,,,no
+,,,S212,EE-PE,0.17,,,,,no
+,,,S186,BI-EE,0.32,,,,,no
+,,,S186,BI-UB,0.23,,,,,no
+,,,S198,BI-FC,-0.171,,,,,no
+,,,S198,EE-SI,-0.136,,,,,no
+,,,S198,FC-PE,-0.027,,,,,no
+,,,S198,FC-SI,-0.046,,,,,no
+,,,S198,FC-UB,-0.16,,,,,no
+,,,S198,PE-SI,-0.293,,,,,no
+,,,S025,BI-SI,-0.187,,,,,no
+,,,S078,ATT-SI,0.608,,,,,no
+,,,S078,BI-SE,0.491,,,,,no
+,,,S078,BI-SI,0.542,,,,,no
+,,,S078,SE-SI,0.486,,,,,no
+,,,S121-1,BI-EE,0.67,,,Figure 2 student,,no
+,,,S121-1,BI-FC,0.59,,,,,no
+,,,S121-1,BI-PE,0.84,,,,,no
+,,,S121-1,BI-SI,0.66,,,,,no
+,,,S121-1,BI-TRU,0.34,,,,,no
+,,,S121-1,BI-UB,0.58,,,,,no
+,,,S121-1,EE-FC,0.72,,,,,no
+,,,S121-1,EE-PE,0.62,,,,,no
+,,,S121-1,EE-SI,0.53,,,,,no
+,,,S121-1,EE-TRU,0.22,,,,,no
+,,,S121-1,EE-UB,0.39,,,,,no
+,,,S121-1,FC-PE,0.53,,,,,no
+,,,S121-1,FC-SI,0.49,,,,,no
+,,,S121-1,FC-TRU,0.16,,,,,no
+,,,S121-1,FC-UB,0.29,,,,,no
+,,,S121-1,PE-SI,0.64,,,,,no
+,,,S121-1,PE-TRU,0.36,,,,,no
+,,,S121-1,PE-UB,0.47,,,,,no
+,,,S121-1,SI-TRU,0.23,,,,,no
+,,,S121-1,SI-UB,0.32,,,,,no
+,,,S121-1,TRU-UB,0.36,,,,,no
+,,,S121-2,BI-EE,0.69,,,Figure 2 teacher,,no
+,,,S121-2,BI-FC,0.58,,,,,no
+,,,S121-2,BI-PE,0.81,,,,,no
+,,,S121-2,BI-SI,0.58,,,,,no
+,,,S121-2,BI-TRU,0.27,,,,,no
+,,,S121-2,BI-UB,0.48,,,,,no
+,,,S121-2,EE-FC,0.7,,,,,no
+,,,S121-2,EE-PE,0.57,,,,,no
+,,,S121-2,EE-SI,0.45,,,,,no
+,,,S121-2,EE-TRU,0.19,,,,,no
+,,,S121-2,EE-UB,0.44,,,,,no
+,,,S121-2,FC-PE,0.47,,,,,no
+,,,S121-2,FC-SI,0.44,,,,,no
+,,,S121-2,FC-TRU,0.13,,,,,no
+,,,S121-2,FC-UB,0.34,,,,,no
+,,,S121-2,PE-SI,0.59,,,,,no
+,,,S121-2,PE-TRU,0.31,,,,,no
+,,,S121-2,PE-UB,0.35,,,,,no
+,,,S121-2,SI-TRU,0.16,,,,,no
+,,,S121-2,SI-UB,0.21,,,,,no
+,,,S121-2,TRU-UB,0.31,,,,,no
+,,,S077,ATT-EE,0.62,,,,,no
+,,,S077,ATT-PE,0.75,,,,,no
+,,,S077,ATT-SI,0.6,,,,,no
+,,,S077,BI-EE,0.62,,,,,no
+,,,S077,BI-PE,0.63,,,,,no
+,,,S077,BI-SI,0.63,,,,,no
+,,,S222,BI-EE,0.45,,,"Table 6, p. 2028",,no
+,,,S222,BI-PE,0.58,,,"Table 6, p.2028",,no
+,,,S218,ATT-BI,0.78,,,"Table 1, p.5",,no
+,,,S218,ATT-EE,0.68,,,"Table 1, p. 5",,no
+,,,S218,ATT-PE,0.7,,,"Table 1, p.5",,no
+,,,S218,BI-EE,0.59,,,"Table 1, p.5",,no
+,,,S218,BI-PE,0.63,,,"Table 1, p.5",,no
+,,,S218,EE-PE,0.66,,,"Table 1, p.5",,no
+,,,S185,ANX-ATT,0.46,,,"Table 3, p.7",,no
+,,,S185,ANX-EE,0.473,,,,,no
+,,,S185,ANX-PE,0.435,,,,,no
+,,,S185,ANX-SI,0.216,,,,,no
+,,,S185,ATT-BI,0.453,,,Table3,,no
+,,,S185,ATT-EE,0.473,,,Table3,,no
+,,,S185,ATT-PE,0.504,,,Table3,,no
+,,,S185,ATT-SI,0.207,,,Table3,,no
+,,,S185,BI-EE,0.524,,,Table3,,no
+,,,S185,BI-PE,0.459,,,Table3,,no
+,,,S185,BI-SI,0.433,,,,,no
+,,,S185,EE-PE,0.482,,,Table3,,no
+,,,S185,EE-SI,0.279,,,Table3,,no
+,,,S185,PE-SI,0.28,,,Table3,,no
+,,,S194,BI-EE,0.44,,,"Table 3, p.825",,no
+,,,S194,BI-FC,0.49,,,"Table 3, p.825",,no
+,,,S194,BI-PE,-0.08,,,"Table 3, p.825",,no
+,,,S194,BI-SI,0.62,,,"Table 3, p.825",,no
+,,,S194,BI-UB,0.64,,,"Table 3, p.825",,no
+,,,S194,EE-FC,0.55,,,"Table 3, p.825",,no
+,,,S194,EE-PE,-0.1,,,"Table 3, p.825",,no
+,,,S194,EE-SI,0.52,,,"Table 3, p.825",,no
+,,,S194,EE-UB,0.49,,,"Table 3, p.825",,no
+,,,S194,FC-PE,-0.12,,,"Table 3, p.825",,no
+,,,S194,FC-SI,0.59,,,"Table 3, p.825",,no
+,,,S194,FC-UB,0.52,,,"Table 3, p.825",,no
+,,,S194,PE-SI,-0.12,,,"Table 3, p.825",,no
+,,,S194,PE-UB,-0.05,,,"Table 3, p.825",,no
+,,,S194,SI-UB,0.56,,,"Table 3, p.825",,no
+,,,S208,BI-EE,0.43,,,"Table 2, p.829",,no
+,,,S208,BI-PE,0.24,,,"Table 2, p.829",,no
+,,,S208,BI-SI,0.46,,,"Table 2, p.829",,no
+,,,S208,BI-TRU,0.52,,,"Table 2, p.829",,no
+,,,S208,EE-PE,0.4,,,"Table 2, p.829",,no
+,,,S208,EE-SI,0.36,,,"Table 2, p.829",,no
+,,,S208,EE-TRU,0.39,,,"Table 2, p. 829",,no
+,,,S208,PE-SI,0.29,,,"Table 2, p. 829",,no
+,,,S208,PE-TRU,0.29,,,"Table 2, p. 829",,no
+,,,S208,SI-TRU,0.24,,,"Table 2, p.829",,no
+,,,S028,ATT-BI,0.87,,,"Table 4, p. 7",,no
+,,,S028,ATT-EE,0.63,,,"Table 4, p.7",,no
+,,,S028,ATT-PE,0.8,,,"Table 4, p. 7",,no
+,,,S028,ATT-SE,0.72,,,"Table 4, p.7",,no
+,,,S028,BI-EE,0.62,,,"Table 4, p. 7",,no
+,,,S028,BI-PE,0.82,,,"Table 4, p.7",,no
+,,,S028,BI-SE,0.68,,,"Table 4, p. 7",,no
+,,,S028,EE-PE,0.66,,,"Table 4, p. 7",,no
+,,,S028,EE-SE,0.79,,,"Table 4, p.7",,no
+,,,S028,PE-SE,0.74,,,"Table 4, p. 7",,no
+,,,S059,ATT-BI,0.9,,,"Table 4, p.9",,no
+,,,S059,ATT-EE,0.26,,,"Table 4, p.9",,no
+,,,S059,ATT-PE,0.29,,,"Table 4, p.9",,no
+,,,S059,BI-FC,0.13,,,"Table 4, p. 9",,no
+,,,S059,EE-FC,0.93,,,"Table 4, p. 9",,no
+,,,S059,EE-PE,0.17,,,"Table 4, p. 9",,no
+,,,S145,ATT-BI,0.17,,,"Table 3, p. 24",,no
+,,,S145,ATT-EE,0.4,,,"Table 3, p. 24",,no
+,,,S145,ATT-UB,0.15,,,"Table 3, p. 24",,no
+,,,S145,BI-EE,0.2,,,"Table 3, p.24",,no
+,,,S145,BI-UB,0.33,,,"Table 3, p. 24",,no
+,,,S145,EE-UB,0.2,,,"Table 3, p.24",,no
+,,,S110,BI-EE,0.17,,,"Table 4, p. 627",,no
+,,,S110,BI-PE,0.19,,,"Table 4, p. 627",,no
+,,,S110,BI-SI,0.05,,,"Table 4, p. 627",,no
+,,,S072,ATT-PE,0.31,,,,,no
+,,,S219,ANX-ATT,-0.08,,,,,no
+,,,S219,ANX-BI,-0.12,,,,,no
+,,,S219,ANX-EE,-0.1,,,,,no
+,,,S219,ANX-PE,-0.07,,,,,no
+,,,S052,BI-SI,0.61,,,,,no
+,,,S052,EE-FC,0.55,,,,,no
+,,,S052,EE-PE,0.79,,,,,no
+,,,S052,FC-SI,0.41,,,,,no
+,,,S052,PE-SI,0.65,,,,,no
+,,,S111,BI-SI,0.8,,,,,no
+,,,S212,ATT-BI,0.52,,,,,no
+,,,S212,ATT-PE,0.19,,,,,no
+,,,S212,BI-PE,0.25,,,,,no
+,,,S212,EE-PE,0.17,,,,,no
+,,,S186,BI-EE,0.32,,,,,no
+,,,S186,BI-UB,0.23,,,,,no
+,,,S198,BI-FC,-0.171,,,,,no
+,,,S198,EE-SI,-0.136,,,,,no
+,,,S198,FC-PE,-0.027,,,,,no
+,,,S198,FC-SI,-0.046,,,,,no
+,,,S198,FC-UB,-0.16,,,,,no
+,,,S198,PE-SI,-0.293,,,,,no
+,,,S025,BI-SI,-0.187,,,,,no
+,,,S078,ATT-SI,0.608,,,,,no
+,,,S078,BI-SI,0.542,,,,,no
+,,,S121-1,BI-EE,0.67,,,Figure 2 student,,no
+,,,S121-1,BI-FC,0.59,,,,,no
+,,,S121-1,BI-PE,0.84,,,,,no
+,,,S121-1,BI-SI,0.66,,,,,no
+,,,S121-1,BI-TRU,0.34,,,,,no
+,,,S121-1,BI-UB,0.58,,,,,no
+,,,S121-1,EE-FC,0.72,,,,,no
+,,,S121-1,EE-PE,0.62,,,,,no
+,,,S121-1,EE-SI,0.53,,,,,no
+,,,S121-1,EE-TRU,0.22,,,,,no
+,,,S121-1,EE-UB,0.39,,,,,no
+,,,S121-1,FC-PE,0.53,,,,,no
+,,,S121-1,FC-SI,0.49,,,,,no
+,,,S121-1,FC-TRU,0.16,,,,,no
+,,,S121-1,FC-UB,0.29,,,,,no
+,,,S121-1,PE-SI,0.64,,,,,no
+,,,S121-1,PE-TRU,0.36,,,,,no
+,,,S121-1,PE-UB,0.47,,,,,no
+,,,S121-1,SI-TRU,0.23,,,,,no
+,,,S121-1,SI-UB,0.32,,,,,no
+,,,S121-1,TRU-UB,0.36,,,,,no
+,,,S121-2,BI-EE,0.69,,,Figure 2 teacher,,no
+,,,S121-2,BI-FC,0.58,,,,,no
+,,,S121-2,BI-PE,0.81,,,,,no
+,,,S121-2,BI-SI,0.58,,,,,no
+,,,S121-2,BI-TRU,0.27,,,,,no
+,,,S121-2,BI-UB,0.48,,,,,no
+,,,S121-2,EE-FC,0.7,,,,,no
+,,,S121-2,EE-PE,0.57,,,,,no
+,,,S121-2,EE-SI,0.45,,,,,no
+,,,S121-2,EE-TRU,0.19,,,,,no
+,,,S121-2,EE-UB,0.44,,,,,no
+,,,S121-2,FC-PE,0.47,,,,,no
+,,,S121-2,FC-SI,0.44,,,,,no
+,,,S121-2,FC-TRU,0.13,,,,,no
+,,,S121-2,FC-UB,0.34,,,,,no
+,,,S121-2,PE-SI,0.59,,,,,no
+,,,S121-2,PE-TRU,0.31,,,,,no
+,,,S121-2,PE-UB,0.35,,,,,no
+,,,S121-2,SI-TRU,0.16,,,,,no
+,,,S121-2,SI-UB,0.21,,,,,no
+,,,S121-2,TRU-UB,0.31,,,,,no
+,,,S077,ATT-EE,0.62,,,,,no
+,,,S077,ATT-PE,0.75,,,,,no
+,,,S077,ATT-SI,0.6,,,,,no
+,,,S077,BI-EE,0.62,,,,,no
+,,,S077,BI-PE,0.63,,,,,no
+,,,S077,BI-SI,0.63,,,,,no
+,,,S218,ATT-BI,0.784,,,Table1,,no
+,,,S218,ATT-EE,0.688,,,Table1,,no
+,,,S218,ATT-PE,0.701,,,Table1,,no
+,,,S218,BI-EE,0.59,,,"Table 1, p.5",,no
+,,,S218,BI-PE,0.632,,,Table1,,no
+,,,S218,EE-PE,0.66,,,"Table 1, p.5",,no
+,,,S218,PE-UB,0.032,,,,,no
+,,,S185,ANX-ATT,0.46,,,"Table 3, p.7",,no
+,,,S185,ANX-BI,0.47,,,"Table 3, p.7",,no
+,,,S185,ANX-EE,0.47,,,"Table 3, p.7",,no
+,,,S185,ANX-FC,0.218,,,,,no
+,,,S185,ANX-PE,0.44,,,"Table 3, p.7",,no
+,,,S185,ANX-SI,0.216,,,,,no
+,,,S185,ATT-BI,0.453,,,Table3,,no
+,,,S185,ATT-EE,0.473,,,Table3,,no
+,,,S185,ATT-FC,0.162,,,,,no
+,,,S185,ATT-PE,0.504,,,Table3,,no
+,,,S185,ATT-SI,0.207,,,Table3,,no
+,,,S185,BI-EE,0.524,,,Table3,,no
+,,,S185,BI-FC,0.419,,,,,no
+,,,S185,BI-PE,0.459,,,Table3,,no
+,,,S185,BI-SI,0.433,,,,,no
+,,,S185,EE-FC,0.156,,,,,no
+,,,S185,EE-PE,0.482,,,Table3,,no
+,,,S185,EE-SI,0.279,,,Table3,,no
+,,,S185,FC-PE,0.173,,,,,no
+,,,S185,FC-SI,0.164,,,,,no
+,,,S185,PE-SI,0.28,,,Table3,,no
+,,,S194,BI-EE,0.44,,,"Table 3, p.825",,no
+,,,S194,BI-FC,0.49,,,"Table 3, p.825",,no
+,,,S194,BI-PE,-0.08,,,"Table 3, p.825",,no
+,,,S194,BI-SI,0.62,,,"Table 3, p.825",,no
+,,,S194,BI-UB,0.64,,,"Table 3, p.825",,no
+,,,S194,EE-FC,0.55,,,"Table 3, p.825",,no
+,,,S194,EE-PE,-0.1,,,"Table 3, p.825",,no
+,,,S194,EE-SI,0.52,,,"Table 3, p.825",,no
+,,,S194,EE-UB,0.49,,,"Table 3, p.825",,no
+,,,S194,FC-PE,-0.12,,,"Table 3, p.825",,no
+,,,S194,FC-SI,0.59,,,"Table 3, p.825",,no
+,,,S194,FC-UB,0.52,,,"Table 3, p.825",,no
+,,,S194,PE-SI,-0.12,,,"Table 3, p.825",,no
+,,,S194,PE-UB,-0.05,,,"Table 3, p.825",,no
+,,,S194,SI-UB,0.56,,,"Table 3, p.825",,no
+,,,S208,BI-EE,0.434,,,Table2,,no
+,,,S208,BI-PE,0.241,,,Table2,,no
+,,,S208,BI-SI,0.462,,,Table2,,no
+,,,S208,BI-TRU,0.524,,,Table2,,no
+,,,S208,EE-PE,0.402,,,Table2,,no
+,,,S208,EE-SI,0.362,,,,,no
+,,,S208,EE-TRU,0.395,,,Table2,,no
+,,,S208,PE-SI,0.296,,,Table2,,no
+,,,S208,PE-TRU,0.295,,,Table2,,no
+,,,S208,SI-TRU,0.241,,,Table2,,no
+,,,S028,ATT-BI,0.877,,,Table4,,no
+,,,S028,ATT-EE,0.63,,,"Table 4, p.7",,no
+,,,S028,ATT-PE,0.809,,,Table4,,no
+,,,S028,ATT-SE,0.721,,,Table4,,no
+,,,S028,BI-EE,0.627,,,Table4,,no
+,,,S028,BI-PE,0.823,,,Table4,,no
+,,,S028,BI-SE,0.685,,,Table4,,no
+,,,S028,EE-PE,0.667,,,Table4,,no
+,,,S028,EE-SE,0.792,,,Table4,,no
+,,,S028,PE-SE,0.744,,,Table4,,no
+,,,S145,BI-EE,0.201,,,Table3,,no
+,,,S145,BI-UB,0.338,,,Table3,,no
+,,,S145,EE-UB,0.204,,,Table3,,no
+,,,S110,BI-EE,0.623,,,Figure3,,no
+,,,S110,BI-PE,0.681,,,Figure3,,no
+,,,S110,BI-SI,0.52,,,"Table 4, p.627",,no
+,,,S072,ANX-BI,-0.623,,,,,no
+,,,S072,ANX-EE,-0.592,,,,,no
+,,,S072,ANX-FC,-0.568,,,,,no
+,,,S072,ANX-PE,-0.522,,,,,no
+,,,S072,ANX-SI,-0.571,,,,,no
+,,,S072,ANX-UB,-0.506,,,,,no
+,,,S219,ANX-ATT,-0.08,,,,,no
+,,,S219,ANX-BI,-0.12,,,,,no
+,,,S219,ANX-EE,-0.1,,,,,no
+,,,S219,ANX-PE,-0.07,,,,,no
+,,,S048,FC-TRU,-0.035,,,,,no
+,,,S007,BI-FC,-0.086,,,,,no
+,,,S007,BI-SE,-0.029,,,,,no
+,,,S007,BI-SI,-0.054,,,,,no
+,,,S012,BI-EE,0.776,,,,,no
+,,,S012,BI-PE,0.787,,,,,no
+,,,S012,EE-FC,0.79,,,,,no
+,,,S012,EE-PE,0.787,,,,,no
+,,,S012,EE-SI,0.335,,,,,no
+,,,S012,FC-SI,0.366,,,,,no
+,,,S012,PE-SI,0.383,,,,,no
+,,,S198,BI-FC,-0.171,,,,,no
+,,,S198,EE-SI,-0.136,,,,,no
+,,,S198,FC-PE,-0.027,,,,,no
+,,,S198,FC-SI,-0.046,,,,,no
+,,,S198,FC-UB,-0.16,,,,,no
+,,,S198,PE-SI,-0.293,,,,,no
+,,,S010,BI-FC,0.113,,,,,no
+,,,S010,FC-UB,0.067,,,,,no
+,,,S170,ATT-PE,0.43,,,,,no
+,,,S170,ATT-SI,0.485,,,,,no
+,,,S170,BI-PE,-0.101,,,,,no
+,,,S130,ANX-EE,-0.52,,,,,no
+,,,S130,ANX-FC,-0.49,,,,,no
+,,,S130,ANX-UB,-0.5,,,,,no
+,,,S225,BI-EE,-0.057,,,,,no
+,,,S225,BI-PE,0.184,,,,,no
+,,,S225,BI-SI,-0.076,,,,,no
+,,,S225,BI-TRU,0.435,,,,,no
+,,,S160,PE-UB,-0.014,,,,,no
+,,,S127,ANX-BI,-0.302,,,,,no
+,,,S127,ANX-EE,-0.351,,,,,no
+,,,S127,ANX-PE,-0.273,,,,,no
+,,,S127,ANX-SE,-0.319,,,,,no
+,,,S127,ANX-SI,-0.105,,,,,no
+,,,S108,EE-PE,0.61,,,,,no
+,,,S063,EE-PE,0.62,,,,,no
+,,,S162,ANX-ATT,-0.323,,,Table 3,,no
+,,,S162,ATT-PE,-0.591,,,Table 3,,no
+,,,S162,PE-UB,-0.079,,,Table 3,,no
+,,,S080,BI-FC,-0.058,,,Table III,,no
+,,,S224,BI-EE,0.2,,,,,no
+,,,S224,BI-FC,0.073,,,,,no
+,,,S224,BI-PE,0.26,,,,,no
+,,,S224,BI-SI,0.27,,,,,no
+,,,S224,BI-UB,0.043,,,,,no
+,,,S148,EE-PE,0.58,,,,,no
+,,,S129,BI-SI,-0.087,,,,,no
+,,,S129,EE-SI,-0.064,,,,,no
+,,,S115,ATT-EE,0.79,,,,,no
+,,,S115,ATT-PE,0.74,,,,,no
+,,,S036,ANX-BI,-0.336,,,Table 4,,no
+,,,S036,ANX-EE,-0.321,,,Table 4,,no
+,,,S036,ANX-PE,-0.366,,,Table 4,,no
+,,,S036,ANX-SE,-0.318,,,Table 4,,no
+,,,S036,ANX-SI,-0.374,,,Table 4,,no
+,,,S036,ANX-TRU,-0.26,,,Table 4,,no
+,,,S128,BI-FC,-0.216,,,Table 3,,no
+,,,S128,EE-FC,-0.121,,,Table 3,,no
+,,,S128,FC-PE,-0.065,,,Table 3,,no
+,,,S128,FC-SI,-0.063,,,Table 3,,no
+,,,S128,FC-UB,-0.101,,,Table 3,,no
+,,,S128,PE-SI,-0.22,,,Table 3,,no
+,,,S070,BI-EE,-0.058,,,,,no
+,,,S070,EE-FC,0.576,,,Figure 4 / results text,,no
+,,,S070,EE-PE,0.502,,,Figure 4 / results text,,no
+,,,S070,FC-PE,0.346,,,Figure 4 / results text,,no
+,,,S070,FC-SI,0.611,,,Figure 4 / results text,,no
+,,,S070,PE-SI,0.471,,,Figure 4 / results text,,no
+,,,S200,BI-FC,-0.122,,,,,no
+,,,S179b,BI-EE,0.013,,,,,no
+,,,S179b,BI-PE,0.285,,,,,no
+,,,S179b,BI-SI,0.398,,,,,no
+,,,S179b,BI-UB,0.338,,,,,no
+,,,S179b,FC-UB,0.206,,,,,no
+,,,S057,ANX-TRU,,,,,,no
+,,,S057,ANX-UB,,,,,,no
+,,,S057,ATT-TRU,,,,,,no
+,,,S057,ATT-UB,,,,,,no
+,,,S057,BI-TRU,,,,,,no
+,,,S057,BI-UB,,,,,,no
+,,,S057,EE-TRU,,,,,,no
+,,,S057,EE-UB,,,,,,no
+,,,S057,FC-TRU,,,,,,no
+,,,S057,FC-UB,,,,,,no
+,,,S057,PE-TRU,,,,,,no
+,,,S057,PE-UB,,,,,,no
+,,,S057,SE-TRU,,,,,,no
+,,,S057,SE-UB,,,,,,no
+,,,S057,SI-TRU,,,,,,no
+,,,S057,SI-UB,,,,,,no
+,,,S057,TRU-UB,,,,,,no
+,,,S138,ANX-ATT,,,,,,no
+,,,S138,ANX-BI,,,,,,no
+,,,S138,ANX-EE,,,,,,no
+,,,S138,ANX-FC,,,,,,no
+,,,S138,ANX-PE,,,,,,no
+,,,S138,ANX-SE,,,,,,no
+,,,S138,ANX-SI,,,,,,no
+,,,S138,ANX-TRU,,,,,,no
+,,,S138,ANX-UB,,,,,,no
+,,,S138,ATT-FC,,,,,,no
+,,,S138,BI-FC,,,,,,no
+,,,S138,EE-FC,,,,,,no
+,,,S138,FC-PE,,,,,,no
+,,,S138,FC-SE,,,,,,no
+,,,S138,FC-SI,,,,,,no
+,,,S138,FC-TRU,,,,,,no
+,,,S138,FC-UB,,,,,,no
+,,,S176,ANX-ATT,,,,,,no
+,,,S176,ANX-BI,,,,,,no
+,,,S176,ANX-EE,,,,,,no
+,,,S176,ANX-FC,,,,,,no
+,,,S176,ANX-PE,,,,,,no
+,,,S176,ANX-SE,,,,,,no
+,,,S176,ANX-SI,,,,,,no
+,,,S176,ANX-TRU,,,,,,no
+,,,S176,ANX-UB,,,,,,no
+,,,S176,ATT-SE,,,,,,no
+,,,S176,BI-SE,,,,,,no
+,,,S176,EE-SE,,,,,,no
+,,,S176,FC-SE,,,,,,no
+,,,S176,PE-SE,,,,,,no
+,,,S176,SE-SI,,,,,,no
+,,,S176,SE-TRU,,,,,,no
+,,,S176,SE-UB,,,,,,no
+,,,S072,ANX-ATT,,,,,,no
+,,,S072,ANX-SE,,,,,,no
+,,,S072,ANX-TRU,,,,,,no
+,,,S072,ATT-SE,,,,,,no
+,,,S072,ATT-TRU,,,,,,no
+,,,S072,ATT-UB,,,,,,no
+,,,S072,BI-SE,,,,,,no
+,,,S072,BI-TRU,,,,,,no
+,,,S072,EE-SE,,,,,,no
+,,,S072,EE-TRU,,,,,,no
+,,,S072,FC-SE,,,,,,no
+,,,S072,FC-TRU,,,,,,no
+,,,S072,PE-SE,,,,,,no
+,,,S072,PE-TRU,,,,,,no
+,,,S072,SE-SI,,,,,,no
+,,,S072,SE-TRU,,,,,,no
+,,,S072,SE-UB,,,,,,no
+,,,S072,SI-TRU,,,,,,no
+,,,S072,TRU-UB,,,,,,no
+,,,S004,ANX-ATT,,,,,,no
+,,,S004,ANX-BI,,,,,,no
+,,,S004,ANX-EE,,,,,,no
+,,,S004,ANX-FC,,,,,,no
+,,,S004,ANX-PE,,,,,,no
+,,,S004,ANX-SE,,,,,,no
+,,,S004,ANX-SI,,,,,,no
+,,,S004,ANX-TRU,,,,,,no
+,,,S004,ANX-UB,,,,,,no
+,,,S004,ATT-BI,,,,,,no
+,,,S004,ATT-EE,,,,,,no
+,,,S004,ATT-FC,,,,,,no
+,,,S004,ATT-PE,,,,,,no
+,,,S004,ATT-SE,,,,,,no
+,,,S004,ATT-SI,,,,,,no
+,,,S004,ATT-TRU,,,,,,no
+,,,S004,ATT-UB,,,,,,no
+,,,S004,BI-SE,,,,,,no
+,,,S004,EE-SE,,,,,,no
+,,,S004,FC-SE,,,,,,no
+,,,S004,PE-SE,,,,,,no
+,,,S004,SE-SI,,,,,,no
+,,,S004,SE-TRU,,,,,,no
+,,,S004,SE-UB,,,,,,no
+,,,S016,ANX-TRU,,,,,,no
+,,,S016,ANX-UB,,,,,,no
+,,,S016,ATT-TRU,,,,,,no
+,,,S016,ATT-UB,,,,,,no
+,,,S016,BI-TRU,,,,,,no
+,,,S016,BI-UB,,,,,,no
+,,,S016,EE-TRU,,,,,,no
+,,,S016,EE-UB,,,,,,no
+,,,S016,FC-TRU,,,,,,no
+,,,S016,FC-UB,,,,,,no
+,,,S016,PE-TRU,,,,,,no
+,,,S016,PE-UB,,,,,,no
+,,,S016,SE-TRU,,,,,,no
+,,,S016,SE-UB,,,,,,no
+,,,S016,TRU-UB,,,,,,no
+,,,S025,ATT-BI,,,,,,no
+,,,S025,ATT-EE,,,,,,no
+,,,S025,ATT-FC,,,,,,no
+,,,S025,ATT-PE,,,,,,no
+,,,S025,ATT-SE,,,,,,no
+,,,S025,ATT-SI,,,,,,no
+,,,S025,ATT-TRU,,,,,,no
+,,,S025,ATT-UB,,,,,,no
+,,,S025,BI-TRU,,,,,,no
+,,,S025,EE-TRU,,,,,,no
+,,,S025,FC-TRU,,,,,,no
+,,,S025,PE-TRU,,,,,,no
+,,,S025,SE-TRU,,,,,,no
+,,,S025,SI-TRU,,,,,,no
+,,,S025,TRU-UB,,,,,,no
+,,,S030,ANX-ATT,,,,,,no
+,,,S030,ANX-BI,,,,,,no
+,,,S030,ANX-EE,,,,,,no
+,,,S030,ANX-FC,,,,,,no
+,,,S030,ANX-PE,,,,,,no
+,,,S030,ANX-SE,,,,,,no
+,,,S030,ANX-SI,,,,,,no
+,,,S030,ANX-TRU,,,,,,no
+,,,S030,ANX-UB,,,,,,no
+,,,S030,ATT-SE,,,,,,no
+,,,S030,ATT-UB,,,,,,no
+,,,S030,BI-SE,,,,,,no
+,,,S030,BI-UB,,,,,,no
+,,,S030,EE-SE,,,,,,no
+,,,S030,EE-UB,,,,,,no
+,,,S030,FC-SE,,,,,,no
+,,,S030,FC-UB,,,,,,no
+,,,S030,PE-SE,,,,,,no
+,,,S030,PE-UB,,,,,,no
+,,,S030,SE-SI,,,,,,no
+,,,S030,SE-TRU,,,,,,no
+,,,S030,SE-UB,,,,,,no
+,,,S030,SI-UB,,,,,,no
+,,,S030,TRU-UB,,,,,,no
+,,,S035,ATT-BI,,,,,,no
+,,,S035,ATT-EE,,,,,,no
+,,,S035,ATT-FC,,,,,,no
+,,,S035,ATT-PE,,,,,,no
+,,,S035,ATT-SI,,,,,,no
+,,,S035,ATT-TRU,,,,,,no
+,,,S035,ATT-UB,,,,,,no
+,,,S036,ANX-ATT,,,,,,no
+,,,S036,ANX-FC,,,,,,no
+,,,S036,ANX-UB,,,,,,no
+,,,S036,ATT-BI,,,,,,no
+,,,S036,ATT-EE,,,,,,no
+,,,S036,ATT-FC,,,,,,no
+,,,S036,ATT-PE,,,,,,no
+,,,S036,ATT-SE,,,,,,no
+,,,S036,ATT-SI,,,,,,no
+,,,S036,ATT-TRU,,,,,,no
+,,,S036,ATT-UB,,,,,,no
+,,,S036,BI-FC,,,,,,no
+,,,S036,BI-UB,,,,,,no
+,,,S036,EE-FC,,,,,,no
+,,,S036,EE-UB,,,,,,no
+,,,S036,FC-PE,,,,,,no
+,,,S036,FC-SE,,,,,,no
+,,,S036,FC-SI,,,,,,no
+,,,S036,FC-TRU,,,,,,no
+,,,S036,FC-UB,,,,,,no
+,,,S036,PE-UB,,,,,,no
+,,,S036,SE-UB,,,,,,no
+,,,S036,SI-UB,,,,,,no
+,,,S036,TRU-UB,,,,,,no
+,,,S048,ANX-ATT,,,,,,no
+,,,S048,ANX-BI,,,,,,no
+,,,S048,ANX-EE,,,,,,no
+,,,S048,ANX-FC,,,,,,no
+,,,S048,ANX-PE,,,,,,no
+,,,S048,ANX-SI,,,,,,no
+,,,S048,ANX-TRU,,,,,,no
+,,,S048,ANX-UB,,,,,,no
+,,,S048,BI-FC,,,,,,no
+,,,S048,BI-PE,,,,,,no
+,,,S048,BI-SI,,,,,,no
+,,,S048,EE-UB,,,,,,no
+,,,S048,FC-UB,,,,,,no
+,,,S048,SI-UB,,,,,,no
+,,,S048,TRU-UB,,,,,,no
+,,,S051,ATT-BI,,,,,,no
+,,,S051,ATT-EE,,,,,,no
+,,,S051,ATT-FC,,,,,,no
+,,,S051,ATT-PE,,,,,,no
+,,,S051,ATT-SI,,,,,,no
+,,,S051,ATT-TRU,,,,,,no
+,,,S051,ATT-UB,,,,,,no
+,,,S051,BI-TRU,,,,,,no
+,,,S051,EE-TRU,,,,,,no
+,,,S051,FC-TRU,,,,,,no
+,,,S051,PE-TRU,,,,,,no
+,,,S051,SI-TRU,,,,,,no
+,,,S051,TRU-UB,,,,,,no
+,,,S055,ANX-ATT,,,,,,no
+,,,S055,ANX-BI,,,,,,no
+,,,S055,ANX-EE,,,,,,no
+,,,S055,ANX-FC,,,,,,no
+,,,S055,ANX-PE,,,,,,no
+,,,S055,ANX-SE,,,,,,no
+,,,S055,ANX-SI,,,,,,no
+,,,S055,ANX-TRU,,,,,,no
+,,,S055,ANX-UB,,,,,,no
+,,,S055,ATT-SE,,,,,,no
+,,,S055,ATT-TRU,,,,,,no
+,,,S055,BI-SE,,,,,,no
+,,,S055,BI-TRU,,,,,,no
+,,,S055,EE-SE,,,,,,no
+,,,S055,EE-TRU,,,,,,no
+,,,S055,FC-SE,,,,,,no
+,,,S055,FC-TRU,,,,,,no
+,,,S055,PE-SE,,,,,,no
+,,,S055,PE-TRU,,,,,,no
+,,,S055,SE-SI,,,,,,no
+,,,S055,SE-TRU,,,,,,no
+,,,S055,SE-UB,,,,,,no
+,,,S055,SI-TRU,,,,,,no
+,,,S055,TRU-UB,,,,,,no
+,,,S086,ANX-ATT,,,,,,no
+,,,S086,ANX-BI,,,,,,no
+,,,S086,ANX-EE,,,,,,no
+,,,S086,ANX-FC,,,,,,no
+,,,S086,ANX-PE,,,,,,no
+,,,S086,ANX-SI,,,,,,no
+,,,S086,ANX-TRU,,,,,,no
+,,,S086,ANX-UB,,,,,,no
+,,,S086,ATT-BI,,,,,,no
+,,,S086,ATT-EE,,,,,,no
+,,,S086,ATT-FC,,,,,,no
+,,,S086,ATT-PE,,,,,,no
+,,,S086,ATT-SI,,,,,,no
+,,,S086,ATT-TRU,,,,,,no
+,,,S086,ATT-UB,,,,,,no
+,,,S088,ANX-ATT,,,,,,no
+,,,S088,ANX-BI,,,,,,no
+,,,S088,ANX-EE,,,,,,no
+,,,S088,ANX-FC,,,,,,no
+,,,S088,ANX-PE,,,,,,no
+,,,S088,ANX-SE,,,,,,no
+,,,S088,ANX-SI,,,,,,no
+,,,S088,ANX-TRU,,,,,,no
+,,,S088,ANX-UB,,,,,,no
+,,,S088,ATT-BI,,,,,,no
+,,,S088,ATT-EE,,,,,,no
+,,,S088,ATT-FC,,,,,,no
+,,,S088,ATT-PE,,,,,,no
+,,,S088,ATT-SE,,,,,,no
+,,,S088,ATT-SI,,,,,,no
+,,,S088,ATT-TRU,,,,,,no
+,,,S088,ATT-UB,,,,,,no
+,,,S088,BI-SE,,,,,,no
+,,,S088,EE-SE,,,,,,no
+,,,S088,FC-SE,,,,,,no
+,,,S088,PE-SE,,,,,,no
+,,,S088,SE-SI,,,,,,no
+,,,S088,SE-TRU,,,,,,no
+,,,S088,SE-UB,,,,,,no
+,,,S121-1,ANX-ATT,,,,,,no
+,,,S121-1,ANX-BI,,,,,,no
+,,,S121-1,ANX-EE,,,,,,no
+,,,S121-1,ANX-FC,,,,,,no
+,,,S121-1,ANX-PE,,,,,,no
+,,,S121-1,ANX-SE,,,,,,no
+,,,S121-1,ANX-SI,,,,,,no
+,,,S121-1,ANX-TRU,,,,,,no
+,,,S121-1,ANX-UB,,,,,,no
+,,,S121-1,ATT-BI,,,,,,no
+,,,S121-1,ATT-EE,,,,,,no
+,,,S121-1,ATT-FC,,,,,,no
+,,,S121-1,ATT-PE,,,,,,no
+,,,S121-1,ATT-SE,,,,,,no
+,,,S121-1,ATT-SI,,,,,,no
+,,,S121-1,ATT-TRU,,,,,,no
+,,,S121-1,ATT-UB,,,,,,no
+,,,S121-1,BI-SE,,,,,,no
+,,,S121-1,EE-SE,,,,,,no
+,,,S121-1,FC-SE,,,,,,no
+,,,S121-1,PE-SE,,,,,,no
+,,,S121-1,SE-SI,,,,,,no
+,,,S121-1,SE-TRU,,,,,,no
+,,,S121-1,SE-UB,,,,,,no
+,,,S121-2,ANX-ATT,,,,,,no
+,,,S121-2,ANX-BI,,,,,,no
+,,,S121-2,ANX-EE,,,,,,no
+,,,S121-2,ANX-FC,,,,,,no
+,,,S121-2,ANX-PE,,,,,,no
+,,,S121-2,ANX-SE,,,,,,no
+,,,S121-2,ANX-SI,,,,,,no
+,,,S121-2,ANX-TRU,,,,,,no
+,,,S121-2,ANX-UB,,,,,,no
+,,,S121-2,ATT-BI,,,,,,no
+,,,S121-2,ATT-EE,,,,,,no
+,,,S121-2,ATT-FC,,,,,,no
+,,,S121-2,ATT-PE,,,,,,no
+,,,S121-2,ATT-SE,,,,,,no
+,,,S121-2,ATT-SI,,,,,,no
+,,,S121-2,ATT-TRU,,,,,,no
+,,,S121-2,ATT-UB,,,,,,no
+,,,S121-2,BI-SE,,,,,,no
+,,,S121-2,EE-SE,,,,,,no
+,,,S121-2,FC-SE,,,,,,no
+,,,S121-2,PE-SE,,,,,,no
+,,,S121-2,SE-SI,,,,,,no
+,,,S121-2,SE-TRU,,,,,,no
+,,,S121-2,SE-UB,,,,,,no
+,,,S157,ATT-BI,,,,,,no
+,,,S157,ATT-EE,,,,,,no
+,,,S157,ATT-FC,,,,,,no
+,,,S157,ATT-PE,,,,,,no
+,,,S157,ATT-SE,,,,,,no
+,,,S157,ATT-SI,,,,,,no
+,,,S157,ATT-TRU,,,,,,no
+,,,S157,ATT-UB,,,,,,no
+,,,S157,BI-TRU,,,,,,no
+,,,S157,EE-TRU,,,,,,no
+,,,S157,FC-TRU,,,,,,no
+,,,S157,PE-TRU,,,,,,no
+,,,S157,SE-TRU,,,,,,no
+,,,S157,SI-TRU,,,,,,no
+,,,S157,TRU-UB,,,,,,no
+,,,S164,ANX-ATT,,,,,,no
+,,,S164,ANX-BI,,,,,,no
+,,,S164,ANX-EE,,,,,,no
+,,,S164,ANX-FC,,,,,,no
+,,,S164,ANX-PE,,,,,,no
+,,,S164,ANX-SI,,,,,,no
+,,,S164,ANX-TRU,,,,,,no
+,,,S164,ANX-UB,,,,,,no
+,,,S164,ATT-TRU,,,,,,no
+,,,S164,BI-TRU,,,,,,no
+,,,S164,EE-TRU,,,,,,no
+,,,S164,FC-TRU,,,,,,no
+,,,S164,PE-TRU,,,,,,no
+,,,S164,SI-TRU,,,,,,no
+,,,S164,TRU-UB,,,,,,no
+,,,S173,ANX-ATT,,,,,,no
+,,,S173,ANX-BI,,,,,,no
+,,,S173,ANX-EE,,,,,,no
+,,,S173,ANX-FC,,,,,,no
+,,,S173,ANX-PE,,,,,,no
+,,,S173,ANX-SE,,,,,,no
+,,,S173,ANX-SI,,,,,,no
+,,,S173,ANX-TRU,,,,,,no
+,,,S173,ANX-UB,,,,,,no
+,,,S173,ATT-BI,,,,,,no
+,,,S173,ATT-EE,,,,,,no
+,,,S173,ATT-FC,,,,,,no
+,,,S173,ATT-PE,,,,,,no
+,,,S173,ATT-SE,,,,,,no
+,,,S173,ATT-SI,,,,,,no
+,,,S173,ATT-TRU,,,,,,no
+,,,S173,ATT-UB,,,,,,no
+,,,S173,BI-SE,,,,,,no
+,,,S173,EE-SE,,,,,,no
+,,,S173,FC-SE,,,,,,no
+,,,S173,PE-SE,,,,,,no
+,,,S173,SE-SI,,,,,,no
+,,,S173,SE-TRU,,,,,,no
+,,,S173,SE-UB,,,,,,no
+,,,S185,ANX-SE,,,,,,no
+,,,S185,ANX-TRU,,,,,,no
+,,,S185,ANX-UB,,,,,,no
+,,,S185,ATT-SE,,,,,,no
+,,,S185,ATT-TRU,,,,,,no
+,,,S185,ATT-UB,,,,,,no
+,,,S185,BI-SE,,,,,,no
+,,,S185,BI-TRU,,,,,,no
+,,,S185,BI-UB,,,,,,no
+,,,S185,EE-SE,,,,,,no
+,,,S185,EE-TRU,,,,,,no
+,,,S185,EE-UB,,,,,,no
+,,,S185,FC-SE,,,,,,no
+,,,S185,FC-TRU,,,,,,no
+,,,S185,FC-UB,,,,,,no
+,,,S185,PE-SE,,,,,,no
+,,,S185,PE-TRU,,,,,,no
+,,,S185,PE-UB,,,,,,no
+,,,S185,SE-SI,,,,,,no
+,,,S185,SE-TRU,,,,,,no
+,,,S185,SE-UB,,,,,,no
+,,,S185,SI-TRU,,,,,,no
+,,,S185,SI-UB,,,,,,no
+,,,S185,TRU-UB,,,,,,no
+,,,S190,ANX-SE,,,,,,no
+,,,S190,ANX-TRU,,,,,,no
+,,,S190,ANX-UB,,,,,,no
+,,,S190,ATT-SE,,,,,,no
+,,,S190,ATT-TRU,,,,,,no
+,,,S190,ATT-UB,,,,,,no
+,,,S190,BI-SE,,,,,,no
+,,,S190,BI-TRU,,,,,,no
+,,,S190,BI-UB,,,,,,no
+,,,S190,EE-SE,,,,,,no
+,,,S190,EE-TRU,,,,,,no
+,,,S190,EE-UB,,,,,,no
+,,,S190,FC-SE,,,,,,no
+,,,S190,FC-TRU,,,,,,no
+,,,S190,FC-UB,,,,,,no
+,,,S190,PE-SE,,,,,,no
+,,,S190,PE-TRU,,,,,,no
+,,,S190,PE-UB,,,,,,no
+,,,S190,SE-SI,,,,,,no
+,,,S190,SE-TRU,,,,,,no
+,,,S190,SE-UB,,,,,,no
+,,,S190,SI-TRU,,,,,,no
+,,,S190,SI-UB,,,,,,no
+,,,S190,TRU-UB,,,,,,no
+,,,S191,ANX-ATT,,,,,,no
+,,,S191,ANX-BI,,,,,,no
+,,,S191,ANX-EE,,,,,,no
+,,,S191,ANX-FC,,,,,,no
+,,,S191,ANX-PE,,,,,,no
+,,,S191,ANX-SE,,,,,,no
+,,,S191,ANX-SI,,,,,,no
+,,,S191,ANX-UB,,,,,,no
+,,,S191,ATT-BI,,,,,,no
+,,,S191,ATT-EE,,,,,,no
+,,,S191,ATT-FC,,,,,,no
+,,,S191,ATT-PE,,,,,,no
+,,,S191,ATT-SE,,,,,,no
+,,,S191,ATT-SI,,,,,,no
+,,,S191,ATT-UB,,,,,,no
+,,,S214,ANX-ATT,,,,,,no
+,,,S214,ANX-BI,,,,,,no
+,,,S214,ANX-EE,,,,,,no
+,,,S214,ANX-FC,,,,,,no
+,,,S214,ANX-PE,,,,,,no
+,,,S214,ANX-SE,,,,,,no
+,,,S214,ANX-SI,,,,,,no
+,,,S214,ANX-UB,,,,,,no
+,,,S214,ATT-SE,,,,,,no
+,,,S214,BI-SE,,,,,,no
+,,,S214,EE-SE,,,,,,no
+,,,S214,FC-SE,,,,,,no
+,,,S214,PE-SE,,,,,,no
+,,,S214,SE-SI,,,,,,no
+,,,S214,SE-UB,,,,,,no
+,,,S223,ATT-BI,,,,,,no
+,,,S223,ATT-EE,,,,,,no
+,,,S223,ATT-FC,,,,,,no
+,,,S223,ATT-PE,,,,,,no
+,,,S223,ATT-SE,,,,,,no
+,,,S223,ATT-SI,,,,,,no
+,,,S223,ATT-TRU,,,,,,no
+,,,S223,ATT-UB,,,,,,no
+,,,S223,BI-SE,,,,,,no
+,,,S223,EE-SE,,,,,,no
+,,,S223,FC-SE,,,,,,no
+,,,S223,PE-SE,,,,,,no
+,,,S223,SE-SI,,,,,,no
+,,,S223,SE-TRU,,,,,,no
+,,,S223,SE-UB,,,,,,no

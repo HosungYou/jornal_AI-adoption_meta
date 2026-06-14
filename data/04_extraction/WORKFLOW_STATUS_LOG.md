@@ -286,3 +286,13 @@ AI procedure boundary: AI `M1-R` coding was not identical to human independent c
 Evidence files: `docs/07_manuscript_exemplars/20260614/PAPER_A_WORKBOOK_SOURCE_AI_RELEASE_CONTEXT_20260614.md`, `data/04_extraction/01_raw_human_coder_data_freeze/phase2/latest_R1_R4_read_only_copies_20260614/LATEST_R1_R4_READ_ONLY_COPY_MANIFEST_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_human_ai_source_evidence_audit_20260614/PAPER_A_HUMAN_AI_SOURCE_EVIDENCE_AUDIT_20260614.md`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_human_ai_source_evidence_audit_20260614/paper_a_latest_human_source_pdf_review_candidates_20260614.csv`, `data/04_extraction/05_llm_masem_substitution/results/paper_a_human_ai_source_evidence_audit_20260614/paper_a_full10_high_coverage_densification_candidates_20260614.csv`.
 
 Next required work: freeze the Paper A latest-human analytic input with inclusion/provenance rules; manually review source/PDF miss candidates; source-densify high-coverage full10 studies; then choose whether to submit with full10 theory target plus trust6 diagnostic or delay final Paper A MASEM claims until full10 is estimable.
+
+## 2026-06-14 Paper A AI-Candidate-Only Source Trace Packet
+
+Status update: the researcher selected the candidate-only route for AI source tracing. AI source-trace results may be used for review, but no row may enter Paper A analytic input and no Paper B frozen reference value may change until the researcher confirms the source value, evidence type, and source location.
+
+Generated packet: `data/04_extraction/05_llm_masem_substitution/results/paper_a_ai_candidate_source_trace_20260614/`.
+
+Boundary: this is not independent human coding and not source-anchored adjudication by itself. It is an AI-assisted source-trace/review queue for human confirmation.
+
+Next required work: the researcher reviews `paper_a_human_confirmation_template_from_ai_trace_20260614.csv`; only confirmed rows can be used to build a future `paper_a_human_confirmed_supplemental_densification_*.csv` input.

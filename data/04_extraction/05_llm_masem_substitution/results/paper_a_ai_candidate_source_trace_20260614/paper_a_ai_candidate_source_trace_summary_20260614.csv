@@ -1,0 +1,12 @@
+metric,value,notes
+existing_human_value_review_rows,727,from source/PDF review candidates
+existing_status::ai_trace_auto_value_visible_exact,609,
+existing_status::ai_trace_possible_value_visible_broad_match,118,
+existing_review_priority::p2_source_or_pdf_presence_gap,276,
+existing_review_priority::p1_review_value_not_found_in_any_text,451,
+densification_missing_pair_rows,574,from high-coverage full10 candidate studies
+densification_status::possible_densification_source_review_candidate,465,
+densification_status::likely_not_densifiable_one_construct_not_visible,107,
+densification_status::likely_not_densifiable_construct_pair_not_visible,2,
+densification_studies,25,
+paper_b_boundary,candidate_only,No row is analytic input until human confirmation

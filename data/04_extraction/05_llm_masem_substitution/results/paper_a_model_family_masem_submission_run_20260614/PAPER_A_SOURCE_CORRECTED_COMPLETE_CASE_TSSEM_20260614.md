@@ -1,0 +1,23 @@
+# Paper A source-corrected complete-case TSSEM diagnostic
+
+Date: 2026-06-14
+
+Input: `data/04_extraction/05_llm_masem_substitution/results/paper_a_source_clean_submission_input_20260614/paper_a_source_clean_submission_input_20260614.csv`
+
+## Summary
+
+| Route | Candidate complete cases | Positive-definite complete cases | Stage 1 | Stage 2 | Boundary |
+| --- | ---: | ---: | --- | --- | --- |
+| paper_a_core7_att_mediation | 4 | 4 | converged | converged | Complete-case ATT mediation diagnostic only; not full10 primary. |
+| paper_a_trust6_mechanism | 7 | 7 | converged | converged | Complete-case TRU mechanism diagnostic; defensible only as reduced sensitivity route. |
+| paper_a_full10_theory_target | 0 | 0 | not_run | not_run | Full10 primary target; not estimable without complete-case or defensible missing-data route. |
+
+## Interpretation boundary
+
+This is a diagnostic complete-case rerun after the S004/S048 source-correction proposal. Full10 remains non-estimable by complete-case TSSEM because it has zero complete-case studies. Reduced trust6/core7 routes may be reported only as sensitivity or diagnostic routes unless the researcher changes the primary model claim.
+
+## Output files
+
+- `paper_a_source_corrected_complete_case_summary_20260614.csv`
+- per-route `*_complete_case_matrix_eigen_20260614.csv`
+- per-route `*_complete_case_stage2_paths_20260614.csv` and `*_complete_case_stage2_fit_indices_20260614.csv` when Stage 2 succeeds

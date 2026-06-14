@@ -16,7 +16,7 @@ ONEDRIVE = (
     / "AI Adoption Meta Analysis - Documents"
 )
 SSD_ROOTS = [
-    Path("/Volumes/External SSD/Projects/Meta-Analysis/jornal_AI-adoption_meta"),
+    Path("/Volumes/External SSD/Projects/Meta-Analysis/journal_AI-adoption_meta"),
     Path("/Volumes/External SSD/Projects/Meta-Analysis/dissertation_AI-adoption_meta"),
     Path("/Volumes/External SSD/Projects/Research/AI-Adoption"),
     Path("/Volumes/External SSD/Projects/GoogleDrive/Academic"),
@@ -195,7 +195,7 @@ def main() -> None:
         ONEDRIVE / "Meta/AI Adoption/Paper2_Human_Final_Consensus_20260605_v2",
         ONEDRIVE / "Meta/AI Adoption/Paper2_LLM_Extraction_Working_20260605",
         ONEDRIVE / "Meta/AI Adoption/Paper2_Analysis_Input_20260530",
-        ONEDRIVE / "Git/jornal_AI-adoption_meta",
+        ONEDRIVE / "Git/journal_AI-adoption_meta",
         *SSD_ROOTS,
     ]
 

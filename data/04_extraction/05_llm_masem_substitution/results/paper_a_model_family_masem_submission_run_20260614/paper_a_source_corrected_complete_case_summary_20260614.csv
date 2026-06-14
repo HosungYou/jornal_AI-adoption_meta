@@ -1,0 +1,4 @@
+route,constructs,required_pairs,candidate_complete_case_studies,positive_definite_complete_case_studies,positive_definite_complete_case_ids,stage1_status,stage1_method,stage1_error,stage2_status,stage2_status_code,stage2_error,stage2_path_count,stage2_fit_count,claim_boundary
+paper_a_core7_att_mediation,"PE,EE,SI,FC,ATT,BI,UB",21,4,4,S048;S055;S176;S214,converged,REM,,converged,0,,19,9,Complete-case ATT mediation diagnostic only; not full10 primary.
+paper_a_trust6_mechanism,"PE,EE,SI,TRU,BI,UB",15,7,7,S004;S048;S121;S121-1;S121-2;S173;S176,converged,REM,,converged,0,,14,9,Complete-case TRU mechanism diagnostic; defensible only as reduced sensitivity route.
+paper_a_full10_theory_target,"PE,EE,SI,FC,ATT,SE,TRU,ANX,BI,UB",45,0,0,,not_run,none,fewer than 2 positive-definite complete-case matrices,not_run,NA,,0,0,Full10 primary target; not estimable without complete-case or defensible missing-data route.

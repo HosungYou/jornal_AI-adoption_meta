@@ -1,0 +1,5 @@
+route,study_id,min_eigen,positive_definite
+paper_a_core7_att_mediation,S048,0.15113903652055144,TRUE
+paper_a_core7_att_mediation,S055,0.11571582143961552,TRUE
+paper_a_core7_att_mediation,S176,0.1616662230768648,TRUE
+paper_a_core7_att_mediation,S214,0.32249312259512525,TRUE

@@ -1,0 +1,10 @@
+route,fit_index,value
+paper_a_trust6_mechanism,chisq,8.956959244839492
+paper_a_trust6_mechanism,df,4
+paper_a_trust6_mechanism,p,0.06218434486945279
+paper_a_trust6_mechanism,CFI,0.9961325711492417
+paper_a_trust6_mechanism,TLI,0.9854971418096562
+paper_a_trust6_mechanism,RMSEA,0.010961351760750497
+paper_a_trust6_mechanism,SRMR,0.03987918602229432
+paper_a_trust6_mechanism,AIC,0.9569592448394921
+paper_a_trust6_mechanism,BIC,-28.00845845718192

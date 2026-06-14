@@ -29,7 +29,7 @@ PAPER_B_MANIFEST = REPO / "data/04_extraction/07_paper_c_harness_benchmark/00_ma
 PAPER_B_PACKET_DIR = REPO / "data/04_extraction/07_paper_c_harness_benchmark/private/source_renderings_20260609_full_coverage/source_packets"
 PAPER_B_EXCEPTION_LAYER = REPO / "data/04_extraction/05_llm_masem_substitution/results/full_corpus_m1_r_beta_path_exception_correction_layer_20260611.csv"
 PAPER_A_EXISTING_N_RECON = REPO / "data/04_extraction/05_llm_masem_substitution/results/paper2_masem_sample_size_reconciliation_20260611.csv"
-EXTERNAL_SSD_REPO = Path("/Volumes/External SSD/Projects/Meta-Analysis/jornal_AI-adoption_meta")
+EXTERNAL_SSD_REPO = Path("/Volumes/External SSD/Projects/Meta-Analysis/journal_AI-adoption_meta")
 EXTERNAL_SSD_DISSERTATION = Path("/Volumes/External SSD/Projects/Meta-Analysis/dissertation_AI-adoption_meta")
 
 TARGET_CONSTRUCTS = ["PE", "EE", "SI", "FC", "ATT", "SE", "TRU", "ANX", "BI", "UB"]
@@ -901,7 +901,7 @@ on the 2026-06-05 legacy primary freeze alone.
 ## SSD Check
 
 The mounted External SSD contains repo copies, but the checked
-`jornal_AI-adoption_meta` copy is shallower than the current workspace and did
+`journal_AI-adoption_meta` copy is shallower than the current workspace and did
 not add ANX-TRU rows. The `dissertation_AI-adoption_meta` CSVs also did not
 contain additional ANX-TRU rows. Current best evidence is therefore the
 post-freeze full-corpus reference in this workspace.

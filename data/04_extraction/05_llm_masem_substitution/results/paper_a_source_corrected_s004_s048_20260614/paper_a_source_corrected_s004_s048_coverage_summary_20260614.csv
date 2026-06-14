@@ -1,0 +1,7 @@
+dataset,route,constructs,required_pairs,observed_pairs,missing_pairs,numeric_studies,complete_case_studies,max_pairs_in_one_study,min_pair_k,complete_case_study_ids,missing_pair_list
+baseline,paper_a_full10_theory_target,"PE,EE,SI,FC,ATT,SE,TRU,ANX,BI,UB",45,44,1,74,0,28,1,,ANX-TRU
+baseline,paper_a_trust6_mechanism,"PE,EE,SI,TRU,BI,UB",15,15,0,72,6,15,8,S004;S121;S121-1;S121-2;S173;S176,
+baseline,paper_a_core7_att_mediation,"PE,EE,SI,FC,ATT,BI,UB",21,21,0,71,3,21,10,S055;S176;S214,
+corrected,paper_a_full10_theory_target,"PE,EE,SI,FC,ATT,SE,TRU,ANX,BI,UB",45,44,1,75,0,28,1,,ANX-TRU
+corrected,paper_a_trust6_mechanism,"PE,EE,SI,TRU,BI,UB",15,15,0,73,7,15,9,S004;S048;S121;S121-1;S121-2;S173;S176,
+corrected,paper_a_core7_att_mediation,"PE,EE,SI,FC,ATT,BI,UB",21,21,0,72,4,21,11,S048;S055;S176;S214,

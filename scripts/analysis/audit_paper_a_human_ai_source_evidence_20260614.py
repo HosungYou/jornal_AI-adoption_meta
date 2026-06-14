@@ -14,7 +14,8 @@ RESULT_ROOT = REPO / 'data/04_extraction/05_llm_masem_substitution/results'
 OUT = RESULT_ROOT / 'paper_a_human_ai_source_evidence_audit_20260614'
 OUT.mkdir(parents=True, exist_ok=True)
 LATEST_INPUT = RESULT_ROOT / 'paper_a_latest_human_workbook_audit_20260614/paper_a_latest_human_workbook_direct_r_input_20260614.csv'
-SOURCE_PACKET_DIR = REPO / 'data/04_extraction/07_paper_c_harness_benchmark/private/source_renderings_20260609_full_coverage/source_packets'
+SOURCE_REFERENCE_PACKAGE = REPO / 'data/04_extraction/07_paper_c_harness_benchmark/private/paper_a_source_reference_package_20260614'
+SOURCE_PACKET_DIR = SOURCE_REFERENCE_PACKAGE / 'source_packets'
 TASK_SHELL = REPO / 'data/04_extraction/05_llm_masem_substitution/full_corpus_step5_task_unit_shell_20260609.csv'
 AI_MANIFEST = REPO / 'data/04_extraction/05_llm_masem_substitution/locked_outputs/FULL_CORPUS_M1_R_FULL_RUN_MANIFEST_20260612.csv'
 AI_SCORE = RESULT_ROOT / 'paper_b_full_corpus_m1_raw_full_scored_20260612.csv'
@@ -22,6 +23,7 @@ AI_EXCEPTION_SCORE = RESULT_ROOT / 'paper_b_full_corpus_m1_raw_full_exception_la
 AI_SCORE_SUMMARY = RESULT_ROOT / 'paper_b_full_corpus_m1_raw_full_score_summary_20260612.csv'
 AI_EXCEPTION_SUMMARY = RESULT_ROOT / 'paper_b_full_corpus_m1_raw_full_exception_layer_scored_summary_20260612.csv'
 PDF_ROOTS = [
+    SOURCE_REFERENCE_PACKAGE / 'pdfs',
     Path('/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Meta/AI Adoption/PDFs'),
     Path('/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Meta/AI Adoption/R1/PDFs'),
     Path('/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents/Meta/AI Adoption/R2/PDFs'),

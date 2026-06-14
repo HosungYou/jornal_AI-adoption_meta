@@ -1,0 +1,57 @@
+study_id,construct_pair,change_action,old_r_numeric,new_r_numeric,old_present_in_baseline,included_in_corrected_input,reason
+S004,BI-EE,keep_existing_frozen_value,0.582,0.582,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,BI-FC,keep_existing_frozen_value,0.644,0.644,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,BI-PE,keep_existing_frozen_value,0.667,0.667,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,BI-SI,keep_existing_frozen_value,0.668,0.668,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,BI-TRU,keep_existing_frozen_value,0.63,0.630,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,BI-UB,keep_existing_frozen_value,0.751,0.751,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,EE-FC,keep_existing_frozen_value,0.664,0.664,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,EE-PE,keep_existing_frozen_value,0.697,0.697,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,EE-SI,keep_existing_frozen_value,0.61,0.610,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,EE-TRU,keep_existing_frozen_value,0.52,0.520,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,EE-UB,keep_existing_frozen_value,0.607,0.607,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,FC-PE,keep_existing_frozen_value,0.676,0.676,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,FC-SI,keep_existing_frozen_value,0.59,0.590,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,FC-TRU,add_source_visible_non_candidate,,0.533,no,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,FC-UB,correct_existing_frozen_value,0.533,0.601,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,PE-SI,keep_existing_frozen_value,0.637,0.637,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,PE-TRU,keep_existing_frozen_value,0.541,0.541,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,PE-UB,keep_existing_frozen_value,0.607,0.607,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,SI-TRU,keep_existing_frozen_value,0.563,0.563,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,SI-UB,keep_existing_frozen_value,0.644,0.644,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,TRU-UB,keep_existing_frozen_value,0.599,0.599,yes,yes,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,PE-SE,remove_unapproved_or_source_unsupported_pair,0.601,,yes,no,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,BI-SE,reject_priority_candidate_unapproved_mapping,,,no,no,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,EE-SE,reject_priority_candidate_unapproved_mapping,,,no,no,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,FC-SE,reject_priority_candidate_unapproved_mapping,,,no,no,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,SE-SI,reject_priority_candidate_unapproved_mapping,,,no,no,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,SE-TRU,reject_priority_candidate_unapproved_mapping,,,no,no,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S004,SE-UB,reject_priority_candidate_unapproved_mapping,,,no,no,TC->TRU; IU->BI; UB->UB; PE/EE/SI/FC unchanged; PKC->SE rejected by researcher on 2026-06-14
+S048,ATT-BI,keep_existing_frozen_value,,0.820,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,ATT-EE,correct_existing_frozen_value,,0.468,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,ATT-FC,correct_existing_frozen_value,,0.385,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,ATT-PE,correct_existing_frozen_value,,0.677,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,ATT-SI,correct_existing_frozen_value,,0.575,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,ATT-TRU,correct_existing_frozen_value,,0.512,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,ATT-UB,keep_existing_frozen_value,,0.769,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,BI-EE,correct_existing_frozen_value,,0.453,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,BI-FC,add_priority_candidate,,0.424,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,BI-PE,add_priority_candidate,,0.659,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,BI-SI,add_priority_candidate,,0.626,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,BI-TRU,correct_existing_frozen_value,,0.527,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,BI-UB,keep_existing_frozen_value,,0.829,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,EE-FC,correct_existing_frozen_value,,0.659,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,EE-PE,correct_existing_frozen_value,,0.536,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,EE-SI,correct_existing_frozen_value,,0.310,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,EE-TRU,correct_existing_frozen_value,,0.391,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,EE-UB,add_priority_candidate,,0.398,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,FC-PE,keep_existing_frozen_value,,0.471,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,FC-SI,correct_existing_frozen_value,,0.323,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,FC-TRU,correct_existing_frozen_value,,0.364,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,FC-UB,add_priority_candidate,,0.340,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,PE-SI,correct_existing_frozen_value,,0.433,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,PE-TRU,keep_existing_frozen_value,,0.481,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,PE-UB,keep_existing_frozen_value,,0.596,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,SI-TRU,correct_existing_frozen_value,,0.436,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,SI-UB,add_priority_candidate,,0.589,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged
+S048,TRU-UB,add_priority_candidate,,0.442,no,yes,INT->BI; USE->UB; PE/EE/SI/FC/TRU/ATT unchanged

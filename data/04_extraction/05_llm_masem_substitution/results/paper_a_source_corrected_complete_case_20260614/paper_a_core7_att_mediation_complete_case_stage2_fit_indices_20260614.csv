@@ -1,0 +1,10 @@
+route,fit_index,value
+paper_a_core7_att_mediation,chisq,6.146068230550995
+paper_a_core7_att_mediation,df,5
+paper_a_core7_att_mediation,p,0.2922642485228366
+paper_a_core7_att_mediation,CFI,0.9989548120998357
+paper_a_core7_att_mediation,TLI,0.9956102108193099
+paper_a_core7_att_mediation,RMSEA,0.008502019833665041
+paper_a_core7_att_mediation,SRMR,0.043421286367367355
+paper_a_core7_att_mediation,AIC,-3.853931769449005
+paper_a_core7_att_mediation,BIC,-34.1645196832227

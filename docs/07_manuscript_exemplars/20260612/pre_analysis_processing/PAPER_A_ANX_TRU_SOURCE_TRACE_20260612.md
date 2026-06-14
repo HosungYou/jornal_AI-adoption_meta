@@ -53,7 +53,7 @@ on the 2026-06-05 legacy primary freeze alone.
 ## SSD Check
 
 The mounted External SSD contains repo copies, but the checked
-`jornal_AI-adoption_meta` copy is shallower than the current workspace and did
+`journal_AI-adoption_meta` copy is shallower than the current workspace and did
 not add ANX-TRU rows. The `dissertation_AI-adoption_meta` CSVs also did not
 contain additional ANX-TRU rows. Current best evidence is therefore the
 post-freeze full-corpus reference in this workspace.

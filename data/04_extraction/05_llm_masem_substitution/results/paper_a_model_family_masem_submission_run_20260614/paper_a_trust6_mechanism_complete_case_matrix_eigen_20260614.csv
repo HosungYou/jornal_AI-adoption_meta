@@ -1,0 +1,8 @@
+route,study_id,min_eigen,positive_definite
+paper_a_trust6_mechanism,S004,0.22145423152112215,TRUE
+paper_a_trust6_mechanism,S048,0.1603084345749528,TRUE
+paper_a_trust6_mechanism,S121,0.14216781910202933,TRUE
+paper_a_trust6_mechanism,S121-1,0.14216781910202933,TRUE
+paper_a_trust6_mechanism,S121-2,0.160891179961118,TRUE
+paper_a_trust6_mechanism,S173,0.13817440957152186,TRUE
+paper_a_trust6_mechanism,S176,0.1608223553441015,TRUE
