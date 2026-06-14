@@ -63,3 +63,12 @@ Continue with pair order 04 `ATT-PE` in `paper_a_C_full10_pair_ordered_batch01_2
 - 핵심 제외 원칙: `insecurity`, `privacy concerns`, `psychological risk`, `perceived risk`, `habit`, `perceived competence`, `perceived enjoyment`는 full10 `TRU`로 자동 매핑하지 않는다.
 - 산출물: `paper_a_C_pair06_PE_TRU_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR06_PE_TRU_REVIEW_LOG_KO_20260614.md`
 - 다음 pair: `07_ANX-PE`
+
+## 2026-06-14 pair 07_ANX-PE preliminary source/PDF review
+
+- 대상 row: 14
+- 예비 결론: 즉시 승격 0개, 조건부 후보 2개 (`S121-1=-0.23`, `S121-2=-0.08`, Figure 2 Spearman r).
+- 조건: `threat appraisal`을 full10 `ANX`로 인정할지 연구자 확인 필요.
+- 제외 원칙: `perceived risk`, `innovative resistance`, `trust`, `privacy/security`, `reference-only anxiety`, `challenge appraisal`은 full10 `ANX`로 자동 매핑하지 않는다.
+- 산출물: `paper_a_C_pair07_ANX_PE_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR07_ANX_PE_REVIEW_LOG_KO_20260614.md`
+- 다음 pair: `08_BI-PE`

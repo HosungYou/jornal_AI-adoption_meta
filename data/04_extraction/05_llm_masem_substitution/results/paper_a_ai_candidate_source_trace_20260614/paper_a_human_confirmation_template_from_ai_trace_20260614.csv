@@ -1000,7 +1000,7 @@ human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_
 ,,,S121-1,ANX-BI,,,,,,no
 ,,,S121-1,ANX-EE,,,,,,no
 ,,,S121-1,ANX-FC,,,,,,no
-,,,S121-1,ANX-PE,,,,,,no
+,,,S121-1,ANX-PE,-0.23,,source_reported_spearman_correlation_heatmap,S121.pdf p.8 Figure 2,Conditional candidate: threat appraisal and performance expectancy; requires researcher confirmation that threat appraisal maps to full10 ANX.,pending_researcher_confirmation
 ,,,S121-1,ANX-SE,,,,,,no
 ,,,S121-1,ANX-SI,,,,,,no
 ,,,S121-1,ANX-TRU,,,,,,no
@@ -1024,7 +1024,7 @@ approve,2026-06-14,researcher,S121-1,PE-SE,0.40,0.40,source-reported Spearman co
 ,,,S121-2,ANX-BI,,,,,,no
 ,,,S121-2,ANX-EE,,,,,,no
 ,,,S121-2,ANX-FC,,,,,,no
-,,,S121-2,ANX-PE,,,,,,no
+,,,S121-2,ANX-PE,-0.08,,source_reported_spearman_correlation_heatmap,S121.pdf p.8 Figure 2,Conditional candidate: threat appraisal and performance expectancy; requires researcher confirmation that threat appraisal maps to full10 ANX.,pending_researcher_confirmation
 ,,,S121-2,ANX-SE,,,,,,no
 ,,,S121-2,ANX-SI,,,,,,no
 ,,,S121-2,ANX-TRU,,,,,,no

@@ -7,12 +7,13 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 ## Focus Now
 - Current goal: Provide AI-candidate-only Paper A source-trace results for researcher review without violating Paper B reference-standard boundaries.
 - Current blocker: AI traces are review evidence only; no row may enter Paper A supplemental input until the researcher confirms the source value, evidence type, and source location.
-- Next action: Researcher uses the A spot-check worksheet and C full10 ordered queue workbook to confirm rows for promotion; C review continues at pair order 04 `ATT-PE` after initial `FC-PE` construct-mapping gate.
+- Next action: Continue full10 ordered densification review at `08_BI-PE`; S121 ANX-PE threat-appraisal values remain conditional pending researcher mapping confirmation.
 - Perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist
 - Disagreement: show_on_conflict
 
 ## Open Questions
 - Which AI-candidate source-trace rows should be human-confirmed and promoted to supplemental Paper A densification input?
+- For S121, should `threat appraisal` be accepted as full10 `ANX` for the conditional ANX-PE values?
 
 ## Recent LongTable Invocations
 - researcher decision recorded: use the recommended candidate-only route; source-trace results should be provided to the researcher, who decides whether any row enters supplemental Paper A input.
@@ -21,7 +22,7 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - boundary preserved: AI traces are not independent human coding and not source-anchored adjudication by themselves.
 
 ## Pending Decision Questions
-- None formally pending; the researcher now reviews the confirmation template row by row.
+- Researcher checkpoint pending: decide whether S121 `threat appraisal` can be mapped to full10 `ANX` for conditional ANX-PE supplemental input.
 
 ## Restart Prompt
 - "Continue after the 2026-06-14 Paper A AI-candidate-only source-trace packet: AI traces are review evidence only and cannot enter Paper A supplemental input until the researcher confirms source value, evidence type, and source location. Use the generated confirmation template to decide which rows to promote."
@@ -69,3 +70,13 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
   - `paper_a_C_pair06_PE_TRU_source_evidence_draft_20260614.csv`
   - `PAPER_A_C_PAIR06_PE_TRU_REVIEW_LOG_KO_20260614.md`
 - Current next action: continue full10 ordered densification review at `07_ANX-PE`.
+
+## 2026-06-14 update - Paper A/C full10 pair 07_ANX-PE source/PDF review
+
+- Completed the ordered source/PDF review for `07_ANX-PE` across 14 AI-candidate rows.
+- Preliminary decision: no immediate promotion. `S121-1` and `S121-2` have conditional Figure 2 Spearman-r candidates (`-0.23`, `-0.08`) only if `threat appraisal` is approved as full10 `ANX`.
+- Exclusion rule recorded: do not map `perceived risk`, `innovative resistance`, `trust`, `privacy/security`, `reference-only anxiety`, or `challenge appraisal` to full10 `ANX`.
+- Generated evidence artifacts under `data/04_extraction/05_llm_masem_substitution/results/paper_a_ai_candidate_source_trace_20260614/`:
+  - `paper_a_C_pair07_ANX_PE_source_evidence_draft_20260614.csv`
+  - `PAPER_A_C_PAIR07_ANX_PE_REVIEW_LOG_KO_20260614.md`
+- Current next action: continue full10 ordered densification review at `08_BI-PE`; do not rerun model-family MASEM until approved supplemental rows are staged.
