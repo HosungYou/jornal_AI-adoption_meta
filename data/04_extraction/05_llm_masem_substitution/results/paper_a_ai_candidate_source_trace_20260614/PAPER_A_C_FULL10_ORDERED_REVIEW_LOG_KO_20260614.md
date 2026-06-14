@@ -38,3 +38,13 @@ Continue with pair order 04 `ATT-PE` in `paper_a_C_full10_pair_ordered_batch01_2
 - 예비 결론: 승격 후보 0개. 모든 row에서 PE/PU 대응 construct는 확인되지만 full10 `ATT` 측정 construct가 보이지 않아 `do_not_promote_construct_mapping_failure_no_ATT`로 분류했다.
 - 산출물: `paper_a_C_pair04_ATT_PE_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR04_ATT_PE_REVIEW_LOG_KO_20260614.md`
 - 다음 pair: `05_PE-SE`
+
+
+## 2026-06-14 pair 05_PE-SE preliminary source/PDF review
+
+- 대상 row: 13
+- 예비 결론: 즉시 승격 0개, 조건부 후보 2개 (`S121-1=.40`, `S121-2=.30`, Figure 2 Spearman r).
+- 조건: `genAI-related subjective competence`를 full10 `SE`로 인정할지 연구자 확인 필요.
+- 제외 원칙: `PBC`, `Security`, 일반 efficacy 표현, 참고문헌의 self-efficacy는 full10 `SE`로 자동 매핑하지 않는다.
+- 산출물: `paper_a_C_pair05_PE_SE_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR05_PE_SE_REVIEW_LOG_KO_20260614.md`
+- 다음 pair: `06_PE-TRU`

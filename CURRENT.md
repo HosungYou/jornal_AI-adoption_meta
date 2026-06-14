@@ -42,3 +42,13 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
   - `PAPER_A_C_PAIR04_ATT_PE_REVIEW_LOG_KO_20260614.md`
 - Current next action: continue full10 ordered densification review at the next pair after `04_ATT-PE`; keep AI candidates as source-trace review evidence only until researcher confirmation.
 
+## 2026-06-14 update - Paper A/C full10 pair 05_PE-SE source/PDF review
+
+- Completed the ordered source/PDF review for `05_PE-SE` across 13 AI-candidate rows.
+- Preliminary decision: no immediate promotion. `S121-1` and `S121-2` have conditional Figure 2 Spearman-r candidates (`.40`, `.30`) only if `genAI-related subjective competence` is approved as full10 `SE`.
+- Exclusion rule recorded: do not map `PBC`, `Security`, generic efficacy language, or self-efficacy in references/background to full10 `SE`.
+- Generated evidence artifacts under `data/04_extraction/05_llm_masem_substitution/results/paper_a_ai_candidate_source_trace_20260614/`:
+  - `paper_a_C_pair05_PE_SE_source_evidence_draft_20260614.csv`
+  - `PAPER_A_C_PAIR05_PE_SE_REVIEW_LOG_KO_20260614.md`
+- Current next action: continue full10 ordered densification review at `06_PE-TRU` and preserve the S121 mapping question for researcher confirmation before any supplemental input update.
+
