@@ -1,0 +1,9 @@
+{
+  "category": "mechanism",
+  "model_family": "technology readiness",
+  "citation": "Parasuraman, A. (2000). Technology Readiness Index (TRI): Multiple-item scale to measure readiness to embrace new technologies.",
+  "doi_or_url": "https://doi.org/10.1177/109467050024001",
+  "use_in_paper": "Supports optimism/innovativeness/discomfort/insecurity context for technology readiness.",
+  "status": "supplementary",
+  "note": "Use only if TRI/adoption readiness is discussed."
+}

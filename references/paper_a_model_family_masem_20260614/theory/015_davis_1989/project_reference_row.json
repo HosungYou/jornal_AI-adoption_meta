@@ -1,0 +1,9 @@
+{
+  "category": "theory",
+  "model_family": "TAM core",
+  "citation": "Davis, F. D., Bagozzi, R. P., & Warshaw, P. R. (1989). User acceptance of computer technology: A comparison of two theoretical models.",
+  "doi_or_url": "https://doi.org/10.1287/mnsc.35.8.982",
+  "use_in_paper": "Supports attitude/intention/use pathway.",
+  "status": "core",
+  "note": "Use for core7 ATT mediation."
+}

@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "MASEM caution",
+  "citation": "Jak, S., & Cheung, M. W.-L. (2024). A cautionary note on univariate-r approaches to MASEM.",
+  "doi_or_url": "https://doi.org/10.1177/25152459241274249",
+  "use_in_paper": "Supports warning that separately pooled correlations can give incorrect SEs/model fit.",
+  "status": "core",
+  "note": "Use for reviewer defense against naive pooled matrix approach."
+}

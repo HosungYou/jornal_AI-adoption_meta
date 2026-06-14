@@ -1,0 +1,1100 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          11
+        ]
+      ],
+      "date-time": "2026-06-11T09:04:44Z",
+      "timestamp": 1781168684844,
+      "version": "3.54.1"
+    },
+    "reference-count": 168,
+    "publisher": "SAGE Publications",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2024-01-01T00:00:00Z",
+          "timestamp": 1704067200000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Sage Open"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1177/21582440241229570",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          23
+        ]
+      ],
+      "date-time": "2024-02-23T07:07:27Z",
+      "timestamp": 1708672047000
+    },
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 168,
+    "title": [
+      "The Unified Theory of Acceptance and Use of Technology (UTAUT) in Higher Education: A Systematic Review"
+    ],
+    "prefix": "10.1177",
+    "volume": "14",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-4081-0230",
+        "authenticated-orcid": false,
+        "given": "Liangyong",
+        "family": "Xue",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Universiti Putra Malaysia, Serdang, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3424-8480",
+        "authenticated-orcid": false,
+        "given": "Abdullah Mat",
+        "family": "Rashid",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universiti Putra Malaysia, Serdang, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sha",
+        "family": "Ouyang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universiti Putra Malaysia, Serdang, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-021-10573-5"
+      },
+      {
+        "key": "bibr2-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-022-02060-9"
+      },
+      {
+        "key": "bibr3-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.19173/irrodl.v14i5.1631"
+      },
+      {
+        "key": "bibr4-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4236/sn.2023.122002"
+      },
+      {
+        "key": "bibr5-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3846/jbem.2021.15664"
+      },
+      {
+        "key": "bibr6-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0266666915597546"
+      },
+      {
+        "key": "bibr7-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0749-5978(91)90020-T"
+      },
+      {
+        "key": "bibr8-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-019-09865-8"
+      },
+      {
+        "key": "bibr9-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.techsoc.2020.101325"
+      },
+      {
+        "key": "bibr10-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-021-10701-1"
+      },
+      {
+        "key": "bibr11-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICRIIS48246.2019.9073292"
+      },
+      {
+        "key": "bibr12-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su13041856"
+      },
+      {
+        "key": "bibr13-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jhlste.2016.03.002"
+      },
+      {
+        "key": "bibr14-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2019.2957206"
+      },
+      {
+        "key": "bibr15-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2019.2956349"
+      },
+      {
+        "key": "bibr16-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpsyg.2022.944335"
+      },
+      {
+        "key": "bibr17-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2022.2127777"
+      },
+      {
+        "key": "bibr18-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11051-2"
+      },
+      {
+        "key": "bibr19-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14742/ajet.6154"
+      },
+      {
+        "key": "bibr20-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-64987-6_6"
+      },
+      {
+        "key": "bibr21-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2023.107708"
+      },
+      {
+        "key": "bibr22-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-019-09923-1"
+      },
+      {
+        "key": "bibr23-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10317-x"
+      },
+      {
+        "key": "bibr24-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-019-09965-5"
+      },
+      {
+        "key": "bibr25-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18502/kss.v3i22.5044"
+      },
+      {
+        "key": "bibr26-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10209-019-00685-8"
+      },
+      {
+        "key": "bibr27-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/EL-06-2016-0129"
+      },
+      {
+        "key": "bibr28-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11239-6"
+      },
+      {
+        "issue": "8",
+        "key": "bibr29-21582440241229570",
+        "first-page": "249",
+        "volume": "10",
+        "author": "Attuquayefio S.",
+        "year": "2014",
+        "journal-title": "European Scientific Journal"
+      },
+      {
+        "key": "bibr30-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/09737766.2021.2007037"
+      },
+      {
+        "key": "bibr31-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12909-020-02302-2"
+      },
+      {
+        "key": "bibr32-21582440241229570",
+        "unstructured": "Bandura A. (1986). Social foundations of thought and action (pp. 23–28). Prentice Hall."
+      },
+      {
+        "key": "bibr33-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-019-09904-4"
+      },
+      {
+        "key": "bibr34-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s41239-020-0183-9"
+      },
+      {
+        "key": "bibr35-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14742/ajet.7178"
+      },
+      {
+        "key": "bibr36-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.12973/ejmste/78076"
+      },
+      {
+        "key": "bibr37-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11015-6"
+      },
+      {
+        "key": "bibr38-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-023-12076-x"
+      },
+      {
+        "key": "bibr39-21582440241229570",
+        "volume-title": "The uses of mass communications: Current perspectives on gratifications research",
+        "author": "Blumler J. G.",
+        "year": "1974"
+      },
+      {
+        "key": "bibr40-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17705/1jais.00719"
+      },
+      {
+        "key": "bibr41-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12528-018-9177-1"
+      },
+      {
+        "key": "bibr42-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/eje.12559"
+      },
+      {
+        "key": "bibr43-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2016.05.027"
+      },
+      {
+        "key": "bibr44-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0020720920984001"
+      },
+      {
+        "key": "bibr45-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03098265.2022.2122028"
+      },
+      {
+        "key": "bibr46-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21512/tw.v13i2.656"
+      },
+      {
+        "key": "bibr47-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpsyg.2019.01652"
+      },
+      {
+        "key": "bibr48-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1504/IJMC.2023.131160"
+      },
+      {
+        "key": "bibr49-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10159-7"
+      },
+      {
+        "key": "bibr50-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02188791.2019.1575184"
+      },
+      {
+        "key": "bibr51-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.techfore.2023.122871"
+      },
+      {
+        "key": "bibr52-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/249008"
+      },
+      {
+        "key": "bibr53-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4899-2271-7"
+      },
+      {
+        "key": "bibr54-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2015.03.022"
+      },
+      {
+        "key": "bibr55-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/07421222.2003.11045748"
+      },
+      {
+        "key": "bibr56-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12528-018-9200-6"
+      },
+      {
+        "key": "bibr57-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-24148-2_10"
+      },
+      {
+        "key": "bibr58-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2021.2018618"
+      },
+      {
+        "key": "bibr59-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11423-016-9508-8"
+      },
+      {
+        "key": "bibr60-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1504/EG.2013.058787"
+      },
+      {
+        "key": "bibr61-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.techsoc.2021.101787"
+      },
+      {
+        "key": "bibr62-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/ET-11-2019-0262"
+      },
+      {
+        "key": "bibr63-21582440241229570",
+        "volume-title": "Belief, attitude, intention, and behavior: An introduction to theory and research",
+        "author": "Fishbein M.",
+        "year": "1977"
+      },
+      {
+        "key": "bibr64-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-8535.2011.01279.x"
+      },
+      {
+        "key": "bibr65-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/249689"
+      },
+      {
+        "key": "bibr66-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-10951-7"
+      },
+      {
+        "key": "bibr67-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/bjet.12864"
+      },
+      {
+        "key": "bibr68-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/21582440211027565"
+      },
+      {
+        "key": "bibr69-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2753/MTP1069-6679190202"
+      },
+      {
+        "key": "bibr70-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/EBR-11-2018-0203"
+      },
+      {
+        "key": "bibr71-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2020.1799021"
+      },
+      {
+        "key": "bibr72-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/0144929X.2017.1307450"
+      },
+      {
+        "key": "bibr73-21582440241229570",
+        "unstructured": "Hofstede Insights. (n.d.). Compare countries. Hofstede Insights. Retrieved April 6, 2023, from https://www.hofstede-insights.com/fi/product/compare-countries/"
+      },
+      {
+        "key": "bibr74-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compedu.2019.103761"
+      },
+      {
+        "key": "bibr75-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/09588221.2021.1976210"
+      },
+      {
+        "key": "bibr76-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10171-x"
+      },
+      {
+        "issue": "4",
+        "key": "bibr77-21582440241229570",
+        "first-page": "1081",
+        "volume": "31",
+        "author": "*Huan Y.",
+        "year": "2015",
+        "journal-title": "International Journal of Engineering Education"
+      },
+      {
+        "key": "bibr78-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-021-10707-9"
+      },
+      {
+        "issue": "4",
+        "key": "bibr79-21582440241229570",
+        "first-page": "171",
+        "volume": "19",
+        "author": "*Hung W. H.",
+        "year": "2018",
+        "journal-title": "International Review of Research in Open and Distributed Learning"
+      },
+      {
+        "key": "bibr80-21582440241229570",
+        "first-page": "42",
+        "volume": "30",
+        "author": "Imtiaz S.",
+        "year": "2018",
+        "journal-title": "International Journal of Information Technology Communications and Convergence"
+      },
+      {
+        "key": "bibr81-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1057/palgrave.jit.2000056"
+      },
+      {
+        "key": "bibr82-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/j.2333-8504.1970.tb00783.x"
+      },
+      {
+        "key": "bibr83-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su142113934"
+      },
+      {
+        "key": "bibr84-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IEIT53149.2021.9587377"
+      },
+      {
+        "key": "bibr85-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/cjas.1381"
+      },
+      {
+        "key": "bibr86-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/bjet.12905"
+      },
+      {
+        "key": "bibr87-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/0144929X.2022.2099297"
+      },
+      {
+        "key": "bibr88-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11499-2"
+      },
+      {
+        "key": "bibr89-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-018-09858-z"
+      },
+      {
+        "key": "bibr90-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12528-013-9069-3"
+      },
+      {
+        "key": "bibr91-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclepro.2023.139213"
+      },
+      {
+        "key": "bibr92-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2022.2129393"
+      },
+      {
+        "key": "bibr93-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1504/IJMC.2022.121465"
+      },
+      {
+        "key": "bibr94-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14742/ajet.4684"
+      },
+      {
+        "key": "bibr95-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14742/ajet.3395"
+      },
+      {
+        "key": "bibr96-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compedu.2013.06.003"
+      },
+      {
+        "key": "bibr97-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su14127323"
+      },
+      {
+        "key": "bibr98-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2019.1709210"
+      },
+      {
+        "key": "bibr99-21582440241229570",
+        "author": "Maksimova A.",
+        "year": "2022",
+        "journal-title": "A systematic review of research on the use and impact of technology for learning Chinese"
+      },
+      {
+        "key": "bibr100-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/bjet.13091"
+      },
+      {
+        "key": "bibr101-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su13147522"
+      },
+      {
+        "key": "bibr102-21582440241229570",
+        "first-page": "1",
+        "volume": "25",
+        "author": "Malik M.",
+        "year": "2021",
+        "journal-title": "Journal of Internet Banking and Commerce"
+      },
+      {
+        "key": "bibr103-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40594-021-00296-x"
+      },
+      {
+        "key": "bibr104-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10232-1"
+      },
+      {
+        "key": "bibr105-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11052-1"
+      },
+      {
+        "issue": "1",
+        "key": "bibr106-21582440241229570",
+        "first-page": "15",
+        "volume": "11",
+        "author": "Mendoza G. A. G.",
+        "year": "2017",
+        "journal-title": "International Journal for Educational Media and Technology"
+      },
+      {
+        "key": "bibr107-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-9620.2006.00684.x"
+      },
+      {
+        "key": "bibr108-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/0144929X.2017.1347201"
+      },
+      {
+        "key": "bibr109-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10215-2"
+      },
+      {
+        "key": "bibr110-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14742/ajet.4432"
+      },
+      {
+        "key": "bibr111-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.19173/irrodl.v15i1.1687"
+      },
+      {
+        "key": "bibr112-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su14042360"
+      },
+      {
+        "key": "bibr113-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.29333/aquademia/8227"
+      },
+      {
+        "key": "bibr114-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10157-9"
+      },
+      {
+        "key": "bibr115-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-021-10451-0"
+      },
+      {
+        "key": "bibr116-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.36680/j.itcon.2023.003"
+      },
+      {
+        "key": "bibr117-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s41239-021-00310-w"
+      },
+      {
+        "key": "bibr118-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10341-x"
+      },
+      {
+        "key": "bibr119-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-10975-z"
+      },
+      {
+        "key": "bibr120-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5753/rbie.2018.26.02.29"
+      },
+      {
+        "key": "bibr121-21582440241229570",
+        "unstructured": "Oliver R. L., Linda G. (1981). Effect of satisfaction and its antecedents on consumer preference and intention. ACR North American Advances. https://www.acrwebsite.org/volumes/9746/volumes/v08/NA-08/full"
+      },
+      {
+        "key": "bibr122-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-021-10526-y"
+      },
+      {
+        "key": "bibr123-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11047-y"
+      },
+      {
+        "key": "bibr124-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-023-11778-6"
+      },
+      {
+        "key": "bibr125-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compedu.2018.03.016"
+      },
+      {
+        "key": "bibr126-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/healthcare9070780"
+      },
+      {
+        "key": "bibr127-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3233/JIFS-212396"
+      },
+      {
+        "key": "bibr128-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11423-021-09987-2"
+      },
+      {
+        "key": "bibr129-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0735633120960421"
+      },
+      {
+        "key": "bibr130-21582440241229570",
+        "unstructured": "Rogers E. M. (1962). Diffusion of innovations (Vol. 32, pp. 891–937). The free Press of Glencoe."
+      },
+      {
+        "key": "bibr131-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.imu.2022.101008"
+      },
+      {
+        "key": "bibr132-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2016.09.009"
+      },
+      {
+        "key": "bibr133-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2022.3178718"
+      },
+      {
+        "key": "bibr134-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/electronics12020441"
+      },
+      {
+        "key": "bibr135-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.techfore.2023.122452"
+      },
+      {
+        "key": "bibr136-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10271-8"
+      },
+      {
+        "key": "bibr137-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-019-10018-0"
+      },
+      {
+        "key": "bibr138-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/OIR-01-2021-0017"
+      },
+      {
+        "key": "bibr139-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijme.2017.10.002"
+      },
+      {
+        "key": "bibr140-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-019-09969-1"
+      },
+      {
+        "issue": "1",
+        "key": "bibr141-21582440241229570",
+        "first-page": "48",
+        "volume": "49",
+        "author": "Taiwo A. A.",
+        "year": "2013",
+        "journal-title": "Journal of Theoretical and Applied Information Technology"
+      },
+      {
+        "key": "bibr142-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/ECAM-05-2021-0376"
+      },
+      {
+        "key": "bibr143-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2011.641674"
+      },
+      {
+        "key": "bibr144-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/21582440221096136"
+      },
+      {
+        "key": "bibr145-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/0144929X.2019.1581259"
+      },
+      {
+        "key": "bibr146-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11288-x"
+      },
+      {
+        "key": "bibr147-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2019.1674888"
+      },
+      {
+        "key": "bibr148-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s41239-022-00369-z"
+      },
+      {
+        "key": "bibr149-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/30036540"
+      },
+      {
+        "key": "bibr150-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2023.2192309"
+      },
+      {
+        "key": "bibr151-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.12973/eu-jer.11.2.847"
+      },
+      {
+        "key": "bibr152-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0735633119865047"
+      },
+      {
+        "key": "bibr153-21582440241229570",
+        "unstructured": "Williams M., Rana N., Dwivedi Y., Lal B. (2011). Is UTAUT really used or just cited for the sake of it? A systematic review of citations of UTAUT’s originating article. ECIS 2011 Proceedings. https://aisel.aisnet.org/ecis2011/231"
+      },
+      {
+        "key": "bibr154-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/JEIM-09-2014-0088"
+      },
+      {
+        "key": "bibr155-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40299-012-0001-9"
+      },
+      {
+        "key": "bibr156-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpsyg.2022.857709"
+      },
+      {
+        "key": "bibr157-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.asoc.2017.12.051"
+      },
+      {
+        "key": "bibr158-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.26803/ijlter.21.2.16"
+      },
+      {
+        "key": "bibr159-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0266666918765907"
+      },
+      {
+        "key": "bibr160-21582440241229570",
+        "unstructured": "Yee M. L. S., Abdullah M. S. (2021). A review of UTAUT and extended model as a conceptual framework in education research. Jurnal Pendidikan Sains Dan Matematik Malaysia, 11, 1–20. https://doi.org/10.37134/jpsmm.vol11.sp.1.2021"
+      },
+      {
+        "key": "bibr161-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/OIR-07-2020-0287"
+      },
+      {
+        "key": "bibr162-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14742/ajet.170"
+      },
+      {
+        "key": "bibr163-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su13063524"
+      },
+      {
+        "key": "bibr164-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11116-2"
+      },
+      {
+        "key": "bibr165-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su14106259"
+      },
+      {
+        "key": "bibr166-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2020.1723113"
+      },
+      {
+        "key": "bibr167-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-10985-x"
+      },
+      {
+        "key": "bibr168-21582440241229570",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/02666669231176428"
+      }
+    ],
+    "container-title": [
+      "Sage Open"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/21582440241229570",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/21582440241229570",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/21582440241229570",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T00:33:03Z",
+      "timestamp": 1777595583000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/21582440241229570"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          1
+        ]
+      ]
+    },
+    "references-count": 168,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/21582440241229570"
+    ],
+    "URL": "https://doi.org/10.1177/21582440241229570",
+    "relation": {},
+    "ISSN": [
+      "2158-2440",
+      "2158-2440"
+    ],
+    "issn-type": [
+      {
+        "value": "2158-2440",
+        "type": "print"
+      },
+      {
+        "value": "2158-2440",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          1
+        ]
+      ]
+    },
+    "article-number": "21582440241229570"
+  }
+}

@@ -1,0 +1,984 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          10
+        ]
+      ],
+      "date-time": "2026-06-10T16:02:00Z",
+      "timestamp": 1781107320686,
+      "version": "3.54.1"
+    },
+    "reference-count": 121,
+    "publisher": "SAGE Publications",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Sage Open"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1177/21582440251409441",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          7
+        ]
+      ],
+      "date-time": "2026-01-07T01:29:16Z",
+      "timestamp": 1767749356000
+    },
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "Technology Acceptance Model in Artificial Intelligence in Education: A Meta-Analysis"
+    ],
+    "prefix": "10.1177",
+    "volume": "16",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-4081-0230",
+        "authenticated-orcid": false,
+        "given": "Liangyong",
+        "family": "Xue",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Universiti Putra Malaysia, Serdang, Selangor, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5355-0063",
+        "authenticated-orcid": false,
+        "given": "Jazihan",
+        "family": "Mahat",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universiti Putra Malaysia, Serdang, Selangor, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Norliza",
+        "family": "Ghazali",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universiti Putra Malaysia, Serdang, Selangor, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          6
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_2_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Abdullah F. Ward R. (2016). Developing a general extended technology acceptance model for e-learning (GETAMEL) by analysing commonly used external factors. Computers in Human Behavior 56 238–256. https://doi.org/10.1016/j.chb.2015.11.036",
+        "DOI": "10.1016/j.chb.2015.11.036"
+      },
+      {
+        "key": "e_1_3_2_3_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Abu-Shanab E. A. (2011). Education level as a technology adoption moderator [Conference session]. 2011 3rd International Conference on Computer Research and Development (pp. 324–328). https://doi.org/10.1109/ICCRD.2011.5764029",
+        "DOI": "10.1109/ICCRD.2011.5764029"
+      },
+      {
+        "key": "e_1_3_2_4_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ajzen I. (1991). The theory of planned behavior. Organizational Behavior and Human Decision Processes 50(2) 179–211. https://doi.org/10.1016/0749-5978(91)90020-T",
+        "DOI": "10.1016/0749-5978(91)90020-T"
+      },
+      {
+        "key": "e_1_3_2_5_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al Darayseh A. (2023). Acceptance of artificial intelligence in teaching science: Science teachers’ perspective. Computers and Education: Artificial Intelligence 4 Article 100132. https://doi.org/10.1016/j.caeai.2023.100132",
+        "DOI": "10.1016/j.caeai.2023.100132"
+      },
+      {
+        "key": "e_1_3_2_6_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al Shamsi J. H. Al-Emran M. Shaalan K. (2022). Understanding key drivers affecting students’ use of artificial intelligence-based voice assistants. Education and Information Technologies 27(6) 8071–8091. https://doi.org/10.1007/s10639-022-10947-3",
+        "DOI": "10.1007/s10639-022-10947-3"
+      },
+      {
+        "key": "e_1_3_2_7_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Albayati H. (2024). Investigating undergraduate students’ perceptions and awareness of using ChatGPT as a regular assistance tool: A user acceptance perspective study. Computers and Education: Artificial Intelligence 6 Article 100203. https://doi.org/10.1016/j.caeai.2024.100203",
+        "DOI": "10.1016/j.caeai.2024.100203"
+      },
+      {
+        "key": "e_1_3_2_8_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al-Emran M. Granić A. (2021). Is it still valid or outdated? A bibliometric analysis of the technology acceptance model and its applications from 2010 to 2020. In Al-Emran M. Shaalan K. (Eds.) Recent advances in technology acceptance models and theories (pp. 1–12). Springer International Publishing. https://doi.org/10.1007/978-3-030-64987-6_1",
+        "DOI": "10.1007/978-3-030-64987-6_1"
+      },
+      {
+        "key": "e_1_3_2_9_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al-Emran M. Mezhuyev V. Kamaludin A. (2018). Technology acceptance model in M-learning context: A systematic review. Computers & Education 125 389–412. https://doi.org/10.1016/j.compedu.2018.06.008",
+        "DOI": "10.1016/j.compedu.2018.06.008"
+      },
+      {
+        "key": "e_1_3_2_10_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Algerafi M. A. M. Zhou Y. Alfadda H. Wijaya T. T. (2023). Understanding the factors influencing higher education students’ intention to adopt artificial intelligence-based robots. IEEE Access 11 99752–99764. https://ieeexplore.ieee.org/document/10247529/",
+        "DOI": "10.1109/ACCESS.2023.3314499"
+      },
+      {
+        "key": "e_1_3_2_11_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al-Momani A. M. Ramayah T. (2024). Adoption of artificial intelligence in education: A systematic literature review. In Al-Sharafi M. A. Al-Emran M. Tan G. W.-H. Ooi K.-B. (Eds.) Current and future trends on intelligent technology adoption: Volume 2 (pp. 117–135). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-61463-7_7",
+        "DOI": "10.1007/978-3-031-61463-7_7"
+      },
+      {
+        "key": "e_1_3_2_12_1",
+        "unstructured": "Alomary A. Woollard J. (2015 November 21). How is technology accepted by users? A review of technology acceptance models and theories [Conference session]. 5th International Conference on 4E. https://eprints.soton.ac.uk/382037/"
+      },
+      {
+        "key": "e_1_3_2_13_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Alrishan A. M. H. (2023). Determinants of intention to use ChatGPT for professional development among Omani EFL pre-service teachers. International Journal of Learning Teaching and Educational Research 22(12) 187–209. https://doi.org/10.26803/ijlter.22.12.10",
+        "DOI": "10.26803/ijlter.22.12.10"
+      },
+      {
+        "issue": "2",
+        "key": "e_1_3_2_14_1",
+        "first-page": "12",
+        "article-title": "A review of technology acceptance models and theories",
+        "volume": "4",
+        "author": "Alshammari S. H.",
+        "year": "2020",
+        "unstructured": "Alshammari S. H., Rosli M. S. (2020). A review of technology acceptance models and theories. Innovative Teaching and Learning Journal (ITLJ), 4(2), 12–22.",
+        "journal-title": "Innovative Teaching and Learning Journal (ITLJ)"
+      },
+      {
+        "key": "e_1_3_2_15_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Awal Md. R. Haque Md. E. (2024). Revisiting university students’ intention to accept AI-powered chatbot with an integration between TAM and SCT: A South Asian perspective. Journal of Applied Research in Higher Education 17(2) 594–608. https://doi.org/10.1108/JARHE-11-2023-0514",
+        "DOI": "10.1108/JARHE-11-2023-0514"
+      },
+      {
+        "key": "e_1_3_2_16_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ayanwale M. A. Molefi R. R. (2024). Exploring intention of undergraduate students to embrace chatbots: From the vantage point of Lesotho. International Journal of Educational Technology in Higher Education 21(1) 20. https://doi.org/10.1186/s41239-024-00451-8",
+        "DOI": "10.1186/s41239-024-00451-8"
+      },
+      {
+        "key": "e_1_3_2_17_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bilquise G. Ibrahim S. Salhieh S. M. (2024). Investigating student acceptance of an academic advising chatbot in higher education institutions. Education and Information Technologies 29(5) 6357–6382. https://doi.org/10.1007/s10639-023-12076-x",
+        "DOI": "10.1007/s10639-023-12076-x"
+      },
+      {
+        "key": "e_1_3_2_18_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bond M. Khosravi H. De Laat M. Bergdahl N. Negrea V. Oxley E. Pham P. Chong S. W. Siemens G. (2024). A meta systematic review of artificial intelligence in higher education: A call for increased ethics collaboration and rigour. International Journal of Educational Technology in Higher Education 21(1) 4. https://doi.org/10.1186/s41239-023-00436-z",
+        "DOI": "10.1186/s41239-023-00436-z"
+      },
+      {
+        "key": "e_1_3_2_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/9781119558378"
+      },
+      {
+        "key": "e_1_3_2_20_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cavus N. Omonayajo B. Mutizwa M. R. (2022). Technology acceptance model and learning management systems: Systematic literature review. International Journal of Interactive Mobile Technologies 17(23) 109–124. https://doi.org/10.3991/ijim.v16i23.36223",
+        "DOI": "10.3991/ijim.v16i23.36223"
+      },
+      {
+        "key": "e_1_3_2_21_1",
+        "unstructured": "Chang S.-H. Chou C.-H. Yang J.-M. (2010). The literature review of technology acceptance model: A study of the bibliometric distributions. PACIS 2010 Proceedings. https://aisel.aisnet.org/pacis2010/158"
+      },
+      {
+        "key": "e_1_3_2_22_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Choi S. Jang Y. Kim H. (2023). Influence of pedagogical beliefs and perceived trust on teachers’ acceptance of educational artificial intelligence tools. International Journal of Human–Computer Interaction 39(4) 910–922. https://doi.org/10.1080/10447318.2022.2049145",
+        "DOI": "10.1080/10447318.2022.2049145"
+      },
+      {
+        "key": "e_1_3_2_23_1",
+        "unstructured": "Chuttur M. (2009). Overview of the technology acceptance model: Origins developments and future directions. All Sprouts Content (Vol. 9 Issue 37). https://aisel.aisnet.org/sprouts_all/290"
+      },
+      {
+        "key": "e_1_3_2_24_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Claro M. Castro-Grau C. Ochoa J. M. Hinostroza J. E. Cabello P. (2024). Systematic review of quantitative research on digital competences of in-service school teachers. Computers & Education 215 Article 105030. https://doi.org/10.1016/j.compedu.2024.105030",
+        "DOI": "10.1016/j.compedu.2024.105030"
+      },
+      {
+        "key": "e_1_3_2_25_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cohen J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Routledge. https://doi.org/10.4324/9780203771587",
+        "DOI": "10.4324/9780203771587"
+      },
+      {
+        "key": "e_1_3_2_26_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dai C.-P. Ke F. Pan Y. Moon J. Liu Z. (2024). Effects of artificial intelligence-powered virtual agents on learning outcomes in computer-based simulations: A meta-analysis. Educational Psychology Review 36(1) 31. https://doi.org/10.1007/s10648-024-09855-4",
+        "DOI": "10.1007/s10648-024-09855-4"
+      },
+      {
+        "key": "e_1_3_2_27_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Daniels M. A. Greguras G. J. (2014). Exploring the nature of power distance: Implications for micro- and macro-level theories processes and outcomes. Journal of Management 40(5) 1202–1229. https://doi.org/10.1177/0149206314527131",
+        "DOI": "10.1177/0149206314527131"
+      },
+      {
+        "key": "e_1_3_2_28_1",
+        "unstructured": "Davis F. D. (1985). A technology acceptance model for empirically testing new end-user information systems: Theory and results [Doctoral dissertation Massachusetts Institute of Technology]. https://dspace.mit.edu/handle/1721.1/15192"
+      },
+      {
+        "key": "e_1_3_2_29_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis F. D. (1989). Perceived usefulness perceived ease of use and user acceptance of information technology. MIS Quarterly 13(3) 319–340. https://doi.org/10.2307/249008",
+        "DOI": "10.2307/249008"
+      },
+      {
+        "key": "e_1_3_2_30_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis F. D. Granić A. (2024). The technology acceptance model: 30 years of TAM. Springer International Publishing. https://doi.org/10.1007/978-3-030-45274-2",
+        "DOI": "10.1007/978-3-030-45274-2"
+      },
+      {
+        "key": "e_1_3_2_31_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Deci E. L. Ryan R. M. (1985). Intrinsic motivation and self-determination in human behavior. Springer US. https://doi.org/10.1007/978-1-4899-2271-7",
+        "DOI": "10.1007/978-1-4899-2271-7"
+      },
+      {
+        "key": "e_1_3_2_32_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dehghani H. Mashhadi A. (2024). Exploring Iranian English as a foreign language teachers’ acceptance of ChatGPT in English language teaching: Extending the technology acceptance model. Education and Information Technologies 29(15) 19813–19834. https://doi.org/10.1007/s10639-024-12660-9",
+        "DOI": "10.1007/s10639-024-12660-9"
+      },
+      {
+        "key": "e_1_3_2_33_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Derakhshan A. Teo T. Saeedy Robat E. Janebi Enayat M. Jahanbakhsh A. A. (2024). Robot-assisted language learning: A meta-analysis. Review of Educational Research 95(4) 747–774. https://doi.org/10.3102/00346543241247227",
+        "DOI": "10.3102/00346543241247227"
+      },
+      {
+        "key": "e_1_3_2_34_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Doulani A. (2019). An assessment of effective factors in technology acceptance model: A meta-analysis study. Journal of Scientometric Research 7 153–166. https://doi.org/10.5530/jscires.7.3.26",
+        "DOI": "10.5530/jscires.7.3.26"
+      },
+      {
+        "key": "e_1_3_2_35_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Egger M. Smith G. D. Schneider M. Minder C. (1997). Bias in meta-analysis detected by a simple graphical test. BMJ 315 629–634. https://doi.org/10.1136/bmj.315.7109.629",
+        "DOI": "10.1136/bmj.315.7109.629"
+      },
+      {
+        "key": "e_1_3_2_36_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Esiyok E. Gokcearslan S. Kucukergin K. G. (2025). Acceptance of educational use of AI chatbots in the context of self-directed learning with technology and ICT self-efficacy of undergraduate students. International Journal of Human–Computer Interaction 41(1) 641–650. https://doi.org/10.1080/10447318.2024.2303557",
+        "DOI": "10.1080/10447318.2024.2303557"
+      },
+      {
+        "key": "e_1_3_2_37_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Feng G. C. Su X. Lin Z. He Y. Luo N. Zhang Y. (2021). Determinants of technology acceptance: Two model-based meta-analytic reviews. Journalism & Mass Communication Quarterly 98(1) 83–104. https://doi.org/10.1177/1077699020952400",
+        "DOI": "10.1177/1077699020952400"
+      },
+      {
+        "issue": "2",
+        "key": "e_1_3_2_38_1",
+        "first-page": "130",
+        "article-title": "Belief, attitude, intention, and behavior: An introduction to theory and research",
+        "volume": "10",
+        "author": "Fishbein M.",
+        "year": "1977",
+        "unstructured": "Fishbein M., Ajzen I. (1977). Belief, attitude, intention, and behavior: An introduction to theory and research. Philosophy and Rhetoric, 10(2), 130–132.",
+        "journal-title": "Philosophy and Rhetoric"
+      },
+      {
+        "key": "e_1_3_2_39_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gado S. Kempen R. Lingelbach K. Bipp T. (2022). Artificial intelligence in psychology: How can we enable psychology students to accept and use artificial intelligence? Psychology Learning and Teaching 21(1) 37–56. https://doi.org/10.1177/14757257211037149",
+        "DOI": "10.1177/14757257211037149"
+      },
+      {
+        "key": "e_1_3_2_40_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Goodhue D. L. Thompson R. L. (1995). Task-technology fit and individual performance. MIS Quarterly 19(2) 213–236. https://doi.org/10.2307/249689",
+        "DOI": "10.2307/249689"
+      },
+      {
+        "key": "e_1_3_2_41_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Granić A. (2022). Educational technology adoption: A systematic review. Education and Information Technologies 27(7) 9725–9744. https://doi.org/10.1007/s10639-022-10951-7",
+        "DOI": "10.1007/s10639-022-10951-7"
+      },
+      {
+        "key": "e_1_3_2_42_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Granić A. Marangunić N. (2019). Technology acceptance model in educational context: A systematic literature review. British Journal of Educational Technology 50(5) 2572–2593. https://doi.org/10.1111/bjet.12864",
+        "DOI": "10.1111/bjet.12864"
+      },
+      {
+        "key": "e_1_3_2_43_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gupta S. Abbas A. F. Srivastava R. (2022). Technology acceptance model (TAM): A bibliometric analysis from inception. Journal of Telecommunications and the Digital Economy 10(3) 77–106. https://doi.org/10.3316/informit.664054795107308",
+        "DOI": "10.18080/jtde.v10n3.598"
+      },
+      {
+        "key": "e_1_3_2_44_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gursoy D. Chi O. H. Lu L. Nunkoo R. (2019). Consumers acceptance of artificially intelligent (AI) device use in service delivery. International Journal of Information Management 49 157–169. https://doi.org/10.1016/j.ijinfomgt.2019.03.008",
+        "DOI": "10.1016/j.ijinfomgt.2019.03.008"
+      },
+      {
+        "key": "e_1_3_2_45_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hak T. van Rhee H. Suurmond R. (2016). How to interpret results of meta-analysis [SSRN Scholarly Paper]. Social Science Research Network. https://doi.org/10.2139/ssrn.3241367",
+        "DOI": "10.2139/ssrn.3241367"
+      },
+      {
+        "key": "e_1_3_2_46_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Higgins J. P. T. Thompson S. G. (2002). Quantifying heterogeneity in a meta-analysis. Statistics in Medicine 21(11) 1539–1558. https://doi.org/10.1002/sim.1186",
+        "DOI": "10.1002/sim.1186"
+      },
+      {
+        "key": "e_1_3_2_47_1",
+        "volume-title": "Culture’s consequences: International differences in work-related values",
+        "author": "Hofstede G.",
+        "year": "1980",
+        "unstructured": "Hofstede G. (1980). Culture’s consequences: International differences in work-related values. Sage Publications."
+      },
+      {
+        "key": "e_1_3_2_48_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hofstede G. (2011). Dimensionalizing cultures: The Hofstede model in context. Online Readings in Psychology and Culture 2(1) 1–26. https://doi.org/10.9707/2307-0919.1014",
+        "DOI": "10.9707/2307-0919.1014"
+      },
+      {
+        "key": "e_1_3_2_49_1",
+        "unstructured": "Hofstede Insights. (2024). Country comparison tool. https://www.hofstede-insights.com/country-comparison-tool"
+      },
+      {
+        "key": "e_1_3_2_50_1",
+        "volume-title": "Artificial intelligence in education: Promises and implications for teaching and learning",
+        "author": "Holmes W.",
+        "year": "2019",
+        "unstructured": "Holmes W., Bialik M., Fadel C. (2019). Artificial intelligence in education: Promises and implications for teaching and learning. Center for Curriculum Redesign."
+      },
+      {
+        "key": "e_1_3_2_51_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Huang H. Chen Y. Rau P.-L. P. (2022). Exploring acceptance of intelligent tutoring system with pedagogical agent among high school students. Universal Access in the Information Society 21(2) 381–392. https://doi.org/10.1007/s10209-021-00835-x",
+        "DOI": "10.1007/s10209-021-00835-x"
+      },
+      {
+        "key": "e_1_3_2_52_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jan J. Alshare K. A. Lane P. L. (2024). Hofstede’s cultural dimensions in technology acceptance models: A meta-analysis. Universal Access in the Information Society 23(2) 717–741. https://doi.org/10.1007/s10209-022-00930-7",
+        "DOI": "10.1007/s10209-022-00930-7"
+      },
+      {
+        "key": "e_1_3_2_53_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kelly S. Kaye S.-A. Oviedo-Trespalacios O. (2023). What factors contribute to the acceptance of artificial intelligence? A systematic review. Telematics and Informatics 77 Article 101925. https://doi.org/10.1016/j.tele.2022.101925",
+        "DOI": "10.1016/j.tele.2022.101925"
+      },
+      {
+        "key": "e_1_3_2_54_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "King W. R. He J. (2006). A meta-analysis of the technology acceptance model. Information & Management 43(6) 740–755. https://doi.org/10.1016/j.im.2006.05.003",
+        "DOI": "10.1016/j.im.2006.05.003"
+      },
+      {
+        "key": "e_1_3_2_55_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Labadze L. Grigolia M. Machaidze L. (2023). Role of AI chatbots in education: Systematic literature review. International Journal of Educational Technology in Higher Education 20(1) 56. https://doi.org/10.1186/s41239-023-00426-1",
+        "DOI": "10.1186/s41239-023-00426-1"
+      },
+      {
+        "key": "e_1_3_2_56_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lai C. Y. Cheung K. Y. Chan C. S. (2023). Exploring the role of intrinsic motivation in ChatGPT adoption to support active learning: An extension of the technology acceptance model. Computers and Education: Artificial Intelligence 5 Article 100178. https://doi.org/10.1016/j.caeai.2023.100178",
+        "DOI": "10.1016/j.caeai.2023.100178"
+      },
+      {
+        "key": "e_1_3_2_57_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee Y. Kozar K. A. Larsen K. R. T. (2003). The technology acceptance model: Past present and future. Communications of the Association for Information Systems 12 752–780. https://doi.org/10.17705/1CAIS.01250",
+        "DOI": "10.17705/1CAIS.01250"
+      },
+      {
+        "key": "e_1_3_2_58_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Legris P. Ingham J. Collerette P. (2003). Why do people use information technology? A critical review of the technology acceptance model. Information & Management 40(3) 191–204. https://doi.org/10.1016/S0378-7206(01)00143-4",
+        "DOI": "10.1016/S0378-7206(01)00143-4"
+      },
+      {
+        "key": "e_1_3_2_59_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lei H. Cui Y. Zhou W. (2018). Relationships between student engagement and academic achievement: A meta-analysis. Social Behavior and Personality: An International Journal 46(3) 517–528. https://doi.org/10.2224/sbp.7054",
+        "DOI": "10.2224/sbp.7054"
+      },
+      {
+        "key": "e_1_3_2_60_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu C. Wang Y. Evans M. Correia A.-P. (2024). Critical antecedents of mobile learning acceptance and moderation effects: A meta-analysis on technology acceptance model. Education and Information Technologies 29(15) 20351–20382. https://doi.org/10.1007/s10639-024-12645-8",
+        "DOI": "10.1007/s10639-024-12645-8"
+      },
+      {
+        "key": "e_1_3_2_61_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu G. L. Darvin R. Ma C. (2024). Exploring AI-mediated informal digital learning of English (AI-IDLE): A mixed-method investigation of Chinese EFL learners’ AI adoption and experiences. Computer Assisted Language Learning 38(7) 1632–1660. https://doi.org/10.1080/09588221.2024.2310288",
+        "DOI": "10.1080/09588221.2024.2310288"
+      },
+      {
+        "key": "e_1_3_2_62_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu G. Ma C. (2024). Measuring EFL learners’ use of ChatGPT in informal digital learning of English based on the technology acceptance model. Innovation in Language Learning and Teaching 18(2) 125–138. https://doi.org/10.1080/17501229.2023.2240316",
+        "DOI": "10.1080/17501229.2023.2240316"
+      },
+      {
+        "key": "e_1_3_2_63_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu Y.-L. E. Huang Y.-M. (2025). Exploring the perceptions and continuance intention of AI-based text-to-image technology in supporting design ideation. International Journal of Human–Computer Interaction 41(1) 694–706. https://doi.org/10.1080/10447318.2024.2311975",
+        "DOI": "10.1080/10447318.2024.2311975"
+      },
+      {
+        "key": "e_1_3_2_64_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lo C. K. Hew K. F. Jong M. S. (2024). The influence of ChatGPT on student engagement: A systematic review and future research agenda. Computers & Education 219 Article 105100. https://doi.org/10.1016/j.compedu.2024.105100",
+        "DOI": "10.1016/j.compedu.2024.105100"
+      },
+      {
+        "key": "e_1_3_2_65_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ma Q. Liu L. (2004). The technology acceptance model: A meta-analysis of empirical findings. Journal of Organizational and End User Computing (JOEUC) 16(1) 59–72. https://doi.org/10.4018/joeuc.2004010104",
+        "DOI": "10.4018/joeuc.2004010104"
+      },
+      {
+        "key": "e_1_3_2_66_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ma S. Lei L. (2024). The factors influencing teacher education students’ willingness to adopt artificial intelligence technology for information-based teaching. Asia Pacific Journal of Education 44(1) 94–111. https://doi.org/10.1080/02188791.2024.2305155",
+        "DOI": "10.1080/02188791.2024.2305155"
+      },
+      {
+        "key": "e_1_3_2_67_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mafara R. Abdullahi S. (2024). Adopting artificial intelligence (AI) in education: Challenges & possibilities. Asian Journal of Advanced Research and Reports 18(2) 106–111. https://doi.org/10.9734/ajarr/2024/v18i2608",
+        "DOI": "10.9734/ajarr/2024/v18i2608"
+      },
+      {
+        "key": "e_1_3_2_68_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Marangunić N. Granić A. (2015). Technology acceptance model: A literature review from 1986 to 2013. Universal Access in the Information Society 14(1) 81–95. https://doi.org/10.1007/s10209-014-0348-1",
+        "DOI": "10.1007/s10209-014-0348-1"
+      },
+      {
+        "key": "e_1_3_2_69_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Marikyan D. Papagiannidis S. Stewart G. (2023). Technology acceptance research: Meta-analysis. Journal of Information Science. Advance online publication. https://doi.org/10.1177/01655515231191177",
+        "DOI": "10.1177/01655515231191177"
+      },
+      {
+        "key": "e_1_3_2_70_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Masa’deh R. Majali S. A. Alkhaffaf M. Thurasamy R. Almajali D. Altarawneh K. Al-Sherideh A. Altarawni I. (2024). Antecedents of adoption and usage of ChatGPT among Jordanian university students: Empirical study. International Journal of Data and Network Science 8(2) 1099–1110. https://doi.org/10.5267/j.ijdns.2023.11.024",
+        "DOI": "10.5267/j.ijdns.2023.11.024"
+      },
+      {
+        "key": "e_1_3_2_71_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mogaji E. Viglia G. Srivastava P. Dwivedi Y. K. (2024). Is it the end of the technology acceptance model in the era of generative artificial intelligence? International Journal of Contemporary Hospitality Management 36(10) 3324–3339. https://doi.org/10.1108/IJCHM-08-2023-1271",
+        "DOI": "10.1108/IJCHM-08-2023-1271"
+      },
+      {
+        "key": "e_1_3_2_72_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mortenson M. J. Vidgen R. (2016). A computational literature review of the technology acceptance model. International Journal of Information Management 36(6 Part B) 1248–1259. https://doi.org/10.1016/j.ijinfomgt.2016.07.007",
+        "DOI": "10.1016/j.ijinfomgt.2016.07.007"
+      },
+      {
+        "key": "e_1_3_2_73_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mugo D. Njagi K. Chemwei B. Motanya J. (2017). The Technology Acceptance Model (TAM) and its application to the utilization of mobile learning technologies. British Journal of Mathematics & Computer Science 20(4) 1–8. https://doi.org/10.9734/BJMCS/2017/29015",
+        "DOI": "10.9734/BJMCS/2017/29015"
+      },
+      {
+        "key": "e_1_3_2_74_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mustafa A. S. Garcia M. B. (2021). Theories integrated with technology acceptance model (TAM) in online learning acceptance and continuance intention: A systematic review [Conference session]. 2021 1st Conference on Online Teaching for Mobile Education (OT4ME) (pp. 68–72). https://doi.org/10.1109/OT4ME53559.2021.9638934",
+        "DOI": "10.1109/OT4ME53559.2021.9638934"
+      },
+      {
+        "key": "e_1_3_2_75_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ni A. Cheung A. (2023). Understanding secondary students’ continuance intention to adopt AI-powered intelligent tutoring system for English learning. Education and Information Technologies 28(3) 3191–3216. https://doi.org/10.1007/s10639-022-11305-z",
+        "DOI": "10.1007/s10639-022-11305-z"
+      },
+      {
+        "key": "e_1_3_2_76_1",
+        "unstructured": "Oliver R. L. Linda G. (1981). Effect of satisfaction and its antecedents on consumer preference and intention. ACR North American Advances NA-08. https://www.acrwebsite.org/volumes/9746/volumes/v08/NA-08/full"
+      },
+      {
+        "key": "e_1_3_2_77_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ouyang S. Zhang W. Xue L. Rashid A. M. Pyng H. S. Hassan A. B. (2025). The cultural compass: A systematic review on cultural dimensions theory in educational settings. SAGE Open 15(2) 21582440251342160. https://doi.org/10.1177/21582440251342160",
+        "DOI": "10.1177/21582440251342160"
+      },
+      {
+        "key": "e_1_3_2_78_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Page M. J. McKenzie J. E. Bossuyt P. M. Boutron I. Hoffmann T. C. Mulrow C. D. Shamseer L. Tetzlaff J. M. Moher D. (2021). Updating guidance for reporting systematic reviews: Development of the PRISMA 2020 statement. Journal of Clinical Epidemiology 134 103–112. https://doi.org/10.1016/j.jclinepi.2021.02.003",
+        "DOI": "10.1016/j.jclinepi.2021.02.003"
+      },
+      {
+        "key": "e_1_3_2_79_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Peterson R. A. Brown S. P. (2005). On the use of beta coefficients in meta-analysis. Journal of Applied Psychology 90(1) 175–181. https://doi.org/10.1037/0021-9010.90.1.175",
+        "DOI": "10.1037/0021-9010.90.1.175"
+      },
+      {
+        "key": "e_1_3_2_80_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pillai R. Sivathanu B. Metri B. Kaushik N. (2024). Students’ adoption of AI-based teacher-bots (T-bots) for learning in higher education. Information Technology and People 37(1) 328–355. https://doi.org/10.1108/ITP-02-2021-0152",
+        "DOI": "10.1108/ITP-02-2021-0152"
+      },
+      {
+        "key": "e_1_3_2_81_1",
+        "unstructured": "R Core Team. (2023). R: A language and environment for statistical computing [Computer software]. https://www.R-project.org/"
+      },
+      {
+        "key": "e_1_3_2_82_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rahman M. S. Sabbir M. M. Zhang J. Moral I. H. Hossain G. M. S. (2023). Examining students’ intention to use ChatGPT: Does trust matter? Australasian Journal of Educational Technology 39(6) 51–71. https://doi.org/10.14742/ajet.8956",
+        "DOI": "10.14742/ajet.8956"
+      },
+      {
+        "key": "e_1_3_2_83_1",
+        "first-page": "891",
+        "article-title": "Diffusion of innovations. Free Press of Glencoe",
+        "volume": "32",
+        "author": "Rogers E. M.",
+        "year": "1962",
+        "unstructured": "Rogers E. M. (1962). Diffusion of innovations. Free Press of Glencoe. NY, 32, 891–937.",
+        "journal-title": "NY"
+      },
+      {
+        "key": "e_1_3_2_84_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rosli M. S. Saleh N. S. Md. Ali A. Abu Bakar S. Mohd Tahir L. (2022). A systematic review of the technology acceptance model for the sustainability of higher education during the COVID-19 pandemic and identified research gaps. Sustainability 14(18) Article 11389. https://doi.org/10.3390/su141811389",
+        "DOI": "10.3390/su141811389"
+      },
+      {
+        "key": "e_1_3_2_85_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sabah N. M. (2016). Exploring students’ awareness and perceptions: Influencing factors and individual differences driving m-learning adoption. Computers in Human Behavior 65 522–533. https://doi.org/10.1016/j.chb.2016.09.009",
+        "DOI": "10.1016/j.chb.2016.09.009"
+      },
+      {
+        "key": "e_1_3_2_86_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schepers J. Wetzels M. (2007). A meta-analysis of the technology acceptance model: Investigating subjective norm and moderation effects. Information & Management 44(1) 90–103. https://doi.org/10.1016/j.im.2006.10.007",
+        "DOI": "10.1016/j.im.2006.10.007"
+      },
+      {
+        "key": "e_1_3_2_87_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Scherer R. Siddiq F. Tondeur J. (2019). The technology acceptance model (TAM): A meta-analytic structural equation modeling approach to explaining teachers’ adoption of digital technology in education. Computers & Education 128 13–35. https://doi.org/10.1016/j.compedu.2018.09.009",
+        "DOI": "10.1016/j.compedu.2018.09.009"
+      },
+      {
+        "key": "e_1_3_2_88_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Silva L. (2007). Post-positivist review of technology acceptance model. Journal of the Association for Information Systems 8(4) 255–266. https://doi.org/10.17705/1jais.00121",
+        "DOI": "10.17705/1jais.00121"
+      },
+      {
+        "key": "e_1_3_2_89_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Strzelecki A. ElArabawy S. (2024). Investigation of the moderation effect of gender and study level on the acceptance and use of generative AI by higher education students: Comparative evidence from Poland and Egypt. British Journal of Educational Technology 55(3) 1209–1230. https://doi.org/10.1111/bjet.13425",
+        "DOI": "10.1111/bjet.13425"
+      },
+      {
+        "key": "e_1_3_2_90_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sukkeewan P. Songkram N. Nasongkhla J. (2024). Investigating students’ behavioral intentions towards a smart learning platform based on machine learning: A user acceptance and experience perspective. International Journal of Information and Education Technology 14(2) 260–270. https://doi.org/10.18178/ijiet.2024.14.2.2047",
+        "DOI": "10.18178/ijiet.2024.14.2.2047"
+      },
+      {
+        "key": "e_1_3_2_91_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sun F. Tian P. Sun D. Fan Y. Yang Y. (2024). Pre-service teachers’ inclination to integrate AI into STEM education: Analysis of influencing factors. British Journal of Educational Technology 55(6) 2574–2596. https://doi.org/10.1111/bjet.13469",
+        "DOI": "10.1111/bjet.13469"
+      },
+      {
+        "key": "e_1_3_2_92_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Suurmond R. Van Rhee H. Hak T. (2017). Introduction comparison and validation of Meta-Essentials: A free and simple tool for meta-analysis. Research Synthesis Methods 8(4) 537–553. https://doi.org/10.1002/jrsm.1260",
+        "DOI": "10.1002/jrsm.1260"
+      },
+      {
+        "key": "e_1_3_2_93_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tao D. Wang T. Wang T. Zhang T. Zhang X. Qu X. (2020). A systematic review and meta-analysis of user acceptance of consumer-oriented health information technologies. Computers in Human Behavior 104 Article 106147. https://doi.org/10.1016/j.chb.2019.09.023",
+        "DOI": "10.1016/j.chb.2019.09.023"
+      },
+      {
+        "key": "e_1_3_2_94_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tarhini A. Hone K. Liu X. (2014). The effects of individual differences on e-learning users’ behaviour in developing countries: A structural equation model. Computers in Human Behavior 41 153–163. https://doi.org/10.1016/j.chb.2014.09.020",
+        "DOI": "10.1016/j.chb.2014.09.020"
+      },
+      {
+        "key": "e_1_3_2_95_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tiwari C. K. Bhat Mohd. A. Khan S. T. Subramaniam R. Khan M. A. I. (2023). What drives students toward ChatGPT? An investigation of the factors influencing adoption and usage of ChatGPT. Interactive Technology and Smart Education 21(3) 333–355. https://doi.org/10.1108/ITSE-04-2023-0061",
+        "DOI": "10.1108/ITSE-04-2023-0061"
+      },
+      {
+        "key": "e_1_3_2_96_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Turner M. Kitchenham B. Brereton P. Charters S. Budgen D. (2010). Does the technology acceptance model predict actual use? A systematic literature review. Information and Software Technology 52(5) 463–479. https://doi.org/10.1016/j.infsof.2009.11.005",
+        "DOI": "10.1016/j.infsof.2009.11.005"
+      },
+      {
+        "key": "e_1_3_2_97_1",
+        "volume-title": "Recommendation on the ethics of artificial intelligence",
+        "author": "UNESCO",
+        "year": "2021",
+        "unstructured": "UNESCO. (2021). Recommendation on the ethics of artificial intelligence. UNESCO."
+      },
+      {
+        "key": "e_1_3_2_98_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Vaccaro M. Almaatouq A. Malone T. (2024). When combinations of humans and AI are useful: A systematic review and meta-analysis. Nature Human Behaviour 8(12) 2293–2303. https://doi.org/10.1038/s41562-024-02024-1",
+        "DOI": "10.1038/s41562-024-02024-1"
+      },
+      {
+        "key": "e_1_3_2_99_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh V. Bala H. (2008). Technology acceptance model 3 and a research agenda on interventions. Decision Sciences 39(2) 273–315. https://doi.org/10.1111/j.1540-5915.2008.00192.x",
+        "DOI": "10.1111/j.1540-5915.2008.00192.x"
+      },
+      {
+        "key": "e_1_3_2_100_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh V. Davis F. D. (2000). A theoretical extension of the technology acceptance model: Four longitudinal field studies. Management Science 46(2) 186–204. https://doi.org/10.1287/mnsc.46.2.186.11926",
+        "DOI": "10.1287/mnsc.46.2.186.11926"
+      },
+      {
+        "key": "e_1_3_2_101_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh V. Morris M. G. Davis G. B. Davis F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly 27(3) 425–478. https://doi.org/10.2307/30036540",
+        "DOI": "10.2307/30036540"
+      },
+      {
+        "key": "e_1_3_2_102_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh V. Thong J. Y. L. Xu X. (2012). Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. MIS Quarterly 36(1) 157. https://doi.org/10.2307/41410412",
+        "DOI": "10.2307/41410412"
+      },
+      {
+        "key": "e_1_3_2_103_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Viechtbauer W. (2010). Conducting meta-analyses in R with the metafor package. Journal of Statistical Software 36 1–48. https://doi.org/10.18637/jss.v036.i03",
+        "DOI": "10.18637/jss.v036.i03"
+      },
+      {
+        "key": "e_1_3_2_104_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Viechtbauer W. Cheung M. W.-L. (2010). Outlier and influence diagnostics for meta-analysis. Research Synthesis Methods 1(2) 112–125. https://doi.org/10.1002/jrsm.11",
+        "DOI": "10.1002/jrsm.11"
+      },
+      {
+        "key": "e_1_3_2_105_1",
+        "unstructured": "World Bank. (2022). New World Bank country classifications by income level: 2022-2023. World Bank Blogs. https://blogs.worldbank.org/en/opendata/new-world-bank-country-classifications-income-level-2022-2023"
+      },
+      {
+        "key": "e_1_3_2_106_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wu K. Zhao Y. Zhu Q. Tan X. Zheng H. (2011). A meta-analysis of the impact of trust on technology acceptance model: Investigation of moderating influence of subject and context type. International Journal of Information Management 31(6) 572–581. https://doi.org/10.1016/j.ijinfomgt.2011.03.004",
+        "DOI": "10.1016/j.ijinfomgt.2011.03.004"
+      },
+      {
+        "key": "e_1_3_2_107_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wu R. Yu Z. (2024). Do AI chatbots improve students learning outcomes? Evidence from a meta-analysis. British Journal of Educational Technology 55(1) 10–33. https://doi.org/10.1111/bjet.13334",
+        "DOI": "10.1111/bjet.13334"
+      },
+      {
+        "key": "e_1_3_2_108_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wu X. Li R. (2024). Unraveling effects of AI chatbots on EFL learners’ language skill development: A meta-analysis. Asia-Pacific Education Researcher Advance online publication. https://doi.org/10.1007/s40299-024-00853-2",
+        "DOI": "10.1007/s40299-024-00853-2"
+      },
+      {
+        "key": "e_1_3_2_109_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xue L. Ghazali N. Mahat J. (2025). Artificial intelligence (AI) adoption among teachers: A systematic review and agenda for future research. International Journal of Technology in Education 8(3) 802–824. https://doi.org/10.46328/ijte.1191",
+        "DOI": "10.46328/ijte.1191"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_3_2_110_1",
+        "first-page": "355",
+        "article-title": "Technology acceptance model (TAM) in artificial intelligence in higher education (AIHEd): A systematic literature review",
+        "volume": "23",
+        "author": "Xue L.",
+        "year": "2025",
+        "unstructured": "Xue L., Mahat J., Ghazali N., Shi X. (2025). Technology acceptance model (TAM) in artificial intelligence in higher education (AIHEd): A systematic literature review. Journal of Institutional Research South East Asia, 23(1), 355–375.",
+        "journal-title": "Journal of Institutional Research South East Asia"
+      },
+      {
+        "key": "e_1_3_2_111_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xue L. Rashid A. M. Ouyang S. (2024). The unified theory of acceptance and use of technology (UTAUT) in higher education: A systematic review. Sage Open 14(1) 21582440241229570. https://doi.org/10.1177/21582440241229570",
+        "DOI": "10.1177/21582440241229570"
+      },
+      {
+        "key": "e_1_3_2_112_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yousafzai S. Y. Foxall G. R. Pallister J. G. (2007a). Technology acceptance: A meta-analysis of the TAM: Part 1. Journal of Modelling in Management 2(3) 251–280. https://doi.org/10.1108/17465660710834453",
+        "DOI": "10.1108/17465660710834453"
+      },
+      {
+        "key": "e_1_3_2_113_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yousafzai S. Y. Foxall G. R. Pallister J. G. (2007b). Technology acceptance: A meta-analysis of the TAM: Part 2. Journal of Modelling in Management 2(3) 281–304. https://doi.org/10.1108/17465660710834462",
+        "DOI": "10.1108/17465660710834462"
+      },
+      {
+        "key": "e_1_3_2_114_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yu Z. (2023). A meta-analysis of the effect of virtual reality technology use in education. Interactive Learning Environments 31(8) 4956–4976. https://doi.org/10.1080/10494820.2021.1989466",
+        "DOI": "10.1080/10494820.2021.1989466"
+      },
+      {
+        "key": "e_1_3_2_115_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yucel U. A. Gulbahar Y. (2013). Technology acceptance model: A review of the prior predictors. Ankara University Journal of Faculty of Educational Sciences (JFES) 46(1) 89–109. https://doi.org/10.1501/Egifak_0000001275",
+        "DOI": "10.1501/Egifak_0000001275"
+      },
+      {
+        "key": "e_1_3_2_116_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zawacki-Richter O. Marín V. I. Bond M. Gouverneur F. (2019). Systematic review of research on artificial intelligence applications in higher education—Where are the educators? International Journal of Educational Technology in Higher Education 16(1) 39. https://doi.org/10.1186/s41239-019-0171-0",
+        "DOI": "10.1186/s41239-019-0171-0"
+      },
+      {
+        "key": "e_1_3_2_117_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang C. Schießl J. Plößl L. Hofmann F. Gläser-Zikuda M. (2023). Acceptance of artificial intelligence among pre-service teachers: A multigroup analysis. International Journal of Educational Technology in Higher Education 20(1) 49. https://doi.org/10.1186/s41239-023-00420-7",
+        "DOI": "10.1186/s41239-023-00420-7"
+      },
+      {
+        "key": "e_1_3_2_118_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang Y. Weng Q. Zhu N. (2018). The relationships between electronic banking adoption and its antecedents: A meta-analytic study of the role of national culture. International Journal of Information Management 40 76–87. https://doi.org/10.1016/j.ijinfomgt.2018.01.015",
+        "DOI": "10.1016/j.ijinfomgt.2018.01.015"
+      },
+      {
+        "key": "e_1_3_2_119_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhao Y. Pinto Llorente A. M. Sánchez Gómez M. C. (2021). Digital competence in higher education research: A systematic literature review. Computers & Education 168 Article 104212. https://doi.org/10.1016/j.compedu.2021.104212",
+        "DOI": "10.1016/j.compedu.2021.104212"
+      },
+      {
+        "key": "e_1_3_2_120_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zheng L. Niu J. Zhong L. Gyasi J. F. (2023). The effectiveness of artificial intelligence on learning achievement and learning perception: A meta-analysis. Interactive Learning Environments 31(9) 5650–5664. https://doi.org/10.1080/10494820.2021.2015693",
+        "DOI": "10.1080/10494820.2021.2015693"
+      },
+      {
+        "key": "e_1_3_2_121_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zou B. Lyu Q. Han Y. Li Z. Zhang W. (2025). Exploring students’ acceptance of an artificial intelligence speech evaluation program for EFL speaking practice: An application of the integrated model of technology acceptance. Computer Assisted Language Learning 38(5–6) 1366–1391. https://doi.org/10.1080/09588221.2023.2278608",
+        "DOI": "10.1080/09588221.2023.2278608"
+      },
+      {
+        "key": "e_1_3_2_122_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zou M. Huang L. (2023). To use or not to use? Understanding doctoral students’ acceptance of ChatGPT in writing through technology acceptance model. Frontiers in Psychology 14 Article 1259531. https://doi.org/10.3389/fpsyg.2023.1259531",
+        "DOI": "10.3389/fpsyg.2023.1259531"
+      }
+    ],
+    "container-title": [
+      "Sage Open"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/21582440251409441",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/21582440251409441",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/21582440251409441",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          30
+        ]
+      ],
+      "date-time": "2026-04-30T23:35:30Z",
+      "timestamp": 1777592130000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/21582440251409441"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "references-count": 121,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/21582440251409441"
+    ],
+    "URL": "https://doi.org/10.1177/21582440251409441",
+    "relation": {},
+    "ISSN": [
+      "2158-2440",
+      "2158-2440"
+    ],
+    "issn-type": [
+      {
+        "value": "2158-2440",
+        "type": "print"
+      },
+      {
+        "value": "2158-2440",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "article-number": "21582440251409441"
+  }
+}

@@ -1,0 +1,1165 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          14
+        ]
+      ],
+      "date-time": "2026-06-14T09:27:15Z",
+      "timestamp": 1781429235278,
+      "version": "3.54.1"
+    },
+    "reference-count": 86,
+    "publisher": "MIS Quarterly",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          9,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.2307/30036540",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          16
+        ]
+      ],
+      "date-time": "2017-11-16T16:17:35Z",
+      "timestamp": 1510849055000
+    },
+    "page": "425-478",
+    "source": "Crossref",
+    "is-referenced-by-count": 29954,
+    "title": [
+      "User Acceptance of Information Technology: Toward A Unified View1"
+    ],
+    "prefix": "10.25300",
+    "volume": "27",
+    "author": [
+      {
+        "given": "Viswanath",
+        "family": "Venkatesh",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Robert H. Smith School of Business, University of Maryland, Van Munching Hall, College Park, MD 20742, U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael G.",
+        "family": "Morris",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "McIntire School of Commerce, University of Virginia, Monroe Hall, Charlottesville, VA 22903-2493, U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gordon B.",
+        "family": "Davis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carlson School of Management, University of Minnesota, 321 19th Avenue South, Minneapolis, MN 55455, U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fred D.",
+        "family": "Davis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sam M. Walton College of Business, University of Arkansas, Fayetteville, AR 72701-1201, U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "10933",
+    "published-online": {
+      "date-parts": [
+        [
+          2003,
+          9,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b1-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "204",
+        "DOI": "10.1287/isre.9.2.204",
+        "article-title": "A Conceptual and Operational Definition of Personal Innovativeness in the Domain of Information Technology",
+        "volume": "9",
+        "author": "Agarwal",
+        "year": "1998",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b2-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "557",
+        "DOI": "10.1111/j.1540-5915.1997.tb01322.x",
+        "article-title": "The Role of Innovation Characteristics and Perceived Voluntariness in the Acceptance of Information Technologies",
+        "volume": "28",
+        "author": "Agarwal",
+        "year": "1997",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "key": "2025111913491052900_b3-4_venkatesh",
+        "volume-title": "Multiple Regression: Testing and Interpreting Interactions",
+        "author": "Aiken",
+        "year": "1991"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b4-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "179",
+        "DOI": "10.1016/0749-5978(91)90020-T",
+        "article-title": "The Theory of Planned Behavior",
+        "volume": "50",
+        "author": "Ajzen",
+        "year": "1991",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "2025111913491052900_b5-4_venkatesh",
+        "first-page": "486",
+        "article-title": "Sex, Gender, and the Individual",
+        "volume-title": "Handbook of Personality",
+        "author": "Ashmore",
+        "year": "1980"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b6-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "45",
+        "DOI": "10.1177/109442819800100104",
+        "article-title": "A General Approach to Construct Validation in Organizational Research: Application to the Measurement of Work Values",
+        "volume": "1",
+        "author": "Bagozzi",
+        "year": "1998",
+        "journal-title": "Organizational Research Methods"
+      },
+      {
+        "key": "2025111913491052900_b7-4_venkatesh",
+        "volume-title": "Social Foundations of Thought and Action: A Social Cognitive Theory",
+        "author": "Bandura",
+        "year": "1986"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b8-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "234",
+        "DOI": "10.1177/105960118901400210",
+        "article-title": "Are Androgynous Managers Really More Effective?",
+        "volume": "14",
+        "author": "Baril",
+        "year": "1989",
+        "journal-title": "Group and Organization Studies"
+      },
+      {
+        "key": "2025111913491052900_b9-4_venkatesh",
+        "first-page": "111",
+        "article-title": "The Relationship between Women’s Work and Family Roles and Their Subjective Well-Being and Psychological Distress",
+        "volume-title": "Women, Work and Health: Stress and Opportunities",
+        "author": "Barnett",
+        "year": "1981"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913491052900_b10-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "369",
+        "DOI": "10.1037/0033-295X.88.4.369",
+        "article-title": "The BSRI and Gender Schema Theory: A Reply to Spence and Helmreich",
+        "volume": "88",
+        "author": "Bem",
+        "year": "1981",
+        "journal-title": "Psychological Review"
+      },
+      {
+        "issue": "6",
+        "key": "2025111913491052900_b11-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "506",
+        "DOI": "10.1037/h0037130",
+        "article-title": "On Predicting Some of the People Some of the Time: The Search for Cross-Situational Consistencies in Behavior",
+        "volume": "81",
+        "author": "Bem",
+        "year": "1974",
+        "journal-title": "Psychological Review"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b12-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "247",
+        "DOI": "10.2307/248887",
+        "article-title": "Investigating the Support Role of the Information Center",
+        "volume": "14",
+        "author": "Bergeron",
+        "year": "1990",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b13-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "995",
+        "DOI": "10.2466/pr0.1996.78.3.995",
+        "article-title": "Psychology of Computer Use: Prevalence of Computer Anxiety in British Managers and Professionals",
+        "volume": "78",
+        "author": "Bozionelos",
+        "year": "1996",
+        "journal-title": "Psychological Reports"
+      },
+      {
+        "key": "2025111913491052900_b14-4_venkatesh",
+        "first-page": "295",
+        "article-title": "The Partial Least Squares Approach for Structural Equation Modeling",
+        "volume-title": "Modern Methods for Business Research",
+        "author": "Chin",
+        "year": "1998"
+      },
+      {
+        "key": "2025111913491052900_b15-4_venkatesh",
+        "first-page": "21",
+        "article-title": "A Partial Least Squares Latent Variable Modeling Approach for Measuring Interaction Effects: Results from a Monte Carlo Simulation Study and Voice Mail Emotion/Adoption Study",
+        "author": "Chin"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b16-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "591",
+        "DOI": "10.2307/1910133",
+        "article-title": "Tests of Equality Between Sets of Coefficients in Two Linear Regressions",
+        "volume": "28",
+        "author": "Chow",
+        "year": "1960",
+        "journal-title": "Econometrica"
+      },
+      {
+        "issue": "5",
+        "key": "2025111913491052900_b17-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "678",
+        "DOI": "10.1037/0021-9010.85.5.678",
+        "article-title": "Toward an Integrative Theory of Training Motivation: A Meta-Analytic Path Analysis of 20 Years of Training Research",
+        "volume": "85",
+        "author": "Colquitt",
+        "year": "2000",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b18-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "118",
+        "DOI": "10.1287/isre.6.2.118",
+        "article-title": "Application of Social Cognitive Theory to Training for Computer Skills",
+        "volume": "6",
+        "author": "Compeau",
+        "year": "1995",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b19-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.2307/249688",
+        "article-title": "Computer Self-Efficacy: Development of a Measure and Initial Test",
+        "volume": "19",
+        "author": "Compeau",
+        "year": "1995",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b20-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "145",
+        "DOI": "10.2307/249749",
+        "article-title": "Social Cognitive Theory and Individual Reactions to Computing Technology: A Longitudinal Study",
+        "volume": "23",
+        "author": "Compeau",
+        "year": "1999",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b21-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.2307/249008",
+        "article-title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "volume": "13",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "14",
+        "key": "2025111913491052900_b22-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "1111",
+        "DOI": "10.1111/j.1559-1816.1992.tb00945.x",
+        "article-title": "Extrinsic and Intrinsic Motivation to Use Computers in the Workplace",
+        "volume": "22",
+        "author": "Davis",
+        "year": "1992",
+        "journal-title": "Journal of Applied Social Psychology"
+      },
+      {
+        "issue": "8",
+        "key": "2025111913491052900_b23-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "982",
+        "DOI": "10.1287/mnsc.35.8.982",
+        "article-title": "User Acceptance of Computer Technology: A Comparison of Two Theoretical Models",
+        "volume": "35",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b24-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.1080/00031305.1983.10483087",
+        "article-title": "A Leisurely Look at the Bootstrap, the Jackknife, and Cross-Validation",
+        "volume": "37",
+        "author": "Efron",
+        "year": "1983",
+        "journal-title": "The American Statistician"
+      },
+      {
+        "issue": "7/8",
+        "key": "2025111913491052900_b25-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "425",
+        "DOI": "10.1007/BF00292532",
+        "article-title": "Situational Shifts in Sex Role Orientation: Correlates of Work Satisfaction and Burnout Among Women in Special Education",
+        "volume": "25",
+        "author": "Eichinger",
+        "year": "1991",
+        "journal-title": "Sex Roles"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b26-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "278",
+        "DOI": "10.1037/0012-1649.19.2.278",
+        "article-title": "Impact of Parenthood on Various Aspects of Masculinity and Femininity: A Short-Term Longitudinal Study",
+        "volume": "19",
+        "author": "Feldman",
+        "year": "1983",
+        "journal-title": "Developmental Psychology"
+      },
+      {
+        "key": "2025111913491052900_b27-4_venkatesh",
+        "volume-title": "Social Cognition",
+        "author": "Fiske",
+        "year": "1991"
+      },
+      {
+        "key": "2025111913491052900_b28-4_venkatesh",
+        "volume-title": "Belief, Attitude, Intention and Behavior: An Introduction to Theory and Research",
+        "author": "Fishbein",
+        "year": "1975"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b29-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "382",
+        "DOI": "10.1177/002224378101800313",
+        "article-title": "Evaluating Structural Equation Models with Unobservable Variables and Measurement Error: Algebra and Statistics",
+        "volume": "18",
+        "author": "Fornell",
+        "year": "1981",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "key": "2025111913491052900_b30-4_venkatesh",
+        "first-page": "150",
+        "article-title": "The Bases of Social Power",
+        "volume-title": "Studies in Social Power",
+        "author": "French",
+        "year": "1959"
+      },
+      {
+        "issue": "12",
+        "key": "2025111913491052900_b31-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "1827",
+        "DOI": "10.1287/mnsc.41.12.1827",
+        "article-title": "Understanding User Evaluations of Information Systems",
+        "volume": "41",
+        "author": "Goodhue",
+        "year": "1995",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b32-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.2307/249689",
+        "article-title": "Task-Technology Fit and Individual Performance",
+        "volume": "19",
+        "author": "Goodhue",
+        "year": "1995",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b33-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "201",
+        "DOI": "10.1037/h0076549",
+        "article-title": "Relationships of Age and Seniority with Career Variables of Engineers and Scientists",
+        "volume": "60",
+        "author": "Hall",
+        "year": "1995",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b34-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1287/isre.8.2.171",
+        "article-title": "Executive Decisions About Adoption of Information Technology in Small Business: Theory and Empirical Tests",
+        "volume": "8",
+        "author": "Harrison",
+        "year": "1997",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913491052900_b35-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1287/mnsc.40.4.440",
+        "article-title": "Explaining the Role of User Participation in Information System Use",
+        "volume": "40",
+        "author": "Hartwick",
+        "year": "1994",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b36-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1037/0022-3514.53.1.176",
+        "article-title": "Personality Change in Women from College to Midlife",
+        "volume": "53",
+        "author": "Helson",
+        "year": "1987",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b37-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1080/07421222.1999.11518247",
+        "article-title": "Examining the Technology Acceptance Model Using Physician Acceptance of Telemedicine Technology",
+        "volume": "16",
+        "author": "Hu",
+        "year": "1999",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "X",
+        "key": "2025111913491052900_b38-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "529",
+        "DOI": "10.1007/BF00287734",
+        "article-title": "Androgyny in a Male-Dominated Field: The Relationship of Sex-Typed Traits to Performance and Satisfaction in Engineering",
+        "volume": "17",
+        "author": "Jagacinski",
+        "year": "1987",
+        "journal-title": "Sex Roles"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913491052900_b39-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1016/S0378-7206(98)00096-2",
+        "article-title": "The Psychological Origins of Perceived Usefulness and Ease of Use",
+        "volume": "35",
+        "author": "Karahanna",
+        "year": "1999",
+        "journal-title": "Information and Management"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b40-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.2307/249751",
+        "article-title": "Information Technology Adoption Across Time: A Cross-Sectional Comparison of Pre-Adoption and Post-Adoption Beliefs",
+        "volume": "23",
+        "author": "Karahanna",
+        "year": "1999",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "1/2",
+        "key": "2025111913491052900_b41-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1007/BF00287459",
+        "article-title": "Gender, Sex Role, and Career Decision Making of Certified Management Accountants",
+        "volume": "13",
+        "author": "Keys",
+        "year": "1985",
+        "journal-title": "Sex Roles"
+      },
+      {
+        "issue": "5",
+        "key": "2025111913491052900_b42-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "929",
+        "DOI": "10.1037/0021-9010.87.5.929",
+        "article-title": "Change and Stability in Manager’s Gender Roles",
+        "volume": "87",
+        "author": "Kirchmeyer",
+        "year": "2002",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b43-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "78",
+        "DOI": "10.1006/jvbe.1996.1541",
+        "article-title": "Gender Roles in a Traditionally Female Occupation: A Study of Emergency, Operating, Intensive Care, and Psychiatric Nurses",
+        "volume": "50",
+        "author": "Kirchmeyer",
+        "year": "1997",
+        "journal-title": "Journal of Vocational Behavior"
+      },
+      {
+        "issue": "10",
+        "key": "2025111913491052900_b44-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "1252",
+        "DOI": "10.1287/mnsc.34.10.1252",
+        "article-title": "Managerial Influence in the Implementation of New Technology",
+        "volume": "34",
+        "author": "Leonard-Barton",
+        "year": "1988",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913491052900_b45-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "479",
+        "DOI": "10.1111/j.1533-8525.1988.tb01429.x",
+        "article-title": "Intersections of Gender and Aging",
+        "volume": "29",
+        "author": "Levy",
+        "year": "1988",
+        "journal-title": "The Sociological Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b46-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "428",
+        "DOI": "10.1037/0022-3514.44.2.428",
+        "article-title": "Masculinity, Femininity, and Androgyny Viewed and Assessed as Distinct Concepts",
+        "volume": "44",
+        "author": "Lubinski",
+        "year": "1983",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b47-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1300/J074v12n01_02",
+        "article-title": "The Impact of Age vs. Life Experiences on the Gender Role Attitudes of Women in Different Cohorts",
+        "volume": "12",
+        "author": "Lynott",
+        "year": "2000",
+        "journal-title": "Journal of Women and Aging"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b48-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1287/isre.2.3.173",
+        "article-title": "Predicting User Intentions: Comparing the Technology Acceptance Model with the Theory of Planned Behavior",
+        "volume": "2",
+        "author": "Mathieson",
+        "year": "1991",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "key": "2025111913491052900_b49-4_venkatesh",
+        "volume-title": "Toward a New Psychology of Women",
+        "author": "Miller",
+        "year": "1976"
+      },
+      {
+        "key": "2025111913491052900_b50-4_venkatesh",
+        "volume-title": "Differential Psychology",
+        "author": "Minton",
+        "year": "1980"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b51-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "192",
+        "DOI": "10.1287/isre.2.3.192",
+        "article-title": "Development of an Instrument to Measure the Perceptions of Adopting an Information Technology Innovation",
+        "volume": "2",
+        "author": "Moore",
+        "year": "1991",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "key": "2025111913491052900_b52-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "132",
+        "DOI": "10.1007/978-0-387-34982-4_10",
+        "article-title": "Integrating Diffusion of Innovations and Theory of Reasoned Action Models to Predict Utilization of Information Technology by End-Users",
+        "volume-title": "Diffusion and Adoption of Information Technology",
+        "author": "Moore",
+        "year": "1996"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b53-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "375",
+        "DOI": "10.1111/j.1744-6570.2000.tb00206.x",
+        "article-title": "Age Differences in Technology Adoption Decisions: Implications for a Changing Workforce",
+        "volume": "53",
+        "author": "Morris",
+        "year": "2000",
+        "journal-title": "Personnel Psychology"
+      },
+      {
+        "issue": "5",
+        "key": "2025111913491052900_b54-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "935",
+        "DOI": "10.1037/0022-3514.42.5.935",
+        "article-title": "Sex Role Orientation and Behavior in a Work Setting",
+        "volume": "42",
+        "author": "Motowidlo",
+        "year": "1982",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "key": "2025111913491052900_b55-4_venkatesh",
+        "volume-title": "Psychometric Theory",
+        "author": "Nunnally",
+        "year": "1994",
+        "edition": "3rd"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913491052900_b56-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "405",
+        "DOI": "10.2307/249522",
+        "article-title": "Conceptual Versus Procedural Software Training for Graphical User Interfaces: A Longitudinal Field Experiment",
+        "volume": "18",
+        "author": "Olfman",
+        "year": "1994",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b57-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "208",
+        "DOI": "10.1287/isre.12.2.208.9697",
+        "article-title": "Research Report: Richness Versus Parsimony in Modeling Technology Adoption Decisions—Understanding Merchant Adoption of a Smart Card-Based Payment System",
+        "volume": "12",
+        "author": "Plouffe",
+        "year": "2001",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "key": "2025111913491052900_b58-4_venkatesh",
+        "first-page": "47",
+        "article-title": "Attention and Performance: Identifying and Localizing Age Deficits",
+        "volume-title": "Aging and Human Performance",
+        "author": "Plude",
+        "year": "1985"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b59-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1037/h0041677",
+        "article-title": "Job Attitudes in Management: Perceived Importance of Needs as a Function of Job Level",
+        "volume": "47",
+        "author": "Porter",
+        "year": "1963",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b60-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "328",
+        "DOI": "10.1037/0033-2909.93.2.328",
+        "article-title": "Age-Related Differences in Work Attitudes and Behavior: A Review and Conceptual Analysis",
+        "volume": "93",
+        "author": "Rhodes",
+        "year": "1983",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b61-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "205",
+        "DOI": "10.1111/j.1467-6494.1997.tb00953.x",
+        "article-title": "Plaster or Plasticity: Are Adult Work Experiences Associated with Personality Change in Women?",
+        "volume": "65",
+        "author": "Roberts",
+        "year": "1997",
+        "journal-title": "Journal of Personality"
+      },
+      {
+        "key": "2025111913491052900_b62-4_venkatesh",
+        "volume-title": "Diffusion of Innovations",
+        "author": "Rogers",
+        "year": "1995"
+      },
+      {
+        "key": "2025111913491052900_b63-4_venkatesh",
+        "volume-title": "Communication of Innovations: A Cross-Cultural Approach",
+        "author": "Rogers",
+        "year": "1971"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b64-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "89",
+        "DOI": "10.1016/0001-8791(92)90041-W",
+        "article-title": "Biographic and Personal Characteristics of Women in Management",
+        "volume": "41",
+        "author": "Sachs",
+        "year": "1992",
+        "journal-title": "Journal of Vocational Behavior"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b65-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "325",
+        "DOI": "10.1086/209170",
+        "article-title": "The Theory of Reasoned Action: A Meta-Analysis of Past Research with Recommendations for Modifications and Future Research",
+        "volume": "15",
+        "author": "Sheppard",
+        "year": "1988",
+        "journal-title": "Journal of Consumer Research"
+      },
+      {
+        "issue": "8",
+        "key": "2025111913491052900_b66-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "1328",
+        "DOI": "10.1287/mnsc.41.8.1328",
+        "article-title": "Measuring System Usage: Implications for IS Theory Testing",
+        "volume": "41",
+        "author": "Straub",
+        "year": "1995",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b67-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "85",
+        "DOI": "10.1287/mnsc.42.1.85",
+        "article-title": "Empirical Evaluation of the Revised Technology Acceptance Model",
+        "volume": "42",
+        "author": "Szajna",
+        "year": "1996",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b68-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "561",
+        "DOI": "10.2307/249633",
+        "article-title": "Assessing IT Usage: The Role of Prior Experience",
+        "volume": "19",
+        "author": "Taylor",
+        "year": "1995",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913491052900_b69-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1287/isre.6.2.144",
+        "article-title": "Understanding Information Technology Usage: A Test of Competing Models",
+        "volume": "6",
+        "author": "Taylor",
+        "year": "1995",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b70-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "167",
+        "DOI": "10.1080/07421222.1994.11518035",
+        "article-title": "Influence of Experience on Personal Computer Utilization: Testing a Conceptual Model",
+        "volume": "11",
+        "author": "Thompson",
+        "year": "1994",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b71-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "124",
+        "DOI": "10.2307/249443",
+        "article-title": "Personal Computing: Toward a Conceptual Model of Utilization",
+        "volume": "15",
+        "author": "Thompson",
+        "year": "1991",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b72-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1109/TEM.1982.6447463",
+        "article-title": "Innovation Characteristics and Innovation Adoption-Implementation: A Meta-Analysis of Findings",
+        "volume": "29",
+        "author": "Tornatzky",
+        "year": "1982",
+        "journal-title": "IEEE Transactions on Engineering Management"
+      },
+      {
+        "key": "2025111913491052900_b73-4_venkatesh",
+        "volume-title": "Interpersonal Behavior",
+        "author": "Triandis",
+        "year": "1977"
+      },
+      {
+        "issue": "5/6",
+        "key": "2025111913491052900_b74-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "305",
+        "DOI": "10.1007/BF02766650",
+        "article-title": "Changes in Masculine and Feminine Traits Over Time: A Meta-Analysis",
+        "volume": "35",
+        "author": "Twenge",
+        "year": "1997",
+        "journal-title": "Sex Roles"
+      },
+      {
+        "key": "2025111913491052900_b75-4_venkatesh",
+        "first-page": "271",
+        "article-title": "Toward a Hierarchical Model of Intrinsic and Extrinsic Motivation",
+        "volume-title": "Advances in Experimental Social Psychology",
+        "author": "Vallerand",
+        "year": "1997"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b76-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.2307/249753",
+        "article-title": "Creating Favorable User Perceptions: Exploring the Role of Intrinsic Motivation",
+        "volume": "23",
+        "author": "Venkatesh",
+        "year": "1999",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913491052900_b77-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "342",
+        "DOI": "10.1287/isre.11.4.342.11872",
+        "article-title": "Determinants of Perceived Ease of Use: Integrating Perceived Behavioral Control, Computer Anxiety and Enjoyment into the Technology Acceptance Model",
+        "volume": "11",
+        "author": "Venkatesh",
+        "year": "2000",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b78-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "186",
+        "DOI": "10.1287/mnsc.46.2.186.11926",
+        "article-title": "A Theoretical Extension of the Technology Acceptance Model: Four Longitudinal Field Studies",
+        "volume": "45",
+        "author": "Venkatesh",
+        "year": "2000",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b79-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.2307/3250981",
+        "article-title": "Why Don’t Men Ever Stop to Ask For Directions? Gender, Social Influence, and Their Role in Technology Acceptance and Usage Behavior",
+        "volume": "24",
+        "author": "Venkatesh",
+        "year": "2000",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b80-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1006/obhd.2000.2896",
+        "article-title": "A Longitudinal Field Investigation of Gender Differences in Individual Technology Adoption Decision Making Processes",
+        "volume": "83",
+        "author": "Venkatesh",
+        "year": "2000",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913491052900_b81-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1006/obhd.1999.2837",
+        "article-title": "Computer Technology Training in the Workplace: A Longitudinal Investigation of the Effect of the Mood",
+        "volume": "79",
+        "author": "Venkatesh",
+        "year": "1999",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b82-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "153",
+        "DOI": "10.1177/002224378001700201",
+        "article-title": "A New Model for Predicting Behavioral Intentions: An Alternative to Fishbein",
+        "volume": "17",
+        "author": "Warshaw",
+        "year": "1980",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913491052900_b83-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1016/0022-1031(85)90017-4",
+        "article-title": "Disentangling Behavioral Intention and Behavioral Expectation",
+        "volume": "21",
+        "author": "Warshaw",
+        "year": "1985",
+        "journal-title": "Journal of Experimental Social Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913491052900_b84-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "609",
+        "DOI": "10.1111/j.1467-6494.1991.tb00261.x",
+        "article-title": "Statistical Issues in the Study of Temporal Data: Daily Experiences",
+        "volume": "59",
+        "author": "West",
+        "year": "1991",
+        "journal-title": "Journal of Personality"
+      },
+      {
+        "key": "2025111913491052900_b85-4_venkatesh",
+        "volume-title": "Global Electronic Commerce: Theory and Case Studies",
+        "author": "Westland",
+        "year": "2000"
+      },
+      {
+        "issue": "7/8",
+        "key": "2025111913491052900_b86-4_venkatesh",
+        "doi-asserted-by": "crossref",
+        "first-page": "757",
+        "DOI": "10.1007/BF00287869",
+        "article-title": "On the Importance of Being Masculine: Sex Role, Attribution, and Women’s Career Achievement",
+        "volume": "12",
+        "author": "Wong",
+        "year": "1985",
+        "journal-title": "Sex Roles"
+      }
+    ],
+    "container-title": [
+      "MIS Quarterly"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://misq.umn.edu/misq/article-pdf/27/3/425/5003/4_venkatesh.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://misq.umn.edu/misq/article-pdf/27/3/425/5003/4_venkatesh.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          25
+        ]
+      ],
+      "date-time": "2026-02-25T19:46:32Z",
+      "timestamp": 1772048792000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://misq.umn.edu/misq/article/27/3/425/1340/User-Acceptance-of-Information-Technology-Toward-A"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 86,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2003,
+            9,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            9,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2307/30036540",
+    "relation": {},
+    "ISSN": [
+      "0276-7783",
+      "2162-9730"
+    ],
+    "issn-type": [
+      {
+        "value": "0276-7783",
+        "type": "print"
+      },
+      {
+        "value": "2162-9730",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          9,
+          1
+        ]
+      ]
+    }
+  }
+}

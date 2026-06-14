@@ -1,0 +1,9 @@
+{
+  "category": "trust",
+  "model_family": "AI/automation trust",
+  "citation": "Lee, J. D., & See, K. A. (2004). Trust in automation: Designing for appropriate reliance.",
+  "doi_or_url": "https://doi.org/10.1518/hfes.46.1.50_30392",
+  "use_in_paper": "Foundational trust/automation citation.",
+  "status": "core",
+  "note": "Use for AI trust mechanism."
+}

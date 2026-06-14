@@ -1,0 +1,9 @@
+{
+  "category": "theory",
+  "model_family": "education TAM MASEM",
+  "citation": "Scherer, R., Siddiq, F., & Tondeur, J. (2019). The technology acceptance model for explaining teachers' adoption of digital technology: A meta-analytic structural equation modeling approach.",
+  "doi_or_url": "https://doi.org/10.1016/j.compedu.2018.09.009",
+  "use_in_paper": "Closest methodological precedent for education technology adoption MASEM.",
+  "status": "core",
+  "note": "Important for target-journal defense."
+}

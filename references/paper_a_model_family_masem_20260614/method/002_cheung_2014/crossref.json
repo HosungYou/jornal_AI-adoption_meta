@@ -1,0 +1,911 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ],
+      "date-time": "2026-06-01T13:33:45Z",
+      "timestamp": 1780320825088,
+      "version": "3.54.1"
+    },
+    "reference-count": 66,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              6,
+              27
+            ]
+          ],
+          "date-time": "2013-06-27T00:00:00Z",
+          "timestamp": 1372291200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              6,
+              27
+            ]
+          ],
+          "date-time": "2013-06-27T00:00:00Z",
+          "timestamp": 1372291200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Behav Res"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.3758/s13428-013-0361-y",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          26
+        ]
+      ],
+      "date-time": "2013-06-26T17:47:49Z",
+      "timestamp": 1372268869000
+    },
+    "page": "29-40",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 154,
+    "title": [
+      "Fixed- and random-effects meta-analytic structural equation modeling: Examples and analyses in R"
+    ],
+    "prefix": "10.3758",
+    "volume": "46",
+    "author": [
+      {
+        "given": "Mike W.-L.",
+        "family": "Cheung",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "361_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "71",
+        "DOI": "10.2307/271029",
+        "volume": "17",
+        "author": "PD Allison",
+        "year": "1987",
+        "unstructured": "Allison, P. D. (1987). Estimation of linear models with incomplete data. Sociological Methodology, 17, 71–103.",
+        "journal-title": "Sociological Methodology"
+      },
+      {
+        "issue": "5",
+        "key": "361_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "815",
+        "DOI": "10.1016/j.paid.2006.09.018",
+        "volume": "42",
+        "author": "P. Barrett",
+        "year": "2007",
+        "unstructured": "Barrett, P. (2007). Structural equation modelling: Adjudging model fit. Personality and Individual Differences, 42(5), 815–824.",
+        "journal-title": "Personality and Individual Differences"
+      },
+      {
+        "key": "361_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "341",
+        "DOI": "10.2307/1165128",
+        "volume": "17",
+        "author": "BJ Becker",
+        "year": "1992",
+        "unstructured": "Becker, B. J. (1992). Using results from replicated studies to estimate linear models. Journal of Educational Statistics, 17, 341–362.",
+        "journal-title": "Journal of Educational Statistics"
+      },
+      {
+        "key": "361_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "100",
+        "DOI": "10.3102/10769986020001100",
+        "volume": "20",
+        "author": "BJ Becker",
+        "year": "1995",
+        "unstructured": "Becker, B. J. (1995). Corrections to “Using results from replicated studies to estimate linear models. Journal of Educational Statistics, 20, 100–102.",
+        "journal-title": "Journal of Educational Statistics"
+      },
+      {
+        "key": "361_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "341",
+        "DOI": "10.1037/1082-989X.1.4.341",
+        "volume": "1",
+        "author": "G Becker",
+        "year": "1996",
+        "unstructured": "Becker, G. (1996). The meta-analysis of factor analyses: An illustration based on the cumulation of correlation matrices. Psychological Methods, 1, 341–353.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR6",
+        "first-page": "377",
+        "volume-title": "The handbook of research synthesis and meta-analysis",
+        "author": "BJ Becker",
+        "year": "2009",
+        "unstructured": "Becker, B. J. (2009). Model-based meta-analysis. In H. Cooper, L. V. Hedges, & J. C. Valentine (Eds.), The handbook of research synthesis and meta-analysis (2nd ed., pp. 377–395). New York, NY: Sage.",
+        "edition": "2"
+      },
+      {
+        "key": "361_CR7",
+        "first-page": "357",
+        "volume-title": "The handbook of research synthesis",
+        "author": "BJ Becker",
+        "year": "1994",
+        "unstructured": "Becker, B. J., & Schram, C. M. (1994). Examining explanatory models through research synthesis. In H. Cooper & L. V. Hedges (Eds.), The handbook of research synthesis (pp. 357–381). New York, NY: Sage."
+      },
+      {
+        "key": "361_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "153",
+        "DOI": "10.1207/s15328007sem1302_1",
+        "volume": "13",
+        "author": "S Beretvas",
+        "year": "2006",
+        "unstructured": "Beretvas, S., & Furlow, C. (2006). Evaluation of an approximate method for synthesizing covariance matrices for use in meta-analytic SEM. Structural Equation Modeling, 13, 153–185.",
+        "journal-title": "Structural Equation Modeling"
+      },
+      {
+        "key": "361_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "306",
+        "DOI": "10.1007/s11336-010-9200-6",
+        "volume": "76",
+        "author": "S Boker",
+        "year": "2011",
+        "unstructured": "Boker, S., Neale, M., Maes, H., Wilde, M., Spiegel, M., Brick, T., & Fox, J. (2011). OpenMx: An open source extended structural equation modeling framework. Psychometrika, 76, 306–317.",
+        "journal-title": "Psychometrika"
+      },
+      {
+        "key": "361_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "225",
+        "DOI": "10.1037/a0016619",
+        "volume": "14",
+        "author": "D Bonett",
+        "year": "2009",
+        "unstructured": "Bonett, D. (2009). Meta-analytic interval estimation for standardized and unstandardized mean differences. Psychological Methods, 14, 225–238.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/9780470743386",
+        "volume-title": "Introduction to meta-analysis",
+        "author": "M Borenstein",
+        "year": "2009",
+        "unstructured": "Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2009). Introduction to meta-analysis. Hoboken, NJ: Wiley."
+      },
+      {
+        "key": "361_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "62",
+        "DOI": "10.1111/j.2044-8317.1984.tb00789.x",
+        "volume": "37",
+        "author": "MW Browne",
+        "year": "1984",
+        "unstructured": "Browne, M. W. (1984). Asymptotically distribution-free methods for the analysis of covariance structures. British Journal of Mathematical and Statistical Psychology, 37, 62–83.",
+        "journal-title": "British Journal of Mathematical and Statistical Psychology"
+      },
+      {
+        "key": "361_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "182",
+        "DOI": "10.1037/a0013163",
+        "volume": "13",
+        "author": "MW-L Cheung",
+        "year": "2008",
+        "unstructured": "Cheung, M. W.-L. (2008). A model for integrating fixed-, random-, and mixed-effects meta-analyses into structural equation modeling. Psychological Methods, 13, 182–202.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "267",
+        "DOI": "10.1080/10705510902751291",
+        "volume": "16",
+        "author": "MW-L Cheung",
+        "year": "2009",
+        "unstructured": "Cheung, M. W.-L. (2009). Constructing approximate confidence intervals for parameters with structural equation models. Structural Equation Modeling, 16, 267–294.",
+        "journal-title": "Structural Equation Modeling"
+      },
+      {
+        "key": "361_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "481",
+        "DOI": "10.1080/10705511.2010.489367",
+        "volume": "17",
+        "author": "MW-L Cheung",
+        "year": "2010",
+        "unstructured": "Cheung, M. W.-L. (2010). Fixed-effects meta-analyses as multiple-group structural equation models. Structural Equation Modeling, 17, 481–509.",
+        "journal-title": "Structural Equation Modeling"
+      },
+      {
+        "key": "361_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "157",
+        "DOI": "10.1080/10705511.2013.742404",
+        "volume": "20",
+        "author": "MW-L Cheung",
+        "year": "2013",
+        "unstructured": "Cheung, M. W.-L. (2013a). Implementing restricted maximum likelihood estimation in structural equation models. Structural Equation Modeling, 20, 157–167.",
+        "journal-title": "Structural Equation Modeling"
+      },
+      {
+        "key": "361_CR17",
+        "unstructured": "Cheung, M. W.-L. (2013b). metaSEM: Meta-analysis using structural equation modeling. Retrieved from http://courses.nus.edu.sg/course/psycwlm/Internet/metaSEM/"
+      },
+      {
+        "key": "361_CR18",
+        "unstructured": "Cheung, M. W.-L. (in press-a). Modeling dependent effect sizes with three-level meta-analysis: A structural equation modeling approach. Psychological Methods."
+      },
+      {
+        "key": "361_CR19",
+        "unstructured": "Cheung, M. W.-L. (in press-b). Multivariate meta-analysis as structural equation models. Structural Equation Modeling."
+      },
+      {
+        "key": "361_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "206",
+        "DOI": "10.1177/1094428104264024",
+        "volume": "7",
+        "author": "MW-L Cheung",
+        "year": "2004",
+        "unstructured": "Cheung, M. W.-L., & Chan, W. (2004). Testing dependent correlation coefficients via structural equation modeling. Organizational Research Methods, 7, 206–223.",
+        "journal-title": "Organizational Research Methods"
+      },
+      {
+        "key": "361_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "954",
+        "DOI": "10.1177/0013164404273946",
+        "volume": "65",
+        "author": "MW-L Cheung",
+        "year": "2005",
+        "unstructured": "Cheung, M. W.-L., & Chan, W. (2005a). Classifying correlation matrices into relatively homogeneous subgroups: A cluster analytic approach. Educational and Psychological Measurement, 65, 954–979.",
+        "journal-title": "Educational and Psychological Measurement"
+      },
+      {
+        "key": "361_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "40",
+        "DOI": "10.1037/1082-989X.10.1.40",
+        "volume": "10",
+        "author": "MW-L Cheung",
+        "year": "2005",
+        "unstructured": "Cheung, M. W.-L., & Chan, W. (2005b). Meta-analytic structural equation modeling: A two-stage approach. Psychological Methods, 10, 40–64.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "28",
+        "DOI": "10.1080/10705510802561295",
+        "volume": "16",
+        "author": "MW-L Cheung",
+        "year": "2009",
+        "unstructured": "Cheung, M. W.-L., & Chan, W. (2009). A two-stage approach to synthesizing covariance matrices in meta-analytic structural equation modeling. Structural Equation Modeling, 16, 28–53.",
+        "journal-title": "Structural Equation Modeling"
+      },
+      {
+        "key": "361_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "522",
+        "DOI": "10.1177/0022022106290476",
+        "volume": "37",
+        "author": "MW-L Cheung",
+        "year": "2006",
+        "unstructured": "Cheung, M. W.-L., Leung, K., & Au, K. (2006). Evaluating multilevel models in cross-cultural research: An illustration with Social Axioms. Journal of Cross-Cultural Psychology, 37, 522–541.",
+        "journal-title": "Journal of Cross-Cultural Psychology"
+      },
+      {
+        "key": "361_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "678",
+        "DOI": "10.1037/0021-9010.85.5.678",
+        "volume": "85",
+        "author": "JA Colquitt",
+        "year": "2000",
+        "unstructured": "Colquitt, J. A., LePine, J. A., & Noe, R. A. (2000). Toward an integrative theory of training motivation: A meta-analytic path analysis of 20 years of research. Journal of Applied Psychology, 85, 678–707.",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "key": "361_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1037/0021-9010.84.1.3",
+        "volume": "84",
+        "author": "JM Conway",
+        "year": "1999",
+        "unstructured": "Conway, J. M. (1999). Distinguishing contextual performance from task performance for managerial jobs. Journal of Applied Psychology, 84, 3–13.",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "key": "361_CR27",
+        "volume-title": "The handbook of research synthesis and meta-analysis",
+        "author": "HM Cooper",
+        "year": "2009",
+        "unstructured": "Cooper, H. M., Hedges, L. V., & Valentine, J. C. (2009). The handbook of research synthesis and meta-analysis. New York, NY: Sage."
+      },
+      {
+        "key": "361_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "317",
+        "DOI": "10.1037/0033-2909.105.2.317",
+        "volume": "105",
+        "author": "R Cudeck",
+        "year": "1989",
+        "unstructured": "Cudeck, R. (1989). Analysis of correlation-matrices using covariance structure models. Psychological Bulletin, 105, 317–327.",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "361_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "77",
+        "DOI": "10.1037/a0015972",
+        "volume": "14",
+        "author": "PJ Curran",
+        "year": "2009",
+        "unstructured": "Curran, P. J. (2009). The seemingly quixotic pursuit of a cumulative psychological science: Introduction to the special issue. Psychological Methods, 14, 77–80.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "16",
+        "DOI": "10.1037/1082-989X.1.1.16",
+        "volume": "1",
+        "author": "P Curran",
+        "year": "1996",
+        "unstructured": "Curran, P., West, S., & Finch, J. (1996). The robustness of test statistics to nonnormality and specification error in confirmatory factor analysis. Psychological Methods, 1, 16–29.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR31",
+        "volume-title": "R: A language and environment for statistical computing",
+        "author": "R Development Core Team",
+        "year": "2013",
+        "unstructured": "Development Core Team, R. (2013). R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from www.R-project.org"
+      },
+      {
+        "key": "361_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "1246",
+        "DOI": "10.1037/0022-3514.73.6.1246",
+        "volume": "73",
+        "author": "JM Digman",
+        "year": "1997",
+        "unstructured": "Digman, J. M. (1997). Higher-order factors of the Big Five. Journal of Personality and Social Psychology, 73, 1246–1256.",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "key": "361_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "463",
+        "DOI": "10.1348/096317999166798",
+        "volume": "72",
+        "author": "LT Eby",
+        "year": "1999",
+        "unstructured": "Eby, L. T., Freeman, D. M., Rush, M. C., & Lance, C. E. (1999). Motivational bases of affective organizational commitment: A partial test of an integrative theoretical model. Journal of Occupational and Organizational Psychology, 72, 463–483.",
+        "journal-title": "Journal of Occupational and Organizational Psychology"
+      },
+      {
+        "key": "361_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "619",
+        "DOI": "10.1002/(SICI)1097-0258(19960330)15:6<619::AID-SIM188>3.0.CO;2-A",
+        "volume": "15",
+        "author": "RJ Hardy",
+        "year": "1996",
+        "unstructured": "Hardy, R. J., & Thompson, S. G. (1996). A likelihood approach to meta-analysis with random effects. Statistics in Medicine, 15, 619–629.",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "361_CR35",
+        "volume-title": "Statistical methods for meta-analysis",
+        "author": "LV Hedges",
+        "year": "1985",
+        "unstructured": "Hedges, L. V., & Olkin, I. (1985). Statistical methods for meta-analysis. Orlando, FL: Academic Press."
+      },
+      {
+        "key": "361_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "486",
+        "DOI": "10.1037/1082-989X.3.4.486",
+        "volume": "3",
+        "author": "L Hedges",
+        "year": "1998",
+        "unstructured": "Hedges, L., & Vevea, J. (1998). Fixed- and random-effects models in meta-analysis. Psychological Methods, 3, 486–504.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "1539",
+        "DOI": "10.1002/sim.1186",
+        "volume": "21",
+        "author": "JPT Higgins",
+        "year": "2002",
+        "unstructured": "Higgins, J. P. T., & Thompson, S. G. (2002). Quantifying heterogeneity in a meta-analysis. Statistics in Medicine, 21, 1539–1558.",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "361_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "557",
+        "DOI": "10.1136/bmj.327.7414.557",
+        "volume": "327",
+        "author": "JPT Higgins",
+        "year": "2003",
+        "unstructured": "Higgins, J. P. T., Thompson, S. G., Deeks, J. J., & Altman, D. G. (2003). Measuring inconsistency in meta-analyses. British Medical Journal, 327, 557–560.",
+        "journal-title": "British Medical Journal"
+      },
+      {
+        "key": "361_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "890",
+        "DOI": "10.1037/0021-9010.77.6.890",
+        "volume": "77",
+        "author": "PW Hom",
+        "year": "1992",
+        "unstructured": "Hom, P. W., Caranikas-Walker, F., Prussia, G. E., & Griffeth, R. W. (1992). A meta-analytical structural equations analysis of a model of employee turnover. Journal of Applied Psychology, 77, 890–909.",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "key": "361_CR40",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4135/9781412985031",
+        "volume-title": "Methods of meta-analysis: Correcting error and bias in research findings",
+        "author": "JE Hunter",
+        "year": "2004",
+        "unstructured": "Hunter, J. E., & Schmidt, F. L. (2004). Methods of meta-analysis: Correcting error and bias in research findings (2nd ed.). Thousand Oaks, CA: Sage.",
+        "edition": "2"
+      },
+      {
+        "key": "361_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "3805",
+        "DOI": "10.1002/sim.5453",
+        "volume": "31",
+        "author": "D Jackson",
+        "year": "2012",
+        "unstructured": "Jackson, D., White, I. R., & Riley, R. D. (2012). Quantifying the impact of between-study heterogeneity in multivariate meta-analyses. Statistics in Medicine, 31, 3805–3820.",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "361_CR42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10869-013-9285-x",
+        "author": "RS Landis",
+        "year": "2013",
+        "unstructured": "Landis, R. S. (2013). Successfully combining meta-analysis and structural equation modeling: Recommendations and strategies. Journal of Business and Psychology. doi:10.1007/s10869-013-9285-x. Advance online publication.",
+        "journal-title": "Journal of Business and Psychology"
+      },
+      {
+        "key": "361_CR43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/9780470024737",
+        "volume-title": "Structural equation modeling: A Bayesian approach",
+        "author": "S-Y Lee",
+        "year": "2007",
+        "unstructured": "Lee, S.-Y. (2007). Structural equation modeling: A Bayesian approach. Chichester, UK: Wiley."
+      },
+      {
+        "key": "361_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "3125",
+        "DOI": "10.1002/sim.3157",
+        "volume": "27",
+        "author": "S Litière",
+        "year": "2008",
+        "unstructured": "Litière, S., Alonso, A., & Molenberghs, G. (2008). The impact of a misspecified random-effects distribution on the estimation and the performance of inferential procedures in generalized linear mixed models. Statistics in Medicine, 27, 3125–3144.",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "361_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "201",
+        "DOI": "10.1146/annurev.psych.51.1.201",
+        "volume": "51",
+        "author": "RC MacCallum",
+        "year": "2000",
+        "unstructured": "MacCallum, R. C., & Austin, J. T. (2000). Applications of structural equation modeling in psychological research. Annual Review of Psychology, 51, 201–226.",
+        "journal-title": "Annual Review of Psychology"
+      },
+      {
+        "key": "361_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "234",
+        "DOI": "10.1111/j.2044-8317.1984.tb00802.x",
+        "volume": "37",
+        "author": "JJ McArdle",
+        "year": "1984",
+        "unstructured": "McArdle, J. J., & McDonald, R. P. (1984). Some algebraic properties of the Reticular Action Model for moment structures. British Journal of Mathematical and Statistical Psychology, 37, 234–251.",
+        "journal-title": "British Journal of Mathematical and Statistical Psychology"
+      },
+      {
+        "key": "361_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "174",
+        "DOI": "10.1002/jrsm.47",
+        "volume": "2",
+        "author": "JS Michel",
+        "year": "2011",
+        "unstructured": "Michel, J. S., Viswesvaran, C., & Thomas, J. (2011). Conclusions from meta-analytic structural equation models generally do not change due to corrections for study artifacts. Research Synthesis Methods, 2, 174–187.",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "key": "361_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "1035",
+        "DOI": "10.1037/a0028324",
+        "volume": "138",
+        "author": "K Murayama",
+        "year": "2012",
+        "unstructured": "Murayama, K., & Elliot, A. J. (2012). The competition–performance relation: A meta-analytic review and test of the opposing processes model of competition and performance. Psychological Bulletin, 138, 1035–1070.",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "361_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "313",
+        "DOI": "10.1037/a0026802",
+        "volume": "17",
+        "author": "B Muthén",
+        "year": "2012",
+        "unstructured": "Muthén, B., & Asparouhov, T. (2012). Bayesian structural equation modeling: A more flexible representation of substantive theory. Psychological Methods, 17, 313–335.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "431",
+        "DOI": "10.1007/BF02294365",
+        "volume": "51",
+        "author": "B Muthén",
+        "year": "1987",
+        "unstructured": "Muthén, B., Kaplan, D., & Hollis, M. (1987). On structural equation modeling with data that are not missing completely at random. Psychometrika, 51, 431–462.",
+        "journal-title": "Psychometrika"
+      },
+      {
+        "key": "361_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "434",
+        "DOI": "10.1037/1082-989X.12.4.434",
+        "volume": "12",
+        "author": "A Prevost",
+        "year": "2007",
+        "unstructured": "Prevost, A., Mason, D., Griffin, S., Kinmonth, A., Sutton, S., & Spiegelhalter, D. (2007). Allowing for correlations between correlations in random-effects meta-analysis of correlation matrices. Psychological Methods, 12, 434–450.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "361_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "c221",
+        "DOI": "10.1136/bmj.c221",
+        "volume": "340",
+        "author": "RD Riley",
+        "year": "2010",
+        "unstructured": "Riley, R. D., Lambert, P. C., & Abo-Zaid, G. (2010). Meta-analysis of individual participant data: Rationale, conduct, and reporting. British Medical Journal, 340, c221.",
+        "journal-title": "British Medical Journal"
+      },
+      {
+        "key": "361_CR53",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4135/9781412984997",
+        "volume-title": "Meta-analytic procedures for social research",
+        "author": "R Rosenthal",
+        "year": "1991",
+        "unstructured": "Rosenthal, R. (1991). Meta-analytic procedures for social research (Revth ed.). Newbury Park, CA: Sage.",
+        "edition": "Rev"
+      },
+      {
+        "key": "361_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "561",
+        "DOI": "10.1080/10705510903203433",
+        "volume": "16",
+        "author": "WE Saris",
+        "year": "2009",
+        "unstructured": "Saris, W. E., Satorra, A., & van der Veld, W. (2009). Testing structural equation models or detection of misspecifications? Structural Equation Modeling, 16, 561–582.",
+        "journal-title": "Structural Equation Modeling"
+      },
+      {
+        "key": "361_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "97",
+        "DOI": "10.1348/000711007X255327",
+        "volume": "62",
+        "author": "F Schmidt",
+        "year": "2009",
+        "unstructured": "Schmidt, F., Oh, I., & Hayes, T. (2009). Fixed-versus random-effects models in meta-analysis: Model properties and an empirical comparison of differences in results. British Journal of Mathematical and Statistical Psychology, 62, 97–128.",
+        "journal-title": "British Journal of Mathematical and Statistical Psychology"
+      },
+      {
+        "key": "361_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "1259",
+        "DOI": "10.1002/sim.3607",
+        "volume": "29",
+        "author": "JJ Shuster",
+        "year": "2010",
+        "unstructured": "Shuster, J. J. (2010). Empirical vs. natural weighting in random effects meta-analysis. Statistics in Medicine, 29, 1259–1265.",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "361_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "3681",
+        "DOI": "10.1016/j.csda.2005.07.019",
+        "volume": "50",
+        "author": "K Sidik",
+        "year": "2006",
+        "unstructured": "Sidik, K., & Jonkman, J. N. (2006). Robust variance estimation for random effects meta-analysis. Computational Statistics and Data Analysis, 50, 3681–3701.",
+        "journal-title": "Computational Statistics and Data Analysis"
+      },
+      {
+        "key": "361_CR58",
+        "doi-asserted-by": "publisher",
+        "first-page": "2685",
+        "DOI": "10.1002/sim.4780142408",
+        "volume": "14",
+        "author": "TC Smith",
+        "year": "1995",
+        "unstructured": "Smith, T. C., Spiegelhalter, D. J., & Thomas, A. (1995). Bayesian approaches to random-effects meta-analysis: A comparative study. Statistics in Medicine, 14, 2685–2699.",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "361_CR59",
+        "first-page": "61",
+        "volume": "6",
+        "author": "H Steinmetz",
+        "year": "2012",
+        "unstructured": "Steinmetz, H., Baeuerle, N., & Isidor, R. (2012). Testing the circular structure of human values: A meta-analytical structural equation modeling approach. Survey Research Methods, 6, 61–75.",
+        "journal-title": "Survey Research Methods"
+      },
+      {
+        "key": "361_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "e46042",
+        "DOI": "10.1371/journal.pone.0046042",
+        "volume": "7",
+        "author": "GB Stewart",
+        "year": "2012",
+        "unstructured": "Stewart, G. B., Altman, D. G., Askie, L. M., Duley, L., Simmonds, M. C., & Stewart, L. A. (2012). Statistical analysis of individual participant data meta-analyses: A comparison of methods and recommendations for practice. PLoS ONE, 7, e46042.",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "361_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "277",
+        "DOI": "10.1191/096228001678227794",
+        "volume": "10",
+        "author": "AJ Sutton",
+        "year": "2001",
+        "unstructured": "Sutton, A. J., & Abrams, K. R. (2001). Bayesian methods in meta-analysis and evidence synthesis. Statistical Methods in Medical Research, 10, 277–303.",
+        "journal-title": "Statistical Methods in Medical Research"
+      },
+      {
+        "key": "361_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "651",
+        "DOI": "10.1002/sim.2916",
+        "volume": "27",
+        "author": "AJ Sutton",
+        "year": "2008",
+        "unstructured": "Sutton, A. J., Kendrick, D., & Coupland, C. A. C. (2008). Meta-analysis of individual- and aggregate-level data. Statistics in Medicine, 27, 651–669.",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "361_CR63",
+        "doi-asserted-by": "publisher",
+        "first-page": "259",
+        "DOI": "10.1111/j.1744-6570.1993.tb00874.x",
+        "volume": "46",
+        "author": "RP Tett",
+        "year": "1993",
+        "unstructured": "Tett, R. P., & Meyer, J. P. (1993). Job satisfaction, organizational commitment, turnover intention, and turnover: Path analyses based on meta-analytic findings. Personnel Psychology, 46, 259–290.",
+        "journal-title": "Personnel Psychology"
+      },
+      {
+        "key": "361_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "541",
+        "DOI": "10.1016/S0167-9473(96)00047-3",
+        "volume": "23",
+        "author": "G Verbeke",
+        "year": "1997",
+        "unstructured": "Verbeke, G., & Lesaffre, E. (1997). The effect of misspecifying the random-effects distribution in linear mixed models for longitudinal data. Computational Statistics and Data Analysis, 23, 541–556.",
+        "journal-title": "Computational Statistics and Data Analysis"
+      },
+      {
+        "key": "361_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "865",
+        "DOI": "10.1111/j.1744-6570.1995.tb01784.x",
+        "volume": "48",
+        "author": "C Viswesvaran",
+        "year": "1995",
+        "unstructured": "Viswesvaran, C., & Ones, D. (1995). Theory testing: Combining psychometric meta-analysis and structural equations modeling. Personnel Psychology, 48, 865–885.",
+        "journal-title": "Personnel Psychology"
+      },
+      {
+        "key": "361_CR66",
+        "doi-asserted-by": "publisher",
+        "first-page": "367",
+        "DOI": "10.1016/S1871-0301(06)01017-1",
+        "volume-title": "Handbook of latent variable and related models",
+        "author": "K-H Yuan",
+        "year": "2007",
+        "unstructured": "Yuan, K.-H., & Bentler, P. M. (2007). Robust procedures in structural equation modeling. In S.-Y. Lee (Ed.), Handbook of latent variable and related models (pp. 367–397). Amsterdam, The Netherlands: Elsevier/North-Holland."
+      }
+    ],
+    "container-title": [
+      "Behavior Research Methods"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.3758/s13428-013-0361-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.3758/s13428-013-0361-y/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.3758/s13428-013-0361-y",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.3758/s13428-013-0361-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          5,
+          17
+        ]
+      ],
+      "date-time": "2022-05-17T11:51:26Z",
+      "timestamp": 1652788286000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.3758/s13428-013-0361-y"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          27
+        ]
+      ]
+    },
+    "references-count": 66,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "361"
+    ],
+    "URL": "https://doi.org/10.3758/s13428-013-0361-y",
+    "relation": {},
+    "ISSN": [
+      "1554-3528"
+    ],
+    "issn-type": [
+      {
+        "value": "1554-3528",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          27
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "27 June 2013",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "This content has been made available to all.",
+        "name": "free",
+        "label": "Free to read"
+      }
+    ]
+  }
+}

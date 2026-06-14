@@ -1,0 +1,525 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          13
+        ]
+      ],
+      "date-time": "2026-06-13T16:58:32Z",
+      "timestamp": 1781369912980,
+      "version": "3.54.1"
+    },
+    "reference-count": 59,
+    "publisher": "Informa UK Limited",
+    "issue": "9",
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Interactive Learning Environments"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          20
+        ]
+      ]
+    },
+    "DOI": "10.1080/10494820.2023.2209881",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          8
+        ]
+      ],
+      "date-time": "2023-05-08T08:30:22Z",
+      "timestamp": 1683534622000
+    },
+    "page": "5142-5155",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 548,
+    "title": [
+      "To use or not to use ChatGPT in higher education? A study of students’ acceptance and use of technology"
+    ],
+    "prefix": "10.1080",
+    "volume": "32",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3487-0971",
+        "authenticated-orcid": false,
+        "given": "Artur",
+        "family": "Strzelecki",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Economics in Katowice",
+            "place": [
+              "Katowice, Poland"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_3_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/isre.9.2.204"
+      },
+      {
+        "key": "e_1_3_3_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0266666915597546"
+      },
+      {
+        "key": "e_1_3_3_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0749-5978(91)90020-T"
+      },
+      {
+        "key": "e_1_3_3_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11051-2"
+      },
+      {
+        "key": "e_1_3_3_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-019-09965-5"
+      },
+      {
+        "key": "e_1_3_3_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10209-019-00685-8"
+      },
+      {
+        "key": "e_1_3_3_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12909-020-02302-2"
+      },
+      {
+        "key": "e_1_3_3_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2020.1799021"
+      },
+      {
+        "key": "e_1_3_3_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10956-023-10039-y"
+      },
+      {
+        "key": "e_1_3_3_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14703297.2023.2190148"
+      },
+      {
+        "key": "e_1_3_3_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.53761/1.20.3.02"
+      },
+      {
+        "key": "e_1_3_3_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.heliyon.2019.e02536"
+      },
+      {
+        "key": "e_1_3_3_14_1",
+        "unstructured": "Davis F. D. (1986). A technology acceptance model for empirically testing new end-user information systems: Theory and results. Massachusetts Institute of Technology. https://dspace.mit.edu/handle/1721.1/15192"
+      },
+      {
+        "key": "e_1_3_3_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/249008"
+      },
+      {
+        "key": "e_1_3_3_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-32827-8_2"
+      },
+      {
+        "key": "e_1_3_3_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2021.2018618"
+      },
+      {
+        "key": "e_1_3_3_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11423-016-9508-8"
+      },
+      {
+        "key": "e_1_3_3_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.techsoc.2021.101787"
+      },
+      {
+        "key": "e_1_3_3_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/ITSE-06-2016-0015"
+      },
+      {
+        "key": "e_1_3_3_21_1",
+        "volume-title": "Belief, attitude, intention, and behavior: An introduction to theory and research",
+        "author": "Fishbein M.",
+        "year": "1975",
+        "unstructured": "Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior: An introduction to theory and research. Addison Wesley."
+      },
+      {
+        "key": "e_1_3_3_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/002224378101800104"
+      },
+      {
+        "key": "e_1_3_3_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/45312"
+      },
+      {
+        "key": "e_1_3_3_24_1",
+        "volume-title": "A primer on partial least squares structural equation modeling (PLS-SEM)",
+        "author": "Hair J. F.",
+        "year": "2022",
+        "unstructured": "Hair, J. F., Hult, G. T. M., Ringle, C., & Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). Sage.",
+        "edition": "3"
+      },
+      {
+        "key": "e_1_3_3_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2753/MTP1069-6679190202"
+      },
+      {
+        "key": "e_1_3_3_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.lrp.2013.01.001"
+      },
+      {
+        "key": "e_1_3_3_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11747-014-0403-8"
+      },
+      {
+        "key": "e_1_3_3_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compedu.2019.103761"
+      },
+      {
+        "key": "e_1_3_3_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10171-x"
+      },
+      {
+        "key": "e_1_3_3_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDAMT.2017.7904962"
+      },
+      {
+        "key": "e_1_3_3_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-662-44188-6_29"
+      },
+      {
+        "key": "e_1_3_3_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/978-1-78756-699-620181001"
+      },
+      {
+        "key": "e_1_3_3_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-018-09858-z"
+      },
+      {
+        "key": "e_1_3_3_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijme.2023.100790"
+      },
+      {
+        "key": "e_1_3_3_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/25148817"
+      },
+      {
+        "key": "e_1_3_3_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/LHTN-01-2023-0009"
+      },
+      {
+        "key": "e_1_3_3_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compedu.2019.103617"
+      },
+      {
+        "key": "e_1_3_3_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/isre.2.3.192"
+      },
+      {
+        "key": "e_1_3_3_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-020-10157-9"
+      },
+      {
+        "key": "e_1_3_3_40_1",
+        "unstructured": "OpenAI. (2023). ChatGPT: Optimizing language models for dialogue. https://openai.com/blog/chatgpt/"
+      },
+      {
+        "key": "e_1_3_3_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11047-y"
+      },
+      {
+        "key": "e_1_3_3_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.53761/1.20.02.07"
+      },
+      {
+        "key": "e_1_3_3_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5539/ies.v6n7p157"
+      },
+      {
+        "key": "e_1_3_3_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/JARHE-02-2021-0054"
+      },
+      {
+        "key": "e_1_3_3_45_1",
+        "volume-title": "SmartPLS 4",
+        "author": "Ringle C. M.",
+        "year": "2022",
+        "unstructured": "Ringle, C. M., Wende, S., & Becker, J.-M. (2022). SmartPLS 4. SmartPLS GmbH."
+      },
+      {
+        "key": "e_1_3_3_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/ITSE-11-2018-0092"
+      },
+      {
+        "key": "e_1_3_3_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-57413-4_15"
+      },
+      {
+        "key": "e_1_3_3_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/OIR-01-2021-0017"
+      },
+      {
+        "key": "e_1_3_3_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.37074/jalt.2023.6.1.17"
+      },
+      {
+        "key": "e_1_3_3_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/isre.6.2.144"
+      },
+      {
+        "key": "e_1_3_3_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2019.1674888"
+      },
+      {
+        "key": "e_1_3_3_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/JSTPM-12-2020-0168"
+      },
+      {
+        "key": "e_1_3_3_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/25148660"
+      },
+      {
+        "key": "e_1_3_3_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/d41586-023-00288-7"
+      },
+      {
+        "key": "e_1_3_3_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/30036540"
+      },
+      {
+        "key": "e_1_3_3_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/41410412"
+      },
+      {
+        "key": "e_1_3_3_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10494820.2013.806932"
+      },
+      {
+        "key": "e_1_3_3_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/21582440211055721"
+      },
+      {
+        "key": "e_1_3_3_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10639-022-11116-2"
+      },
+      {
+        "key": "e_1_3_3_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/ITSE-09-2018-0065"
+      }
+    ],
+    "container-title": [
+      "Interactive Learning Environments"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10494820.2023.2209881",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          5
+        ]
+      ],
+      "date-time": "2025-03-05T08:16:09Z",
+      "timestamp": 1741162569000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10494820.2023.2209881"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          8
+        ]
+      ]
+    },
+    "references-count": 59,
+    "journal-issue": {
+      "issue": "9",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            20
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10494820.2023.2209881"
+    ],
+    "URL": "https://doi.org/10.1080/10494820.2023.2209881",
+    "relation": {},
+    "ISSN": [
+      "1049-4820",
+      "1744-5191"
+    ],
+    "issn-type": [
+      {
+        "value": "1049-4820",
+        "type": "print"
+      },
+      {
+        "value": "1744-5191",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=nile20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=nile20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2023-04-04",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2023-04-29",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2023-05-08",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

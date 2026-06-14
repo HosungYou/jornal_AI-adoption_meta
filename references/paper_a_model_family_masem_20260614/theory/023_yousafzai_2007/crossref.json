@@ -1,0 +1,1284 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2026-06-12T23:45:46Z",
+      "timestamp": 1781307946504,
+      "version": "3.54.1"
+    },
+    "reference-count": 186,
+    "publisher": "Emerald",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              11,
+              6
+            ]
+          ],
+          "date-time": "2007-11-06T00:00:00Z",
+          "timestamp": 1194307200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.emerald.com/insight/site-policies"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1108/17465660710834453",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          3
+        ]
+      ],
+      "date-time": "2007-11-03T08:02:17Z",
+      "timestamp": 1194076937000
+    },
+    "page": "251-280",
+    "source": "Crossref",
+    "is-referenced-by-count": 393,
+    "title": [
+      "Technology acceptance: a meta‐analysis of the TAM: Part 1"
+    ],
+    "prefix": "10.1108",
+    "volume": "2",
+    "author": [
+      {
+        "given": "Shumaila Y.",
+        "family": "Yousafzai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gordon R.",
+        "family": "Foxall",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John G.",
+        "family": "Pallister",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "140",
+    "reference": [
+      {
+        "key": "key2022031520015685800_b1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Adams, D., Nelson, R. and Todd, P. (1992), “Perceived usefulness, ease of use and usage of information technology: a replication”, MIS Quarterly, Vol. 16 No. 2, pp. 227‐47.",
+        "DOI": "10.2307/249577"
+      },
+      {
+        "key": "key2022031520015685800_b2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Agarwal, R. and Karahanna, E. (2000), “Time flies when you're having fun: cognitive absorption and beliefs about information technology usage”, MIS Quarterly, Vol. 24 No. 4, pp. 665‐94.",
+        "DOI": "10.2307/3250951"
+      },
+      {
+        "key": "key2022031520015685800_b3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Agarwal, R. and Prasad, J. (1997), “The role of innovation characteristics and perceived voluntariness in the acceptance of information technologies”, Decision Sciences, Vol. 28 No. 3, pp. 557‐81.",
+        "DOI": "10.1111/j.1540-5915.1997.tb01322.x"
+      },
+      {
+        "key": "key2022031520015685800_b4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Agarwal, R. and Prasad, J. (1998a), “The antecedents and consequents of user perceptions in IT adoption”, Decision Support Systems, Vol. 22 No. 1, pp. 15‐29.",
+        "DOI": "10.1016/S0167-9236(97)00006-7"
+      },
+      {
+        "key": "key2022031520015685800_b5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Agarwal, R. and Prasad, J. (1998b), “A conceptual and operational definition of personal innovativeness in the domain of information technology”, Information Systems Research, Vol. 9 No. 2, pp. 204‐15.",
+        "DOI": "10.1287/isre.9.2.204"
+      },
+      {
+        "key": "key2022031520015685800_b6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Agarwal, R. and Prasad, J. (1999), “Are individual differences germane to the acceptance of new information technologies?”, Decision Sciences, Vol. 30 No. 2, pp. 361‐91.",
+        "DOI": "10.1111/j.1540-5915.1999.tb01614.x"
+      },
+      {
+        "key": "key2022031520015685800_b7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Agarwal, R. and Prasad, J. (2000), “A field study of the adoption of software process innovations by information system professionals”, IEEE Transactions on Engineering Management, Vol. 47 No. 3, pp. 295‐308.",
+        "DOI": "10.1109/17.865899"
+      },
+      {
+        "key": "key2022031520015685800_b8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Agarwal, R., Prasad, J. and Zanino, M. (1996), “Training experiences and usage intentions: a field study of a graphical interface”, Int'l Jr. of H‐C Studies, Vol. 45, pp. 215‐41.",
+        "DOI": "10.1006/ijhc.1996.0049"
+      },
+      {
+        "key": "key2022031520015685800_b9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ajzen, I. (1991), “The theory of planned behaviour”, Organizational Behaviour and Human Decision Processes, Vol. 50 No. 2, pp. 179‐211.",
+        "DOI": "10.1016/0749-5978(91)90020-T"
+      },
+      {
+        "key": "key2022031520015685800_b10",
+        "unstructured": "Ajzen, I. and Fishbein, M. (1980), Understanding Attitudes and Predicting Social Behaviour, Prentice‐Hall, Englewood Cliffs, NJ."
+      },
+      {
+        "key": "key2022031520015685800_b14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al‐Gahtani, S. (2001), “The applicability of TAM outside North America: an empirical test in the United Kingdom”, Information Resources Mgmt. Jr., Vol. 14 No. 3, pp. 37‐46.",
+        "DOI": "10.4018/irmj.2001070104"
+      },
+      {
+        "key": "key2022031520015685800_b13",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al‐Gahtani, S. and King, M. (1999), “Attitudes, satisfaction and usage: factors contributing to each in the acceptance of IT”, Behaviour & IT, Vol. 18 No. 4, pp. 277‐97.",
+        "DOI": "10.1080/014492999119020"
+      },
+      {
+        "key": "key2022031520015685800_b12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Aladwani, A.M. (2002), “The development of two tools for measuring the easiness and usefulness of transactional web sites”, European Jr. of IS, Vol. 11 No. 3, pp. 223‐34.",
+        "DOI": "10.1057/palgrave.ejis.3000432"
+      },
+      {
+        "key": "key2022031520015685800_b15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Anandarajan, M., Simmers, C. and Igbaria, M. (2000a), “An exploratory investigation of the antecedents and impact of internet usage”, Behaviour & IT, Vol. 19 No. 1, pp. 69‐85.",
+        "DOI": "10.1080/014492900118803"
+      },
+      {
+        "key": "key2022031520015685800_b16",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Anandarajan, M., Igbaria, M. and Anakwe, U.P. (2000b), Technology acceptance in the banking industry” Information Technology & People, Vol. 13 No. 4, pp. 298‐312.",
+        "DOI": "10.1108/09593840010359491"
+      },
+      {
+        "key": "key2022031520015685800_b17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Anandarajan, M., Igbaria, M. and Anakwe, U.P. (2002), “IT acceptance in a less‐developed country”, Int'l Jr. of Info. Mgmt., Vol. 22 No. 1, pp. 47‐65.",
+        "DOI": "10.1016/S0268-4012(01)00040-8"
+      },
+      {
+        "key": "key2022031520015685800_b19",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bajaj, A. and Nidumolu, S.R. (1998), “A feedback model to understand information system usage”, Information & Management, Vol. 33 No. 4, pp. 213‐24.",
+        "DOI": "10.1016/S0378-7206(98)00026-3"
+      },
+      {
+        "key": "key2022031520015685800_b20",
+        "unstructured": "Benamati, J. and Rajkumar, T.M. (2002), “The application development outsourcing decision: an application of the technology acceptance model”, Journal of Computer Information Systems, Vol. 42 No. 2, pp. 35‐43."
+      },
+      {
+        "key": "key2022031520015685800_b21",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bennett, P.D. and Harrell, G.D. (1975), “The role of confidence in understanding and predicting buyers' attitudes and purchase intentions”, Journal of Consumer Research, Vol. 2, pp. 110‐7.",
+        "DOI": "10.1086/208622"
+      },
+      {
+        "key": "key2022031520015685800_b22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bhattacherjee, A. (2001), “An empirical analysis of the antecedents of electronic commerce service continuance”, Decision Support Systems, Vol. 32 No. 2, pp. 201‐14.",
+        "DOI": "10.1016/S0167-9236(01)00111-7"
+      },
+      {
+        "key": "key2022031520015685800_b23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Brosnan, M.J. (1999), “Modeling technophobia: a case for word processing”, Computers in Human Behaviour, Vol. 15 No. 2, pp. 105‐21.",
+        "DOI": "10.1016/S0747-5632(98)00020-X"
+      },
+      {
+        "key": "key2022031520015685800_b24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Brown, S., Massey, A., Montoya‐Weiss, M. and Burkman, J. (2002), “Do I really have to?”, User acceptance of mandated technology. European Jr. of IS, Vol. 11, pp. 283‐95.",
+        "DOI": "10.1057/palgrave.ejis.3000438"
+      },
+      {
+        "key": "key2022031520015685800_b26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Burnett, J.J. and Dunne, P.M. (1986), “An appraisal of the use of student subjects in marketing research”, Journal of Business Research, Vol. 14 No. 4, pp. 329‐43.",
+        "DOI": "10.1016/0148-2963(86)90024-X"
+      },
+      {
+        "key": "key2022031520015685800_b27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Campbell, D.T. and Fiske, D.W. (1959), “Convergent and discriminant validity by the multitrait‐multimethod matrix”, Psychological Bulletin, Vol. 56 No. 2, pp. 81‐105.",
+        "DOI": "10.1037/h0046016"
+      },
+      {
+        "key": "key2022031520015685800_b28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. (1996a), “An empirical assessment of a modified technology acceptance model”, Journal of Management Information Systems, Vol. 13 No. 2, pp. 185‐204.",
+        "DOI": "10.1080/07421222.1996.11518128"
+      },
+      {
+        "key": "key2022031520015685800_b29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. (1996b), “An empirical investigation on factors affecting the acceptance of CASE by system developers”, Information & Management, Vol. 30 No. 6, pp. 269‐80.",
+        "DOI": "10.1016/S0378-7206(96)01074-9"
+      },
+      {
+        "key": "key2022031520015685800_b30",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. (2001), “Influence of computer attitude and self‐efficacy on IT usage behaviour”, Journal of End User Computing, Vol. 13 No. 1, pp. 26‐33.",
+        "DOI": "10.4018/joeuc.2001010103"
+      },
+      {
+        "key": "key2022031520015685800_b31",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. and Hu, P.J. (2001), “Information technology acceptance by individual professionals”, Decision Sciences, Vol. 32 No. 4, pp. 699‐710.",
+        "DOI": "10.1111/j.1540-5915.2001.tb00978.x"
+      },
+      {
+        "key": "key2022031520015685800_b32",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. and Hu, P.J. (2002a), “Investigating healthcare professionals' decisions to accept telemedicine technology”, Information & Management, Vol. 39 No. 4, pp. 297‐311.",
+        "DOI": "10.1016/S0378-7206(01)00098-2"
+      },
+      {
+        "key": "key2022031520015685800_b33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. and Hu, P.J. (2002b), “Examining a model of information technology acceptance by individual professionals”, Journal of MIS, Vol. 18 No. 4, pp. 191‐229.",
+        "DOI": "10.1080/07421222.2002.11045699"
+      },
+      {
+        "key": "key2022031520015685800_b34",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen, L., Gillenson, M. and Sherrell, D. (2002), “Enticing online consumers: an extended technology acceptance perspective”, Information & Management, Vol. 39, pp. 705‐19.",
+        "DOI": "10.1016/S0378-7206(01)00127-6"
+      },
+      {
+        "key": "key2022031520015685800_b35",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Childers, T., Carr, C., Peck, J. and Carson, S. (2001), “Hedonic and utilitarian motivations for online retail shopping behaviour”, Journal of Retailing, Vol. 77 No. 4, pp. 511‐35.",
+        "DOI": "10.1016/S0022-4359(01)00056-2"
+      },
+      {
+        "key": "key2022031520015685800_b36",
+        "unstructured": "Chin, W.W. (1996), “The measurement and measuring of IT usage: reconciling recent discrepancies between self‐reported and computer recorded usage”, IS Proceedings of the 24th Conference of Administrative Science Association of Canada, Montreal."
+      },
+      {
+        "key": "key2022031520015685800_b37",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chin, W.W. and Gopal, A. (1995), “Adoption intention in GSS: relative importance of beliefs”, The Data Base for Advances in IS, Vol. 26 Nos 2/3, pp. 42‐63.",
+        "DOI": "10.1145/217278.217285"
+      },
+      {
+        "key": "key2022031520015685800_b38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chin, W. and Todd, P. (1995), “On the use, usefulness, and ease of use of structural equation modelling in MIS research: a note of caution”, MIS Quarterly, Vol. 19, pp. 237‐46.",
+        "DOI": "10.2307/249690"
+      },
+      {
+        "key": "key2022031520015685800_b40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Choi, H., Choi, M., Yu, H. and Kim, J. (2003), “An empirical study on the adoption of information appliances with a focus on interactive TV”, Telematics and Infomatics, Vol. 20 No. 2, pp. 161‐83.",
+        "DOI": "10.1016/S0736-5853(02)00024-2"
+      },
+      {
+        "key": "key2022031520015685800_b41",
+        "unstructured": "Cohon, J. and Cohon, P. (1975), Applied Multiple Regression/Correlation Analysis for the Behavioural Sciences, Lawrence Erlbaum Associates, Hillsdale, NJ."
+      },
+      {
+        "key": "key2022031520015685800_b42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Collopy, F. (1996), “Bias in retrospective self‐reports of time use: an empirical study of computer users”, Management Science, Vol. 42 No. 5, pp. 758‐67.",
+        "DOI": "10.1287/mnsc.42.5.758"
+      },
+      {
+        "key": "key2022031520015685800_b43",
+        "unstructured": "Cook, T.D. and Campbell, D.T. (1979), Quasi‐Experimentation: Design and Analysis Issues for Field Settings, Rand McNally, Chicago, IL."
+      },
+      {
+        "key": "key2022031520015685800_b44",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dabholkar, P. and Bagozzi, R. (2002), “An attitudinal model of technology‐based self‐service: moderating effects of consumer traits and situational factors”, Journal of Academy of Marketing Science, Vol. 30 No. 3, pp. 184‐201.",
+        "DOI": "10.1177/00970302030003001"
+      },
+      {
+        "key": "key2022031520015685800_b45",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dasgupta, S., Granger, M. and McGarry, N. (2002), “User acceptance of e‐collaboration technology: an extension of the technology acceptance model”, Group Decisions and Negotiations, Vol. 11 No. 2, pp. 87‐100.",
+        "DOI": "10.1023/A:1015221710638"
+      },
+      {
+        "key": "key2022031520015685800_b46",
+        "unstructured": "Davis, F. (1986), “A technology acceptance model for empirically testing new end‐user information systems: theory and results”, Doctoral dissertation, MIT Sloan School of Management, Cambridge, MA."
+      },
+      {
+        "key": "key2022031520015685800_b47",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis, F. (1989), “Perceived usefulness, perceived ease of use, and user acceptance of information technology”, MIS Quarterly, Vol. 13 No. 3, pp. 319‐40.",
+        "DOI": "10.2307/249008"
+      },
+      {
+        "key": "key2022031520015685800_b48",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis, F. (1993), “User acceptance of computer technology: system characteristics, user perceptions”, Int. J. Man‐Machine Studies, Vol. 38 No. 3, pp. 475‐87.",
+        "DOI": "10.1006/imms.1993.1022"
+      },
+      {
+        "key": "key2022031520015685800_b49",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis, F. and Venkatesh, V. (1996), “A critical assessment of potential measurement biases in the technology acceptance model: three experiments”, Int. J. Human‐Computer Studies, Vol. 45 No. 1, pp. 19‐45.",
+        "DOI": "10.1006/ijhc.1996.0040"
+      },
+      {
+        "key": "key2022031520015685800_b50",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis, F., Bagozzi, R.P. and Warshaw, P.R. (1989), “User acceptance of computer technology: a comparison of two theoretical models”, Management Science, Vol. 35 No. 8, pp. 982‐1003.",
+        "DOI": "10.1287/mnsc.35.8.982"
+      },
+      {
+        "key": "key2022031520015685800_b51",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis, F., Bagozzi, R. and Warshaw, P. (1992), “Extrinsic and intrinsic motivation to use computers in the workplace”, Journal of Applied Social Psychology, Vol. 22 No. 14, pp. 1111‐32.",
+        "DOI": "10.1111/j.1559-1816.1992.tb00945.x"
+      },
+      {
+        "key": "key2022031520015685800_b52",
+        "doi-asserted-by": "crossref",
+        "unstructured": "DeLone, W.H. and McLean, E.R. (1992), “Information systems success: the quest for the dependent variable”, Information Systems Research, Vol. 3 No. 1, pp. 60‐95.",
+        "DOI": "10.1287/isre.3.1.60"
+      },
+      {
+        "key": "key2022031520015685800_b53",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Devraj, S., Fan, M. and Kohli, R. (2002), “Antecedents of B2C channel satisfaction and preference”, Information Systems Research, Vol. 13 No. 3, pp. 316‐33.",
+        "DOI": "10.1287/isre.13.3.316.77"
+      },
+      {
+        "key": "key2022031520015685800_b54",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dias, D.D.S. (1998), “Managers' motivation for using information technology”, Industrial Management & Data Systems, Vol. 98 No. 7, pp. 338‐42.",
+        "DOI": "10.1108/02635579810230153"
+      },
+      {
+        "key": "key2022031520015685800_b55",
+        "unstructured": "Dillon, T., Kuilboer, J., Quinn, J. and Garner, M. (1998), “Accounting student acceptance of tax preparation software”, Journal of Accounting and Computers, Vol. 13, pp. 17‐29."
+      },
+      {
+        "key": "key2022031520015685800_b56",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dishaw, M.T. and Strong, D.M. (1999), “Extending the technology acceptance model with task‐technology fit constructs”, Information & Management, Vol. 36 No. 1, pp. 9‐21.",
+        "DOI": "10.1016/S0378-7206(98)00101-3"
+      },
+      {
+        "key": "key2022031520015685800_b57",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Doll, W.J., Hendrickson, A. and Deng, X. (1998), “Using Davis's perceived usefulness and ease‐of‐use instrument for decision making: a confirmatory and multigroup invariance analysis”, Decision Sciences, Vol. 29 No. 4, pp. 839‐69.",
+        "DOI": "10.1111/j.1540-5915.1998.tb00879.x"
+      },
+      {
+        "key": "key2022031520015685800_b58",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Featherman, M. and Pavlou, P. (2003), “Predicting e‐services adoption: a perceived risk facets perspective”, Int'l Jr. of Human‐Computer Studies, Vol. 59 No. 4, pp. 451‐74.",
+        "DOI": "10.1016/S1071-5819(03)00111-3"
+      },
+      {
+        "key": "key2022031520015685800_b59",
+        "unstructured": "Fishbein, M. and Ajzen, I. (1975), Belief, Attitude, Intention and Behaviour: An Introduction to Theory and Research, Addison‐Wesley, Reading, MA."
+      },
+      {
+        "key": "key2022031520015685800_b60",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fry, J.N. (1971), “Personality variables and cigarette brand choice”, Journal of Market Research, Vol. 8, pp. 298‐304.",
+        "DOI": "10.1177/002224377100800303"
+      },
+      {
+        "key": "key2022031520015685800_b61",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gefen, D. (2000), “E‐commerce the role of familiarity and trust”, Omega: The International Journal of Management Science, Vol. 28 No. 6, pp. 725‐37.",
+        "DOI": "10.1016/S0305-0483(00)00021-9"
+      },
+      {
+        "key": "key2022031520015685800_b62",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gefen, D. (2003), “TAM or just plain habit: a look at experienced online shoppers”, Journal of End User Computing, Vol. 15 No. 3, pp. 1‐13.",
+        "DOI": "10.4018/joeuc.2003070101"
+      },
+      {
+        "key": "key2022031520015685800_b63",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gefen, D. and Keil, M. (1998), “The impact of developer responsiveness on perceptions of usefulness and ease of use: extension of TAM”, The Data Base, Vol. 29, pp. 35‐49.",
+        "DOI": "10.1145/298752.298757"
+      },
+      {
+        "key": "key2022031520015685800_b64",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gefen, D. and Straub, D.W. (1997), “Gender differences in the perception and use of e‐mail: an extension to the TAM”, MIS Quarterly, Vol. 21 No. 4, pp. 389‐400.",
+        "DOI": "10.2307/249720"
+      },
+      {
+        "key": "key2022031520015685800_b65",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gefen, D. and Straub, D. (2000), “The relative importance of perceived ease‐of‐use in IS adoption: a study of e‐commerce adoption”, Journal of AIS, Vol. 1 No. 8, pp. 1‐28.",
+        "DOI": "10.17705/1jais.00008"
+      },
+      {
+        "key": "key2022031520015685800_b66",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gefen, D., Karahanna, E. and Straub, D.W. (2003a), “Inexperience and experience with online stores: the importance of TAM and trust”, IEEE, Vol. 50 No. 3, pp. 307‐21.",
+        "DOI": "10.1109/TEM.2003.817277"
+      },
+      {
+        "key": "key2022031520015685800_b67",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gefen, D., Karahanna, E. and Straub, D.W. (2003b), “Trust and TAM in online shopping: an integrated model”, MIS Quarterly, Vol. 27 No. 1, pp. 51‐90.",
+        "DOI": "10.2307/30036519"
+      },
+      {
+        "key": "key2022031520015685800_b68",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gentry, L. and Calantone, R. (2002), “A comparison of three models to explain shop‐bot use on the web”, Psychology & Marketing, Vol. 19 No. 11, pp. 945‐56.",
+        "DOI": "10.1002/mar.10045"
+      },
+      {
+        "key": "key2022031520015685800_b69",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ghiselli, E. (1960), “The prediction of predictability”, Education and Psychological Measurement, Vol. 20, pp. 3‐8.",
+        "DOI": "10.1177/001316446002000101"
+      },
+      {
+        "key": "key2022031520015685800_b185",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ghiselli, E.E. (1963), “Moderating effects and differential reliability and validity”, Journal of Applied Psychology, Vol. 47, pp. 81‐6.",
+        "DOI": "10.1037/h0047177"
+      },
+      {
+        "key": "key2022031520015685800_b70",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ghorab, K.E. (1997), “The impact of technology acceptance considerations on system usage, and adopted level of technological sophistication: an empirical investigation”, International Journal of Information Management, Vol. 17 No. 4, pp. 249‐59.",
+        "DOI": "10.1016/S0268-4012(97)00003-0"
+      },
+      {
+        "key": "key2022031520015685800_b71",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Goodhue, D.L. and Thompson, R.L. (1995), “Task‐technology fit and individual performance”, MIS Quarterly, Vol. 19 No. 2, pp. 213‐36.",
+        "DOI": "10.2307/249689"
+      },
+      {
+        "key": "key2022031520015685800_b72",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Green, C.W. (1998), “Normative influence on the acceptance of information technology – measurement and effects”, Small Group Research, Vol. 29 No. 1, pp. 85‐123.",
+        "DOI": "10.1177/1046496498291004"
+      },
+      {
+        "key": "key2022031520015685800_b73",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hackbarth, G., Grover, V. and Yi, M.Y. (2003), “Computer playfulness and anxiety: positive and negative mediators of the system experience effect on perceived ease of use”, Information & Management, Vol. 40 No. 3, pp. 221‐32.",
+        "DOI": "10.1016/S0378-7206(02)00006-X"
+      },
+      {
+        "key": "key2022031520015685800_b75",
+        "unstructured": "Handy, J., Whiddett, R. and Hunter, I. (2001), “A technology acceptance model for inter‐organizational electronic medical system”, Australian Jr. of IS, Vol. 9 No. 1, pp. 39‐50."
+      },
+      {
+        "key": "key2022031520015685800_b77",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hardgrave, B. and Johnson, R. (2003), “Towards an information systems development acceptance model: the case of object‐oriented systems development”, IEEE, Vol. 50 No. 3, pp. 322‐36.",
+        "DOI": "10.1109/TEM.2003.817293"
+      },
+      {
+        "key": "key2022031520015685800_b76",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hardgrave, B., Davis, F. and Riemenschneider, C. (2003), “Investigating determinants of software developers' intentions to follow methodologies”, Journal of MIS, Vol. 20 No. 1, pp. 123‐51.",
+        "DOI": "10.1080/07421222.2003.11045751"
+      },
+      {
+        "key": "key2022031520015685800_b78",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Heijden, H. (2003), “Factors influencing the usage of websites: the case of a generic portal in the Netherlands”, Information & Management, Vol. 40 No. 6, pp. 541‐9.",
+        "DOI": "10.1016/S0378-7206(02)00079-4"
+      },
+      {
+        "key": "key2022031520015685800_b79",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Henderson, R. and Divett, M. (2003), “Perceived usefulness, ease of use and electronic supermarket use”, Int'l Jr. of Human‐Computer Studies, Vol. 59 No. 3, pp. 383‐95.",
+        "DOI": "10.1016/S1071-5819(03)00079-X"
+      },
+      {
+        "key": "key2022031520015685800_b81",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hendrickson, A.R. and Collins, M.R. (1996), “An assessment of structure and causation of is usage”, The Data Base, Vol. 27 No. 2, pp. 61‐7.",
+        "DOI": "10.1145/243350.243361"
+      },
+      {
+        "key": "key2022031520015685800_b80",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hendrickson, A.R., Massey, P.D. and Cronan, T.P. (1993), “On the test‐retest reliability of perceived usefulness and perceived ease of use scale”, MIS Quarterly, Vol. 17 No. 2, pp. 227‐30.",
+        "DOI": "10.2307/249803"
+      },
+      {
+        "key": "key2022031520015685800_b82",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hobert, R. and Dunnette, M.D. (1967), “Development of moderator variables to enhance the prediction of managerial effectiveness”, Journal of Applied Psychology, Vol. 51 No. 2, pp. 50‐64.",
+        "DOI": "10.1037/h0024239"
+      },
+      {
+        "key": "key2022031520015685800_b83",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hong, W., Thong, J.Y.L., Wong, W‐M. and Tam, K.Y. (2002), “Determinants of user acceptance of digital libraries: an empirical examination of individual differences and system characteristics”, Journal of MIS, Vol. 18 No. 3, pp. 97‐124.",
+        "DOI": "10.1080/07421222.2002.11045692"
+      },
+      {
+        "key": "key2022031520015685800_b84",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Horton, R.L. (1979), “Some relationships between personality and consumer decision‐making”, Journal of Marketing Research, Vol. 16, pp. 233‐46.",
+        "DOI": "10.1177/002224377901600208"
+      },
+      {
+        "key": "key2022031520015685800_b85",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Horton, R.P., Buck, T., Waterson, P.E. and Clegg, C.W. (2001), “Explaining intranet use with the technology acceptance model”, Journal of IT, Vol. 16 No. 4, pp. 237‐49.",
+        "DOI": "10.1080/02683960110102407"
+      },
+      {
+        "key": "key2022031520015685800_b87",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hu, P., Clark, T. and Ma, W. (2003), “Examining technology acceptance by school teachers: a longitudinal study”, Information & Management, Vol. 41 No. 2, pp. 227‐41.",
+        "DOI": "10.1016/S0378-7206(03)00050-8"
+      },
+      {
+        "key": "key2022031520015685800_b86",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hu, P.J., Chau, P.K., Liu Sheng, O.R. and Tam, K.Y. (1999), “Examining the TAM using physician acceptance of technology”, Journal of MIS, Vol. 16 No. 2, pp. 91‐112.",
+        "DOI": "10.1080/07421222.1999.11518247"
+      },
+      {
+        "key": "key2022031520015685800_b88",
+        "unstructured": "Hunter, J.E. and Schmidt, F.L. (1990), Methods of Meta‐analysis: Correcting Error and Bias in Research Findings, Sage, Newbury Park, CA."
+      },
+      {
+        "key": "key2022031520015685800_b90",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M. (1993), “User acceptance of microcomputer technology: an empirical test”, Omega, Vol. 21 No. 1, pp. 73‐90.",
+        "DOI": "10.1016/0305-0483(93)90040-R"
+      },
+      {
+        "key": "key2022031520015685800_b91",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M. (1994), “An examination of the factors contributing to microcomputer technology acceptance”, Accounting Management and IT, Vol. 4 No. 4, pp. 205‐24.",
+        "DOI": "10.1016/0959-8022(94)90023-X"
+      },
+      {
+        "key": "key2022031520015685800_b92",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M. and Iivari, J. (1995), “The effect of self‐efficacy on computer usage”, Omega, Vol. 23 No. 6, pp. 587‐605.",
+        "DOI": "10.1016/0305-0483(95)00035-6"
+      },
+      {
+        "key": "key2022031520015685800_b93",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M., Guimaraes, T. and Davis, G. (1995a), “Testing the determinants of microcomputer usage via a structural equation model”, Journal of MIS, Vol. 11 No. 4, pp. 87‐114.",
+        "DOI": "10.1080/07421222.1995.11518061"
+      },
+      {
+        "key": "key2022031520015685800_b94",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M., Iivari, J. and Maragahh, H. (1995b), “Why do individuals use computer technology?”, Information & Management, Vol. 29 No. 5, pp. 227‐38.",
+        "DOI": "10.1016/0378-7206(95)00031-0"
+      },
+      {
+        "key": "key2022031520015685800_b95",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M., Parasuraman, S. and Baroudi, J. (1996), “A motivational model of microcomputer usage”, Journal of MIS, Vol. 13 No. 1, pp. 127‐43.",
+        "DOI": "10.1080/07421222.1996.11518115"
+      },
+      {
+        "key": "key2022031520015685800_b96",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M., Zinatelli, N., Cragg, P. and Cavaye, A. (1997), “Personal computing acceptance factors in small firms: a structural equation model”, MIS Quarterly, Vol. 21 No. 3, pp. 279‐302.",
+        "DOI": "10.2307/249498"
+      },
+      {
+        "key": "key2022031520015685800_b97",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jackson, C., Chow, S. and Robert, A. (1997), “Towards an understanding of the behavioural intention to use an IS”, Decision Sciences, Vol. 28 No. 2, pp. 357‐89.",
+        "DOI": "10.1111/j.1540-5915.1997.tb01315.x"
+      },
+      {
+        "key": "key2022031520015685800_b98",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jiang, J., Hsu, M., Klein, G. and Binshan, L. (2000), “E‐commerce user behaviour model: an empirical study”, Human Systems Management, Vol. 19 No. 4, pp. 265‐76.",
+        "DOI": "10.3233/HSM-2000-19406"
+      },
+      {
+        "key": "key2022031520015685800_b99",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Karahanna, E. and Limayem, M. (2000), “E‐mail and v‐mail usage: generalizing across technologies”, Jr. of org. computing and electronic commerce, Vol. 10 No. 1, pp. 49‐66.",
+        "DOI": "10.1207/S15327744JOCE100103"
+      },
+      {
+        "key": "key2022031520015685800_b100",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Karahanna, E. and Straub, D. (1999), “The psychological origins of perceived usefulness and ease‐of‐use”, Information & Management, Vol. 35 No. 4, pp. 237‐50.",
+        "DOI": "10.1016/S0378-7206(98)00096-2"
+      },
+      {
+        "key": "key2022031520015685800_b101",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Karahanna, E., Straub, D. and Chervany, N. (1999), “Information technology adoption across time: a cross‐sectional comparison of pre‐adoption and post‐adoption beliefs”, MIS Quarterly, Vol. 23 No. 2, pp. 183‐213.",
+        "DOI": "10.2307/249751"
+      },
+      {
+        "key": "key2022031520015685800_b102",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Keil, M., Beranek, P. and Konsynski, B. (1995), “Usefulness and ease of use: field study evidence regarding task consideration”, Decision Support Systems, Vol. 13, pp. 75‐91.",
+        "DOI": "10.1016/0167-9236(94)E0032-M"
+      },
+      {
+        "key": "key2022031520015685800_b103",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Koufaris, M. (2002), “Applying the technology acceptance model and flow theory to online consumer behaviour”, Information Systems Research, Vol. 13 No. 2, pp. 205‐23.",
+        "DOI": "10.1287/isre.13.2.205.83"
+      },
+      {
+        "key": "key2022031520015685800_b104",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kucuk, S. and Arslan, M. (2000), “cross cultural comparison of consumers' acceptance of the web marketing facilities”, Journal of Euromarketing, Vol. 9 No. 3, pp. 27‐43.",
+        "DOI": "10.1300/J037v09n03_02"
+      },
+      {
+        "key": "key2022031520015685800_b105",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lederer, A., Maupin, D., Sena, M. and Zhuang, Y. (2000), “The technology acceptance model and the www”, Decision Support Systems, Vol. 29 No. 3, pp. 269‐82.",
+        "DOI": "10.1016/S0167-9236(00)00076-2"
+      },
+      {
+        "key": "key2022031520015685800_b106",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee, K. and Lee, S. (2003), “Cognitive map simulation approach to adjusting the design factors of the electronic commerce web sites”, Expert Systems with Applications, Vol. 24 No. 1, pp. 1‐11.",
+        "DOI": "10.1016/S0957-4174(02)00078-7"
+      },
+      {
+        "key": "key2022031520015685800_b107",
+        "unstructured": "Lee, J‐S., Cho, H., Gay, G., Davidson, B. and Ingraffea, A. (2003a), “Technology acceptance and social networking in distance learning”, Educational Technology & Society, Vol. 6 No. 2, pp. 50‐61."
+      },
+      {
+        "key": "key2022031520015685800_b108",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee, Y., Kozar, K.A. and Larsen, K.R.T. (2003b), “The technology acceptance model: past, present, and future”, Communications of the AIS, Vol. 12 No. 50, pp. 752‐80.",
+        "DOI": "10.17705/1CAIS.01250"
+      },
+      {
+        "key": "key2022031520015685800_b109",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Leonard‐Barton, D. (1998), “Implementation characteristics of organizational innovations”, Communication Research, Vol. 15 No. 5, pp. 603‐31.",
+        "DOI": "10.1177/009365088015005006"
+      },
+      {
+        "key": "key2022031520015685800_b110",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liaw, S‐S. (2002), “Understanding the perceptions of world wide web environment”, Journal of Computer Assisted Learning, Vol. 18 No. 2, pp. 137‐48.",
+        "DOI": "10.1046/j.0266-4909.2001.00221.x"
+      },
+      {
+        "key": "key2022031520015685800_b111",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liaw, S‐S. and Huang, H‐M. (2003), “An investigation of user attitudes towards search engines as an information retrieval tool”, Computers in Human Behaviour, Vol. 19 No. 6, pp. 751‐65.",
+        "DOI": "10.1016/S0747-5632(03)00009-8"
+      },
+      {
+        "key": "key2022031520015685800_b112",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lim, J. (2003), “Conceptual framework on the adoption of negotiation support systems”, Information & Software Technology, Vol. 45 No. 8, pp. 469‐77.",
+        "DOI": "10.1016/S0950-5849(03)00027-2"
+      },
+      {
+        "key": "key2022031520015685800_b113",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lin, J.C. and Lu, H. (2000), “Towards an understanding of the behavioural intention to use a web site”, International Jr. of Information Management, Vol. 20 No. 3, pp. 197‐208.",
+        "DOI": "10.1016/S0268-4012(00)00005-0"
+      },
+      {
+        "key": "key2022031520015685800_b114",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Loh, L. and Ong, Y‐S. (1998), “The adoption of internet‐based stock trading: a conceptual framework and empirical results”, Journal of IT, Vol. 13 No. 2, pp. 81‐94.",
+        "DOI": "10.1080/026839698344873"
+      },
+      {
+        "key": "key2022031520015685800_b115",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lou, H., Luo, W. and Strong, D. (2000), “Perceived critical mass effect on groupware acceptance”, European Journal of Information Systems, Vol. 9 No. 2, pp. 91‐103.",
+        "DOI": "10.1057/palgrave.ejis.3000358"
+      },
+      {
+        "key": "key2022031520015685800_b116",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lowry, G. (2002), “Modelling user acceptance of building management systems”, Automation in Construction, Vol. 11 No. 6, pp. 695‐705.",
+        "DOI": "10.1016/S0926-5805(02)00010-9"
+      },
+      {
+        "key": "key2022031520015685800_b118",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu, H‐P. and Gustafson, D.H. (1994), “An empirical study of perceived usefulness and perceived ease of use on computerized support system use over time”, International Journal of Information Management, Vol. 14 No. 5, pp. 317‐29.",
+        "DOI": "10.1016/0268-4012(94)90070-1"
+      },
+      {
+        "key": "key2022031520015685800_b120",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu, H‐P. and Yeh, D‐C. (1998), “Enterprises' perception on business process re‐engineering: a path analytic model”, Omega, Vol. 26 No. 1, pp. 17‐27.",
+        "DOI": "10.1016/S0305-0483(97)00029-7"
+      },
+      {
+        "key": "key2022031520015685800_b117",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu, H‐P., Yu, H‐J. and Lu, S.S.K. (2001), “The effects of cognitive style and model type on DSS acceptance: an empirical study”, European Journal of Operational Research, Vol. 131 No. 3, pp. 649‐63.",
+        "DOI": "10.1016/S0377-2217(00)00107-7"
+      },
+      {
+        "key": "key2022031520015685800_b119",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu, J., Yu, C‐S., Liu, C. and Yao, J.E. (2003), “Technology acceptance model for wireless internet”, Internet Research, Vol. 13 No. 3, pp. 206‐22.",
+        "DOI": "10.1108/10662240310478222"
+      },
+      {
+        "key": "key2022031520015685800_b121",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lucas, H.C. and Spitler, V.K. (1999), “Technology use and performance: a field study of broker workstations”, Decision Sciences, Vol. 30 No. 2, pp. 291‐311.",
+        "DOI": "10.1111/j.1540-5915.1999.tb01611.x"
+      },
+      {
+        "key": "key2022031520015685800_b122",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lucas, H.C. and Spitler, V. (2000), “Implementation in a world of workstations and networks”, Information & Management, Vol. 38 No. 2, pp. 119‐28.",
+        "DOI": "10.1016/S0378-7206(00)00059-8"
+      },
+      {
+        "key": "key2022031520015685800_b123",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ma, Q. and Liu, L. (2004), “The technology acceptance model: a meta‐analysis of empirical findings”, Jr. of Org., End User Computing, Vol. 16 No. 1, pp. 59‐72.",
+        "DOI": "10.4018/joeuc.2004010104"
+      },
+      {
+        "key": "key2022031520015685800_b124",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Markus, M.L. (1983), “Power, politics, and MIS implementation”, Communications of the ACM, Vol. 26 No. 6, pp. 430‐44.",
+        "DOI": "10.1145/358141.358148"
+      },
+      {
+        "key": "key2022031520015685800_b125",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mathieson, K. (1991), “Predicting user intentions: comparing the TAM with the theory of planned behaviour”, Information Systems Research, Vol. 2 No. 3, pp. 173‐91.",
+        "DOI": "10.1287/isre.2.3.173"
+      },
+      {
+        "key": "key2022031520015685800_b126",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mathieson, K., Peacock, E. and Chin, W. (2001), “Extending the technology acceptance model: the influence of user resources”, The DataBase, Vol. 32 No. 3, pp. 86‐104.",
+        "DOI": "10.1145/506724.506730"
+      },
+      {
+        "key": "key2022031520015685800_b127",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Montazemi, A., Cameron, D. and Gupta, K. (1996), “An empirical study of factors affecting software package selection”, Journal of MIS, Vol. 13 No. 1, pp. 89‐105.",
+        "DOI": "10.1080/07421222.1996.11518113"
+      },
+      {
+        "key": "key2022031520015685800_b128",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Moon, J.‐W. and Kim, Y.‐G. (2001), “Extending the TAM for a world‐wide‐web context”, Information & Management, Vol. 38 No. 4, pp. 217‐30.",
+        "DOI": "10.1016/S0378-7206(00)00061-6"
+      },
+      {
+        "key": "key2022031520015685800_b129",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Morris, M.G. and Dillon, A. (1997), “How user perceptions influence software use”, IEEE Software, Vol. 14 No. 4, pp. 58‐65.",
+        "DOI": "10.1109/52.595956"
+      },
+      {
+        "key": "key2022031520015685800_b130",
+        "unstructured": "Nunnally, J.C. (1978), Psychometric Theory, 2nd ed., McGraw‐Hill Book Co., New York, NY."
+      },
+      {
+        "key": "key2022031520015685800_b131",
+        "doi-asserted-by": "crossref",
+        "unstructured": "O'Cass, A. and Fenech, T. (2003), “Web retailing adoption: exploring the nature of internet users web retailing behaviour”, Retailing & Consumer Service, Vol. 10 No. 1, pp. 81‐94.",
+        "DOI": "10.1016/S0969-6989(02)00004-8"
+      },
+      {
+        "key": "key2022031520015685800_b132",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Olson, J.R. and Boyer, K.K. (2003), “Factors influencing the utilization of Internet purchasing in small organizations”, Jr. of Operations Mgmt., Vol. 21 No. 2, pp. 225‐45.",
+        "DOI": "10.1016/S0272-6963(02)00089-X"
+      },
+      {
+        "key": "key2022031520015685800_b133",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Park, C. and Lessig, V. (1997), “Students and housewives: differences in susceptibility to reference group influence”, Journal of Consumer Research, Vol. 4 No. 2, pp. 102‐10.",
+        "DOI": "10.1086/208685"
+      },
+      {
+        "key": "key2022031520015685800_b134",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pavlou, P.A. (2003), “Consumer acceptance of electronic commerce: integrating trust and risk with the technology acceptance model”, International Journal of Electronic Commerce, Vol. 7 No. 3, pp. 69‐103.",
+        "DOI": "10.1080/10864415.2003.11044275"
+      },
+      {
+        "key": "key2022031520015685800_b135",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Peters, W.S. and Champoux, J.E. (1979), “The use of moderated regressions in job redesign relations”, Decision Sciences, Vol. 10 No. 1, pp. 85‐95.",
+        "DOI": "10.1111/j.1540-5915.1979.tb00009.x"
+      },
+      {
+        "key": "key2022031520015685800_b136",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Phelps, R. and Mok, M. (1999), “Managing the risks of intranet implementation: an empirical study of user satisfaction”, Journal of IT, Vol. 14 No. 1, pp. 39‐52.",
+        "DOI": "10.1080/026839699344737"
+      },
+      {
+        "key": "key2022031520015685800_b137",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Phillips, L., Calantone, A. and Lee, M‐T. (1994), “International technology adoption: behaviour structure, demand certainty and culture”, Journal of Business & Industrial Marketing, Vol. 9 No. 2, pp. 16‐29.",
+        "DOI": "10.1108/08858629410059762"
+      },
+      {
+        "key": "key2022031520015685800_b138",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pijpers, A., Bemelmans, T., Heemstra, F. and van Montfort, K. (2001), “Senior executives' use of information technology”, Information and Software Technology, Vol. 43 No. 15, pp. 959‐71.",
+        "DOI": "10.1016/S0950-5849(01)00197-5"
+      },
+      {
+        "key": "key2022031520015685800_b139",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Plouffe, R., Hulland, J. and Vandenbosch, M. (2001), “Richness versus parsimony in modeling technology adoption decisions: understanding merchant adoption of a smart cart payment system”, Information Systems Research, Vol. 12 No. 2, pp. 208‐22.",
+        "DOI": "10.1287/isre.12.2.208.9697"
+      },
+      {
+        "key": "key2022031520015685800_b186",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Podsakoff, P. and Organ, D. (1986), “Self‐reports in organizational research: problems and prospects”, Jr. of Management, Vol. 12, pp. 531‐44.",
+        "DOI": "10.1177/014920638601200408"
+      },
+      {
+        "key": "key2022031520015685800_b140",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ram, S. and Jung, H‐S. (1991), “'Forced' adoption of innovations in organizations: consequences and implications”, Journal of Product Innovation Management, Vol. 8 No. 2, pp. 117‐26.",
+        "DOI": "10.1111/1540-5885.820117"
+      },
+      {
+        "key": "key2022031520015685800_b144",
+        "unstructured": "Ridings, C.M. and Gefen, D. (2000), “Applying TAM to a parallel systems conversion strategy”, Jr. of Information Technology Theory & Application, Vol. 2 No. 2, pp. 1‐13."
+      },
+      {
+        "key": "key2022031520015685800_b141",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Riemenschneider, C.K. and Hardgrave, B.C. (2003), “Explaining software development tool use with technology acceptance model”, Journal of Computer Information Systems, Vol. 41 No. 4, pp. 1‐8.",
+        "DOI": "10.1080/08874417.2001.11647015"
+      },
+      {
+        "key": "key2022031520015685800_b142",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Riemenschneider, C.K., Hardgrave, B.C. and Davis, F.D. (2002), “Explaining software developer acceptance of methodologies: a comparison of five theoretical models”, IEEE, Vol. 28 No. 12, pp. 1135‐45.",
+        "DOI": "10.1109/TSE.2002.1158287"
+      },
+      {
+        "key": "key2022031520015685800_b143",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Riemenschneider, C.K., Harrison, D.A. and Mykytyn, P.P. (2003), “Understanding IT adoption decisions in small business: integrating current theories”, Information & Management, Vol. 40 No. 4, pp. 269‐85.",
+        "DOI": "10.1016/S0378-7206(02)00010-1"
+      },
+      {
+        "key": "key2022031520015685800_b145",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Roberts, P. and Henderson, R. (2000), “Information technology acceptance in a sample of government employees”, Interacting with Computers, Vol. 12 No. 5, pp. 427‐43.",
+        "DOI": "10.1016/S0953-5438(98)00068-X"
+      },
+      {
+        "key": "key2022031520015685800_b146",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rose, G. and Straub, D. (1998), “Predicting general IT use: applying TAM to the Arabic world”, Journal of Global Information Management, Vol. 6 No. 3, pp. 39‐46.",
+        "DOI": "10.4018/jgim.1998070104"
+      },
+      {
+        "key": "key2022031520015685800_b147",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Saunders, D.R. (1956), “Moderator variables in prediction”, Educational and Psychological Measurement, Vol. 16, pp. 209‐22.",
+        "DOI": "10.1177/001316445601600205"
+      },
+      {
+        "key": "key2022031520015685800_b149",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schaik, P.V. (1999), “Involving users in the specification of functionality using scenarios and model‐based evaluation”, Behaviour & IT, Vol. 18 No. 6, pp. 455‐66.",
+        "DOI": "10.1080/014492999118878"
+      },
+      {
+        "key": "key2022031520015685800_b150",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schaik, P., Bettany‐Saltikov, J. and Warren, J. (2002), “Clinical acceptance of a low‐cost portable system for postural assessment”, Behaviour & IT, Vol. 21 No. 1, pp. 47‐57.",
+        "DOI": "10.1080/01449290110107236"
+      },
+      {
+        "key": "key2022031520015685800_b148",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Segars, A.H. and Grover, V. (1993), “Re‐examining perceived ease of use and usefulness: a confirmatory factor analysis”, MIS Quarterly, Vol. 17 No. 4, pp. 517‐27.",
+        "DOI": "10.2307/249590"
+      },
+      {
+        "key": "key2022031520015685800_b151",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Selim, H.M. (2003), “An empirical investigation of students acceptance of course websites”, Computers & Education, Vol. 40 No. 4, pp. 343‐60.",
+        "DOI": "10.1016/S0360-1315(02)00142-2"
+      },
+      {
+        "key": "key2022031520015685800_b152",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Seyal, A., Abdul Rahman, M. and M. (2002), “Determinants of academic use of the internet: a structural equation model”, Behaviour & IT, Vol. 21 No. 1, pp. 71‐86.",
+        "DOI": "10.1080/01449290210123354"
+      },
+      {
+        "key": "key2022031520015685800_b153",
+        "unstructured": "Shah, I. (1968), Caravan of Dreams, Penguin, Baltimore."
+      },
+      {
+        "key": "key2022031520015685800_b154",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sharma, S., Durand, R.M. and Gur‐Arie, O. (1981), “Identification and analysis of moderator variables”, Journal of Marketing Research, Vol. 18, pp. 291‐300.",
+        "DOI": "10.1177/002224378101800303"
+      },
+      {
+        "key": "key2022031520015685800_b155",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Shih, H‐P. (2004), “An empirical study on predicting user acceptance of e‐shopping on the web”, Information & Management, Vol. 41 No. 3, pp. 351‐69.",
+        "DOI": "10.1016/S0378-7206(03)00079-X"
+      },
+      {
+        "key": "key2022031520015685800_b156",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stafford, M.R. and Stern, B. (2003), “Consumer bidding behaviour on internet auction sites”, International Journal of Electronic Commerce, Vol. 7 No. 1, pp. 135‐50.",
+        "DOI": "10.1080/10864415.2002.11044256"
+      },
+      {
+        "key": "key2022031520015685800_b157",
+        "unstructured": "Straub, D.W. (1994), “The effect of culture on IT diffusion: email and fax in Japan and US”, Information Systems Research, Vol. 9 No. 2, pp. 16‐29."
+      },
+      {
+        "key": "key2022031520015685800_b159",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Straub, D.W., Keil, M. and Brenner, W. (1997), “Testing the technology acceptance model across cultures: a three country study”, Information & Management, Vol. 33 No. 1, pp. 1‐11.",
+        "DOI": "10.1016/S0378-7206(97)00026-8"
+      },
+      {
+        "key": "key2022031520015685800_b158",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Straub, D., Limayem, M. and Karahanna, E. (1995), “Measuring system usage: implications for IS theory testing”, Management Science, Vol. 41 No. 8, pp. 1328‐42.",
+        "DOI": "10.1287/mnsc.41.8.1328"
+      },
+      {
+        "key": "key2022031520015685800_b160",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Subramanian, G.H. (1994), “A replication of perceived usefulness and perceived ease of use measurement”, Decision Sciences, Vol. 25 Nos 5/6, pp. 863‐74.",
+        "DOI": "10.1111/j.1540-5915.1994.tb01873.x"
+      },
+      {
+        "key": "key2022031520015685800_b161",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Suh, B. and Han, I. (2002), “Effect of trust on customer acceptance of internet banking”, Electronic Commerce Research and Applications, Vol. 1 Nos 3/4, pp. 247‐63.",
+        "DOI": "10.1016/S1567-4223(02)00017-0"
+      },
+      {
+        "key": "key2022031520015685800_b162",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Suh, B. and Han, I. (2003), “The impact of customer trust and perception of security control on the acceptance of electronic commerce”, International Journal of Electronic Commerce, Vol. 7 No. 3, pp. 135‐61.",
+        "DOI": "10.1080/10864415.2003.11044270"
+      },
+      {
+        "key": "key2022031520015685800_b163",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sussman, S.W. and Siegel, W.S. (2003), “Informational influence in organizations: an integrated approach to knowledge adoption”, Information Systems Research, Vol. 14 No. 4, pp. 47‐65.",
+        "DOI": "10.1287/isre.14.1.47.14767"
+      },
+      {
+        "key": "key2022031520015685800_b164",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Szajna, B. (1994), “Software evaluation & choice: predictive validation of the technology acceptance instrument”, MIS Quarterly, Vol. 18 No. 3, pp. 319‐24.",
+        "DOI": "10.2307/249621"
+      },
+      {
+        "key": "key2022031520015685800_b165",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Szajna, B. (1996), “Empirical evaluation of the revised technology acceptance model”, Management Science, Vol. 42 No. 1, pp. 85‐92.",
+        "DOI": "10.1287/mnsc.42.1.85"
+      },
+      {
+        "key": "key2022031520015685800_b166",
+        "unstructured": "Tabachnick, B.G. and Fidell, L.S. (1996), Using Multivariate Statistics, 3rd ed., HarperCollins, New York, NY."
+      },
+      {
+        "key": "key2022031520015685800_b168",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Taylor, S. and Todd, P. (1995), “Understanding information technology usage: a test of competing models”, Information Systems Research, Vol. 6 No. 2, pp. 144‐76.",
+        "DOI": "10.1287/isre.6.2.144"
+      },
+      {
+        "key": "key2022031520015685800_b169",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Teo, T., Lim, V. and Lai, R. (1999), “Intrinsic and extrinsic motivation in internet usage”, Omega, Vol. 27 No. 1, pp. 25‐37.",
+        "DOI": "10.1016/S0305-0483(98)00028-0"
+      },
+      {
+        "key": "key2022031520015685800_b167",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Teo, H.‐H., Chan, H.‐C., Wei, K.‐K. and Zhang, Z. (2003), “Evaluating information accessibility and community adaptivity features for sustaining virtual learning communities”, Int'l Jr. of Human‐Computer Studies, Vol. 59 No. 5, pp. 672‐97.",
+        "DOI": "10.1016/S1071-5819(03)00087-9"
+      },
+      {
+        "key": "key2022031520015685800_b170",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Thong, J., Hong, W. and Tam, K‐R. (2002), “Understanding user acceptance of digital libraries: what are the roles of interface characteristics, organizational context, and individual differences?”, Int'l Jr. of H‐C Studies, Vol. 57 No. 3, pp. 215‐42.",
+        "DOI": "10.1016/S1071-5819(02)91024-4"
+      },
+      {
+        "key": "key2022031520015685800_b171",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Townsend, A., Demarie, S. and Hendrickson, A. (2001), “Desktop video conferencing in virtual workgroups: anticipation, system evaluation and performance”, Information Systems Journal, Vol. 11 No. 3, pp. 213‐27.",
+        "DOI": "10.1046/j.1365-2575.2001.00103.x"
+      },
+      {
+        "key": "key2022031520015685800_b172",
+        "doi-asserted-by": "crossref",
+        "unstructured": "van Dolen, W.M. and de Ruyter, K. (2002), “Moderated group chat: an empirical assessment of a new e‐service encounter”, International Journal of Service Industry Management, Vol. 13 No. 5, pp. 496‐511.",
+        "DOI": "10.1108/09564230210447959"
+      },
+      {
+        "key": "key2022031520015685800_b173",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V. (1999), “Creation of favourable user perceptions: exploring the role of intrinsic motivation”, MIS Quarterly, Vol. 23 No. 2, pp. 239‐60.",
+        "DOI": "10.2307/249753"
+      },
+      {
+        "key": "key2022031520015685800_b174",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V. (2000), “Determinants of perceived ease of use: integrating control, intrinsic motivation, and emotion into the technology acceptance model”, Information Systems Research, Vol. 11 No. 4, pp. 342‐65.",
+        "DOI": "10.1287/isre.11.4.342.11872"
+      },
+      {
+        "key": "key2022031520015685800_b175",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V. and Davis, F.D. (1996), “A model of the antecedents of perceived ease of use: development and test”, Decision Sciences, Vol. 27 No. 3, pp. 451‐81.",
+        "DOI": "10.1111/j.1540-5915.1996.tb01822.x"
+      },
+      {
+        "key": "key2022031520015685800_b176",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V. and Davis, F. (2000), “A theoretical extension of the technology acceptance model: four longitudinal field studies”, Management Science, Vol. 46 No. 2, pp. 186‐204.",
+        "DOI": "10.1287/mnsc.46.2.186.11926"
+      },
+      {
+        "key": "key2022031520015685800_b177",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V. and Morris, M.G. (2000), “Why don't men ever stop to ask for directions? Gender, social influence, and their role in technology acceptance and usage behaviour”, MIS Quarterly, Vol. 24 No. 1, pp. 115‐39.",
+        "DOI": "10.2307/3250981"
+      },
+      {
+        "key": "key2022031520015685800_b179",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V., Speier, C. and Morris, M.G. (2002), “User acceptance enablers in individual decision making about technology: towards an integrated model”, Decision Sciences, Vol. 33 No. 2, pp. 297‐316.",
+        "DOI": "10.1111/j.1540-5915.2002.tb01646.x"
+      },
+      {
+        "key": "key2022031520015685800_b178",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V., Morris, M., Davis, G. and Davis, F. (2003), “User acceptance of information technology: towards a unified view”, MIS Quarterly, Vol. 27 No. 3, pp. 479‐501.",
+        "DOI": "10.2307/30036540"
+      },
+      {
+        "key": "key2022031520015685800_b180",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wiedenbeck, S. and Davis, S. (1997), “The influence of interaction style and experience on user perceptions of software packages”, Int'l Jr. of H‐C Studies, Vol. 46, pp. 563‐88.",
+        "DOI": "10.1006/ijhc.1996.0106"
+      },
+      {
+        "key": "key2022031520015685800_b181",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wober, K. and Gretzel, U. (2000), “Tourism managers' adoption of marketing decision support systems'”, Journal of Travel Research, Vol. 39 No. 2, pp. 172‐81.",
+        "DOI": "10.1177/004728750003900207"
+      },
+      {
+        "key": "key2022031520015685800_b182",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yi, M.Y. and Hwang, Y. (2003), “Predicting the use of web‐based information systems: self‐efficacy, enjoyment, learning goal orientation, and the technology acceptance model”, Int'l Jr. of H‐C Studies, Vol. 59 No. 4, pp. 431‐49.",
+        "DOI": "10.1016/S1071-5819(03)00114-9"
+      },
+      {
+        "key": "key2022031520015685800_b183",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zedeck, S. (1971), “Problems with the use of ‘Moderator’ variables”, Psychological Bulletin, Vol. 76, pp. 295‐310.",
+        "DOI": "10.1037/h0031543"
+      },
+      {
+        "key": "key2022031520015685800_b184",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zmud, R.W. (1979), “Individual differences and MIS success: a review of the empirical literature”, Management Science, Vol. 25 No. 10, pp. 966‐79.",
+        "DOI": "10.1287/mnsc.25.10.966"
+      },
+      {
+        "key": "key2022031520015685800_frd1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ajzen, I. and Madden, T.J. (1986), “Prediction of goal‐directed behaviour: attitudes, intentions, and perceived behavioural control”, Journal of Experimental Social Psychology, Vol. 22 No. 5, pp. 453‐74.",
+        "DOI": "10.1016/0022-1031(86)90045-4"
+      },
+      {
+        "key": "key2022031520015685800_frd2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bagozzi, R.P. (1982), “A field investigation of causal relations among cognitions, affect, intentions, and behaviour”, Journal of Marketing Research, Vol. 19 No. 4, pp. 562‐84.",
+        "DOI": "10.1177/002224378201900415"
+      },
+      {
+        "key": "key2022031520015685800_frd3",
+        "unstructured": "Browne, M. and Cudeck, R. (1993), “Alternative ways of assessing model fit”, in Bollen, K. and Long, J. (Eds), Testing Structural Eq. Models, Sage, Beverly Hills, CA, pp. 136‐62."
+      },
+      {
+        "key": "key2022031520015685800_frd4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chin, W.W. and Marcolin, B.L. (2001), “The future of diffusion research”, The Data Base for Advances in Information Systems, Vol. 32 No. 3, pp. 8‐12.",
+        "DOI": "10.1145/506724.506726"
+      },
+      {
+        "key": "key2022031520015685800_frd5",
+        "unstructured": "Hage, J. and Aiken, M. (1970), Social Change in Complex Organizations, Random House, New York. NY."
+      },
+      {
+        "key": "key2022031520015685800_frd6",
+        "unstructured": "Hunter, J.E., Schmidt, F.L. and Jackson, G.B. (1982), Meta‐Analysis: Calculating Research Findings Across Studies, Sage, Beverly Hills, CA."
+      }
+    ],
+    "container-title": [
+      "Journal of Modelling in Management"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.emeraldinsight.com/doi/full-xml/10.1108/17465660710834453",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.emerald.com/insight/content/doi/10.1108/17465660710834453/full/xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.emerald.com/insight/content/doi/10.1108/17465660710834453/full/html",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2025-07-25T00:26:53Z",
+      "timestamp": 1753403213000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.emerald.com/jm2/article/2/3/251-280/271308"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          6
+        ]
+      ]
+    },
+    "references-count": 186,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1108/17465660710834453"
+    ],
+    "URL": "https://doi.org/10.1108/17465660710834453",
+    "relation": {},
+    "ISSN": [
+      "1746-5664"
+    ],
+    "issn-type": [
+      {
+        "value": "1746-5664",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          6
+        ]
+      ]
+    }
+  }
+}

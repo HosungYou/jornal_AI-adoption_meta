@@ -1,0 +1,745 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2026-01-23T19:34:50Z",
+      "timestamp": 1769196890703,
+      "version": "3.49.0"
+    },
+    "reference-count": 40,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              28
+            ]
+          ],
+          "date-time": "2021-10-28T00:00:00Z",
+          "timestamp": 1635379200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              28
+            ]
+          ],
+          "date-time": "2021-10-28T00:00:00Z",
+          "timestamp": 1635379200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Prev Sci"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1007/s11121-021-01298-5",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2021-10-28T02:02:26Z",
+      "timestamp": 1635386546000
+    },
+    "page": "346-365",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 11,
+    "title": [
+      "A Primer on Meta-Analytic Structural Equation Modeling: the Case of Depression"
+    ],
+    "prefix": "10.1007",
+    "volume": "23",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2673-1915",
+        "authenticated-orcid": false,
+        "given": "Jeffrey C.",
+        "family": "Valentine",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mike W.-L.",
+        "family": "Cheung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Eric J.",
+        "family": "Smith",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Olivia",
+        "family": "Alexander",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jessica M.",
+        "family": "Hatton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ryan Y.",
+        "family": "Hong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Lucas T.",
+        "family": "Huckaby",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Samantha C.",
+        "family": "Patton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Patrick",
+        "family": "Pössel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hayley D.",
+        "family": "Seely",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          28
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1298_CR1",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Abramson, L. Y., Metalsky, G. I., & Alloy, L. B. (1989). Hopelessness depression: A theory-based subtype of depression. Psychological Review, 96, 358–372. https://doi.org/10.1037/0033-295X.96.2.358",
+        "DOI": "10.1037/0033-295X.96.2.358"
+      },
+      {
+        "key": "1298_CR2",
+        "volume-title": "Cognitive therapy and the emotional disorders",
+        "author": "AT Beck",
+        "year": "1976",
+        "unstructured": "Beck, A. T. (1976). Cognitive therapy and the emotional disorders. International University Press."
+      },
+      {
+        "key": "1298_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "341",
+        "DOI": "10.3102/10769986017004341",
+        "volume": "17",
+        "author": "BJ Becker",
+        "year": "1992",
+        "unstructured": "Becker, B. J. (1992). Using results from replicated studies to estimate linear models. Journal of Educational Statistics, 17, 341–362. https://doi.org/10.3102/10769986017004341",
+        "journal-title": "Journal of Educational Statistics"
+      },
+      {
+        "key": "1298_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "100",
+        "DOI": "10.2307/1165390",
+        "volume": "20",
+        "author": "BJ Becker",
+        "year": "1995",
+        "unstructured": "Becker, B. J. (1995). Corrections to “using results from replicated studies to estimate linear models.” Journal of Educational and Behavioral Statistics, 20, 100–102. https://doi.org/10.2307/1165390",
+        "journal-title": "Journal of Educational and Behavioral Statistics"
+      },
+      {
+        "key": "1298_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "17",
+        "DOI": "10.1016/j.cpr.2005.07.003",
+        "volume": "26",
+        "author": "AC Butler",
+        "year": "2006",
+        "unstructured": "Butler, A. C., Chapman, J. E., Forman, E. M., & Beck, A. T. (2006). The empirical status of cognitive-behavioural therapy: A review of meta-analyses. Clinical Psychology Review, 26, 17–31. https://doi.org/10.1016/j.cpr.2005.07.003",
+        "journal-title": "Clinical Psychology Review"
+      },
+      {
+        "key": "1298_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "206",
+        "DOI": "10.1037/1082-989X.10.2.206",
+        "volume": "10",
+        "author": "EP Charles",
+        "year": "2005",
+        "unstructured": "Charles, E. P. (2005). The correction for attenuation due to measurement error: Clarifying concepts and creating confidence sets. Psychological Methods, 10, 206–226. https://doi.org/10.1037/1082-989X.10.2.206",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "1298_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "425",
+        "DOI": "10.3758/BRM.41.2.425",
+        "volume": "41",
+        "author": "MW-L Cheung",
+        "year": "2009",
+        "unstructured": "Cheung, M.W.-L. (2009). Comparison of methods for constructing confidence intervals of standardized indirect effects. Behavior Research Methods, 41, 425–438. https://doi.org/10.3758/BRM.41.2.425",
+        "journal-title": "Behavior Research Methods"
+      },
+      {
+        "key": "1298_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "29",
+        "DOI": "10.3758/s13428-013-0361-y",
+        "volume": "46",
+        "author": "MW-L Cheung",
+        "year": "2014",
+        "unstructured": "Cheung, M.W.-L. (2014). Fixed- and random-effects meta-analytic structural equation modeling: Examples and analyses in R. Behavior Research Methods, 46, 29–40. https://doi.org/10.3758/s13428-013-0361-y",
+        "journal-title": "Behavior Research Methods"
+      },
+      {
+        "key": "1298_CR9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheung, M. W.-L. (2015a). Meta-analysis: A structural equation modeling approach. John Wiley & Sons, Inc.",
+        "DOI": "10.1002/9781118957813"
+      },
+      {
+        "key": "1298_CR10",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Cheung, M. W.-L. (2015b). metaSEM: An R package for meta-analysis using structural equation modeling. Frontiers in Psychology, 5(1521). https://doi.org/10.3389/fpsyg.2014.01521",
+        "DOI": "10.3389/fpsyg.2014.01521"
+      },
+      {
+        "key": "1298_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "15",
+        "DOI": "10.1002/jrsm.1321",
+        "volume": "10",
+        "author": "MW-L Cheung",
+        "year": "2019",
+        "unstructured": "Cheung, M.W.-L. (2019). Some reflections on combining meta-analysis and structural equation modeling. Research Synthesis Methods, 10, 15–22. https://doi.org/10.1002/jrsm.1321",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "key": "1298_CR12",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Cheung, M. (2020). Meta-analytic structural equation modeling. PsyArXiv. https://doi.org/10.31234/osf.io/epsqt",
+        "DOI": "10.31234/osf.io/epsqt"
+      },
+      {
+        "key": "1298_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "40",
+        "DOI": "10.1037/1082-989X.10.1.40",
+        "volume": "10",
+        "author": "MW-L Cheung",
+        "year": "2005",
+        "unstructured": "Cheung, M.W.-L., & Chan, W. (2005). Meta-analytic structural equation modeling: A two-stage approach. Psychological Methods, 10, 40–64. https://doi.org/10.1037/1082-989X.10.1.40",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "1298_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "140",
+        "DOI": "10.1002/jrsm.1166",
+        "volume": "7",
+        "author": "MW-L Cheung",
+        "year": "2016",
+        "unstructured": "Cheung, M.W.-L., & Cheung, S. F. (2016). Random-effects models for meta-analytic structural equation modeling: Review, issues, and illustrations. Research Synthesis Methods, 7, 140–155. https://doi.org/10.1002/jrsm.1166",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "key": "1298_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "112",
+        "DOI": "10.1002/jrsm.1212",
+        "volume": "7",
+        "author": "MW-L Cheung",
+        "year": "2016",
+        "unstructured": "Cheung, M.W.-L., & Hafdahl, A. R. (2016). Special issue on meta-analytic structural equation modeling: Introduction from the guest editors. Research Synthesis Methods, 7, 112–120. https://doi.org/10.1002/jrsm.1212",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "key": "1298_CR16",
+        "volume-title": "Research synthesis and meta-analysis",
+        "author": "H Cooper",
+        "year": "2017",
+        "unstructured": "Cooper, H. (2017). Research synthesis and meta-analysis (5th ed.). SAGE Publications.",
+        "edition": "5"
+      },
+      {
+        "key": "1298_CR17",
+        "volume-title": "Applied missing data analysis",
+        "author": "CK Enders",
+        "year": "2010",
+        "unstructured": "Enders, C. K. (2010). Applied missing data analysis. Guilford Press."
+      },
+      {
+        "key": "1298_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "430",
+        "DOI": "10.1037/met0000245",
+        "volume": "25",
+        "author": "S Jak",
+        "year": "2020",
+        "unstructured": "Jak, S., & Cheung, M.W.-L. (2020). Meta-analytic structural equation modeling with moderating effects on SEM parameters. Psychological Methods, 25, 430–455. https://doi.org/10.1037/met0000245",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "1298_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "348",
+        "DOI": "10.1080/10705511.2018.1530059",
+        "volume": "26",
+        "author": "Z Ke",
+        "year": "2019",
+        "unstructured": "Ke, Z., Zhang, Q., & Tong, X. (2019). Bayesian meta-analytic SEM: A one-stage approach to modeling between-studies heterogeneity in structural parameters. Structural Equation Modeling: A Multidisciplinary Journal, 26, 348–370. https://doi.org/10.1080/10705511.2018.1530059",
+        "journal-title": "Structural Equation Modeling: A Multidisciplinary Journal"
+      },
+      {
+        "key": "1298_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "486",
+        "DOI": "10.1177/0049124114543236",
+        "volume": "44",
+        "author": "DA Kenny",
+        "year": "2015",
+        "unstructured": "Kenny, D. A., Kaniskan, B., & McCoach, D. B. (2015). The performance of RMSEA in models with small degrees of freedom. Sociological Methods & Research, 44, 486–507. https://doi.org/10.1177/0049124114543236",
+        "journal-title": "Sociological Methods & Research"
+      },
+      {
+        "key": "1298_CR21",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Konstantopoulos, S. (2011). Fixed effects and variance components estimation in three‐level meta‐analysis. Research Synthesis Methods, 2(1), 61-76. https://doi.org/10.1002/jrsm.35",
+        "DOI": "10.1002/jrsm.35"
+      },
+      {
+        "key": "1298_CR22",
+        "volume-title": "Practical meta-analysis",
+        "author": "MW Lipsey",
+        "year": "2001",
+        "unstructured": "Lipsey, M. W., & Wilson, D. B. (2001). Practical meta-analysis. SAGE Publications."
+      },
+      {
+        "key": "1298_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "99",
+        "DOI": "10.1207/s15327906mbr3901_4",
+        "volume": "39",
+        "author": "DP MacKinnon",
+        "year": "2004",
+        "unstructured": "MacKinnon, D. P., Lockwood, C. M., & Williams, J. (2004). Confidence limits for the indirect effect: Distribution of the product and resampling methods. Multivariate Behavioral Research, 39, 99–128. https://doi.org/10.1207/s15327906mbr3901_4",
+        "journal-title": "Multivariate Behavioral Research"
+      },
+      {
+        "key": "1298_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "174",
+        "DOI": "10.1002/jrsm.47",
+        "volume": "2",
+        "author": "JS Michel",
+        "year": "2011",
+        "unstructured": "Michel, J. S., Viswesvaran, C., & Thomas, J. (2011). Conclusions from meta-analytic structural equation models generally do not change due to corrections for study artifacts. Research Synthesis Methods, 2, 174–187. https://doi.org/10.1002/jrsm.47",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "key": "1298_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "569",
+        "DOI": "10.1037/0021-843X.100.4.569",
+        "volume": "100",
+        "author": "S Nolen-Hoeksema",
+        "year": "1991",
+        "unstructured": "Nolen-Hoeksema, S. (1991). Responses to depression and their effects on the duration of depressive episodes. Journal of Abnormal Psychology, 100, 569–582. https://doi.org/10.1037/0021-843X.100.4.569",
+        "journal-title": "Journal of Abnormal Psychology"
+      },
+      {
+        "key": "1298_CR26",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Pigott, T. D., Valentine, J. C., Polanin, J. R., Williams, R., & Canada, D. D. (2013). Outcome-reporting bias in education research. Educational Researcher, 42, 424–432. https://doi.org/10.3102/2F0013189X13507104",
+        "DOI": "10.3102/2F0013189X13507104"
+      },
+      {
+        "key": "1298_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "72",
+        "DOI": "10.1002/jclp.22001",
+        "volume": "70",
+        "author": "P Pössel",
+        "year": "2014",
+        "unstructured": "Pössel, P., & Black, S. W. (2014). Testing three different sequential mediational interpretations of Beck’s cognitive model of the development of depression. Journal of Clinical Psychology, 70, 72–94. https://doi.org/10.1002/jclp.22001",
+        "journal-title": "Journal of Clinical Psychology"
+      },
+      {
+        "key": "1298_CR28",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Pössel, P., Smith, E., & Alexander, O. (2018). LARS&LISA: A universal school-based cognitive-behavioral program to prevent adolescent depression. Psicologia: Reflexão e Crítica | Psychology: Research and Review, 31, 23. https://doi.org/10.1186/s41155-018-0104-1.",
+        "DOI": "10.1186/s41155-018-0104-1"
+      },
+      {
+        "key": "1298_CR29",
+        "unstructured": "R Development Core Team. (2020). R: A language and environment for statistical computing. http://www.R-project.org/"
+      },
+      {
+        "key": "1298_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "306",
+        "DOI": "10.1037/1082-989X.11.3.306",
+        "volume": "11",
+        "author": "MC Rodriguez",
+        "year": "2006",
+        "unstructured": "Rodriguez, M. C., & Maeda, Y. (2006). Meta-analysis of coefficient alpha. Psychological Methods, 11, 306–322. https://doi.org/10.1037/1082-989X.11.3.306",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "1298_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "315",
+        "DOI": "10.7758/9781610448864.18",
+        "volume-title": "The handbook of research synthesis and meta-analysis",
+        "author": "FL Schmidt",
+        "year": "2019",
+        "unstructured": "Schmidt, F. L., Le, H., & Oh, I.-S. (2019). Correcting for the distorting effects of study artifacts in meta-analysis and second order meta-analyses. In H. Cooper, L. V. Hedges, & J. C. Valentine (Eds.), The handbook of research synthesis and meta-analysis (3rd ed., pp. 315–337). Russell Sage Foundation.",
+        "edition": "3"
+      },
+      {
+        "key": "1298_CR32",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Shea, B. J., Reeves, B. C., Wells, G., Thuku, M., Hamel, C., Moran, J., Moher, D., Tugwell, P., Welch, V., Kristjansson, E., Henry, D. A. (2017). AMSTAR 2: A critical appraisal tool for systematic reviews that include randomised or non-randomised studies of healthcare interventions, or both. BMJ, 358. https://doi.org/10.1136/bmj.j4008",
+        "DOI": "10.1136/bmj.j4008"
+      },
+      {
+        "key": "1298_CR33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11121-021-01271-2",
+        "author": "J Shen",
+        "year": "2021",
+        "unstructured": "Shen, J., Wang, Y., Kurpad, N., & Schena, D. A. (2021). A systematic review on the impact of hot and cool executive functions on pediatric injury risks: A meta-analytic structural equation modeling approach. Prevention Science. https://doi.org/10.1007/s11121-021-01271-2",
+        "journal-title": "Prevention Science"
+      },
+      {
+        "key": "1298_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "13",
+        "DOI": "10.1002/jrsm.1091",
+        "volume": "5",
+        "author": "EE Tanner-Smith",
+        "year": "2014",
+        "unstructured": "Tanner-Smith, E. E., & Tipton, E. (2014). Robust variance estimation with dependent effect sizes: Practical considerations including a software tutorial in Stata and SPSS. Research Synthesis Methods, 5, 13–30. https://doi.org/10.1002/jrsm.1091",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "key": "1298_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "129",
+        "DOI": "10.7758/9781610448864.10",
+        "volume-title": "The handbook of research synthesis and meta-analysis",
+        "author": "JC Valentine",
+        "year": "2019",
+        "unstructured": "Valentine, J. C. (2019). Incorporating judgments about study quality into research syntheses. In H. Cooper, L. V. Hedges, & J. C. Valentine (Eds.), The handbook of research synthesis and meta-analysis (3rd ed., pp. 129–140). Russell Sage Foundation.",
+        "edition": "3"
+      },
+      {
+        "key": "1298_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "383",
+        "DOI": "10.7758/9781610448864.21",
+        "volume-title": "The handbook of research synthesis and meta-analysis",
+        "author": "JL Vevea",
+        "year": "2019",
+        "unstructured": "Vevea, J. L., Coburn, K., & Sutton, A. (2019). Publication bias. In H. Cooper, L. V. Hedges, & J. C. Valentine (Eds.), The handbook of research synthesis and meta-analysis (3rd ed., pp. 383–432). Russell Sage Foundation.",
+        "edition": "3"
+      },
+      {
+        "key": "1298_CR37",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. Journal of Statistical Software, 36, 1–48. https://doi.org/10.18637/jss.v036.i03",
+        "DOI": "10.18637/jss.v036.i03"
+      },
+      {
+        "key": "1298_CR38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wallace, B. C., Small, K., Brodley, C. E, Lau, J., & Trikalinos, T. A. (2012). Deploying an interactive machine learning system in an evidence-based practice center: abstrackr. In Proceedings of the ACM International Health Informatics Symposium (IHI), 819–824.",
+        "DOI": "10.1145/2110363.2110464"
+      },
+      {
+        "key": "1298_CR39",
+        "first-page": "256",
+        "volume-title": "Testing structural equation models",
+        "author": "W Wothke",
+        "year": "1993",
+        "unstructured": "Wothke, W. (1993). Nonpositive definite matrices in structural modeling. In K. A. Bollen & J. S. Long (Eds.), Testing structural equation models (pp. 256–293). Sage."
+      },
+      {
+        "key": "1298_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "107",
+        "DOI": "10.1348/000711010X497442",
+        "volume": "64",
+        "author": "K-H Yuan",
+        "year": "2011",
+        "unstructured": "Yuan, K.-H., Wu, R., & Bentler, P. M. (2011). Ridge structural equation modelling with correlation matrices for ordinal and continuous data. British Journal of Mathematical and Statistical Psychology, 64, 107–133. https://doi.org/10.1348/000711010X497442",
+        "journal-title": "British Journal of Mathematical and Statistical Psychology"
+      }
+    ],
+    "container-title": [
+      "Prevention Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11121-021-01298-5.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s11121-021-01298-5/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11121-021-01298-5.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          1
+        ]
+      ],
+      "date-time": "2022-04-01T13:55:36Z",
+      "timestamp": 1648821336000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s11121-021-01298-5"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          28
+        ]
+      ]
+    },
+    "references-count": 40,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1298"
+    ],
+    "URL": "https://doi.org/10.1007/s11121-021-01298-5",
+    "relation": {},
+    "ISSN": [
+      "1389-4986",
+      "1573-6695"
+    ],
+    "issn-type": [
+      {
+        "value": "1389-4986",
+        "type": "print"
+      },
+      {
+        "value": "1573-6695",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          28
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "14 August 2021",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "28 October 2021",
+        "order": 2,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics Approval"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent to Participate"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Conflict of Interest"
+        }
+      }
+    ]
+  }
+}

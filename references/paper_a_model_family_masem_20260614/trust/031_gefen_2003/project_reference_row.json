@@ -1,0 +1,9 @@
+{
+  "category": "trust",
+  "model_family": "e-commerce TAM trust",
+  "citation": "Gefen, D., Karahanna, E., & Straub, D. W. (2003). Trust and TAM in online shopping: An integrated model.",
+  "doi_or_url": "https://doi.org/10.2307/30036519",
+  "use_in_paper": "Classic trust + TAM integration.",
+  "status": "core",
+  "note": "Supports TRU -> BI and trust as mechanism."
+}

@@ -1,0 +1,157 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2026-06-12T21:40:39Z",
+      "timestamp": 1781300439334,
+      "version": "3.54.1"
+    },
+    "reference-count": 0,
+    "publisher": "Informa UK Limited",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "International Journal of Electronic Commerce"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1080/10864415.2003.11044275",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          16
+        ]
+      ],
+      "date-time": "2018-07-16T13:15:30Z",
+      "timestamp": 1531746930000
+    },
+    "page": "101-134",
+    "source": "Crossref",
+    "is-referenced-by-count": 2947,
+    "title": [
+      "Consumer Acceptance of Electronic Commerce: Integrating Trust and Risk with the Technology Acceptance Model"
+    ],
+    "prefix": "10.1080",
+    "volume": "7",
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          12,
+          23
+        ]
+      ]
+    },
+    "container-title": [
+      "International Journal of Electronic Commerce"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10864415.2003.11044275",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          16
+        ]
+      ],
+      "date-time": "2018-07-16T13:15:33Z",
+      "timestamp": 1531746933000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10864415.2003.11044275"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          4
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            23
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10864415.2003.11044275"
+    ],
+    "URL": "https://doi.org/10.1080/10864415.2003.11044275",
+    "relation": {},
+    "ISSN": [
+      "1086-4415",
+      "1557-9301"
+    ],
+    "issn-type": [
+      {
+        "value": "1086-4415",
+        "type": "print"
+      },
+      {
+        "value": "1557-9301",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          4
+        ]
+      ]
+    }
+  }
+}

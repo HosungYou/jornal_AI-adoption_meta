@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "MASEM software",
+  "citation": "Cheung, M. W.-L. (2015). metaSEM: An R package for meta-analysis using structural equation modeling.",
+  "doi_or_url": "https://doi.org/10.3389/fpsyg.2014.01521",
+  "use_in_paper": "Cite for metaSEM implementation and reproducibility.",
+  "status": "core",
+  "note": "Useful when naming R/metaSEM."
+}

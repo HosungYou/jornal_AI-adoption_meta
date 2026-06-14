@@ -1,0 +1,460 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2026-04-24T12:14:53Z",
+      "timestamp": 1777032893352,
+      "version": "3.51.4"
+    },
+    "reference-count": 49,
+    "publisher": "Emerald",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              11,
+              6
+            ]
+          ],
+          "date-time": "2007-11-06T00:00:00Z",
+          "timestamp": 1194307200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.emerald.com/insight/site-policies"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1108/17465660710834462",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          3
+        ]
+      ],
+      "date-time": "2007-11-03T08:02:38Z",
+      "timestamp": 1194076958000
+    },
+    "page": "281-304",
+    "source": "Crossref",
+    "is-referenced-by-count": 197,
+    "title": [
+      "Technology acceptance: a meta‐analysis of the TAM: Part 2"
+    ],
+    "prefix": "10.1108",
+    "volume": "2",
+    "author": [
+      {
+        "given": "Shumaila Y.",
+        "family": "Yousafzai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Gordon R.",
+        "family": "Foxall",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "John G.",
+        "family": "Pallister",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "140",
+    "reference": [
+      {
+        "key": "key2022021620430712300_b1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ajzen, I. (1991), “The theory of planned behaviour”, Organizational Behaviour and Human Decision Processes, Vol. 50 No. 2, pp. 179‐211.",
+        "DOI": "10.1016/0749-5978(91)90020-T"
+      },
+      {
+        "key": "key2022021620430712300_b47",
+        "unstructured": "Ajzen, I. and Fishbein, M. (1980), Understanding Attitudes and Predicting Social Behaviour, Prentice‐Hall, Englewood Cliffs, NJ."
+      },
+      {
+        "key": "key2022021620430712300_b2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ajzen, I. and Madden, T. (1986), “Prediction of goal‐directed behaviour: attitudes, intentions, and perceived behavioural control”, Journal of Experimental Social Psychology, Vol. 22 No. 5, pp. 453‐74.",
+        "DOI": "10.1016/0022-1031(86)90045-4"
+      },
+      {
+        "key": "key2022021620430712300_b3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bagozzi, R. (1982), “A field investigation of causal relations among cognitions, affect, intentions, and behaviour”, Journal of Marketing Research, Vol. 19 No. 4, pp. 562‐84.",
+        "DOI": "10.1177/002224378201900415"
+      },
+      {
+        "key": "key2022021620430712300_b4",
+        "unstructured": "Browne, M. and Cudeck, R. (1993), “Alternative ways of assessing model fit”, in Bollen, K.A. and Long, J.S. (Eds), Testing Structural Equation Models, Sage, Beverly Hills, CA, pp. 136‐62."
+      },
+      {
+        "key": "key2022021620430712300_b5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. and Hu, P.J. (2002a), “Investigating healthcare professionals' decisions to accept telemedicine technology”, Information & Management, Vol. 39 No. 4, pp. 297‐311.",
+        "DOI": "10.1016/S0378-7206(01)00098-2"
+      },
+      {
+        "key": "key2022021620430712300_b6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chau, P.K. and Hu, P.J. (2002b), “Examining a model of information technology acceptance by individual professionals”, Journal of MIS, Vol. 18 No. 4, pp. 191‐229.",
+        "DOI": "10.1080/07421222.2002.11045699"
+      },
+      {
+        "key": "key2022021620430712300_b7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chin, W.W. and Marcolin, B.L. (2001), “The future of diffusion research”, The Data Base for Advances in Information Systems, Vol. 32 No. 3, pp. 8‐12.",
+        "DOI": "10.1145/506724.506726"
+      },
+      {
+        "key": "key2022021620430712300_b8",
+        "unstructured": "Cohen, J. (1977), Statistical Power Analysis for the Behavioural Science, Revised ed., Academic Press, New York, NY."
+      },
+      {
+        "key": "key2022021620430712300_b9",
+        "unstructured": "Cooper, H.M. (1989), Integrating Research: A Guide for Literature Reviews, 2nd ed., Sage, Newbury Park, CA."
+      },
+      {
+        "key": "key2022021620430712300_b10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis, F. (1989), “Perceived usefulness, perceived ease of use, and user acceptance of information technology”, MIS Quarterly, Vol. 13 No. 3, pp. 319‐40.",
+        "DOI": "10.2307/249008"
+      },
+      {
+        "key": "key2022021620430712300_b11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis, F., Bagozzi, R. and Warshaw, P. (1989), “User acceptance of computer technology: a comparison of theoretical models”, Management Science, Vol. 35 No. 8, pp. 982‐1003.",
+        "DOI": "10.1287/mnsc.35.8.982"
+      },
+      {
+        "key": "key2022021620430712300_b12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fichman, R. and Kemerer, C. (1999), “The illusory diffusion of innovation: an examination of assimilation gaps”, Information Systems Research, Vol. 10 No. 3, pp. 255‐75.",
+        "DOI": "10.1287/isre.10.3.255"
+      },
+      {
+        "key": "key2022021620430712300_b13",
+        "unstructured": "Fishbein, M. and Ajzen, I. (1975), Belief, Attitude, Intention and Behaviour: An Introduction to Theory and Research, Addison‐Wesley, Reading, MA."
+      },
+      {
+        "key": "key2022021620430712300_b14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Glass, G. (1976), “Primary, secondary and meta‐analysis of research”, Educational Researcher, Vol. 5 No. 9, pp. 3‐8.",
+        "DOI": "10.3102/0013189X005010003"
+      },
+      {
+        "key": "key2022021620430712300_b15",
+        "unstructured": "Glass, G.V., McGaw, B. and Smith, M.L. (1981), Meta‐analysis in Social Research, Sage, Beverly Hills, CA."
+      },
+      {
+        "key": "key2022021620430712300_b16",
+        "unstructured": "Hage, J. and Aiken, M. (1970), Social Change in Complex Organizations, Random House, New York, NY."
+      },
+      {
+        "key": "key2022021620430712300_b17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hedges, L. (1982), “Fitting categorical models to effect sizes from a series of experiments”, Journal of Educational Statistics, Vol. 7 No. 2, pp. 119‐37.",
+        "DOI": "10.3102/10769986007002119"
+      },
+      {
+        "key": "key2022021620430712300_b18",
+        "unstructured": "Hedges, L. and Olkin, I. (1985), Statistical Methods for Meta‐analysis, Academic Press, Orlando, FL."
+      },
+      {
+        "key": "key2022021620430712300_b19",
+        "unstructured": "Hunt, M. (1997), How Science Takes Stock, Russell Sage Found, New York, NY."
+      },
+      {
+        "key": "key2022021620430712300_b20",
+        "unstructured": "Hunter, J.E. and Schmidt, F.L. (1990), Methods of Meta‐analysis: Correcting Error and Bias in Research Findings, Sage, Newbury Park, CA."
+      },
+      {
+        "key": "key2022021620430712300_b21",
+        "unstructured": "Hunter, J.E., Schmidt, F.L. and Jackson, G.B. (1982), Meta‐analysis: Calculating Research Findings across Studies, Sage, Beverly Hills, CA."
+      },
+      {
+        "key": "key2022021620430712300_b22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M. (1993), “User acceptance of microcomputer technology: an empirical test”, Omega, Vol. 21 No. 1, pp. 73‐90.",
+        "DOI": "10.1016/0305-0483(93)90040-R"
+      },
+      {
+        "key": "key2022021620430712300_b23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Igbaria, M., Zinatelli, N., Cragg, P. and Cavaye, A. (1997), “Personal computing acceptance factors in small firms”, MIS Quarterly, Vol. 21 No. 3, pp. 279‐302.",
+        "DOI": "10.2307/249498"
+      },
+      {
+        "key": "key2022021620430712300_b24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Karahanna, E., Straub, D. and Chervany, N. (1999), “Information technology adoption across time: a cross‐sectional comparison of pre‐adoption and post‐adoption beliefs”, MIS Quarterly, Vol. 23 No. 2, pp. 183‐213.",
+        "DOI": "10.2307/249751"
+      },
+      {
+        "key": "key2022021620430712300_b25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee, Y., Kozar, K. and Larsen, K. (2003), “The technology acceptance model: past, present, and future”, Communications of the AIS, Vol. 12 No. 50, pp. 752‐80.",
+        "DOI": "10.17705/1CAIS.01250"
+      },
+      {
+        "key": "key2022021620430712300_b26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lepper, M.R. (1985), “Microcomputers in education: motivational and social issues”, American Psychologist, Vol. 40 No. 1, pp. 1‐18.",
+        "DOI": "10.1037/0003-066X.40.1.1"
+      },
+      {
+        "key": "key2022021620430712300_b27",
+        "unstructured": "Lipsey, M. and Wilson, D. (2001), Practical Meta‐analysis, Sage, Thousand Oaks, CA."
+      },
+      {
+        "key": "key2022021620430712300_b48",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu, H‐P. and Gustafson, D. (1994), “An empirical study of perceived usefulness and perceived ease of use on computerized support system use over time”, International Jr. of Information Management, Vol. 14.",
+        "DOI": "10.1016/0268-4012(94)90070-1"
+      },
+      {
+        "key": "key2022021620430712300_b30",
+        "doi-asserted-by": "crossref",
+        "unstructured": "McDonald, R.P. and Marsh, H.W. (1990), “Choosing a multivariate model: noncentrality and goodness of fit”, Psychological Bulletin, Vol. 107 No. 2, pp. 247‐55.",
+        "DOI": "10.1037/0033-2909.107.2.247"
+      },
+      {
+        "key": "key2022021620430712300_b29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mathieson, K. (1991), “Predicting user intentions: comparing the technology acceptance model with the TPB”, Information Systems Research, Vol. 2 No. 3, pp. 173‐91.",
+        "DOI": "10.1287/isre.2.3.173"
+      },
+      {
+        "key": "key2022021620430712300_b31",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Melone, N.P. (1990), “A theoretical assessment of user‐satisfaction construct in information systems research”, Management Science, Vol. 36 No. 1, pp. 76‐91.",
+        "DOI": "10.1287/mnsc.36.1.76"
+      },
+      {
+        "key": "key2022021620430712300_b32",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mulaik, S., James, L., Alstine, J., Bennett, N., Lind, S. and Stilwell, C. (1989), “Evaluation of goodness‐of‐fit indices for structural equation models”, Psychological Bulletin, Vol. 105 No. 3, pp. 430‐45.",
+        "DOI": "10.1037/0033-2909.105.3.430"
+      },
+      {
+        "key": "key2022021620430712300_b33",
+        "unstructured": "Neter, J., Wasserman, W. and Kutner, M.H. (1989), Applied Linear Regression Models, Irwin, Homewood, IL."
+      },
+      {
+        "key": "key2022021620430712300_b34",
+        "unstructured": "Rawstorne, P., Jayasuriya, R. and Caputi, P. (2000), “Issues in predicting and explaining usage behaviors with the TAM and the TPB when usage is mandatory”, Proceedings of the 21st International Conference on IS, Brisbane, Queensland, Australia, pp. 35‐44."
+      },
+      {
+        "key": "key2022021620430712300_b35",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Robey, D. (1979), “User attitudes and management information use”, Academy of Management Journal, Vol. 22 No. 3, pp. 527‐38.",
+        "DOI": "10.2307/255742"
+      },
+      {
+        "key": "key2022021620430712300_b36",
+        "unstructured": "Rosenthal, R. (1984), Meta‐analytic Procedures for Social Research, Sage, Beverly Hills, CA."
+      },
+      {
+        "key": "key2022021620430712300_b37",
+        "unstructured": "Rosenthal, R. (1994), “Statistically describing and combining studies”, in Cooper, H. and Hedges, L.V. (Eds), The Handbook of Research Synthesis, Sage, New York, NY, pp. 231‐44."
+      },
+      {
+        "key": "key2022021620430712300_b49",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sproull, L. and Kiesler, S. (1986), “Reducing social context cues: electronic mail in organizational communication”, Management Science, Vol. 32 No. 11, pp. 1492‐512.",
+        "DOI": "10.1287/mnsc.32.11.1492"
+      },
+      {
+        "key": "key2022021620430712300_b38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Straub, D., Limayem, M. and Karahanna, E. (1995), “Measuring system usage: implications for is theory testing”, Management Science, Vol. 41 No. 8, pp. 1328‐42.",
+        "DOI": "10.1287/mnsc.41.8.1328"
+      },
+      {
+        "key": "key2022021620430712300_b39",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Subramanian, G.H. (1994), “A replication of perceived usefulness and perceived ease of use measurement”, Decision Sciences, Vol. 25 Nos 5/6, pp. 863‐74.",
+        "DOI": "10.1111/j.1540-5915.1994.tb01873.x"
+      },
+      {
+        "key": "key2022021620430712300_b40",
+        "unstructured": "Sun, H. and Zhang, P. (2004), “A methodological analysis of user technology acceptance”, presented in the Proceedings of the 37th Hawaii International Conference on System Sciences."
+      },
+      {
+        "key": "key2022021620430712300_b41",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Szajna, B. (1996), “Empirical evaluation of the revised technology acceptance model”, Management Science, Vol. 42 No. 1, pp. 85‐92.",
+        "DOI": "10.1287/mnsc.42.1.85"
+      },
+      {
+        "key": "key2022021620430712300_b42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venkatesh, V. (2000), “Determinants of perceived ease of use: integrating control, intrinsic motivation into the TAM”, Information Systems Research, Vol. 11 No. 4, pp. 342‐65.",
+        "DOI": "10.1287/isre.11.4.342.11872"
+      },
+      {
+        "key": "key2022021620430712300_b43",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Whitener, E.M. (1990), “Confusion of confidence intervals and credibility intervals in meta‐analysis”, Journal of Applied Psychology, Vol. 75 No. 3, pp. 315‐21.",
+        "DOI": "10.1037/0021-9010.75.3.315"
+      },
+      {
+        "key": "key2022021620430712300_b44",
+        "unstructured": "Wolf, F.M. (1986), Meta‐analysis: Quantitative Methods for Research Synthesis, Sage, Beverly Hills, CA."
+      },
+      {
+        "key": "key2022021620430712300_b45",
+        "unstructured": "Zaltman, G., Duncan, R. and Holbek, J. (1973), Innovations and Organizations, Wiley, New York, NY."
+      },
+      {
+        "key": "key2022021620430712300_b46",
+        "unstructured": "Zheng, E. and Pavlou, P. (2007), “Inferring causality from empirical data: a Bayesian networks method for latent variables”, Working Paper, Gary Anderson: Graduate School of Management, University of California, Riverside, CA."
+      },
+      {
+        "key": "key2022021620430712300_frd1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ma, Q. and Liu, L. (2004), “The technology acceptance model: a meta‐analysis of empirical findings”, Jr. of Org., End User Computing, Vol. 16 No. 1, pp. 59‐72.",
+        "DOI": "10.4018/joeuc.2004010104"
+      }
+    ],
+    "container-title": [
+      "Journal of Modelling in Management"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.emeraldinsight.com/doi/full-xml/10.1108/17465660710834462",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.emerald.com/insight/content/doi/10.1108/17465660710834462/full/xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.emerald.com/insight/content/doi/10.1108/17465660710834462/full/html",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2025-07-25T00:26:53Z",
+      "timestamp": 1753403213000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.emerald.com/jm2/article/2/3/281-304/271347"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          6
+        ]
+      ]
+    },
+    "references-count": 49,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1108/17465660710834462"
+    ],
+    "URL": "https://doi.org/10.1108/17465660710834462",
+    "relation": {},
+    "ISSN": [
+      "1746-5664"
+    ],
+    "issn-type": [
+      {
+        "value": "1746-5664",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          6
+        ]
+      ]
+    }
+  }
+}

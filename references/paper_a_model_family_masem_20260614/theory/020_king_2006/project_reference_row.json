@@ -1,0 +1,9 @@
+{
+  "category": "theory",
+  "model_family": "TAM meta-analysis",
+  "citation": "King, W. R., & He, J. (2006). A meta-analysis of the technology acceptance model.",
+  "doi_or_url": "https://doi.org/10.1016/j.im.2006.05.003",
+  "use_in_paper": "Supports robustness of TAM pathways in meta-analytic evidence.",
+  "status": "core",
+  "note": "Useful for background and expected directions."
+}

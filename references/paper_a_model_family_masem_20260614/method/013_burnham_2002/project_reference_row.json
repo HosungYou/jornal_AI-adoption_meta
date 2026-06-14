@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "model-family logic",
+  "citation": "Burnham, K. P., & Anderson, D. R. (2002). Model selection and multimodel inference.",
+  "doi_or_url": "https://link.springer.com/book/10.1007/b97636",
+  "use_in_paper": "Supports pre-specified model set logic and avoiding single overfit model.",
+  "status": "supplementary",
+  "note": "Use carefully; not MASEM-specific."
+}

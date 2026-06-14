@@ -1,0 +1,9 @@
+{
+  "category": "trust",
+  "model_family": "trust/risk/TAM",
+  "citation": "Pavlou, P. A. (2003). Consumer acceptance of electronic commerce: Integrating trust and risk with TAM.",
+  "doi_or_url": "https://doi.org/10.1080/10864415.2003.11044275",
+  "use_in_paper": "Supports trust/risk integration with acceptance.",
+  "status": "supplementary",
+  "note": "Analogous non-AI adoption theory."
+}

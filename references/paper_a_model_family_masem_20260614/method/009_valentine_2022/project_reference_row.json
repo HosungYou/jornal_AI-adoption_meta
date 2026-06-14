@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "MASEM primer",
+  "citation": "Valentine, J. C., Pigott, T. D., & Rothstein, H. R. (2022). A primer on meta-analytic structural equation modeling.",
+  "doi_or_url": "https://doi.org/10.1007/s11121-021-01298-5",
+  "use_in_paper": "General primer for MASEM as theory testing over pooled relations.",
+  "status": "core",
+  "note": "Good reviewer-friendly methods citation."
+}

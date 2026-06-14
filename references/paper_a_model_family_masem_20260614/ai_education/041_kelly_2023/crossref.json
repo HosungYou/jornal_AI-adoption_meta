@@ -1,0 +1,1338 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          13
+        ]
+      ],
+      "date-time": "2026-06-13T04:29:50Z",
+      "timestamp": 1781324990838,
+      "version": "3.54.1"
+    },
+    "reference-count": 119,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              12,
+              11
+            ]
+          ],
+          "date-time": "2022-12-11T00:00:00Z",
+          "timestamp": 1670716800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Telematics and Informatics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.tele.2022.101925",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          14
+        ]
+      ],
+      "date-time": "2022-12-14T11:21:41Z",
+      "timestamp": 1671016901000
+    },
+    "page": "101925",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 791,
+    "special_numbering": "C",
+    "title": [
+      "What factors contribute to the acceptance of artificial intelligence? A systematic review"
+    ],
+    "prefix": "10.1016",
+    "volume": "77",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1022-0467",
+        "authenticated-orcid": false,
+        "given": "Sage",
+        "family": "Kelly",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sherrie-Anne",
+        "family": "Kaye",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Oscar",
+        "family": "Oviedo-Trespalacios",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.tele.2022.101925_b0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "393",
+        "DOI": "10.1007/978-3-030-31129-2_36",
+        "article-title": "Critical success factors for implementing artificial intelligence (AI) Projects in Dubai Government United Arab Emirates (UAE) health sector: applying the extended technology acceptance model (TAM) [Conference Paper]",
+        "volume": "1058",
+        "author": "Alhashmi",
+        "year": "2020",
+        "journal-title": "Adv. Intelligent Syst. Comp."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.tele.2022.101925_b0015",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.acalib.2021.102437",
+        "article-title": "UTAUT as a model for understanding intention to adopt AI and related technologies among librarians",
+        "volume": "47",
+        "author": "Andrews",
+        "year": "2021",
+        "journal-title": "J. Acad. Librariansh."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.tele.2022.101925_b0020",
+        "first-page": "3560",
+        "article-title": "From artificial intelligence to human super-intelligence",
+        "volume": "2",
+        "author": "Antonov",
+        "year": "2011",
+        "journal-title": "Artif. Intell."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0025",
+        "first-page": "299",
+        "article-title": "An exploratory study of the adoption of artificial intelligence in Burgundy's wine industry",
+        "volume": "30",
+        "author": "Atwal",
+        "year": "2021",
+        "journal-title": "Strategic Change-Brief. Entrepreneurial Finance"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0010",
+        "unstructured": "Ali, K., Freimann, K., 2021. Applying the Technology Acceptance Model to AI decisions in the Swedish Telecom Industry Blekinge Institute of Technology]."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0030",
+        "unstructured": "Barkhuus, L., Dey, A. K., 2003. Location-based services for mobile telephony: A study of users' privacy concerns. Interact 2003, 9th Ifip Tc13 International Conference On Human-Computer Interaction, Zurich."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b9000",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Becker, D. (2018). Possibilities to improve online mental health treatment: Recommendations for future research and developments. Future Of Information And Communication Conference, Singapore.",
+        "DOI": "10.1007/978-3-030-03402-3_8"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0035",
+        "article-title": "The role of organizational culture and voluntariness in the adoption of artificial intelligence for disaster relief operations",
+        "author": "Behl",
+        "year": "2021",
+        "journal-title": "Int. J. Manpow."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "271",
+        "DOI": "10.1080/0952813X.2010.502314",
+        "article-title": "Psychometric artificial intelligence",
+        "volume": "23",
+        "author": "Bringsjord",
+        "year": "2011",
+        "journal-title": "J. Exp. Theor. Artif. Intell."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0045",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tele.2020.101529",
+        "article-title": "Identifying relevant segments of AI applications adopters – expanding the UTAUT2's variables",
+        "volume": "58",
+        "author": "Cabrera-Sanchez",
+        "year": "2021",
+        "journal-title": "Telematics Inform."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0050",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.technovation.2021.102312",
+        "article-title": "Understanding managers’ attitudes and behavioral intentions towards using artificial intelligence for organizational decision-making",
+        "volume": "106",
+        "author": "Cao",
+        "year": "2021",
+        "journal-title": "Technovation"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0055",
+        "first-page": "89",
+        "article-title": "Perceptions of and behavioral intentions towards learning artificial intelligence in primary school students",
+        "volume": "24",
+        "author": "Chai",
+        "year": "2021",
+        "journal-title": "Educ. Technol. Soc."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "207",
+        "DOI": "10.1016/j.chb.2016.12.013",
+        "article-title": "User trust in social networking services: A comparison of facebook and linkedin",
+        "volume": "69",
+        "author": "Chang",
+        "year": "2017",
+        "journal-title": "Comput. Hum. Behav."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0065",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s10639-020-10159-7",
+        "article-title": "Adoption of artificial intelligence in higher education: a quantitative analysis using structural equation modelling",
+        "author": "Chatterjee",
+        "year": "2020",
+        "journal-title": "Educ. Inf. Technol."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0070",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.techfore.2021.120783",
+        "article-title": "Adoption of artificial intelligence-integrated CRM systems in agile organizations in India",
+        "volume": "168",
+        "author": "Chatterjee",
+        "year": "2021",
+        "journal-title": "Technol. Forecast. Soc. Chang."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0075",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.techfore.2021.120880",
+        "article-title": "Understanding AI adoption in manufacturing and production firms using an integrated TAM-TOE model",
+        "volume": "170",
+        "author": "Chatterjee",
+        "year": "2021",
+        "journal-title": "Technol. Forecast. Soc. Chang."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0080",
+        "article-title": "Assessing organizational users’ intentions and behavior to AI integrated CRM systems: a meta-UTAUT approach",
+        "author": "Chatterjee",
+        "year": "2021",
+        "journal-title": "Inf. Syst. Front."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0085",
+        "article-title": "Tourists’ attitudes toward the use of artificially intelligent (AI) devices in tourism service delivery: moderating role of service value seeking",
+        "author": "Chi",
+        "year": "2020",
+        "journal-title": "J. Travel Res."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0090",
+        "article-title": "Oct). In the hearts and minds of employees: A model of pre-adoptive appraisal toward artificial intelligence in organizations",
+        "volume": "60",
+        "author": "Chiu",
+        "year": "2021",
+        "journal-title": "Int. J. Inf. Manag."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "318",
+        "DOI": "10.1108/EJMBE-06-2020-0158",
+        "article-title": "A study of employee acceptance of artificial intelligence technology",
+        "volume": "30",
+        "author": "Choi",
+        "year": "2020",
+        "journal-title": "Eur. J. Manag. Bus. Econ."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0100",
+        "article-title": "Trust in AI and its role in the acceptance of AI technologies",
+        "volume": "1–13",
+        "author": "Choung",
+        "year": "2022",
+        "journal-title": "Int. J. Human-Comp. Inter."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.tele.2022.101925_b0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1007/s12525-012-0111-5",
+        "article-title": "Role of user a priori attitude in the acceptance of mobile health: an empirical investigation",
+        "volume": "23",
+        "author": "Cocosila",
+        "year": "2013",
+        "journal-title": "Electron. Mark."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.tele.2022.101925_b0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "107",
+        "DOI": "10.1080/09639284.2021.1872035",
+        "article-title": "Mediating effect of use perceptions on technology readiness and adoption of artificial intelligence in accounting",
+        "volume": "30",
+        "author": "Damerji",
+        "year": "2021",
+        "journal-title": "Acc. Educ."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0115",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.2307/249008",
+        "article-title": "Perceived usefulness, perceived ease of use, and user acceptance of information technology",
+        "volume": "13",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "MIS Q."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0120",
+        "unstructured": "Davis, F. D., 1985. A technology acceptance model for empirically testing new end-user information systems: Theory and results Massachusetts Institute of Technology]."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0125",
+        "unstructured": "Dieter, D. G., 2021. Consumer Perception of Artificial Intelligence in US Healthcare Indiana University of Pennsylvania]."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0130",
+        "unstructured": "Dobrev, D., 2012. A definition of artificial intelligence. arXiv preprint arXiv:1210.1568."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0140",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Doraiswamy, P. M., London, E., Varnum, P., Harvey, B., Saxena, S., Tottman, S., Campbell, P., Ibáñez, A. F., Manji, H., & Al Olama, M. A. A. S., 2019. Empowering 8 billion minds: enabling better mental health for all via the ethical adoption of technologies. NAM perspectives, 2019. https://doi.org/10.31478/201910b.",
+        "DOI": "10.31478/201910b"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0145",
+        "first-page": "26",
+        "article-title": "The idealization and self-identification of black characters in the bluest eyes by Toni Morrison: using voyant text analysis tools",
+        "volume": "49",
+        "author": "Eddine",
+        "year": "2018",
+        "journal-title": "J. Literature, Languages Linguistics"
+      },
+      {
+        "issue": "1–2",
+        "key": "10.1016/j.tele.2022.101925_b0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "567",
+        "DOI": "10.1007/s10479-018-2818-y",
+        "article-title": "Investigating the impacting factors for the healthcare professionals to adopt artificial intelligence-based medical diagnosis support system (AIMDSS)",
+        "volume": "294",
+        "author": "Fan",
+        "year": "2020",
+        "journal-title": "Ann. Oper. Res."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0155",
+        "series-title": "Intention and Behavior: An Introduction to Theory and Research",
+        "author": "Fishbein",
+        "year": "1975"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0160",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fleischmann, C., Cardon, P., Aritz, J., 2020. Smart collaboration in global virtual teams: The influence of culture on technology acceptance and communication effectiveness. Proceedings Of The Annual Hawaii International Conference On System Sciences.",
+        "DOI": "10.24251/HICSS.2020.045"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0165",
+        "unstructured": "Floruss, J., Vahlpahl, N., 2020. Artificial Intelligence in Healthcare: Acceptance of AI-based Support Systems by Healthcare Professionals Jonkoping University]."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.tele.2022.101925_b0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "207",
+        "DOI": "10.5964/ejop.5473",
+        "article-title": "What is behind the buzzword for experts and laymen: representation of “artificial intelligence” in the IT-professionals’ and non-professionals’ minds",
+        "volume": "18",
+        "author": "Fortuna",
+        "year": "2022",
+        "journal-title": "Europe’s J. Psychol."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0175",
+        "article-title": "Artificial intelligence in psychology: How can we enable psychology students to accept and use artificial intelligence?",
+        "author": "Gado",
+        "year": "2021",
+        "journal-title": "Psychol. Learn. Teach."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0180",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.techsoc.2021.101535",
+        "article-title": "A new acceptance model for artificial intelligence with extensions to UTAUT2: An empirical study in three segments of application",
+        "volume": "65",
+        "author": "Gansser",
+        "year": "2021",
+        "journal-title": "Technol. Soc."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0185",
+        "article-title": "Understanding interactive user behavior in smart media content service: An integration of TAM and smart service belief factors",
+        "volume": "5(12), Article e02983",
+        "author": "Gao",
+        "year": "2019",
+        "journal-title": "Heliyon"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0190",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijhcs.2020.102571",
+        "article-title": "Older adults' perspectives of smart home technology: Are we developing the technology that older people want?",
+        "volume": "147",
+        "author": "Ghorayeb",
+        "year": "2021",
+        "journal-title": "Int. J. Hum. Comput. Stud."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0195",
+        "doi-asserted-by": "crossref",
+        "first-page": "137",
+        "DOI": "10.1007/s00146-016-0651-x",
+        "article-title": "Artificial super intelligence: Beyond rhetoric",
+        "volume": "31",
+        "author": "Gill",
+        "year": "2016",
+        "journal-title": "AI & Soc."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.tele.2022.101925_b0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "55",
+        "DOI": "10.1136/injuryprev-2019-043247",
+        "article-title": "Evaluation of text mining to reduce screening workload for injury-focused systematic reviews",
+        "volume": "26",
+        "author": "Giummarra",
+        "year": "2020",
+        "journal-title": "Inj. Prev."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1007/978-3-030-63128-4_3",
+        "article-title": "AI as co-workers: an explorative research on technology acceptance based on the revised bloom taxonomy [Conference Paper]",
+        "volume": "1288",
+        "author": "Greiner",
+        "year": "2021",
+        "journal-title": "Adv. Intelligent Syst. Comp."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0210",
+        "first-page": "157",
+        "article-title": "Consumers acceptance of artificially intelligent (AI) device use in service delivery",
+        "volume": "49",
+        "author": "Gursoy",
+        "year": "2019",
+        "journal-title": "Int. J. Inf. Manag."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0215",
+        "series-title": "Acm International Conference Proceeding Series",
+        "article-title": "Preliminary study of factors affecting the spread and resistance of consumers' use of AI customer service",
+        "author": "Huang",
+        "year": "2019"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.tele.2022.101925_b0220",
+        "first-page": "1",
+        "article-title": "Understanding user perception toward artificial intelligence (AI) enabled e-learning",
+        "volume": "38",
+        "author": "Kashive",
+        "year": "2021",
+        "journal-title": "Int. J. Inf. Learn. Technol."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b9010",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aap.2020.105441",
+        "article-title": "A priori acceptance of highly automated cars in Australia, France. and Sweden: A theoretically-informed investigation guided by the PYTPB and UTAUT",
+        "volume": "137",
+        "author": "Kaye",
+        "year": "2020",
+        "journal-title": "Accid. Anal. Prev."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0225",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1155/2022/2552099",
+        "article-title": "A multi-industry analysis of the future use of AI chatbots",
+        "author": "Kelly",
+        "year": "2022",
+        "journal-title": "Human Behavior and Emerging Technologies"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0230",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Keung, J., Jeffery, R., & Kitchenham, B., 2004. The challenge of introducing a new software cost estimation technology into a small software organisation. 2004 Australian Software Engineering Conference. Proceedings.",
+        "DOI": "10.1109/ASWEC.2004.1290457"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0235",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.techfore.2020.120448",
+        "article-title": "A model for user acceptance of robot journalism: Influence of positive disconfirmation and uncertainty avoidance",
+        "volume": "163",
+        "author": "Kim",
+        "year": "2021",
+        "journal-title": "Technol. Forecast. Soc. Chang."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0245",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kirlidog, M., Kaynak, A. (2013). Technology acceptance model and determinants of technology rejection. In Information Systems and Modern Society: Social Change and Global Development (pp. 226-238). IGI Global. https://doi.org/10.4018/jissc.2011100101.",
+        "DOI": "10.4018/978-1-4666-2922-6.ch014"
+      },
+      {
+        "issue": "20",
+        "key": "10.1016/j.tele.2022.101925_b0240",
+        "first-page": "1902",
+        "article-title": "My teacher is a machine: understanding students' perceptions of AI teaching assistants in online education",
+        "volume": "36",
+        "author": "Kim",
+        "year": "2020",
+        "journal-title": "Int. J. Human-Comp. Inter."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.tele.2022.101925_b0250",
+        "doi-asserted-by": "crossref",
+        "first-page": "583",
+        "DOI": "10.1177/0956797615569578",
+        "article-title": "Social influence on risk perception during adolescence",
+        "volume": "26",
+        "author": "Knoll",
+        "year": "2015",
+        "journal-title": "Psychol. Sci."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0255",
+        "first-page": "948",
+        "article-title": "Factors influencing adoption intention of ai powered chatbot for public transport services within a smart city",
+        "volume": "11",
+        "author": "Kuberkar",
+        "year": "2020",
+        "journal-title": "Int. J. Emerg. Technol."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0260",
+        "first-page": "111",
+        "article-title": "Factors affecting the intention to use artificial intelligence-based recruitment system: a structural equation modeling (SEM) Approach [Conference Paper]",
+        "volume": "985",
+        "author": "Lee",
+        "year": "2021",
+        "journal-title": "Stud. Comput. Intelligence"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.tele.2022.101925_b0265",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1518/hfes.46.1.50.30392",
+        "article-title": "Trust in automation: designing for appropriate reliance",
+        "volume": "46",
+        "author": "Lee",
+        "year": "2004",
+        "journal-title": "Hum. Factors: J. Human Factors Ergon. Soc."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0270",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liang, Y. L., Lee, S. H., Workman, J. E., 2020. Implementation of Artificial Intelligence in Fashion: Are Consumers Ready? Cloth. Textiles Res. J., 38(1), 3-18, Article 0887302x19873437. https://doi.org/10.1177/0887302x19873437.",
+        "DOI": "10.1177/0887302X19873437"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0275",
+        "doi-asserted-by": "crossref",
+        "first-page": "379",
+        "DOI": "10.1007/s12369-017-0401-3",
+        "article-title": "Fear of autonomous robots and artificial intelligence: Evidence from national representative data with probability sampling",
+        "volume": "9",
+        "author": "Liang",
+        "year": "2017",
+        "journal-title": "Int. J. Soc. Robot."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.tele.2022.101925_b0280",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1",
+        "DOI": "10.1016/j.jclinepi.2009.06.006",
+        "article-title": "The prisma statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: Explanation and elaboration",
+        "volume": "62",
+        "author": "Liberati",
+        "year": "2009",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.tele.2022.101925_b0285",
+        "first-page": "530",
+        "article-title": "Antecedents of customers’ acceptance of artificially intelligent robotic device use in hospitality services",
+        "volume": "29",
+        "author": "Lin",
+        "year": "2020",
+        "journal-title": "J. Hosp. Mark. Manag."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0290",
+        "article-title": "Extended TAM model to explore the factors that affect intention to use AI robotic architects for architectural design",
+        "volume": "1–14",
+        "author": "Lin",
+        "year": "2021",
+        "journal-title": "Tech. Anal. Strat. Manag."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.tele.2022.101925_b0295",
+        "first-page": "123",
+        "article-title": "From precision education to precision medicine: factors affecting medical staff's intention to learn to use AI applications in hospitals",
+        "volume": "24",
+        "author": "Lin",
+        "year": "2021",
+        "journal-title": "J. Educ. Technol. Soc."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.tele.2022.101925_b0300",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "DOI": "10.15678/EBER.2017.050405",
+        "article-title": "International competitiveness and the fourth industrial revolution",
+        "volume": "5",
+        "author": "Liu",
+        "year": "2017",
+        "journal-title": "Entrepreneurial Bus. Econ. Rev."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0305",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1080/15536548.2016.1206757",
+        "article-title": "The role of personalized services and control: An empirical evaluation of privacy calculus and technology acceptance model in the mobile context",
+        "volume": "12",
+        "author": "Liu",
+        "year": "2016",
+        "journal-title": "J. Inf. Privacy Security"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0310",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.chb.2021.107026",
+        "article-title": "The roles of trust, personalization, loss of privacy, and anthropomorphism in public acceptance of smart healthcare services",
+        "volume": "127",
+        "author": "Liu",
+        "year": "2022",
+        "journal-title": "Comput. Hum. Behav."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0315",
+        "doi-asserted-by": "crossref",
+        "first-page": "114",
+        "DOI": "10.1016/j.chb.2016.08.007",
+        "article-title": "Wearable fitness technology: A structural investigation into acceptance and perceived fitness outcomes",
+        "volume": "65",
+        "author": "Lunney",
+        "year": "2016",
+        "journal-title": "Comput. Hum. Behav."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.tele.2022.101925_b0320",
+        "doi-asserted-by": "crossref",
+        "first-page": "222",
+        "DOI": "10.1016/j.dss.2010.02.008",
+        "article-title": "Examining multi-dimensional trust and multi-faceted risk in initial acceptance of emerging technologies: An empirical study of mobile banking services",
+        "volume": "49",
+        "author": "Luo",
+        "year": "2010",
+        "journal-title": "Decis. Support Syst."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0325",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1016/j.chb.2019.05.009",
+        "article-title": "Oct). Hey Alexa examine the variables influencing the use of artificial intelligent in-home voice assistants",
+        "volume": "99",
+        "author": "McLean",
+        "year": "2019",
+        "journal-title": "Comput. Hum. Behav."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0330",
+        "first-page": "1",
+        "article-title": "The risks associated with artificial general intelligence: A systematic review",
+        "author": "McLean",
+        "year": "2021",
+        "journal-title": "J. Exp. Theor. Artif. Intell."
+      },
+      {
+        "issue": "17",
+        "key": "10.1016/j.tele.2022.101925_b0335",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/su13179655",
+        "article-title": "The effect of perceptions on service robot usage intention: a survey study in the service sector",
+        "volume": "13",
+        "author": "Meidute-Kavaliauskiene",
+        "year": "2021",
+        "journal-title": "Sustainability"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.tele.2022.101925_b0340",
+        "article-title": "Exploring acceptance of artificial intelligence amongst healthcare personnel: a case in a private medical centre",
+        "volume": "3",
+        "author": "Memon",
+        "year": "2021",
+        "journal-title": "Int. Res. J. Modern. Eng. Technol. Sci."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0345",
+        "article-title": "“Baby, you can drive my car”: Psychological antecedents that drive consumers’ adoption of AI-powered autonomous vehicles",
+        "volume": "102348",
+        "author": "Meyer-Waarden",
+        "year": "2021",
+        "journal-title": "Technovation"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0350",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1016/j.dss.2013.05.010",
+        "article-title": "Determinants of end-user acceptance of biometrics: integrating the “big 3” of technology acceptance with privacy context",
+        "volume": "56",
+        "author": "Miltgen",
+        "year": "2013",
+        "journal-title": "Decis. Support Syst."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0355",
+        "series-title": "Artificial Intelligence a Guide for Thinking Humans",
+        "author": "Mitchell",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0360",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s11119-021-09814-x",
+        "article-title": "Acceptance of artificial intelligence in German agriculture: an application of the technology acceptance model and the theory of planned behavior",
+        "author": "Mohr",
+        "year": "2021",
+        "journal-title": "Precis. Agric."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0365",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mott, B., Lester, J., Branting, K., 2004. Conversational agents. The Practical Handbook Of Internet Computing. https://doi.org/10.1201/9780203507223.ch10.",
+        "DOI": "10.1201/9780203507223.ch10"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0370",
+        "doi-asserted-by": "crossref",
+        "first-page": "350",
+        "DOI": "10.1016/j.im.2005.08.006",
+        "article-title": "Understanding information technology acceptance by individual professionals: toward an integrative view",
+        "volume": "43",
+        "author": "Mun",
+        "year": "2006",
+        "journal-title": "Inf. Manag."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.tele.2022.101925_b0375",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1186/s12910-021-00577-8",
+        "article-title": "Artificial intelligence for good health: a scoping review of the ethics literature",
+        "volume": "22",
+        "author": "Murphy",
+        "year": "2021",
+        "journal-title": "BMC Med. Ethics"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0380",
+        "unstructured": "Ochmann, J., & Laumer, S., 2020. AI recruitment: Explaining job seekers' acceptance of automation in human resource management. Proceedings Of The 15th International Conference On Business Information Systems 2020 “Developments, Opportunities And Challenges Of Digitization.” In Wirtschaftsinformatik (Zentrale Tracks)."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0385",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1080/0952813X.2014.895111",
+        "article-title": "Autonomous technology and the greater human good",
+        "volume": "26",
+        "author": "Omohundro",
+        "year": "2014",
+        "journal-title": "J. Exp. Theor. Artif. Intell."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.tele.2022.101925_b0390",
+        "doi-asserted-by": "crossref",
+        "first-page": "230",
+        "DOI": "10.1518/001872097778543886",
+        "article-title": "Humans and automation: Use, misuse, disuse, abuse",
+        "volume": "39",
+        "author": "Parasuraman",
+        "year": "1997",
+        "journal-title": "Hum. Factors"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0395",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jretconser.2021.102687",
+        "article-title": "Adopting autonomous vehicles: The moderating effects of demographic variables",
+        "volume": "63",
+        "author": "Park",
+        "year": "2021",
+        "journal-title": "J. Retail. Consum. Serv."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0400",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.chb.2021.106855",
+        "article-title": "What makes an AI device human-like? The role of interaction quality, empathy and perceived psychological anthropomorphic characteristics in the acceptance of artificial intelligence in the service industry",
+        "volume": "122",
+        "author": "Pelau",
+        "year": "2021",
+        "journal-title": "Comput. Hum. Behav."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0405",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jretconser.2020.102207",
+        "article-title": "Shopping intention at AI-powered automated retail stores (AIPARS)",
+        "volume": "57",
+        "author": "Pillai",
+        "year": "2020",
+        "journal-title": "J. Retail. Consum. Serv."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.tele.2022.101925_b0410",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.im.2021.103524",
+        "article-title": "Medical practitioner's adoption of intelligent clinical diagnostic decision support systems: a mixed-methods study",
+        "volume": "58",
+        "author": "Prakash",
+        "year": "2021",
+        "journal-title": "Inf. Manag."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0415",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compedu.2019.103732",
+        "article-title": "Investigating the acceptance of mobile library applications with an extended technology acceptance model (tam)",
+        "volume": "145",
+        "author": "Rafique",
+        "year": "2020",
+        "journal-title": "Comput. Educ."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0420",
+        "first-page": "251",
+        "article-title": "Text-mining short fiction by Zora Neale Hurston and richard wright using voyant tools",
+        "volume": "59",
+        "author": "Rambsy",
+        "year": "2016",
+        "journal-title": "CLA Journal"
+      },
+      {
+        "issue": "03",
+        "key": "10.1016/j.tele.2022.101925_b0425",
+        "first-page": "2022",
+        "article-title": "Study on potential AI applications in childhood education",
+        "volume": "14",
+        "author": "Ramu",
+        "year": "2022",
+        "journal-title": "Int. J. Early Childhood"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0430",
+        "article-title": "Customer acceptance of use of artificial intelligence in hospitality services: an Indian hospitality sector perspective",
+        "author": "Roy",
+        "year": "2020",
+        "journal-title": "Glob. Bus. Rev."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.tele.2022.101925_b0435",
+        "doi-asserted-by": "crossref",
+        "first-page": "223",
+        "DOI": "10.1002/hfm.20883",
+        "article-title": "Putting the humanity into inhuman systems: How human factors and ergonomics can be used to manage the risks associated with artificial general intelligence",
+        "volume": "31",
+        "author": "Salmon",
+        "year": "2021",
+        "journal-title": "Hum. Factors Ergon. Manuf. Serv. Ind."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.tele.2022.101925_b0440",
+        "doi-asserted-by": "crossref",
+        "first-page": "989",
+        "DOI": "10.1002/hbe2.296",
+        "article-title": "Media effects on the perceptions of robots",
+        "volume": "3",
+        "author": "Savela",
+        "year": "2021",
+        "journal-title": "Hum. Behav. Emerg. Technol."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0445",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schmidt, A., Giannotti, F., Mackay, W., Shneiderman, B., & Väänänen, K. (2021). Artificial intelligence for humankind: a panel on how to create truly interactive and human-centered AI for the benefit of individuals and society. IFIP Conference on Human-Computer Interaction.",
+        "DOI": "10.1007/978-3-030-85607-6_32"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0450",
+        "series-title": "The Fourth Industrial Revolution",
+        "author": "Schwab",
+        "year": "2017"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.tele.2022.101925_b0455",
+        "article-title": "The emergence of service robots at restaurants: Integrating trust, perceived risk, and satisfaction",
+        "volume": "13",
+        "author": "Seo",
+        "year": "2021",
+        "journal-title": "Sustainability (Switzerland)"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.tele.2022.101925_b0460",
+        "first-page": "15",
+        "article-title": "An experimental study on ubiquitous commerce adoption: impact of personalization and privacy concerns",
+        "volume": "9",
+        "author": "Sheng",
+        "year": "2008",
+        "journal-title": "J. Assoc. Inf. Syst."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0465",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tele.2019.101324",
+        "article-title": "Technology acceptance theories and factors influencing artificial intelligence-based intelligent products",
+        "volume": "47",
+        "author": "Sohn",
+        "year": "2020",
+        "journal-title": "Telematics Inform."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0470",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tele.2019.101324",
+        "article-title": "Technology acceptance theories and factors influencing artificial Intelligence-based intelligent products",
+        "volume": "47",
+        "author": "Sohn",
+        "year": "2020",
+        "journal-title": "Telematics Inform."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0475",
+        "article-title": "Factors influencing consumers’ intention to adopt fashion robot advisors: psychological network analysis",
+        "author": "Song",
+        "year": "2020",
+        "journal-title": "Cloth. Text. Res. J."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0480",
+        "unstructured": "Song, Y. W., 2019. User acceptance of an artificial intelligence (AI) virtual assistant : an extension of the technology acceptance model [Thesis; text, ddu. https://search.ebscohost.com/login.aspx?direct=true&db=ddu&AN=194F628A9A233EB6&site=ehost-live&scope=site."
+      },
+      {
+        "issue": "6404",
+        "key": "10.1016/j.tele.2022.101925_b0485",
+        "doi-asserted-by": "crossref",
+        "first-page": "751",
+        "DOI": "10.1126/science.aat5991",
+        "article-title": "How AI can be a force for good",
+        "volume": "361",
+        "author": "Taddeo",
+        "year": "2018",
+        "journal-title": "Science"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0490",
+        "article-title": "The utility of the UTAUT model in explaining mobile learning adoption in higher education in Guyana",
+        "volume": "9",
+        "author": "Thomas",
+        "year": "2013",
+        "journal-title": "Int. J. Educ. Develop. ICT"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0495",
+        "doi-asserted-by": "crossref",
+        "first-page": "208",
+        "DOI": "10.3390/rel12030208",
+        "article-title": "Preliminary research on the social attitudes toward AI's involvement in Christian education in Vietnam: promoting AI technology for religious education",
+        "volume": "12",
+        "author": "Tran",
+        "year": "2021",
+        "journal-title": "Religions"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.tele.2022.101925_b0500",
+        "doi-asserted-by": "crossref",
+        "first-page": "463",
+        "DOI": "10.1016/j.infsof.2009.11.005",
+        "article-title": "Does the technology acceptance model predict actual use? A systematic literature review",
+        "volume": "52",
+        "author": "Turner",
+        "year": "2010",
+        "journal-title": "Inf. Softw. Technol."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0505",
+        "article-title": "Theorizing artificial intelligence acceptance and digital entrepreneurship model",
+        "author": "Upadhyay",
+        "year": "2021",
+        "journal-title": "Int. J. Entrepreneurial Behav. Res."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0510",
+        "unstructured": "van Eeuwen, M., 2017. Mobile conversational commerce: Messenger chatbots as the next interface between businesses and consumers University of Twente]. http://purl.utwente.nl/essays/71706."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0515",
+        "article-title": "User acceptance of information technology: toward a unified view",
+        "volume": "425–478",
+        "author": "Venkatesh",
+        "year": "2003",
+        "journal-title": "MIS Q."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0520",
+        "article-title": "Effects of country and individual factors on public acceptance of artificial intelligence and robotics technologies: a multilevel SEM analysis of 28-country survey data",
+        "author": "Vu",
+        "year": "2021",
+        "journal-title": "Behav. Inform. Technol."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0525",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wallace, B. C., Small, K., Brodley, C. E., Lau, J., & Trikalinos, T. A. (2012). Deploying an interactive machine learning system in an evidence-based practice center. Proceedings Of The 2nd Acm Sighit International Health Informatics Symposium.",
+        "DOI": "10.1145/2110363.2110464"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0540",
+        "series-title": "Acm International Conference Proceeding Series",
+        "article-title": "Research on the influence of interpretability of artificial intelligence recommendation system on users' behavior intention",
+        "author": "Wang",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0535",
+        "series-title": "Proceedings Of The 2020 2nd International Conference On Management Science And Industrial Engineering",
+        "article-title": "A model of consumer perception and behavioral intention for AI service",
+        "author": "Wang",
+        "year": "2020"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0545",
+        "first-page": "116",
+        "article-title": "Factors affecting the adoption of AI based applications in higher education: an analysis of teachers perspectives using structural equation modeling",
+        "volume": "24",
+        "author": "Wang",
+        "year": "2021",
+        "journal-title": "Educ. Technol. Soc."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.tele.2022.101925_b0550",
+        "first-page": "572",
+        "article-title": "A meta-analysis of the impact of trust on technology acceptance model: Investigation of moderating influence of subject and context type",
+        "volume": "31",
+        "author": "Wu",
+        "year": "2011",
+        "journal-title": "Int. J. Inf. Manag."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.tele.2022.101925_b0555",
+        "first-page": "697",
+        "article-title": "Psychological factors in consumer acceptance of artificial intelligence in leisure economy: A structural equation model",
+        "volume": "22",
+        "author": "Xian",
+        "year": "2021",
+        "journal-title": "J. Internet Technol."
+      },
+      {
+        "issue": "13",
+        "key": "10.1016/j.tele.2022.101925_b0560",
+        "doi-asserted-by": "crossref",
+        "first-page": "482",
+        "DOI": "10.1049/joe.2019.1196",
+        "article-title": "Design and implementation path of intelligent transportation information system based on artificial intelligence technology",
+        "volume": "2020",
+        "author": "Xia",
+        "year": "2020",
+        "journal-title": "J. Eng."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0565",
+        "article-title": "Adopting robot lawyer? the extending artificial intelligence robot lawyer technology acceptance model for legal industry by an exploratory study",
+        "volume": "1–19",
+        "author": "Xu",
+        "year": "2019",
+        "journal-title": "J. Manag. Organ."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.tele.2022.101925_b0570",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2196/14316",
+        "article-title": "Psychosocial factors affecting artificial intelligence adoption in health care in China: cross-sectional study",
+        "volume": "21",
+        "author": "Ye",
+        "year": "2019",
+        "journal-title": "J. Med. Internet Res."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0575",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zarifis, A., Kawalek, P., & Azadegan, A., 2021. Evaluating if trust and personal information privacy concerns are barriers to using health insurance that explicitly utilizes AI. J. Internet Commerce, 20(1), 66-83. https://doi.org/10.1080/15332861.2020.1832817.",
+        "DOI": "10.1080/15332861.2020.1832817"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0580",
+        "article-title": "How transparency modulates trust in artificial intelligence",
+        "volume": "100455",
+        "author": "Zerilli",
+        "year": "2022",
+        "journal-title": "Patterns"
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0585",
+        "article-title": "Motivation, social emotion, and the acceptance of artificial intelligence virtual assistants-trust-based mediating effects",
+        "volume": "12",
+        "author": "Zhang",
+        "year": "2021",
+        "journal-title": "Front. Psychol."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.tele.2022.101925_b0135",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1177/20539517211065248",
+        "article-title": "Co-design and ethical artificial intelligence for health: An agenda for critical research and practice",
+        "volume": "8",
+        "author": "Donia",
+        "year": "2021",
+        "journal-title": "Big Data Soc."
+      },
+      {
+        "key": "10.1016/j.tele.2022.101925_b0530",
+        "series-title": "2062: The World that AI Made",
+        "author": "Walsh",
+        "year": "2018"
+      }
+    ],
+    "container-title": [
+      "Telematics and Informatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0736585322001587?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0736585322001587?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2025-10-09T17:40:02Z",
+      "timestamp": 1760031602000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0736585322001587"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "references-count": 119,
+    "alternative-id": [
+      "S0736585322001587"
+    ],
+    "URL": "https://doi.org/10.1016/j.tele.2022.101925",
+    "relation": {},
+    "ISSN": [
+      "0736-5853"
+    ],
+    "issn-type": [
+      {
+        "value": "0736-5853",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "What factors contribute to the acceptance of artificial intelligence? A systematic review",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Telematics and Informatics",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.tele.2022.101925",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2022 The Author(s). Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "101925"
+  }
+}

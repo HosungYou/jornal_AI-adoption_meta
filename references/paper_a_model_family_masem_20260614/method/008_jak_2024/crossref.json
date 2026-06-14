@@ -1,0 +1,957 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          28
+        ]
+      ],
+      "date-time": "2026-04-28T17:32:48Z",
+      "timestamp": 1777397568125,
+      "version": "3.51.4"
+    },
+    "reference-count": 104,
+    "publisher": "SAGE Publications",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Singapore Ministry of Education Academic Research Fund Tier 1",
+        "award": [
+          "FY2021-FRC1-008"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "FY2021-FRC1-008"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003246",
+        "name": "Dutch Research Council",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "NWO; VI.Vidi.201.009"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "NWO; VI.Vidi.201.009"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003246",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Advances in Methods and Practices in Psychological Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1177/25152459241274249",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          17
+        ]
+      ],
+      "date-time": "2024-10-17T16:08:06Z",
+      "timestamp": 1729181286000
+    },
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "A Cautionary Note on Using Univariate Methods for Meta-Analytic Structural Equation Modeling"
+    ],
+    "prefix": "10.1177",
+    "volume": "7",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2223-5594",
+        "authenticated-orcid": false,
+        "given": "Suzanne",
+        "family": "Jak",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Research Institute of Child Development and Education, University of Amsterdam, Amsterdam, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0113-0758",
+        "authenticated-orcid": false,
+        "given": "Mike",
+        "family": "W.-L. Cheung",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Psychology, Faculty of Arts and Social Sciences, National University of Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          17
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_6_2_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Archakov I. Hansen P. R. Luo Y. (2024). A new method for generating random correlation matrices. The Econometrics Journal 27(20) 188–212. https://doi.org/10.1093/ectj/utad027",
+        "DOI": "10.1093/ectj/utad027"
+      },
+      {
+        "key": "e_1_3_6_3_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Badura K. L. Grijalva E. Galvin B. M. Owens B. P. Joseph D. L. (2020). Motivation to lead: A meta-analysis and distal-proximal model of motivation and leadership. Journal of Applied Psychology 105(4) 331–354. https://doi.org/10.1037/apl0000439",
+        "DOI": "10.1037/apl0000439"
+      },
+      {
+        "key": "e_1_3_6_4_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Badura K. L. Grijalva E. Newman D. A. Yan T. T. Jeon G. (2018). Gender and leadership emergence: A meta-analysis and explanatory model. Personnel Psychology 71(3) 335–367. https://doi.org/10.1111/peps.12266",
+        "DOI": "10.1111/peps.12266"
+      },
+      {
+        "key": "e_1_3_6_5_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Becker B. J. (1992). Using results from replicated studies to estimate linear models. Journal of Educational Statistics 17(4) 341–362. https://doi.org/10.3102/10769986017004341",
+        "DOI": "10.3102/10769986017004341"
+      },
+      {
+        "key": "e_1_3_6_6_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Becker B. J. (1995). Corrections to “Using results from replicated studies to estimate linear models.” Journal of Educational and Behavioral Statistics 20(1) 100–102. https://doi.org/10.2307/1165390",
+        "DOI": "10.3102/10769986020001100"
+      },
+      {
+        "key": "e_1_3_6_7_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Becker B. J. Aloe A. M. Cheung M. W.-L. (2020). Meta-analysis of correlation matrices and structural equation models. In Schmid C. H. Stijnen T. White I. R. (Eds.) Handbook of meta-analysis (pp. 347–369). Chapman and Hall/CRC. https://doi.org/10.1201/9781315119403",
+        "DOI": "10.1201/9781315119403-16"
+      },
+      {
+        "key": "e_1_3_6_8_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bennett A. A. Bakker A. B. Field J. G. (2018). Recovery from work-related effort: A meta-analysis. Journal of Organizational Behavior 39(3) 262–275. https://doi.org/10.1002/job.2217",
+        "DOI": "10.1002/job.2217"
+      },
+      {
+        "key": "e_1_3_6_9_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bentler P. M. Lee S.-Y. (1983). Covariance structures under polynomial constraints: Applications to correlation and alpha-type structural models. Journal of Educational and Behavioral Statistics 8(3) 207–222. https://doi.org/10.3102/10769986008003207",
+        "DOI": "10.3102/10769986008003207"
+      },
+      {
+        "key": "e_1_3_6_10_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bergh D. D. Aguinis H. Heavey C. Ketchen D. J. Boyd B. K. Su P. Lau C. L. L. Joo H. (2016). Using meta-analytic structural equation modeling to advance strategic management research: Guidelines and an empirical illustration via the strategic leadership-performance relationship. Strategic Management Journal 37(3) 477–497. https://doi.org/10.1002/smj.2338",
+        "DOI": "10.1002/smj.2338"
+      },
+      {
+        "key": "e_1_3_6_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/1359432X.2016.1170007"
+      },
+      {
+        "key": "e_1_3_6_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0038047"
+      },
+      {
+        "key": "e_1_3_6_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.2044-8317.1984.tb00789.x"
+      },
+      {
+        "key": "e_1_3_6_14_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chamberlin M. Newton D. W. LePine J. A. (2018). A meta-analysis of empowerment and voice as transmitters of high-performance managerial practices to job performance. Journal of Organizational Behavior 39(10) 1296–1313. https://doi.org/10.1002/job.2295",
+        "DOI": "10.1002/job.2295"
+      },
+      {
+        "key": "e_1_3_6_15_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheung M. W.-L. (2014). Fixed- and random-effects meta-analytic structural equation modeling: Examples and analyses in R. Behavior Research Methods 46(1) 29–40. https://doi.org/10.3758/s13428-013-0361-y",
+        "DOI": "10.3758/s13428-013-0361-y"
+      },
+      {
+        "key": "e_1_3_6_16_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheung M. W.-L. (2015). Meta-analysis: A structural equation modeling approach. John Wiley & Sons. https://doi.org/10.1002/9781118957813",
+        "DOI": "10.1002/9781118957813"
+      },
+      {
+        "key": "e_1_3_6_17_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheung M. W.-L. (2018). Issues in solving the problem of effect size heterogeneity in meta-analytic structural equation modeling: A commentary and simulation study on Yu Downes Carter and O’Boyle (2016). Journal of Applied Psychology 103(7) 787–803. https://doi.org/10.1037/apl0000284",
+        "DOI": "10.1037/apl0000284"
+      },
+      {
+        "key": "e_1_3_6_18_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheung M. W.-L. (2019). Some reflections on combining meta-analysis and structural equation modeling. Research Synthesis Methods 10(1) 15–22. https://doi.org/10.1002/jrsm.1321",
+        "DOI": "10.1002/jrsm.1321"
+      },
+      {
+        "key": "e_1_3_6_19_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheung M. W.-L. Chan W. (2005). Meta-analytic structural equation modeling: A two-stage approach. Psychological Methods 10(1) 40–64. https://doi.org/10.1037/1082-989X.10.1.40",
+        "DOI": "10.1037/1082-989X.10.1.40"
+      },
+      {
+        "key": "e_1_3_6_20_1",
+        "unstructured": "Cheung S. F. (2000). Examining solutions to two practical issues in meta-analysis: Dependent correlations and missing data in correlation matrices [Unpublished doctoral dissertation]. Chinese University of Hong Kong."
+      },
+      {
+        "key": "e_1_3_6_21_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chung S. Zhan Y. Noe R. A. Jiang K. (2022). Is it time to update and expand training motivation theory? A meta-analytic review of training motivation research in the 21st century. Journal of Applied Psychology 107(7) 1150–1179. https://doi.org/10.1037/apl0000901",
+        "DOI": "10.1037/apl0000901"
+      },
+      {
+        "key": "e_1_3_6_22_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Connelly B. L. Crook T. R. Combs J. G. Ketchen D. J.Jr Aguinis H. (2018). Competence-and integrity-based trust in interorganizational relationships: Which matters more? Journal of Management 44(3) 919–945. https://doi.org/10.1177/0149206315596813",
+        "DOI": "10.1177/0149206315596813"
+      },
+      {
+        "key": "e_1_3_6_23_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cudeck R. (1989). Analysis of correlation matrices using covariance structure models. Psychological Bulletin 105(2) 317–327. https://doi.org/10.1037/0033-2909.105.2.317",
+        "DOI": "10.1037//0033-2909.105.2.317"
+      },
+      {
+        "key": "e_1_3_6_24_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dhanani L. Y. Beus J. M. Joseph D. L. (2018). Workplace discrimination: A meta-analytic extension critique and future research agenda. Personnel Psychology 71(2) 147–179. https://doi.org/10.1111/peps.12254",
+        "DOI": "10.1111/peps.12254"
+      },
+      {
+        "key": "e_1_3_6_25_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "D’Oria L. Crook T. R. Ketchen D. J.Jr Sirmon D. G. Wright M. (2021). The evolution of resource-based inquiry: A review and meta-analytic integration of the strategic resources–actions–performance pathway. Journal of Management 47(6) 1383–1429. https://doi.org/10.1177/0149206321994182",
+        "DOI": "10.1177/0149206321994182"
+      },
+      {
+        "key": "e_1_3_6_26_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Downes P. E. Reeves C. J. McCormick B. W. Boswell W. R. Butts M. M. (2021). Incorporating job demand variability into job demands theory: A meta-analysis. Journal of Management 47(6) 1630–1656. https://doi.org/10.1177/0149206320916767",
+        "DOI": "10.1177/0149206320916767"
+      },
+      {
+        "key": "e_1_3_6_27_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ellen B. P.III Alexander K. C. Mackey J. D. McAllister C. P. Carson J. E. (2021). Portrait of a workplace deviant: A clearer picture of the Big Five and Dark Triad as predictors of workplace deviance. Journal of Applied Psychology 106(12) 1950–1961. https://doi.org/10.1037/apl0000880",
+        "DOI": "10.1037/apl0000880"
+      },
+      {
+        "key": "e_1_3_6_28_1",
+        "volume-title": "Applied missing data analysis",
+        "author": "Enders C. K.",
+        "year": "2010",
+        "unstructured": "Enders C. K. (2010). Applied missing data analysis. The Guilford Press."
+      },
+      {
+        "key": "e_1_3_6_29_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fang R. Zhang Z. Shaw J. D. (2021). Gender and social network brokerage: A meta-analysis and field investigation. Journal of Applied Psychology 106(11) 1630–1654. https://doi.org/10.1037/apl0000841",
+        "DOI": "10.1037/apl0000841"
+      },
+      {
+        "key": "e_1_3_6_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00220973.2021.2021842"
+      },
+      {
+        "key": "e_1_3_6_31_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Furlow C. F. Beretvas S. N. (2005). Meta-analytic methods of pooling correlation matrices for structural equation modeling under different patterns of missing data. Psychological Methods 10(2) 227–254. https://doi.org/10.1037/1082-989X.10.2.227",
+        "DOI": "10.1037/1082-989X.10.2.227"
+      },
+      {
+        "key": "e_1_3_6_32_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gnambs T. Sengewald M.-A. (2023). Meta-analytic structural equation modeling with fallible measurements. Zeitschrift für Psychologie 231(1) 39–52. https://doi.org/10.1027/2151-2604/a000511",
+        "DOI": "10.1027/2151-2604/a000511"
+      },
+      {
+        "key": "e_1_3_6_33_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gonzalez-Mulé E. S. Cockburn B. W. McCormick B. Zhao P. (2020). Team tenure and team performance: A meta-analysis and process model. Personnel Psychology 73(1) 151–198. https://doi.org/10.1111/peps.12319",
+        "DOI": "10.1111/peps.12319"
+      },
+      {
+        "key": "e_1_3_6_34_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Greco L. M. Porck J. P. Walter S. L. Scrimpshire A. J. Zabinski A. M. (2022). A meta-analytic review of identification at work: Relative contribution of team organizational and professional identification. Journal of Applied Psychology 107(5) 795–830. https://doi.org/10.1037/apl0000941",
+        "DOI": "10.1037/apl0000941"
+      },
+      {
+        "key": "e_1_3_6_35_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Greer L. L. de Jong B. A. Schouten M. E. Dannals J. E. (2018). Why and when hierarchy impacts team effectiveness: A meta-analytic integration. Journal of Applied Psychology 103(6) 591–613. https://doi.org/10.1037/apl0000291",
+        "DOI": "10.1037/apl0000291"
+      },
+      {
+        "key": "e_1_3_6_36_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Harari D. Swider B. W. Steed L. B. Breidenthal A. P. (2018). Is perfect good? A meta-analysis of perfectionism in the workplace. Journal of Applied Psychology 103(10) 1121–1144. https://doi.org/10.1037/apl0000324",
+        "DOI": "10.1037/apl0000324"
+      },
+      {
+        "key": "e_1_3_6_37_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Harari M. B. Reaves A. C. Beane D. A. Laginess A. J. Viswesvaran C. (2018). Personality and expatriate adjustment: A meta-analysis. Journal of Occupational and Organizational Psychology 91(3) 486–517. https://doi.org/10.1111/joop.12215",
+        "DOI": "10.1111/joop.12215"
+      },
+      {
+        "key": "e_1_3_6_38_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Harari M. B. Williams E. A. Castro S. L. Brant K. K. (2021). Self-leadership: A meta-analysis of over two decades of research. Journal of Occupational and Organizational Psychology 94(4) 890–923. https://doi.org/10.1111/joop.12365",
+        "DOI": "10.1111/joop.12365"
+      },
+      {
+        "key": "e_1_3_6_39_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hartnell C. A. Ou A. Y. Kinicki A. J. Choi D. Karam E. P. (2019). A meta-analytic test of organizational culture’s association with elements of an organization’s system and its relative predictive validity on organizational outcomes. Journal of Applied Psychology 104(6) 832–850. https://doi.org/10.1037/apl0000380",
+        "DOI": "10.1037/apl0000380"
+      },
+      {
+        "key": "e_1_3_6_40_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Henderson A. A. Horan K. A. (2021). A meta-analysis of sleep and work performance: An examination of moderators and mediators. Journal of Organizational Behavior 42(1) 1–19. https://doi.org/10.1002/job.2486",
+        "DOI": "10.1002/job.2486"
+      },
+      {
+        "key": "e_1_3_6_41_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hoch J. E. Bommer W. H. Dulebohn J. H. Wu D. (2018). Do ethical authentic and servant leadership explain variance above and beyond transformational leadership? A meta-analysis. Journal of Management 44(2) 501–529. https://doi.org/10.1177/0149206316665461",
+        "DOI": "10.1177/0149206316665461"
+      },
+      {
+        "key": "e_1_3_6_42_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hoogland J. J. Boomsma A. (1998). Robustness studies in covariance structure modeling an overview and a meta-analysis. Sociological Methods & Research 26(3) 329–367. https://doi.org/10.1177/0049124198026003003",
+        "DOI": "10.1177/0049124198026003003"
+      },
+      {
+        "key": "e_1_3_6_43_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Howard M. Cogswell J. Smith M. (2020). The antecedents and outcomes of workplace ostracism. Journal of Applied Psychology 105(6) 577–596. https://doi.org/10.1037/apl0000453",
+        "DOI": "10.1037/apl0000453"
+      },
+      {
+        "key": "e_1_3_6_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781412985031"
+      },
+      {
+        "key": "e_1_3_6_45_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jak S. (2015). Meta-analytic structural equation modelling. Springer. https://doi.org/10.1007/978-3-319-27174-3",
+        "DOI": "10.1007/978-3-319-27174-3"
+      },
+      {
+        "key": "e_1_3_6_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00273171.2017.1375886"
+      },
+      {
+        "key": "e_1_3_6_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/met0000245"
+      },
+      {
+        "key": "e_1_3_6_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jrsm.1498"
+      },
+      {
+        "key": "e_1_3_6_49_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jiang L. Lavaysse L. M. (2018). Cognitive and affective job insecurity: A meta-analysis and a primary study. Journal of Management 44(6) 2307–2342. https://doi.org/10.1177/0149206318773853",
+        "DOI": "10.1177/0149206318773853"
+      },
+      {
+        "key": "e_1_3_6_50_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jiang L. Lawrence A. Xu X. (2022). Does a stick work? A meta-analytic examination of curvilinear relationships between job insecurity and employee workplace behaviors. Journal of Organizational Behavior 43(8) 1410–1445. https://doi.org/10.1002/job.2652",
+        "DOI": "10.1002/job.2652"
+      },
+      {
+        "key": "e_1_3_6_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10705511.2018.1530059"
+      },
+      {
+        "key": "e_1_3_6_52_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kleine A. K. Rudolph C. W. Zacher H. (2019). Thriving at work: A meta-analysis. Journal of Organizational Behavior 40(9–10) 973–999. https://doi.org/10.1002/job.2375",
+        "DOI": "10.1002/job.2375"
+      },
+      {
+        "key": "e_1_3_6_53_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kleine A. K. Schmitt A. Wisse B. (2021). Students' career exploration: A meta-analysis. Journal of Vocational Behavior 131 Article 103645. https://doi.org/10.1016/j.jvb.2021.103645",
+        "DOI": "10.1016/j.jvb.2021.103645"
+      },
+      {
+        "key": "e_1_3_6_54_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Koh D. Lee K. Joshi K. (2019). Transformational leadership and creativity: A meta-analytic review and identification of an integrated model. Journal of Organizational Behavior 40(6) 625–650. https://doi.org/10.1002/job.2355",
+        "DOI": "10.1002/job.2355"
+      },
+      {
+        "key": "e_1_3_6_55_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kooij D. T. A. M. Kanfer R. Betts M. Rudolph C. W. (2018). Future time perspective: A systematic review and meta-analysis. Journal of Applied Psychology 103(8) 867–893. https://doi.org/10.1037/apl0000306",
+        "DOI": "10.1037/apl0000306"
+      },
+      {
+        "key": "e_1_3_6_56_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Landis R. S. (2013). Successfully combining meta-analysis and structural equation modeling: Recommendations and strategies. Journal of Business and Psychology 28(3) 251–261. https://doi.org/10.1007/s10869-013-9285-x",
+        "DOI": "10.1007/s10869-013-9285-x"
+      },
+      {
+        "key": "e_1_3_6_57_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lapierre L. M. Li Y. Kwan H. K. Greenhaus J. H. DiRenzo M. S. Shao P. (2018). A meta-analysis of the antecedents of work–family enrichment. Journal of Organizational Behavior 39(4) 385–401. https://doi.org/10.1002/job.2234",
+        "DOI": "10.1002/job.2234"
+      },
+      {
+        "key": "e_1_3_6_58_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee A. Lyubovnikova J. Tian A. W. Knight C. (2020). Servant leadership: A meta-analytic examination of incremental contribution moderation and mediation. Journal of Occupational and Organizational Psychology 93(1) 1–44. https://doi.org/10.1111/joop.12265",
+        "DOI": "10.1111/joop.12265"
+      },
+      {
+        "key": "e_1_3_6_59_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee A. Willis S. Tian A. W. (2018). Empowering leadership: A meta-analytic examination of incremental contribution mediation and moderation. Journal of Organizational Behavior 39(3) 306–325. https://doi.org/10.1002/job.2220",
+        "DOI": "10.1002/job.2220"
+      },
+      {
+        "key": "e_1_3_6_60_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee K. Beretvas S. N. (2022). An evaluation of methods for meta-analytic structural equation modeling. Structural Equation Modeling: A Multidisciplinary Journal 29(5) 703–715. https://doi.org/10.1080/10705511.2022.2047976",
+        "DOI": "10.1080/10705511.2022.2047976"
+      },
+      {
+        "key": "e_1_3_6_61_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee Y. Berry C. M. Gonzalez-Mulé E. (2019). The importance of being humble: A meta-analysis and incremental validity analysis of the relationship between honesty-humility and job performance. Journal of Applied Psychology 104(12) 1535–1546. https://doi.org/10.1037/apl0000421",
+        "DOI": "10.1037/apl0000421"
+      },
+      {
+        "key": "e_1_3_6_62_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Loignon A. C. Woehr D. J. (2018). Social class in the organizational sciences: A conceptual integration and meta-analytic review. Journal of Management 44(1) 61–88. https://doi.org/10.1177/0149206317728106",
+        "DOI": "10.1177/0149206317728106"
+      },
+      {
+        "key": "e_1_3_6_63_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Longmire N. H. Harrison D. A. (2018). Seeing their side versus feeling their pain: Differential consequences of perspective-taking and empathy at work. Journal of Applied Psychology 103(8) 894–915. https://doi.org/10.1037/apl0000307",
+        "DOI": "10.1037/apl0000307"
+      },
+      {
+        "key": "e_1_3_6_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/peps.12286"
+      },
+      {
+        "key": "e_1_3_6_65_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mesmer-Magnus J. R. Asencio R. Seely P. W. DeChurch L. A. (2018). How organizational identity affects team functioning: The identity instrumentality hypothesis. Journal of Management 44(4) 1530–1550. https://doi.org/10.1177/0149206315614370",
+        "DOI": "10.1177/0149206315614370"
+      },
+      {
+        "key": "e_1_3_6_66_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Michel J. S. Viswesvaran C. Thomas J. (2011). Conclusions from meta-analytic structural equation models generally do not change due to corrections for study artifacts. Research Synthesis Methods 2(3) 174–187. https://doi.org/10.1002/jrsm.47",
+        "DOI": "10.1002/jrsm.47"
+      },
+      {
+        "key": "e_1_3_6_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.8086"
+      },
+      {
+        "key": "e_1_3_6_68_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ng T. W. Sorensen K. L. Zhang Y. Yim F. H. (2019). Anger anxiety depression and negative affect: Convergent or divergent? Journal of Vocational Behavior 110 186–202. https://doi.org/10.1016/j.jvb.2018.11.014",
+        "DOI": "10.1016/j.jvb.2018.11.014"
+      },
+      {
+        "key": "e_1_3_6_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0038012"
+      },
+      {
+        "key": "e_1_3_6_70_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ogunfowora B. (T.) Nguyen V. Q. Steel P. Hwang C. C. (2022). A meta-analytic investigation of the antecedents theoretical correlates and consequences of moral disengagement at work. Journal of Applied Psychology 107(5) 746–775. https://doi.org/10.1037/apl0000912",
+        "DOI": "10.1037/apl0000912"
+      },
+      {
+        "key": "e_1_3_6_71_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Oh I.-S. (2020). Beyond meta-analysis: Secondary uses of meta-analytic data. Annual Review of Organizational Psychology and Organizational Behavior 7(1) 125–153. https://doi.org/10.1146/annurev-orgpsych-012119-045006",
+        "DOI": "10.1146/annurev-orgpsych-012119-045006"
+      },
+      {
+        "key": "e_1_3_6_72_1",
+        "first-page": "235",
+        "volume-title": "Essays in probability and statistics",
+        "author": "Olkin I.",
+        "year": "1976",
+        "unstructured": "Olkin I., Siotani M. (1976). Asymptotic distribution of functions of a correlation matrix. In Ideka S. (Ed.), Essays in probability and statistics (pp. 235–251). Shinko Tsusho."
+      },
+      {
+        "key": "e_1_3_6_73_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pak S. Kramer A. Lee Y. Kim K. J. (2022). The impact of work hours on work-to-family enrichment and conflict through energy processes: A meta-analysis. Journal of Organizational Behavior 43(4) 709–743. https://doi.org/10.1002/job.2595",
+        "DOI": "10.1002/job.2595"
+      },
+      {
+        "key": "e_1_3_6_74_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Park H. (H.) Wiernik B. M. Oh I.-S. Gonzalez-Mulé E. Ones D. S. Lee Y. (2020). Meta-analytic five-factor model personality intercorrelations: Eeny meeny miney moe how which why and where to go. Journal of Applied Psychology 105(12) 1490–1529. https://doi.org/10.1037/apl0000476",
+        "DOI": "10.1037/apl0000476"
+      },
+      {
+        "key": "e_1_3_6_75_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Peng A. C. Kim D. (2020). A meta-analytic test of the differential pathways linking ethical leadership to normative conduct. Journal of Organizational Behavior 41(4) 348–368. https://doi.org/10.1002/job.2427",
+        "DOI": "10.1002/job.2427"
+      },
+      {
+        "key": "e_1_3_6_76_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pletzer J. L. Bentvelzen M. Oostrom J. K. De Vries R. E. (2019). A meta-analysis of the relations between personality and workplace deviance: Big Five versus HEXACO. Journal of Vocational Behavior 112 369–383. https://doi.org/10.1016/j.jvb.2019.04.004",
+        "DOI": "10.1016/j.jvb.2019.04.004"
+      },
+      {
+        "key": "e_1_3_6_77_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Porter C. M. Woo S. E. Allen D. G. Keith M. G. (2019). How do instrumental and expressive network positions relate to turnover? A meta-analytic investigation. Journal of Applied Psychology 104(4) 511–536. https://doi.org/10.1037/apl0000351",
+        "DOI": "10.1037/apl0000351"
+      },
+      {
+        "key": "e_1_3_6_78_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-985X.2008.00593.x"
+      },
+      {
+        "key": "e_1_3_6_79_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rosopa P. J. Kim B. (2017). Robustness of statistical inferences using linear models with meta-analytic correlation matrices. Human Resource Management Review 27(1) 216–236. https://doi.org/10.1016/j.hrmr.2016.09.012",
+        "DOI": "10.1016/j.hrmr.2016.09.012"
+      },
+      {
+        "key": "e_1_3_6_80_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rubenstein A. L. Zhang Y. Ma K. Morrison H. M. Jorgensen D. F. (2019). Trait expression through perceived job characteristics: A meta-analytic path model linking personality and job attitudes. Journal of Vocational Behavior 112 141–157. https://doi.org/10.1016/j.jvb.2019.02.002",
+        "DOI": "10.1016/j.jvb.2019.02.002"
+      },
+      {
+        "key": "e_1_3_6_81_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rudolph C. W. Kooij D. T. Rauvola R. S. Zacher H. (2018). Occupational future time perspective: A meta-analysis of antecedents and outcomes. Journal of Organizational Behavior 39(2) 229–248. https://doi.org/10.1002/job.2264",
+        "DOI": "10.1002/job.2264"
+      },
+      {
+        "key": "e_1_3_6_82_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ryu J. W. Neubert E. M. Gonzalez-Mulé E. (2022). Putting the team in the driver’s seat: A meta-analysis on the what why and when of team autonomy’s impact on team effectiveness. Personnel Psychology 75(2) 411–439. https://doi.org/10.1111/peps.12468",
+        "DOI": "10.1111/peps.12468"
+      },
+      {
+        "key": "e_1_3_6_83_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schutte N. S. Keng S.-L. Cheung M. W.-L. (2021). Emotional intelligence mediates the connection between mindfulness and gratitude: A meta-analytic structural equation modeling study. Mindfulness 12(11) 2613–2623. https://doi.org/10.1007/s12671-021-01725-2",
+        "DOI": "10.1007/s12671-021-01725-2"
+      },
+      {
+        "key": "e_1_3_6_84_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jrsm.1206"
+      },
+      {
+        "key": "e_1_3_6_85_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sherf E. N. Parke M. R. Isaakyan S. (2021). Distinguishing voice and silence at work: Unique relationships with perceived impact psychological safety and burnout. Academy of Management Journal 64(1) 114–148. https://doi.org/10.5465/amj.2018.1428",
+        "DOI": "10.5465/amj.2018.1428"
+      },
+      {
+        "key": "e_1_3_6_86_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sheu H. B. Lent R. W. Miller M. J. Penn L. T. Cusick M. E. Truong N. N. (2018). Sources of self-efficacy and outcome expectations in science technology engineering and mathematics domains: A meta-analysis. Journal of Vocational Behavior 109 118–136. https://doi.org/10.1016/j.jvb.2018.10.003",
+        "DOI": "10.1016/j.jvb.2018.10.003"
+      },
+      {
+        "key": "e_1_3_6_87_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Slemp G. R. Field J. G. Cho A. S. (2020). A meta-analysis of autonomous and controlled forms of teacher motivation. Journal of Vocational Behavior 121 Article 103459. https://doi.org/10.1016/j.jvb.2020.103459",
+        "DOI": "10.1016/j.jvb.2020.103459"
+      },
+      {
+        "key": "e_1_3_6_88_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Song Y. Gnyawali D. R. Srivastava M. K. Asgari E. (2018). In search of precision in absorptive capacity research: A synthesis of the literature and consolidation of findings. Journal of Management 44(6) 2343–2374. https://doi.org/10.1177/0149206318773861",
+        "DOI": "10.1177/0149206318773861"
+      },
+      {
+        "key": "e_1_3_6_89_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tihanyi L. Aguilera R. V. Heugens P. Van Essen M. Sauerwald S. Duran P. Turturea R. (2019). State ownership and political connections. Journal of Management 45(6) 2293–2321. https://doi.org/10.1177/0149206318822113",
+        "DOI": "10.1177/0149206318822113"
+      },
+      {
+        "key": "e_1_3_6_90_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10705511.2022.2142128"
+      },
+      {
+        "key": "e_1_3_6_91_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Uanhoro J. O. (2024). Bayesian structural equation models of correlation matrices. Structural Equation Modeling: A Multidisciplinary Journal 31(4) 685–695. https://doi.org/10.1080/10705511.2024.2306532",
+        "DOI": "10.1080/10705511.2024.2306532"
+      },
+      {
+        "key": "e_1_3_6_92_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Valentine J. C. Cheung M. W.-L. Smith E. J. Alexander O. Hatton J. M. Hong R. Y. Huckaby L. T. Patton S. C. Pössel P. Seely H. D. (2022). A primer on meta-analytic structural equation modeling: The case of depression. Prevention Science 23(3) 346–365. https://doi.org/10.1007/s11121-021-01298-5",
+        "DOI": "10.1007/s11121-021-01298-5"
+      },
+      {
+        "key": "e_1_3_6_93_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/apl0000675"
+      },
+      {
+        "key": "e_1_3_6_94_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Vaziri H. Wayne J. H. Casper W. J. Lapierre L. M. Greenhaus J. H. Amirkamali F. Li Y. (2022). A meta-analytic investigation of the personal and work-related antecedents of work–family balance. Journal of Organizational Behavior 43(4) 662–692. https://doi.org/10.1002/job.2594",
+        "DOI": "10.1002/job.2594"
+      },
+      {
+        "key": "e_1_3_6_95_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Viswesvaran C. Ones D. S. (1995). Theory testing: Combining psychometric meta-analysis and structural equations modeling. Personnel Psychology 48(4) 865–885. https://doi.org/10.1111/j.1744-6570.1995.tb01784.x",
+        "DOI": "10.1111/j.1744-6570.1995.tb01784.x"
+      },
+      {
+        "key": "e_1_3_6_96_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11336-015-9451-3"
+      },
+      {
+        "key": "e_1_3_6_97_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Young H. R. Glerum D. R. Joseph D. L. McCord M. A. (2021). A meta-analysis of transactional leadership and follower performance: Double-edged effects of LMX and empowerment. Journal of Management 47(5) 1255–1280. https://doi.org/10.1177/0149206320908646",
+        "DOI": "10.1177/0149206320908646"
+      },
+      {
+        "key": "e_1_3_6_98_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Young H. R. Glerum D. R. Wang W. Joseph D. L. (2018). Who are the most engaged at work? A meta-analysis of personality and employee engagement. Journal of Organizational Behavior 39(10) 1330–1346. https://doi.org/10.1002/job.2303",
+        "DOI": "10.1002/job.2303"
+      },
+      {
+        "key": "e_1_3_6_99_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yu A. Matta F. K. Cornfield B. (2018). Is leader–member exchange differentiation beneficial or detrimental for group effectiveness? A meta-analytic investigation and theoretical integration. Academy of Management Journal 61(3) 1158–1188. https://doi.org/10.5465/amj.2016.1212",
+        "DOI": "10.5465/amj.2016.1212"
+      },
+      {
+        "key": "e_1_3_6_100_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yu J. J. Downes P. E. Carter K. M. O’Boyle E. H. (2016). The problem of effect size heterogeneity in meta-analytic structural equation modeling. Journal of Applied Psychology 101(10) 1457–1473. https://doi.org/10.1037/apl0000141",
+        "DOI": "10.1037/apl0000141"
+      },
+      {
+        "key": "e_1_3_6_101_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang Y. Liu X. Xu S. Yang L. Q. Bednall T. C. (2019). Why abusive supervision impacts employee OCB and CWB: A meta-analytic review of competing mediating mechanisms. Journal of Management 45(6) 2474–2497. https://doi.org/10.1177/0149206318823935",
+        "DOI": "10.1177/0149206318823935"
+      },
+      {
+        "key": "e_1_3_6_102_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang Y. Liu G. Zhang L. Xu S. Cheung M. W. L. (2021). Psychological ownership: A meta-analysis and comparison of multiple forms of attachment in the workplace. Journal of Management 47(3) 745–770. https://doi.org/10.1177/0149206320917195",
+        "DOI": "10.1177/0149206320917195"
+      },
+      {
+        "key": "e_1_3_6_103_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang Y. Xu S. Jin J. Ford M. T. (2018). The within and cross domain effects of work-family enrichment: A meta-analysis. Journal of Vocational Behavior 104 210–227. https://doi.org/10.1016/j.jvb.2017.11.003",
+        "DOI": "10.1016/j.jvb.2017.11.003"
+      },
+      {
+        "key": "e_1_3_6_104_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang Y. Zhang Y. Ng T. W. H. Lam S. S. K. (2019). Promotion- and prevention-focused coping: A meta-analytic examination of regulatory strategies in the work stress process. Journal of Applied Psychology 104(10) 1296–1323. https://doi.org/10.1037/apl0000404",
+        "DOI": "10.1037/apl0000404"
+      },
+      {
+        "key": "e_1_3_6_105_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhao X. Wu C. Chen C. C. Zhou Z. (2022). The influence of corporate social responsibility on incumbent employees: A meta-analytic investigation of the mediating and moderating mechanisms. Journal of Management 48(1) 114–146. https://doi.org/10.1177/0149206320946108",
+        "DOI": "10.1177/0149206320946108"
+      }
+    ],
+    "container-title": [
+      "Advances in Methods and Practices in Psychological Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/25152459241274249",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/25152459241274249",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/25152459241274249",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          28
+        ]
+      ],
+      "date-time": "2026-04-28T10:11:18Z",
+      "timestamp": 1777371078000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/25152459241274249"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "references-count": 104,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/25152459241274249"
+    ],
+    "URL": "https://doi.org/10.1177/25152459241274249",
+    "relation": {
+      "has-review": [
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v2/review2",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v2/review3",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v2/review4",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v2/review1",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v3/decision1",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v1/review3",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v1/review4",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v1/review1",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v1/review2",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v3/response1",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v2/decision1",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v2/response1",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1177/25152459241274249/v1/decision1",
+          "asserted-by": "object"
+        }
+      ],
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.31234/osf.io/b3qvn",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "2515-2459",
+      "2515-2467"
+    ],
+    "issn-type": [
+      {
+        "value": "2515-2459",
+        "type": "print"
+      },
+      {
+        "value": "2515-2467",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "article-number": "25152459241274249"
+  }
+}

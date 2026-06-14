@@ -1,0 +1,540 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2026-03-08T11:34:57Z",
+      "timestamp": 1772969697265,
+      "version": "3.50.1"
+    },
+    "reference-count": 47,
+    "publisher": "Informa UK Limited",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              8
+            ]
+          ],
+          "date-time": "2017-12-08T00:00:00Z",
+          "timestamp": 1512691200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100003246",
+        "name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "Rubicon 446-14-003"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "Rubicon 446-14-003"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003246",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001459",
+        "name": "Ministry of Education, Singapore",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "Academic Research Fund Tier 1 (FY2013-FRC5-002)"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "Academic Research Fund Tier 1 (FY2013-FRC5-002)"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001459",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Multivariate Behavioral Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1080/00273171.2017.1375886",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          8
+        ]
+      ],
+      "date-time": "2017-12-08T17:39:59Z",
+      "timestamp": 1512754799000
+    },
+    "page": "1-14",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 35,
+    "title": [
+      "Accounting for Missing Correlation Coefficients in Fixed-Effects MASEM"
+    ],
+    "prefix": "10.1080",
+    "volume": "53",
+    "author": [
+      {
+        "given": "Suzanne",
+        "family": "Jak",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Amsterdam"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mike W.-L",
+        "family": "Cheung",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0749-5978(91)90020-t"
+      },
+      {
+        "key": "e_1_3_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1165128"
+      },
+      {
+        "key": "e_1_3_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1165390"
+      },
+      {
+        "key": "e_1_3_1_5_1",
+        "first-page": "377",
+        "article-title": "Model-based meta-analysis",
+        "author": "Becker B. J.",
+        "year": "2009",
+        "unstructured": "Becker, B. J. (2009). Model-based meta-analysis. In H. Cooper, L. V. Hedges, & J. C. Valentine (Eds.), The handbook of research synthesis and meta-analysis (2nd ed., pp. 377–395). New York, NY: Russell Sage Foundation.",
+        "journal-title": "The handbook of research synthesis and meta-analysis"
+      },
+      {
+        "key": "e_1_3_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3102/10769986008003207"
+      },
+      {
+        "key": "e_1_3_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/smj.2338"
+      },
+      {
+        "key": "e_1_3_1_8_1",
+        "volume-title": "Applied meta-analysisfor social science research",
+        "author": "Card N. A.",
+        "year": "2015",
+        "unstructured": "Card, N. A. (2015). Applied meta-analysisfor social science research. New York, NY: Guilford Publications."
+      },
+      {
+        "key": "e_1_3_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3758/BRM.41.2.425"
+      },
+      {
+        "key": "e_1_3_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/9781118957813"
+      },
+      {
+        "key": "e_1_3_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpsyg.2014.01521"
+      },
+      {
+        "key": "e_1_3_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1082-989X.10.1.40"
+      },
+      {
+        "key": "e_1_3_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10705510802561295"
+      },
+      {
+        "key": "e_1_3_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jrsm.1212"
+      },
+      {
+        "key": "e_1_3_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17437199.2017.1343678"
+      },
+      {
+        "key": "e_1_3_1_16_1",
+        "volume-title": "Examining solutions to two practical issues in meta-analysis: Dependent correlations and missing data in correlation matrices",
+        "author": "Cheung S. F.",
+        "year": "2000",
+        "unstructured": "Cheung, S. F. (2000). Examining solutions to two practical issues in meta-analysis: Dependent correlations and missing data in correlation matrices (Ph.D.). The Chinese University of Hong Kong, Hong Kong."
+      },
+      {
+        "key": "e_1_3_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jopy.12161"
+      },
+      {
+        "key": "e_1_3_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17437199.2014.947547"
+      },
+      {
+        "key": "e_1_3_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.105.2.317"
+      },
+      {
+        "key": "e_1_3_1_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15328007sem08035"
+      },
+      {
+        "key": "e_1_3_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1082-989x.6.2.161"
+      },
+      {
+        "key": "e_1_3_1_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1082-989X.10.2.227"
+      },
+      {
+        "key": "e_1_3_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.22237/jmasm/1272687180"
+      },
+      {
+        "key": "e_1_3_1_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3758/s13423-015-0868-6"
+      },
+      {
+        "key": "e_1_3_1_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3102/1076998606298041"
+      },
+      {
+        "key": "e_1_3_1_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3102/1076998607309472"
+      },
+      {
+        "key": "e_1_3_1_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0014697"
+      },
+      {
+        "key": "e_1_3_1_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/B978-0-08-057065-5.50010-5"
+      },
+      {
+        "key": "e_1_3_1_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1082-989X.3.4.486"
+      },
+      {
+        "key": "e_1_3_1_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0049124198026003003"
+      },
+      {
+        "key": "e_1_3_1_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-27174-3"
+      },
+      {
+        "issue": "4",
+        "key": "e_1_3_1_32_1",
+        "first-page": "132",
+        "article-title": "Meta-analytic structural equation modelling with missing correlations",
+        "volume": "67",
+        "author": "Jak S.",
+        "year": "2013",
+        "unstructured": "Jak, S., Oort, F. J., Roorda, D. L., & Koomen, H. M. (2013). Meta-analytic structural equation modelling with missing correlations. Netherlands Journal of Psychology, 67(4), 132–139.",
+        "journal-title": "Netherlands Journal of Psychology"
+      },
+      {
+        "key": "e_1_3_1_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/e632032012-001"
+      },
+      {
+        "key": "e_1_3_1_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0149206315614370"
+      },
+      {
+        "key": "e_1_3_1_35_1",
+        "volume-title": "R: A language and environment for statistical computing",
+        "year": "2016",
+        "unstructured": "R Core Team. (2016). R: A language and environment for statistical computing. Retrieved from http://www.R-project.org."
+      },
+      {
+        "key": "e_1_3_1_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10865-015-9644-3"
+      },
+      {
+        "key": "e_1_3_1_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-985x.2008.00593.x"
+      },
+      {
+        "key": "e_1_3_1_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.hrmr.2016.09.012"
+      },
+      {
+        "key": "e_1_3_1_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/0470870168"
+      },
+      {
+        "key": "e_1_3_1_40_1",
+        "first-page": "181",
+        "article-title": "Power evaluations in structural equation models",
+        "author": "Saris W.",
+        "year": "1993",
+        "unstructured": "Saris, W., & Satorra, A. (1993). Power evaluations in structural equation models. In K. A. Bollen, & J. S. Long (Eds.), Testing structural equation models (pp. 181–204). Newbury Park, CA: Sage.",
+        "journal-title": "Testing structural equation models"
+      },
+      {
+        "key": "e_1_3_1_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10705511.2012.687669"
+      },
+      {
+        "key": "e_1_3_1_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781483398105"
+      },
+      {
+        "key": "e_1_3_1_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jrsm.1206"
+      },
+      {
+        "key": "e_1_3_1_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1745691614553988"
+      },
+      {
+        "key": "e_1_3_1_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/RIBS-04-2016-0022"
+      },
+      {
+        "key": "e_1_3_1_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2147/sar.s15168"
+      },
+      {
+        "key": "e_1_3_1_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/met0000025"
+      },
+      {
+        "key": "e_1_3_1_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1744-6570.1995.tb01784.x"
+      }
+    ],
+    "container-title": [
+      "Multivariate Behavioral Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00273171.2017.1375886",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00273171.2017.1375886",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          6
+        ]
+      ],
+      "date-time": "2026-03-06T01:43:38Z",
+      "timestamp": 1772761418000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/00273171.2017.1375886"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          8
+        ]
+      ]
+    },
+    "references-count": 47,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/00273171.2017.1375886"
+    ],
+    "URL": "https://doi.org/10.1080/00273171.2017.1375886",
+    "relation": {},
+    "ISSN": [
+      "0027-3171",
+      "1532-7906"
+    ],
+    "issn-type": [
+      {
+        "value": "0027-3171",
+        "type": "print"
+      },
+      {
+        "value": "1532-7906",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hmbr20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hmbr20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2017-12-08",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

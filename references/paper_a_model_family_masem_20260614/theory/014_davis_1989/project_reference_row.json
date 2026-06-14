@@ -1,0 +1,9 @@
+{
+  "category": "theory",
+  "model_family": "TAM core",
+  "citation": "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology.",
+  "doi_or_url": "https://doi.org/10.2307/249008",
+  "use_in_paper": "Foundational TAM citation for usefulness/ease and acceptance.",
+  "status": "core",
+  "note": "Maps to PE/EE and BI."
+}

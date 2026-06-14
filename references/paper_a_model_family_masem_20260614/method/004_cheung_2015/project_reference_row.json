@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "MASEM book",
+  "citation": "Cheung, M. W.-L. (2015). Meta-analysis: A structural equation modeling approach.",
+  "doi_or_url": "https://www.wiley.com/en-us/Meta+Analysis%3A+A+Structural+Equation+Modeling+Approach-p-9781119993438",
+  "use_in_paper": "Methodological reference for SEM approach to meta-analysis.",
+  "status": "core",
+  "note": "Book citation; DOI not required."
+}

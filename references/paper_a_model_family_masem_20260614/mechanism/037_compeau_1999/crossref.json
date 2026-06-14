@@ -1,0 +1,626 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          14
+        ]
+      ],
+      "date-time": "2026-05-14T12:54:32Z",
+      "timestamp": 1778763272690,
+      "version": "3.51.4"
+    },
+    "reference-count": 41,
+    "publisher": "MIS Quarterly",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          1999,
+          6,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.2307/249749",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          4,
+          18
+        ]
+      ],
+      "date-time": "2006-04-18T05:16:54Z",
+      "timestamp": 1145337414000
+    },
+    "page": "145-158",
+    "source": "Crossref",
+    "is-referenced-by-count": 1427,
+    "title": [
+      "Social Cognitive Theory and Individual Reactions to Computing Technology: A Longitudinal Study1"
+    ],
+    "prefix": "10.25300",
+    "volume": "23",
+    "author": [
+      {
+        "given": "Deborah",
+        "family": "Compeau",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Faculty of Management, University of Calgary, Calgary, Alberta T2N 1N4, Canada"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Christopher A.",
+        "family": "Higgins",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ivey School of Business, The University of Western Ontario, London, Ontario N6A 3K7, Canada"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Sid",
+        "family": "Huff",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ivey School of Business, The University of Western Ontario, London, Ontario N6A 3K7, Canada"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "10933",
+    "published-online": {
+      "date-parts": [
+        [
+          1999,
+          6,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2025111913451570200_b1-1_compeau",
+        "volume-title": "Social Foundations of Thought and Action",
+        "author": "Bandura",
+        "year": "1986"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b2-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "125",
+        "DOI": "10.1037/0022-3514.35.3.125",
+        "article-title": "Cognitive Processes Mediating Behavioral Change",
+        "volume": "35",
+        "author": "Bandura",
+        "year": "1977",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913451570200_b3-1_compeau",
+        "first-page": "285",
+        "article-title": "The Partial Least Squares Approach to Causal Modeling: Personal Computer Adoption and Use as an Illustration",
+        "volume": "2",
+        "author": "Barclay",
+        "year": "1995",
+        "journal-title": "Technology Studies, Special Issue on Research Methodology"
+      },
+      {
+        "key": "2025111913451570200_b4-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "399",
+        "DOI": "10.1037/0022-0167.28.5.399",
+        "article-title": "The Relationships of Career-related Self-efficacy Expectations to Perceived Career Options in College Women and Men",
+        "volume": "28",
+        "author": "Betz",
+        "year": "1981",
+        "journal-title": "Journal of Counseling Psychology"
+      },
+      {
+        "key": "2025111913451570200_b5-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "104",
+        "DOI": "10.2307/2393552",
+        "article-title": "Changing Patterns or Patterns of Change: The Effects of a Change in Technology on Social Network Structure and Power",
+        "volume": "35",
+        "author": "Burkhardt",
+        "year": "1990",
+        "journal-title": "Administrative Science Quarterly"
+      },
+      {
+        "key": "2025111913451570200_b6-1_compeau",
+        "volume-title": "PLS-Graph, Version 2.91.02.08",
+        "author": "Chin",
+        "year": "1995"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913451570200_b7-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "118",
+        "DOI": "10.1287/isre.6.2.118",
+        "article-title": "Application of Social Cognitive Theory to Training for Computer Skills",
+        "volume": "6",
+        "author": "Compeau",
+        "year": "1995",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913451570200_b8-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.2307/249688",
+        "article-title": "Computer Self-Efficacy: Development of a Measure and Initial Test",
+        "volume": "19",
+        "author": "Compeau",
+        "year": "1995",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "2025111913451570200_b9-1_compeau",
+        "article-title": "Measurement of Perceived Characteristics of Innovating: A Reconsideration Based on Three Empirical Studies",
+        "author": "Compeau"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b10-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.2307/249008",
+        "article-title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "volume": "13",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "8",
+        "key": "2025111913451570200_b11-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "982",
+        "DOI": "10.1287/mnsc.35.8.982",
+        "article-title": "User Acceptance of Computer Technology: A Comparison of Two Theoretical Models",
+        "volume": "35",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913451570200_b12-1_compeau",
+        "volume-title": "Mail and Telephone Surveys: The Total Design Method",
+        "author": "Dillman",
+        "year": "1978"
+      },
+      {
+        "key": "2025111913451570200_b13-1_compeau",
+        "volume-title": "Consumer Behavior",
+        "author": "Engle",
+        "year": "1986",
+        "edition": "5th"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913451570200_b14-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "39",
+        "DOI": "10.1177/002224378101800104",
+        "article-title": "Evaluating Structural Equations Models with Unobservable Variables and Measurement Error",
+        "volume": "18",
+        "author": "Fornell",
+        "year": "1981",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "key": "2025111913451570200_b15-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "387",
+        "DOI": "10.1037/0021-9010.72.3.387",
+        "article-title": "The Application of Social Learning Theory to Employee Self-management of Attendance",
+        "volume": "72",
+        "author": "Frayne",
+        "year": "1987",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "key": "2025111913451570200_b16-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "459",
+        "DOI": "10.1287/mnsc.27.4.459",
+        "article-title": "Early Diagnosis of MIS Implementation Failure: Promising Results and Unanswered Questions",
+        "volume": "27",
+        "author": "Ginzberg",
+        "year": "1981",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913451570200_b17-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "884",
+        "DOI": "10.1037/0021-9010.74.6.884",
+        "article-title": "Effects of Alternative Training Methods on Self-efficacy and Performance in Computer Software Training",
+        "volume": "74",
+        "author": "Gist",
+        "year": "1989",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "key": "2025111913451570200_b18-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1016/0747-5632(87)90010-0",
+        "article-title": "Assessing Computer Anxiety: Development and Validation of the Computer Anxiety Rating Scale",
+        "volume": "3",
+        "author": "Heinssen",
+        "year": "1987",
+        "journal-title": "Computers and Human Behavior"
+      },
+      {
+        "key": "2025111913451570200_b19-1_compeau",
+        "first-page": "419",
+        "article-title": "Communicating Innovations: Convincing Computer Phobics to Adopt Innovative Technologies",
+        "volume-title": "Advances in Consumer Research",
+        "author": "Hill",
+        "year": "1986"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913451570200_b20-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1037/0021-9010.72.2.307",
+        "article-title": "Role of Efficacy Expectations in Predicting the Decision to Use Advanced Technologies: The Case of Computers",
+        "volume": "72",
+        "author": "Hill",
+        "year": "1987",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "6",
+        "key": "2025111913451570200_b21-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "637",
+        "DOI": "10.1016/0305-0483(90)90055-E",
+        "article-title": "End-user Computing Effectiveness: A Structural Equation Model",
+        "volume": "18",
+        "author": "Igbaria",
+        "year": "1990",
+        "journal-title": "OMEGA International Journal of Management Science"
+      },
+      {
+        "key": "2025111913451570200_b22-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1016/0378-7206(89)90036-0",
+        "article-title": "Microcomputer Applications: An Empirical Look at Usage",
+        "volume": "16",
+        "author": "Igbaria",
+        "year": "1989",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b23-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1037/0021-9010.64.3.239",
+        "article-title": "Application of Social-learning Theory to Training Supervisors Through Behavioral Modeling",
+        "volume": "64",
+        "author": "Latham",
+        "year": "1979",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b24-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "645",
+        "DOI": "10.2307/258790",
+        "article-title": "Efficacy-performance Spirals: A Multilevel Perspective",
+        "volume": "20",
+        "author": "Lindsley",
+        "year": "1995",
+        "journal-title": "Academy of Management Review"
+      },
+      {
+        "key": "2025111913451570200_b25-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "501",
+        "DOI": "10.1177/0013164484442033",
+        "article-title": "Reliability and Factorial Validity of Computer Attitude Scales",
+        "author": "Loyd",
+        "year": "1984",
+        "journal-title": "Educational and Psychological Measurement"
+      },
+      {
+        "issue": "7",
+        "key": "2025111913451570200_b26-1_compeau",
+        "first-page": "32",
+        "article-title": "National Longitudinal Surveys: Development and Uses",
+        "volume": "113",
+        "author": "Manser",
+        "year": "1990",
+        "journal-title": "Monthly Labor Review"
+      },
+      {
+        "key": "2025111913451570200_b27-1_compeau",
+        "unstructured": "Marcolin, B.\n           The Impact of Users’ Expectations on the Success of Information Technology Implementation, unpublished doctoral dissertation. The University of Western Ontario, London, Ontario, 1994."
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b28-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1287/isre.2.3.173",
+        "article-title": "Predicting User Intentions: Comparing the Technology Acceptance Model with the Theory of Planned Behavior",
+        "volume": "2",
+        "author": "Mathieson",
+        "year": "1991",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b29-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "192",
+        "DOI": "10.1287/isre.2.3.192",
+        "article-title": "Development of an Instrument to Measure the Perceptions of Adopting an Information Technology Innovation",
+        "volume": "2",
+        "author": "Moore",
+        "year": "1991",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b30-1_compeau",
+        "first-page": "37",
+        "article-title": "Nonresponse in Mail Surveys: An Integrative Review",
+        "volume": "29",
+        "author": "Ratneshwar",
+        "year": "1989",
+        "journal-title": "Applied Marketing Research"
+      },
+      {
+        "key": "2025111913451570200_b31-1_compeau",
+        "article-title": "The Volunteer Subject",
+        "volume-title": "Artifact in Behavioral Research",
+        "author": "Rosenthal",
+        "year": "1969"
+      },
+      {
+        "key": "2025111913451570200_b32-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "93",
+        "DOI": "10.1037/0022-0663.73.1.93",
+        "article-title": "Modeling and Attributional Effects on Children’s Achievement: A Selfefficacy Analysis",
+        "volume": "73",
+        "author": "Schunk",
+        "year": "1981",
+        "journal-title": "Journal of Educational Psychology"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b33-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "240",
+        "DOI": "10.1287/isre.8.3.240",
+        "article-title": "A Respecification and Extension of the Delone and Mclean Model of IS Success",
+        "volume": "8",
+        "author": "Seddon",
+        "year": "1997",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "key": "2025111913451570200_b34-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1016/0001-8791(87)90037-6",
+        "article-title": "Selfefficacy Expectations and Coping with Career- related Events",
+        "volume": "31",
+        "author": "Stumpf",
+        "year": "1987",
+        "journal-title": "Journal of Vocational Behavior"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913451570200_b35-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1287/isre.6.2.144",
+        "article-title": "Understanding Information Technology Usage: A Test of Competing Models",
+        "volume": "6",
+        "author": "Taylor",
+        "year": "1995",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "key": "2025111913451570200_b36-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "402",
+        "DOI": "10.1016/0030-5073(84)90046-1",
+        "article-title": "Type A Behavior and Faculty Research Productivity: What are the Mechanisms",
+        "volume": "34",
+        "author": "Taylor",
+        "year": "1989",
+        "journal-title": "Organizational Behavior and Human Performance"
+      },
+      {
+        "key": "2025111913451570200_b37-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "125",
+        "DOI": "10.2307/249443",
+        "article-title": "Personal Computing: Towards a Conceptual Model of Utilization",
+        "volume": "14",
+        "author": "Thompson",
+        "year": "1991",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913451570200_b38-1_compeau",
+        "doi-asserted-by": "crossref",
+        "first-page": "451",
+        "DOI": "10.1111/j.1540-5915.1996.tb01822.x",
+        "article-title": "A Model of the Antecedents of Perceived Ease of Use: Development and Test",
+        "volume": "27",
+        "author": "Venkatesh",
+        "year": "1996",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "key": "2025111913451570200_b39-1_compeau",
+        "article-title": "Longitudinal Surveys in Information Systems Research: An Examination of Issues, Methods, and Applications",
+        "volume-title": "The Information Systems Research Challenge",
+        "author": "Vitalari",
+        "year": "1991"
+      },
+      {
+        "key": "2025111913451570200_b40-1_compeau",
+        "first-page": "171",
+        "article-title": "Mitigating the Effects of Computer Anxiety Through Training",
+        "author": "Webster"
+      },
+      {
+        "key": "2025111913451570200_b41-1_compeau",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1177/014920639301900109",
+        "article-title": "Turning Work into Play: Implications for Microcomputer Software Training",
+        "author": "Webster",
+        "year": "1993",
+        "journal-title": "Journal of Management"
+      }
+    ],
+    "container-title": [
+      "MIS Quarterly"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://misq.umn.edu/misq/article-pdf/23/2/145/4733/1_compeau.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://misq.umn.edu/misq/article-pdf/23/2/145/4733/1_compeau.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          25
+        ]
+      ],
+      "date-time": "2026-02-25T19:46:42Z",
+      "timestamp": 1772048802000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://misq.umn.edu/misq/article/23/2/145/1257/Social-Cognitive-Theory-and-Individual-Reactions"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1999,
+          6,
+          1
+        ]
+      ]
+    },
+    "references-count": 41,
+    "journal-issue": {
+      "issue": "2",
+      "published-online": {
+        "date-parts": [
+          [
+            1999,
+            6,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2307/249749",
+    "relation": {},
+    "ISSN": [
+      "0276-7783",
+      "2162-9730"
+    ],
+    "issn-type": [
+      {
+        "value": "0276-7783",
+        "type": "print"
+      },
+      {
+        "value": "2162-9730",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1999,
+          6,
+          1
+        ]
+      ]
+    }
+  }
+}

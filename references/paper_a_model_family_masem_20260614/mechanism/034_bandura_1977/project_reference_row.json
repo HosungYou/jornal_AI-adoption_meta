@@ -1,0 +1,9 @@
+{
+  "category": "mechanism",
+  "model_family": "self-efficacy theory",
+  "citation": "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change.",
+  "doi_or_url": "https://doi.org/10.1037/0033-295X.84.2.191",
+  "use_in_paper": "Foundational self-efficacy theory.",
+  "status": "core",
+  "note": "Use for SE mechanism."
+}

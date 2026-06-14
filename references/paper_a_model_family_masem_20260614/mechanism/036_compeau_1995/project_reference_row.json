@@ -1,0 +1,9 @@
+{
+  "category": "mechanism",
+  "model_family": "computer self-efficacy",
+  "citation": "Compeau, D. R., & Higgins, C. A. (1995). Computer self-efficacy: Development of a measure and initial test.",
+  "doi_or_url": "https://doi.org/10.2307/249688",
+  "use_in_paper": "Foundational computer self-efficacy measurement citation.",
+  "status": "core",
+  "note": "Use for SE construct definition."
+}

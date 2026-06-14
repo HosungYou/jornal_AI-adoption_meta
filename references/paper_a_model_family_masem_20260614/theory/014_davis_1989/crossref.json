@@ -1,0 +1,1164 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          14
+        ]
+      ],
+      "date-time": "2026-06-14T09:27:15Z",
+      "timestamp": 1781429235272,
+      "version": "3.54.1"
+    },
+    "reference-count": 98,
+    "publisher": "MIS Quarterly",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          1989,
+          9,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.2307/249008",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          4,
+          18
+        ]
+      ],
+      "date-time": "2006-04-18T05:05:35Z",
+      "timestamp": 1145336735000
+    },
+    "page": "319-340",
+    "source": "Crossref",
+    "is-referenced-by-count": 43810,
+    "title": [
+      "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology"
+    ],
+    "prefix": "10.25300",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Fred D.",
+        "family": "Davis",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Computer and Information Systems, Graduate School of Business Administration, University of Michigan, Ann Arbor, Michigan 48109"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "10933",
+    "published-online": {
+      "date-parts": [
+        [
+          1989,
+          9,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2025111913035703300_b1-6_davis",
+        "first-page": "231",
+        "article-title": "Decision Making and Decision Theory",
+        "volume-title": "The Handbook of Social Psychology",
+        "author": "Abelson",
+        "year": "1985",
+        "edition": "third"
+      },
+      {
+        "key": "2025111913035703300_b2-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "177",
+        "DOI": "10.1016/0001-6918(80)90030-X",
+        "article-title": "Attractiveness of Decision Rules",
+        "volume": "45",
+        "author": "Adelbratt",
+        "year": "1980",
+        "journal-title": "Acta Psychologica"
+      },
+      {
+        "issue": "6",
+        "key": "2025111913035703300_b3-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "556",
+        "DOI": "10.1145/358080.358095",
+        "article-title": "An Analysis of the Prototyping Approach to Information Systems Development",
+        "volume": "27",
+        "author": "Alavi",
+        "year": "1984",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "11",
+        "key": "2025111913035703300_b4-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "1309",
+        "DOI": "10.1287/mnsc.27.11.1309",
+        "article-title": "An Evolutionary Strategy for Implementing a Decision Support System",
+        "volume": "27",
+        "author": "Alavi",
+        "year": "1981",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913035703300_b5-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1146/annurev.ps.37.020186.000245",
+        "article-title": "Evolving Concepts of Test Validation",
+        "volume": "37",
+        "author": "Anastasi",
+        "year": "1986",
+        "journal-title": "Annual Review of Psychology"
+      },
+      {
+        "key": "2025111913035703300_b6-6_davis",
+        "author": "Anderson"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b7-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "122",
+        "DOI": "10.1037/0003-066X.37.2.122",
+        "article-title": "Self-Efficacy Mechanism in Human Agency",
+        "volume": "37",
+        "author": "Bandura",
+        "year": "1982",
+        "journal-title": "American Psychologist"
+      },
+      {
+        "issue": "5",
+        "key": "2025111913035703300_b8-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.1016/0378-7206(85)90050-3",
+        "article-title": "Change, Attitude to Change, and Decision Support System Success",
+        "volume": "9",
+        "author": "Barki",
+        "year": "1985",
+        "journal-title": "Information and Management"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b9-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "232",
+        "DOI": "10.1145/5666.5669",
+        "article-title": "An Empirical Study of the Impact of User Involvement on System Usage and Information Satisfaction",
+        "volume": "29",
+        "author": "Baroudi",
+        "year": "1986",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b10-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "439",
+        "DOI": "10.5465/amr.1978.4305717",
+        "article-title": "A Contingency Model for the Selection of Decision Strategies",
+        "volume": "3",
+        "author": "Beach",
+        "year": "1978",
+        "journal-title": "Academy of Management Review"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b11-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.2307/248881",
+        "article-title": "An Investigation of the Effectiveness of Color and Graphical Presentation Under Varying Time Constraints",
+        "volume": "10",
+        "author": "Benbasat",
+        "year": "1986",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "2025111913035703300_b12-6_davis",
+        "first-page": "72",
+        "article-title": "Human Factors Testing in the Design of Xerox’s 8010 ‘Star’ Office Workstation",
+        "author": "Bewley"
+      },
+      {
+        "key": "2025111913035703300_b13-6_davis",
+        "first-page": "80",
+        "article-title": "Reliability and Validity Assessment in Attitude Measurement",
+        "volume-title": "Attitude Measurement",
+        "author": "Bohmstedt",
+        "year": "1970"
+      },
+      {
+        "key": "2025111913035703300_b14-6_davis",
+        "first-page": "20",
+        "article-title": "The Puny Payoff from Office Computers",
+        "author": "Bowen",
+        "year": "1986",
+        "journal-title": "Fortune"
+      },
+      {
+        "key": "2025111913035703300_b15-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "224",
+        "DOI": "10.1147/sj.233.0224",
+        "article-title": "Ease of Use: A System Design Challenge",
+        "volume": "23",
+        "author": "Branscomb",
+        "year": "1984",
+        "journal-title": "IBM Systems Journal"
+      },
+      {
+        "issue": "9",
+        "key": "2025111913035703300_b16-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1037/h0046016",
+        "article-title": "Convergent and Discriminant Validation by the Multitrait-Multitmethod Matrix",
+        "volume": "56",
+        "author": "Campbell",
+        "year": "1959",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "5",
+        "key": "2025111913035703300_b17-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "293",
+        "DOI": "10.1037/h0020187",
+        "article-title": "Direction-of-Wording Effects in the Relationships Between Scales",
+        "volume": "68",
+        "author": "Campbell",
+        "year": "1967",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "2025111913035703300_b18-6_davis",
+        "volume-title": "The Psychology of Human-Computer Interaction",
+        "author": "Card",
+        "year": "1984"
+      },
+      {
+        "issue": "8",
+        "key": "2025111913035703300_b19-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "800",
+        "DOI": "10.1145/358198.358218",
+        "article-title": "Training Wheels in a User Interface",
+        "volume": "27",
+        "author": "Carroll",
+        "year": "1984",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b20-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "14",
+        "DOI": "10.1145/7885.7886",
+        "article-title": "Interface Design Issues for Advice-Giving Expert Systems",
+        "volume": "30",
+        "author": "Carroll",
+        "year": "1987",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b21-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "283",
+        "DOI": "10.1207/s15327051hci0103_3",
+        "article-title": "Exploring Exploring a Word Processor",
+        "author": "Carroll",
+        "year": "1985",
+        "journal-title": "Human-Computer Interaction"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b22-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1145/49108.1045604",
+        "article-title": "Fun",
+        "volume": "19",
+        "author": "Carroll",
+        "year": "1988",
+        "journal-title": "SIGCHI Bulletin"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b23-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "352",
+        "DOI": "10.1111/j.1540-5915.1987.tb01530.x",
+        "article-title": "Decision Support Systems for Ill-Structured Problems: An Empirical Study",
+        "volume": "18",
+        "author": "Cats-Baril",
+        "year": "1987",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b24-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1080/07421222.1986.11517755",
+        "article-title": "Organizational Factors Affecting the Success of End-User Computing",
+        "volume": "3",
+        "author": "Cheney",
+        "year": "1986",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "key": "2025111913035703300_b25-6_davis",
+        "first-page": "213",
+        "volume-title": "Development of an Instrument for Measuring User Satisfaction of the Human-Computer Interface",
+        "author": "Chin"
+      },
+      {
+        "key": "2025111913035703300_b26-6_davis",
+        "volume-title": "Applied Multiple Regression/Correlation Analysis for the Behavioral Sciences",
+        "author": "Cohen",
+        "year": "1975"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b27-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1016/0007-6813(84)90055-7",
+        "article-title": "Are There any Real Benefits from Office Automation?",
+        "author": "Curley",
+        "year": "1984",
+        "journal-title": "Business Horizons"
+      },
+      {
+        "key": "2025111913035703300_b28-6_davis",
+        "unstructured": "Davis, F.D.\n           “A Technology Acceptance Model for Empirically Testing New End-User Information Systems: Theory and Results,” doctoral dissertation, MIT Sloan School of Management, Cambridge, MA, 1986."
+      },
+      {
+        "issue": "8",
+        "key": "2025111913035703300_b29-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "982",
+        "DOI": "10.1287/mnsc.35.8.982",
+        "article-title": "User Acceptance of Computer Technology: A Comparison of Two Theoretical Models",
+        "volume": "35",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913035703300_b30-6_davis",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4135/9781412986212",
+        "volume-title": "The Logic of Causal Order",
+        "author": "Davis",
+        "year": "1985"
+      },
+      {
+        "key": "2025111913035703300_b31-6_davis",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-1-4613-4446-9",
+        "volume-title": "Intrinsic Motivation",
+        "author": "Deci",
+        "year": "1975"
+      },
+      {
+        "key": "2025111913035703300_b32-6_davis",
+        "doi-asserted-by": "crossref",
+        "unstructured": "DeSanctis, G.\n           “Expectancy Theory as an Explanation of Voluntary Use of a Decision Support System,” Psychological Reports (52), 1983, pp. 247-260.",
+        "DOI": "10.2466/pr0.1983.52.1.247"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b33-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1145/5465.5469",
+        "article-title": "Understanding the Effectiveness of Computer Graphics for Decision Support: A Cumulative Experimental Approach",
+        "volume": "29",
+        "author": "Dickson",
+        "year": "1986",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b34-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.2307/249287",
+        "article-title": "Managers, Computer Systems, and Productivity",
+        "volume": "5",
+        "author": "Edelmann",
+        "year": "1981",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "2025111913035703300_b35-6_davis",
+        "volume-title": "Belief, Attitude, Intention and Behavior: An Introduction to Theory and Research",
+        "author": "Fishbein",
+        "year": "1975"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b36-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.1111/j.1540-5915.1986.tb00230.x",
+        "article-title": "Organizational Context, User Involvement, and the Usefulness of Information Systems",
+        "volume": "17",
+        "author": "Franz",
+        "year": "1986",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b37-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.2307/248853",
+        "article-title": "Computer-Based Support for Group Problem Finding: An Empirical Investigation",
+        "volume": "12",
+        "author": "Gallupe",
+        "year": "1988",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b38-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "459",
+        "DOI": "10.1287/mnsc.27.4.459",
+        "article-title": "Early Diagnosis of MIS Implementation Failure: Promising Results and Unanswered Questions",
+        "volume": "27",
+        "author": "Ginzberg",
+        "year": "1981",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913035703300_b39-6_davis",
+        "first-page": "241246",
+        "volume-title": "User-Derived Impact Analysis as a Tool for Usability Engineering",
+        "author": "Good"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b40-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "229",
+        "DOI": "10.1145/214748.214758",
+        "article-title": "Functionality and Usability",
+        "volume": "30",
+        "author": "Goodwin",
+        "year": "1987",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b41-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1080/07421222.1986.11517756",
+        "article-title": "Capability Criteria for Marketing Decision Support Systems",
+        "volume": "3",
+        "author": "Goslar",
+        "year": "1986",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b42-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "295",
+        "DOI": "10.1145/2163.358100",
+        "article-title": "Composing letters with a Simulated Listening Typewriter",
+        "volume": "26",
+        "author": "Gould",
+        "year": "1983",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b43-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "300",
+        "DOI": "10.1145/3166.3170",
+        "article-title": "Designing for Usability: Key Principles and What Designers Think",
+        "volume": "28",
+        "author": "Gould",
+        "year": "1985",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "key": "2025111913035703300_b44-6_davis",
+        "first-page": "286",
+        "article-title": "Executives Rate Their PCs",
+        "author": "Greenberg",
+        "year": "1984",
+        "journal-title": "PC World"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b45-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1287/mnsc.27.1.33",
+        "article-title": "Profit Maximizing Perceptual Positions: An Integrated Theory for the Selection of Product Features and Price",
+        "volume": "27",
+        "author": "Hauser",
+        "year": "1981",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b46-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1037/0021-9010.72.2.307",
+        "article-title": "Role of Efficacy Expectations in Predicting the Decision to Use Advanced Technologies: The Case of Computers",
+        "volume": "72",
+        "author": "Hill",
+        "year": "1987",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "10",
+        "key": "2025111913035703300_b47-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "785",
+        "DOI": "10.1145/358413.358430",
+        "article-title": "The measurement of User Information Satisfaction",
+        "volume": "26",
+        "author": "Ives",
+        "year": "1983",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b48-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1287/mnsc.35.3.285",
+        "article-title": "The Effect of Task Demands and Graphical Format on Information Processing Strategies",
+        "volume": "35",
+        "author": "Jarvenpaa",
+        "year": "1989",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b49-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1108/eb022628",
+        "article-title": "User Needs Workshops: A New Approach to Anticipating User Needs for Advanced Office Systems",
+        "author": "Johansen",
+        "year": "1984",
+        "journal-title": "Office Technology and People"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b50-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "395",
+        "DOI": "10.1287/mnsc.31.4.395",
+        "article-title": "Effort and Accuracy in Choice",
+        "volume": "31",
+        "author": "Johnson",
+        "year": "1985",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913035703300_b51-6_davis",
+        "volume-title": "Econometric Methods",
+        "author": "Johnston",
+        "year": "1972"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b52-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "177",
+        "DOI": "10.2307/249360",
+        "article-title": "A Decision Aid for Selecting Among Information Systems Alternatives",
+        "volume": "11",
+        "author": "Klein",
+        "year": "1987",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "2025111913035703300_b53-6_davis",
+        "article-title": "The Cognitive Implications of Information Displays in Computer-Supported Decision-Making",
+        "volume-title": "Graduate School of Business, Department of Management Working Paper 87/88-4-8",
+        "author": "Kleinmuntz",
+        "year": "1988"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b54-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "135143",
+        "DOI": "10.1016/0305-0483(87)90028-4",
+        "article-title": "Evidence and Principles of Functional and Dysfunctional DSS",
+        "volume": "15",
+        "author": "Kottemann",
+        "year": "1987",
+        "journal-title": "OMEGA"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b55-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "121",
+        "DOI": "10.1111/j.1540-5915.1980.tb01130.x",
+        "article-title": "Perceived Usefulness of Information: A Psychometric Examination",
+        "volume": "11",
+        "author": "Larcker",
+        "year": "1980",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "8",
+        "key": "2025111913035703300_b56-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "908",
+        "DOI": "10.1287/mnsc.21.8.908",
+        "article-title": "Performance and the Use of an Information System",
+        "volume": "21",
+        "author": "Lucas",
+        "year": "1975",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913035703300_b57-6_davis",
+        "first-page": "333",
+        "article-title": "Toward a Theory of Intrinsically Motivating Instruction",
+        "volume": "4",
+        "author": "Malone",
+        "year": "1981",
+        "journal-title": "Cognitive Science"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b58-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "158",
+        "DOI": "10.2307/2683167",
+        "article-title": "Detecting Multicollinearity",
+        "volume": "36",
+        "author": "Mansfield",
+        "year": "1982",
+        "journal-title": "The American Statistician"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b59-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "428",
+        "DOI": "10.1145/42404.42408",
+        "article-title": "Cost/Benefit Analysis for Incorporating Human Factors in the Software Lifecycle",
+        "volume": "31",
+        "author": "Mantel",
+        "year": "1988",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "6",
+        "key": "2025111913035703300_b60-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "498",
+        "DOI": "10.1145/214762.214764",
+        "article-title": "Power Over Users: It’s Exercise by System Professionals",
+        "volume": "30",
+        "author": "Markus",
+        "year": "1987",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b61-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.1287/mnsc.28.1.17",
+        "article-title": "An Experimental Study of the Impact of Judgement-Based Marketing Models",
+        "volume": "28",
+        "author": "McIntyre",
+        "year": "1982",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b62-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "547",
+        "DOI": "10.2307/248985",
+        "article-title": "Training End Users: An Exploratory Study",
+        "volume": "11",
+        "author": "Nelson",
+        "year": "1987",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "2025111913035703300_b63-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "469",
+        "DOI": "10.1016/S0020-7373(81)80054-5",
+        "article-title": "Why Interactive Computer Systems Are Sometimes Not Used by People Who Might Benefit from Them",
+        "volume": "15",
+        "author": "Nickerson",
+        "year": "1981",
+        "journal-title": "International Journal of Man-Machine Studies"
+      },
+      {
+        "key": "2025111913035703300_b64-6_davis",
+        "first-page": "110",
+        "volume-title": "Design Principles for Human-Computer Interfaces",
+        "author": "Norman"
+      },
+      {
+        "key": "2025111913035703300_b65-6_davis",
+        "volume-title": "Psychometric Theory",
+        "author": "Nunnally",
+        "year": "1978"
+      },
+      {
+        "key": "2025111913035703300_b66-6_davis",
+        "volume-title": "End-User Computing: Management, Applications, and Technology",
+        "author": "Panko",
+        "year": "1988"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b67-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "382402",
+        "DOI": "10.1037/0033-2909.92.2.382",
+        "article-title": "Contingent Decision Behavior",
+        "volume": "92",
+        "author": "Payne",
+        "year": "1982",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "2025111913035703300_b68-6_davis",
+        "volume-title": "Organizations and Organization Theory",
+        "author": "Pfeffer",
+        "year": "1982"
+      },
+      {
+        "key": "2025111913035703300_b69-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "358",
+        "DOI": "10.1016/0022-0531(75)90006-X",
+        "article-title": "On the Allocation of Effort",
+        "volume": "10",
+        "author": "Radner",
+        "year": "1975",
+        "journal-title": "Journal of Economic Theory"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b70-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1145/2163.2164",
+        "article-title": "The Evaluation of Text Editors: Methodology and Empirical Results",
+        "volume": "26",
+        "author": "Roberts",
+        "year": "1983",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b71-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "527538",
+        "DOI": "10.2307/255742",
+        "article-title": "User Attitudes and Management Information System Use",
+        "volume": "22",
+        "author": "Robey",
+        "year": "1979",
+        "journal-title": "Academy of Management Journal"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b72-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "73",
+        "DOI": "10.1287/mnsc.28.1.73",
+        "article-title": "User Involvement in Information System Development: A Conflict Model and Empirical Test",
+        "volume": "28",
+        "author": "Robey",
+        "year": "1982",
+        "journal-title": "Management Science"
+      },
+      {
+        "key": "2025111913035703300_b73-6_davis",
+        "volume-title": "Communication of Innovations: A Cross-Cultural Approach",
+        "author": "Rogers",
+        "year": "1971"
+      },
+      {
+        "issue": "7",
+        "key": "2025111913035703300_b74-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "594",
+        "DOI": "10.1145/6138.6140",
+        "article-title": "What Makes Users Happy?",
+        "volume": "29",
+        "author": "Rushinek",
+        "year": "1986",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "key": "2025111913035703300_b75-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1002/asi.4630260604",
+        "article-title": "Relevance: A Review of and a Framework for the Thinking on the Notion in Information Science",
+        "author": "Saracevic",
+        "year": "1975",
+        "journal-title": "Journal of the American Society for Information Science"
+      },
+      {
+        "key": "2025111913035703300_b76-6_davis",
+        "volume-title": "Organizational Psychology",
+        "author": "Schein",
+        "year": "1980",
+        "edition": "third"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b77-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "577",
+        "DOI": "10.2307/255792",
+        "article-title": "The Management Information System User: An Exploratory Behavioral Analysis",
+        "volume": "19",
+        "author": "Schewe",
+        "year": "1976",
+        "journal-title": "Academy of Management Journal"
+      },
+      {
+        "key": "2025111913035703300_b78-6_davis",
+        "first-page": "153",
+        "article-title": "Implementation and Organizational Validity: An Empirical Investigation",
+        "volume-title": "Implementing Operations Research / Management Science",
+        "author": "Schultz",
+        "year": "1975"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b79-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "139",
+        "DOI": "10.1287/mnsc.34.2.139",
+        "article-title": "Decision Support System Effectiveness: A Review and Empirical Test",
+        "volume": "34",
+        "author": "Sharda",
+        "year": "1988",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b80-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "325",
+        "DOI": "10.1086/209170",
+        "article-title": "The Theory of Reasoned Action: A Meta-Analysis of Past Research with Recommendations for Modifications and Future Research",
+        "volume": "15",
+        "author": "Sheppard",
+        "year": "1988",
+        "journal-title": "Journal of Consumer Research"
+      },
+      {
+        "key": "2025111913035703300_b81-6_davis",
+        "first-page": "190",
+        "article-title": "The Own Categories Approach in Attitude Research",
+        "volume-title": "Readings in Attitude Theory and Measurement",
+        "author": "Shérif",
+        "year": "1967"
+      },
+      {
+        "key": "2025111913035703300_b82-6_davis",
+        "volume-title": "Designing the User Interface",
+        "author": "Shneiderman",
+        "year": "1987"
+      },
+      {
+        "key": "2025111913035703300_b83-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "383",
+        "DOI": "10.1086/267923",
+        "article-title": "Response Set and Measurement of Self-Designated Opinion Leadership",
+        "volume": "35",
+        "author": "Silk",
+        "year": "1971",
+        "journal-title": "Public Opinion Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "2025111913035703300_b84-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "243253",
+        "DOI": "10.2307/248951",
+        "article-title": "Alternative Measures of System Effectiveness: Associations and Implications",
+        "volume": "9",
+        "author": "Srinivasan",
+        "year": "1985",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b85-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "178188",
+        "DOI": "10.1287/mnsc.21.2.178",
+        "article-title": "Management Information Systems: Appreciation and Involvement",
+        "volume": "21",
+        "author": "Swanson",
+        "year": "1974",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "2",
+        "key": "2025111913035703300_b86-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "157",
+        "DOI": "10.1016/0305-0483(82)90050-0",
+        "article-title": "Measuring User Attitudes in MIS Research: A Review",
+        "volume": "10",
+        "author": "Swanson",
+        "year": "1982",
+        "journal-title": "OMEGA"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b87-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "131",
+        "DOI": "10.1111/j.1540-5915.1987.tb01508.x",
+        "article-title": "Information Channel Disposition and Use",
+        "volume": "18",
+        "author": "Swanson",
+        "year": "1987",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "key": "2025111913035703300_b88-6_davis",
+        "volume-title": "Information System Implementation: Bridging the Gap Between Design and Utilization",
+        "author": "Swanson",
+        "year": "1988"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b89-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1109/TEM.1982.6447463",
+        "article-title": "Innovation Characteristics and Innovation Adoption-Implementation: A Meta-Analysis of Findings",
+        "volume": "29",
+        "author": "Tornatzky",
+        "year": "1982",
+        "journal-title": "IEEE Transactions on Engineering Management"
+      },
+      {
+        "key": "2025111913035703300_b90-6_davis",
+        "volume-title": "Interpersonal Behavior",
+        "author": "Triandis",
+        "year": "1977"
+      },
+      {
+        "key": "2025111913035703300_b91-6_davis",
+        "first-page": "253",
+        "article-title": "A Study of OR/MS Implementation as a Social Change Process",
+        "volume-title": "Implementing Operations Research/Management Science",
+        "author": "Vertinsky",
+        "year": "1975"
+      },
+      {
+        "key": "2025111913035703300_b92-6_davis",
+        "volume-title": "Work and Motivation",
+        "author": "Vroom",
+        "year": "1964"
+      },
+      {
+        "key": "2025111913035703300_b93-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.1109/MCG.1985.276522",
+        "article-title": "Interactive Recognition of Handprinter Characters for Computer Input",
+        "author": "Ward",
+        "year": "1985",
+        "journal-title": "IEEE Computer Graphics and Applications"
+      },
+      {
+        "key": "2025111913035703300_b94-6_davis",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1016/0022-1031(85)90017-4",
+        "article-title": "Disentangling Behavioral Intention and Behavioral Expectation",
+        "volume": "21",
+        "author": "Warshaw",
+        "year": "1985",
+        "journal-title": "Journal of Experimental Social Psychology"
+      },
+      {
+        "key": "2025111913035703300_b95-6_davis",
+        "first-page": "281",
+        "article-title": "Attribution, Emotion, and Action",
+        "volume-title": "Handbook of Motivation and Cognition",
+        "author": "Weiner",
+        "year": "1986"
+      },
+      {
+        "key": "2025111913035703300_b96-6_davis",
+        "first-page": "185",
+        "article-title": "User Performance With Command, Menu, and Iconic Interfaces",
+        "author": "Whiteside"
+      },
+      {
+        "issue": "1",
+        "key": "2025111913035703300_b97-6_davis",
+        "first-page": "429433",
+        "article-title": "Consumer Choice Strategies: Simplifying vs. Optimizing",
+        "volume": "14",
+        "author": "Wright",
+        "year": "1975",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "issue": "4",
+        "key": "2025111913035703300_b98-6_davis",
+        "first-page": "100",
+        "article-title": "The Lonely Micro",
+        "volume": "30",
+        "author": "Young",
+        "year": "1984",
+        "journal-title": "Datamation"
+      }
+    ],
+    "container-title": [
+      "MIS Quarterly"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://misq.umn.edu/misq/article-pdf/13/3/319/903/6_davis.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://misq.umn.edu/misq/article-pdf/13/3/319/903/6_davis.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          25
+        ]
+      ],
+      "date-time": "2026-02-25T19:46:24Z",
+      "timestamp": 1772048784000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://misq.umn.edu/misq/article/13/3/319/191/Perceived-Usefulness-Perceived-Ease-of-Use-and"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1989,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 98,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            1989,
+            9,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1989,
+            9,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2307/249008",
+    "relation": {},
+    "ISSN": [
+      "0276-7783",
+      "2162-9730"
+    ],
+    "issn-type": [
+      {
+        "value": "0276-7783",
+        "type": "print"
+      },
+      {
+        "value": "2162-9730",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1989,
+          9,
+          1
+        ]
+      ]
+    }
+  }
+}

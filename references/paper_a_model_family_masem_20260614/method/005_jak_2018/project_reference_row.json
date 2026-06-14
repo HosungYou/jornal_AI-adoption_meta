@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "MASEM missingness",
+  "citation": "Jak, S., & Cheung, M. W.-L. (2018). Accounting for missing correlation coefficients in fixed-effects MASEM.",
+  "doi_or_url": "https://doi.org/10.1080/00273171.2017.1375886",
+  "use_in_paper": "Key citation for missing coefficients and sparse matrices.",
+  "status": "core",
+  "note": "Use to justify caution with partial-matrix MASEM."
+}

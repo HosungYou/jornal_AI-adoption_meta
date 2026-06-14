@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "MASEM general",
+  "citation": "Cheung, M. W.-L., & Chan, W. (2005). Meta-analytic structural equation modeling: A two-stage approach.",
+  "doi_or_url": "https://doi.org/10.1037/1082-989X.10.1.40",
+  "use_in_paper": "Foundational citation for two-stage MASEM.",
+  "status": "core",
+  "note": "Use for Methods paragraph defining TSSEM/MASEM."
+}

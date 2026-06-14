@@ -1,0 +1,1325 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          14
+        ]
+      ],
+      "date-time": "2026-06-14T09:27:14Z",
+      "timestamp": 1781429234477,
+      "version": "3.54.1"
+    },
+    "reference-count": 102,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2019-01-01T00:00:00Z",
+          "timestamp": 1546300800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "FINNUT Young Research Talent Project",
+        "award": [
+          "NFR-254744"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "NFR-254744"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Computers &amp; Education"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.compedu.2018.09.009",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2018-09-17T22:32:02Z",
+      "timestamp": 1537223522000
+    },
+    "page": "13-35",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1362,
+    "special_numbering": "C",
+    "title": [
+      "The technology acceptance model (TAM): A meta-analytic structural equation modeling approach to explaining teachers’ adoption of digital technology in education"
+    ],
+    "prefix": "10.1016",
+    "volume": "128",
+    "author": [
+      {
+        "given": "Ronny",
+        "family": "Scherer",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fazilat",
+        "family": "Siddiq",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jo",
+        "family": "Tondeur",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib1",
+        "doi-asserted-by": "crossref",
+        "first-page": "238",
+        "DOI": "10.1016/j.chb.2015.11.036",
+        "article-title": "Developing a general extended technology acceptance model for E-learning (GETAMEL) by analysing commonly used external factors",
+        "volume": "56",
+        "author": "Abdullah",
+        "year": "2016",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "179",
+        "DOI": "10.1016/0749-5978(91)90020-T",
+        "article-title": "The theory of planned behavior",
+        "volume": "50",
+        "author": "Ajzen",
+        "year": "1991",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "389",
+        "DOI": "10.1016/j.compedu.2018.06.008",
+        "article-title": "Technology acceptance model in M-learning context: A systematic review",
+        "volume": "125",
+        "author": "Al-Emran",
+        "year": "2018",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1002/jrsm.1126",
+        "article-title": "Inaccuracy of regression results in replacing bivariate correlations",
+        "volume": "6",
+        "author": "Aloe",
+        "year": "2015",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1016/j.chb.2004.06.002",
+        "article-title": "Teachers' beliefs about learning from multimedia",
+        "volume": "22",
+        "author": "Antonietti",
+        "year": "2006",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1037/0033-295X.84.2.191",
+        "article-title": "Self-efficacy: Toward a unifying theory of behavioral change",
+        "volume": "84",
+        "author": "Bandura",
+        "year": "1977",
+        "journal-title": "Psychological Review"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1504/IJTEL.2017.084084",
+        "article-title": "The relationship among pre-service teachers computer competence, attitude towards computer-assisted education, and intention of technology acceptance",
+        "volume": "9",
+        "author": "Baturay",
+        "year": "2017",
+        "journal-title": "International Journal of Technology Enhanced Learning"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.compedu.2018.09.009_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "930",
+        "DOI": "10.1080/10494820.2016.1232277",
+        "article-title": "A model for preservice teachers' intentions to use ICT in future lessons",
+        "volume": "25",
+        "author": "Baydas",
+        "year": "2017",
+        "journal-title": "Interactive Learning Environments"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib9",
+        "series-title": "The role of international large-scale assessments: Perspectives from technology, economy, and educational research",
+        "first-page": "25",
+        "article-title": "Technologies in large-scale assessments: New directions, challenges, and opportunities",
+        "author": "Beller",
+        "year": "2013"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib10",
+        "first-page": "200",
+        "article-title": "Administrator insights and reflections: Technology integration in schools",
+        "volume": "17",
+        "author": "Berrett",
+        "year": "2012",
+        "journal-title": "The Qualitative Report"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib11",
+        "series-title": "Handbook of research on educational communications and technology",
+        "first-page": "817",
+        "article-title": "Technology integration",
+        "author": "Bishop",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib12",
+        "series-title": "Introduction to meta-analysis",
+        "author": "Borenstein",
+        "year": "2009"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.compedu.2018.09.009_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "706",
+        "DOI": "10.1016/j.im.2006.03.007",
+        "article-title": "The mediation of external variables in the technology acceptance model",
+        "volume": "43",
+        "author": "Burton-Jones",
+        "year": "2006",
+        "journal-title": "Information & Management"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib14",
+        "series-title": "Applied meta-analysis for social science research",
+        "author": "Card",
+        "year": "2015"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1080/10705510902751291",
+        "article-title": "Constructing approximate confidence intervals for parameters with structural equation models",
+        "volume": "16",
+        "author": "Cheung",
+        "year": "2009",
+        "journal-title": "Structural Equation Modeling: A Multidisciplinary Journal"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.3758/s13428-013-0361-y",
+        "article-title": "Fixed- and random-effects meta-analytic structural equation modeling: Examples and analyses in R",
+        "volume": "46",
+        "author": "Cheung",
+        "year": "2014",
+        "journal-title": "Behavior Research Methods"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib17",
+        "series-title": "Meta-analysis: A structural equation modeling approach",
+        "author": "Cheung",
+        "year": "2015"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1037/1082-989X.10.1.40",
+        "article-title": "Meta-analytic structural equation modeling: A two-stage approach",
+        "volume": "10",
+        "author": "Cheung",
+        "year": "2005",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "140",
+        "DOI": "10.1002/jrsm.1166",
+        "article-title": "Random-effects models for meta-analytic structural equation modeling: Review, issues, and illustrations",
+        "volume": "7",
+        "author": "Cheung",
+        "year": "2016",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "691",
+        "DOI": "10.2466/PR0.99.3.691-703",
+        "article-title": "Test of the technology acceptance model for a web-based information system in a Hong Kong Chinese sample",
+        "volume": "99",
+        "author": "Cheung",
+        "year": "2006",
+        "journal-title": "Psychological Reports"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "360",
+        "DOI": "10.2307/3151463",
+        "article-title": "Research design effects on the reliability of rating scales: A meta-analysis",
+        "volume": "21",
+        "author": "Churchill",
+        "year": "1984",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.2307/249688",
+        "article-title": "Computer self-efficacy: Development of a measure and initial test",
+        "volume": "19",
+        "author": "Compeau",
+        "year": "1995",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "631",
+        "DOI": "10.1016/j.chb.2017.04.059",
+        "article-title": "Interdisciplinary research agenda in support of assessment of collaborative problem solving: Lessons learned from developing a collaborative science assessment prototype",
+        "volume": "76",
+        "author": "von Davier",
+        "year": "2017",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib25",
+        "series-title": "A technology acceptance model for empirically testing new end-user information systems: Theory and results. (PhD)",
+        "author": "Davis",
+        "year": "1985"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.2307/249008",
+        "article-title": "Perceived usefulness, perceived ease of use, and user acceptance of information technology",
+        "volume": "13",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1111/j.0006-341X.2000.00455.x",
+        "article-title": "Trim and fill: A simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis",
+        "volume": "56",
+        "author": "Duval",
+        "year": "2000",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib29",
+        "first-page": "65",
+        "article-title": "A theory of reasoned action: Some applications and implications",
+        "volume": "27",
+        "author": "Fishbein",
+        "year": "1979",
+        "journal-title": "Nebraska Symposium on Motivation"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib30",
+        "series-title": "Belief, attitude, intention, and behavior: An introduction to theory and research",
+        "author": "Fishbein",
+        "year": "1975"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "834",
+        "DOI": "10.3102/0034654317710096",
+        "article-title": "Changing a generation's way of thinking: Teaching computational thinking through programming",
+        "volume": "87",
+        "author": "Flórez",
+        "year": "2017",
+        "journal-title": "Review of Educational Research"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib32",
+        "series-title": "Preparing for life in a digital age - the IEA international computer and information literacy study international report",
+        "author": "Fraillon",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib34",
+        "volume": "Vol. 4",
+        "author": "Higgins",
+        "year": "2011"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.compedu.2018.09.009_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "892",
+        "DOI": "10.1177/2167702614553789",
+        "article-title": "The structure of cognitive vulnerabilities to depression and anxiety: Evidence for a common core etiologic process based on a meta-analytic review",
+        "volume": "3",
+        "author": "Hong",
+        "year": "2015",
+        "journal-title": "Clinical Psychological Science"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib36",
+        "doi-asserted-by": "crossref",
+        "first-page": "128",
+        "DOI": "10.1016/j.ijinfomgt.2010.07.003",
+        "article-title": "The intellectual development of the technology acceptance model: A co-citation analysis",
+        "volume": "31",
+        "author": "Hsiao",
+        "year": "2011",
+        "journal-title": "International Journal of Information Management"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.compedu.2018.09.009_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1287",
+        "DOI": "10.1080/09588221.2016.1278024",
+        "article-title": "Examining EFL teachers' technological pedagogical content knowledge and the adoption of mobile-assisted language learning: A partial least square approach",
+        "volume": "29",
+        "author": "Hsu",
+        "year": "2016",
+        "journal-title": "Computer Assisted Language Learning"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib38",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1080/10705519909540118",
+        "article-title": "Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives",
+        "volume": "6",
+        "author": "Hu",
+        "year": "1999",
+        "journal-title": "Structural Equation Modeling: A Multidisciplinary Journal"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib39",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.11113/jt.v69.3101",
+        "article-title": "A review of technology acceptance studies in the field of education",
+        "volume": "69",
+        "author": "Imtiaz",
+        "year": "2014",
+        "journal-title": "Jurnal Teknologi"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib40",
+        "series-title": "Meta-analytic structural equation modelling",
+        "author": "Jak",
+        "year": "2015"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib41",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1111/jedm.12000",
+        "article-title": "Validating the interpretations and uses of test scores",
+        "volume": "50",
+        "author": "Kane",
+        "year": "2013",
+        "journal-title": "Journal of Educational Measurement"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib42",
+        "doi-asserted-by": "crossref",
+        "first-page": "531",
+        "DOI": "10.1080/10705511.2014.937791",
+        "article-title": "Investigating the sensitivity of goodness-of-fit indices to detect measurement invariance in a bifactor model",
+        "volume": "22",
+        "author": "Khojasteh",
+        "year": "2015",
+        "journal-title": "Structural Equation Modeling: A Multidisciplinary Journal"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.compedu.2018.09.009_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "740",
+        "DOI": "10.1016/j.im.2006.05.003",
+        "article-title": "A meta-analysis of the technology acceptance model",
+        "volume": "43",
+        "author": "King",
+        "year": "2006",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "23",
+        "key": "10.1016/j.compedu.2018.09.009_bib44",
+        "first-page": "1323",
+        "article-title": "Measuring technology acceptance level of Turkish pre-service English teachers by using technology acceptance model",
+        "volume": "9",
+        "author": "Kirmizi",
+        "year": "2014",
+        "journal-title": "Educational Research and Reviews"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib45",
+        "series-title": "Handbook of structural equation modeling",
+        "first-page": "111",
+        "article-title": "Assumptions in structural equation modeling",
+        "author": "Kline",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib46",
+        "series-title": "Principles and practice of structural equation modeling",
+        "author": "Kline",
+        "year": "2016"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib47",
+        "first-page": "60",
+        "article-title": "What Is technological pedagogical content knowledge?",
+        "volume": "9",
+        "author": "Koehler",
+        "year": "2009",
+        "journal-title": "Contemporary Issues in Technology and Teacher Education (CITE)"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib48",
+        "series-title": "Handbook of research on educational communications and technology",
+        "first-page": "101",
+        "article-title": "The technological pedagogical content knowledge framework",
+        "author": "Koehler",
+        "year": "2014"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib49",
+        "doi-asserted-by": "crossref",
+        "first-page": "575",
+        "DOI": "10.3102/0034654307309921",
+        "article-title": "Professional development in integrating technology into teaching and learning: Knowns, unknowns, and ways to pursue better questions and answers",
+        "volume": "77",
+        "author": "Lawless",
+        "year": "2007",
+        "journal-title": "Review of Educational Research"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib50",
+        "doi-asserted-by": "crossref",
+        "first-page": "752",
+        "DOI": "10.17705/1CAIS.01250",
+        "article-title": "The technology acceptance model: Past, present, and future",
+        "volume": "12",
+        "author": "Lee",
+        "year": "2003",
+        "journal-title": "Communications of the Association for Information Systems"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1016/S0378-7206(01)00143-4",
+        "article-title": "Why do people use information technology? A critical review of the technology acceptance model",
+        "volume": "40",
+        "author": "Legris",
+        "year": "2003",
+        "journal-title": "Information & Management"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib52",
+        "series-title": "Longitudinal structural equation modeling",
+        "author": "Little",
+        "year": "2013"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib53",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.3860/taper.v18i2.1327",
+        "article-title": "Investigating the technology acceptance among student teachers in Malaysia: An application of the Technology Acceptance Model (TAM)",
+        "volume": "18",
+        "author": "Luan",
+        "year": "2009",
+        "journal-title": "Asia-Pacific Education Researcher"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib54",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1007/s10209-014-0348-1",
+        "article-title": "Technology acceptance model: A literature review from 1986 to 2013",
+        "volume": "14",
+        "author": "Marangunić",
+        "year": "2015",
+        "journal-title": "Universal Access in the Information Society"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib55",
+        "article-title": "Goodness of fit evaluation in structural equation modeling",
+        "volume": "Vols. 275–340",
+        "author": "Marsh",
+        "year": "2005"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib56",
+        "doi-asserted-by": "crossref",
+        "first-page": "320",
+        "DOI": "10.1207/s15328007sem1103_2",
+        "article-title": "In search of golden rules: Comment on hypothesis-testing approaches to setting cutoff values for fit indexes and dangers in overgeneralizing Hu and bentler's (1999) findings",
+        "volume": "11",
+        "author": "Marsh",
+        "year": "2004",
+        "journal-title": "Structural Equation Modeling: A Multidisciplinary Journal"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib57",
+        "article-title": "Toward an understanding of preservice English as a foreign language teachers' acceptance of computer-assisted language learning 2.0 in the people's republic of China",
+        "author": "Mei",
+        "year": "2017",
+        "journal-title": "Journal of Educational Computing Research"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib58",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.1002/jrsm.47",
+        "article-title": "Conclusions from meta-analytic structural equation models generally do not change due to corrections for study artifacts",
+        "volume": "2",
+        "author": "Michel",
+        "year": "2011",
+        "journal-title": "Research Synthesis Methods"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.compedu.2018.09.009_bib59",
+        "doi-asserted-by": "crossref",
+        "first-page": "1017",
+        "DOI": "10.1111/j.1467-9620.2006.00684.x",
+        "article-title": "Technological pedagogical content knowledge: A framework for teacher knowledge",
+        "volume": "108",
+        "author": "Mishra",
+        "year": "2006",
+        "journal-title": "Teachers College Record"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.compedu.2018.09.009_bib60",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1371/journal.pmed.1000097",
+        "article-title": "Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement",
+        "volume": "6",
+        "author": "Moher",
+        "year": "2009",
+        "journal-title": "PLoS Medicine"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.compedu.2018.09.009_bib61",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1080/10447318.2012.711990",
+        "article-title": "Acceptance of assistive technology by special education teachers: A structural equation model approach",
+        "volume": "29",
+        "author": "Nam",
+        "year": "2013",
+        "journal-title": "International Journal of Human-Computer Interaction"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib62",
+        "doi-asserted-by": "crossref",
+        "first-page": "384",
+        "DOI": "10.1037/bul0000093",
+        "article-title": "The structure of common emotion regulation strategies: A meta-analytic examination",
+        "volume": "143",
+        "author": "Naragon-Gainey",
+        "year": "2017",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "Supplement C",
+        "key": "10.1016/j.compedu.2018.09.009_bib63",
+        "doi-asserted-by": "crossref",
+        "first-page": "299",
+        "DOI": "10.1016/j.chb.2014.02.052",
+        "article-title": "When technology acceptance models won't work: Non-significant intention-behavior effects",
+        "volume": "34",
+        "author": "Nistor",
+        "year": "2014",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.compedu.2018.09.009_bib64",
+        "doi-asserted-by": "crossref",
+        "first-page": "E142",
+        "DOI": "10.1111/j.1467-8535.2010.01109.x",
+        "article-title": "Reconsidering the role of attitude in the TAM: An answer to Teo (2009)",
+        "volume": "41",
+        "author": "Nistor",
+        "year": "2010",
+        "journal-title": "British Journal of Educational Technology"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib65",
+        "series-title": "Students, computers and learning: Making the connection",
+        "author": "OECD",
+        "year": "2015"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib66",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1037/0021-9010.90.1.175",
+        "article-title": "On the use of beta coefficients in meta-analysis",
+        "volume": "90",
+        "author": "Peterson",
+        "year": "2005",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib67",
+        "doi-asserted-by": "crossref",
+        "first-page": "568",
+        "DOI": "10.1016/j.chb.2010.10.005",
+        "article-title": "Predicting secondary school teachers' acceptance and use of a digital learning environment: A cross-sectional study",
+        "volume": "27",
+        "author": "Pynoo",
+        "year": "2011",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib68",
+        "doi-asserted-by": "crossref",
+        "first-page": "1308",
+        "DOI": "10.1016/j.compedu.2011.12.026",
+        "article-title": "Teachers' acceptance and use of an educational portal",
+        "volume": "58",
+        "author": "Pynoo",
+        "year": "2012",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib69",
+        "doi-asserted-by": "crossref",
+        "first-page": "338",
+        "DOI": "10.1080/10705511.2013.769396",
+        "article-title": "Meta-analysis of scale reliability using latent variable modeling",
+        "volume": "20",
+        "author": "Raykov",
+        "year": "2013",
+        "journal-title": "Structural Equation Modeling: A Multidisciplinary Journal"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib70",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.18576/ijlms/050101",
+        "article-title": "Technology acceptance model of online learning management systems in higher education: A meta-analytic structural equation model",
+        "volume": "5",
+        "author": "Ritter",
+        "year": "2017",
+        "journal-title": "International Journal of Learning Management Systems"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib71",
+        "first-page": "3",
+        "article-title": "Teaching teachers for the future: How, what, why, and what next?",
+        "volume": "27",
+        "author": "Romeo",
+        "year": "2013",
+        "journal-title": "Australian Educational Computing"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib72",
+        "doi-asserted-by": "crossref",
+        "first-page": "464",
+        "DOI": "10.1111/j.0014-3820.2005.tb01004.x",
+        "article-title": "The file-drawer problem revisited: A general weighted method for calculating fail-safe numbers in meta-analysis",
+        "volume": "59",
+        "author": "Rosenberg",
+        "year": "2005",
+        "journal-title": "Evolution"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib73",
+        "doi-asserted-by": "crossref",
+        "first-page": "90",
+        "DOI": "10.1016/j.im.2006.10.007",
+        "article-title": "A meta-analysis of the technology acceptance model: Investigating subjective norm and moderation effects",
+        "volume": "44",
+        "author": "Schepers",
+        "year": "2007",
+        "journal-title": "Information & Management"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib74",
+        "doi-asserted-by": "crossref",
+        "first-page": "48",
+        "DOI": "10.1016/j.chb.2015.06.038",
+        "article-title": "Revisiting teachers' computer self-efficacy: A differentiated view on gender differences",
+        "volume": "53",
+        "author": "Scherer",
+        "year": "2015",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib75",
+        "doi-asserted-by": "crossref",
+        "first-page": "202",
+        "DOI": "10.1016/j.compedu.2015.05.005",
+        "article-title": "Becoming more specific: Measuring and modeling teachers' perceived usefulness of ICT in the context of teaching and learning",
+        "volume": "88",
+        "author": "Scherer",
+        "year": "2015",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib76",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.chb.2017.11.003",
+        "article-title": "The importance of attitudes toward technology for pre-service teachers' technological, pedagogical, and content knowledge: Comparing structural equation modeling approaches",
+        "author": "Scherer",
+        "year": "2018",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib77",
+        "series-title": "Methods of meta-analysis: Correcting error and bias in research findings",
+        "author": "Schmidt",
+        "year": "2014"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib78",
+        "doi-asserted-by": "crossref",
+        "first-page": "600",
+        "DOI": "10.14742/ajet.940",
+        "article-title": "Analysis of the technology acceptance model in examining students' behavioural intention to use an e-portfolio system",
+        "volume": "27",
+        "author": "Shroff",
+        "year": "2011",
+        "journal-title": "Australasian Journal of Educational Technology"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.compedu.2018.09.009_bib79",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1111/jcal.12172",
+        "article-title": "Review of computer-based assessment for learning in elementary and secondary education",
+        "volume": "33",
+        "author": "Shute",
+        "year": "2017",
+        "journal-title": "Journal of Computer Assisted Learning"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib80",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1016/j.edurev.2016.05.002",
+        "article-title": "Taking a future perspective by learning from the past – a systematic review of assessment instruments that aim to measure primary and secondary school students' ICT literacy",
+        "volume": "19",
+        "author": "Siddiq",
+        "year": "2016",
+        "journal-title": "Educational Research Review"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib81",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.compedu.2015.10.006",
+        "article-title": "Teachers' emphasis on developing students' digital information and communication skills (TEDDICS): A new construct in 21st century education",
+        "volume": "92–93",
+        "author": "Siddiq",
+        "year": "2016",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib82",
+        "doi-asserted-by": "crossref",
+        "first-page": "534",
+        "DOI": "10.1037/a0033242",
+        "article-title": "P-curve: A key to the file-drawer",
+        "volume": "143",
+        "author": "Simonsohn",
+        "year": "2014",
+        "journal-title": "Journal of Experimental Psychology: General"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib83",
+        "series-title": "P-curve online app version 4.0",
+        "author": "Simonsohn",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib84",
+        "series-title": "Technology acceptance in education",
+        "first-page": "9",
+        "article-title": "A mixed-methodological technology adoption study",
+        "author": "Smarkola",
+        "year": "2011"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib85",
+        "doi-asserted-by": "crossref",
+        "first-page": "249",
+        "DOI": "10.1016/j.chb.2007.01.016",
+        "article-title": "Cognition and learning in the digital age: Promising research and practice",
+        "volume": "24",
+        "author": "Spector",
+        "year": "2008",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib86",
+        "doi-asserted-by": "crossref",
+        "first-page": "625",
+        "DOI": "10.3102/0034654308325896",
+        "article-title": "Understanding technology adoption: Theory and future directions for informal learning",
+        "volume": "79",
+        "author": "Straub",
+        "year": "2009",
+        "journal-title": "Review of Educational Research"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.compedu.2018.09.009_bib87",
+        "doi-asserted-by": "crossref",
+        "first-page": "2067",
+        "DOI": "10.1016/j.chb.2011.08.005",
+        "article-title": "A meta-analysis of e-learning technology acceptance: The role of user types and e-learning technology types",
+        "volume": "27",
+        "author": "Šumak",
+        "year": "2011",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib88",
+        "doi-asserted-by": "crossref",
+        "first-page": "960",
+        "DOI": "10.1016/j.promfg.2018.03.137",
+        "article-title": "A review of technology acceptance and adoption models and theories",
+        "volume": "22",
+        "author": "Taherdoost",
+        "year": "2018",
+        "journal-title": "Procedia Manufacturing"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib89",
+        "doi-asserted-by": "crossref",
+        "first-page": "472",
+        "DOI": "10.1108/RIBS-04-2016-0022",
+        "article-title": "Testing IB theories with meta-analytic structural equation modeling: The TSSEM approach and the Univariate-r approach",
+        "volume": "26",
+        "author": "Tang",
+        "year": "2016",
+        "journal-title": "Review of International Business and Strategy"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib90",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1287/isre.6.2.144",
+        "article-title": "Understanding information technology usage: A test of competing models",
+        "volume": "6",
+        "author": "Taylor",
+        "year": "1995",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib91",
+        "doi-asserted-by": "crossref",
+        "first-page": "302",
+        "DOI": "10.1016/j.compedu.2008.08.006",
+        "article-title": "Modelling technology acceptance in education: A study of pre-service teachers",
+        "volume": "52",
+        "author": "Teo",
+        "year": "2009",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib92",
+        "doi-asserted-by": "crossref",
+        "first-page": "22",
+        "DOI": "10.1016/j.compedu.2014.11.015",
+        "article-title": "Comparing pre-service and in-service teachers' acceptance of technology: Assessment of measurement invariance and latent mean differences",
+        "volume": "83",
+        "author": "Teo",
+        "year": "2015",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib93",
+        "doi-asserted-by": "crossref",
+        "first-page": "1000",
+        "DOI": "10.1016/j.compedu.2009.05.017",
+        "article-title": "Assessing the intention to use technology among pre-service teachers in Singapore and Malaysia: A multigroup invariance analysis of the technology acceptance model (TAM)",
+        "volume": "53",
+        "author": "Teo",
+        "year": "2009",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.compedu.2018.09.009_bib94",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.14742/ajet.1668",
+        "article-title": "Modelling the intention to use technology for teaching mathematics among pre-service teachers in Serbia",
+        "volume": "31",
+        "author": "Teo",
+        "year": "2015",
+        "journal-title": "Australasian Journal of Educational Technology"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib95",
+        "doi-asserted-by": "crossref",
+        "first-page": "178",
+        "DOI": "10.1080/10447318.2011.581892",
+        "article-title": "Understanding the intention to use technology by preservice teachers: An empirical test of competing theoretical models",
+        "volume": "28",
+        "author": "Teo",
+        "year": "2012",
+        "journal-title": "International Journal of Human-Computer Interaction"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.compedu.2018.09.009_bib96",
+        "doi-asserted-by": "crossref",
+        "first-page": "944",
+        "DOI": "10.1016/j.tate.2006.05.003",
+        "article-title": "The differential antecedents of self-efficacy beliefs of novice and experienced teachers",
+        "volume": "23",
+        "author": "Tschannen-Moran",
+        "year": "2007",
+        "journal-title": "Teaching and Teacher Education"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.compedu.2018.09.009_bib97",
+        "doi-asserted-by": "crossref",
+        "first-page": "463",
+        "DOI": "10.1016/j.infsof.2009.11.005",
+        "article-title": "Does the technology acceptance model predict actual use? A systematic literature review",
+        "volume": "52",
+        "author": "Turner",
+        "year": "2010",
+        "journal-title": "Information and Software Technology"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.compedu.2018.09.009_bib98",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1111/j.1540-5915.2008.00192.x",
+        "article-title": "Technology acceptance model 3 and a research agenda on interventions",
+        "volume": "39",
+        "author": "Venkatesh",
+        "year": "2008",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib99",
+        "doi-asserted-by": "crossref",
+        "first-page": "425",
+        "DOI": "10.2307/30036540",
+        "article-title": "User acceptance of information technology: Toward a unified view",
+        "volume": "27",
+        "author": "Venkatesh",
+        "year": "2003",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "10.1016/j.compedu.2018.09.009_bib100",
+        "series-title": "Handbook of structural equation modeling",
+        "first-page": "209",
+        "article-title": "Model fit and model selection in structural equation modeling",
+        "author": "West",
+        "year": "2012"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib101",
+        "doi-asserted-by": "crossref",
+        "first-page": "443",
+        "DOI": "10.1108/JEIM-09-2014-0088",
+        "article-title": "The unified theory of acceptance and use of technology (UTAUT): A literature review",
+        "volume": "28",
+        "author": "Williams",
+        "year": "2015",
+        "journal-title": "Journal of Enterprise Information Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.compedu.2018.09.009_bib102",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1214/aoms/1177732676",
+        "article-title": "The method of path coefficients",
+        "volume": "5",
+        "author": "Wright",
+        "year": "1934",
+        "journal-title": "The Annals of Mathematical Statistics"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.compedu.2018.09.009_bib103",
+        "doi-asserted-by": "crossref",
+        "first-page": "1075",
+        "DOI": "10.1111/bjet.12330",
+        "article-title": "A dataset of factors that influence preservice teachers' intentions to use Web 2.0 technologies in future teaching practices",
+        "volume": "46",
+        "author": "Yusop",
+        "year": "2015",
+        "journal-title": "British Journal of Educational Technology"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.compedu.2018.09.009_bib104",
+        "doi-asserted-by": "crossref",
+        "first-page": "628",
+        "DOI": "10.1080/10447310802335482",
+        "article-title": "Two types of attitudes in ICT acceptance and use",
+        "volume": "24",
+        "author": "Zhang",
+        "year": "2008",
+        "journal-title": "International Journal of Human-Computer Interaction"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.compedu.2018.09.009_bib105",
+        "doi-asserted-by": "crossref",
+        "first-page": "1902",
+        "DOI": "10.1016/j.chb.2012.05.008",
+        "article-title": "A meta-analysis of mobile commerce adoption and the moderating effect of culture",
+        "volume": "28",
+        "author": "Zhang",
+        "year": "2012",
+        "journal-title": "Computers in Human Behavior"
+      }
+    ],
+    "container-title": [
+      "Computers &amp; Education"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0360131518302458?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0360131518302458?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          11
+        ]
+      ],
+      "date-time": "2018-12-11T13:54:24Z",
+      "timestamp": 1544536464000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0360131518302458"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "references-count": 102,
+    "alternative-id": [
+      "S0360131518302458"
+    ],
+    "URL": "https://doi.org/10.1016/j.compedu.2018.09.009",
+    "relation": {},
+    "ISSN": [
+      "0360-1315"
+    ],
+    "issn-type": [
+      {
+        "value": "0360-1315",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "The technology acceptance model (TAM): A meta-analytic structural equation modeling approach to explaining teachers’ adoption of digital technology in education",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Computers & Education",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.compedu.2018.09.009",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2018 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ],
+      "date-time": "2026-06-01T23:05:52Z",
+      "timestamp": 1780355152785,
+      "version": "3.54.1"
+    },
+    "reference-count": 33,
+    "publisher": "Elsevier BV",
+    "issue": "11",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2003,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2003-11-01T00:00:00Z",
+          "timestamp": 1067644800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Business Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1016/s0148-2963(01)00276-4",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2003-06-30T13:57:08Z",
+      "timestamp": 1056981428000
+    },
+    "page": "899-906",
+    "source": "Crossref",
+    "is-referenced-by-count": 884,
+    "title": [
+      "The influence of technology anxiety on consumer use and experiences with self-service technologies"
+    ],
+    "prefix": "10.1016",
+    "volume": "56",
+    "author": [
+      {
+        "given": "Matthew L",
+        "family": "Meuter",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amy L",
+        "family": "Ostrom",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mary Jo",
+        "family": "Bitner",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert",
+        "family": "Roundtree",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB1",
+        "first-page": "49",
+        "article-title": "Self-service consumer: an exploratory study",
+        "volume": "61",
+        "author": "Bateson",
+        "year": "1985",
+        "journal-title": "J Retailing"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB2",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.2190/FK5L-092H-T6YB-PYBA",
+        "article-title": "Computer anxiety: definitions, measurement, and correlates",
+        "author": "Cambre",
+        "year": "1985",
+        "journal-title": "J Educ Comput Res"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB3",
+        "doi-asserted-by": "crossref",
+        "first-page": "309",
+        "DOI": "10.2190/MV5D-MYKD-BLLA-06JL",
+        "article-title": "Managing computer-related anxiety and stress within organizations",
+        "volume": "22",
+        "author": "Craig",
+        "year": "1994",
+        "journal-title": "J Educ Technol Syst"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB4",
+        "first-page": "563",
+        "article-title": "Role of affect and need for interaction in on-site service encounters",
+        "volume": "vol. 19",
+        "author": "Dabholkar",
+        "year": "1992"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB5",
+        "first-page": "241",
+        "article-title": "Technology-based service delivery: a classification scheme for developing marketing strategies",
+        "volume": "vol. 3",
+        "author": "Dabholkar",
+        "year": "1994"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB6",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1016/0167-8116(95)00027-5",
+        "article-title": "Consumer evaluations of new technology-based self-service options: an investigation of alternative models of service quality",
+        "volume": "13",
+        "author": "Dabholkar",
+        "year": "1996",
+        "journal-title": "Int J Res Mark"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB7",
+        "series-title": "Handbook of services marketing and management",
+        "first-page": "103",
+        "article-title": "Technology in service delivery: implications for self-service and service support",
+        "author": "Dabholkar",
+        "year": "2000"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB8",
+        "first-page": "A25",
+        "article-title": "Researchers say “Technophobia” may afflict millions of students",
+        "author": "DeLoughry",
+        "year": "1993",
+        "journal-title": "Chron Higher Educ"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB9",
+        "doi-asserted-by": "crossref",
+        "first-page": "79",
+        "DOI": "10.2753/RSS1061-1428360479",
+        "article-title": "Fear of computers: its nature, prevention and cure",
+        "volume": "36",
+        "author": "Doronina",
+        "year": "1995",
+        "journal-title": "Russ Social Sci Rev"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB10",
+        "unstructured": "Eastlick MA. Consumer intention to adopt interactive teleshopping. Marketing Science Institute, Report No. 96-113, Cambridge, MA, 1996."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB11",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1108/08876049110035585",
+        "article-title": "Profiling early triers of service innovations: a look at interactive home video ordering services",
+        "volume": "5",
+        "author": "Greco",
+        "year": "1991",
+        "journal-title": "J Serv Mark"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB12",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1016/0747-5632(87)90010-0",
+        "article-title": "Assessing computer anxiety: development and validation of the computer anxiety rating scale",
+        "volume": "3",
+        "author": "Heinssen",
+        "year": "1987",
+        "journal-title": "Comput Hum Behav"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB13",
+        "first-page": "84",
+        "article-title": "A new era of bright hopes and terrible fears",
+        "author": "Hof",
+        "year": "1999",
+        "journal-title": "Bus Week"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB14",
+        "unstructured": "Hubbert AR. Customer co-creation of service outcomes: effects of locus of causality attributions. Unpublished doctoral dissertation, Arizona State University, 1995."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB15",
+        "doi-asserted-by": "crossref",
+        "first-page": "373",
+        "DOI": "10.1177/014920638901500302",
+        "article-title": "A path analytic study of individual characteristics, computer anxiety and attitudes toward microcomputers",
+        "volume": "15",
+        "author": "Igbaria",
+        "year": "1989",
+        "journal-title": "J Manage"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB16",
+        "doi-asserted-by": "crossref",
+        "first-page": "371",
+        "DOI": "10.1016/0747-5632(93)90029-R",
+        "article-title": "An exploration of theoretical and practical foundations for assessing attitudes toward computers: the computer attitude measure (CAM)",
+        "volume": "9",
+        "author": "Kay",
+        "year": "1993",
+        "journal-title": "Comput Hum Behav"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB17",
+        "first-page": "63",
+        "article-title": "Technology: servant or master in the delivery of services?",
+        "volume": "vol. 4",
+        "author": "Lovelock",
+        "year": "1995"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB18",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1509/jmkg.64.3.50.18024",
+        "article-title": "Self-service technologies: understanding customer satisfaction with technology-based service encounters",
+        "volume": "64",
+        "author": "Meuter",
+        "year": "2000",
+        "journal-title": "J Mark"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB19",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1086/209531",
+        "article-title": "Paradoxes of technology: consumer cognizance, emotions and coping strategies",
+        "volume": "25",
+        "author": "Mick",
+        "year": "1998",
+        "journal-title": "J Consum Res"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB20",
+        "doi-asserted-by": "crossref",
+        "first-page": "460",
+        "DOI": "10.2307/3150499",
+        "article-title": "A cognitive model of the antecedents and consequences of satisfaction decisions",
+        "author": "Oliver",
+        "year": "1980",
+        "journal-title": "J Mark Res"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB21",
+        "series-title": "Understanding and leveraging the role of customer service in external, interactive, and internal marketing",
+        "author": "Parasuraman",
+        "year": "1996"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB22",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1177/109467050024001",
+        "article-title": "Technology readiness index (TRI): a multiple item scale to measure readiness to embrace new technologies",
+        "volume": "2",
+        "author": "Parasuraman",
+        "year": "2000",
+        "journal-title": "J Serv Res"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Raub AC. Correlates of computer anxiety in college students. Unpublished doctoral dissertation, University of Pennsylvania, 1981.",
+        "DOI": "10.1037/t13631-000"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB24",
+        "first-page": "2",
+        "article-title": "Managing in the marketspace",
+        "author": "Rayport",
+        "year": "1994",
+        "journal-title": "Harv Bus Rev"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB25",
+        "first-page": "14",
+        "article-title": "Exploiting the virtual value chain",
+        "author": "Rayport",
+        "year": "1995",
+        "journal-title": "Harv Bus Rev"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB26",
+        "doi-asserted-by": "crossref",
+        "first-page": "47",
+        "DOI": "10.2307/1249849",
+        "article-title": "An analysis of catalog buying behavior",
+        "volume": "38",
+        "author": "Reynolds",
+        "year": "1974",
+        "journal-title": "J Mark"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB27",
+        "series-title": "Diffusion of innovations",
+        "author": "Rogers",
+        "year": "1995"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB28",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1080/08917779008248751",
+        "article-title": "Myths and realities of computerphobia: a meta-analysis",
+        "volume": "3",
+        "author": "Rosen",
+        "year": "1990",
+        "journal-title": "Anxiety Res"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB29",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1080/03634529709379072",
+        "article-title": "The effect of communication, writing, and technology apprehension on likelihood to use new communication technologies",
+        "volume": "46",
+        "author": "Scott",
+        "year": "1997",
+        "journal-title": "Commun Educ"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB30",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1287/isre.6.2.144",
+        "article-title": "Understanding information technology usage: a test of competing models",
+        "volume": "6",
+        "author": "Taylor",
+        "year": "1995",
+        "journal-title": "Inf Syst Res"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB31",
+        "first-page": "27",
+        "article-title": "Activities, interests, and opinions",
+        "volume": "11",
+        "author": "Wells",
+        "year": "1971",
+        "journal-title": "J Advertising Res"
+      },
+      {
+        "key": "10.1016/S0148-2963(01)00276-4_BIB32",
+        "first-page": "9E",
+        "article-title": "Technophobes victims of electronic progress",
+        "author": "Williams",
+        "year": "1994",
+        "journal-title": "Mobile Regist"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/S0148-2963(01)00276-4_BIB33",
+        "first-page": "49",
+        "article-title": "Characteristics affecting the acceptance of retailing technologies: a comparison of elderly and nonelderly consumers",
+        "volume": "63",
+        "author": "Zeithaml",
+        "year": "1987",
+        "journal-title": "J Retailing"
+      }
+    ],
+    "container-title": [
+      "Journal of Business Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0148296301002764?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0148296301002764?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          3,
+          24
+        ]
+      ],
+      "date-time": "2020-03-24T08:25:32Z",
+      "timestamp": 1585038332000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0148296301002764"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          11
+        ]
+      ]
+    },
+    "references-count": 33,
+    "journal-issue": {
+      "issue": "11",
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            11
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0148296301002764"
+    ],
+    "URL": "https://doi.org/10.1016/s0148-2963(01)00276-4",
+    "relation": {},
+    "ISSN": [
+      "0148-2963"
+    ],
+    "issn-type": [
+      {
+        "value": "0148-2963",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          11
+        ]
+      ]
+    }
+  }
+}

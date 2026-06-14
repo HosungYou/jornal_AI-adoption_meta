@@ -1,0 +1,1492 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2026-06-12T13:44:35Z",
+      "timestamp": 1781271875656,
+      "version": "3.54.1"
+    },
+    "reference-count": 115,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              6,
+              8
+            ]
+          ],
+          "date-time": "2017-06-08T00:00:00Z",
+          "timestamp": 1496880000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001317",
+        "name": "Swansea University",
+        "doi-asserted-by": "crossref",
+        "id": [
+          {
+            "id": "10.13039/501100001317",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Inf Syst Front"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1007/s10796-017-9774-y",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          7
+        ]
+      ],
+      "date-time": "2017-06-07T22:04:10Z",
+      "timestamp": 1496873050000
+    },
+    "page": "719-734",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1574,
+    "title": [
+      "Re-examining the Unified Theory of Acceptance and Use of Technology (UTAUT): Towards a Revised Theoretical Model"
+    ],
+    "prefix": "10.1007",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Yogesh K.",
+        "family": "Dwivedi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nripendra P.",
+        "family": "Rana",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anand",
+        "family": "Jeyaraj",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marc",
+        "family": "Clement",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael D.",
+        "family": "Williams",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "9774_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "392",
+        "DOI": "10.1108/02635571011030042",
+        "volume": "110",
+        "author": "MG Aboelmaged",
+        "year": "2010",
+        "unstructured": "Aboelmaged, M. G. (2010). Predicting e-procurement adoption in a developing country: An empirical integration of technology acceptance model and theory of planned behaviour. Industrial Management & Data Systems, 110(3), 392–414.",
+        "journal-title": "Industrial Management & Data Systems"
+      },
+      {
+        "issue": "5",
+        "key": "9774_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "599",
+        "DOI": "10.1016/j.im.2015.04.005",
+        "volume": "52",
+        "author": "M Abubakre",
+        "year": "2015",
+        "unstructured": "Abubakre, M., Ravishankar, M. N., & Coombs, C. R. (2015). The role of formal controls in facilitating IS diffusion. Information Management, 52(5), 599–609.",
+        "journal-title": "Information Management"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "227",
+        "DOI": "10.2307/249577",
+        "volume": "16",
+        "author": "DA Adams",
+        "year": "1992",
+        "unstructured": "Adams, D. A., Nelson, R. R., & Todd, P. A. (1992). Perceived usefulness, ease of use, and usage of information technology: A replication. MIS Quarterly, 16(2), 227–247.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "115",
+        "DOI": "10.1016/j.ijmedinf.2008.06.006",
+        "volume": "78",
+        "author": "VP Aggelidis",
+        "year": "2009",
+        "unstructured": "Aggelidis, V. P., & Chatzoglou, P. D. (2009). Using a modified technology acceptance model in hospitals. International Journal of Medical Informatics, 78(2), 115–126.",
+        "journal-title": "International Journal of Medical Informatics"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "179",
+        "DOI": "10.1016/0749-5978(91)90020-T",
+        "volume": "50",
+        "author": "I Ajzen",
+        "year": "1991",
+        "unstructured": "Ajzen, I. (1991). The theory of planned behavior. Organizational Behavior and Human Decision Processes, 50(2), 179–211.",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "27",
+        "DOI": "10.1146/annurev.psych.52.1.27",
+        "volume": "52",
+        "author": "I Ajzen",
+        "year": "2001",
+        "unstructured": "Ajzen, I. (2001). Nature and operation of attitudes. Annual Review of Psychology, 52(1), 27–58.",
+        "journal-title": "Annual Review of Psychology"
+      },
+      {
+        "key": "9774_CR7",
+        "unstructured": "Ajzen, I., & Fishbein, M.M. (1980). Understanding attitudes and predicting social behavior. Eaglewood Cliffs: Prentice-Hall."
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR8",
+        "first-page": "571",
+        "volume": "28",
+        "author": "KA Alshare",
+        "year": "2011",
+        "unstructured": "Alshare, K. A., & Lane, P. L. (2011). Predicting student-perceived learning outcomes and satisfaction in ERP courses: An empirical investigation. Communications of the Association for Information Systems, 28(1), 571–584.",
+        "journal-title": "Communications of the Association for Information Systems"
+      },
+      {
+        "key": "9774_CR9",
+        "volume-title": "AMOS 4.0 user’s guide",
+        "author": "JL Arbuckle",
+        "year": "1999",
+        "unstructured": "Arbuckle, J. L., & Wothke, W. (1999). AMOS 4.0 user’s guide. Chicago: Small Waters."
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "607",
+        "DOI": "10.1037/0022-3514.41.4.607",
+        "volume": "41",
+        "author": "RP Bagozzi",
+        "year": "1981",
+        "unstructured": "Bagozzi, R. P. (1981). Attitudes, intentions, and behavior: A test of some key hypotheses. Journal of Personality and Social Psychology, 41(4), 607–627.",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "213",
+        "DOI": "10.1016/S0378-7206(98)00026-3",
+        "volume": "33",
+        "author": "A Bajaj",
+        "year": "1998",
+        "unstructured": "Bajaj, A., & Nidumolu, S. R. (1998). A feedback model to understand information system usage. Information Management, 33(4), 213–224.",
+        "journal-title": "Information Management"
+      },
+      {
+        "key": "9774_CR12",
+        "unstructured": "Bandura, A. (1986). Social foundations of thought and action: A social cognitive theory. Prentice Hall, Englewood Cliffs, 1986."
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.4018/jhcitp.2012010101",
+        "volume": "3",
+        "author": "K Bandyopadhyay",
+        "year": "2012",
+        "unstructured": "Bandyopadhyay, K., & Barnes, C. (2012). An analysis of factors affecting user acceptance of ERP Systems in the United States. International Journal of Human Capital and Information Technology Professionals, 3(1), 1–14.",
+        "journal-title": "International Journal of Human Capital and Information Technology Professionals"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "238",
+        "DOI": "10.1037/0033-2909.107.2.238",
+        "volume": "107",
+        "author": "PM Bentler",
+        "year": "1990",
+        "unstructured": "Bentler, P. M. (1990). Comparative fit indices in structural models. Psychological Bulletin, 107(2), 238–246.",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "588",
+        "DOI": "10.1037/0033-2909.88.3.588",
+        "volume": "88",
+        "author": "PM Bentler",
+        "year": "1980",
+        "unstructured": "Bentler, P. M., & Bonett, D. G. (1980). Significance tests and goodness of fit in the analysis of covariance structures. Psychological Bulletin, 88(3), 588–606.",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "9774_CR16",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bhattarai, S., Zhao, Z., & Crespi, N. (2010). Consumer mashups: End-user perspectives and acceptance model. In Proceedings of the 12th International Conference on Information Integration and Web-based Applications & Services, 930–933.",
+        "DOI": "10.1145/1967486.1967651"
+      },
+      {
+        "issue": "5",
+        "key": "9774_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "423",
+        "DOI": "10.1108/EUM0000000006092",
+        "volume": "12",
+        "author": "LM Bobbitt",
+        "year": "2001",
+        "unstructured": "Bobbitt, L. M., & Dabholkar, P. A. (2001). Integrating attitudinal theories to understand and predict use of technology-based self-service. The Internet as an illustration. International Journal of Service Industry Management, 12(5), 423–450.",
+        "journal-title": "International Journal of Service Industry Management"
+      },
+      {
+        "key": "9774_CR18",
+        "volume-title": "Structural equation modelling with AMOS: Basic concepts, applications, and programming",
+        "author": "BM Byrne",
+        "year": "2010",
+        "unstructured": "Byrne, B. M. (2010). Structural equation modelling with AMOS: Basic concepts, applications, and programming (Second ed.). New York: Multivariate Application Series, Routledge.",
+        "edition": "Second"
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "605",
+        "DOI": "10.1037/0021-9010.88.4.605",
+        "volume": "88",
+        "author": "JZ Carr",
+        "year": "2003",
+        "unstructured": "Carr, J. Z., Schmidt, A. M., Ford, J. K., & DeShon, R. P. (2003). Climate perceptions matter: A meta-analytic path analysis relating molar climate, cognitive and affective states, and individual level work outcomes. Journal of Applied Psychology, 88(4), 605–619.",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "key": "9774_CR20",
+        "unstructured": "Carter, L., & Schaupp, L.C. (2008). Efficacy and acceptance in E-File adoption. Fourteenth Americas Conference on Information Systems, Toronto, ON, Canada August 14th–17th, 2008."
+      },
+      {
+        "key": "9774_CR21",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Chen, L. L., Kuan, C. J., Lee, Y. H., & Huang, H. L. (2011). Applicability of the UTAUT model in playing online game through mobile phones: Moderating effects of user experience. IEEE International Conference on Technology Management, San Jose, CA, USA, 27-30 June 2011. 625–629. doi: 10.1109/ITMC.2011.5996035 .",
+        "DOI": "10.1109/ITMC.2011.5996035"
+      },
+      {
+        "issue": "5",
+        "key": "9774_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "508",
+        "DOI": "10.1108/10662241111176344",
+        "volume": "21",
+        "author": "MF Chen",
+        "year": "2011",
+        "unstructured": "Chen, M. F., & Lu, M. T. Y. (2011). Modeling e-coupon proneness as a mediator in the extended TPB model to predict consumers’ usage intentions. Internet Research, 21(5), 508–526.",
+        "journal-title": "Internet Research"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "40",
+        "DOI": "10.1037/1082-989X.10.1.40",
+        "volume": "10",
+        "author": "MWL Cheung",
+        "year": "2005",
+        "unstructured": "Cheung, M. W. L., & Chan, W. (2005). Meta-analytic structural equation modeling: A two-stage approach. Psychological Methods, 10(1), 40–64.",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "68",
+        "DOI": "10.1080/15332861.2012.650990",
+        "volume": "11",
+        "author": "YTH Chiu",
+        "year": "2012",
+        "unstructured": "Chiu, Y. T. H., Lee, W. I., Liu, C. C., & Liu, L. Y. (2012). Internet lottery commerce: An integrated view of online sport lottery adoption. Journal of Internet Commerce, 11(1), 68–80.",
+        "journal-title": "Journal of Internet Commerce"
+      },
+      {
+        "key": "9774_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "523",
+        "DOI": "10.1016/j.eswa.2012.07.068",
+        "volume": "40",
+        "author": "AYL Chong",
+        "year": "2013",
+        "unstructured": "Chong, A. Y. L. (2013). Predicting m-commerce adoption determinants: A neural network approach. Expert Systems with Applications, 40, 523–530.",
+        "journal-title": "Expert Systems with Applications"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "189",
+        "DOI": "10.2307/249688",
+        "volume": "19",
+        "author": "DR Compeau",
+        "year": "1995",
+        "unstructured": "Compeau, D. R., & Higgins, C. A. (1995). Computer self-efficacy: Development of a measure and initial test. MIS Quarterly, 19(2), 189–211.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "9774_CR27",
+        "unstructured": "Davis, F.D. (1986). A technology acceptance model for empirically testing new end-user information systems: Theory and results. Doctoral Dissertation, Sloan School of Management, Massachusetts Institute of Technology."
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "318",
+        "DOI": "10.2307/249008",
+        "volume": "13",
+        "author": "FD Davis",
+        "year": "1989",
+        "unstructured": "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly, 13(3), 318–339.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "8",
+        "key": "9774_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "982",
+        "DOI": "10.1287/mnsc.35.8.982",
+        "volume": "35",
+        "author": "FD Davis",
+        "year": "1989",
+        "unstructured": "Davis, F. D., Bagozzi, R. P., & Warshaw, P. R. (1989). User acceptance of computer technology: A comparison of two theoretical models. Management Science, 35(8), 982–1003.",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "14",
+        "key": "9774_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "1111",
+        "DOI": "10.1111/j.1559-1816.1992.tb00945.x",
+        "volume": "22",
+        "author": "FD Davis",
+        "year": "1992",
+        "unstructured": "Davis, F. D., Bagozzi, R. P., & Warshaw, P. R. (1992). Extrinsic and Intrinsic motivation to use computers in the workplace. Journal of Applied Social Psychology, 22(14), 1111–1132.",
+        "journal-title": "Journal of Applied Social Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "60",
+        "DOI": "10.1287/isre.3.1.60",
+        "volume": "3",
+        "author": "WH DeLone",
+        "year": "1992",
+        "unstructured": "DeLone, W. H., & McLean, E. R. (1992). Information systems success: The quest for the dependent variable. Information Systems Research, 3(1), 60–95.",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR32",
+        "doi-asserted-by": "crossref",
+        "first-page": "1005",
+        "DOI": "10.2307/256721",
+        "volume": "39",
+        "author": "DR Denison",
+        "year": "1996",
+        "unstructured": "Denison, D. R., Hart, S. L., & Kahn, J. A. (1996). From chimneys to cross-functional teams: Developing and validating a diagnostic model. Academy of Management Journal, 39(4), 1005–1024.",
+        "journal-title": "Academy of Management Journal"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "167",
+        "DOI": "10.2307/3250928",
+        "volume": "25",
+        "author": "AR Dennis",
+        "year": "2001",
+        "unstructured": "Dennis, A. R., Wixom, B. H., & Vandenberg, R. J. (2001). Understanding fit and appropriation effects in group support systems via meta-analysis. MIS Quarterly, 25(2), 167–193.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "73",
+        "DOI": "10.1007/s10278-008-9163-7",
+        "volume": "23",
+        "author": "P Duyck",
+        "year": "2010",
+        "unstructured": "Duyck, P., Pynoo, B., Devolder, P., Voet, T., Adang, L., Ovaere, D., & Vercruysse, J. (2010). Monitoring the PACS implementation process in a large university hospital-discrepancies between radiologists and physicians. Journal of Digital Imaging, 23(1), 73–80.",
+        "journal-title": "Journal of Digital Imaging"
+      },
+      {
+        "key": "9774_CR35",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Dwivedi, Y. K., Janssen, M., Slade, E. L., Rana, N. P., Weerakkody, V., Millard, J., Hidders, J., & Snijders, D. (2016). Driving innovation through big open linked data (BOLD): Exploring antecedents using interpretive structural modelling. Information Systems Frontiers, 19(2), 197–212. doi: 10.1007/s10796-016-9675-5 .",
+        "DOI": "10.1007/s10796-016-9675-5"
+      },
+      {
+        "key": "9774_CR36",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Dwivedi, Y.K., Rana, N.P., Janssen, M., Lal, B., Williams, M.D., & Clement, M. (2017). An empirical validation of a unified model of electronic government adoption (UMEGA). Government Information Quarterly, 1–20. doi: 10.1016/j.giq.2017.03.001 .",
+        "DOI": "10.1016/j.giq.2017.03.001"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "143",
+        "DOI": "10.1007/s10796-014-9500-y",
+        "volume": "17",
+        "author": "YK Dwivedi",
+        "year": "2015",
+        "unstructured": "Dwivedi, Y. K., Wastell, D., Laumer, S., Henriksen, H. Z., Myers, M. D., Bunker, D., et al. (2015). Research on information systems failures and successes: Status update and future directions. Information Systems Frontiers, 17(1), 143–157.",
+        "journal-title": "Information Systems Frontiers"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.1057/jit.2008.31",
+        "volume": "24",
+        "author": "A Eckhardt",
+        "year": "2009",
+        "unstructured": "Eckhardt, A., Laumer, S., & Weitzel, T. (2009). Who influences whom? Analyzing workplace referents' social influence on IT adoption and non-adoption. Journal of Information Technology, 24(1), 11–24.",
+        "journal-title": "Journal of Information Technology"
+      },
+      {
+        "key": "9774_CR39",
+        "unstructured": "Fadel, K.J. (2007). Infusion of information systems: The role of adaptation and individual cognitions. PhD Dissertation, The University of Arizona, USA."
+      },
+      {
+        "key": "9774_CR40",
+        "volume-title": "Belief, attitude, intention, and behavior: An introduction to theory and research",
+        "author": "M Fishbein",
+        "year": "1975",
+        "unstructured": "Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior: An introduction to theory and research. Reading: Addison-Wesley Publication Company."
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR41",
+        "first-page": "161",
+        "volume": "6",
+        "author": "YS Foon",
+        "year": "2011",
+        "unstructured": "Foon, Y. S., & Fah, B. C. Y. (2011). Internet banking adoption in Kuala Lumpur: An application of UTAUT model. International Journal of Business and Management, 6(4), 161–167.",
+        "journal-title": "International Journal of Business and Management"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "198",
+        "DOI": "10.1108/10662240410542634",
+        "volume": "14",
+        "author": "JF George",
+        "year": "2004",
+        "unstructured": "George, J. F. (2004). The theory of planned behavior and Internet purchasing. Internet Research, 14(3), 198–212.",
+        "journal-title": "Internet Research"
+      },
+      {
+        "issue": "9",
+        "key": "9774_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.3102/0013189X005010003",
+        "volume": "5",
+        "author": "GV Glass",
+        "year": "1976",
+        "unstructured": "Glass, G. V. (1976). Primary, secondary, and meta-analysis of research. Educational Researcher, 5(9), 3–8.",
+        "journal-title": "Educational Researcher"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "213",
+        "DOI": "10.2307/249689",
+        "volume": "19",
+        "author": "DL Goodhue",
+        "year": "1995",
+        "unstructured": "Goodhue, D. L., & Thompson, R. L. (1995). Task-technology fit and individual performance. MIS Quarterly, 19(2), 213–236.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "140",
+        "DOI": "10.1016/j.jsis.2007.12.004",
+        "volume": "17",
+        "author": "B Gupta",
+        "year": "2008",
+        "unstructured": "Gupta, B., Dasgupta, S., & Gupta, A. (2008). Adoption of ICT in a government organization in a developing country: An empirical study. The Journal of Strategic Information Systems, 17(2), 140–154.",
+        "journal-title": "The Journal of Strategic Information Systems"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "171",
+        "DOI": "10.1287/isre.8.2.171",
+        "volume": "8",
+        "author": "DA Harrison",
+        "year": "1997",
+        "unstructured": "Harrison, D. A., Mykytyn, P. P., & Riemenschneider, C. K. (1997). Executive decisions about adoption of information Technology in Small Business: Theory and empirical tests. Information Systems Research, 8(2), 171–195.",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "91",
+        "DOI": "10.1080/07421222.1999.11518247",
+        "volume": "16",
+        "author": "PJ Hu",
+        "year": "1999",
+        "unstructured": "Hu, P. J., Chau, P. Y., Sheng, O. R. L., & Tam, K. Y. (1999). Examining the technology acceptance model using physician acceptance of telemedicine technology. Journal of Management Information Systems, 16(2), 91–112.",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "key": "9774_CR48",
+        "volume-title": "Methods of meta-analysis: Correcting error and bias in research findings",
+        "author": "JE Hunter",
+        "year": "1990",
+        "unstructured": "Hunter, J. E., & Schmidt, F. (1990). Methods of meta-analysis: Correcting error and bias in research findings. Newbury Park: Sage Publications."
+      },
+      {
+        "key": "9774_CR49",
+        "volume-title": "Meta-analysis: Cumulating research findings across studies",
+        "author": "JE Hunter",
+        "year": "1982",
+        "unstructured": "Hunter, J. E., Schmidt, F., & Jackson, G. B. (1982). Meta-analysis: Cumulating research findings across studies. Beverly Hills: Sage."
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "35",
+        "DOI": "10.1145/264417.264433",
+        "volume": "27",
+        "author": "MI Hwang",
+        "year": "1996",
+        "unstructured": "Hwang, M. I. (1996). The use of meta-analysis in MIS research: Promises and problems. The DATA BASE for Advances in Information Systems, 27(3), 35–48.",
+        "journal-title": "The DATA BASE for Advances in Information Systems"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "127",
+        "DOI": "10.1080/07421222.1996.11518115",
+        "volume": "13",
+        "author": "M Igbaria",
+        "year": "1996",
+        "unstructured": "Igbaria, M., Parasuraman, S., & Baroudi, J. J. (1996). A motivational model of microcomputer usage. Journal of Management Information Systems, 13(1), 127–143.",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "357",
+        "DOI": "10.1111/j.1540-5915.1997.tb01315.x",
+        "volume": "28",
+        "author": "CM Jackson",
+        "year": "1997",
+        "unstructured": "Jackson, C. M., Chow, S., & Leitch, R. A. (1997). Toward an understanding of the behavioral intention to use an information system. Decision Sciences, 28(2), 357–389.",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR53",
+        "doi-asserted-by": "publisher",
+        "first-page": "547",
+        "DOI": "10.2307/25148807",
+        "volume": "31",
+        "author": "D Joseph",
+        "year": "2007",
+        "unstructured": "Joseph, D., Ng, K. Y., Koh, C., & Ang, S. (2007). Turnover of information technology professionals: A narrative review, meta-analytic structural equation modeling, and model development. MIS Quarterly, 31(3), 547–577.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "9774_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "460",
+        "DOI": "10.1016/j.chb.2017.01.001",
+        "volume": "70",
+        "author": "J Khalilzadeh",
+        "year": "2017",
+        "unstructured": "Khalilzadeh, J., Ozturk, A. B., & Bilgihan, A. (2017). Security-related factors in extended UTAUT model for NFC based mobile payment in the restaurant industry. Computers in Human Behavior, 70, 460–474.",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "67",
+        "DOI": "10.1016/j.ijinfomgt.2008.01.011",
+        "volume": "29",
+        "author": "YJ Kim",
+        "year": "2009",
+        "unstructured": "Kim, Y. J., Chun, J. U., & Song, J. (2009). Investigating the role of attitude in technology acceptance from an attitude strength perspective. International Journal of Information Management, 29(1), 67–77.",
+        "journal-title": "International Journal of Information Management"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "500",
+        "DOI": "10.1016/j.tourman.2007.05.016",
+        "volume": "29",
+        "author": "TG Kim",
+        "year": "2008",
+        "unstructured": "Kim, T. G., Lee, J. H., & Law, R. (2008). An empirical examination of the acceptance behaviour of hotel front office systems: An extended technology acceptance model. Tourism Management, 29(3), 500–513.",
+        "journal-title": "Tourism Management"
+      },
+      {
+        "issue": "6",
+        "key": "9774_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "709",
+        "DOI": "10.1002/jtr.787",
+        "volume": "12",
+        "author": "TT Kim",
+        "year": "2010",
+        "unstructured": "Kim, T. T., Suh, Y. K., Lee, G., & Choi, B. G. (2010). Modelling roles of task-technology fit and self-efficacy in hotel employees' usage behaviours of hotel information systems. International Journal of Tourism Research, 12(6), 709–725.",
+        "journal-title": "International Journal of Tourism Research"
+      },
+      {
+        "issue": "6",
+        "key": "9774_CR58",
+        "doi-asserted-by": "publisher",
+        "first-page": "740",
+        "DOI": "10.1016/j.im.2006.05.003",
+        "volume": "43",
+        "author": "WR King",
+        "year": "2006",
+        "unstructured": "King, W. R., & He, J. (2006). A meta-analysis of the technology acceptance model. Information Management, 43(6), 740–755.",
+        "journal-title": "Information Management"
+      },
+      {
+        "key": "9774_CR59",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Knutsen, L.A. (2005). M-service expectancies and attitudes: Linkages and effects of first impressions. Proceedings of the 38 th Hawaii International Conference on System Sciences. HI, USA, 6th January 2005, doi: 10.1109/HICSS.2005.395.",
+        "DOI": "10.1109/HICSS.2005.395."
+      },
+      {
+        "key": "9774_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "177",
+        "DOI": "10.28945/1326",
+        "volume": "13",
+        "author": "CE Koh",
+        "year": "2010",
+        "unstructured": "Koh, C. E., Prybutok, V. R., Ryan, S. D., & Wu, Y. A. (2010). A model for mandatory use of software technologies: An integrative approach by applying multiple levels of abstraction of informing science. Informing Science: The International Journal of an Emerging Transdiscipline, 13, 177–203.",
+        "journal-title": "Informing Science: The International Journal of an Emerging Transdiscipline"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR61",
+        "first-page": "752",
+        "volume": "12",
+        "author": "Y Lee",
+        "year": "2003",
+        "unstructured": "Lee, Y., Kozar, K. A., & Larsen, K. R. T. (2003). The technology acceptance model: Past, present, and future. Communications of the Association for Information Systems, 12(1), 752–780.",
+        "journal-title": "Communications of the Association for Information Systems"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "59",
+        "DOI": "10.4018/joeuc.2004010104",
+        "volume": "16",
+        "author": "Q Ma",
+        "year": "2004",
+        "unstructured": "Ma, Q., & Liu, L. (2004). The technology acceptance model: A meta-analysis of empirical findings. Journal of Organizational and End User Computing, 16(1), 59–72.",
+        "journal-title": "Journal of Organizational and End User Computing"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR63",
+        "doi-asserted-by": "publisher",
+        "first-page": "209",
+        "DOI": "10.1287/orsc.4.2.209",
+        "volume": "4",
+        "author": "GA Marcoulides",
+        "year": "1993",
+        "unstructured": "Marcoulides, G. A., & Heck, R. H. (1993). Organizational culture and performance: Proposing and testing a model. Organization Science, 4(2), 209–225.",
+        "journal-title": "Organization Science"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "341",
+        "DOI": "10.1016/j.tourman.2011.04.003",
+        "volume": "33",
+        "author": "HS Martin",
+        "year": "2012",
+        "unstructured": "Martin, H. S., & Herrero, A. (2012). Influence of the user’s psychological factors on the online purchase intention in rural tourism: Integrating innovativeness to the UTAUT framework. Tourism Management, 33(2), 341–350.",
+        "journal-title": "Tourism Management"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "173",
+        "DOI": "10.1287/isre.2.3.173",
+        "volume": "2",
+        "author": "K Mathieson",
+        "year": "1991",
+        "unstructured": "Mathieson, K. (1991). Predicting user intentions: Comparing the technology acceptance model with the theory of planned behavior. Information Systems Research, 2(3), 173–191.",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR66",
+        "doi-asserted-by": "publisher",
+        "first-page": "192",
+        "DOI": "10.1287/isre.2.3.192",
+        "volume": "2",
+        "author": "GC Moore",
+        "year": "1991",
+        "unstructured": "Moore, G. C., & Benbasat, I. (1991). Development of an instrument to measure the perceptions of adopting an information technology innovation. Information Systems Research, 2(3), 192–222.",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "6",
+        "key": "9774_CR67",
+        "first-page": "203",
+        "volume": "1",
+        "author": "B Pardamean",
+        "year": "2012",
+        "unstructured": "Pardamean, B., & Susanto, M. (2012). Assessing user acceptance toward blog technology using the UTAUT model. International Journal of Mathematics and Computers in Simulation, 1(6), 203–216.",
+        "journal-title": "International Journal of Mathematics and Computers in Simulation"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR68",
+        "first-page": "196",
+        "volume": "8",
+        "author": "J Park",
+        "year": "2007",
+        "unstructured": "Park, J., Yang, S., & Lehto, X. (2007). Adoption of mobile technologies for Chinese consumers. Journal of Electronic Commerce Research, 8(3), 196–206.",
+        "journal-title": "Journal of Electronic Commerce Research"
+      },
+      {
+        "issue": "15",
+        "key": "9774_CR69",
+        "doi-asserted-by": "publisher",
+        "first-page": "959",
+        "DOI": "10.1016/S0950-5849(01)00197-5",
+        "volume": "43",
+        "author": "GGM Pijpers",
+        "year": "2001",
+        "unstructured": "Pijpers, G. G. M., Bemelmans, T. M. A., Heemstra, F. J., & Montfort, K. A. G. M. (2001). Senior executives’ use of information technology. Information and Software Technology, 43(15), 959–971.",
+        "journal-title": "Information and Software Technology"
+      },
+      {
+        "key": "9774_CR70",
+        "unstructured": "Pynoo, B., Devolder, P., Voet, T., Vercruysse, J., Adang, L., & Duyck, P. (2007). Attitude as a measure for acceptance: Monitoring IS implementation in a hospital setting. Proceedings of the Sixth Annual Workshop on HCI Research in MIS, Montreal, Canada, December 8, 2007, 20–24."
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR71",
+        "doi-asserted-by": "publisher",
+        "first-page": "568",
+        "DOI": "10.1016/j.chb.2010.10.005",
+        "volume": "27",
+        "author": "B Pynoo",
+        "year": "2011",
+        "unstructured": "Pynoo, B., Devolder, P., Tondeur, J., Van Braak, J., Duyck, W., & Duyck, P. (2011). Predicting secondary school teachers’ acceptance and use of a digital learning environment: A cross-sectional study. Computers in Human Behavior, 27(1), 568–575.",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR72",
+        "doi-asserted-by": "publisher",
+        "first-page": "547",
+        "DOI": "10.1007/s10796-013-9431-z",
+        "volume": "17",
+        "author": "NP Rana",
+        "year": "2015",
+        "unstructured": "Rana, N. P., Dwivedi, Y. K., & Williams, M. D. (2015a). A meta-analysis of existing research on citizen adoption of e-government. Information Systems Frontiers, 17(3), 547–563.",
+        "journal-title": "Information Systems Frontiers"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR73",
+        "doi-asserted-by": "publisher",
+        "first-page": "127",
+        "DOI": "10.1007/s10796-014-9504-7",
+        "volume": "17",
+        "author": "NP Rana",
+        "year": "2015",
+        "unstructured": "Rana, N. P., Dwivedi, Y. K., Williams, M. D., & Weerakkody, V. (2015b). Investigating success of an e-government initiative: Validation of an integrated IS success model. Information Systems Frontiers, 17(1), 127–142.",
+        "journal-title": "Information Systems Frontiers"
+      },
+      {
+        "key": "9774_CR74",
+        "doi-asserted-by": "publisher",
+        "first-page": "265",
+        "DOI": "10.1016/j.chb.2016.02.019",
+        "volume": "59",
+        "author": "NP Rana",
+        "year": "2016",
+        "unstructured": "Rana, N. P., Dwivedi, Y. K., Williams, M. D., & Weerakkody, V. (2016). Adoption of online public grievance redressal system in India: Toward developing a unified view. Computers in Human Behavior, 59, 265–282.",
+        "journal-title": "Computers in Human Behavior"
+      },
+      {
+        "key": "9774_CR75",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Rana, N. P., Dwivedi, Y. K., Lal, B., Williams, M. D., & Clement, M. (2017). Citizens’ adoption of an electronic government system: Towards a Unified View. Information Systems Frontiers, 19(3), 549–568. doi: 10.1007/s10796-015-9613-y.",
+        "DOI": "10.1007/s10796-015-9613-y"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR76",
+        "doi-asserted-by": "publisher",
+        "first-page": "35",
+        "DOI": "10.4018/joeuc.2008010103",
+        "volume": "20",
+        "author": "MN Ravishankar",
+        "year": "2008",
+        "unstructured": "Ravishankar, M. N. (2008). Rewarding end-users for participating in organizational KM: A case study. Journal of Organizational and End User Computing, 20(1), 35–49.",
+        "journal-title": "Journal of Organizational and End User Computing"
+      },
+      {
+        "key": "9774_CR77",
+        "unstructured": "Rogers, E.M. (1995). Diffusion of innovations. Fourth Edition. The New York Free Press."
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR78",
+        "doi-asserted-by": "publisher",
+        "first-page": "638",
+        "DOI": "10.1037/0033-2909.86.3.638",
+        "volume": "30",
+        "author": "R Rosenthal",
+        "year": "1979",
+        "unstructured": "Rosenthal, R. (1979). The ‘file drawer problem’ and tolerance for null results. Psychological Bulletin, 30(3), 638–641.",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "12",
+        "key": "9774_CR79",
+        "doi-asserted-by": "publisher",
+        "first-page": "1849",
+        "DOI": "10.1287/mnsc.1060.0583",
+        "volume": "52",
+        "author": "R Sabherwal",
+        "year": "2006",
+        "unstructured": "Sabherwal, R., Jeyaraj, A., & Chowa, C. (2006). Information system success: Individual and organizational determinants. Management Science, 52(12), 1849–1864.",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR80",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.4018/jegr.2007070101",
+        "volume": "3",
+        "author": "GP Sahu",
+        "year": "2007",
+        "unstructured": "Sahu, G. P., & Gupta, M. P. (2007). Users' acceptance of e-government: A study of Indian central excise. International Journal of Electronic Government Research, 3(3), 1–21.",
+        "journal-title": "International Journal of Electronic Government Research"
+      },
+      {
+        "issue": "6",
+        "key": "9774_CR81",
+        "doi-asserted-by": "publisher",
+        "first-page": "700",
+        "DOI": "10.1016/j.im.2014.06.002",
+        "volume": "51",
+        "author": "MS Sandeep",
+        "year": "2014",
+        "unstructured": "Sandeep, M. S., & Ravishankar, M. N. (2014). The continuity of underperforming ICT projects in the public sector. Information Management, 51(6), 700–711.",
+        "journal-title": "Information Management"
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR82",
+        "doi-asserted-by": "publisher",
+        "first-page": "533",
+        "DOI": "10.2307/30036548",
+        "volume": "27",
+        "author": "R Sharma",
+        "year": "2003",
+        "unstructured": "Sharma, R., & Yetton, P. (2003). The contingent effects of management support and task interdependence on successful information systems implementation. MIS Quarterly, 27(4), 533–555.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR83",
+        "doi-asserted-by": "publisher",
+        "first-page": "473",
+        "DOI": "10.2307/20650305",
+        "volume": "33",
+        "author": "R Sharma",
+        "year": "2009",
+        "unstructured": "Sharma, R., Yetton, P., & Crawford, J. (2009). Estimating the effect of common method variance: The method-method pair technique with an illustration from TAM research. MIS Quarterly, 33(3), 473–490.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR84",
+        "doi-asserted-by": "publisher",
+        "first-page": "325",
+        "DOI": "10.1086/209170",
+        "volume": "15",
+        "author": "BH Sheppard",
+        "year": "1988",
+        "unstructured": "Sheppard, B. H., Hartwick, I., & Warshaw, P. R. (1988). The theory of reasoned action: A meta-analysis of past research with recommendations for modifications and future research. Journal of Consumer Research, 15(3), 325–343.",
+        "journal-title": "Journal of Consumer Research"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR85",
+        "doi-asserted-by": "publisher",
+        "first-page": "371",
+        "DOI": "10.2307/20650296",
+        "volume": "33",
+        "author": "TA Sykes",
+        "year": "2009",
+        "unstructured": "Sykes, T. A., Venkatesh, V., & Gosain, S. (2009). Model of acceptance with peer support: A social network perspective to understand employees’ system use. MIS Quarterly, 33(2), 371–393.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "9774_CR86",
+        "doi-asserted-by": "publisher",
+        "first-page": "173",
+        "DOI": "10.1207/s15327906mbr2502_4",
+        "volume": "25",
+        "author": "JH Steiger",
+        "year": "1990",
+        "unstructured": "Steiger, J. H. (1990). Structural model evaluation and modification: An interval estimation approach. Multivariate Behavioural Research, 25, 173–180.",
+        "journal-title": "Multivariate Behavioural Research"
+      },
+      {
+        "key": "9774_CR87",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Sumak, B., Polancic, G., & Hericko, M. (2010). An empirical study of virtual learning environment adoption using UTAUT. Second International Conference on Mobile, Hybrid, and On-Line Learning, St Maarten, Netherlands Antilles, 17–22. doi: 10.1109/eLmL.2010.11 .",
+        "DOI": "10.1109/eLmL.2010.11."
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR88",
+        "doi-asserted-by": "publisher",
+        "first-page": "561",
+        "DOI": "10.2307/249633",
+        "volume": "19",
+        "author": "S Taylor",
+        "year": "1995",
+        "unstructured": "Taylor, S., & Todd, P. A. (1995a). Assessing IT usage: The role of prior experience. MIS Quarterly, 19(2), 561–570.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR89",
+        "doi-asserted-by": "publisher",
+        "first-page": "144",
+        "DOI": "10.1287/isre.6.2.144",
+        "volume": "6",
+        "author": "S Taylor",
+        "year": "1995",
+        "unstructured": "Taylor, S., & Todd, P. A. (1995b). Understanding information technology usage: A test of competing models. Information Systems Research, 6(4), 144–176.",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "key": "9774_CR90",
+        "doi-asserted-by": "publisher",
+        "first-page": "259",
+        "DOI": "10.1111/j.1744-6570.1993.tb00874.x",
+        "volume": "46",
+        "author": "RP Tett",
+        "year": "1993",
+        "unstructured": "Tett, R. P., & Meyer, J. P. (1993). Job satisfaction, organizational commitment, turnover intention, and turnover: Path analyses based on meta-analytic findings. Personnel Psychology, 46, 259–293.",
+        "journal-title": "Personnel Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR91",
+        "doi-asserted-by": "publisher",
+        "first-page": "124",
+        "DOI": "10.2307/249443",
+        "volume": "15",
+        "author": "RL Thompson",
+        "year": "1991",
+        "unstructured": "Thompson, R. L., Higgins, C. A., & Howell, J. M. (1991). Personal computing: Toward a conceptual model of utilization. MIS Quarterly, 15(1), 124–143.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR92",
+        "doi-asserted-by": "publisher",
+        "first-page": "28",
+        "DOI": "10.1109/TEM.1982.6447463",
+        "volume": "29",
+        "author": "LG Tornatzky",
+        "year": "1982",
+        "unstructured": "Tornatzky, L. G., & Klein, K. J. (1982). Innovation characteristics and innovation adoption-implementation: A meta-analysis of findings. IEEE Transactions on Engineering Management, 29(1), 28–45.",
+        "journal-title": "IEEE Transactions on Engineering Management"
+      },
+      {
+        "key": "9774_CR93",
+        "volume-title": "Interpersonal behavior",
+        "author": "HC Triandis",
+        "year": "1977",
+        "unstructured": "Triandis, H. C. (1977). Interpersonal behavior. Monterey: Brooke Cole."
+      },
+      {
+        "key": "9774_CR94",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Vallerand, R.J. (1997). Toward a hierarchical model of Intrinsic and extrinsic motivation. Advances in Experimental Social Psychology (29), M. Zanna (ed.), Academic Press, New York, 1997, 271–360.",
+        "DOI": "10.1016/S0065-2601(08)60019-2"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR95",
+        "doi-asserted-by": "publisher",
+        "first-page": "273",
+        "DOI": "10.1111/j.1540-5915.2008.00192.x",
+        "volume": "39",
+        "author": "V Venkatesh",
+        "year": "2008",
+        "unstructured": "Venkatesh, V., & Bala, H. (2008). Technology acceptance model 3 and a research agenda on interventions. Decision Sciences, 39(2), 273–315.",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR96",
+        "doi-asserted-by": "publisher",
+        "first-page": "71",
+        "DOI": "10.2307/3250959",
+        "volume": "25",
+        "author": "V Venkatesh",
+        "year": "2001",
+        "unstructured": "Venkatesh, V., & Brown, S. A. (2001). A longitudinal investigation of personal computers in homes: Adoption determinants and emerging challenges. MIS Quarterly, 25(1), 71–102.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR97",
+        "doi-asserted-by": "publisher",
+        "first-page": "186",
+        "DOI": "10.1287/mnsc.46.2.186.11926",
+        "volume": "46",
+        "author": "V Venkatesh",
+        "year": "2000",
+        "unstructured": "Venkatesh, V., & Davis, F. D. (2000). A theoretical extension of the technology acceptance model: Four longitudinal field studies. Management Science, 46(2), 186–204.",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR98",
+        "doi-asserted-by": "publisher",
+        "first-page": "425",
+        "DOI": "10.2307/30036540",
+        "volume": "27",
+        "author": "V Venkatesh",
+        "year": "2003",
+        "unstructured": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425–478.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR99",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1006/obhd.1999.2837",
+        "volume": "79",
+        "author": "V Venkatesh",
+        "year": "1999",
+        "unstructured": "Venkatesh, V., & Speier, C. (1999). Computer technology training in the workplace: A longitudinal investigation of the effect of the mood. Organizational Behavior and Human Decision Processes, 79(1), 1–28.",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "9774_CR100",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Venkatesh, V., Sykes, T.A., & Zhang, X. (2011b). ‘Just what the doctor ordered’: A revised UTAUT for EMR system adoption and use by doctors. In 44 th Hawaii International Conference on System Sciences (HICSS), Kauai, HI, USA, 4–7 January 2011, 1–10. doi: 10.1109/HICSS.2011.1",
+        "DOI": "10.1109/HICSS.2011.1"
+      },
+      {
+        "issue": "6",
+        "key": "9774_CR101",
+        "doi-asserted-by": "publisher",
+        "first-page": "527",
+        "DOI": "10.1111/j.1365-2575.2011.00373.x",
+        "volume": "21",
+        "author": "V Venkatesh",
+        "year": "2011",
+        "unstructured": "Venkatesh, V., Thong, J. Y., Chan, F. K., Hu, P. J. H., & Brown, S. A. (2011a). Extending the two-stage information systems continuance model: Incorporating UTAUT predictors and the role of context. Information Systems Journal, 21(6), 527–555.",
+        "journal-title": "Information Systems Journal"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR102",
+        "doi-asserted-by": "publisher",
+        "first-page": "157",
+        "DOI": "10.2307/41410412",
+        "volume": "36",
+        "author": "V Venkatesh",
+        "year": "2012",
+        "unstructured": "Venkatesh, V., Thong, J., & Xu, X. (2012). Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. MIS Quarterly, 36(1), 157–178.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR103",
+        "doi-asserted-by": "publisher",
+        "first-page": "865",
+        "DOI": "10.1111/j.1744-6570.1995.tb01784.x",
+        "volume": "48",
+        "author": "C Viswesvaran",
+        "year": "1998",
+        "unstructured": "Viswesvaran, C., & Ones, D. S. (1998). Theory testing: Combining psychometric meta-analysis and structural equations modeling. Personnel Psychology, 48(4), 865–885.",
+        "journal-title": "Personnel Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR104",
+        "doi-asserted-by": "publisher",
+        "first-page": "153",
+        "DOI": "10.1177/002224378001700201",
+        "volume": "17",
+        "author": "PR Warshaw",
+        "year": "1980",
+        "unstructured": "Warshaw, P. R. (1980). A new model for predicting behavioral intentions: An alternative to Fishbein. Journal of Marketing Research, 17(2), 153–172.",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "issue": "5",
+        "key": "9774_CR105",
+        "doi-asserted-by": "publisher",
+        "first-page": "716",
+        "DOI": "10.1016/j.ijinfomgt.2013.05.001",
+        "volume": "33",
+        "author": "V Weerakkody",
+        "year": "2013",
+        "unstructured": "Weerakkody, V., El-Haddadeh, R., Al-Sobhi, F., Shareef, M. A., & Dwivedi, Y. K. (2013). Examining the influence of intermediaries in facilitating e-government adoption: An empirical investigation. International Journal of Information Management, 33(5), 716–725.",
+        "journal-title": "International Journal of Information Management"
+      },
+      {
+        "key": "9774_CR106",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Weerakkody, V., Irani, Z., Kapoor, K., Sivarajah, U., & Dwivedi, Y. K. (2017). Open data and its usability: An empirical view from the Citizen’s perspective. Information Systems Frontiers, 19(2), 285–300.",
+        "DOI": "10.1007/s10796-016-9679-1"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR107",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1057/jit.2008.30",
+        "volume": "24",
+        "author": "MD Williams",
+        "year": "2009",
+        "unstructured": "Williams, M. D., Dwivedi, Y. K., Lal, B., & Schwarz, A. (2009). Contemporary trends and issues in IT adoption and diffusion research. Journal of Information Technology, 24(1), 1–10.",
+        "journal-title": "Journal of Information Technology"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR108",
+        "doi-asserted-by": "publisher",
+        "first-page": "443",
+        "DOI": "10.1108/JEIM-09-2014-0088",
+        "volume": "28",
+        "author": "MD Williams",
+        "year": "2015",
+        "unstructured": "Williams, M. D., Rana, N. P., & Dwivedi, Y. K. (2015). The unified theory of acceptance and use of technology: A systematic review. Journal of Enterprise Information Management, 28(3), 443–488.",
+        "journal-title": "Journal of Enterprise Information Management"
+      },
+      {
+        "issue": "6",
+        "key": "9774_CR109",
+        "doi-asserted-by": "publisher",
+        "first-page": "680",
+        "DOI": "10.1057/ejis.2012.15",
+        "volume": "21",
+        "author": "J Wu",
+        "year": "2012",
+        "unstructured": "Wu, J., & Du, H. (2012). Toward a better understanding of behavioral intention and system usage constructs. European Journal of Information Systems, 21(6), 680–698.",
+        "journal-title": "European Journal of Information Systems"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR110",
+        "doi-asserted-by": "publisher",
+        "first-page": "419",
+        "DOI": "10.2307/20650298",
+        "volume": "33",
+        "author": "J Wu",
+        "year": "2009",
+        "unstructured": "Wu, J., & Lederer, A. (2009). A meta-analysis of the role of environment-based voluntariness in IT acceptance. MIS Quarterly, 33(2), 419–432.",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR111",
+        "doi-asserted-by": "publisher",
+        "first-page": "262",
+        "DOI": "10.1108/07363761011038338",
+        "volume": "27",
+        "author": "K Yang",
+        "year": "2010",
+        "unstructured": "Yang, K. (2010). Determinants of US consumer mobile shopping services adoption: Implications for designing mobile shopping services. Journal of Consumer Marketing, 27(3), 262–270.",
+        "journal-title": "Journal of Consumer Marketing"
+      },
+      {
+        "issue": "1",
+        "key": "9774_CR112",
+        "doi-asserted-by": "publisher",
+        "first-page": "19",
+        "DOI": "10.1016/S0167-9236(03)00062-9",
+        "volume": "38",
+        "author": "HD Yang",
+        "year": "2004",
+        "unstructured": "Yang, H. D., & Yoo, Y. (2004). It's all about attitude: Revisiting the technology acceptance model. Decision Support Systems, 38(1), 19–31.",
+        "journal-title": "Decision Support Systems"
+      },
+      {
+        "issue": "2",
+        "key": "9774_CR113",
+        "doi-asserted-by": "publisher",
+        "first-page": "37",
+        "DOI": "10.4018/jegr.2009040103",
+        "volume": "5",
+        "author": "PH Yeow",
+        "year": "2009",
+        "unstructured": "Yeow, P. H., & Loo, W. H. (2009). Acceptability of ATM and transit applications embedded in multipurpose smart identity card: An exploratory study in Malaysia. International Journal of Electronic Government Research, 5(2), 37–56.",
+        "journal-title": "International Journal of Electronic Government Research"
+      },
+      {
+        "issue": "3",
+        "key": "9774_CR114",
+        "doi-asserted-by": "publisher",
+        "first-page": "221",
+        "DOI": "10.1093/sw/52.3.221",
+        "volume": "52",
+        "author": "W Zhang",
+        "year": "2007",
+        "unstructured": "Zhang, W., & Gutierrez, O. (2007). Information technology acceptance in the social services sector context: An exploration. Social Work, 52(3), 221–231.",
+        "journal-title": "Social Work"
+      },
+      {
+        "issue": "4",
+        "key": "9774_CR115",
+        "doi-asserted-by": "publisher",
+        "first-page": "429",
+        "DOI": "10.1016/j.giq.2015.09.005",
+        "volume": "32",
+        "author": "A Zuiderwijk",
+        "year": "2015",
+        "unstructured": "Zuiderwijk, A., Janssen, M., & Dwivedi, Y. K. (2015). Acceptance and use predictors of open data technologies: Drawing upon the unified theory of acceptance and use of technology. Government Information Quarterly, 32(4), 429–440.",
+        "journal-title": "Government Information Quarterly"
+      }
+    ],
+    "container-title": [
+      "Information Systems Frontiers"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s10796-017-9774-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s10796-017-9774-y/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s10796-017-9774-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2023-08-23T23:20:11Z",
+      "timestamp": 1692832811000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/s10796-017-9774-y"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          8
+        ]
+      ]
+    },
+    "references-count": 115,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "9774"
+    ],
+    "URL": "https://doi.org/10.1007/s10796-017-9774-y",
+    "relation": {},
+    "ISSN": [
+      "1387-3326",
+      "1572-9419"
+    ],
+    "issn-type": [
+      {
+        "value": "1387-3326",
+        "type": "print"
+      },
+      {
+        "value": "1572-9419",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "8 June 2017",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      }
+    ]
+  }
+}

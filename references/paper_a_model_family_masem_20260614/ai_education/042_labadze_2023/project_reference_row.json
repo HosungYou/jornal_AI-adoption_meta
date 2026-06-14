@@ -1,0 +1,9 @@
+{
+  "category": "AI education",
+  "model_family": "chatbot education review",
+  "citation": "Labadze, L., Grigolia, M., & Machaidze, L. (2023). Role of AI chatbots in education: Systematic literature review.",
+  "doi_or_url": "https://doi.org/10.1186/s41239-023-00426-1",
+  "use_in_paper": "Education AI adoption context citation.",
+  "status": "supplementary",
+  "note": "Use if narrowing to AI education context."
+}

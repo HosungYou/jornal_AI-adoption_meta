@@ -1,0 +1,1462 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2026-06-12T21:21:36Z",
+      "timestamp": 1781299296037,
+      "version": "3.54.1"
+    },
+    "reference-count": 110,
+    "publisher": "Elsevier BV",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2006,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2006-09-01T00:00:00Z",
+          "timestamp": 1157068800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Information &amp; Management"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.im.2006.05.003",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2006-08-03T12:29:21Z",
+      "timestamp": 1154608161000
+    },
+    "page": "740-755",
+    "source": "Crossref",
+    "is-referenced-by-count": 1969,
+    "title": [
+      "A meta-analysis of the technology acceptance model"
+    ],
+    "prefix": "10.1016",
+    "volume": "43",
+    "author": [
+      {
+        "given": "William R.",
+        "family": "King",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "He",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib1",
+        "doi-asserted-by": "crossref",
+        "first-page": "85",
+        "DOI": "10.1080/14639230310001600452",
+        "article-title": "Evaluating a spoken dialogue system for recording clinical observations during an endoscopic examination",
+        "volume": "28",
+        "author": "Barker",
+        "year": "2003",
+        "journal-title": "Medical Informatics and The Internet in Medicine"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib2",
+        "series-title": "Statistical Power Analysis for the Behavioral Sciences",
+        "author": "Cohen",
+        "year": "1988"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.1037/0033-2909.112.1.155",
+        "article-title": "A power primer",
+        "volume": "112",
+        "author": "Cohen",
+        "year": "1992",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "318",
+        "DOI": "10.2307/249008",
+        "article-title": "Perceived usefulness, perceived ease of use, and user acceptance of information technology",
+        "volume": "13",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.im.2006.05.003_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "982",
+        "DOI": "10.1287/mnsc.35.8.982",
+        "article-title": "User acceptance of computer technology: a comparison of two theoretical models",
+        "volume": "35",
+        "author": "Davis",
+        "year": "1989",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1006/ijhc.1996.0040",
+        "article-title": "A critical assessment of potential measurement biases in the technology acceptance model: three experiments",
+        "volume": "45",
+        "author": "Davis",
+        "year": "1996",
+        "journal-title": "International Journal of Human-Computer Studies"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1109/TEM.2003.822468",
+        "article-title": "Toward preprototype user acceptance testing of new information systems: implications for software project management",
+        "volume": "51",
+        "author": "Davis",
+        "year": "2004",
+        "journal-title": "IEEE Transactions on Engineering Management"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.im.2006.05.003_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "745",
+        "DOI": "10.1016/j.im.2004.08.001",
+        "article-title": "A multi-group analysis of structural invariance: an illustration using the technology acceptance model",
+        "volume": "42",
+        "author": "Deng",
+        "year": "2005",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib9",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1016/S0378-7206(98)00101-3",
+        "article-title": "Extending the technology acceptance model with task-technology fit constructs",
+        "volume": "36",
+        "author": "Dishaw",
+        "year": "1999",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.im.2006.05.003_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "841",
+        "DOI": "10.5465/AMJ.2002.7718946",
+        "article-title": "From the editors: replication, meta-analysis, scientific progress, and AMJ's publication policy",
+        "volume": "45",
+        "author": "Eden",
+        "year": "2002",
+        "journal-title": "Academy of Management Journal"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib11",
+        "doi-asserted-by": "crossref",
+        "first-page": "451",
+        "DOI": "10.1016/S1071-5819(03)00111-3",
+        "article-title": "Predicting E-services adoption: a perceived risk facets perspective",
+        "volume": "59",
+        "author": "Featherman",
+        "year": "2003",
+        "journal-title": "International Journal of Human-Computer Studies"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1037/1082-989X.6.2.161",
+        "article-title": "Meta-analysis of correlation coefficients: a Monte Carlo comparison of fixed- and random-effects methods",
+        "volume": "6",
+        "author": "Field",
+        "year": "2001",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.1207/S15328031US0202_02",
+        "article-title": "The problem in using fixed-effects models of meta-analysis on real-world data",
+        "volume": "2",
+        "author": "Field",
+        "year": "2003",
+        "journal-title": "Understanding Statistics"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib14",
+        "series-title": "Belief, Attitude, Intention and Behavior: An Introduction to Theory and Research",
+        "author": "Fishbein",
+        "year": "1975"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "263",
+        "DOI": "10.1080/07421222.2004.11045792",
+        "article-title": "What makes an ERP implementation relationship worthwhile: linking trust mechanisms and ERP usefulness",
+        "volume": "21",
+        "author": "Gefen",
+        "year": "2004",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1109/TEM.2003.817277",
+        "article-title": "Inexperience and experience with online stores: the importance of TAM and trust",
+        "volume": "50",
+        "author": "Gefen",
+        "year": "2003",
+        "journal-title": "IEEE Transactions on Engineering Management"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.3102/0013189X005010003",
+        "article-title": "Primary, secondary, and meta-analysis of research",
+        "volume": "5",
+        "author": "Glass",
+        "year": "1976",
+        "journal-title": "Educational Researcher"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1080/07421222.2003.11045751",
+        "article-title": "Investigating determinants of software developers’ intentions to follow methodologies",
+        "volume": "20",
+        "author": "Hardgrave",
+        "year": "2003",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib19",
+        "series-title": "Statistical Methods for Meta-Analysis",
+        "author": "Hedges",
+        "year": "1985"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib20",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1080/02683960110102407",
+        "article-title": "Explaining intranet use with the technology acceptance model",
+        "volume": "16",
+        "author": "Horton",
+        "year": "2001",
+        "journal-title": "Journal of Information Technology"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.im.2006.05.003_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1145/570907.570925",
+        "article-title": "Rapid application development: rough and dirty or value-for-money engineering?",
+        "volume": "45",
+        "author": "Howard",
+        "year": "2002",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1080/07421222.1999.11518247",
+        "article-title": "Examining the technology acceptance model using physician acceptance of telemedicine technology",
+        "volume": "16",
+        "author": "Hu",
+        "year": "1999",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib23",
+        "first-page": "93",
+        "article-title": "The impact of power distance on Email acceptance: evidence from the PRC",
+        "volume": "44",
+        "author": "Huang",
+        "year": "2003",
+        "journal-title": "Journal of Computer Information Systems"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib24",
+        "series-title": "Methods of Meta-analysis: Correcting Error and Bias in Research Findings",
+        "author": "Hunter",
+        "year": "1990"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.1111/j.1540-5915.1997.tb01315.x",
+        "article-title": "Toward an understanding of the behavioral intention to use an information system",
+        "volume": "28",
+        "author": "Jackson",
+        "year": "1997",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1016/0007-6813(71)90010-3",
+        "article-title": "Manager analyst teamwork in management information systems",
+        "volume": "14",
+        "author": "King",
+        "year": "1971",
+        "journal-title": "Business Horizons"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib27",
+        "first-page": "665",
+        "article-title": "Understanding the role and methods of meta-analysis in IS research",
+        "volume": "16",
+        "author": "King",
+        "year": "2005",
+        "journal-title": "Communications of the AIS"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1016/S0378-7206(01)00143-4",
+        "article-title": "Why do people use information technology? a critical review of the technology acceptance model",
+        "volume": "40",
+        "author": "Legris",
+        "year": "2003",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib29",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.4018/joeuc.2004010104",
+        "article-title": "The technology acceptance model: a meta-analysis of empirical findings",
+        "volume": "16",
+        "author": "Ma",
+        "year": "2004",
+        "journal-title": "Journal of Organizational and End User Computing"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib30",
+        "doi-asserted-by": "crossref",
+        "first-page": "217",
+        "DOI": "10.1016/S0378-7206(00)00061-6",
+        "article-title": "Extending the TAM for a World-Wide-Web context",
+        "volume": "38",
+        "author": "Moon",
+        "year": "2001",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1080/0268396032000150807",
+        "article-title": "Adoption of broadband internet in Korea: the role of experience in building attitudes",
+        "volume": "18",
+        "author": "Oh",
+        "year": "2003",
+        "journal-title": "Journal of Information Technology"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib32",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.1037/0021-9010.77.2.115",
+        "article-title": "A note on the sampling variance of the mean uncorrected correlation in meta-analysis and validity generalization",
+        "volume": "77",
+        "author": "Osburn",
+        "year": "1992",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib33",
+        "doi-asserted-by": "crossref",
+        "first-page": "101",
+        "DOI": "10.1080/10864415.2003.11044275",
+        "article-title": "Consumer acceptance of electronic commerce: integrating trust and risk with the technology acceptance model",
+        "volume": "7",
+        "author": "Pavlou",
+        "year": "2003",
+        "journal-title": "International Journal of Electronic Commerce"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib34",
+        "doi-asserted-by": "crossref",
+        "first-page": "208",
+        "DOI": "10.1287/isre.12.2.208.9697",
+        "article-title": "Research Report: richness versus parsimony in modeling technology adoption decisions-understanding merchant adoption of a smart card-based payment system",
+        "volume": "12",
+        "author": "Plouffe",
+        "year": "2001",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.im.2006.05.003_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "1135",
+        "DOI": "10.1109/TSE.2002.1158287",
+        "article-title": "Explaining software developer acceptance of methodologies: a comparison of five theoretical models",
+        "volume": "28",
+        "author": "Riemenschneider",
+        "year": "2002",
+        "journal-title": "IEEE Transactions on Software Engineering"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib36",
+        "series-title": "Meta-analytic Procedures for Social Research",
+        "author": "Rosenthal",
+        "year": "1991"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1146/annurev.psych.52.1.59",
+        "article-title": "Meta-analysis: recent developments in quantitative methods for literature reviews",
+        "volume": "52",
+        "author": "Rosenthal",
+        "year": "2001",
+        "journal-title": "Annual Review of Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib38",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1037/0021-9010.84.1.144",
+        "article-title": "Comparison of three meta-analysis methods revisited: an analysis of Johnson, Mullen and Salas",
+        "volume": "84",
+        "author": "Schmidt",
+        "year": "1999",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib39",
+        "doi-asserted-by": "crossref",
+        "first-page": "87",
+        "DOI": "10.1287/inte.13.1.87",
+        "article-title": "The implementation profile",
+        "volume": "13",
+        "author": "Schultz",
+        "year": "1983",
+        "journal-title": "Interfaces"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib40",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/S0378-7206(97)00026-8",
+        "article-title": "Testing the technology acceptance model across cultures: a three country study",
+        "volume": "33",
+        "author": "Straub",
+        "year": "1997",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib41",
+        "doi-asserted-by": "crossref",
+        "first-page": "85",
+        "DOI": "10.1287/mnsc.42.1.85",
+        "article-title": "Empirical evaluation of the revised technology acceptance model",
+        "volume": "42",
+        "author": "Szajna",
+        "year": "1996",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib42",
+        "doi-asserted-by": "crossref",
+        "first-page": "353",
+        "DOI": "10.1207/S15327051HCI1504_3",
+        "article-title": "Prototyping Praxis: constructing computer systems and building belief",
+        "volume": "15",
+        "author": "Tudhope",
+        "year": "2000",
+        "journal-title": "Human-Computer Interaction"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "342",
+        "DOI": "10.1287/isre.11.4.342.11872",
+        "article-title": "Determinants of perceived ease of use: integrating control, intrinsic motivation, and emotion into the technology acceptance model",
+        "volume": "11",
+        "author": "Venkatesh",
+        "year": "2000",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib44",
+        "doi-asserted-by": "crossref",
+        "first-page": "186",
+        "DOI": "10.1287/mnsc.46.2.186.11926",
+        "article-title": "A theoretical extension of the technology acceptance model: four longitudinal field studies",
+        "volume": "46",
+        "author": "Venkatesh",
+        "year": "2000",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib45",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.2307/3250981",
+        "article-title": "Why don’t men ever stop to ask for directions? Gender, social influence, and their role in technology acceptance and usage behavior",
+        "volume": "24",
+        "author": "Venkatesh",
+        "year": "2000",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib46",
+        "doi-asserted-by": "crossref",
+        "first-page": "425",
+        "DOI": "10.2307/30036540",
+        "article-title": "User acceptance of information technology: toward a unified view",
+        "volume": "27",
+        "author": "Venkatesh",
+        "year": "2003",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "key": "10.1016/j.im.2006.05.003_bib47",
+        "series-title": "Meta-analysis: Quantitative Methods for Research Synthesis",
+        "author": "Wolf",
+        "year": "1986"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib48",
+        "doi-asserted-by": "crossref",
+        "first-page": "441",
+        "DOI": "10.1080/095373203000136033",
+        "article-title": "Extending the new technology acceptance model to measure the end user information systems satisfaction in a mandatory environment: a bank's treasure",
+        "volume": "15",
+        "author": "Adamson",
+        "year": "2003",
+        "journal-title": "Technology Analysis & Strategic Management"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib49",
+        "doi-asserted-by": "crossref",
+        "first-page": "361",
+        "DOI": "10.1111/j.1540-5915.1999.tb01614.x",
+        "article-title": "Are individual differences germane to the acceptance of new information technologies?",
+        "volume": "30",
+        "author": "Agarwal",
+        "year": "1999",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.im.2006.05.003_bib50",
+        "doi-asserted-by": "crossref",
+        "first-page": "731",
+        "DOI": "10.1016/j.im.2003.08.010",
+        "article-title": "An extension of the technology acceptance model in an ERP implementation environment",
+        "volume": "41",
+        "author": "Amoako-Gyampah",
+        "year": "2004",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.4018/jgim.2004070102",
+        "article-title": "Understanding internet banking adoption and use behavior: a Hong Kong perspective",
+        "volume": "12",
+        "author": "Chan",
+        "year": "2003",
+        "journal-title": "Journal of Global Information Management"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib52",
+        "doi-asserted-by": "crossref",
+        "first-page": "185",
+        "DOI": "10.1080/07421222.1996.11518128",
+        "article-title": "An empirical assessment of a modified technology acceptance model",
+        "volume": "13",
+        "author": "Chau",
+        "year": "1996",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib53",
+        "doi-asserted-by": "crossref",
+        "first-page": "297",
+        "DOI": "10.1016/S0378-7206(01)00098-2",
+        "article-title": "Investigating healthcare professionals’ decisions to accept telemedicine technology: an empirical test of competing theories",
+        "volume": "39",
+        "author": "Chau",
+        "year": "2002",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib54",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1207/S15327744JOCE1302_3",
+        "article-title": "An empirical investigation of the determinants of user acceptance of internet banking",
+        "volume": "13",
+        "author": "Chau",
+        "year": "2003",
+        "journal-title": "Journal of Organizational Computing and Electronic Commerce"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.im.2006.05.003_bib55",
+        "doi-asserted-by": "crossref",
+        "first-page": "705",
+        "DOI": "10.1016/S0378-7206(01)00127-6",
+        "article-title": "Enticing online consumers: an extended technology acceptance perspective",
+        "volume": "39",
+        "author": "Chen",
+        "year": "2002",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib56",
+        "doi-asserted-by": "crossref",
+        "first-page": "87",
+        "DOI": "10.1023/A:1015221710638",
+        "article-title": "User acceptance of E-collaboration technology: an extension of the technology acceptance model",
+        "volume": "11",
+        "author": "Dasgupta",
+        "year": "2002",
+        "journal-title": "Group Decision and Negotiation"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib57",
+        "doi-asserted-by": "crossref",
+        "first-page": "316",
+        "DOI": "10.1287/isre.13.3.316.77",
+        "article-title": "Antecedents of B2C channel satisfaction and preference: validating E-Commerce metrics",
+        "volume": "13",
+        "author": "Devaraj",
+        "year": "2002",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib58",
+        "doi-asserted-by": "crossref",
+        "first-page": "446",
+        "DOI": "10.1108/02651330310485171",
+        "article-title": "International technology transfer—model and exploratory study in the People's Republic of China",
+        "volume": "20",
+        "author": "Di Benedetto",
+        "year": "2003",
+        "journal-title": "International Marketing Review"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib59",
+        "doi-asserted-by": "crossref",
+        "first-page": "35",
+        "DOI": "10.1145/298752.298757",
+        "article-title": "The impact of developer responsiveness on perceptions of usefulness and ease of use: an extension of the technology acceptance model",
+        "volume": "29",
+        "author": "Gefen",
+        "year": "1998",
+        "journal-title": "Data Base for Advances in Information Systems"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib60",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.2979/ESJ.2003.2.2.7",
+        "article-title": "Managing user trust in B2C E-services",
+        "volume": "22",
+        "author": "Gefen",
+        "year": "2003",
+        "journal-title": "E-Service Journal"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.im.2006.05.003_bib61",
+        "doi-asserted-by": "crossref",
+        "first-page": "945",
+        "DOI": "10.1002/mar.10045",
+        "article-title": "A comparison of three models to explain Shop-Bot use on the web",
+        "volume": "19",
+        "author": "Gentry",
+        "year": "2002",
+        "journal-title": "Psychology & Marketing"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib62",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1016/j.im.2003.12.010",
+        "article-title": "Electronic commerce adoption: an empirical study of small and medium US businesses",
+        "volume": "42",
+        "author": "Grandon",
+        "year": "2004",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib63",
+        "doi-asserted-by": "crossref",
+        "first-page": "383",
+        "DOI": "10.1016/S1071-5819(03)00079-X",
+        "article-title": "Perceived usefulness, ease of use and electronic supermarket use",
+        "volume": "59",
+        "author": "Henderson",
+        "year": "2003",
+        "journal-title": "International Journal of Human-Computer Studies"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib64",
+        "doi-asserted-by": "crossref",
+        "first-page": "385",
+        "DOI": "10.1016/S0953-5438(98)00037-X",
+        "article-title": "The Beta test of an electronic supermarket",
+        "volume": "10",
+        "author": "Henderson",
+        "year": "1998",
+        "journal-title": "Interacting With Computers"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib65",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1080/07421222.2002.11045692",
+        "article-title": "Determinants of user acceptance of digital libraries: an empirical examination of individual differences and system characteristics",
+        "volume": "18",
+        "author": "Hong",
+        "year": "2001",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.im.2006.05.003_bib66",
+        "doi-asserted-by": "crossref",
+        "first-page": "853",
+        "DOI": "10.1016/j.im.2003.08.014",
+        "article-title": "Why do people play on-line games? An extended TAM with social influences and flow experience",
+        "volume": "41",
+        "author": "Hsu",
+        "year": "2004",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib67",
+        "doi-asserted-by": "crossref",
+        "first-page": "87",
+        "DOI": "10.1080/07421222.1995.11518061",
+        "article-title": "Testing the determinants of microcomputer usage via a structural equation model",
+        "volume": "11",
+        "author": "Igbaria",
+        "year": "1995",
+        "journal-title": "Journal of Management Information Systems"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib68",
+        "doi-asserted-by": "crossref",
+        "first-page": "279",
+        "DOI": "10.2307/249498",
+        "article-title": "Personal computing acceptance factors in small firms: a structural equation model",
+        "volume": "21",
+        "author": "Igbaria",
+        "year": "1997",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib69",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1207/S15327744JOCE100103",
+        "article-title": "E-mail and V-mail usage: generalizing across technologies",
+        "volume": "10",
+        "author": "Karahanna",
+        "year": "2000",
+        "journal-title": "Journal of Organizational Computing and Electronic Commerce"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib70",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1016/S0378-7206(98)00096-2",
+        "article-title": "The psychological origins of perceived usefulness and ease-of-use",
+        "volume": "35",
+        "author": "Karahanna",
+        "year": "1999",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib71",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.3233/HSM-2003-22302",
+        "article-title": "The use of web-based information systems for non-work activities: an empirical study",
+        "volume": "22",
+        "author": "Klaus",
+        "year": "2003",
+        "journal-title": "Human Systems Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib72",
+        "doi-asserted-by": "crossref",
+        "first-page": "206",
+        "DOI": "10.1057/palgrave.fsm.4770120",
+        "article-title": "Consumer acceptance of wireless finance",
+        "volume": "8",
+        "author": "Kleijnen",
+        "year": "2004",
+        "journal-title": "Journal of Financial Services Marketing"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib73",
+        "doi-asserted-by": "crossref",
+        "first-page": "205",
+        "DOI": "10.1287/isre.13.2.205.83",
+        "article-title": "Applying the technology acceptance model and flow theory to online consumer behavior",
+        "volume": "13",
+        "author": "Koufaris",
+        "year": "2002",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib74",
+        "doi-asserted-by": "crossref",
+        "first-page": "269",
+        "DOI": "10.1016/S0167-9236(00)00076-2",
+        "article-title": "The technology acceptance model in the world wide web",
+        "volume": "29",
+        "author": "Lederer",
+        "year": "2000",
+        "journal-title": "Decision Support Systems"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib75",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1080/08874417.2004.11647576",
+        "article-title": "The effect of affiliation motivation on the intention to use groupware in an MBA program",
+        "volume": "44",
+        "author": "Li",
+        "year": "2004",
+        "journal-title": "Journal of Computer Information Systems"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib76",
+        "doi-asserted-by": "crossref",
+        "first-page": "137",
+        "DOI": "10.1046/j.0266-4909.2001.00221.x",
+        "article-title": "Understanding user perceptions of world-wide web environments",
+        "volume": "18",
+        "author": "Liaw",
+        "year": "2002",
+        "journal-title": "Journal of Computer Assisted Learning"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.im.2006.05.003_bib77",
+        "doi-asserted-by": "crossref",
+        "first-page": "469",
+        "DOI": "10.1016/S0950-5849(03)00027-2",
+        "article-title": "A conceptual framework on the adoption of negotiation support systems",
+        "volume": "45",
+        "author": "Lim",
+        "year": "2003",
+        "journal-title": "Information and Software Technology"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib78",
+        "doi-asserted-by": "crossref",
+        "first-page": "98",
+        "DOI": "10.1080/08874417.2004.11647587",
+        "article-title": "An empirical study of end-user computing acceptance factors in small and medium enterprises in Taiwan: analyzed by structural equation modeling",
+        "volume": "44",
+        "author": "Lin",
+        "year": "2004",
+        "journal-title": "Journal of Computer Information Systems"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib79",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1016/S0268-4012(00)00005-0",
+        "article-title": "Towards an understanding of the behavioral intention to use a web site",
+        "volume": "20",
+        "author": "Lin",
+        "year": "2000",
+        "journal-title": "International Journal of Information Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib80",
+        "doi-asserted-by": "crossref",
+        "first-page": "649",
+        "DOI": "10.1016/S0377-2217(00)00107-7",
+        "article-title": "The effects of cognitive style and model type on DSS acceptance: an empirical study",
+        "volume": "131",
+        "author": "Lu",
+        "year": "2001",
+        "journal-title": "European Journal of Operational Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib81",
+        "doi-asserted-by": "crossref",
+        "first-page": "291",
+        "DOI": "10.1111/j.1540-5915.1999.tb01611.x",
+        "article-title": "Technology use and performance: a field study of broker workstations",
+        "volume": "30",
+        "author": "Lucas",
+        "year": "1999",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib82",
+        "doi-asserted-by": "crossref",
+        "first-page": "119",
+        "DOI": "10.1016/S0378-7206(00)00059-8",
+        "article-title": "Implementation in a World of workstations and networks",
+        "volume": "38",
+        "author": "Lucas",
+        "year": "2000",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib83",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1287/isre.2.3.173",
+        "article-title": "Predicting user intentions: comparing the technology acceptance model with the theory of planned behavior",
+        "volume": "2",
+        "author": "Mathieson",
+        "year": "1991",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib84",
+        "first-page": "49",
+        "article-title": "Evaluating electronic commerce acceptance with the technology acceptance model",
+        "volume": "44",
+        "author": "McCloskey",
+        "year": "2003",
+        "journal-title": "Journal of Computer Information Systems"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib85",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1109/52.595956",
+        "article-title": "How user perceptions influence software use",
+        "volume": "14",
+        "author": "Morris",
+        "year": "1997",
+        "journal-title": "IEEE Software"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.im.2006.05.003_bib86",
+        "doi-asserted-by": "crossref",
+        "first-page": "795",
+        "DOI": "10.1016/j.im.2003.08.012",
+        "article-title": "Factors affecting Engineers’ acceptance of asynchronous E-Learning systems in high-tech companies",
+        "volume": "41",
+        "author": "Ong",
+        "year": "2004",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib87",
+        "doi-asserted-by": "crossref",
+        "first-page": "16",
+        "DOI": "10.1108/08858629410059762",
+        "article-title": "International technology adoption: behavior structure, demand certainty and culture",
+        "volume": "9",
+        "author": "Phillips",
+        "year": "1994",
+        "journal-title": "Journal of Business & Industrial Marketing"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib88",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1287/isre.13.1.50.96",
+        "article-title": "Assessing the validity of Is success models: an empirical test and theoretical analysis",
+        "volume": "13",
+        "author": "Rai",
+        "year": "2002",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib89",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1080/08874417.2001.11647015",
+        "article-title": "Explaining software development tool use with the technology acceptance model",
+        "volume": "41",
+        "author": "Rimenschneider",
+        "year": "2001",
+        "journal-title": "Journal of Computer Information Systems"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib90",
+        "doi-asserted-by": "crossref",
+        "first-page": "269",
+        "DOI": "10.1016/S0378-7206(02)00010-1",
+        "article-title": "Understanding IT adoption decisions in small business: integrating current theories",
+        "volume": "40",
+        "author": "Riemenschneider",
+        "year": "2003",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib91",
+        "doi-asserted-by": "crossref",
+        "first-page": "343",
+        "DOI": "10.1016/S0360-1315(02)00142-2",
+        "article-title": "An empirical investigation of student acceptance of course websites",
+        "volume": "40",
+        "author": "Selim",
+        "year": "2003",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib92",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1080/01449290410001669978",
+        "article-title": "Senior Government executives’ use of the internet: a Bruneian scenario",
+        "volume": "23",
+        "author": "Seyal",
+        "year": "2004",
+        "journal-title": "Behavior & Information Technology"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.im.2006.05.003_bib93",
+        "doi-asserted-by": "crossref",
+        "first-page": "719",
+        "DOI": "10.1016/j.im.2003.08.009",
+        "article-title": "Extended technology acceptance model of internet utilization behavior",
+        "volume": "41",
+        "author": "Shih",
+        "year": "2004",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib94",
+        "doi-asserted-by": "crossref",
+        "first-page": "135",
+        "DOI": "10.1080/10864415.2002.11044256",
+        "article-title": "Consumer bidding behavior on internet auction sites",
+        "volume": "7",
+        "author": "Stafford",
+        "year": "2002",
+        "journal-title": "International Journal of Electronic Commerce"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.im.2006.05.003_bib95",
+        "doi-asserted-by": "crossref",
+        "first-page": "364",
+        "DOI": "10.1108/10662240310501649",
+        "article-title": "Modeling the effect of experience on student acceptance of web-based courseware",
+        "volume": "13",
+        "author": "Stoel",
+        "year": "2003",
+        "journal-title": "Internet Research-Electronic Networking Applications and Policy"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.im.2006.05.003_bib96",
+        "doi-asserted-by": "crossref",
+        "first-page": "1328",
+        "DOI": "10.1287/mnsc.41.8.1328",
+        "article-title": "Measuring system usage—implications for IS theory testing",
+        "volume": "41",
+        "author": "Straub",
+        "year": "1995",
+        "journal-title": "Management Science"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib97",
+        "doi-asserted-by": "crossref",
+        "first-page": "561",
+        "DOI": "10.2307/249633",
+        "article-title": "Assessing IT usage: the role of prior experience",
+        "volume": "19",
+        "author": "Taylor",
+        "year": "1995",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib98",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1287/isre.6.2.144",
+        "article-title": "Understanding information technology usage—a test of competing models",
+        "volume": "6",
+        "author": "Taylor",
+        "year": "1995",
+        "journal-title": "Information Systems Research"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.im.2006.05.003_bib99",
+        "doi-asserted-by": "crossref",
+        "first-page": "671",
+        "DOI": "10.1016/S1071-5819(03)00087-9",
+        "article-title": "Evaluating information accessibility and community adaptivity features for sustaining virtual learning communities",
+        "volume": "59",
+        "author": "Teo",
+        "year": "2003",
+        "journal-title": "International Journal of Human-Computer Studies"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib100",
+        "doi-asserted-by": "crossref",
+        "first-page": "215",
+        "DOI": "10.1016/S1071-5819(02)91024-4",
+        "article-title": "Understanding user acceptance of digital libraries: what are the roles of interface characteristics, organizational context, and individual differences?",
+        "volume": "57",
+        "author": "Thong",
+        "year": "2002",
+        "journal-title": "International Journal of Human-Computer Studies"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib101",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1046/j.1365-2575.2001.00103.x",
+        "article-title": "Desktop video conferencing in virtual workgroups: anticipation, system evaluation and performance",
+        "volume": "11",
+        "author": "Townsend",
+        "year": "2001",
+        "journal-title": "Information Systems Journal"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.im.2006.05.003_bib102",
+        "doi-asserted-by": "crossref",
+        "first-page": "541",
+        "DOI": "10.1016/S0378-7206(02)00079-4",
+        "article-title": "Factors influencing the usage of websites: the case of a generic Portal in the Netherlands",
+        "volume": "40",
+        "author": "van der Heijden",
+        "year": "2003",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib103",
+        "doi-asserted-by": "crossref",
+        "first-page": "47",
+        "DOI": "10.1080/01449290110107236",
+        "article-title": "Clinical acceptance of a low-cost portable system for postural assessment",
+        "volume": "21",
+        "author": "Van Schaik",
+        "year": "2002",
+        "journal-title": "Behaviour & Information Technology"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.im.2006.05.003_bib104",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.2307/249753",
+        "article-title": "Creation of favorable user perceptions: exploring the role of intrinsic motivation",
+        "volume": "23",
+        "author": "Venkatesh",
+        "year": "1999",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.im.2006.05.003_bib105",
+        "doi-asserted-by": "crossref",
+        "first-page": "451",
+        "DOI": "10.1111/j.1540-5915.1996.tb01822.x",
+        "article-title": "A model of the antecedents of perceived ease of use: development and test",
+        "volume": "27",
+        "author": "Venkatesh",
+        "year": "1996",
+        "journal-title": "Decision Sciences"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.im.2006.05.003_bib106",
+        "doi-asserted-by": "crossref",
+        "first-page": "747",
+        "DOI": "10.1016/j.im.2003.08.011",
+        "article-title": "Predicting consumer intentions to use on-line shopping: the case for an augmented technology acceptance model",
+        "volume": "41",
+        "author": "Vijayasarathy",
+        "year": "2004",
+        "journal-title": "Information & Management"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib107",
+        "doi-asserted-by": "crossref",
+        "first-page": "333",
+        "DOI": "10.1016/j.giq.2003.08.005",
+        "article-title": "The adoption of electronic tax filing systems: an empirical study",
+        "volume": "20",
+        "author": "Wang",
+        "year": "2003",
+        "journal-title": "Government Information Quarterly"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.im.2006.05.003_bib108",
+        "doi-asserted-by": "crossref",
+        "first-page": "501",
+        "DOI": "10.1108/09564230310500192",
+        "article-title": "Determinants of user acceptance of internet banking: an empirical study",
+        "volume": "14",
+        "author": "Wang",
+        "year": "2003",
+        "journal-title": "International Journal of Service Industry Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.im.2006.05.003_bib109",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1016/S0167-9236(03)00062-9",
+        "article-title": "It's All About Attitude: Revisiting the Technology Acceptance Model",
+        "volume": "38",
+        "author": "Yang",
+        "year": "2004",
+        "journal-title": "Decision Support Systems"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.im.2006.05.003_bib110",
+        "doi-asserted-by": "crossref",
+        "first-page": "431",
+        "DOI": "10.1016/S1071-5819(03)00114-9",
+        "article-title": "Predicting the use of web-based information systems: self-efficacy, enjoyment, learning goal orientation, and the technology acceptance model",
+        "volume": "59",
+        "author": "Yi",
+        "year": "2003",
+        "journal-title": "International Journal of Human-Computer Studies"
+      }
+    ],
+    "container-title": [
+      "Information &amp; Management"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378720606000528?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378720606000528?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          10
+        ]
+      ],
+      "date-time": "2025-01-10T09:31:39Z",
+      "timestamp": 1736501499000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378720606000528"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          9
+        ]
+      ]
+    },
+    "references-count": 110,
+    "journal-issue": {
+      "issue": "6",
+      "published-print": {
+        "date-parts": [
+          [
+            2006,
+            9
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0378720606000528"
+    ],
+    "URL": "https://doi.org/10.1016/j.im.2006.05.003",
+    "relation": {},
+    "ISSN": [
+      "0378-7206"
+    ],
+    "issn-type": [
+      {
+        "value": "0378-7206",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          9
+        ]
+      ]
+    }
+  }
+}

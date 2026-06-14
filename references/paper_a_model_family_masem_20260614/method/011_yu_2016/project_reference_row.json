@@ -1,0 +1,9 @@
+{
+  "category": "method",
+  "model_family": "MASEM heterogeneity",
+  "citation": "Yu, J., Downes, P. E., Carter, K. M., & O'Boyle, E. H. (2016). The problem of effect size heterogeneity in MASEM.",
+  "doi_or_url": "https://doi.org/10.1037/met0000061",
+  "use_in_paper": "Supports attention to heterogeneity across correlations and paths.",
+  "status": "supplementary",
+  "note": "Useful for robustness and random-effects rationale."
+}

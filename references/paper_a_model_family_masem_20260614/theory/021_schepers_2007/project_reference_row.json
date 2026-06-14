@@ -1,0 +1,9 @@
+{
+  "category": "theory",
+  "model_family": "TAM meta-analysis",
+  "citation": "Schepers, J., & Wetzels, M. (2007). A meta-analysis of the technology acceptance model: Investigating subjective norm and moderation effects.",
+  "doi_or_url": "https://doi.org/10.1016/j.im.2006.10.007",
+  "use_in_paper": "Supports social influence/subjective norm integration with TAM.",
+  "status": "core",
+  "note": "Useful for SI in core7."
+}

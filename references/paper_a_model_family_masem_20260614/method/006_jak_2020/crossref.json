@@ -1,0 +1,205 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T01:08:58Z",
+      "timestamp": 1780535338628,
+      "version": "3.54.1"
+    },
+    "reference-count": 0,
+    "publisher": "American Psychological Association (APA)",
+    "issue": "4",
+    "funder": [
+      {
+        "DOI": "10.13039/501100003246",
+        "name": "Netherlands Organisation for Scientific Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "451-16-001"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "451-16-001"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003246",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Ministry of Education",
+        "award": [
+          "FY2017-FRC1-008"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "FY2017-FRC1-008"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Psychological Methods"
+    ],
+    "DOI": "10.1037/met0000245",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2019-10-31T15:01:51Z",
+      "timestamp": 1572534111000
+    },
+    "page": "430-455",
+    "source": "Crossref",
+    "is-referenced-by-count": 207,
+    "title": [
+      "Meta-analytic structural equation modeling with moderating effects on SEM parameters."
+    ],
+    "prefix": "10.1037",
+    "volume": "25",
+    "author": [
+      {
+        "given": "Suzanne",
+        "family": "Jak",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0113-0758",
+        "authenticated-orcid": false,
+        "given": "Mike W. -L.",
+        "family": "Cheung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "15",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          8
+        ]
+      ]
+    },
+    "container-title": [
+      "Psychological Methods"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://psycnet.apa.org/journals/met/25/4/430.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          5
+        ]
+      ],
+      "date-time": "2024-02-05T22:51:25Z",
+      "timestamp": 1707173485000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://doi.apa.org/doi/10.1037/met0000245"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          8
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "4",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2019-64276-001",
+      "31670537"
+    ],
+    "URL": "https://doi.org/10.1037/met0000245",
+    "relation": {},
+    "ISSN": [
+      "1939-1463",
+      "1082-989X"
+    ],
+    "issn-type": [
+      {
+        "value": "1939-1463",
+        "type": "electronic"
+      },
+      {
+        "value": "1082-989X",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          8
+        ]
+      ]
+    }
+  }
+}
