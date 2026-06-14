@@ -777,12 +777,12 @@ human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_
 ,,,S176,SE-SI,,,,,,no
 ,,,S176,SE-TRU,,,,,,no
 ,,,S176,SE-UB,,,,,,no
-,,,S072,ANX-ATT,,,,,,no
+,,,S072,ANX-ATT,,,,,Do not promote now: source labels require construct-mapping audit before treating cells as full10 ANX/ATT/UB.,no
 ,,,S072,ANX-SE,,,,,,no
 ,,,S072,ANX-TRU,,,,,,no
 ,,,S072,ATT-SE,,,,,,no
 ,,,S072,ATT-TRU,,,,,,no
-,,,S072,ATT-UB,,,,,,no
+,,,S072,ATT-UB,,,,,Do not promote now: source labels require construct-mapping audit before treating cells as full10 ANX/ATT/UB.,no
 ,,,S072,BI-SE,,,,,,no
 ,,,S072,BI-TRU,,,,,,no
 ,,,S072,EE-SE,,,,,,no
@@ -813,13 +813,13 @@ human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_
 ,,,S004,ATT-SI,,,,,,no
 ,,,S004,ATT-TRU,,,,,,no
 ,,,S004,ATT-UB,,,,,,no
-,,,S004,BI-SE,,,,,,no
-,,,S004,EE-SE,,,,,,no
-,,,S004,FC-SE,,,,,,no
+,,,S004,BI-SE,,,,,Do not promote: PKC/perceived knowledge is not approved as full10 SE.,no
+,,,S004,EE-SE,,,,,Do not promote: PKC/perceived knowledge is not approved as full10 SE.,no
+,,,S004,FC-SE,,,,,Do not promote: PKC/perceived knowledge is not approved as full10 SE.,no
 ,,,S004,PE-SE,,,,,,no
-,,,S004,SE-SI,,,,,,no
-,,,S004,SE-TRU,,,,,,no
-,,,S004,SE-UB,,,,,,no
+,,,S004,SE-SI,,,,,Do not promote: PKC/perceived knowledge is not approved as full10 SE.,no
+,,,S004,SE-TRU,,,,,Do not promote: PKC/perceived knowledge is not approved as full10 SE.,no
+,,,S004,SE-UB,,,,,Do not promote: PKC/perceived knowledge is not approved as full10 SE.,no
 ,,,S016,ANX-TRU,,,,,,no
 ,,,S016,ANX-UB,,,,,,no
 ,,,S016,ATT-TRU,,,,,,no
@@ -913,13 +913,13 @@ human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_
 ,,,S048,ANX-SI,,,,,,no
 ,,,S048,ANX-TRU,,,,,,no
 ,,,S048,ANX-UB,,,,,,no
-,,,S048,BI-FC,,,,,,no
-,,,S048,BI-PE,,,,,,no
-,,,S048,BI-SI,,,,,,no
-,,,S048,EE-UB,,,,,,no
-,,,S048,FC-UB,,,,,,no
-,,,S048,SI-UB,,,,,,no
-,,,S048,TRU-UB,,,,,,no
+,,,S048,BI-FC,0.424,,source_reported_pearson_correlation_matrix,S048_doc1 page 13 chunk 1; Table 2 descriptive statistics and correlations; INT x FC,"Batch-safe source-visible candidate; researcher must confirm source value, evidence type, and source location before promotion.",pending_researcher_confirmation
+,,,S048,BI-PE,0.659,,source_reported_pearson_correlation_matrix,S048_doc1 page 13 chunk 1; Table 2 descriptive statistics and correlations; INT x PE,"Batch-safe source-visible candidate; researcher must confirm source value, evidence type, and source location before promotion.",pending_researcher_confirmation
+,,,S048,BI-SI,0.626,,source_reported_pearson_correlation_matrix,S048_doc1 page 13 chunk 1; Table 2 descriptive statistics and correlations; INT x SI,"Batch-safe source-visible candidate; researcher must confirm source value, evidence type, and source location before promotion.",pending_researcher_confirmation
+,,,S048,EE-UB,0.398,,source_reported_pearson_correlation_matrix,S048_doc1 page 13 chunk 1; Table 2 descriptive statistics and correlations; EE x USE,"Batch-safe source-visible candidate; researcher must confirm source value, evidence type, and source location before promotion.",pending_researcher_confirmation
+,,,S048,FC-UB,0.340,,source_reported_pearson_correlation_matrix,S048_doc1 page 13 chunk 1; Table 2 descriptive statistics and correlations; FC x USE,"Batch-safe source-visible candidate; researcher must confirm source value, evidence type, and source location before promotion.",pending_researcher_confirmation
+,,,S048,SI-UB,0.589,,source_reported_pearson_correlation_matrix,S048_doc1 page 13 chunk 1; Table 2 descriptive statistics and correlations; SI x USE,"Batch-safe source-visible candidate; researcher must confirm source value, evidence type, and source location before promotion.",pending_researcher_confirmation
+,,,S048,TRU-UB,0.442,,source_reported_pearson_correlation_matrix,S048_doc1 page 13 chunk 1; Table 2 descriptive statistics and correlations; TRU x USE,"Batch-safe source-visible candidate; researcher must confirm source value, evidence type, and source location before promotion.",pending_researcher_confirmation
 ,,,S051,ATT-BI,,,,,,no
 ,,,S051,ATT-EE,,,,,,no
 ,,,S051,ATT-FC,,,,,,no
@@ -1000,7 +1000,7 @@ human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_
 ,,,S121-1,ANX-BI,,,,,,no
 ,,,S121-1,ANX-EE,,,,,,no
 ,,,S121-1,ANX-FC,,,,,,no
-,,,S121-1,ANX-PE,-0.23,,source_reported_spearman_correlation_heatmap,S121.pdf p.8 Figure 2,Conditional candidate: threat appraisal and performance expectancy; requires researcher confirmation that threat appraisal maps to full10 ANX.,pending_researcher_confirmation
+reject,2026-06-15,researcher,S121-1,ANX-PE,-0.23,,source_reported_spearman_correlation_heatmap,S121.pdf p.8 Figure 2,Researcher rejected mapping threat appraisal to full10 ANX; source-visible value not promoted.,no
 ,,,S121-1,ANX-SE,,,,,,no
 ,,,S121-1,ANX-SI,,,,,,no
 ,,,S121-1,ANX-TRU,,,,,,no
@@ -1024,7 +1024,7 @@ approve,2026-06-14,researcher,S121-1,PE-SE,0.40,0.40,source-reported Spearman co
 ,,,S121-2,ANX-BI,,,,,,no
 ,,,S121-2,ANX-EE,,,,,,no
 ,,,S121-2,ANX-FC,,,,,,no
-,,,S121-2,ANX-PE,-0.08,,source_reported_spearman_correlation_heatmap,S121.pdf p.8 Figure 2,Conditional candidate: threat appraisal and performance expectancy; requires researcher confirmation that threat appraisal maps to full10 ANX.,pending_researcher_confirmation
+reject,2026-06-15,researcher,S121-2,ANX-PE,-0.08,,source_reported_spearman_correlation_heatmap,S121.pdf p.8 Figure 2,Researcher rejected mapping threat appraisal to full10 ANX; source-visible value not promoted.,no
 ,,,S121-2,ANX-SE,,,,,,no
 ,,,S121-2,ANX-SI,,,,,,no
 ,,,S121-2,ANX-TRU,,,,,,no

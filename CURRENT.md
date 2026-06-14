@@ -7,13 +7,12 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 ## Focus Now
 - Current goal: Provide AI-candidate-only Paper A source-trace results for researcher review without violating Paper B reference-standard boundaries.
 - Current blocker: AI traces are review evidence only; no row may enter Paper A supplemental input until the researcher confirms the source value, evidence type, and source location.
-- Next action: Continue full10 ordered densification review at `08_BI-PE`; S121 ANX-PE threat-appraisal values remain conditional pending researcher mapping confirmation.
+- Next action: Researcher confirms or rejects the seven S048 source-visible numeric-cell candidates before any supplemental input or model-family MASEM rerun.
 - Perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist
 - Disagreement: show_on_conflict
 
 ## Open Questions
 - Which AI-candidate source-trace rows should be human-confirmed and promoted to supplemental Paper A densification input?
-- For S121, should `threat appraisal` be accepted as full10 `ANX` for the conditional ANX-PE values?
 
 ## Recent LongTable Invocations
 - researcher decision recorded: use the recommended candidate-only route; source-trace results should be provided to the researcher, who decides whether any row enters supplemental Paper A input.
@@ -22,7 +21,7 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - boundary preserved: AI traces are not independent human coding and not source-anchored adjudication by themselves.
 
 ## Pending Decision Questions
-- Researcher checkpoint pending: decide whether S121 `threat appraisal` can be mapped to full10 `ANX` for conditional ANX-PE supplemental input.
+- Researcher checkpoint pending: confirm or reject the seven S048 source-visible values in `paper_a_C_remaining_full10_batch_review_shortlist_20260615.csv`.
 
 ## Restart Prompt
 - "Continue after the 2026-06-14 Paper A AI-candidate-only source-trace packet: AI traces are review evidence only and cannot enter Paper A supplemental input until the researcher confirms source value, evidence type, and source location. Use the generated confirmation template to decide which rows to promote."
@@ -80,3 +79,15 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
   - `paper_a_C_pair07_ANX_PE_source_evidence_draft_20260614.csv`
   - `PAPER_A_C_PAIR07_ANX_PE_REVIEW_LOG_KO_20260614.md`
 - Current next action: continue full10 ordered densification review at `08_BI-PE`; do not rerun model-family MASEM until approved supplemental rows are staged.
+
+## 2026-06-15 update - S121 ANX rejection and remaining C-tier batch triage
+
+- Researcher rejected mapping `threat appraisal` to full10 `ANX`; `S121-1 ANX-PE=-0.23` and `S121-2 ANX-PE=-0.08` are not promoted.
+- Completed a remaining-queue batch triage instead of continuing pair-by-pair: 413 rows across 36 full10 pair labels.
+- Batch-safe source-visible numeric-cell candidates: 7 rows, all from `S048` Table 2 Pearson correlation matrix.
+- Held/excluded groups: S004 SE rows depend on rejected `PKC -> SE`; S072 rows require construct-mapping audit before any value entry; one/no-human-supported-construct rows remain excluded unless source adjudication reopens mapping.
+- Generated evidence artifacts under `data/04_extraction/05_llm_masem_substitution/results/paper_a_ai_candidate_source_trace_20260614/`:
+  - `paper_a_C_remaining_full10_batch_triage_20260615.csv`
+  - `paper_a_C_remaining_full10_batch_review_shortlist_20260615.csv`
+  - `PAPER_A_C_REMAINING_FULL10_BATCH_TRIAGE_KO_20260615.md`
+- Current next action: researcher confirms or rejects the seven S048 values before supplemental input or model-family MASEM rerun.

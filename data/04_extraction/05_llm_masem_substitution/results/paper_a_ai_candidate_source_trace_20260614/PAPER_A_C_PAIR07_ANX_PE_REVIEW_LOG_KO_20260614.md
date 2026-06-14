@@ -45,3 +45,9 @@ S121 Figure 2의 `threat appraisal`과 `performance expectancy` Spearman r는 so
 ## Next pair
 
 Continue full10 ordered densification review at `08_BI-PE`.
+
+## 2026-06-15 researcher decision
+
+- Researcher decision: do not approve `threat appraisal` -> full10 `ANX`.
+- Consequence: `S121-1 ANX-PE=-0.23` and `S121-2 ANX-PE=-0.08` remain source-visible review evidence but are not promoted to Paper A supplemental input.
+- Final pair 07 outcome after researcher decision: immediate promotion 0, conditional candidates 0, promoted rows 0.

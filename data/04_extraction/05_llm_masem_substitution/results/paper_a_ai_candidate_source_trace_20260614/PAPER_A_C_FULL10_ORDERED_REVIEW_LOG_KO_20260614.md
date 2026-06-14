@@ -72,3 +72,11 @@ Continue with pair order 04 `ATT-PE` in `paper_a_C_full10_pair_ordered_batch01_2
 - 제외 원칙: `perceived risk`, `innovative resistance`, `trust`, `privacy/security`, `reference-only anxiety`, `challenge appraisal`은 full10 `ANX`로 자동 매핑하지 않는다.
 - 산출물: `paper_a_C_pair07_ANX_PE_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR07_ANX_PE_REVIEW_LOG_KO_20260614.md`
 - 다음 pair: `08_BI-PE`
+
+## 2026-06-15 batch triage after S121 ANX rejection
+
+- Researcher rejected `threat appraisal` -> full10 `ANX`; pair 07 final promoted rows remain 0.
+- Remaining C-tier full10 queue rows triaged at once: 413 rows across 36 pair labels.
+- Batch-safe source-visible numeric-cell candidates: 7 rows, all from `S048` Table 2.
+- Rows closed/held without promotion: S004 SE-related rows closed because `PKC -> SE` is not approved; S072 rows held for construct-mapping audit; all one/no-human-supported-construct rows remain excluded unless reopened by source adjudication.
+- Next action: researcher confirms or rejects the seven S048 source-visible values before any supplemental input or model-family MASEM rerun.
