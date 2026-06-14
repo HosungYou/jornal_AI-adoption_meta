@@ -7,7 +7,7 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 ## Focus Now
 - Current goal: Provide AI-candidate-only Paper A source-trace results for researcher review without violating Paper B reference-standard boundaries.
 - Current blocker: AI traces are review evidence only; no row may enter Paper A supplemental input until the researcher confirms the source value, evidence type, and source location.
-- Next action: Researcher reviews `PAPER_A_RESEARCHER_DECISION_BRIEF_KO_20260614.md`, then confirms rows for promotion in the human confirmation template.
+- Next action: Researcher uses the A spot-check worksheet and C full10 ordered queue workbook to confirm rows for promotion; C review continues at pair order 04 `ATT-PE` after initial `FC-PE` construct-mapping gate.
 - Perspectives: reviewer, methods_critic, measurement_auditor, ethics_reviewer, voice_keeper, venue_strategist
 - Disagreement: show_on_conflict
 
@@ -17,6 +17,7 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 ## Recent LongTable Invocations
 - researcher decision recorded: use the recommended candidate-only route; source-trace results should be provided to the researcher, who decides whether any row enters supplemental Paper A input.
 - AI-candidate source-trace packet generated: existing human-coded source-review rows and full10 missing-pair densification candidates are traced without changing Paper A input or Paper B reference values. Korean researcher decision brief and shortlist were generated on 2026-06-14.
+- A/C review execution artifacts generated: A study-level spot-check worksheet, C full10 pair-ordered queue, first batch workbook, and initial FC-PE construct-mapping evidence draft.
 - boundary preserved: AI traces are not independent human coding and not source-anchored adjudication by themselves.
 
 ## Pending Decision Questions
