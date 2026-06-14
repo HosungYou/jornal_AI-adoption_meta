@@ -41,3 +41,13 @@
 ## 다음 queue 위치
 
 - 다음 full10 pair: `06_PE-TRU`
+
+## Researcher decision recorded (2026-06-14)
+
+- Decision: approved.
+- Approved mapping: `genAI-related subjective competence` -> full10 `SE`.
+- Approved values: `S121-1` students `PE-SE = .40`; `S121-2` teachers `PE-SE = .30`.
+- Evidence type: source-reported Spearman correlation heatmap.
+- Source location: `S121.pdf` p.8 Figure 2.
+- Action: promoted into researcher-approved PE-SE S121 supplement staging file; retained exclusions for PBC, Security, and background/reference-only self-efficacy detections.
+

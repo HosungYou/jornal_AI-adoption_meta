@@ -1016,7 +1016,7 @@ human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_
 ,,,S121-1,BI-SE,,,,,,no
 ,,,S121-1,EE-SE,,,,,,no
 ,,,S121-1,FC-SE,,,,,,no
-,,,S121-1,PE-SE,,,,,,no
+approve,2026-06-14,researcher,S121-1,PE-SE,0.40,0.40,source-reported Spearman correlation heatmap,S121.pdf p.8 Figure 2; students; performance expectancy x genAI-related subjective competence,Researcher approved mapping genAI-related subjective competence to full10 SE.,yes
 ,,,S121-1,SE-SI,,,,,,no
 ,,,S121-1,SE-TRU,,,,,,no
 ,,,S121-1,SE-UB,,,,,,no
@@ -1040,7 +1040,7 @@ human_decision,human_decision_date,human_reviewer,study_id,pair,candidate_value_
 ,,,S121-2,BI-SE,,,,,,no
 ,,,S121-2,EE-SE,,,,,,no
 ,,,S121-2,FC-SE,,,,,,no
-,,,S121-2,PE-SE,,,,,,no
+approve,2026-06-14,researcher,S121-2,PE-SE,0.30,0.30,source-reported Spearman correlation heatmap,S121.pdf p.8 Figure 2; teachers; performance expectancy x genAI-related subjective competence,Researcher approved mapping genAI-related subjective competence to full10 SE.,yes
 ,,,S121-2,SE-SI,,,,,,no
 ,,,S121-2,SE-TRU,,,,,,no
 ,,,S121-2,SE-UB,,,,,,no

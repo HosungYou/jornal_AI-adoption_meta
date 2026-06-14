@@ -48,3 +48,18 @@ Continue with pair order 04 `ATT-PE` in `paper_a_C_full10_pair_ordered_batch01_2
 - 제외 원칙: `PBC`, `Security`, 일반 efficacy 표현, 참고문헌의 self-efficacy는 full10 `SE`로 자동 매핑하지 않는다.
 - 산출물: `paper_a_C_pair05_PE_SE_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR05_PE_SE_REVIEW_LOG_KO_20260614.md`
 - 다음 pair: `06_PE-TRU`
+
+## 2026-06-14 researcher approval - pair 05_PE-SE S121 supplement
+
+- Researcher approved the construct mapping `genAI-related subjective competence` -> full10 `SE`.
+- Promoted two S121 PE-SE rows into researcher-approved supplement staging: `S121-1=.40` and `S121-2=.30`.
+- Source: `S121.pdf` p.8 Figure 2, source-reported Spearman correlation heatmap.
+- Non-approved exclusions remain unchanged: PBC, Security, generic efficacy language, and reference/background self-efficacy are not full10 SE.
+
+## 2026-06-14 pair 06_PE-TRU preliminary source/PDF review
+
+- 대상 row: 10
+- 예비 결론: 승격 후보 0개, 조건부 후보 0개.
+- 핵심 제외 원칙: `insecurity`, `privacy concerns`, `psychological risk`, `perceived risk`, `habit`, `perceived competence`, `perceived enjoyment`는 full10 `TRU`로 자동 매핑하지 않는다.
+- 산출물: `paper_a_C_pair06_PE_TRU_source_evidence_draft_20260614.csv`, `PAPER_A_C_PAIR06_PE_TRU_REVIEW_LOG_KO_20260614.md`
+- 다음 pair: `07_ANX-PE`

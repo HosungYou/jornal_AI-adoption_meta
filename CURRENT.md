@@ -50,5 +50,22 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Generated evidence artifacts under `data/04_extraction/05_llm_masem_substitution/results/paper_a_ai_candidate_source_trace_20260614/`:
   - `paper_a_C_pair05_PE_SE_source_evidence_draft_20260614.csv`
   - `PAPER_A_C_PAIR05_PE_SE_REVIEW_LOG_KO_20260614.md`
-- Current next action: continue full10 ordered densification review at `06_PE-TRU` and preserve the S121 mapping question for researcher confirmation before any supplemental input update.
+- Current next action: continue full10 ordered densification review at `07_ANX-PE`; S121 PE-SE mapping is already researcher-approved and staged.
 
+## 2026-06-14 update - Researcher-approved S121 PE-SE supplement
+
+- Researcher approved mapping `genAI-related subjective competence` to full10 `SE` for S121.
+- Promoted two source-visible S121 Figure 2 Spearman-r values into researcher-approved supplemental input staging: `S121-1 PE-SE=.40` with `N=3094`; `S121-2 PE-SE=.30` with `N=1767`.
+- Created `data/04_extraction/05_llm_masem_substitution/results/paper_a_researcher_approved_pe_se_s121_supplement_20260614/`.
+- Boundary retained: PBC, Security, generic efficacy wording, and reference/background self-efficacy detections are still excluded from full10 `SE`.
+- Current next action: continue full10 ordered densification review at `07_ANX-PE`; after the current ordered batch checkpoint, decide whether to rerun model-family MASEM with the researcher-approved PE-SE supplement.
+
+## 2026-06-14 update - Paper A/C full10 pair 06_PE-TRU source/PDF review
+
+- Completed the ordered source/PDF review for `06_PE-TRU` across 10 AI-candidate rows.
+- Preliminary decision: promote no values. All rows failed the full10 `TRU` construct-mapping gate, not the numeric-value extraction step.
+- Exclusion rule recorded: do not map `insecurity`, `privacy concerns`, `psychological risk`, `perceived risk`, `habit`, `perceived competence`, or `perceived enjoyment` to full10 `TRU`.
+- Generated evidence artifacts under `data/04_extraction/05_llm_masem_substitution/results/paper_a_ai_candidate_source_trace_20260614/`:
+  - `paper_a_C_pair06_PE_TRU_source_evidence_draft_20260614.csv`
+  - `PAPER_A_C_PAIR06_PE_TRU_REVIEW_LOG_KO_20260614.md`
+- Current next action: continue full10 ordered densification review at `07_ANX-PE`.
