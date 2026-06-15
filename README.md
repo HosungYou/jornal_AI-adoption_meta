@@ -2,7 +2,7 @@
 
 > Meta-Analytic Structural Equation Modeling (MASEM) of AI adoption in higher education, integrating traditional technology acceptance constructs with AI-specific psychological factors.
 
-**Current status:** Paper A model-family MASEM scaffold generated; PRISMA count lock and APA 7th table/figure rebuild still required before journal submission.
+**Current status:** Paper A model-family MASEM manuscript package has been rebuilt with APA 7th-style body tables/figures, a portrait multi-box PRISMA 2020-style draft, and an OSF-ready share-safe package. Final full-text eligibility exclusion boxes still require source-locked team confirmation before journal submission.
 
 ## Research Questions
 
@@ -87,20 +87,19 @@ tests/                             # Test suite for screening/processing scripts
 | PRISMA Stage | Status | Data Location | Count |
 |-------------|--------|---------------|-------|
 | 1. Identification | ✅ Complete | `data/01_identification/` | 16,189 unique records |
-| 2. Screening | ⚠ Count lock needed | `data/02_screening/` | source files show 225 included; older README showed 224 |
-| 3. Full-text/Eligibility | ⚠ Count lock needed | `data/02_screening/`; eligibility records | final PRISMA boxes not locked |
+| 2. Screening | Provisional lock | `data/02_screening/`; `paper_a/PRISMA_COUNTS_LOCK_20260615.md` | 225 included screening rows minus 1 duplicate included DOI row = 224 unique included reports/studies |
+| 3. Full-text/Eligibility | Partial lock | `data/02_screening/pdf_download_log.json`; eligibility records | local automated PDF retrieval: 89 downloaded, 136 not downloaded/access needed; final full-text exclusion boxes not source-locked |
 | 4. Data Extraction | 🔄 In progress | `data/04_extraction/` | Coding manual finalized, Phase 0 calibration done |
 | 5. Analysis | ⏸ Pending | `analysis/` | TSSEM + OSMASEM pipeline ready |
 
 ## Paper A submission-readiness note
 
-The current Paper A Word manuscript includes model-family results, but it is not yet submission-ready.
+The current Paper A Word manuscript includes model-family results and rebuilt APA 7th-style tables/figures, but it is not yet submission-ready.
 
-- APA 7th tables need to be regenerated without internal grid lines.
-- A true PRISMA 2020 flow diagram has not yet been finalized.
-- MASEM path figures need publication-grade redesign.
-- Required next visuals include PRISMA flow, construct genealogy, analytic workflow, full10 evidence heatmap, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
-- PRISMA count review file: `paper_a/PRISMA_COUNTS_REVIEW_NEEDED_20260615.md`.
+- A portrait, multi-box PRISMA 2020-style draft has been generated, but final full-text eligibility exclusion boxes remain pending.
+- Main manuscript visuals now include PRISMA flow, construct genealogy, analytic workflow, full10 evidence heatmap, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
+- PRISMA count lock file: `paper_a/PRISMA_COUNTS_LOCK_20260615.md`.
+- OSF-ready package: `paper_a/public_data_repository_20260615_osf_ready.zip`.
 
 ## Methodology
 
@@ -142,4 +141,5 @@ Hosung You — Penn State College of Education
 - Generated APA 7th table/figure rebuild manuscript: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`.
 - Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
 - Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
-
+- Refined Figure 1 to a portrait, stage-labeled, multi-box PRISMA 2020-style draft; local automated PDF retrieval is reported separately from final full-text eligibility.
+- OSF upload status: package is ready locally, but automated upload from this session is blocked unless Chrome exposes an automation surface or an OSF API/CLI credential is available.

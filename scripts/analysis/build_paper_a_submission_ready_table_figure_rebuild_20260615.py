@@ -101,7 +101,10 @@ def md_table(headers, rows):
 def lock_prisma_counts():
     dedup_report = ROOT / 'data/01_identification/dedup_report.txt'
     human_csv = ROOT / 'data/02_screening/human_screening_results_consolidated.csv'
+    pdf_log = ROOT / 'data/02_screening/pdf_download_log.json'
     rows = list(csv.DictReader(human_csv.open(encoding='utf-8-sig')))
+    pdf_rows = json.loads(pdf_log.read_text(encoding='utf-8')) if pdf_log.exists() else []
+    pdf_status_counts = Counter(r.get('status', 'unknown') for r in pdf_rows)
     included_rows = [r for r in rows if r['screening_decision'] == 'I']
     excluded_rows = [r for r in rows if r['screening_decision'] == 'X']
     doi_groups = defaultdict(list)
@@ -128,6 +131,9 @@ def lock_prisma_counts():
         'human_review_included_rows': len(included_rows),
         'duplicate_included_doi_rows_merged': duplicate_included_rows,
         'unique_included_reports_current_lock': unique_included,
+        'pdf_download_log_entries': len(pdf_rows),
+        'local_automated_pdf_downloaded': pdf_status_counts.get('downloaded', 0),
+        'local_automated_pdf_not_downloaded': len(pdf_rows) - pdf_status_counts.get('downloaded', 0),
     }
     exclude_code_counts = Counter(r.get('exclude_code', '') or 'not_coded' for r in excluded_rows)
     source_counts = Counter(r.get('source', '') for r in included_rows)
@@ -139,6 +145,8 @@ def lock_prisma_counts():
             w.writerow([k, v, 'computed from local PRISMA/source files'])
         for k, v in sorted(exclude_code_counts.items()):
             w.writerow([f'exclude_code_{k}', v, 'human_screening_results_consolidated.csv'])
+        for k, v in sorted(pdf_status_counts.items()):
+            w.writerow([f'pdf_status_{k}', v, 'pdf_download_log.json'])
     dup_lines = []
     for doi, vals in dup_groups.items():
         dup_lines.append(f'- DOI `{doi}` has {len(vals)} included rows: ' + '; '.join(f"{r['record_id']} ({r['source']}, {r['year']}) {r['title']}" for r in vals))
@@ -153,6 +161,8 @@ def lock_prisma_counts():
         ['Human-reviewed included rows', counts['human_review_included_rows'], 'screening_decision = I'],
         ['Duplicate included DOI rows merged', counts['duplicate_included_doi_rows_merged'], 'included DOI duplicate audit'],
         ['Unique included reports/studies', counts['unique_included_reports_current_lock'], '225 included rows - 1 duplicate DOI row'],
+        ['Local automated PDF downloads', counts['local_automated_pdf_downloaded'], '`data/02_screening/pdf_download_log.json`; not the final retrieval box'],
+        ['Local automated PDF not downloaded/requires access', counts['local_automated_pdf_not_downloaded'], '`data/02_screening/pdf_download_log.json`; manual/library retrieval may exist elsewhere'],
     ])
     duplicate_audit = '\n'.join(dup_lines) if dup_lines else '- No duplicate DOI among included rows.'
     exclude_table = md_table(['Exclude code','Count'], sorted([[k, v] for k, v in exclude_code_counts.items()], key=lambda x: str(x[0])))
@@ -236,27 +246,40 @@ arrow_down <- function(x,y1,y2) arrows(x,y1,x,y2,length=.055,lwd=1.0,col='black'
 arrow_right <- function(x1,x2,y) arrows(x1,y,x2,y,length=.055,lwd=1.0,col='black')
 
 save_plot('figure_1_prisma_2020_flow_diagram_paper_a_20260615', 8.2, 10.5, {{
-  par(mar=c(.4,.4,.8,.4), family=serif); plot.new(); plot.window(xlim=c(0,1),ylim=c(0,1))
-  text(.5,.985,'PRISMA 2020 flow diagram for Paper A',font=2,cex=1.05)
-  box_text(.09,.875,.46,.945,'Records identified from databases\n(n = {counts['records_identified_database']:,})',.75)
-  box_text(.55,.875,.91,.945,'Duplicate records removed\n(n = {counts['duplicates_removed']:,})',.75)
-  arrow_right(.46,.55,.91)
-  arrow_down(.275,.875,.825)
-  box_text(.09,.755,.46,.825,'Records screened\n(n = {counts['records_after_deduplication']:,})',.75)
-  box_text(.55,.755,.91,.825,'Records excluded before human review\n(n = {counts['records_excluded_before_human_review']:,})',.69)
-  arrow_right(.46,.55,.79)
-  arrow_down(.275,.755,.705)
-  box_text(.09,.635,.46,.705,'Records reviewed by humans\n(n = {counts['records_human_reviewed']:,})',.75)
-  box_text(.55,.635,.91,.705,'Human-reviewed records excluded\n(n = {counts['human_review_excluded_rows']:,})',.72)
-  arrow_right(.46,.55,.67)
-  arrow_down(.275,.635,.585)
-  box_text(.09,.515,.46,.585,'Included screening rows\n(n = {counts['human_review_included_rows']:,})',.75)
-  box_text(.55,.515,.91,.585,'Duplicate included DOI row merged\n(n = {counts['duplicate_included_doi_rows_merged']:,})',.72)
-  arrow_right(.46,.55,.55)
-  arrow_down(.275,.515,.455)
-  box_text(.09,.385,.46,.455,'Unique included reports/studies\n(current lock n = {counts['unique_included_reports_current_lock']:,})',.75,lwd=1.3)
-  box_text(.55,.385,.91,.455,'Full-text eligibility boxes and\nfinal MASEM analytic k require\nteam confirmation before submission',.66,fill='#f7f7f7')
-  text(.5,.30,'Note. The previous 224 versus 225 discrepancy is explained by one duplicate DOI among the 225 included screening rows.\nThis is a draft PRISMA-style reporting figure until final full-text eligibility boxes are confirmed.',cex=.67)
+  par(mar=c(.35,.35,.7,.35), family=serif); plot.new(); plot.window(xlim=c(0,1),ylim=c(0,1))
+  text(.52,.985,'PRISMA 2020 flow diagram for Paper A',font=2,cex=1.02)
+  label_stage <- function(y1,y2,txt) {{
+    rect(.025,y1,.075,y2,col='#f2f2f2',border='black',lwd=.8)
+    text(.05,(y1+y2)/2,txt,srt=90,cex=.62,font=2)
+  }}
+  main_x1 <- .15; main_x2 <- .55; side_x1 <- .66; side_x2 <- .92
+  label_stage(.835,.945,'Identification')
+  label_stage(.565,.815,'Screening')
+  label_stage(.305,.545,'Retrieval / eligibility')
+  label_stage(.175,.285,'Included')
+  box_text(main_x1,.875,main_x2,.945,'Records identified from databases\n(n = {counts['records_identified_database']:,})',.70)
+  box_text(side_x1,.875,side_x2,.945,'Records removed before screening\nDuplicate records removed\n(n = {counts['duplicates_removed']:,})',.62)
+  arrow_right(main_x2,side_x1,.91)
+  arrow_down(.34,.875,.815)
+  box_text(main_x1,.745,main_x2,.815,'Records screened by AI-assisted title/abstract workflow\n(n = {counts['records_after_deduplication']:,})',.62)
+  box_text(side_x1,.745,side_x2,.815,'Records excluded before human review\n(n = {counts['records_excluded_before_human_review']:,})',.61)
+  arrow_right(main_x2,side_x1,.78)
+  arrow_down(.34,.745,.685)
+  box_text(main_x1,.615,main_x2,.685,'Records reviewed by humans\n(n = {counts['records_human_reviewed']:,})',.68)
+  box_text(side_x1,.615,side_x2,.685,'Human-reviewed records excluded\n(n = {counts['human_review_excluded_rows']:,})',.62)
+  arrow_right(main_x2,side_x1,.65)
+  arrow_down(.34,.615,.545)
+  box_text(main_x1,.475,main_x2,.545,'Reports sought for local automated\nPDF retrieval\n(n = {counts['human_review_included_rows']:,})',.57)
+  box_text(side_x1,.475,side_x2,.545,'Duplicate included DOI row merged\n(n = {counts['duplicate_included_doi_rows_merged']:,})',.60)
+  arrow_right(main_x2,side_x1,.51)
+  arrow_down(.34,.475,.415)
+  box_text(main_x1,.345,main_x2,.415,'Local automated PDFs retrieved\n(n = {counts['local_automated_pdf_downloaded']:,})',.66)
+  box_text(side_x1,.345,side_x2,.415,'Local automated retrieval\nnot downloaded / access needed\n(n = {counts['local_automated_pdf_not_downloaded']:,})',.49)
+  arrow_right(main_x2,side_x1,.38)
+  arrow_down(.34,.345,.285)
+  box_text(main_x1,.215,main_x2,.285,'Unique included reports/studies\n(current PRISMA lock n = {counts['unique_included_reports_current_lock']:,})',.66,lwd=1.2)
+  box_text(side_x1,.215,side_x2,.285,'Full-text eligibility exclusion boxes\nnot yet source-locked in this repository',.56,fill='#f7f7f7')
+  text(.52,.135,'Note. This is a PRISMA 2020-style draft figure from local repository evidence. The 224/225 discrepancy is resolved by one duplicate DOI among included screening rows.\nThe local automated PDF retrieval boxes are not final full-text retrieval boxes; final eligibility exclusions require team confirmation.',cex=.57)
 }})
 
 save_plot('figure_2_theoretical_genealogy_full10_model_family_20260615', 9.2, 5.8, {{

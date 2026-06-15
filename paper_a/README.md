@@ -7,7 +7,8 @@ Paper A is currently framed as a model-family MASEM manuscript.
 - `full10` is the theoretical 10-construct target and evidence map.
 - `core7` and `trust6` are the empirical model-family MASEM routes.
 - `ANX` and `SE` remain theory-relevant but are currently underidentified for primary complete-case MASEM.
-- The current Word manuscript contains real model-family results, but tables, figures, and PRISMA reporting still need a submission-readiness pass.
+- The current Word manuscript contains real model-family results and rebuilt APA 7th-style body tables/figures.
+- Final full-text eligibility exclusion boxes remain source-lock pending before journal submission.
 
 ## Relationship to Paper B
 Paper B (targeting *Research Synthesis Methods*) focuses exclusively on **LLM-assisted data extraction methodology** using a 100-study subsample. Paper A is the **parent meta-analysis** that Paper B references for screening and eligibility procedures.
@@ -21,7 +22,7 @@ Read this first:
 
 Current draft:
 
-- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.docx`
+- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`
 
 ## PRISMA count status
 
@@ -35,16 +36,21 @@ Current source files support these provisional counts:
 | Human-reviewed records | 657 | `data/02_screening/screening_summary.json` |
 | Human-reviewed included records | 225 | `data/02_screening/screening_summary.json` |
 | Human-reviewed excluded records | 432 | `data/02_screening/screening_summary.json` |
+| Duplicate included DOI row | 1 | `paper_a/PRISMA_COUNTS_LOCK_20260615.md` |
+| Unique included reports/studies | 224 | `paper_a/PRISMA_COUNTS_LOCK_20260615.md` |
+| Local automated PDFs retrieved | 89 | `data/02_screening/pdf_download_log.json` |
+| Local automated PDFs not downloaded/access needed | 136 | `data/02_screening/pdf_download_log.json` |
 
-The prior repository status also reports `224` included, so a final PRISMA 2020 flow diagram is not locked yet. Resolve `224` versus `225` before submission.
+The current lock resolves the screening discrepancy as `225 - 1 duplicate included DOI row = 224` unique included reports/studies. Final full-text eligibility exclusion boxes are still not source-locked.
 
 ## Submission-readiness gap
 
-- Tables must be regenerated in APA 7th style without internal grid lines.
-- A true PRISMA 2020 flow diagram must be generated after count lock.
-- Path figures should be redesigned as publication-grade MASEM diagrams.
-- Add a path estimate coefficient/forest plot and model-feasibility plot.
+- Tables have been regenerated in APA 7th style without internal grid lines.
+- Figure 1 has been rebuilt as a portrait, stage-labeled, multi-box PRISMA 2020-style draft.
+- Path figures have been redesigned as black-font publication-oriented MASEM diagrams.
+- Path estimate coefficient and model-feasibility plots have been added.
 - External tables/figures are not reused directly; only reporting conventions should be borrowed.
+- Remaining blocker: final full-text eligibility exclusion boxes need source-locked team confirmation.
 
 ## Directory Structure
 ```
@@ -82,4 +88,6 @@ paper_a/
 - Generated APA 7th table/figure rebuild manuscript: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`.
 - Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
 - Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
-
+- Refined Figure 1 to a portrait, stage-labeled, multi-box PRISMA 2020-style draft; local automated PDF retrieval is reported separately from final full-text eligibility.
+- OSF-ready zip: `paper_a/public_data_repository_20260615_osf_ready.zip`.
+- OSF upload status: package is ready locally, but automated upload from this session is blocked unless Chrome exposes an automation surface or an OSF API/CLI credential is available.

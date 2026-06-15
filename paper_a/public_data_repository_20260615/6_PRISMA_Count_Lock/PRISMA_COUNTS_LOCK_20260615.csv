@@ -9,6 +9,9 @@ human_review_excluded_rows,432,computed from local PRISMA/source files
 human_review_included_rows,225,computed from local PRISMA/source files
 duplicate_included_doi_rows_merged,1,computed from local PRISMA/source files
 unique_included_reports_current_lock,224,computed from local PRISMA/source files
+pdf_download_log_entries,225,computed from local PRISMA/source files
+local_automated_pdf_downloaded,89,computed from local PRISMA/source files
+local_automated_pdf_not_downloaded,136,computed from local PRISMA/source files
 exclude_code_E-FT1,12,human_screening_results_consolidated.csv
 exclude_code_E-FT2,96,human_screening_results_consolidated.csv
 exclude_code_E-FT3,136,human_screening_results_consolidated.csv
@@ -16,3 +19,7 @@ exclude_code_E-FT6,30,human_screening_results_consolidated.csv
 exclude_code_E12,3,human_screening_results_consolidated.csv
 exclude_code_E7,3,human_screening_results_consolidated.csv
 exclude_code_not_coded,152,human_screening_results_consolidated.csv
+pdf_status_download_failed,23,pdf_download_log.json
+pdf_status_downloaded,89,pdf_download_log.json
+pdf_status_no_doi,2,pdf_download_log.json
+pdf_status_no_oa,111,pdf_download_log.json

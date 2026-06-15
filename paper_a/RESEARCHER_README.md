@@ -13,33 +13,33 @@ Paper A should be read as a model-family MASEM study, not as a single full10 SEM
 
 ## Current manuscript status
 
-The current Word manuscript is a structured scaffold with real model-family results, but it is not yet submission-ready.
+The current Word manuscript is a structured model-family draft with real model-family results and rebuilt APA 7th-style tables/figures, but it is not yet submission-ready.
 
-- Tables are inserted in the body, but their current grid styling is not APA 7th professional table style.
-- Figures are inserted in the body, but Figure 0 and the path diagrams need publication-grade redesign.
-- A true PRISMA 2020 flow diagram has not yet been generated.
+- Tables are inserted in the body and regenerated without internal grid lines.
+- Figures are inserted in the body, including a portrait, stage-labeled, multi-box PRISMA 2020-style draft.
+- Final full-text eligibility exclusion boxes remain source-lock pending.
 - External articles should be used as reporting exemplars only; do not directly reuse their tables or figures.
 
 Current draft:
 
-- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.docx`
+- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`
 
-## PRISMA count lock needed
+## PRISMA count lock status
 
-Current source files do not fully agree.
+The screening discrepancy is provisionally locked as `225 included screening rows - 1 duplicate included DOI row = 224 unique included reports/studies`.
 
 | Source | Current count/status |
 | --- | ---: |
 | `data/01_identification/dedup_report.txt` | 22,166 identified; 5,977 duplicates removed; 16,189 unique records |
 | `data/02_screening/screening_summary.json` | 657 human-reviewed; 225 included; 432 excluded |
-| root `README.md` before audit | 224 included |
-| previous `paper_a/README.md` before audit | final included TBD |
+| `paper_a/PRISMA_COUNTS_LOCK_20260615.md` | 1 duplicate included DOI row; 224 unique included reports/studies |
+| `data/02_screening/pdf_download_log.json` | 89 local automated PDFs downloaded; 136 not downloaded/access needed |
 
-Until the team resolves `224` vs `225` and confirms the full-text eligibility boxes, PRISMA should be reported as `review needed`, not final.
+Until the team confirms final full-text eligibility exclusion boxes, PRISMA should be reported as a `PRISMA 2020-style draft`, not as the final locked PRISMA flow.
 
 Review file:
 
-- `paper_a/PRISMA_COUNTS_REVIEW_NEEDED_20260615.md`
+- `paper_a/PRISMA_COUNTS_LOCK_20260615.md`
 
 ## Tables needed for a submission-ready manuscript
 
@@ -78,12 +78,11 @@ Main text:
 
 ## Next work order
 
-1. Lock PRISMA counts from the screening and eligibility source files.
-2. Regenerate APA 7th tables without internal grid lines.
-3. Generate a true PRISMA 2020 flow diagram.
-4. Redesign path figures and evidence-map figures using Paper A data.
-5. Rebuild the Word manuscript with corrected tables and figures.
-6. Refresh the OSF-ready package after the manuscript rebuild.
+1. Source-lock final full-text eligibility exclusion boxes.
+2. Review the portrait multi-box PRISMA draft against the locked eligibility boxes.
+3. Manually inspect Word pagination, figure placement, and APA 7th reference italics.
+4. Upload `paper_a/public_data_repository_20260615_osf_ready.zip` to the Paper A OSF component.
+5. Add the final OSF component URL to the manuscript and repository documentation.
 
 ## 2026-06-15 Paper A APA table/figure rebuild
 
@@ -91,4 +90,5 @@ Main text:
 - Generated APA 7th table/figure rebuild manuscript: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`.
 - Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
 - Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
-
+- Refined Figure 1 to a portrait, stage-labeled, multi-box PRISMA 2020-style draft; local automated PDF retrieval is reported separately from final full-text eligibility.
+- OSF upload status: package is ready locally, but automated upload from this session is blocked unless Chrome exposes an automation surface or an OSF API/CLI credential is available.

@@ -98,3 +98,10 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
 - Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
 
+## 2026-06-15 Paper A PRISMA figure refinement and OSF upload status
+
+- Rebuilt Figure 1 as a portrait, stage-labeled, multi-box PRISMA 2020-style draft rather than a wide single-chain box figure.
+- Added local automated PDF retrieval counts to the PRISMA lock: 89 PDFs downloaded and 136 not downloaded/access needed from 225 included screening rows.
+- Preserved the key caveat: local automated PDF retrieval is not the same as final full-text eligibility, and final full-text exclusion boxes remain source-lock pending.
+- Refreshed `paper_a/public_data_repository_20260615_osf_ready.zip` with the revised PRISMA figure, manuscript, and count-lock files.
+- Attempted OSF upload through the already logged-in Chrome session. Chrome opened the OSF project, but Apple Events JavaScript access was denied, Computer Use Chrome state timed out, and no OSF CLI credential was available; automated upload remains blocked from this session.

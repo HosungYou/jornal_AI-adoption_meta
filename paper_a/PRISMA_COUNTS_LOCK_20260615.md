@@ -24,6 +24,8 @@ The previous `224` versus `225` discrepancy is explained by one duplicate DOI am
 | Human-reviewed included rows | 225 | screening_decision = I |
 | Duplicate included DOI rows merged | 1 | included DOI duplicate audit |
 | Unique included reports/studies | 224 | 225 included rows - 1 duplicate DOI row |
+| Local automated PDF downloads | 89 | `data/02_screening/pdf_download_log.json`; not the final retrieval box |
+| Local automated PDF not downloaded/requires access | 136 | `data/02_screening/pdf_download_log.json`; manual/library retrieval may exist elsewhere |
 
 ## Duplicate included DOI audit
 
