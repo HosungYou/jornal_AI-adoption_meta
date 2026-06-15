@@ -135,3 +135,11 @@ The current Paper A Word manuscript includes model-family results, but it is not
 ## Author
 
 Hosung You — Penn State College of Education
+
+## 2026-06-15 Paper A APA table/figure rebuild
+
+- Locked the current PRISMA include discrepancy as `225 included screening rows - 1 duplicate included DOI row = 224 unique included reports/studies`, pending final full-text box confirmation.
+- Generated APA 7th table/figure rebuild manuscript: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`.
+- Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
+- Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
+

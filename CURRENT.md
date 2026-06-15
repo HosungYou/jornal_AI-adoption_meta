@@ -90,3 +90,11 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Figure 0: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/figures/figure_0_paper_a_research_procedure_black_font_20260615.png`.
 - Crossref reference metadata: `references/paper_a_apa7_evidence_review_20260615/paper_a_crossref_apa7_reference_metadata_20260615.csv` and `references/paper_a_apa7_evidence_review_20260615/paper_a_crossref_apa7_reference_list_20260615.md`.
 - OSF-ready package refreshed: `paper_a/public_data_repository_20260615_osf_ready.zip`; recommended upload target remains a Paper A component under `https://osf.io/mkrgd/overview`.
+
+## 2026-06-15 Paper A APA table/figure rebuild
+
+- Locked the current PRISMA include discrepancy as `225 included screening rows - 1 duplicate included DOI row = 224 unique included reports/studies`, pending final full-text box confirmation.
+- Generated APA 7th table/figure rebuild manuscript: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`.
+- Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
+- Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
+

@@ -1,0 +1,18 @@
+item,count,source_or_note
+records_identified_database,22166,computed from local PRISMA/source files
+duplicates_removed,5977,computed from local PRISMA/source files
+records_after_deduplication,16189,computed from local PRISMA/source files
+records_screened_title_abstract_ai_assisted,16189,computed from local PRISMA/source files
+records_excluded_before_human_review,15532,computed from local PRISMA/source files
+records_human_reviewed,657,computed from local PRISMA/source files
+human_review_excluded_rows,432,computed from local PRISMA/source files
+human_review_included_rows,225,computed from local PRISMA/source files
+duplicate_included_doi_rows_merged,1,computed from local PRISMA/source files
+unique_included_reports_current_lock,224,computed from local PRISMA/source files
+exclude_code_E-FT1,12,human_screening_results_consolidated.csv
+exclude_code_E-FT2,96,human_screening_results_consolidated.csv
+exclude_code_E-FT3,136,human_screening_results_consolidated.csv
+exclude_code_E-FT6,30,human_screening_results_consolidated.csv
+exclude_code_E12,3,human_screening_results_consolidated.csv
+exclude_code_E7,3,human_screening_results_consolidated.csv
+exclude_code_not_coded,152,human_screening_results_consolidated.csv

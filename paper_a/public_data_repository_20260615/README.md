@@ -28,3 +28,9 @@ Paper A OSF target is not yet confirmed. This package can be uploaded either to 
 - Added Crossref DOI-based APA 7 reference metadata/list for final reference verification.
 - Intended OSF target: Paper A component under https://osf.io/mkrgd/overview, pending researcher authorization.
 
+
+## 2026-06-15 APA table/figure rebuild update
+
+- Added table/figure rebuild manuscript: `PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`.
+- Added PRISMA count lock: `PRISMA_COUNTS_LOCK_20260615.md`.
+- Added publication-oriented figures 1-8 under `2_Figures/`.
