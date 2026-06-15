@@ -46,3 +46,9 @@ This package gives the Paper A team a submission-oriented scaffold for Introduct
 - `PAPER_A_APA7_REVISED_MODEL_FAMILY_MANUSCRIPT_WITH_SUPPLEMENTAL_DIAGNOSTICS_20260615.docx`
 - `supplemental_diagnostics/`
 - `PAPER_A_APA7_INLINE_TABLES_FIGURES_BLACK_FONT_20260615.docx`
+
+## Submission-strengthened manuscript
+
+- `PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.md`
+- `PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.docx`
+- `figures/figure_0_paper_a_research_procedure_black_font_20260615.png`

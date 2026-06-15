@@ -72,3 +72,12 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Generated inline APA7 Word manuscript with tables and figures embedded in the body: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_INLINE_TABLES_FIGURES_BLACK_FONT_20260615.docx`.
 - Generated share-safe Paper A OSF-ready package: `paper_a/public_data_repository_20260615/` and `paper_a/public_data_repository_20260615_osf_ready.zip`.
 - OSF upload remains pending because Paper A target OSF project/component is not yet confirmed. Existing Paper B OSF record remains `https://osf.io/mkrgd/overview`.
+
+## 2026-06-15 Paper A submission-strengthened manuscript and reference rebuild
+
+- Generated submission-strengthened manuscript with Figure 0 research procedure, stronger Methods sequence, expanded Discussion, body-embedded APA 7 tables/figures, black font, and DOI-based reference rebuild.
+- Markdown: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.md`.
+- Word: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.docx`.
+- Figure 0: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/figures/figure_0_paper_a_research_procedure_black_font_20260615.png`.
+- Crossref reference metadata: `references/paper_a_apa7_evidence_review_20260615/paper_a_crossref_apa7_reference_metadata_20260615.csv` and `references/paper_a_apa7_evidence_review_20260615/paper_a_crossref_apa7_reference_list_20260615.md`.
+- OSF-ready package refreshed: `paper_a/public_data_repository_20260615_osf_ready.zip`; recommended upload target remains a Paper A component under `https://osf.io/mkrgd/overview`.

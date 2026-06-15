@@ -22,3 +22,9 @@ This is a share-safe OSF-ready package for Paper A.
 Paper B has an existing OSF project noted in the repository: https://osf.io/mkrgd/overview
 
 Paper A OSF target is not yet confirmed. This package can be uploaded either to a new Paper A component/project or to a clearly labeled Paper A component under the existing AI Adoption OSF project after the researcher confirms the target.
+## 2026-06-15 submission-strengthened update
+
+- Added submission-strengthened manuscript with Figure 0 procedure diagram and inline APA 7 tables/figures.
+- Added Crossref DOI-based APA 7 reference metadata/list for final reference verification.
+- Intended OSF target: Paper A component under https://osf.io/mkrgd/overview, pending researcher authorization.
+

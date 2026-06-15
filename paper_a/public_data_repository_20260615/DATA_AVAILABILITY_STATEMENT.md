@@ -13,3 +13,7 @@ Before submission, the authors should confirm whether Paper A will use:
 Placeholder manuscript language:
 
 The aggregate analysis materials, model-family MASEM diagnostics, and share-safe reproducibility scripts are available at [OSF URL TO BE INSERTED]. Raw full-text PDFs and private extraction workbooks are not publicly redistributed because they include copyrighted and/or institutionally accessed materials.
+## Recommended OSF route
+
+The recommended route is to upload this share-safe package to a new `Paper A` component under the existing OSF project: https://osf.io/mkrgd/overview. The component should exclude raw PDFs, private source documents, raw coder workbooks, and runtime files.
+
