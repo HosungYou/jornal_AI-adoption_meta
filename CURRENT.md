@@ -58,3 +58,17 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Revised Word: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_REVISED_MODEL_FAMILY_MANUSCRIPT_WITH_SUPPLEMENTAL_DIAGNOSTICS_20260615.docx`.
 - Supplemental diagnostics: `data/04_extraction/05_llm_masem_substitution/results/paper_a_model_family_supplemental_diagnostics_20260615/`.
 - Interpretation boundary: reduced models are diagnostic/sensitivity analyses, not definitive nested chi-square model-selection tests, because construct removal can change complete-case k and matrix structure.
+
+## 2026-06-15 Paper A inline APA7 Word manuscript
+
+- Generated inline APA 7 Word manuscript with tables and figures inserted in the body near first mention: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_INLINE_TABLES_FIGURES_BLACK_FONT_20260615.docx`.
+- Formatting rule applied: black manuscript font, APA-style table/figure numbering and titles, body-embedded tables/figures, and reference italics where reference-bank metadata supports run-level styling.
+
+## 2026-06-15 Paper A APA7 inline tables/figures, PDF review, and OSF-ready package
+
+- Stored local style preference in Codex memory: APA 7th professional style means body-embedded tables/figures, black manuscript font, APA-style table/figure labels/notes, and reference italics where metadata supports it.
+- Downloaded and locally validated 10 open/reference PDFs under `references/paper_a_apa7_evidence_review_20260615/pdfs/` for scholarly review only; PDFs are intentionally not added to Git or OSF.
+- Generated PDF review manifest and manuscript-strengthening note: `references/paper_a_apa7_evidence_review_20260615/notes/PAPER_A_REFERENCE_PDF_REVIEW_AND_MANUSCRIPT_STRENGTHENING_20260615.md`.
+- Generated inline APA7 Word manuscript with tables and figures embedded in the body: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_INLINE_TABLES_FIGURES_BLACK_FONT_20260615.docx`.
+- Generated share-safe Paper A OSF-ready package: `paper_a/public_data_repository_20260615/` and `paper_a/public_data_repository_20260615_osf_ready.zip`.
+- OSF upload remains pending because Paper A target OSF project/component is not yet confirmed. Existing Paper B OSF record remains `https://osf.io/mkrgd/overview`.
