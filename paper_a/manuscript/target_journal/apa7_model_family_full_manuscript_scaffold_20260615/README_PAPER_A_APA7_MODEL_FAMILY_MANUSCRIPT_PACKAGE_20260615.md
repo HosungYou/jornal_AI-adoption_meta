@@ -40,3 +40,8 @@ This package gives the Paper A team a submission-oriented scaffold for Introduct
 - Whether to convert this Markdown scaffold into a tracked DOCX submission draft.
 - Word manuscript generated: `PAPER_A_APA7_MODEL_FAMILY_FULL_MANUSCRIPT_SCAFFOLD_20260615.docx`.
 
+## Revised manuscript with supplemental diagnostics
+
+- `PAPER_A_APA7_REVISED_MODEL_FAMILY_MANUSCRIPT_WITH_SUPPLEMENTAL_DIAGNOSTICS_20260615.md`
+- `PAPER_A_APA7_REVISED_MODEL_FAMILY_MANUSCRIPT_WITH_SUPPLEMENTAL_DIAGNOSTICS_20260615.docx`
+- `supplemental_diagnostics/`

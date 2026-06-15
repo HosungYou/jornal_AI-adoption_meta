@@ -50,3 +50,11 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Generated Word manuscript: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_MODEL_FAMILY_FULL_MANUSCRIPT_SCAFFOLD_20260615.docx`.
 - Mirrored Word file to OneDrive manuscript package.
 - Word draft includes APA-ish manuscript styling, manuscript text, fit/path tables, and three model-family figures.
+
+## 2026-06-15 Paper A revised APA7 manuscript with supplemental diagnostics
+
+- Generated revised manuscript and Word file with stronger model-history/theory narrative, full10 genealogy, PE-vs-EE role comparison, core7/trust6 model-family justification, reduced-model diagnostics, omitted-pair diagnostic framing, and ANX/SE feasibility results.
+- Revised Markdown: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_REVISED_MODEL_FAMILY_MANUSCRIPT_WITH_SUPPLEMENTAL_DIAGNOSTICS_20260615.md`.
+- Revised Word: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_REVISED_MODEL_FAMILY_MANUSCRIPT_WITH_SUPPLEMENTAL_DIAGNOSTICS_20260615.docx`.
+- Supplemental diagnostics: `data/04_extraction/05_llm_masem_substitution/results/paper_a_model_family_supplemental_diagnostics_20260615/`.
+- Interpretation boundary: reduced models are diagnostic/sensitivity analyses, not definitive nested chi-square model-selection tests, because construct removal can change complete-case k and matrix structure.

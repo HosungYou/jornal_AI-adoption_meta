@@ -1,0 +1,3 @@
+model_id,study_id,min_eigen,positive_definite
+se4_capability_effort_intention,S025,0.3177723398126114,TRUE
+se4_capability_effort_intention,S157,0.2603820767884882,TRUE

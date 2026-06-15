@@ -1,0 +1,5 @@
+model_id,study_id,min_eigen,positive_definite
+core7_full,S048,0.15113903652055144,TRUE
+core7_full,S055,0.11571582143961552,TRUE
+core7_full,S176,0.1616662230768648,TRUE
+core7_full,S214,0.32249312259512525,TRUE

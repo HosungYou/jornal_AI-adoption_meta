@@ -1,0 +1,262 @@
+| construct_set | size | includes_anxiety | includes_self_efficacy | candidate_complete_case_studies | positive_definite_complete_case_studies | positive_definite_complete_case_ids | feasibility |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| PE,SE,BI | 3 | FALSE | TRUE | 7 | 7 | S007;S013;S016;S025;S028;S157;S210 | potential_primary_or_supplemental_candidate |
+| EE,SE,BI | 3 | FALSE | TRUE | 6 | 6 | S013;S016;S025;S028;S157;S210 | potential_primary_or_supplemental_candidate |
+| FC,SE,BI | 3 | FALSE | TRUE | 6 | 6 | S007;S013;S016;S025;S157;S184 | potential_primary_or_supplemental_candidate |
+| PE,EE,SE,BI | 4 | FALSE | TRUE | 6 | 6 | S013;S016;S025;S028;S157;S210 | potential_primary_or_supplemental_candidate |
+| SI,SE,BI | 3 | FALSE | TRUE | 5 | 5 | S013;S025;S078;S157;S184 | potential_primary_or_supplemental_candidate |
+| PE,FC,SE,BI | 4 | FALSE | TRUE | 5 | 5 | S007;S013;S016;S025;S157 | potential_primary_or_supplemental_candidate |
+| ATT,SE,BI | 3 | FALSE | TRUE | 4 | 4 | S007;S016;S028;S078 | potential_primary_or_supplemental_candidate |
+| EE,FC,SE,BI | 4 | FALSE | TRUE | 4 | 4 | S013;S016;S025;S157 | potential_primary_or_supplemental_candidate |
+| PE,EE,FC,SE,BI | 5 | FALSE | TRUE | 4 | 4 | S013;S016;S025;S157 | potential_primary_or_supplemental_candidate |
+| ATT,ANX,BI | 3 | TRUE | FALSE | 3 | 3 | S016;S181;S219 | minimal_estimable_but_fragile |
+| SE,BI,UB | 3 | FALSE | TRUE | 3 | 3 | S025;S157;S184 | minimal_estimable_but_fragile |
+| EE,SI,SE,BI | 4 | FALSE | TRUE | 3 | 3 | S013;S025;S157 | minimal_estimable_but_fragile |
+| FC,SE,BI,UB | 4 | FALSE | TRUE | 3 | 3 | S025;S157;S184 | minimal_estimable_but_fragile |
+| PE,ATT,SE,BI | 4 | FALSE | TRUE | 3 | 3 | S007;S016;S028 | minimal_estimable_but_fragile |
+| PE,SI,SE,BI | 4 | FALSE | TRUE | 3 | 3 | S013;S025;S157 | minimal_estimable_but_fragile |
+| SI,FC,SE,BI | 4 | FALSE | TRUE | 3 | 3 | S013;S025;S157 | minimal_estimable_but_fragile |
+| SI,SE,BI,UB | 4 | FALSE | TRUE | 3 | 3 | S025;S157;S184 | minimal_estimable_but_fragile |
+| EE,SI,FC,SE,BI | 5 | FALSE | TRUE | 3 | 3 | S013;S025;S157 | minimal_estimable_but_fragile |
+| PE,EE,SI,SE,BI | 5 | FALSE | TRUE | 3 | 3 | S013;S025;S157 | minimal_estimable_but_fragile |
+| PE,SI,FC,SE,BI | 5 | FALSE | TRUE | 3 | 3 | S013;S025;S157 | minimal_estimable_but_fragile |
+| PE,EE,SI,FC,SE,BI | 6 | FALSE | TRUE | 3 | 3 | S013;S025;S157 | minimal_estimable_but_fragile |
+| EE,ANX,BI | 3 | TRUE | FALSE | 2 | 2 | S016;S219 | minimal_estimable_but_fragile |
+| PE,ANX,BI | 3 | TRUE | FALSE | 2 | 2 | S016;S219 | minimal_estimable_but_fragile |
+| EE,ATT,ANX,BI | 4 | TRUE | FALSE | 2 | 2 | S016;S219 | minimal_estimable_but_fragile |
+| EE,ATT,SE,BI | 4 | FALSE | TRUE | 2 | 2 | S016;S028 | minimal_estimable_but_fragile |
+| EE,SE,BI,UB | 4 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| FC,ATT,SE,BI | 4 | FALSE | TRUE | 2 | 2 | S007;S016 | minimal_estimable_but_fragile |
+| PE,ATT,ANX,BI | 4 | TRUE | FALSE | 2 | 2 | S016;S219 | minimal_estimable_but_fragile |
+| PE,EE,ANX,BI | 4 | TRUE | FALSE | 2 | 2 | S016;S219 | minimal_estimable_but_fragile |
+| PE,SE,BI,UB | 4 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| EE,FC,SE,BI,UB | 5 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| EE,SI,SE,BI,UB | 5 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| PE,EE,ATT,ANX,BI | 5 | TRUE | FALSE | 2 | 2 | S016;S219 | minimal_estimable_but_fragile |
+| PE,EE,ATT,SE,BI | 5 | FALSE | TRUE | 2 | 2 | S016;S028 | minimal_estimable_but_fragile |
+| PE,EE,SE,BI,UB | 5 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| PE,FC,ATT,SE,BI | 5 | FALSE | TRUE | 2 | 2 | S007;S016 | minimal_estimable_but_fragile |
+| PE,FC,SE,BI,UB | 5 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| PE,SI,SE,BI,UB | 5 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| SI,FC,SE,BI,UB | 5 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| EE,SI,FC,SE,BI,UB | 6 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| PE,EE,FC,SE,BI,UB | 6 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| PE,EE,SI,SE,BI,UB | 6 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| PE,SI,FC,SE,BI,UB | 6 | FALSE | TRUE | 2 | 2 | S025;S157 | minimal_estimable_but_fragile |
+| FC,ANX,BI | 3 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| SE,ANX,BI | 3 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| SI,ANX,BI | 3 | TRUE | FALSE | 1 | 1 | S181 | single_matrix_not_masem_estimable |
+| ATT,SE,ANX,BI | 4 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| EE,FC,ANX,BI | 4 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| EE,SE,ANX,BI | 4 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| FC,ATT,ANX,BI | 4 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| FC,SE,ANX,BI | 4 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,FC,ANX,BI | 4 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,SE,ANX,BI | 4 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| SI,ATT,ANX,BI | 4 | TRUE | FALSE | 1 | 1 | S181 | single_matrix_not_masem_estimable |
+| SI,ATT,SE,BI | 4 | FALSE | TRUE | 1 | 1 | S078 | single_matrix_not_masem_estimable |
+| EE,ATT,SE,ANX,BI | 5 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| EE,FC,ATT,ANX,BI | 5 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| EE,FC,ATT,SE,BI | 5 | FALSE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| EE,FC,SE,ANX,BI | 5 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| FC,ATT,SE,ANX,BI | 5 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,ATT,SE,ANX,BI | 5 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,EE,FC,ANX,BI | 5 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,EE,SE,ANX,BI | 5 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,FC,ATT,ANX,BI | 5 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,FC,SE,ANX,BI | 5 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| EE,FC,ATT,SE,ANX,BI | 6 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,EE,ATT,SE,ANX,BI | 6 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,EE,FC,ATT,ANX,BI | 6 | TRUE | FALSE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,EE,FC,ATT,SE,BI | 6 | FALSE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,EE,FC,SE,ANX,BI | 6 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| PE,FC,ATT,SE,ANX,BI | 6 | TRUE | TRUE | 1 | 1 | S016 | single_matrix_not_masem_estimable |
+| ANX,BI,UB | 3 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SE,TRU,BI | 3 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| TRU,ANX,BI | 3 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,ANX,BI,UB | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,SE,BI,UB | 4 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,SE,TRU,BI | 4 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,TRU,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ANX,BI,UB | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SE,TRU,BI | 4 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,TRU,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ANX,BI,UB | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| FC,SE,TRU,BI | 4 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,TRU,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ANX,BI,UB | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SE,TRU,BI | 4 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,TRU,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SE,ANX,BI,UB | 4 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SE,TRU,ANX,BI | 4 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SE,TRU,BI,UB | 4 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ANX,BI,UB | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,SE,ANX,BI | 4 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,SE,TRU,BI | 4 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,TRU,ANX,BI | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| TRU,ANX,BI,UB | 4 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,SE,ANX,BI,UB | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,SE,TRU,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,SE,TRU,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,TRU,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,SE,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SE,ANX,BI,UB | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SE,TRU,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SE,TRU,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ATT,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ATT,SE,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,FC,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,SE,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,TRU,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,SE,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| FC,SE,ANX,BI,UB | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,SE,TRU,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,SE,TRU,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,TRU,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,SE,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SE,ANX,BI,UB | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SE,TRU,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SE,TRU,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ATT,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ATT,SE,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,FC,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,SE,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,TRU,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SE,TRU,ANX,BI,UB | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,SE,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,SE,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ATT,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ATT,SE,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,SE,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,SE,TRU,BI | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,TRU,ANX,BI | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,SE,ANX,BI,UB | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,SE,TRU,ANX,BI | 5 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,SE,TRU,BI,UB | 5 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,TRU,ANX,BI,UB | 5 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| ATT,SE,TRU,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,ATT,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,ATT,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,ATT,SE,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,ATT,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,ATT,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,FC,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SE,TRU,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ATT,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ATT,SE,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ATT,SE,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ATT,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,ATT,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,FC,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,FC,ATT,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,FC,ATT,SE,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,FC,SE,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,FC,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,FC,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| EE,SI,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| FC,ATT,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| FC,SE,TRU,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,ATT,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,ATT,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,ATT,SE,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,ATT,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,ATT,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,FC,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,FC,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,FC,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,ATT,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,ATT,SE,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,FC,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,SE,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,SI,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,EE,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,ATT,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,ATT,SE,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,ATT,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,ATT,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,FC,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SE,TRU,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ATT,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ATT,SE,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ATT,SE,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ATT,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,ATT,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,FC,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,FC,ATT,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,FC,ATT,SE,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,FC,SE,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,FC,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,FC,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| PE,SI,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,ATT,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ATT,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ATT,SE,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ATT,SE,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ATT,SE,TRU,BI | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,ATT,TRU,ANX,BI | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,SE,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,SE,TRU,ANX,BI | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,SE,TRU,BI,UB | 6 | FALSE | TRUE | 0 | 0 |  | not_complete_case_estimable |
+| SI,FC,TRU,ANX,BI,UB | 6 | TRUE | FALSE | 0 | 0 |  | not_complete_case_estimable |
+| SI,SE,TRU,ANX,BI,UB | 6 | TRUE | TRUE | 0 | 0 |  | not_complete_case_estimable |
