@@ -1,0 +1,78 @@
+# Paper A Expanded Reference Bank for Introduction/Theoretical Framework
+
+Generated: 20260615
+
+This bank combines the existing model-family MASEM reference bank with a small number of added theory/mechanism references for the Paper A Introduction and Theoretical Framework draft. The manuscript may cite these sources, but final reference metadata should be checked before journal submission.
+
+## AI education
+
+| citation | doi_or_url | use_in_paper_a | notes |
+| --- | --- | --- | --- |
+| Kelly, S., Kaye, S.-A., & Oviedo-Trespalacios, O. (2023). What factors contribute to the acceptance of artificial intelligence? A systematic review. | https://doi.org/10.1016/j.tele.2022.101925 |  |  |
+| Labadze, L., Grigolia, M., & Machaidze, L. (2023). Role of AI chatbots in education: Systematic literature review. | https://doi.org/10.1186/s41239-023-00426-1 |  |  |
+| Strzelecki, A. (2023). To use or not to use ChatGPT in higher education? A study on UTAUT and ChatGPT adoption. | https://doi.org/10.1080/10494820.2023.2209881 |  |  |
+
+## mechanism
+
+| citation | doi_or_url | use_in_paper_a | notes |
+| --- | --- | --- | --- |
+| Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. | https://doi.org/10.1037/0033-295X.84.2.191 |  |  |
+| Bandura, A. (1997). Self-efficacy: The exercise of control. | https://www.worldcat.org/title/36074515 |  |  |
+| Celik, I. (2023). Towards intelligent-TPACK: An empirical study on teachers' professional knowledge to ethically integrate artificial intelligence-based tools into education. Computers in Human Behavior, 138, 107468. | https://doi.org/10.1016/j.chb.2022.107468 | AI-in-education readiness and competence framing for self-efficacy-related mechanisms. | Added as an AI-education mechanism reference; team should verify fit before final reference lock. |
+| Compeau, D. R., & Higgins, C. A. (1995). Computer self-efficacy: Development of a measure and initial test. | https://doi.org/10.2307/249688 |  |  |
+| Compeau, D. R., Higgins, C. A., & Huff, S. (1999). Social cognitive theory and individual reactions to computing technology. | https://doi.org/10.2307/249749 |  |  |
+| Marakas, G. M., Yi, M. Y., & Johnson, R. D. (1998). The multilevel and multifaceted character of computer self-efficacy. | https://doi.org/10.1287/isre.9.2.126 |  |  |
+| Meuter, M. L., Ostrom, A. L., Bitner, M. J., & Roundtree, R. (2003). The influence of technology anxiety on consumer use and experiences with self-service technologies. | https://doi.org/10.1016/S0148-2963(01)00276-4 |  |  |
+| Parasuraman, A. (2000). Technology Readiness Index (TRI): Multiple-item scale to measure readiness to embrace new technologies. | https://doi.org/10.1177/109467050024001 |  |  |
+
+## method
+
+| citation | doi_or_url | use_in_paper_a | notes |
+| --- | --- | --- | --- |
+| Burnham, K. P., & Anderson, D. R. (2002). Model selection and multimodel inference. | https://link.springer.com/book/10.1007/b97636 |  |  |
+| Cheung, M. W.-L. (2014). Fixed- and random-effects meta-analytic structural equation modeling: Examples and analyses in R. | https://doi.org/10.3758/s13428-013-0361-y |  |  |
+| Cheung, M. W.-L. (2015). Meta-analysis: A structural equation modeling approach. | https://www.wiley.com/en-us/Meta+Analysis%3A+A+Structural+Equation+Modeling+Approach-p-9781119993438 |  |  |
+| Cheung, M. W.-L. (2015). metaSEM: An R package for meta-analysis using structural equation modeling. | https://doi.org/10.3389/fpsyg.2014.01521 |  |  |
+| Cheung, M. W.-L., & Chan, W. (2005). Meta-analytic structural equation modeling: A two-stage approach. | https://doi.org/10.1037/1082-989X.10.1.40 |  |  |
+| Jak, S., & Cheung, M. W.-L. (2018). Accounting for missing correlation coefficients in fixed-effects MASEM. | https://doi.org/10.1080/00273171.2017.1375886 |  |  |
+| Jak, S., & Cheung, M. W.-L. (2020). Meta-analytic structural equation modeling with moderating effects on SEM parameters. | https://doi.org/10.1037/met0000245 |  |  |
+| Jak, S., & Cheung, M. W.-L. (2024). A cautionary note on univariate-r approaches to MASEM. | https://doi.org/10.1177/25152459241274249 |  |  |
+| Jak, S., Jorgensen, T. D., Verdam, M. G. E., Oort, F. J., & Elffers, L. (2021). Analytical power calculations for MASEM / webMASEM tutorial materials. | https://webmasem.research.vu.nl/ |  |  |
+| Ke, Z., Zhang, Q., & Tong, X. (2019). Bayesian meta-analytic SEM. | https://doi.org/10.1080/10705511.2018.1559062 |  |  |
+| Landis, R. S. (2013). Successfully combining meta-analysis and structural equation modeling: Recommendations and strategies. | https://doi.org/10.1177/1094428112464967 |  |  |
+| Valentine, J. C., Pigott, T. D., & Rothstein, H. R. (2022). A primer on meta-analytic structural equation modeling. | https://doi.org/10.1007/s11121-021-01298-5 |  |  |
+| Yu, J., Downes, P. E., Carter, K. M., & O'Boyle, E. H. (2016). The problem of effect size heterogeneity in MASEM. | https://doi.org/10.1037/met0000061 |  |  |
+
+## theory
+
+| citation | doi_or_url | use_in_paper_a | notes |
+| --- | --- | --- | --- |
+| Ajzen, I. (1991). The theory of planned behavior. Organizational Behavior and Human Decision Processes, 50(2), 179-211. | https://doi.org/10.1016/0749-5978(91)90020-T | Attitude-intention-behavior logic supporting attitude mediation framing. | Added for Paper A introduction/theoretical framework draft. |
+| Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. | https://doi.org/10.2307/249008 |  |  |
+| Davis, F. D., Bagozzi, R. P., & Warshaw, P. R. (1989). User acceptance of computer technology: A comparison of two theoretical models. | https://doi.org/10.1287/mnsc.35.8.982 |  |  |
+| Dwivedi, Y. K., Rana, N. P., Jeyaraj, A., Clement, M., & Williams, M. D. (2019). Re-examining the Unified Theory of Acceptance and Use of Technology. | https://doi.org/10.1007/s10796-017-9774-y |  |  |
+| Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior: An introduction to theory and research. | https://people.umass.edu/aizen/f&a1975.html | Classic attitude-intention framework for positioning ATT as a mediating evaluative mechanism. | Added for Paper A introduction/theoretical framework draft. |
+| King, W. R., & He, J. (2006). A meta-analysis of the technology acceptance model. | https://doi.org/10.1016/j.im.2006.05.003 |  |  |
+| Ma, Q., & Liu, L. (2004). The Technology Acceptance Model: A meta-analysis of empirical findings. | https://doi.org/10.4018/joeuc.2004010104 |  |  |
+| Rogers, E. M. (2003). Diffusion of innovations (5th ed.). Free Press. | https://www.worldcat.org/title/52030797 | Macro adoption/diffusion framing for educational technology uptake. | Added for Paper A introduction/theoretical framework draft. |
+| Schepers, J., & Wetzels, M. (2007). A meta-analysis of the technology acceptance model: Investigating subjective norm and moderation effects. | https://doi.org/10.1016/j.im.2006.10.007 |  |  |
+| Scherer, R., Siddiq, F., & Tondeur, J. (2019). The technology acceptance model for explaining teachers' adoption of digital technology: A meta-analytic structural equation modeling approach. | https://doi.org/10.1016/j.compedu.2018.09.009 |  |  |
+| Venkatesh, V. (2000). Determinants of perceived ease of use: Integrating control, intrinsic motivation, and emotion. | https://doi.org/10.1287/isre.11.4.342.11872 |  |  |
+| Venkatesh, V., & Davis, F. D. (2000). A theoretical extension of TAM: Four longitudinal field studies. | https://doi.org/10.1287/isre.11.2.186.11752 |  |  |
+| Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. | https://doi.org/10.2307/30036540 |  |  |
+| Venkatesh, V., Thong, J. Y. L., & Xu, X. (2012). Consumer acceptance and use of information technology: Extending UTAUT. | https://doi.org/10.2307/41410412 |  |  |
+| Xue, S., Rashid, A. M., & Ouyang, S. (2024). The Unified Theory of Acceptance and Use of Technology (UTAUT) in higher education: A systematic review. | https://doi.org/10.1177/21582440241229570 |  |  |
+| Xue, S., Rashid, A. M., & Ouyang, S. (2025). Technology Acceptance Model in Artificial Intelligence in Education: A meta-analytic structural equation modeling approach. | https://doi.org/10.1177/21582440251409441 |  |  |
+| Yousafzai, S. Y., Foxall, G. R., & Pallister, J. G. (2007). Technology acceptance: A meta-analysis of the TAM, Part 1. | https://doi.org/10.1108/17465660710834453 |  |  |
+| Yousafzai, S. Y., Foxall, G. R., & Pallister, J. G. (2007). Technology acceptance: A meta-analysis of the TAM, Part 2. | https://doi.org/10.1108/17465660710834462 |  |  |
+
+## trust
+
+| citation | doi_or_url | use_in_paper_a | notes |
+| --- | --- | --- | --- |
+| Gefen, D., Karahanna, E., & Straub, D. W. (2003). Trust and TAM in online shopping: An integrated model. | https://doi.org/10.2307/30036519 |  |  |
+| Glikson, E., & Woolley, A. W. (2020). Human trust in artificial intelligence: Review of empirical research. | https://doi.org/10.5465/annals.2018.0057 |  |  |
+| Hancock, P. A., Billings, D. R., Schaefer, K. E., Chen, J. Y. C., De Visser, E. J., & Parasuraman, R. (2011). A meta-analysis of factors affecting trust in human-robot interaction. Human Factors, 53(5), 517-527. | https://doi.org/10.1177/0018720811417254 | Trust as a central mechanism in human-automation and AI-adjacent adoption contexts. | Added for Paper A trust-mechanism positioning. |
+| Lee, J. D., & See, K. A. (2004). Trust in automation: Designing for appropriate reliance. | https://doi.org/10.1518/hfes.46.1.50_30392 |  |  |
+| McKnight, D. H., Choudhury, V., & Kacmar, C. (2002). Developing and validating trust measures for e-commerce. | https://doi.org/10.1287/isre.13.3.334.81 |  |  |
+| Pavlou, P. A. (2003). Consumer acceptance of electronic commerce: Integrating trust and risk with TAM. | https://doi.org/10.1080/10864415.2003.11044275 |  |  |

@@ -36,3 +36,11 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 
 ## Evidence Rule
 - External or current claims should carry a source link or be labeled as inference.
+
+## 2026-06-15 Paper A APA7 model-family manuscript scaffold
+
+- Generated a submission-oriented Paper A scaffold for Introduction, Theoretical Framework, Methods, and Results.
+- Location: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/`.
+- Mirrored OneDrive package: `AI Adoption Meta Analysis - Documents/05_manuscripts/Paper_A/2026-06-15_apa7_model_family_full_manuscript_scaffold/`.
+- Analysis boundary: full10 remains the theoretical target/evidence map; core7 and trust6 remain empirical model-family MASEM; anxiety/self-efficacy remain theoretically specified but empirically underidentified in the current complete-case route.
+- Next recommended work: team verifies PRISMA counts and APA 7 references, then expands Discussion/Limitations and optionally converts the scaffold to DOCX.
