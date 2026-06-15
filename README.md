@@ -2,7 +2,7 @@
 
 > Meta-Analytic Structural Equation Modeling (MASEM) of AI adoption in higher education, integrating traditional technology acceptance constructs with AI-specific psychological factors.
 
-**Phase 1 Status:** Complete (N = 224 studies included)
+**Current status:** Paper A model-family MASEM scaffold generated; PRISMA count lock and APA 7th table/figure rebuild still required before journal submission.
 
 ## Research Questions
 
@@ -10,18 +10,16 @@
 2. **RQ2**: Do AI-specific constructs (Trust in AI, AI Anxiety) provide incremental explanatory power beyond traditional TAM/UTAUT variables?
 3. **RQ3**: How do educational contextual factors (education level, user role, AI tool type, culture) moderate the structural relationships?
 
-## Structural Model (Model A)
+## Current Paper A model-family structure
 
-Model A integrates TRA/TPB attitude-mediation architecture with UTAUT construct operationalizations and AI-specific extensions:
+Paper A should not be described as a single estimated full10 SEM. The current defensible structure is:
 
-```
-PE/EE → ATT → BI → UB
-SI/SE/TRU → BI
-ANX → ATT / BI (inhibitory)
-FC → UB (direct)
-```
+- `full10`: theoretical target and evidence map.
+- `core7`: empirical attitude-mediation MASEM route.
+- `trust6`: empirical AI trust/reliance MASEM route.
+- `ANX` and `SE`: theory-relevant future mechanisms; underidentified for primary complete-case MASEM.
 
-See `docs/04_methodology/model_specification.md` for competing model specifications.
+Researcher handoff: `paper_a/RESEARCHER_README.md`.
 
 ## 10 Constructs
 
@@ -89,10 +87,20 @@ tests/                             # Test suite for screening/processing scripts
 | PRISMA Stage | Status | Data Location | Count |
 |-------------|--------|---------------|-------|
 | 1. Identification | ✅ Complete | `data/01_identification/` | 16,189 unique records |
-| 2. Screening | ✅ Complete | `data/02_screening/` | 224 studies included |
-| 3. Full-text/Eligibility | ✅ Complete | `data/02_screening/pdfs/` | 224 PDFs obtained |
+| 2. Screening | ⚠ Count lock needed | `data/02_screening/` | source files show 225 included; older README showed 224 |
+| 3. Full-text/Eligibility | ⚠ Count lock needed | `data/02_screening/`; eligibility records | final PRISMA boxes not locked |
 | 4. Data Extraction | 🔄 In progress | `data/04_extraction/` | Coding manual finalized, Phase 0 calibration done |
 | 5. Analysis | ⏸ Pending | `analysis/` | TSSEM + OSMASEM pipeline ready |
+
+## Paper A submission-readiness note
+
+The current Paper A Word manuscript includes model-family results, but it is not yet submission-ready.
+
+- APA 7th tables need to be regenerated without internal grid lines.
+- A true PRISMA 2020 flow diagram has not yet been finalized.
+- MASEM path figures need publication-grade redesign.
+- Required next visuals include PRISMA flow, construct genealogy, analytic workflow, full10 evidence heatmap, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
+- PRISMA count review file: `paper_a/PRISMA_COUNTS_REVIEW_NEEDED_20260615.md`.
 
 ## Methodology
 

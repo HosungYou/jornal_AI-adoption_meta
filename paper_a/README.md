@@ -1,51 +1,50 @@
-# Paper A: AI Adoption in Education — Meta-Analytic Structural Equation Modeling (MASEM)
+# Paper A: AI Adoption in Education — Model-Family MASEM
 
-## Target Journal
-**Computers & Education** (Impact Factor 12.0)
+## Current status
 
-## Research Overview
-This study conducts a comprehensive meta-analytic structural equation modeling (MASEM) analysis of AI adoption in educational settings (2015-2025). It integrates 12 theoretical constructs from TAM/UTAUT frameworks—including performance expectancy, effort expectancy, trust, anxiety, and AI transparency—to model the structural relationships driving AI adoption among students, instructors, and administrators.
+Paper A is currently framed as a model-family MASEM manuscript.
 
-## Scope
-Paper A covers the **full pipeline** from literature identification to MASEM analysis:
-- Systematic search across 10 databases (22,166 records)
-- Deduplication (22,166 → 16,189)
-- Three-tier AI-assisted screening (16,189 → 575 AI-include)
-- Human verification of screening decisions
-- Full-text eligibility assessment
-- Data extraction (AI-assisted + human verification)
-- MASEM analysis with moderator testing
+- `full10` is the theoretical 10-construct target and evidence map.
+- `core7` and `trust6` are the empirical model-family MASEM routes.
+- `ANX` and `SE` remain theory-relevant but are currently underidentified for primary complete-case MASEM.
+- The current Word manuscript contains real model-family results, but tables, figures, and PRISMA reporting still need a submission-readiness pass.
 
 ## Relationship to Paper B
 Paper B (targeting *Research Synthesis Methods*) focuses exclusively on **LLM-assisted data extraction methodology** using a 100-study subsample. Paper A is the **parent meta-analysis** that Paper B references for screening and eligibility procedures.
 
-## Key Numbers
-| Stage | Records |
-|-------|---------|
-| Identified | 22,166 |
-| After deduplication | 16,189 |
-| After keyword filter (Phase 1) | 3,274 |
-| AI 3-model screening (Phase 2) | 1,457 human review queue |
-| Final included (full-text) | TBD (~300 MASEM-eligible expected) |
+## Researcher handoff
 
-## Current Screening Pipeline (v8 — 2026-02-26)
+Read this first:
 
-**AI Models**: Gemini + Claude Sonnet 4.6 (Codex dropped — 85% uncertain, no discriminating power)
+- `paper_a/RESEARCHER_README.md`
+- `paper_a/PRISMA_COUNTS_REVIEW_NEEDED_20260615.md`
 
-| Category | Count | Description |
-|----------|-------|-------------|
-| Auto-INCLUDE | 367 | Gemini + Claude both include |
-| Auto-EXCLUDE | 15 | Gemini + Claude both exclude |
-| TIER1 Conflict | 95 | include ↔ exclude direct conflict |
-| TIER2 High | 480 | one include + one uncertain |
-| TIER3 Low | 500 | uncertain + uncertain, etc. |
-| **Total** | **1,457** | |
+Current draft:
 
-**Human Review Design (Option C: 2-Rater IRR + R1 Adjudicator)**:
-- R2 + R3: 200 papers independent coding (IRR) → Cohen's κ
-- R1 (PI): spot-check Auto-INCLUDE 86건 + TIER2 additional 135건
-- R1 serves as adjudicator for R2-R3 disagreements
-- Excel: `data/templates/human_review_sheet_v8.xlsx`
+- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.docx`
+
+## PRISMA count status
+
+Current source files support these provisional counts:
+
+| Stage | Count | Source |
+| --- | ---: | --- |
+| Records identified | 22,166 | `data/01_identification/dedup_report.txt` |
+| Duplicates removed | 5,977 | `data/01_identification/dedup_report.txt` |
+| Unique records after deduplication | 16,189 | `data/01_identification/dedup_report.txt` |
+| Human-reviewed records | 657 | `data/02_screening/screening_summary.json` |
+| Human-reviewed included records | 225 | `data/02_screening/screening_summary.json` |
+| Human-reviewed excluded records | 432 | `data/02_screening/screening_summary.json` |
+
+The prior repository status also reports `224` included, so a final PRISMA 2020 flow diagram is not locked yet. Resolve `224` versus `225` before submission.
+
+## Submission-readiness gap
+
+- Tables must be regenerated in APA 7th style without internal grid lines.
+- A true PRISMA 2020 flow diagram must be generated after count lock.
+- Path figures should be redesigned as publication-grade MASEM diagrams.
+- Add a path estimate coefficient/forest plot and model-feasibility plot.
+- External tables/figures are not reused directly; only reporting conventions should be borrowed.
 
 ## Directory Structure
 ```

@@ -73,6 +73,15 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Generated share-safe Paper A OSF-ready package: `paper_a/public_data_repository_20260615/` and `paper_a/public_data_repository_20260615_osf_ready.zip`.
 - OSF upload remains pending because Paper A target OSF project/component is not yet confirmed. Existing Paper B OSF record remains `https://osf.io/mkrgd/overview`.
 
+## 2026-06-15 Paper A submission-readiness audit
+
+- Re-audited the strengthened Paper A DOCX after researcher concern about reporting conventions.
+- Finding: current manuscript has inline black-font tables/figures, but tables still use non-APA internal grid lines and figures remain scaffold-level rather than publication-grade MASEM/PRISMA visuals.
+- Finding: a true PRISMA 2020 flow diagram has not been generated. Current count sources conflict: root README historically reported 224 included, while `data/02_screening/screening_summary.json` and `human_screening_results_consolidated.csv` show 225 included from 657 human-reviewed records.
+- Created researcher handoff: `paper_a/RESEARCHER_README.md`.
+- Created PRISMA count review file: `paper_a/PRISMA_COUNTS_REVIEW_NEEDED_20260615.md`.
+- Updated root README and Paper A README to state the submission-readiness gap and next work order.
+
 ## 2026-06-15 Paper A submission-strengthened manuscript and reference rebuild
 
 - Generated submission-strengthened manuscript with Figure 0 research procedure, stronger Methods sequence, expanded Discussion, body-embedded APA 7 tables/figures, black font, and DOI-based reference rebuild.
