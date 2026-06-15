@@ -13,6 +13,8 @@ This package gives the Paper A team a submission-oriented scaffold for Introduct
 
 ## Main files
 
+- `PAPER_A_APA7_MODEL_FAMILY_FULL_MANUSCRIPT_SCAFFOLD_20260615.docx`
+
 - `PAPER_A_APA7_MODEL_FAMILY_FULL_MANUSCRIPT_SCAFFOLD_20260615.md`
 - `TEAM_WRITING_BRIEF_PAPER_A_INTRO_THEORY_METHODS_RESULTS_20260615_KO.md`
 - `PAPER_A_EXPANDED_REFERENCE_BANK_20260615.csv`
@@ -36,3 +38,5 @@ This package gives the Paper A team a submission-oriented scaffold for Introduct
 - Final target-journal formatting requirements.
 - Final APA 7th reference metadata.
 - Whether to convert this Markdown scaffold into a tracked DOCX submission draft.
+- Word manuscript generated: `PAPER_A_APA7_MODEL_FAMILY_FULL_MANUSCRIPT_SCAFFOLD_20260615.docx`.
+

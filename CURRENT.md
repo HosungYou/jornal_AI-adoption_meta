@@ -44,3 +44,9 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Mirrored OneDrive package: `AI Adoption Meta Analysis - Documents/05_manuscripts/Paper_A/2026-06-15_apa7_model_family_full_manuscript_scaffold/`.
 - Analysis boundary: full10 remains the theoretical target/evidence map; core7 and trust6 remain empirical model-family MASEM; anxiety/self-efficacy remain theoretically specified but empirically underidentified in the current complete-case route.
 - Next recommended work: team verifies PRISMA counts and APA 7 references, then expands Discussion/Limitations and optionally converts the scaffold to DOCX.
+
+## 2026-06-15 Paper A Word manuscript
+
+- Generated Word manuscript: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_MODEL_FAMILY_FULL_MANUSCRIPT_SCAFFOLD_20260615.docx`.
+- Mirrored Word file to OneDrive manuscript package.
+- Word draft includes APA-ish manuscript styling, manuscript text, fit/path tables, and three model-family figures.
