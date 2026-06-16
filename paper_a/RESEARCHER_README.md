@@ -81,8 +81,8 @@ Main text:
 1. Source-lock final full-text eligibility exclusion boxes.
 2. Review the portrait multi-box PRISMA draft against the locked eligibility boxes.
 3. Manually inspect Word pagination, figure placement, and APA 7th reference italics.
-4. Upload `paper_a/public_data_repository_20260615_osf_ready.zip` to the Paper A OSF component.
-5. Add the final OSF component URL to the manuscript and repository documentation.
+4. Finalize public/embargo visibility settings for the Paper A OSF component if needed.
+5. Continue source-locking the final full-text eligibility exclusion boxes before journal submission.
 
 ## 2026-06-15 Paper A APA table/figure rebuild
 
@@ -91,4 +91,22 @@ Main text:
 - Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
 - Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
 - Refined Figure 1 to a portrait, stage-labeled, multi-box PRISMA 2020-style draft; local automated PDF retrieval is reported separately from final full-text eligibility.
-- OSF upload status: package is ready locally, but automated upload from this session is blocked unless Chrome exposes an automation surface or an OSF API/CLI credential is available.
+- OSF upload status: uploaded to the Paper A OSF component at https://osf.io/bwzgc/overview on 2026-06-16; uploaded file is `public_data_repository_20260615_osf_ready.zip`.
+
+## 2026-06-16 LongTable panel handoff
+
+LongTable panel recommendation was accepted: Paper A should claim `theory-preserving estimability diagnosis`, not definitive full AI adoption SEM confirmation.
+
+New files:
+
+- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.docx`
+- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.md`
+- `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_THEORY_DISCUSSION_WRITING_GUIDE_KR_20260616.docx`
+
+Panel-required fixes incorporated in the new draft:
+
+- Added Introduction, Theoretical Framework, expanded Method, narrative Results, Discussion, Data Availability, and References.
+- Reframed `trust mechanism` as `trust-reliance route`.
+- Reframed `attitude mediation` as `attitude-centered evaluative route`.
+- Added construct harmonization/adjudication guardrails, including S048 `INT -> BI` and `USE -> UB`, and S004 `PKC -> SE` rejection.
+- Preserved caveats for `core7 k=4`, `trust6 k=7`, incomplete CIs, ANX/SE underidentification, and final PRISMA/full-text source-lock needs.

@@ -2,18 +2,14 @@
 
 Share-safe aggregate data, model-family MASEM results, supplemental diagnostic tables, manuscript-generation scripts, and original figures are prepared for public archiving. Raw PDFs, private source documents, raw coder workbooks, and institutionally accessed full texts are not redistributed because of copyright, licensing, and privacy/workflow boundaries.
 
-Current known OSF project for the broader AI adoption methodology package: https://osf.io/mkrgd/overview
+Paper A OSF component: https://osf.io/bwzgc/overview
 
-Before submission, the authors should confirm whether Paper A will use:
+Parent OSF project for the broader AI adoption methodology package: https://osf.io/mkrgd/overview
 
-1. A new standalone OSF project for Paper A.
-2. A Paper A component under the existing OSF project.
-3. A private embargoed OSF component that becomes public at acceptance.
+Uploaded file: `public_data_repository_20260615_osf_ready.zip`
 
-Placeholder manuscript language:
+Manuscript language:
 
-The aggregate analysis materials, model-family MASEM diagnostics, and share-safe reproducibility scripts are available at [OSF URL TO BE INSERTED]. Raw full-text PDFs and private extraction workbooks are not publicly redistributed because they include copyrighted and/or institutionally accessed materials.
-## Recommended OSF route
+The aggregate analysis materials, model-family MASEM diagnostics, and share-safe reproducibility scripts are available at https://osf.io/bwzgc/overview. Raw full-text PDFs and private extraction workbooks are not publicly redistributed because they include copyrighted and/or institutionally accessed materials.
 
-The recommended route is to upload this share-safe package to a new `Paper A` component under the existing OSF project: https://osf.io/mkrgd/overview. The component should exclude raw PDFs, private source documents, raw coder workbooks, and runtime files.
-
+2026-06-16 update: the package now includes `PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.docx`, its Markdown companion, and `PAPER_A_THEORY_DISCUSSION_WRITING_GUIDE_KR_20260616.docx`. The OSF component is https://osf.io/bwzgc/overview.

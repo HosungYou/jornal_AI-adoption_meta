@@ -1,7 +1,7 @@
 # From Theoretical Coverage to Estimable Model Families: A Meta-Analytic Structural Equation Modeling Study of AI Adoption
 
 **Author Note**  
-Author affiliations, acknowledgments, funding, conflicts of interest, data availability, and repository policy will be completed after the team confirms the final target journal and OSF component.
+Author affiliations, acknowledgments, funding, conflicts of interest, and final target-journal details remain to be completed. The Paper A OSF component is https://osf.io/bwzgc/overview.
 
 ## Abstract
 
@@ -88,7 +88,7 @@ Supplemental diagnostics tested whether the model-family decisions were scientif
 
 ### Open Science and Reproducibility
 
-A share-safe OSF-ready package has been prepared locally. It includes aggregate results, original figures, scripts, the manuscript draft, and manifests. It excludes raw PDFs, private source documents, and raw coder workbooks. The intended OSF route is a Paper A component under the existing AI adoption OSF project (`https://osf.io/mkrgd/overview`), pending researcher upload authorization and component creation.
+A share-safe OSF-ready package has been uploaded to the Paper A OSF component at `https://osf.io/bwzgc/overview`. It includes aggregate results, original figures, scripts, the manuscript draft, and manifests. It excludes raw PDFs, private source documents, and raw coder workbooks.
 
 ## Results
 
@@ -213,7 +213,7 @@ The main limitation is matrix sparsity. Complete-case MASEM necessarily privileg
 
 ## Data Availability
 
-A share-safe Paper A public repository package has been prepared locally at `paper_a/public_data_repository_20260615/` and as `paper_a/public_data_repository_20260615_osf_ready.zip`. The intended route is to upload this package to a Paper A component under the existing OSF project `https://osf.io/mkrgd/overview`. Raw PDFs, private source documents, raw coder workbooks, and runtime files are excluded from the public package.
+A share-safe Paper A public repository package has been uploaded to the Paper A OSF component at `https://osf.io/bwzgc/overview` as `public_data_repository_20260615_osf_ready.zip`. Raw PDFs, private source documents, raw coder workbooks, and runtime files are excluded from the public package.
 
 ## References
 

@@ -90,4 +90,12 @@ paper_a/
 - Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
 - Refined Figure 1 to a portrait, stage-labeled, multi-box PRISMA 2020-style draft; local automated PDF retrieval is reported separately from final full-text eligibility.
 - OSF-ready zip: `paper_a/public_data_repository_20260615_osf_ready.zip`.
-- OSF upload status: package is ready locally, but automated upload from this session is blocked unless Chrome exposes an automation surface or an OSF API/CLI credential is available.
+- OSF upload status: uploaded to the Paper A OSF component at https://osf.io/bwzgc/overview on 2026-06-16; uploaded file is `public_data_repository_20260615_osf_ready.zip`.
+
+## 2026-06-16 LongTable panel submission draft
+
+- Created a new submission-oriented Paper A draft after LongTable panel review: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.docx`.
+- Created Korean writing guide for theory and Discussion: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_THEORY_DISCUSSION_WRITING_GUIDE_KR_20260616.docx`.
+- Main claim now uses the safer framing: theory-preserving estimability diagnosis of AI adoption mechanisms using model-family MASEM.
+- The draft keeps `full10` as theoretical target/evidence map, `core7` and `trust6` as small-k complete-case model-family estimates, and `ANX`/`SE` as theory-retained but empirically underidentified future mechanisms.
+- OSF component: https://osf.io/bwzgc/overview.

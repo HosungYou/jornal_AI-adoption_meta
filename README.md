@@ -142,4 +142,12 @@ Hosung You — Penn State College of Education
 - Generated PRISMA-style flow, theoretical genealogy, analytic workflow, revised full10 evidence map, core7/trust6 path diagrams, path coefficient plot, and model-feasibility plot.
 - Updated OSF-ready package with the rebuilt manuscript, figures, and PRISMA count-lock files.
 - Refined Figure 1 to a portrait, stage-labeled, multi-box PRISMA 2020-style draft; local automated PDF retrieval is reported separately from final full-text eligibility.
-- OSF upload status: package is ready locally, but automated upload from this session is blocked unless Chrome exposes an automation surface or an OSF API/CLI credential is available.
+- OSF upload status: uploaded to the Paper A OSF component at https://osf.io/bwzgc/overview on 2026-06-16; uploaded file is `public_data_repository_20260615_osf_ready.zip`.
+
+## 2026-06-16 Paper A LongTable panel submission draft
+
+- Generated a LongTable panel-informed submission draft centered on `theory-preserving estimability diagnosis` rather than an over-strong full AI adoption SEM claim.
+- Latest submission-oriented draft: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.docx`.
+- Korean theory/discussion writing guide: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_THEORY_DISCUSSION_WRITING_GUIDE_KR_20260616.docx`.
+- OSF component: `https://osf.io/bwzgc/overview`.
+- Remaining blockers before journal submission: source-lock final full-text eligibility boxes, confirm duplicate DOI interpretation, inspect Word pagination/figures, and consider influence diagnostics for `core7 k=4` and `trust6 k=7`.

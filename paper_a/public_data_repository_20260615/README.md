@@ -19,14 +19,16 @@ This is a share-safe OSF-ready package for Paper A.
 
 ## OSF status
 
-Paper B has an existing OSF project noted in the repository: https://osf.io/mkrgd/overview
+Parent OSF project: https://osf.io/mkrgd/overview
 
-Paper A OSF target is not yet confirmed. This package can be uploaded either to a new Paper A component/project or to a clearly labeled Paper A component under the existing AI Adoption OSF project after the researcher confirms the target.
+Paper A OSF component: https://osf.io/bwzgc/overview
+
+Uploaded file: `public_data_repository_20260615_osf_ready.zip`
 ## 2026-06-15 submission-strengthened update
 
 - Added submission-strengthened manuscript with Figure 0 procedure diagram and inline APA 7 tables/figures.
 - Added Crossref DOI-based APA 7 reference metadata/list for final reference verification.
-- Intended OSF target: Paper A component under https://osf.io/mkrgd/overview, pending researcher authorization.
+- OSF target resolved: Paper A component at https://osf.io/bwzgc/overview.
 
 
 ## 2026-06-15 APA table/figure rebuild update
@@ -34,3 +36,13 @@ Paper A OSF target is not yet confirmed. This package can be uploaded either to 
 - Added table/figure rebuild manuscript: `PAPER_A_APA7_TABLE_FIGURE_REBUILD_MANUSCRIPT_20260615.docx`.
 - Added PRISMA count lock: `PRISMA_COUNTS_LOCK_20260615.md`.
 - Added publication-oriented figures 1-8 under `2_Figures/`.
+
+## 2026-06-16 LongTable panel submission draft addition
+
+This package now includes the LongTable panel-informed submission draft and Korean theory/discussion writing guide:
+
+- `1_Manuscript/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.docx`
+- `1_Manuscript/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.md`
+- `1_Manuscript/PAPER_A_THEORY_DISCUSSION_WRITING_GUIDE_KR_20260616.docx`
+
+The main draft frames Paper A as a theory-preserving estimability diagnosis rather than a definitive full10 SEM confirmation.

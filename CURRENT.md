@@ -71,7 +71,7 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Generated PDF review manifest and manuscript-strengthening note: `references/paper_a_apa7_evidence_review_20260615/notes/PAPER_A_REFERENCE_PDF_REVIEW_AND_MANUSCRIPT_STRENGTHENING_20260615.md`.
 - Generated inline APA7 Word manuscript with tables and figures embedded in the body: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_INLINE_TABLES_FIGURES_BLACK_FONT_20260615.docx`.
 - Generated share-safe Paper A OSF-ready package: `paper_a/public_data_repository_20260615/` and `paper_a/public_data_repository_20260615_osf_ready.zip`.
-- OSF upload remains pending because Paper A target OSF project/component is not yet confirmed. Existing Paper B OSF record remains `https://osf.io/mkrgd/overview`.
+- OSF upload completed on 2026-06-16 in the Paper A OSF component: `https://osf.io/bwzgc/overview`.
 
 ## 2026-06-15 Paper A submission-readiness audit
 
@@ -89,7 +89,7 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Word: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_APA7_SUBMISSION_STRENGTHENED_INLINE_MANUSCRIPT_20260615.docx`.
 - Figure 0: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/figures/figure_0_paper_a_research_procedure_black_font_20260615.png`.
 - Crossref reference metadata: `references/paper_a_apa7_evidence_review_20260615/paper_a_crossref_apa7_reference_metadata_20260615.csv` and `references/paper_a_apa7_evidence_review_20260615/paper_a_crossref_apa7_reference_list_20260615.md`.
-- OSF-ready package refreshed: `paper_a/public_data_repository_20260615_osf_ready.zip`; recommended upload target remains a Paper A component under `https://osf.io/mkrgd/overview`.
+- OSF-ready package refreshed: `paper_a/public_data_repository_20260615_osf_ready.zip`; uploaded target is the Paper A OSF component at `https://osf.io/bwzgc/overview`.
 
 ## 2026-06-15 Paper A APA table/figure rebuild
 
@@ -104,4 +104,14 @@ This file is regenerated from `.longtable/current-session.json` and `.longtable/
 - Added local automated PDF retrieval counts to the PRISMA lock: 89 PDFs downloaded and 136 not downloaded/access needed from 225 included screening rows.
 - Preserved the key caveat: local automated PDF retrieval is not the same as final full-text eligibility, and final full-text exclusion boxes remain source-lock pending.
 - Refreshed `paper_a/public_data_repository_20260615_osf_ready.zip` with the revised PRISMA figure, manuscript, and count-lock files.
-- Attempted OSF upload through the already logged-in Chrome session. Chrome opened the OSF project, but Apple Events JavaScript access was denied, Computer Use Chrome state timed out, and no OSF CLI credential was available; automated upload remains blocked from this session.
+- OSF upload was completed by the researcher on 2026-06-16 at `https://osf.io/bwzgc/overview`; the uploaded file is `public_data_repository_20260615_osf_ready.zip`.
+
+## 2026-06-16 Paper A LongTable panel submission draft
+
+- Researcher approved the safer main claim: `theory-preserving estimability diagnosis of AI adoption mechanisms using model-family MASEM`.
+- Generated new submission-oriented draft: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.docx`.
+- Generated companion Markdown: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_LONGTABLE_PANEL_SUBMISSION_DRAFT_20260616.md`.
+- Generated Korean theory/discussion writing guide: `paper_a/manuscript/target_journal/apa7_model_family_full_manuscript_scaffold_20260615/PAPER_A_THEORY_DISCUSSION_WRITING_GUIDE_KR_20260616.docx`.
+- Refined manuscript claim boundaries: full10 is a theoretical target/evidence map; core7 and trust6 are small-k complete-case model-family estimates; trust is a trust-reliance route; attitude is an attitude-centered evaluative route; ANX/SE are theory-retained but empirically underidentified future mechanisms.
+- Paper A OSF upload is complete at `https://osf.io/bwzgc/overview`.
+- Next blockers before journal submission: source-lock final full-text eligibility boxes, confirm duplicate DOI interpretation, inspect Word pagination/figure placement, and consider influence diagnostics for `core7 k=4` and `trust6 k=7`.
