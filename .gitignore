@@ -61,6 +61,8 @@ data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_cl
 data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_codex_smoke_direct_r_20260606.csv
 data/04_extraction/05_llm_masem_substitution/locked_outputs/model_runs/paper2_gemini_stratified10_allfamilies_20260606.csv
 pdfs/*.pdf
+references/paper_a_apa7_evidence_review_20260615/pdfs/
+references/paper_a_apa7_evidence_review_20260615/text_extracts/
 data/00_raw/correlation_matrices/*.pdf
 data/00_raw/search_results/*.csv
 data/00_raw/search_results/*.ris
