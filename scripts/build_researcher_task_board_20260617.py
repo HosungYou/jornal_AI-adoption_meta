@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import shutil
+import os
 from datetime import date
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -20,10 +21,12 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.worksheet.datavalidation import DataValidation
 
 
-ROOT = Path(
+DEFAULT_ROOT = Path(
     "/Users/newhosung/Library/CloudStorage/OneDrive-SharedLibraries-"
     "ThePennsylvaniaStateUniversity/AI Adoption Meta Analysis - Documents"
 )
+ROOT = Path(os.environ.get("AI_ADOPTION_ROOT", str(DEFAULT_ROOT))).expanduser()
+STORAGE_LABEL = os.environ.get("AI_ADOPTION_STORAGE_LABEL", "OneDrive")
 WORK_DIR = ROOT / "00_INDEX" / "2026-06-17_Paper_A_B_work_allocation"
 SHARED = WORK_DIR / "00_shared"
 WORKING_MANUSCRIPT_DIR = WORK_DIR / "01_working_manuscript"
@@ -48,6 +51,7 @@ PROCESS_DOCX = SHARED / "Paper_A_포함판단_과정_설명서_20260617.docx"
 PROCESS_MD = SHARED / "Paper_A_포함판단_과정_설명서_20260617.md"
 EMAIL_DOCX = SHARED / "연구자_안내이메일_초안_20260617.docx"
 EMAIL_MD = SHARED / "연구자_안내이메일_초안_20260617.md"
+ROOT_README_MD = ROOT / "README_LOCAL_WORKFLOW_20260618.md"
 
 DECISION_LOG_XLSX = TRACKING_DIR / "Paper_A_결정로그_20260617.xlsx"
 REFERENCE_MATRIX_XLSX = TRACKING_DIR / "Paper_A_Reference_Matrix_20260617.xlsx"
@@ -753,6 +757,42 @@ def build_markdown_readmes() -> None:
     )
 
 
+def build_root_readme() -> None:
+    ROOT_README_MD.write_text(
+        "\n".join(
+            [
+                "# AI Adoption Meta Analysis 로컬 작업 시작 안내",
+                "",
+                f"이 폴더는 {STORAGE_LABEL} 로컬 동기화 폴더에서 Paper A/B 연구자 작업을 진행하기 위한 작업 루트입니다.",
+                "",
+                "## 바로 열 파일",
+                "",
+                "- 작업 폴더: `00_INDEX/2026-06-17_Paper_A_B_work_allocation/`",
+                "- Paper A 작업원고: `00_INDEX/2026-06-17_Paper_A_B_work_allocation/01_working_manuscript/Paper_A_작업원고_TRACK_CHANGES_20260617.docx`",
+                "- Paper A 원본: `00_INDEX/2026-06-17_Paper_A_B_work_allocation/01_working_manuscript/Paper_A_원본_DO_NOT_EDIT_20260617.docx`",
+                "- 연구자 작업보드: `00_INDEX/2026-06-17_Paper_A_B_work_allocation/00_shared/연구자_작업보드_20260617.xlsx`",
+                "- 연구자 작업안내: `00_INDEX/2026-06-17_Paper_A_B_work_allocation/00_shared/연구자_작업안내_20260617.docx`",
+                "- 이메일 초안: `00_INDEX/2026-06-17_Paper_A_B_work_allocation/00_shared/연구자_안내이메일_초안_20260617.docx`",
+                "",
+                "## 작업 방식",
+                "",
+                "1. Paper A 문장 수정은 작업원고 하나에서 Track Changes로 진행합니다.",
+                "2. 원본 파일은 비교와 복구용이므로 수정하지 않습니다.",
+                "3. 담당 작업, 상태, PI 확인 필요 여부는 작업보드에서 업데이트합니다.",
+                "4. 포함 수, 선행연구, APA/JARS처럼 표로 봐야 하는 근거만 `02_tracking` 파일에 남깁니다.",
+                "5. 로컬 파일 하이퍼링크는 Office 권한 팝업을 만들 수 있어 넣지 않았습니다. 공유가 필요하면 Google Drive 웹에서 링크를 복사해 작업보드의 웹 링크 열에 붙여 주세요.",
+                "",
+                "## 주의",
+                "",
+                "- Google Drive 동기화가 완전히 끝나기 전에는 다른 사람이 같은 파일을 열 수 없을 수 있습니다.",
+                "- 로컬 Excel 파일만으로는 행 완료 시 자동 이메일 알림이 가지 않습니다. 알림이 필요하면 Google Sheets/Apps Script 또는 Drive 댓글/공유 알림으로 따로 구성해야 합니다.",
+            ]
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
 def build_references_folder() -> None:
     pdf_dir = REFERENCES_DIR / "pdfs"
     request_dir = REFERENCES_DIR / "to_request"
@@ -904,7 +944,7 @@ def write_task_sheet(ws, tasks: list[dict], title: str) -> None:
 
 def write_reference_sheet(ws) -> None:
     style_sheet(ws, "파일 위치")
-    headers = ["ID", "논문", "파일/폴더", "OneDrive 루트 기준 경로", "반드시 볼 파일", "주의할 점"]
+    headers = ["ID", "논문", "파일/폴더", f"{STORAGE_LABEL} 루트 기준 경로", "반드시 볼 파일", "주의할 점"]
     start = 4
     for col, header in enumerate(headers, 1):
         ws.cell(start, col, header)
@@ -926,7 +966,7 @@ def write_use_sheet(ws) -> None:
         ("3", "댓글 앞에는 `[A4-R2]`처럼 작업 ID와 역할을 붙입니다."),
         ("4", "보조 추적표가 필요한 작업만 `02_tracking` 파일에 기록합니다."),
         ("5", "작업보드에서 상태와 PI 확인 필요 여부를 업데이트합니다."),
-        ("6", "로컬 파일 하이퍼링크는 Grant Access 팝업을 만들 수 있어 넣지 않았습니다. 웹 공유 링크가 필요하면 OneDrive에서 링크 복사 후 웹 링크 열에 붙여 주세요."),
+        ("6", f"로컬 파일 하이퍼링크는 Grant Access 팝업을 만들 수 있어 넣지 않았습니다. 웹 공유 링크가 필요하면 {STORAGE_LABEL}에서 링크 복사 후 웹 링크 열에 붙여 주세요."),
     ]
     ws["A3"] = "순서"
     ws["B3"] = "하실 일"
@@ -1167,14 +1207,17 @@ def main() -> None:
     build_process_doc()
     build_guide_docx()
     build_markdown_readmes()
+    build_root_readme()
     build_all_workbooks()
     build_email_docs()
 
     print(f"work_dir={WORK_DIR}")
+    print(f"storage_label={STORAGE_LABEL}")
     print(f"working_manuscript={PAPER_A_TRACK_DOCX}")
     print(f"board={BOARD_XLSX}")
     print(f"guide={GUIDE_DOCX}")
     print(f"email={EMAIL_DOCX}")
+    print(f"root_readme={ROOT_README_MD}")
     print(f"archived_notes={len(moved)}")
     for name, (count, non_web) in inspect_hyperlinks([BOARD_XLSX, GUIDE_DOCX, PROCESS_DOCX, EMAIL_DOCX]).items():
         print(f"hyperlinks {name}: total={count} non_web={non_web}")
