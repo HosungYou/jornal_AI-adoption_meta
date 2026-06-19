@@ -296,3 +296,13 @@ Generated packet: `data/04_extraction/05_llm_masem_substitution/results/paper_a_
 Boundary: this is not independent human coding and not source-anchored adjudication by itself. It is an AI-assisted source-trace/review queue for human confirmation.
 
 Next required work: the researcher reviews `paper_a_human_confirmation_template_from_ai_trace_20260614.csv`; only confirmed rows can be used to build a future `paper_a_human_confirmed_supplemental_densification_*.csv` input.
+
+## 2026-06-19 Paper B Visual Upgrade and Timing Boundary
+
+Status update: Paper B received a manuscript-facing visual upgrade package with a source-anchored validation flow diagram, dense denominator-family table, risk-difference forest-style plot, accuracy-versus-review-burden plot, and MASEM claim-gate figure.
+
+Researcher decision: no reviewer-time or per-study review-duration logs are available. Therefore, Paper B should not include a Lai-style elapsed-time efficiency figure and should not make a time-savings claim. The correct bounded visual claim is review burden and triage utility.
+
+Share-safe release boundary: the Git package includes generated figures, generated source tables, visual-upgrade manuscript insert files, status/goal-audit documents, and the generation script. It excludes publisher PDFs, extracted reference-paper pages, full-text extracts, raw/private coder workbooks, and private source packets.
+
+Evidence files: `paper_b/manuscript/visual_upgrade_20260619/README.md`, `paper_b/manuscript/visual_upgrade_20260619/MANIFEST_SHARE_SAFE_20260619.json`, `paper_b/manuscript/visual_upgrade_20260619/docs/PAPER_B_VISUAL_GOAL_AUDIT_20260619.md`, `scripts/analysis/build_paper_b_visual_upgrade_20260619.py`.

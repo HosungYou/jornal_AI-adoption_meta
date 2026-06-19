@@ -9,6 +9,16 @@ The current summarized RSM-oriented manuscript is:
 
 This version removes named discussion of the previously reviewed exemplar paper and reframes Paper B as a workflow validation study rather than a three-model vendor comparison.
 
+## 2026-06-19 Visual Upgrade
+
+The current visual-upgrade insert package is:
+
+- `visual_upgrade_20260619/Paper_B_Implementation_Draft_RSM_VISUAL_UPGRADE_20260619.docx`
+- `visual_upgrade_20260619/Paper_B_Implementation_Draft_RSM_VISUAL_UPGRADE_20260619.md`
+- `visual_upgrade_20260619/reports/Paper_B_Frontier_Visual_Upgrade_Report_20260619.pdf`
+
+This package adds a dense denominator-family table, a source-anchored validation flow diagram, a risk-difference forest-style plot, an accuracy-versus-review-burden plot, and a MASEM claim-gate figure. No reviewer-time logs are available, so the package intentionally does not include an elapsed-time efficiency plot or time-savings claim.
+
 ## Current Positioning
 
 Paper B evaluates whether a prespecified Codex 5.5 workflow can augment human-supervised MASEM-ready data extraction. The main validation logic is:

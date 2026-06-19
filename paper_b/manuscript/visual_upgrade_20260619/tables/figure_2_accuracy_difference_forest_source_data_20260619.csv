@@ -1,0 +1,7 @@
+comparison,metric,risk_difference,ci_low,ci_high
+Primary r validation pool vs Converted beta/path,Scored-only accuracy,0.47119120196043274,0.41618270405956276,0.5261996998613027
+Primary r validation pool vs Converted beta/path,All-scorable accuracy,0.36166928154879957,0.3104902422667288,0.41284832083087036
+Latent/source-flagged r vs Converted beta/path,Scored-only accuracy,0.4871974179666487,0.43134365734786784,0.5430511785854296
+Latent/source-flagged r vs Converted beta/path,All-scorable accuracy,0.3531298124830147,0.2985116339470867,0.40774799101894277
+Direct/source-reported r vs Converted beta/path,Scored-only accuracy,0.45118343195266275,0.39287704270915647,0.509489821196169
+Direct/source-reported r vs Converted beta/path,All-scorable accuracy,0.3730756598848766,0.31641563728644634,0.4297356824833069

@@ -1,0 +1,6 @@
+| denominator_family | rows_total | scored_rows | correct_rows | incorrect_scored_rows | abstention_unresolved_rows | scored_only_accuracy | scored_only_95ci | all_scorable_accuracy | all_scorable_95ci | review_burden_share | claim_role |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Primary r validation pool | 1628 | 1287 | 1189 | 98 | 341 | 0.9238539238539238 | 90.8% to 93.7% | 0.7303439803439803 | 70.8% to 75.1% | 0.20945945945945946 | Primary validation summary |
+| Latent/source-flagged r | 931 | 715 | 672 | 43 | 216 | 0.9398601398601398 | 92.0% to 95.5% | 0.7218045112781954 | 69.2% to 75.0% | 0.23200859291084855 | Primary validation stratum |
+| Direct/source-reported r | 697 | 572 | 517 | 55 | 125 | 0.9038461538461539 | 87.7% to 92.5% | 0.7417503586800573 | 70.8% to 77.3% | 0.1793400286944046 | Primary validation stratum |
+| Converted beta/path | 415 | 338 | 153 | 185 | 77 | 0.4526627218934911 | 40.0% to 50.6% | 0.3686746987951807 | 32.4% to 41.6% | 0.1855421686746988 | Sensitivity and exception-handling stratum |

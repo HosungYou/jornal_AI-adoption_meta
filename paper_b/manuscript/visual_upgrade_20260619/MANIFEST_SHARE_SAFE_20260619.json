@@ -1,0 +1,43 @@
+{
+  "date": "20260619",
+  "share_safe_release": true,
+  "time_log_decision": "No reviewer-time or per-study review-duration logs are available; no elapsed-time efficiency claim is made.",
+  "included_files": [
+    "data/04_extraction/WORKFLOW_STATUS_LOG.md",
+    "paper_b/manuscript/README.md",
+    "paper_b/manuscript/visual_upgrade_20260619/Paper_B_Implementation_Draft_RSM_VISUAL_UPGRADE_20260619.docx",
+    "paper_b/manuscript/visual_upgrade_20260619/Paper_B_Implementation_Draft_RSM_VISUAL_UPGRADE_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/README.md",
+    "paper_b/manuscript/visual_upgrade_20260619/RELEASE_NOTES_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/docs/PAPER_B_FRONTIER_REFERENCE_REINFORCEMENT_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/docs/PAPER_B_TABLE_FIGURE_PDF_GENERATION_LOGIC_VISUAL_UPGRADE_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/docs/PAPER_B_VISUAL_GOAL_AUDIT_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/docs/PAPER_B_VISUAL_SYNC_VERIFICATION_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/docs/PAPER_B_VISUAL_UPGRADE_STATUS_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/figures/figure_1_paper_b_source_anchored_flow_diagram_20260619.png",
+    "paper_b/manuscript/visual_upgrade_20260619/figures/figure_2_paper_b_accuracy_difference_forest_20260619.png",
+    "paper_b/manuscript/visual_upgrade_20260619/figures/figure_3_paper_b_accuracy_review_burden_20260619.png",
+    "paper_b/manuscript/visual_upgrade_20260619/figures/figure_4_paper_b_masem_claim_gate_20260619.png",
+    "paper_b/manuscript/visual_upgrade_20260619/figures/table_1_dense_denominator_validity_20260619.png",
+    "paper_b/manuscript/visual_upgrade_20260619/reports/Paper_B_Frontier_Visual_Upgrade_Report_20260619.pdf",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/figure_2_accuracy_difference_forest_source_data_20260619.csv",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/figure_2_accuracy_difference_forest_source_data_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/figure_4_masem_gate_source_data_20260619.csv",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/figure_4_masem_gate_source_data_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/frontier_reference_reinforcement_crosswalk_20260619.csv",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/frontier_reference_reinforcement_crosswalk_20260619.md",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/table_1_dense_denominator_validity_20260619.csv",
+    "paper_b/manuscript/visual_upgrade_20260619/tables/table_1_dense_denominator_validity_20260619.md",
+    "scripts/analysis/build_paper_b_visual_upgrade_20260619.py"
+  ],
+  "excluded_from_git_release": [
+    "publisher PDFs for frontier references",
+    "rendered/extracted page images from frontier reference PDFs",
+    "full-text extracts from frontier reference PDFs",
+    "raw/private coder workbooks and source packets"
+  ],
+  "repo_status_updates": [
+    "paper_b/manuscript/README.md",
+    "data/04_extraction/WORKFLOW_STATUS_LOG.md"
+  ]
+}
